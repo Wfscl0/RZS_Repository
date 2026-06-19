@@ -1,2 +1,0 @@
-Version 3
-SHEET 1 880 680
