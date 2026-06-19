@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+    <title>Adding Attributes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta name="description" content=""/>
+    <meta name="generator" content="Adobe RoboHelp 2022"/>    <meta name="rh-index-keywords" content="Adding Attributes"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+    <div id="topic_content">
+      <h1>Adding Attributes</h1>
+      <p>You can define default attributes for a symbol using the menu command Edit &gt; Attributes &gt; Edit Attributes. The most important attribute is called the &quot;Prefix&quot;. This determines the basic type of symbol. If the symbol is intended to represent a SPICE primitive, the symbol should have the appropriate prefix, R for resistor, C or capacitor, M for MOSFET, etc. See the LTspice reference for a complete set of SPICE primitives available. The prefix should be &#39;X&#39; if you want to use the symbol to represent a subcircuit defined in a library.</p>
+      <p><img src="assets/images/image19.png"/></p>
+      <p>The symbol&#39;s attributes can be overridden in the instance of the symbol as a component in a schematic. For example, if you have a symbol for a MOSFET with a prefix attribute of &#39;M&#39;, it&#39;s possible to override the prefix to an &#39;X&#39; on an instance-by-instance basis so that the transistor can be modeled as subcircuit instead.</p>
+      <p>There is a special combination of attributes that will cause a required library to be automatically included in every schematic that uses the symbol:</p>
+      <p>    Prefix: X
+        <br/>
+        SpiceModel: &lt;name of file including the spicemodel&gt;
+        <br/>
+             Value: &lt;What ever you want visible on the schematic&gt;
+        <br/>
+            Value2: &lt;The value as you want in the netlist&gt; </p>
+      <p>Value2 would be made to coincide with a subcircuit name defined in the file including the spicemodel and may pass additional parameters to the subcircuit. When a symbol is defined in this manner, an instance of the symbol as a component on a schematic cannot be edited to have different attributes.</p>
+      <p>If you wish the symbol to represent another page of a hierarchical schematic, all attributes should be left blank the symbol type should be changed from &quot;Cell&quot; to &quot;Block&quot;. No attribute values need be set.</p>
+      <p>There is a symbol attribute, ModelFile, that may be specified. This is used for the name of a file to be included in the netlist as a library. If the prefix attribute is &#39;X&#39; and there is a symbol attribute SpiceModel defined that is subcircuit defined in the model file, then a drop list of all subcircuits names will be available when an instance of the symbol is edited on a schematic.</p>
+    </div>  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+  
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "3.8.3"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

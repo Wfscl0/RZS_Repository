@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>.WAVE — Write Selected Nodes to a .Wav File</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content=".WAVE"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>.WAVE — Write Selected Nodes to a .wav File</h1>
+    <p>LTspice can write .wav audio files.  These files can then be listened to or be used as the input of another simulation.</p>
+    <p>Syntax:</p>
+    <p class="netlist">.wave &lt;filename.wav&gt;|&lt;string exprssion&gt; &lt;Nbits&gt;  &lt;SampleRate&gt; V(out) [V(out2) ...]</p>
+    <p>Example:</p>
+    <p class="netlist">.wave C:\output.wav 16 44.1K V(left) V(right)</p>
+    <p>&lt;filename.wav&gt; is either a complete absolute path for the .wav file you wish to create or a relative path computed from the directory containing the simulation schematic or netlist.  Double quotes may be used to specify a path containing spaces.  &lt;Nbits&gt; is the number of sampling bits.  The valid range is from 1 to 32 bits.<br/>
+      &lt;SampleRate&gt; is the number of samples to write per simulated second.  The valid range is 1 to 4294967295 samples be second. The remainder of the syntax lists the nodes that you wish to save. Each node will be an independent channel in the .wav file.  The number of channels may be as few as one or as many as 65535.  It is possible to write a device current, e.g., Ib(Q1) as well as node voltage.  The .wav analog to digital converter has a full scale range of -1 to +1 Volt or Amp.</p>
+    <p>Note that it is possible to write .wav files that cannot be played on any audio device because of the number of channels, sample rate or number of bits.  But these .wav files may still be used in LTspice as input for another simulation, as described <a href="vvoltagesource.htm">here</a> and <a href="icurrentsource.htm">here</a>.</p>
+    <p>Popular .wav file formats have 1 or 2 channels; 8 or 16 bits/channel; and a sample rate of 11025, 22050, or 44100 Hz.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.2.33"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Rules of Hierarchy","type":"book","tilePath":"","description":"","url":"rulesofhierarchy.htm","key":"toc28"},{"name":"Navigating the Hierarchy","type":"book","tilePath":"","description":"","url":"navigatingthehierarchy.htm","key":"toc29"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+    <title>steady</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta name="description" content=""/>
+    <meta name="generator" content="Adobe RoboHelp 2022"/>    <meta name="rh-index-keywords" content="steady"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+    <div id="topic_content">
+      <h1>steady</h1>
+      <p>Stop the simulation when steady state has been reached. This is required for an efficiency calculation report. Steady state detection is written into the SMPS macromodels. Typically they are written to look for zero error amp output current averaged over a clock cycle. The algorithm takes the error amp&#39;s output compliance range into consideration. The fraction of peak current that is considered zero current is specified with the sstol option.</p>
+      <p>The automatic steady state detection can fail either by being too critical or not critical enough. You can delay the steady state detection by specifying the ststdelay option in a <a href="options--setsimulatoroptions.htm">.option statement</a>. Or you can interactively specify steady state in the following manner: As soon as the simulation starts, execute menu command Simulate &gt; Efficiency Calculation &gt; Mark Start. The first time you execute this command you tell LTspice you&#39;re going to manually specify the integration limits. After the circuit looks like it&#39;s reached steady-state, execute that command again. That will clear the history and restart the Efficiency Calculation. Then, after awhile, as in you see well more than 10 clock cycles, execute Simulate &gt; Efficiency Calculation &gt; Mark End. Each time you execute Simulate &gt; Efficiency Calculation &gt; Mark Start you restart the efficiency calculation and clear the waveform history. This is a good method of preventing the data file from becoming too large and slowing down plotting, so it&#39;s recommended that you periodically execute Simulate &gt; Efficiency Calculation &gt; Mark Start whenever it is clear that you&#39;ve accumulated substantial data that you don&#39;t want to be included in the integration of efficiency.</p>
+      <p>Use the .ic directive to specify node voltages and inductor currents to reduce the length of the transient analysis required to find the steady state.</p>
+    </div>  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+  
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.3.3"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Producing Bode Plots for an SMPS</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="GENERATOR" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="How to get a Bode Plot for a SMPS"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Analyzing Switch Mode Power Supply Loop Gain</h1>
+    <p>In the interest of stability, the open loop gain of a negative feedback system operating in closed loop should fall below unity with increasing frequency before too much phase shift occurs unless your aim actually is to make an oscillator[1]. This idea can be applied to the stability analysis of a Switch Mode Power Supply (SMPS). Even though an SMPS is an intrinsically non-linear circuit with no small-signal linear equivalent circuit, there typically is an analog feedback loop operating on the filtered, switched output.<br/>
+      <br/>
+      The technique of using injected test signals and Fourier analysis is called Frequency Response Analysis(FRA). LTspice provides integrated FRA functionality. The LTspice FRA employs the voltage-only version of Middlebrook&#39;s method[2], applicable when the feedback loop has a point of low impedance driving high impedance, which is generally the case for a SMPS since the power supply output drives an error amplifier input.
+    </p>
+    <p> </p>
+    <p>Several FRA example circuits are provided with LTspice. To open these, choose File &gt; Open Examples, and navigate to the schematics located in Educational\FRA\</p>
+    <p>The FRA is a specialized time-domain transient simulation.  During the analysis, the FRA component injects sinusoidal stimulus into the circuit, and measures the response.  A Bode plot is extracted by Fourier analysis.</p>
+    <p><img src="assets/images/image28.png"/></p>
+    <p> </p>
+    <p>FRA Settings</p>
+    <p>The stimulus is controlled by FRA component. Right-clicking on the FRA component brings up the dialog shown in the images below.</p>
+    <p><img src="assets/images/image29.png"/></p>
+    <p>The images below demonstrate the effect of stimulus frequency parameters:</p>
+    <p><img src="assets/images/image30.png"/></p>
+    <p><img src="assets/images/image31.png"/></p>
+    <p>The image below demonstrates the effect of the stimulus amplitude parameters:</p>
+    <p><img height="1426" src="assets/images/image32.png" style="cursor: nwse-resize;" width="2854"/></p>
+    <p>The General parameters control when the stimulus is applied, as shown below:</p>
+    <p><img src="assets/images/image33.png"/></p>
+    <p> </p>
+    <p>Step-by-step how-to</p>
+    <p>This section describes a procedure for setting up the FRA to efficiently provide meaningful results for a SMPS circuit, using the LT8609 as an example.</p>
+    <p>The overall procedure is as follows:</p>
+    <p>1. Investigate and prepare the circuit</p>
+    <p>2. Break the loop</p>
+    <p>3. Initial FRA setup</p>
+    <p>4. Inspect the FRA transient waveforms</p>
+    <p>5. Initial Bode Analysis</p>
+    <p>6. Optimize the stimulus</p>
+    <p>7. Extend to more frequencies</p>
+    <p>9. Speed up the analysis</p>
+    <p> </p>
+    <p>1. Start with a basic startup transient simulation of the SMPS. </p>
+    <p>* Plot and examine the switch node, inductor current, and output voltage. </p>
+    <p>* Consider speeding up the time required to settle to steady-state, for example, by applying initial conditions, reducing the soft-start cap.  See the article <a href="https://www.analog.com/en/technical-articles/ltspice-speed-up-your-simulations.html">https://www.analog.com/en/technical-articles/ltspice-speed-up-your-simulations.html</a></p>
+    <p><img src="assets/images/image38.png"/></p>
+    <p><img src="assets/images/image35.png"/></p>
+    <p>Make note of:</p>
+    <p>* Time required to settle to steady-state (&lt;250us in this example)</p>
+    <p>* Final output voltage (~5V in this example)</p>
+    <p>* Switching frequency (~2MHz in this example)</p>
+    <p> </p>
+    <p>2. Break the loop and insert the FRA component</p>
+    <p>Criteria:</p>
+    <p>The FRA component must interrupt all feedback paths</p>
+    <p>The FRA component must point from lower impedance (flat side) to higher impedance (pointy side)</p>
+    <ol class="AlphaNumeric">
+      <li><img height="924322" src="assets/images/image36.png" width="816668"/></li>
+    </ol>
+    <p>3. Initial FRA Setup - Exploratory</p>
+    <p>* Start with just two or three frequencies</p>
+    <p>- If you have an idea of the loop bandwidth, start with Fstart=f0dB / 8 and Fend=2*f0dB</p>
+    <p>- If you don&#39;t have any idea what the bandwidth might be, start with Fstart=fsw/160 and Fend=fsw/10</p>
+    <p>- Set the resolution to 0.5 points per octave</p>
+    <p>* Start with pp0=1%~2% of the common-mode voltage at the FRA component.</p>
+    <p>* Allow plenty of settling and averaging time.  100~200 switching cycles is a good starting point.</p>
+    <ol class="AlphaNumeric">
+      <li><img src="assets/images/image37.png"/></li>
+    </ol>
+    <ol class="LowerAlpha">
+    </ol>
+    <p> </p>
+    <p> </p>
+    <p>4. Run the simulation and inspect the FRA transient waveforms.</p>
+    <p>Plot and examine:</p>
+    <p>- Voltage at both FRA terminals</p>
+    <p>- Inductor current</p>
+    <p>- Control voltage (if available)</p>
+    <p>Ideally, sinusoidal pattern should be evident and symmetric.</p>
+    <p>- Look for signs of non-linearity, indicating stimulus amplitude too large</p>
+    <p>- Note that there are discontinuities when the frequency changes – these are expected</p>
+    <p><img src="assets/images/image41.png"/></p>
+    <p>5. Initial Bode Plot Analysis</p>
+    <p>* Find f0dB</p>
+    <p>* Adjust Fstart and Fend</p>
+    <p>- Fstart = f0dB ÷ 8</p>
+    <p>- Fend = 2 • f0dB</p>
+    <p>* Re-run FRA</p>
+    <p><img src="assets/images/image43.png"/></p>
+    <p> </p>
+    <p>6. Adjust stimulus amplitude</p>
+    <p>* Specify frequency dependance</p>
+    <p>- Need more signal at lower frequency due to high gain</p>
+    <p>- Need less signal at higher frequency to avoid non-linear effects</p>
+    <p>* A good starting point is:</p>
+    <p>pp0 = VCM ÷ 25~50</p>
+    <p>pp1 = pp0 ÷ 4</p>
+    <p>F0 = f0dB ÷ 4</p>
+    <p>F1 = f0dB</p>
+    <p><img src="assets/images/image44.png"/></p>
+    <p>* After adjusting the stimulus, re-run the simulation until satisfied with the transient behavior (as in step 4) and the 3-point Bode plot.</p>
+    <p>- Increase amplitude up to perhaps 3~5% of VCM, reducing if asymmetry or non-linearity becomes apparent</p>
+    <p>- If, as you are increasing the amplitude, non-linearity becomes evident yet the stimulus is still not apparent in waveforms, reduce stimulus amplitude to achieve linear operation, and increase Minimum Analysis Time At Each Frequency (Tavgmin), for example ~1000 ÷ fSW, to allow LTspice to resolve the signal.</p>
+    <p>- Note that phase tends to be more sensitive to errors than gain</p>
+    <p>- Adjust and re-run FRA until satisfied with the transient and Bode</p>
+    <p> </p>
+    <p>7. Add more frequencies</p>
+    <p>* Starting frequency ~f0dB ÷ 10</p>
+    <p>-Lower Fstart leads to longer simulation time.</p>
+    <p>-Usually Fstart = f0dB ÷ 10~20 is sufficient.</p>
+    <p>* End frequency ~10 • f0dB</p>
+    <p>* Increase frequency resolution to 2~3 points per Octave</p>
+    <p>* Specify Fcoarse = 2 • Fstart</p>
+    <p><img src="assets/images/image46.png"/></p>
+    <p> </p>
+    <p>8. (Optional) Speed up the FRA</p>
+    <p>* If you plan to run further simulations of this circuit, you may choose to adjust the settings to reduce the simulation time.  Below are some possible adjustments that can speed up the FRA.  Try these incrementally and analyze the simulation results as you proceed, comparing to the previous results to ensure the changes are not adversely affecting the quality of the analysis.</p>
+    <p><img height="711" src="assets/images/image47.png" width="1284"/></p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p>1] The discussion is restricted to minimum-phase systems.</p>
+    <p>2] R. David Middlebrook, &quot;Measurement of Loop Gain in Feedback Systems&quot;, International Journal of Electronics (vol 38, no. 4, pages 485-512, April 1975).</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "7.14"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

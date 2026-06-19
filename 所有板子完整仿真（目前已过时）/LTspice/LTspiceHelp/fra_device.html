@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>@. Frequency Response Analyzer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="GENERATOR" content="Adobe RoboHelp 2022"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>@. Frequency Response Analyzer</h1>
+    <p>Symbol Name: FRA<br/>
+      <br/>
+      Syntax:
+    </p>
+    <p class="netlist">@xxx in out [zm] fstart=&lt;val&gt; fend=&lt;val&gt; [delay=&lt;val&gt;] [oct=&lt;val&gt;] [fcoarse=&lt;val&gt;] [nmax=&lt;val&gt;] [[pp0=&lt;val&gt;] [[pp1=&lt;val&gt;] [f0=&lt;val&gt;f1=&lt;val&gt;]]] [tavgmin=&lt;val&gt;] [tsettle=&lt;val&gt;] [rpar=&lt;val&gt;] [flist=&lt;values&gt;] [acmag=&lt;val&gt;] [acphase=&lt;val&gt;] [refnode=&lt;netname&gt;] [intnode=&lt;netname&gt;]</p>
+    <p>Example:</p>
+    <p class="netlist">@1 A B delay=1m fstart=1k fend=500k oct=1 fcoarse=10k nmax=1 pp0=2m pp1=1m f0=1k f1=2k tavgmin=100u tsettle=200u</p>
+    <p>During <a href="dotfra.html">frequency response analysis simulation (.fra)</a>, the analyzer device applies a range of sinusoidal stimuli and measures the circuit response.  This can be used to analyze loop gain versus frequency or impedance versus frequency.</p>
+    <p>By default, the fra device performs a gain analysis, by applying voltage stimuli and analyzing the absolute voltage at each of its terminals. If the zm keyword is present, the fra device instead performs and impedance analysis, by applying current stimuli and analyzing the voltage across the terminals.</p>
+    <p>The frequency is stepped over the range fstart to fend, with a resolution determined by the oct parameter.<br/>
+      <br/>
+      oct sets the number of frequency points per octave, where oct=1 specifies that the stimulus frequency will be doubled at every step.<br/>
+      <br/>
+      fcoarse sets oct≤1 at lower frequencies to save overall simulation time. If fcoarse is specified, the coarse step resolution is <em>maximum</em> one point per octave (oct≤1) at frequencies lower than fcoarse. The oct setting applies at frequencies above fcoarse.  Setting fcoarse to 2-to-10 times fstart can greatly reduce simulation time.<br/>
+      <br/>
+      The delay instance parameter controls the time at which the analyzer begins to apply the first stimulus.<br/>
+      <br/>
+      Amplitude may be specified by one of the following three methods:
+    </p>
+    <ul class="Disc">
+      <li>pp0: if only pp0 is specified, this sets the stimulus amplitude across all frequencies. </li>
+      <li>pp0, pp1, f0, f1: if all four of these are specified, the stimulus amplitude will be pp0 for frequencies up to f0, pp1 for frequencies above f1, and logarithmically interpolated between (f0, pp0) and (f1, pp1). This is the recommended way to specify amplitude for most circuits.</li>
+      <li>pp: specifies a piecewise logarithmic relationship for amplitude vs frequency.  The pp format is frequency-voltage pairs delimited by spaces.  For example, &quot;pp=1k 10m 10k 1m&quot; has the same effect as &quot;f0=1k pp0=10m f1=10k pp1=1m&quot;</li>
+    </ul>
+    <p><br/>
+      To reduce simulation time, the FRA device may simultaneously inject a sinusoid and several of its harmonics. The maximum number of overlayed simultaneous sinusoids for a particular stimulus is controlled by nmax.  nmax may be specified as an integer, or as a piecewise logarithmic vs. frequency, in the form of frequency-value pairs delimited by spaces. A higher value for nmax will reduce simulation time but may also reduce accuracy. A good starting point is nmax=2. nmax&gt;8 generally provides little simulation time benefit. When nmax&gt;1, LTspice automatically scales the total amplitude to the specified amplitude (pp*).<br/>
+      <br/>
+      The tavgmin parameter specifies the minimum time that each sinusoid is analyzed. For each applied frequency, if 1/f &lt; tavgmin, the analysis time will be increased in integer period increments until the analysis time exceeds tavgmin.  For an SMPS, a good starting point for tavgmin is 100/fsw, where fsw is the SMPS switching frequency.<br/>
+      <br/>
+      The tsettle parameter specifies the time between when each stimulus is first applied and when the analysis begins. A good starting point for tsettle is 2/fcross, where fcross is the approximate expected 0dB cross-over frequency.  If tsettle is not specified, LTspice will use tsettle=10/fend.<br/>
+      <br/>
+      If refnode is specifed, the gain analysis uses the in and out node voltages relative to refnode, instead of relative to ground.  This allows FRA to be used, for example, for circuits that regulate current via voltage across a sense resistor. refnode is not applicable to impedance analysis.<br/>
+      <br/>
+      The intnode parameter is used to specify an intermediate node in the circuit for an additional gain analysis. This is useful, for example, for analyzing the external compensation point of a regulator. If intnode is provided, the gain is calculated from the FRA device to intnode, and the complex value is included in the raw output data file, which can be plotted in the LTspice waveform viewer.<br/>
+      <br/>
+      The frequency response analyzer (FRA) instance parameters are listed below:
+    </p>
+    <p>Frequency Response Analyzer Parameters</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>delay</td>
+          <td>Stimulus start time</td>
+          <td>sec</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>fstart</td>
+          <td>Frequency sweep start value</td>
+          <td>Hz</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>fend</td>
+          <td>Frequency sweep end value</td>
+          <td>Hz</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>oct</td>
+          <td>Number of points per octave for frequency sweep resolution. Supported values are 0.25, 0.5, 1, 2, 3, 4</td>
+          <td>-</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>fcoarse</td>
+          <td>Upper frequency for coarse stepping in frequency sweep</td>
+          <td>-</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>flist</td>
+          <td>
+            <p>List of specific frequencies<br/>
+              (applied individually)</p>
+          </td>
+          <td>Hz</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>nmax</td>
+          <td>Maximum number of simultaneously injected harmonic frequencies</td>
+          <td>-</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>pp0</td>
+          <td>Stimulus amplitude for frequencies below f0 (if specified)</td>
+          <td>
+            <p>V (gain)<br/>
+              or</p>
+            <p>A (impedance)</p>
+          </td>
+          <td>
+            <p>1mV (gain)</p>
+            <p>or</p>
+            <p>10mA (impedance)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>pp1</td>
+          <td>Stimulus amplitude for frequencies above f1</td>
+          <td>
+            <p>V (gain)<br/>
+              or</p>
+            <p>A (impedance)</p>
+            <p> </p>
+          </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>f0</td>
+          <td>Maximum frequency for pp0</td>
+          <td>Hz</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>f1</td>
+          <td>Minimum frequency for pp1</td>
+          <td>Hz</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>pp</td>
+          <td>Piecewise logarithmic amplitude vs. frequency</td>
+          <td>
+            <p>Hz,V<br/>
+              pairs</p>
+          </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>tavgmin</td>
+          <td>Minimum analysis time for each stimulus frequency</td>
+          <td>sec</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>tsettle</td>
+          <td>Stimulus settling time at each frequency before analysis begins</td>
+          <td>sec</td>
+          <td>10/fend</td>
+        </tr>
+        <tr>
+          <td>rpar</td>
+          <td>Parallel resistance</td>
+          <td>Ω</td>
+          <td>
+            <p>1m (gain)</p>
+            <p>or</p>
+            <p>1T (impedance)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>acmag</td>
+          <td>
+            <p>AC Current Magnitude<br/>
+              (applies for AC simulations only)</p>
+          </td>
+          <td>A</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>acphase</td>
+          <td>
+            <p>AC Current Magnitude<br/>
+              (applies for AC simulations only)</p>
+          </td>
+          <td>degrees</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>ac</td>
+          <td>AC Current Magnitude, Phase pair<br/>
+            (applies for AC simulations only)</td>
+          <td>A,degrees</td>
+          <td>0,0</td>
+        </tr>
+        <tr>
+          <td>enabled</td>
+          <td>Analyzer enable (0 or 1)</td>
+          <td>-</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>refnode</td>
+          <td>Reference node for voltage gain analysis</td>
+          <td>-</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>intnode</td>
+          <td>Intermediate node for additional gain analysis</td>
+          <td>-</td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+    <p>See also: <a href="howtogetabodeplotfromasmps.htm">How to get a Bode Plot for a SMPS</a></p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.24"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

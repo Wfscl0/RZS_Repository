@@ -1,0 +1,22 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\废案\仿真\lock.net
+Start Time: Sat Apr 25 20:08:08 2026
+D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\废案\仿真\lock.net(22): Ignoring unknown model parameter. This may or may not be a problem.
+.model G6S_12V_RELAY VSWITCH(Ron=0.075 Roff=1000Meg Von=8V Voff=2V Trise=2m Tfall=1.5m)
+                                                                   ^^^^^^^^^
+D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\废案\仿真\lock.net(22): Ignoring unknown model parameter. This may or may not be a problem.
+.model G6S_12V_RELAY VSWITCH(Ron=0.075 Roff=1000Meg Von=8V Voff=2V Trise=2m Tfall=1.5m)
+                                                                            ^^^^^^^^^^
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.196 seconds.
+
+Files loaded:
+D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\废案\仿真\lock.net
+C:\Users\30836\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\30836\AppData\Local\LTspice\lib\cmp\standard.bjt
+

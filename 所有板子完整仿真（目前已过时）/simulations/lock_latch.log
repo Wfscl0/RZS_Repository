@@ -1,0 +1,22 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\codex\sim\simulations\lock_latch.cir
+Start Time: Mon May 18 20:14:44 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 0.047 seconds.
+
+Files loaded:
+D:\codex\sim\simulations\lock_latch.cir
+
+sdc_normal: V(sdc_out) =24 at 0.001
+imd_state_fault: V(imd_state) =-0.436821997166 at 0.0025
+sdc_after_imd_fault: V(sdc_out) =0 at 0.0025
+imd_state_latched: V(imd_state) =-0.262802105538 at 0.004
+sdc_latched: V(sdc_out) =0 at 0.004
+imd_state_after_reset: V(imd_state) =5.2807097435 at 0.006
+sdc_after_reset: V(sdc_out) =24 at 0.006

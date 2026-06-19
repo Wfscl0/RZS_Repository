@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>.NET — Compute Network Parameters in a .AC Analysis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content=".NET"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>.NET — Compute Network Parameters in a .AC Analysis</h1>
+    <p>This statement is used with a small signal(.AC) analysis to compute the input and output admittance, impedance, Y-parameters, Z-parameters, H-parameters, and S-parameters of a 2-port network. It can also be used to compute the input admittance and impedance of a 1-port network. This must be used with a .AC statement, which determines the frequency sweep of the network analysis.</p>
+    <p>Syntax:</p>
+    <p class="netlist">.net [V(out[,ref])|I(Rout)] &lt; Vin|Iin&gt; [Rin=&lt;val&gt;] [Rout=&lt;val&gt;]</p>
+    <p>The network input is specified by either an independent voltage source, &lt;Vin&gt;, or an independent current source, &lt; Iin&gt;. The optional output port is specified either with a node, V(out), or a resistor, I(Rout). The ports will be terminated with resistances Rin and Rout. If unspecified, the termination impedances default to 1 Ohm except in the case of the Voltage source with an Rser specified or an output port specified with a resistor. In those two cases the termination resistances defaults to the device impedance. Termination values specified on the .NET statement will override device impedances for the .NET calculation, but not for the normal .AC node voltages and currents. That is, the .NET statement will not impose terminating impedances on the network for the normal voltages and currents computed as part of the .AC analysis.</p>
+    <p>Open the S-parameter example circuit included with LTspice by choosing File &gt; Open Examples... and navigating to Educational\S-param.asc. It recommends using a voltage source, V4, with Rser set the desired source impedance and a resistor, Rout, to set the output termination with a .NET statement reading simply &quot;.net I(Rout) V4.&quot; No Rin or Rout values specified on the .net statement and the input/output devices supply default termination values. This arrangement makes the node voltages and currents of the .AC analysis correspond to the network being terminated in the same manner as in the .NET statement.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.2.19"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

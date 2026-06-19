@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>M. MOSFET</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="M. MOSFET"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>M. MOSFET</h1>
+    <p>Symbol Names: NMOS, NMOS3, PMOS, PMOS3</p>
+    <p>There are two fundamentally different types of MOSFETS in LTspice, monolithic MOSFETs and a new vertical double diffused power MOSFET model.</p>
+    <p>Monolithic MOSFET:</p>
+    <p>Syntax:</p>
+    <p class="netlist">Mxxx Nd Ng Ns Nb &lt;model&gt;|&lt;string expression&gt; [m=&lt;value&gt;] [L=&lt;len&gt;]<br/>
+      + [W=&lt;width&gt;] [AD=&lt;area&gt;] [AS=&lt;area&gt;]<br/>
+      + [PD=&lt;perim&gt;] [PS=&lt;perim&gt;] [NRD=&lt;value&gt;]<br/>
+      + [NRS=&lt;value&gt;] [off] [IC=&lt;Vds, Vgs, Vbs&gt;]<br/>
+      + [temp=&lt;T&gt;]</p>
+    <p class="netlist">M1 Nd Ng Ns 0 MyMOSFET<br/>
+      .model MyMOSFET NMOS(KP=.001)</p>
+    <p class="netlist">M1 Nd Ng Ns Nb MypMOSFET<br/>
+      .model MypMOSFET PMOS(KP=.001)</p>
+    <p>Vertical double diffused power MOSFET:</p>
+    <p>Syntax:</p>
+    <p class="netlist">Mxxx Nd Ng Ns &lt;model&gt;|&lt;string expression&gt; [L=&lt;len&gt;] [W=&lt;width&gt;]<br/>
+      + [M=&lt;area&gt;] [m=&lt;value&gt;] [off]<br/>
+      + [IC=&lt;Vds, Vgs, Vbs&gt;] [temp=&lt;T&gt;]</p>
+    <p>Example:</p>
+    <p class="netlist">M1 Nd Ng Ns Si4410DY<br/>
+      .model Si4410DY VDMOS(Rd=3m Rs=3m Vto=2.6 Kp=60 Cgdmax=1.9n Cgdmin=50p Cgs=3.1n Cjo=1n Is=5.5p Rb=5.7m)</p>
+    <p>The MOSFET&#39;s model card specifies which type is intended. The model card keywords NMOS and PMOS specify a monolithic N- or P- channel MOSFET transistor. The model card keyword VDMOS specifies a vertical double diffused power MOSFET.</p>
+    <p>Monolithic MOSFETS are four terminal devices. Nd, Ng, NS, and Nb are the drain, gate, source, and bulk; i.e., substrate; nodes. L and W are the channel length and width, in meters. AD and AS are the areas of the drain and source diffusions, in square meters. If any of L, W, AD, or AS are not specified, default values are used. PD and PS are the perimeters of the drain and source junctions, in meters. NRD and NRS designate the equivalent number of squares of the drain and source diffusions; these values multiply the sheet resistance RSH specified on the .MODEL control line. PD and PS default to zero while NRD and NRS to one. OFF indicates an initial condition on the device for DC analysis. The initial condition specification using IC=VDS, VGS, VBS is for use with the UIC option on the .TRAN control line, when a transient analysis is desired starting from other than the quiescent operating point. The optional TEMP value is the temperature at which this device is to operate, and overrides the temperature specification on the .OPTION control line. The temperature specification is ONLY valid for level 1, 2, 3, and 6 MOSFETs, not for level 4, 5 or 8 BSIM devices.</p>
+    <p>LTspice contains seven different types of monolithic MOSFET&#39;s and one type of vertical double diffused Power MOSFET.</p>
+    <p>There are seven monolithic MOSFET device models. The model parameter LEVEL specifies the model to be used. The default level is one.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Level</th>
+          <th>Model</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Shichman-Hodges</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>MOS2 (see A. Vladimirescu and S. Liu, The Simulation of MOS Integrated Circuits Using SPICE2, ERL Memo No. M80/7, Electronics Research Laboratory University of California, Berkeley, October 1980)</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>MOS3, a semi-empirical model (see reference for level 2)</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>BSIM (see B. J. Sheu, D. L. Scharfetter, and P. K. Ko, SPICE2 Implementation of BSIM. ERL Memo No. ERL M85/42, Electronics Research Laboratory University of California, Berkeley, May 1985)</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>BSIM2 (see Min-Chie Jeng, Design and Modeling of Deep-Submicrometer MOSFETs ERL Memo Nos. ERL M90/90, Electronics Research Laboratory University of California, Berkeley, October 1990)</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>MOS6 (see T. Sakurai and A. R. Newton, A Simple MOSFET Model for Circuit Analysis and its application to CMOS gate delay analysis and series-connected MOSFET Structure, ERL Memo No. ERL M90/19, Electronics Research Laboratory, University of California, Berkeley, March 1990)</td>
+        </tr>
+        <tr>
+          <td>7, 8, 49</td>
+          <td>BSIM3v3.3.0 from University of California, Berkeley as of July 29, 2005</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>BSIMSOI3.2 (Silicon on insulator) from the BSIM Research Group of the University of California, Berkeley, February 2004.</td>
+        </tr>
+        <tr>
+          <td>12, 44, 55</td>
+          <td>EKV 2.6 based on code from Ecole Polytechnique Federale de Lausanne. See <a href="http://legwww.epfl.ch/ekv">http://legwww.epfl.ch/ekv</a> and &quot;The EPFL-EKV MOSFET Model Equations for Simulation, Version 2.6&quot;, M. Bucher, C. Lallement, F. Theodoloz, C. Enz, F. Krummenacher, EPFL-DE-LEG, June 1997.</td>
+        </tr>
+        <tr>
+          <td>14, 54</td>
+          <td>BSIM4.6.1 from the University of California, Berkeley BSIM Research Group, May 18, 2007.</td>
+        </tr>
+        <tr>
+          <td style="">73</td>
+          <td style="">HiSIMHV version 1.2 from the Hiroshima University and STARC.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The DC characteristics of the level 1 through level 3 MOSFETs are defined by the device parameters VTO, KP, LAMBDA, PHI and GAMMA. These parameters are computed if the process parameters(NSUB, TOX,...) are given, but user-specified values always override. VTO is positive (negative) for enhancement mode and negative (positive) for depletion mode N-channel (P-channel) devices. Charge storage is modeled by three constant capacitors, CGSO, CGDO, and CGBO which represent overlap capacitances, by the nonlinear thin-oxide capacitance which is distributed among the gate, source, drain, and bulk regions, and by the nonlinear depletion-layer capacitances for both substrate junctions divided into bottom and periphery, which vary as the MJ and MJSW power of junction voltage respectively, and are determined by the parameters CBD, CBS, CJ, CJSW, MJ, MJSW and PB. Channel capacitance is implemented as a Yang-Chatterjee charge-based model in all aspects of simulation but legacy Meyer capacitances are reported in the log file. The thin-oxide charge-storage effects are treated slightly different for the Level=1 model. These voltage dependent capacitances are included only if Tox is specified.</p>
+    <p>There is some overlap among the parameters describing the junctions, e.g., the reverse current can be specified either through Is[Amp] or through Js[Amp/m/m]. Whereas the first is an absolute value the second is multiplied by Ad and As to give the reverse current of the drain and source junctions respectively. The same idea applies also to the zero-bias junction capacitances CBD and CBS[Farad] on the one hand, and CJ[Farad/m/m] on the other. The parasitic drain and source series resistance can be expressed as either RD and RS[Ohms] or RSH[Ohms/square], the latter being multiplied by the number of squares NRD and NRS input on the device line.</p>
+    <p>MOSFET level 1, 2, and 3 parameters:</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+          <th>Default</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Vto</td>
+          <td>Zero-bias threshold voltage</td>
+          <td>V</td>
+          <td>0</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Kp</td>
+          <td>Transconductance parameter</td>
+          <td>A/V<sup>2</sup></td>
+          <td>2e-5</td>
+          <td>3e-5</td>
+        </tr>
+        <tr>
+          <td>Gamma</td>
+          <td>Bulk threshold parameter</td>
+          <td>V<sup>½</sup></td>
+          <td>0.</td>
+          <td>0.37</td>
+        </tr>
+        <tr>
+          <td>Phi</td>
+          <td>Surface inversion potential</td>
+          <td>V</td>
+          <td>0.6</td>
+          <td>0.65</td>
+        </tr>
+        <tr>
+          <td>Lambda</td>
+          <td>Channel-length modulation (level 1 and 2)</td>
+          <td>1/V</td>
+          <td>0.</td>
+          <td>0.02</td>
+        </tr>
+        <tr>
+          <td>wd</td>
+          <td>Lateral diffusion width reduction</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>0.5u</td>
+        </tr>
+        <tr>
+          <td>Rd</td>
+          <td>Drain ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Rs</td>
+          <td>Source ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Rg</td>
+          <td>Gate ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Rb</td>
+          <td>Bulk ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Rds</td>
+          <td>Drain-Source shunt resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>1Meg</td>
+        </tr>
+        <tr>
+          <td>Cbd</td>
+          <td>Zero-bias B-D junction capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+          <td>20f</td>
+        </tr>
+        <tr>
+          <td>Cbs</td>
+          <td>Zero-bias B-S junction capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+          <td>20f</td>
+        </tr>
+        <tr>
+          <td>Is</td>
+          <td>Bulk junction saturation current</td>
+          <td>A</td>
+          <td>1e-14</td>
+          <td>1e-15</td>
+        </tr>
+        <tr>
+          <td>N</td>
+          <td>Bulk diode emission coefficient</td>
+          <td>-</td>
+          <td>1.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Pb</td>
+          <td>Bulk junction potential</td>
+          <td>V</td>
+          <td>0.8</td>
+          <td>0.87</td>
+        </tr>
+        <tr>
+          <td>tt</td>
+          <td>Bulk junction transit time</td>
+          <td>s</td>
+          <td>0</td>
+          <td>1n</td>
+        </tr>
+        <tr>
+          <td>Cgso</td>
+          <td>Gate-source overlap capacitance per meter channel width</td>
+          <td>F/m</td>
+          <td>0.</td>
+          <td>4e-11</td>
+        </tr>
+        <tr>
+          <td>Cgdo</td>
+          <td>Gate-drain overlap capacitance per meter channel width</td>
+          <td>F/m</td>
+          <td>0.</td>
+          <td>4e-11</td>
+        </tr>
+        <tr>
+          <td>Cgbo</td>
+          <td>Gate-bulk overlap capacitance per meter channel width</td>
+          <td>F/m</td>
+          <td>0.</td>
+          <td>2e-10</td>
+        </tr>
+        <tr>
+          <td>Rsh</td>
+          <td>Drain and source diffusion sheet resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>10.</td>
+        </tr>
+        <tr>
+          <td>Cj</td>
+          <td>Zero-bias bulk junction bottom capacitance per square meter of junction area</td>
+          <td>F/m<sup>2</sup></td>
+          <td>0.</td>
+          <td>2e-4</td>
+        </tr>
+        <tr>
+          <td>Mj</td>
+          <td>Bulk junction bottom grading coefficient</td>
+          <td>-</td>
+          <td>0.5</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>Cjsw</td>
+          <td>Zero-bias bulk junction sidewall capacitance per meter of junction perimeter</td>
+          <td>F/m</td>
+          <td>0.</td>
+          <td>1p</td>
+        </tr>
+        <tr>
+          <td>Mjsw</td>
+          <td>Bulk junction sidewall grading coefficient</td>
+          <td>-</td>
+          <td>
+            <p>.50 level 1<br/>
+              .33 level 2,3</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Js</td>
+          <td>Bulk junction saturation current per square-meter of junction area</td>
+          <td>A/m<sup>2</sup></td>
+          <td>0.</td>
+          <td>1u</td>
+        </tr>
+        <tr>
+          <td>Jssw</td>
+          <td>Bulk junction saturation current per meter of sidewall</td>
+          <td>A/m</td>
+          <td>0.</td>
+          <td>1n</td>
+        </tr>
+        <tr>
+          <td>Tox</td>
+          <td>Oxide thickness</td>
+          <td>m</td>
+          <td>1e-7</td>
+          <td>1e-7</td>
+        </tr>
+        <tr>
+          <td>Nsub</td>
+          <td>Substrate doping</td>
+          <td>1/cm<sup>3</sup></td>
+          <td>0.</td>
+          <td>4e15</td>
+        </tr>
+        <tr>
+          <td>Nss</td>
+          <td>Surface state density</td>
+          <td>1/cm<sup>2</sup></td>
+          <td>0.</td>
+          <td>1e+10</td>
+        </tr>
+        <tr>
+          <td>Nfs</td>
+          <td>Fast surface state (levels 2 &amp; 3)</td>
+          <td>1/cm<sup>2</sup></td>
+          <td>0.</td>
+          <td>1e+10</td>
+        </tr>
+        <tr>
+          <td>Xd</td>
+          <td>Depletion layer width (level 3)</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>100n</td>
+        </tr>
+        <tr>
+          <td>TPG</td>
+          <td>
+            <p>Type of gate material:<br/>
+              +1 opp. to substrate<br/>
+              -1 same as substrate<br/>
+               0 Al gate</p>
+          </td>
+          <td>-</td>
+          <td>1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Xj</td>
+          <td>Metallurgical junction depth (levels 2 &amp; 3)</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>1μ</td>
+        </tr>
+        <tr>
+          <td>Ld</td>
+          <td>Lateral diffusion</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>0.8μ</td>
+        </tr>
+        <tr>
+          <td>Uo</td>
+          <td>Surface mobility</td>
+          <td>cm<sup>2</sup>/V/s</td>
+          <td>600</td>
+          <td>700</td>
+        </tr>
+        <tr>
+          <td>Ucrit</td>
+          <td>Critical field for mobility degradation (level 2)</td>
+          <td>V/cm</td>
+          <td>1e4</td>
+          <td>1e4</td>
+        </tr>
+        <tr>
+          <td>Uexp</td>
+          <td>Critical field exponent in mobility degradation (level 2)</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Utra</td>
+          <td>Transverse field coefficient (level 2)</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>0.3</td>
+        </tr>
+        <tr>
+          <td>Vmax</td>
+          <td>Maximum carrier drift velocity (levels 2 &amp; 3)</td>
+          <td>m/s</td>
+          <td>0.</td>
+          <td>5e4</td>
+        </tr>
+        <tr>
+          <td>Neff</td>
+          <td>Total channel-charge exponent (level 2)</td>
+          <td>-</td>
+          <td>1.</td>
+          <td>5.</td>
+        </tr>
+        <tr>
+          <td>Kf</td>
+          <td>Flicker noise coefficient</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>1e-26</td>
+        </tr>
+        <tr>
+          <td>Af</td>
+          <td>Flicker noise exponent</td>
+          <td>-</td>
+          <td>1.</td>
+          <td>1.2</td>
+        </tr>
+        <tr>
+          <td>Nlev</td>
+          <td>Noise equation selector</td>
+          <td>-</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Gdsnoi</td>
+          <td>Shot noise coefficient for nlev=3</td>
+          <td>-</td>
+          <td>1.</td>
+          <td>2.</td>
+        </tr>
+        <tr>
+          <td>Fc</td>
+          <td>Coefficient for forward-bias depletion capacitance formula</td>
+          <td>-</td>
+          <td>0.5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Delta</td>
+          <td>Width effect on threshold voltage (levels 2 &amp; 3)</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Theta</td>
+          <td>Mobility modulation (level 3)</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Eta</td>
+          <td>Static feedback (level 3)</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Kappa</td>
+          <td>Saturation field (level 3)</td>
+          <td></td>
+          <td>0.2</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>Tnom</td>
+          <td>Parameter measurement temperature</td>
+          <td>°C</td>
+          <td>27</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>L</td>
+          <td>Default length</td>
+          <td>m</td>
+          <td>defl</td>
+          <td>20u</td>
+        </tr>
+        <tr>
+          <td>W</td>
+          <td>Default width</td>
+          <td>m</td>
+          <td>defw</td>
+          <td>20u</td>
+        </tr>
+        <tr>
+          <td>Ad</td>
+          <td>Default drain area</td>
+          <td>m<sup>2</sup></td>
+          <td>defad</td>
+          <td>200p</td>
+        </tr>
+        <tr>
+          <td>As</td>
+          <td>Default source area</td>
+          <td>m<sup>2</sup></td>
+          <td>defas</td>
+          <td>200p</td>
+        </tr>
+        <tr>
+          <td>Pd</td>
+          <td>Default drain perimeter</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>20u</td>
+        </tr>
+        <tr>
+          <td>Ps</td>
+          <td>Default source perimeter</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>20u</td>
+        </tr>
+        <tr>
+          <td>Nrd</td>
+          <td>Default drain squares</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Nrs</td>
+          <td>Default source squares</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Nrg</td>
+          <td>Default gate squares</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Nrb</td>
+          <td>Default bulk squares</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Lmin</td>
+          <td>Bin length lower limit</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>10u</td>
+        </tr>
+        <tr>
+          <td>Lmax</td>
+          <td>Bin length upper limit</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>20u</td>
+        </tr>
+        <tr>
+          <td>Wmin</td>
+          <td>Bin width lower limit</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>10u</td>
+        </tr>
+        <tr>
+          <td>Wmax</td>
+          <td>Bin width upper limit</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>20u</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><img alt="" height="257" src="assets/images/lib/vdmos.gif" style="vertical-align: text-bottom;" width="323"/></p>
+    <p>The discrete vertical double diffused MOSFET transistor(VDMOS) popularly used in board level switch mode power supplies has behavior that is qualitatively different than the above monolithic MOSFET models. In particular, (i) the body diode of a VDMOS transistor is connected differently to the external terminals than the substrate diode of a monolithic MOSFET and (ii) the gate-drain capacitance(Cgd) non-linearity cannot be modeled with the simple graded capacitances of monolithic MOSFET models. In a VDMOS transistor, Cgd abruptly changes about zero gate-drain voltage(Vgd). When Vgd is negative, Cgd is physically based on a capacitor with the gate as one electrode and the drain on the back of the die as the other electrode. This capacitance is fairly low due to the thickness of the non-conducting die. But when Vgd is positive, the die is conducting and Cgd is physically based on a capacitor with the thickness of the gate oxide.</p>
+    <p>Traditionally, elaborate subcircuits have been used to duplicate the behavior of a power MOSFET. A new intrinsic spice device was written that encapsulates this behavior in the interest of compute speed, reliability of convergence, and simplicity of writing models. The DC model is the same as a level 1 monolithic MOSFET except that the length and width default to one so that transconductance can be directly specified without scaling. The AC model treats the gate-source capacitance as constant. This was empirically found to be a good approximation for power MOSFETS if the gate-source voltage is not driven negative. The gate-drain capacitance follows the following empirically found form:</p>
+    <p><img alt="" height="354" src="assets/images/lib/vdmoscap.gif" style="vertical-align: text-bottom;" width="770"/></p>
+    <p>For positive Vgd, Cgd varies as the hyperbolic tangent of Vgd. For negative Vdg, Cgd varies as the arc tangent of Vgd. The model parameters a, Cgdmin, and Cgdmax parameterize the gate drain capacitance. The source-drain capacitance is supplied by the graded capacitance of a body diode connected across the source drain electrodes, outside of the source and drain resistances.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+          <th>Default</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Vto</td>
+          <td>Threshold voltage</td>
+          <td>V</td>
+          <td>0</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Kp</td>
+          <td>Transconductance parameter</td>
+          <td>A/V<sup>2</sup></td>
+          <td>1.</td>
+          <td>.5</td>
+        </tr>
+        <tr>
+          <td>Phi</td>
+          <td>Surface inversion potential</td>
+          <td>V</td>
+          <td>0.6</td>
+          <td>0.65</td>
+        </tr>
+        <tr>
+          <td>Lambda</td>
+          <td>Channel-length modulation</td>
+          <td>1/V</td>
+          <td>0.</td>
+          <td>0.02</td>
+        </tr>
+        <tr>
+          <td>mtriode</td>
+          <td>Conductance multiplier in triode region(allows independent fit of triode and saturation regions</td>
+          <td>-</td>
+          <td>1.</td>
+          <td>2.</td>
+        </tr>
+        <tr>
+          <td>Ksubthres</td>
+          <td>subthreshold conduction parameter</td>
+          <td>-</td>
+          <td>0.</td>
+          <td>1m</td>
+        </tr>
+        <tr>
+          <td>BV</td>
+          <td>Vds breakdown voltage</td>
+          <td>V</td>
+          <td>Infin.</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>IBV</td>
+          <td>Current at Vds=BV</td>
+          <td>A</td>
+          <td>100pA</td>
+          <td>1u</td>
+        </tr>
+        <tr>
+          <td>NBV</td>
+          <td>Vds breakdown emission coefficient</td>
+          <td>-</td>
+          <td>1.</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Rd</td>
+          <td>Drain ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Rs</td>
+          <td>Source ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Rg</td>
+          <td>Gate ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>2.</td>
+        </tr>
+        <tr>
+          <td>Rds</td>
+          <td>Drain-source shunt resistance</td>
+          <td>Ω</td>
+          <td>Infin.</td>
+          <td>10Meg</td>
+        </tr>
+        <tr>
+          <td>Rb</td>
+          <td>Body diode ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+          <td>.5</td>
+        </tr>
+        <tr>
+          <td>Cjo</td>
+          <td>Zero-bias body diode junction capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+          <td>1n</td>
+        </tr>
+        <tr>
+          <td>Cgs</td>
+          <td>Gate-source capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+          <td>500p</td>
+        </tr>
+        <tr>
+          <td>Cgdmin</td>
+          <td>Minimum non-linear G-D capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+          <td>300p</td>
+        </tr>
+        <tr>
+          <td>Cgdmax</td>
+          <td>Maximum non-linear G-D capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+          <td>1000p</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>Non-linear Cgd capacitance parameter</td>
+          <td>-</td>
+          <td>1.</td>
+          <td>.5</td>
+        </tr>
+        <tr>
+          <td>Is</td>
+          <td>Body diode saturation current</td>
+          <td>A</td>
+          <td>1e-14</td>
+          <td>1e-15</td>
+        </tr>
+        <tr>
+          <td>N</td>
+          <td>Bulk diode emission coefficient</td>
+          <td>-</td>
+          <td>1.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Vj</td>
+          <td>Body diode junction potential</td>
+          <td>V</td>
+          <td>1.</td>
+          <td>0.87</td>
+        </tr>
+        <tr>
+          <td>M</td>
+          <td>Body diode grading coefficient</td>
+          <td>-</td>
+          <td>0.5</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>Fc</td>
+          <td>Body diode coefficient for forward-bias depletion capacitance formula</td>
+          <td>-</td>
+          <td>0.5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>oneway</td>
+          <td>Behavioral modeling flag to indicate current can only flow in one direction in the channel</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>tt</td>
+          <td>Body diode transit time</td>
+          <td>sec</td>
+          <td>0.</td>
+          <td>10n</td>
+        </tr>
+        <tr>
+          <td>Eg</td>
+          <td>Body diode activation energy for temperature effect on Is</td>
+          <td>eV</td>
+          <td>1.11</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Xti</td>
+          <td>Body diode saturation current temperature exponent</td>
+          <td>-</td>
+          <td>3.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>L</td>
+          <td>Length scaling</td>
+          <td>-</td>
+          <td>1.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>W</td>
+          <td>Width scaling</td>
+          <td>-</td>
+          <td>1.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Kf</td>
+          <td>Flicker noise coefficient</td>
+          <td>-</td>
+          <td>0.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Af</td>
+          <td>Flicker noise exponent</td>
+          <td>-</td>
+          <td>1.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>nchan</td>
+          <td>N-channel VDMOS</td>
+          <td>-</td>
+          <td>(true)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>pchan</td>
+          <td>P-channel VDMOS</td>
+          <td>-</td>
+          <td>(false)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Tnom</td>
+          <td>Parameter measurement temperature</td>
+          <td>°C</td>
+          <td>27</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Lmin</td>
+          <td>Bin length lower limit</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>10u</td>
+        </tr>
+        <tr>
+          <td>Lmax</td>
+          <td>Bin length upper limit</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>20u</td>
+        </tr>
+        <tr>
+          <td>Wmin</td>
+          <td>Bin width lower limit</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Wmax</td>
+          <td>Bin width upper limit</td>
+          <td>m</td>
+          <td>0.</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Bex</td>
+          <td>Power of Kp temp dependence</td>
+          <td>n.a.</td>
+          <td>-1.5</td>
+          <td>-1.6</td>
+        </tr>
+        <tr>
+          <td>vtotc</td>
+          <td>Vto tempco. If specified, the computation from 1st principles based on phi is ignored.</td>
+          <td>V/°C</td>
+          <td>0</td>
+          <td>-3m</td>
+        </tr>
+        <tr>
+          <td>tksubthres1</td>
+          <td>linear tempco of Ksubthres</td>
+          <td>°C<sup>-1</sup></td>
+          <td>0</td>
+          <td>1m</td>
+        </tr>
+        <tr>
+          <td>tksubthres2</td>
+          <td>quadtradic tempco of Ksubthres</td>
+          <td>°C<sup>-2</sup></td>
+          <td>0</td>
+          <td>100u</td>
+        </tr>
+        <tr>
+          <td>Trs1</td>
+          <td>Rs linear tempco</td>
+          <td>°C<sup>-1</sup></td>
+          <td>0.</td>
+          <td>5m</td>
+        </tr>
+        <tr>
+          <td>Trs2</td>
+          <td>Rs quadradic tempco</td>
+          <td>°C<sup>-2</sup></td>
+          <td>0.</td>
+          <td>100u</td>
+        </tr>
+        <tr>
+          <td>Trg1</td>
+          <td>Rg linear tempco</td>
+          <td>°C<sup>-1</sup></td>
+          <td>0.</td>
+          <td>5m</td>
+        </tr>
+        <tr>
+          <td>Trg2</td>
+          <td>Rg quadradic tempco</td>
+          <td>°C<sup>-2</sup></td>
+          <td>0.</td>
+          <td>100u</td>
+        </tr>
+        <tr>
+          <td>Trd1</td>
+          <td>Rd linear tempco</td>
+          <td>°C<sup>-1</sup></td>
+          <td>0.</td>
+          <td>5m</td>
+        </tr>
+        <tr>
+          <td>Trd2</td>
+          <td>Rd quadradic tempco</td>
+          <td>°C<sup>-2</sup></td>
+          <td>0.</td>
+          <td>100u</td>
+        </tr>
+        <tr>
+          <td>Trb1</td>
+          <td>Rb linear tempco</td>
+          <td>°C<sup>-1</sup></td>
+          <td>0.</td>
+          <td>5m</td>
+        </tr>
+        <tr>
+          <td>Trb2</td>
+          <td>Rb quadradic tempco</td>
+          <td>°C<sup>-2</sup></td>
+          <td>0.</td>
+          <td>100u</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The model name VDMOS is used both for a N-channel and P-channel device. The polarity defaults to N-channel. To specify P-channel, flag the model with the keyword &quot;pchan&quot;, e.g.,</p>
+    <p class="netlist">.model xyz VDMOS(Kp = 3 pchan)</p>
+    <p>defines a P-channel transistor.</p>
+    <p>It is possible to annotate a model with a voltage rating and nominal performance. This information is displayed in the schematic capture GUI to assist in selecting a device but does not impact the electrical behavior in simulation. The following parameters may be specified.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>Vds</td>
+          <td>Drain-source voltage rating</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Ron</td>
+          <td>Nominal on resistance</td>
+          <td>Ω</td>
+        </tr>
+        <tr>
+          <td>Qg</td>
+          <td>Nominal gate charge required to get to Ron</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>mfg</td>
+          <td>Name of manufacturer</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Model Binning</h2>
+    <p>LTspice supports MOS model binning for all MOSFET models. <span>This means that several different model definitions can be provided for the same MOSFET device with each being valid over a limited range of length and/or width. LTspice will automatically select the appropriate model. A set of binned models consists of one or more .model definitions, all named</span></p>
+    <p class="netlist">basename.id</p>
+    <p>where &quot;basename&quot; is the common name used to call the model by a MOSFET instance, and &quot;id&quot; is an a<span>rbitrary name that must be unique for each model in a set. <span>When a model is required, LTspice searches all models with the same &quot;basename&quot; in the order they appear in the netlist for a definition whose Lmin, Lmax, Wmin, and Wmax parameters are compatible with the device&#39;s L and W. This can be suppressed by naming the full name.</span></span></p>
+    <p>Examples:</p>
+    <p class="netlist">.MODEL N1.1 NMOS LEVEL=1 LMIN=1u LMAX=4u WMIN=1u WMAX=4u<br/>
+      .MODEL N1.3 NMOS LEVEL=1 LMIN=4u LMAX=40u WMIN=1u WMAX=4u<br/>
+      .MODEL N1.2 NMOS LEVEL=1 LMIN=4u LMAX=40u WMIN=1u WMAX=4u<br/>
+      .MODEL Ψ2 ako:N1.1 nmos<br/>
+      M1 Nd Ng Ns Nb N1 l=1u w=2u      ; uses model N1.1<br/>
+      M2 Nd Ng Ns Nb N1 l=4.001u w=2u  ; uses model N1.3, not N1.2, because it is listed first<br/>
+      M3 Nd Ng Ns Nb ψ2 l=1n w=2u      ; error: Ψ2=N1, but L is out of range<br/>
+      M4 Nd Ng Ns Nb N1.1 l=1n w=2u    ; uses model N1.1 even though L is out of range<br/>
+      .MODEL H1 ako:N1 nmos            ; error: AKO can&#39;t be used to create an alias for an entire set </p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.13"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

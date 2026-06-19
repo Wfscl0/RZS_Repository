@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+    <title>Data Trace Selection</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta name="description" content=""/>
+    <meta name="generator" content="Adobe RoboHelp 2022"/>    <meta name="rh-index-keywords" content="Data Trace Selection"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+    <div id="topic_content">
+      <h1>Data Trace Selection</h1>
+      <p>There are three basic means of selecting plotted traces.</p>
+      <p>1. Probing directly from the schematic</p>
+      <p>2. Menu command Plot Settings=&gt;Visible Traces</p>
+      <p>3. Menu command Plot Settings=&gt;Add Trace</p>
+      <p>The undo and redo commands allow you to review the different trace selections no matter which method of selection is used.</p>
+      <p>1. Probing directly from the schematic:</p>
+      <p><img src="assets/images/image23.png"/></p>
+      <p>The easiest method is to simply probe the schematic. You simply point and click at a wire to plot the voltage on that wire. You can plot the current through a component with two connections(like a resistor, capacitor or an inductor) by clicking on the body of the component. This works at any level of the circuit&#39;s hierarchy if you&#39;ve saved all subcircuit voltages and currents. You can also plot current into a particular pin of a component by clicking on that pin of the symbol.</p>
+      <p>If you click the same voltage or current twice, then all other traces will be erased and the double clicked trace will be plotted by itself. You can delete individual traces by clicking on the trace&#39;s label after selecting the delete command.</p>
+      <p>The following screen shot shows how to point at a pin current. Notice that the mouse cursor turns into an icon that looks like a current clamp meter when it&#39;s pointing at a pin current. By convention, the current is reported positive if flow is into the pin.</p>
+      <p><img src="assets/images/image24.png"/></p>
+      <p>It is also possible to point at voltage differences with the mouse. You can click on one node and drag the mouse to another node. You will see the red voltage probe at the first node and a black probe on the second. This allows you to differentially plot voltages:</p>
+      <p><img alt="" src="assets/images/lib/diffprobe.png" style="vertical-align: text-bottom;"/></p>
+      <p>Yet another schematic probing technique is to plot the instantaneous power dissipation of a component. To do this, hold down the Alt key and click on the body of the symbol of the component. The instantaneous power dissipation will be plotted as an expression of voltages and currents. It will be plotted on its own scale with the units of Watts. The mouse cursor turns into an icon that looks like a thermometer when it&#39;s pointing at a dissipation that can be plotted. You can find the average power dissipation by control-clicking the trace label.</p>
+      <p><img alt="" src="assets/images/lib/pwrProbe.png" style="vertical-align: text-bottom;"/></p>
+      <p>You can also probe the current in a wire. To do this, hold down the Alt key and click on the wire. The mouse cursor turns into a current clamp meter to indicate it&#39;s pointing at this current and the red arrow shows the direction of positive current.</p>
+      <p><img alt="" src="assets/images/lib/ProbeWire.png" style="vertical-align: text-bottom;"/></p>
+      <p>2. Menu command Plot Settings=&gt;Visible Traces:</p>
+      <p>Notice that it is possible to list only those trace names that match a pattern. This is useful when there are many traces and you only know part of the name.</p>
+      <p>The menu command Plot Settings=&gt;Visible Traces is the dialog seen at the beginning of plotting data from a simulation. It lets you select the initial traces to start the plot. It also gives you random access to the full list of traces plotted.</p>
+      <p><img alt="" src="assets/images/lib/VisTrace.png" style="vertical-align: text-bottom;"/></p>
+      <p>3. Menu command View=&gt;Add Trace:</p>
+      <p>The Plot Settings=&gt;Add Trace command is similar to the Plot Settings=&gt;Visible Traces command. However, you can not delete traces that are already visible with it. It has two useful capabilities. One is an edit box near the top of the dialog that allows you to enter a pattern of characters. Only trace names that match the pattern will be shown in the dialog. This is very useful for finding a trace when you can only partially remember the name. Also, it&#39;s a bit easier to compose an expression of trace data because you can click on a name in the dialog instead of typing out its name.</p>
+      <p><img alt="" src="assets/images/lib/AddTrace.png" style="vertical-align: text-bottom;"/></p>
+    </div>  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+  
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "4.1"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

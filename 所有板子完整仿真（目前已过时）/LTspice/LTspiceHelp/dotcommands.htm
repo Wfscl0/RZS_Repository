@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Dot Commands</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="GENERATOR" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="Dot Commands"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Simulator Directives — Dot Commands</h1>
+    <p>To run a simulation, not only must the circuit be defined, but also the type of analysis to be performed. There are seven different types of analyses: linearized <a href="ac--performansmallsignalacanalys.htm">small signal AC</a>, <a href="dc--performadcsourcesweepanalysi.htm">DC sweep</a>, <a href="noise--performanoiseanalysis.htm">noise</a>, <a href="op--findthedcoperatingpoint.htm">DC operating point</a>, <a href="tf--findthedcsmall-signaltransfe.htm">small signal DC transfer function,</a> <a href="tran--doanonlineartransientanaly.htm">transient analysis,</a> and  <a href="dotfra.html">transient frequency response analysis</a>. Precisely one of these analyses must be specified when you run a simulation.</p>
+    <p>Whereas the circuit topology is typically schematically drafted, the commands are usually placed on the schematic as text. All such commands start with a period and are called &quot;dot commands&quot;.</p>
+    <p><a href="ac--performansmallsignalacanalys.htm">.AC — Perform an Small Signal AC Analysis Linearized About the DC Operating Point</a></p>
+    <p><a href="backanno--annotatethesubcircuitp.htm">.BACKANNO — Annotate the Subcircuit Pin Names on Port Currents</a></p>
+    <p><a href="dc--performadcsourcesweepanalysi.htm">.DC — Perform a DC Source Sweep Analysis</a></p>
+    <p><a href="end--endofnetlist.htm">.END — End of Netlist</a></p>
+    <p><a href="ends--endofsubcircuitdefinition.htm">.ENDS — End of Subcircuit Definition</a></p>
+    <p><a href="four--computeafouriercomponent.htm">.FOUR — Compute a Fourier Component</a></p>
+    <p><a href="dotfra.html">.FRA — Perform a Time-Domain Frequency Response Analysis</a></p>
+    <p><a href="func--userdefinedfunctions.htm">.FUNC — User Defined Functions</a></p>
+    <p><a href="global--declareglobalnodes.htm">.GLOBAL — Declare Global Nodes</a></p>
+    <p><a href="ic--setinitialconditions.htm">.IC — Set Initial Conditions</a></p>
+    <p><a href="include--includeanotherfile.htm">.INCLUDE — Include Another File</a></p>
+    <p><a href="dotkeep.htm">.KEEPNODE — Keep Nodes From Being Optimized Away</a></p>
+    <p><a href="lib--includealibrary.htm">.LIB — Include a Library</a></p>
+    <p><a href="loadbias--loadapreviouslysolvedd.htm">.LOADBIAS — Load a Previously Solved DC Solution</a></p>
+    <p><a href="loadstate.htm">.LOADSTATE — Load a Previously Saved Transient Operating Point</a></p>
+    <p><a href="machine--arbitrarystatemachine.htm">.MACHINE — Arbitrary State Machine</a></p>
+    <p><a href="measure--evaluateuser-definedele.htm">.MEASURE — Evaluate User-Defined Electrical Quantities</a></p>
+    <p><a href="model--defineaspicemodel.htm">.MODEL — Define a SPICE Model</a></p>
+    <p><a href="net--computenetworkparametersina.htm">.NET — Compute Network Parameters in a .AC Analysis</a></p>
+    <p><a href="nodeset--supplyhintsforinitialdc.htm">.NODESET — Supply Hints for Initial DC Solution</a></p>
+    <p><a href="noise--performanoiseanalysis.htm">.NOISE — Perform a Noise Analysis</a></p>
+    <p><a href="op--findthedcoperatingpoint.htm">.OP — Find the DC Operating Point</a></p>
+    <p><a href="options--setsimulatoroptions.htm">.OPTIONS — Set Simulator Options</a></p>
+    <p><a href="param--user-definedparameters.htm">.PARAM — User-Defined Parameters</a></p>
+    <p><a href="save--limitthequantityofsaveddat.htm">.SAVE — Limit the Quantity of Saved Data</a></p>
+    <p><a href="savebias--saveoperatingpointtodi.htm">.SAVEBIAS — Save Operating Point to Disk</a></p>
+    <p><a href="savestate.htm">.SAVESTATE — Save Transient Operating Point</a></p>
+    <p><a href="ac--performansmallsignalacanalys.htm">.STEP — Parameter Sweeps</a></p>
+    <p><a href="subckt--defineasubcircuit.htm">.SUBCKT — Define a Subcircuit</a></p>
+    <p><a href="temp--temperaturesweeps.htm">.TEMP — Temperature Sweeps</a></p>
+    <p><a href="tf--findthedcsmall-signaltransfe.htm">.TF — Find the DC Small-Signal Transfer Function</a></p>
+    <p><a href="tran--doanonlineartransientanaly.htm">.TRAN — Do a Nonlinear Transient Analysis</a></p>
+    <p><a href="wave--writeselectednodestoawavfi.htm">.WAVE — Write Selected Nodes to a .Wav File</a></p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.2"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Symbol and Library Search Paths</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="Symbol and Library Search Paths"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Search Paths</h1>
+    <p>By default, LTspice searches for symbols and circuit libraries by the following <em>priority</em>:</p>
+    <ul>
+      <li>The folder of the currently active schematic and its subfolders</li>
+      <li>Folders defined under the Search Paths Settings tab</li>
+      <li>The default User\Documents\LTspice folder (changeable in this tab)</li>
+      <li>The ADI installed library (factory default is not changeable)</li>
+    </ul>
+    <p>You can change the user files location, and you can expand the search by adding paths here.</p>
+    <p><img src="assets/images/Search_Paths.png"/> [TEMP]</p>
+    <p class="note"><strong class="notehead">Note: </strong>Search is used for populating the Place Component dialog with symbols and for simulation with subcircuits in library files. Note that a comprehensive search for symbols is made when you open a new or existing Schematic or you press Refresh in the Place Component dialog—this search is used to populate the Place Component dialog. Note that search checks for symbol files in all subfolders of your schematic‘s folder. If your schematic is placed in a folder containing a deep hierarchy, or is on a slow network drive, you may get a message asking if you do not want to complete the search, i.e. taking a long time. You can short-circuit this process by turning on Don&#39;t place symbols from schematic subdirectories in this Settings tab.</p>
+    <p class="note"><strong class="notehead">Note: </strong>Do not make changes to any of the factory-installed libraries. These will be overwritten when LTspice or components are updated. Changes you make to folders and files in your User Files are safe.</p>
+    <h2>The Settings</h2>
+    <h3>Don&#39;t place symbols from schematic subdirectories</h3>
+    <p>Limits symbol search to the schematic‘s root directory, ignoring subdirectories. Applies to population of Place Component dialog.</p>
+    <h3>User Files</h3>
+    <p>Your main repository of schematics, custom symbols, plot defs, subcircuit libraries, custom model libraries (*.dio, *.res), etc. Default is your …\Documents\LTspice folder. This folder is never overwritten by LTspice updates or component updates.</p>
+    <h3>Symbol Search Paths</h3>
+    <p>Additional search paths you would like to LTspice to use when populating the Place Component dialog with symbols. Subfolders are also searched when populating the Place Component dialog. </p>
+    <p>Right-Click &gt; Browse to browse for folders.</p>
+    <h3>Simulation Library Search Paths</h3>
+    <p>Paths you would LTspice to search when simulating, e.g. library and subcircuit files called by .include statements or called on by symbols. Each defined path is considered a root for any relative paths in your schematic.</p>
+    <p>Enter each path on its own line or separate with semicolons. Right-Click &gt; Browse to browse for folders.</p>
+    <h2>Relative Paths and Environment Variables</h2>
+    <p>Environment variables are supported in paths defined here. In LTspice simulation,  all paths listed in this tab act as roots to any relative paths defined in a schematic.</p>
+    <p></p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "6.6"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

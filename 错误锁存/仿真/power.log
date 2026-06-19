@@ -1,0 +1,18 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\仿真\power.net
+Start Time: Tue Apr  7 20:37:36 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.097 seconds.
+
+Files loaded:
+D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\仿真\power.net
+D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\仿真\power1.lib
+

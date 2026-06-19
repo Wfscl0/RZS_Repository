@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>B. Arbitrary Behavioral Voltage or Current Sources</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="B. Arbitrary Behavioral Voltage or Current Sources"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>B. Arbitrary Behavioral Voltage or Current Sources</h1>
+    <p>Symbol names: BV, BI</p>
+    <p>Syntax of behavioral voltage source:</p>
+    <p class="netlist">Bnnn n001 n002 V=&lt;expression&gt; [ic=&lt;value&gt;]<br/>
+      + [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;]<br/>
+      + laplace=&lt;expression&gt; [window=&lt;time&gt;]<br/>
+      + [nfft=&lt;number&gt;] [mtol=&lt;number&gt;]]</p>
+    <p>Syntax of behavioral current source:</p>
+    <p class="netlist">Bnnn n001 n002 I=&lt;expression&gt; [ic=&lt;value&gt;]<br/>
+      + [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;] [Rpar=&lt;value&gt;]<br/>
+      + [laplace=&lt;expression&gt; [window=&lt;time&gt;]<br/>
+      + [nfft=&lt;number&gt;] [mtol=&lt;number&gt;]]</p>
+    <p>Syntax of behavioral resistor:</p>
+    <p class="netlist">Bnnn n001 n002 R=&lt;expression&gt; [ic=&lt;value&gt;] [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;] [Rpar=&lt;value&gt;]</p>
+    <p>This acts as a current source with a current equal to the voltage across the device divided by the specified resistance.</p>
+    <p>Syntax of behavioral power source:</p>
+    <p class="netlist">Bnnn n001 n002 P=&lt;expression&gt; [vprx=&lt;value&gt;] [ic=&lt;value&gt;] [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;]</p>
+    <p>This acts as a current source with a current equal to the specified power divided by the voltage across the device. When the latter is between 0 and <span class="netlist">vprx</span>, the power smoothly transitions by means of a 3rd oder polynomial.</p>
+    <p>For the current source and the behavioral resistor, a parallel resistance may be specified with the <span class="netlist">Rpar</span> instance parameter.</p>
+    <p><span class="netlist">Tripdv</span> and <span class="netlist">tripdt</span> control step rejection. If the value of the source changes by more than <span class="netlist">tripdv</span> volts/amperes in <span class="netlist">tripdt</span> seconds, that simulation time step is rejected.</p>
+    <p>Expressions can contain the following:</p>
+    <ul class="Disc">
+      <li>Node voltages, e.g., V(n001)</li>
+      <li>Node voltage differences, e.g., V(n001, n002)</li>
+      <li>Currents of independent voltage sources</li>
+      <li>Circuit element currents; for example, I(S1), the current through switch S1 or Ib(Q1), the base current of Q1. However, it is assumed that the circuit element current is varying quasi-statically, that is, there is no instantaneous feedback between the current through the referenced device and the behavioral source output. Similarly, any ac component of such a device current is assumed to be zero in a small signal linear .AC analysis. These limitations stem from the modified nodal analysis (MNA) employed by LTspice, which leads to a set of equations that does not contain those device currents as solution. As a result, it is impossible to express a relationship between those device currents and the value of the behavioral source as equation. This does not apply to independent voltage sources, thus you can use these as current probes instead if required.</li>
+      <li>The keyword, &quot;time&quot; meaning the current time in the simulation.</li>
+      <li>The keyword, &quot;pi&quot; meaning 3.14159265358979323846.</li>
+      <li>The following functions:
+        <table>
+          <tbody>
+            <tr>
+              <th>Function Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>abs(x)</td>
+              <td>Absolute value of x</td>
+            </tr>
+            <tr>
+              <td>absdelay(x,t[,tmax])</td>
+              <td>x delayed by t. Optional max delay tmax.</td>
+            </tr>
+            <tr>
+              <td>acos(x)</td>
+              <td>Real part of the arc cosine of x, e.g., acos(-5) returns 3.14159, not 3.14159+2.29243i</td>
+            </tr>
+            <tr>
+              <td>arccos(x)</td>
+              <td>Synonym for acos()</td>
+            </tr>
+            <tr>
+              <td>acosh(x)</td>
+              <td>Real part of the arc hyperbolic cosine of x, e.g., acosh(0.5) returns 0, not 1.0472i</td>
+            </tr>
+            <tr>
+              <td>asin(x)</td>
+              <td>Real part of the arc sine of x, asin(-5) is -1.57080, not -1.57080+2.29243i</td>
+            </tr>
+            <tr>
+              <td>arcsin(x)</td>
+              <td>Synonym for asin()</td>
+            </tr>
+            <tr>
+              <td>asinh(x)</td>
+              <td>Arc hyperbolic sine</td>
+            </tr>
+            <tr>
+              <td>atan(x)</td>
+              <td>Arc tangent of x</td>
+            </tr>
+            <tr>
+              <td>arctan(x)</td>
+              <td>Synonym for atan()</td>
+            </tr>
+            <tr>
+              <td>atan2(y,x)</td>
+              <td>Four quadrant arc tangent of y/x</td>
+            </tr>
+            <tr>
+              <td>atanh(x)</td>
+              <td>Arc hyperbolic tangent</td>
+            </tr>
+            <tr>
+              <td>buf(x)</td>
+              <td>1 if x &gt; 0.5, else 0</td>
+            </tr>
+            <tr>
+              <td>cbrt(x)</td>
+              <td><img src="assets/images/math/cbrt.svg"/></td>
+            </tr>
+            <tr>
+              <td>ceil(x)</td>
+              <td>Integer equal or greater than x</td>
+            </tr>
+            <tr>
+              <td>cos(x)</td>
+              <td>Cosine of x</td>
+            </tr>
+            <tr>
+              <td>cosh(x)</td>
+              <td>Hyperbolic cosine of x</td>
+            </tr>
+            <tr>
+              <td>ddt(x)</td>
+              <td>Time derivative of x</td>
+            </tr>
+            <tr>
+              <td>delay(x,t[,tmax]</td>
+              <td>Same as absdelay()</td>
+            </tr>
+            <tr>
+              <td>dnlim(x,A,Δ)</td>
+              <td>
+                <p>Similar to max(x,A) but with a continuous 1st derivative transition width Δ:</p>
+                <p><img src="assets/images/math/dnlim.svg"/></p>
+              </td>
+            </tr>
+            <tr>
+              <td>exp(x)</td>
+              <td>exponential function of x</td>
+            </tr>
+            <tr>
+              <td>floor(x)</td>
+              <td>Integer equal to or less than x</td>
+            </tr>
+            <tr>
+              <td>hypot(x,y)</td>
+              <td><img src="assets/images/math/hypot.svg"/></td>
+            </tr>
+            <tr>
+              <td>idt(x[,ic[,a]])</td>
+              <td>Integrate x, optional initial condition ic, reset if a is true.</td>
+            </tr>
+            <tr>
+              <td>idtmod(x[,ic[,m[,o]]]</td>
+              <td>Integrate x, optional initial condition ic, reset on reaching modulus m, offset output by o.</td>
+            </tr>
+            <tr>
+              <td>if(x,y,z)</td>
+              <td>If x &gt; 0.5, then y else z</td>
+            </tr>
+            <tr>
+              <td>int(x)</td>
+              <td>Convert x to integer</td>
+            </tr>
+            <tr>
+              <td>inv(x)</td>
+              <td>0 if x &gt; 0.5, else 1</td>
+            </tr>
+            <tr>
+              <td>limit(x,y,z)</td>
+              <td>Intermediate value of x, y, and z</td>
+            </tr>
+            <tr>
+              <td>ln(x)</td>
+              <td>Natural logarithm of x</td>
+            </tr>
+            <tr>
+              <td>log(x)</td>
+              <td>Alternate syntax for ln()</td>
+            </tr>
+            <tr>
+              <td>log10(x)</td>
+              <td>Base 10 logarithm</td>
+            </tr>
+            <tr>
+              <td>max(x,y)</td>
+              <td>The greater of x or y</td>
+            </tr>
+            <tr>
+              <td>min(x,y)</td>
+              <td>The smaller of x or y</td>
+            </tr>
+            <tr>
+              <td>mod(x,y)</td>
+              <td><span>Remainder of the division operation x / y</span></td>
+            </tr>
+            <tr>
+              <td>noise()</td>
+              <td>Returns 1 if a .noise analysis is being done. Otherwise 0.</td>
+            </tr>
+            <tr>
+              <td>pow(x,y)</td>
+              <td>Real part of x**y, e.g., pow(-1,0.5)=0, not i.</td>
+            </tr>
+            <tr>
+              <td>pwr(x,y)</td>
+              <td>abs(x)**y</td>
+            </tr>
+            <tr>
+              <td>pwrs(x,y)</td>
+              <td>sgn(x)*abs(x)**y</td>
+            </tr>
+            <tr>
+              <td>rand(x)</td>
+              <td>Random number between 0 and 1 depending on the integer value of x.</td>
+            </tr>
+            <tr>
+              <td>random(x)</td>
+              <td>Similar to rand(), but smoothly transitions between values.</td>
+            </tr>
+            <tr>
+              <td>round(x)</td>
+              <td>Nearest integer to x</td>
+            </tr>
+            <tr>
+              <td>sdt(x[,ic[,assert]])</td>
+              <td>Alternate syntax for idt()</td>
+            </tr>
+            <tr>
+              <td>sgn(x)</td>
+              <td>Sign of x</td>
+            </tr>
+            <tr>
+              <td>sin(x)</td>
+              <td>Sine of x</td>
+            </tr>
+            <tr>
+              <td>sinh(x)</td>
+              <td>Hyperbolic sine of x</td>
+            </tr>
+            <tr>
+              <td>smallsig()</td>
+              <td>Returns 1 if a .ac or .noise analysis is being done. Otherwise 0.</td>
+            </tr>
+            <tr>
+              <td>square(x)</td>
+              <td>x²</td>
+            </tr>
+            <tr>
+              <td>sqrt(x)</td>
+              <td><img src="assets/images/math/sqrt.svg"/></td>
+            </tr>
+            <tr>
+              <td>table(x,a,b,c,d,...)</td>
+              <td>Interpolate a value for x based on a look up table given as a set of pairs of points.</td>
+            </tr>
+            <tr>
+              <td>table(x, .include &quot;&lt;filename&gt;&quot;)</td>
+              <td>Interpolate a value for x based on a look up table given as a set of pairs of points listed as numbers in the file &lt;filename&gt;.</td>
+            </tr>
+            <tr>
+              <td>tan(x)</td>
+              <td>Tangent of x.</td>
+            </tr>
+            <tr>
+              <td>tanh(x)</td>
+              <td>Hyperbolic tangent of x</td>
+            </tr>
+            <tr>
+              <td>u(x)</td>
+              <td>Unit step, i.e., 1 if x &gt; 0, else 0</td>
+            </tr>
+            <tr>
+              <td>uplim(x,y,z)</td>
+              <td>
+                <p>Similar to min(x,A) but with a continuous 1st derivative transition width Δ:</p>
+                <p><img src="assets/images/math/uplim.svg"/></p>
+              </td>
+            </tr>
+            <tr>
+              <td>uramp(x)</td>
+              <td>x if x &gt; 0, else 0</td>
+            </tr>
+            <tr>
+              <td>white(x)</td>
+              <td>Random number between -0.5 and 0.5 smoothly transitions between values even more smoothly than random().</td>
+            </tr>
+            <tr>
+              <td>xor(x,y)</td>
+              <td>Converts x and y to Boolean and returns x xor y.</td>
+            </tr>
+            <tr>
+              <td>!(x)</td>
+              <td>Alternative syntax for inv(x)</td>
+            </tr>
+            <tr>
+              <td>~(x)</td>
+              <td>Alternative syntax for inv(x)</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>The following operations, listed in ascending order of precedence:
+        <table>
+          <tbody>
+            <tr>
+              <td>Operand</td>
+              <td>Description</td>
+            </tr>
+            <tr>
+              <td>&amp;</td>
+              <td>Convert the expressions to either side to Boolean, then AND.</td>
+            </tr>
+            <tr>
+              <td>|</td>
+              <td>Convert the expressions to either side to Boolean, then OR.</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>Convert the expressions to either side to Boolean, then XOR.</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>&gt;</td>
+              <td>True if the expression on the left is greater than the expression on the right, otherwise false.</td>
+            </tr>
+            <tr>
+              <td>&lt;</td>
+              <td>True if the expression on the left is less than the expression on the right, otherwise false.</td>
+            </tr>
+            <tr>
+              <td>&gt;=, ≥</td>
+              <td>True if the expression on the left is greater than or equal the expression on the right, otherwise false.</td>
+            </tr>
+            <tr>
+              <td>&lt;=, ≤</td>
+              <td>True if the expression on the left is less than or equal the expression on the right, otherwise false.</td>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>True if the expression on the left equals the expression on the right, otherwise false.</td>
+            </tr>
+            <tr>
+              <td>!=, &lt;&gt;, ≠</td>
+              <td>False if the expression on the left equals the expression on the right, otherwise true.</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>+</td>
+              <td>Floating point addition</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Floating point subtraction</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Floating point multiplication</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Floating point division</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Remainder of floating point division, same as mod(x,y) function</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>Raise left hand side to power of right hand side. Only the real part is returned, e.g., -1**1.5 gives zero not i.</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>!, ~</td>
+              <td>Convert the following expression to Boolean and invert.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+    <p>True is numerically equal to 1 and False is 0. Conversion to Boolean converts a value to 1 if the value is greater than 0.5, otherwise the value is converted to 0.</p>
+    <p>Note that LTspice uses the ^ operator for Boolean XOR, except in Laplace expressions (see below), where it means exponentiation. This means that when you import a 3rd party model you may need to translate the syntax such as x^y to x**y or even pwr(x,y).</p>
+    <p>If an optional Laplace transform is defined, that transform is applied to the result of the behavioral current or voltage. The Laplace transform must be a function solely of s. The frequency response at frequency f is found by substituting s with sqrt(-1)*2*pi*f. The time domain behavior is found from the sum of the instantaneous current(or voltage) with the convolution of the history of this current(or voltage) with the impulse response. Numerical inversion of a Laplace transfer function to the time domain impulse response is a potentially compute-bound process and a topic of current numerical research. In LTspice, the impulse response is found from the FFT of a discrete set points in frequency domain response. This process is prone to the usual artifacts of FFT&#39;s such as spectral leakage and picket fencing that is common to discrete FFT&#39;s. LTspice uses a proprietary algorithm that exploits that it has an exact analytical expression for the frequency domain response and chooses points and windows to cause such artifacts to diffract precisely to zero. However, LTspice must guess an appropriate frequency range and resolution. It is recommended that the LTspice first be allowed to make a guess at this. The length of the window and number of FFT data points used will be reported in the .log file. You can then adjust the algorithm&#39;s choices by explicitly setting nfft and window length. The reciprocal of the value of the window is the frequency resolution. The value of nfft times this resolution is the highest frequency considered. Note that the convolution of the impulse response with the behavioral source is also potentially a compute bound process.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.2"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

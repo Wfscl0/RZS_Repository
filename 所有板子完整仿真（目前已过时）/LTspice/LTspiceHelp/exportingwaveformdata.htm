@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Exporting Waveform Data</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="Exporting Waveform Data"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Exporting/Merging Waveform Data</h1>
+    <h4>Can I export the waveform data to other applications?</h4>
+    <p>You can copy a plot as bitmap by making a waveform window active (e.g. by clicking on the title bar) then right-click &gt; Copy Image to Clipboard. Then, in an application that accepts bitmap pastes from the clipboard like Word or Paint, type Ctrl-V. Note that this also works for bitmaps of schematics. These images can also be exported as Windows metafiles(Menu command Tools &gt; Write to a .wmf file) which writes the image as vector graphics to a .wmf file that can be imported in various desktop publishing tools. When exporting a metafile of waveform data, you first go to Tools &gt; Settings &gt; Waveform &gt; Font and select Arial. The default, System, is highly legible on a CRT, but is a fixed font that does not scale correctly in metafiles.</p>
+    <h4>OK, that works for bitmaps, but can I get the data itself to an application like Excel?</h4>
+    <p>There is an export utility(Waveform Menu: File &gt; Export) that allows data to be exported to an ASCII file. There is also a 3rd party free utility written by Helmut Sennewald. It is available from the independent users&#39; group <a href="http://groups.io/g/LTspice" target="_blank">http://groups.io/g/LTspice</a>. This utility allows various forms of manipulation of the data including the ability to merge waveforms from different simulation runs.</p>
+    <h4>But isn&#39;t there any way to export the waveform data to other applications without resorting to 3rd party software?</h4>
+    <p>Yes. Make the waveform window the active window and use menu command File &gt; Export.</p>
+    <h4>But I want the data in equally spaced timesteps. Is there anyway to do that?</h4>
+    <p>Yes. Do the the FFT of the desired data. Before the FFT, the data is interpolated to equally spaced time steps. Now do the FFT on the FFT&#39;ed data. That will recover the equally spaced time-step data and export that.</p>
+    <h4>But if I do the FFT twice, won&#39;t I lose accuracy?</h4>
+    <p>No. LTspice&#39;s FFT algorithm is bit-accurate to double precision.</p>
+    <h4>But what if I don&#39;t want the data interpolated to a number of FFT bins that is a power of 2?</h4>
+    <p>Then enter the number of bins you want to use. LTspice uses a proprietary FFT algorithm that works for an arbitrary number of bins.</p>
+    <p> </p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "7.12"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

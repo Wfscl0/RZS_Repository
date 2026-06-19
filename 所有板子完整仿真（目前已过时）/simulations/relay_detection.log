@@ -1,0 +1,71 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\codex\sim\simulations\relay_detection.cir
+Start Time: Mon May 18 20:25:02 2026
+Options:plotwinsize=0
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir(141): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}
+                                      ^
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir(143): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}
+                                      ^
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir(145): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}
+                                                   ^
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir(147): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}
+                                                   ^
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir(141): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}
+                                      ^
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir(143): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}
+                                      ^
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir(145): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}
+                                                   ^
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir(147): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}
+                                                   ^
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir(141): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}
+                                      ^
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir(143): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}
+                                      ^
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir(145): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}
+                                                   ^
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir(147): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}
+                                                   ^
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir(141): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}
+                                      ^
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir(143): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}
+                                      ^
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir(145): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}
+                                                   ^
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir(147): Note: The caret character means exponentiation in this context. If you wish to silence this warning, use the "**" operator instead or add ".OPTIONS NO_CARET_WARNING" to your netlist.
++ 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}
+                                                   ^
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.579 seconds.
+
+Files loaded:
+D:\codex\sim\simulations\relay_detection.cir
+D:\codex\sim\models\official\extracted\SN74LVC1G14_SCEM637\SN74LVC1G14.cir
+D:\codex\sim\models\official\extracted\SN74LVC2G17_SCEM615\SN74LVC2G17.cir
+
+sense_closed: V(sense) =4.73286151886 at 0.002
+actual_closed: V(actual) =4.99989080429 at 0.002
+hash_closed: V(hash) =0 at 0.002
+sense_open: V(sense) =0.0193050069509 at 0.05
+actual_open: V(actual) =0 at 0.05
+hash_open: V(hash) =4.99989080429 at 0.05

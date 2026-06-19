@@ -1,0 +1,52 @@
+* BSPD timing, hold, and reset check.
+* Comparator outputs are represented by thresholded behavioral signals because the
+* workbook marks oil-pressure thresholds as not yet measured.
+
+.option plotwinsize=0
+
+VSDC_IN sdc_in 0 24
+VRESET reset_n 0 PWL(0 5 12.2 5 12.21 0 12.30 0 12.31 5 12.6 5)
+
+* oil_ok high = brake/oil pressure condition active.
+VOIL_OK oil_ok 0 PWL(0 0 100m 0 101m 5 2.0 5 2.001 0 12.6 0)
+
+* current_ma is represented as volts: 1 V = 1 mA. Workbook threshold is 11.11 mA.
+VCURRENT current_ma 0 PWL(0 0 100m 0 101m 12 2.0 12 2.001 0 12.6 0)
+
+.model DCLAMP D(Is=1n Rs=0.1 N=1)
+VCC vcc 0 5
+
+B_FAULT_COND fault_cond 0 V={if(V(oil_ok)>2.5, if(V(current_ma)>11.11, 5, 0), 0)}
+
+* Approximate the 555 RC delay around R8=39k and C11=6.8uF: 1.1*R*C ~= 292 ms.
+CDELAY delay 0 6.8u IC=0
+RDELAY delay 0 1G
+BCHARGE delay 0 I={if(V(fault_cond)>2.5, -60u, 100u)}
+DDELAY_H delay vcc DCLAMP
+DDELAY_L 0 delay DCLAMP
+
+CTRIP trip 0 1u IC=0
+RTRIP trip 0 1G
+BTRIP trip 0 I={if(V(delay)>2.5, -0.02, 0)-if(V(reset_n)<0.5, -0.02, 0)}
+DTRIP_H trip vcc DCLAMP
+DTRIP_L 0 trip DCLAMP
+
+B_SDC_OUT sdc_out 0 V={if(V(sdc_in)>10, if(V(trip)>2.5, 0, 24), 0)}
+
+.tran 0 12.6 0 1m uic
+
+.meas tran fault_assert_time WHEN V(fault_cond)=2.5 RISE=1
+.meas tran fault_clear_time WHEN V(fault_cond)=2.5 FALL=1
+.meas tran fault_condition FIND V(fault_cond) AT=200m
+.meas tran sdc_before_delay FIND V(sdc_out) AT=250m
+.meas tran sdc_at_fault_plus_500ms FIND V(sdc_out) AT=601m
+.meas tran trip_time WHEN V(sdc_out)=12 FALL=1
+.meas tran trip_delay_s PARAM trip_time-fault_assert_time
+.meas tran trip_delay_ms PARAM 1000*(trip_time-fault_assert_time)
+.meas tran trip_lt_500ms PARAM if((trip_time-fault_assert_time)<0.5, 1, 0)
+.meas tran sdc_after_fault_clear FIND V(sdc_out) AT=3.0
+.meas tran sdc_after_clear_10s FIND V(sdc_out) AT=12.05
+.meas tran sdc_before_power_restart FIND V(sdc_out) AT=12.19
+.meas tran sdc_after_power_restart FIND V(sdc_out) AT=12.45
+
+.end

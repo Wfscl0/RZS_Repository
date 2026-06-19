@@ -1,0 +1,28 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\codex\sim\simulations\bspd.cir
+Start Time: Mon May 18 20:58:11 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 0.089 seconds.
+
+Files loaded:
+D:\codex\sim\simulations\bspd.cir
+
+fault_assert_time: V(fault_cond)=2.5  AT 0.100925878906
+fault_clear_time: V(fault_cond)=2.5  AT 2.00007421875
+fault_condition: V(fault_cond) =5 at 0.2
+sdc_before_delay: V(sdc_out) =24 at 0.25
+sdc_at_fault_plus_500ms: V(sdc_out) =0 at 0.601
+trip_time: V(sdc_out)=12  AT 0.415218270238
+trip_delay_s: trip_time-fault_assert_time=0.314292391332
+trip_delay_ms: 1000*(trip_time-fault_assert_time)=314.292391332
+trip_lt_500ms: if((trip_time-fault_assert_time)<0.5, 1, 0)=1
+sdc_after_fault_clear: V(sdc_out) =0 at 3
+sdc_after_clear_10s: V(sdc_out) =0 at 12.05
+sdc_before_power_restart: V(sdc_out) =0 at 12.19
+sdc_after_power_restart: V(sdc_out) =24 at 12.45

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>S. Voltage Controlled Switch</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="S. Voltage Controlled Switch,Voltage Controlled Switch"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>S. Voltage Controlled Switch</h1>
+    <p>Symbol Names: SW</p>
+    <p>Syntax:</p>
+    <p class="netlist">Sxxx n1 n2 nc+ nc- &lt;model&gt;|&lt;string expression&gt; [on,off]</p>
+    <p>Example:</p>
+    <p class="netlist">S1 out 0 in 0 MySwitch<br/>
+      .model MySwitch SW(Ron=.1 Roff=1Meg Vt=0 Vh=-.5 Lser=10n Vser=.6)</p>
+    <p>The voltage between nodes nc+ and nc- controls the switch&#39;s impedance between nodes n1 and n2. A model card is required to define the behavior of the switch. See the schematic file .\examples\Educational\Vswitch.asc to see an example of a model card placed directly on a schematic as a SPICE directive.</p>
+    <p>Voltage Controlled Switch Model Parameters</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+          <th>Default</th>
+        </tr>
+        <tr>
+          <td>Vt</td>
+          <td>Threshold voltage</td>
+          <td>V</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Vh</td>
+          <td>Hysteresis voltage</td>
+          <td>V</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Ron</td>
+          <td>On resistance</td>
+          <td>Ω</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Roff</td>
+          <td>Off resistance</td>
+          <td>Ω</td>
+          <td>1/Gmin</td>
+        </tr>
+        <tr>
+          <td>Lser</td>
+          <td>Series inductance</td>
+          <td>H</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Vser</td>
+          <td>Series voltage</td>
+          <td>V</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Ilimit</td>
+          <td>Current limit</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The switch has three distinct modes of voltage control, depending on the value of the hysteresis voltage, Vh. If Vh is zero, the switch is always completely on or off depending upon whether the input voltage is above the threshold. If Vh is positive, the switch shows hysteresis, as if it was controlled by a Schmitt trigger with trip points at Vt - Vh and Vt + Vh. Note that Vh is half the voltage between trip points which is different than the common laboratory nomenclature. If Vh is negative, the switch will smoothly transition between the on and off impedances. The transition occurs between the control voltages of Vt - Vh and Vt + Vh. The smooth transition follows a low order polynomial fit to the logarithm of the switch&#39;s conduction.</p>
+    <p>There is also a level 2 voltage-controlled switch which is an advanced version of the level 1 switch with negative hysteresis. The level 2 switch is never completely on or off. The conduction as a function of control voltage Vc is</p>
+    <p>g(Vc) = exp(A * atan((Vc - Vt)/abs(Vh)) + B)</p>
+    <p>where</p>
+    <p>A = log(Roff / Ron) / π<br/>
+      B = log(1 / (Roff * Ron)) / 2</p>
+    <p>Also, the transition of the level 2 switch to current limit is gradual instead of abrupt. At a fixed control voltage, the I-V curve is given by the equation</p>
+    <p>I(V) = Ilimit * tanh(g(Vc) * V)</p>
+    <p>where Ilimit defaults to 10 amperes for the level 2 switch.</p>
+    <p>The level 2 switch supports the option to conduct in only one direction by either specifying the flag &quot;oneway&quot; or specifying a voltage drop with parameter Vser. The transition between forward conduction and reverse open circuit can be specified to be a smooth transition by specifying the parameter epsilon to be non-zero.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.17"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

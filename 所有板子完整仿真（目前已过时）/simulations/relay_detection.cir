@@ -1,0 +1,33 @@
+* Relay detection board polarity check.
+* Uses TI official SN74LVC1G14 and SN74LVC2G17 behavioral SPICE models.
+
+.option plotwinsize=0
+.include ../models/official/extracted/SN74LVC1G14_SCEM637/SN74LVC1G14.cir
+.include ../models/official/extracted/SN74LVC2G17_SCEM615/SN74LVC2G17.cir
+
+VCC vcc 0 5
+
+* ctrl high = relay auxiliary contact closed; ctrl low = contact open.
+VCTRL ctrl 0 PWL(0 5 4m 5 4.01m 0 8m 0)
+.model SWCONTACT SW(Ron=0.05 Roff=1G Vt=2.5 Vh=0.1)
+
+* One representative channel; MAINN and PRE use the same topology.
+R_PULL vcc main_1 4.7k
+S_CONTACT main_1 sense ctrl 0 SWCONTACT
+R_PD sense 0 100k
+C_FILTER sense 0 100n
+
+* Updated schematic/netlist: SN74LVC2G17 creates *_ACTUAL, SN74LVC2G14 creates *#.
+X_ACTUAL actual sense vcc 0 SN74LVC2G17
+X_HASH hash sense vcc 0 SN74LVC1G14
+
+.tran 0 80m 0 20u
+
+.meas tran sense_closed FIND V(sense) AT=2m
+.meas tran actual_closed FIND V(actual) AT=2m
+.meas tran hash_closed FIND V(hash) AT=2m
+.meas tran sense_open FIND V(sense) AT=50m
+.meas tran actual_open FIND V(actual) AT=50m
+.meas tran hash_open FIND V(hash) AT=50m
+
+.end

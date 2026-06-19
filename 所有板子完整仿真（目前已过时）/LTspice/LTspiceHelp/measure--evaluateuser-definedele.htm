@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>.MEASURE — Evaluate User-Defined Electrical Quantities</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content=".MEASURE"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>.MEASURE — Evaluate User-Defined Electrical Quantities</h1>
+    <p>There are two basic different types of .MEASURE statements. Those that refer to a point along the abscissa (the independent variable plotted along the horizontal axis, i.e., the time axis of a .tran analysis) and .MEASURE statements that refer to a range over the abscissa. The first version, those that point to one point on the abscissa, are used to print a data value or expression thereof at a specific point or when a condition is met. The following syntax is used:</p>
+    <p>Syntax:</p>
+    <p class="netlist">.MEAS[URE] [AC|DC|OP|TRAN|TF|NOISE] &lt;name&gt;<br/>
+      + [&lt;FIND|DERIV|PARAM&gt; &lt;expr&gt;]<br/>
+      + [WHEN &lt;expr&gt; | AT=&lt;expr&gt;]]<br/>
+      + [TD=&lt;val1&gt;] [&lt;RISE|FALL|CROSS&gt;=[&lt;count1&gt;|LAST]]</p>
+    <p>Note one can optionally state the type of analysis to which the .MEAS statement applies. This allows you to use certain .MEAS statements only for certain analysis types. The name is required to give the result a parameter name that can be used in other .MEAS statements. Below are example .MEAS statements that refer to a single point along the abscissa:</p>
+    <p class="netlist">.MEAS TRAN res1 FIND V(out) AT=5m</p>
+    <p>Print the value of V(out) at t=5ms labeled as res1.</p>
+    <p class="netlist">.MEAS TRAN res2 FIND V(out)*I(Vout) WHEN V(x)=3*V(y)</p>
+    <p>Print the value of the expression V(out)*I(Vout) the first time the condition V(x)=3*V(y) is met. This will be labeled res2.</p>
+    <p class="netlist">.MEAS TRAN res3 FIND V(out) WHEN V(x)=3*V(y) cross=3</p>
+    <p>Print the value of V(out) the third time the condition V(x)=3*V(y) is met. This will be labeled res3.</p>
+    <p class="netlist">.MEAS TRAN res4 FIND V(out) WHEN V(x)=3*V(y) rise=last</p>
+    <p>Print the value of V(out) the last time the condition V(x)=3*V(y) is met when approached as V(x) increasing wrt 3*V(y). This will be labeled res4.</p>
+    <p class="netlist">.MEAS TRAN res5 FIND V(out) WHEN V(x)=3*V(y) cross=3 TD=1m</p>
+    <p>Print the value of V(out) the third time the condition</p>
+    <p>V(x)=3*V(y) is met, but don&#39;t start counting until the time as elapsed to 1ms. This will be labeled res5.</p>
+    <p class="netlist">.MEAS TRAN res6 PARAM 3*res1/res2</p>
+    <p>Print the value of 3*res1/res2. This form is useful for printing expressions of other .meas statement results. It&#39;s not intended that expressions based on direct simulation data, such as V(3), are present in the expression to be evaluated, but if they are, the data is taken from the last simulated point. The result will be labeled res6.</p>
+    <p>Note that the above examples, while referring to one point along the abscissa, the requested result is based on ordinate data(the dependent variables). If no ordinate information is requested, then the .MEAS statement prints point on the abscissa that the measurement condition occurs:</p>
+    <p class="netlist">.MEAS TRAN res6 WHEN V(x)=3*V(y)</p>
+    <p>Print the first time the condition V(x)=3*V(y) is met. This will be labeled res6.</p>
+    <p>The other type of .MEAS statement refers to a range over the abscissa. The following syntax is used:</p>
+    <p>Syntax:</p>
+    <p class="netlist">.MEAS [AC|DC|OP|TRAN|TF|NOISE] &lt;name&gt;<br/>
+      + [&lt;AVG|MAX|MIN|PP|RMS|INTEG&gt; &lt;expr&gt;]<br/>
+      + [TRIG &lt;lhs1&gt; [[VAL]=]&lt;rhs1&gt;] [TD=&lt;val1&gt;]<br/>
+      + [&lt;RISE|FALL|CROSS&gt;=&lt;count1&gt;]<br/>
+      + [TARG &lt;lhs2&gt; [[VAL]=]&lt;rhs2&gt;] [TD=&lt;val2&gt;]<br/>
+      + [&lt;RISE|FALL|CROSS&gt;=&lt;count2&gt;]</p>
+    <p>The range over the abscissa is specified with the points defined by &quot;TRIG&quot; and &quot;TARG&quot;. The TRIG point defaults to the start of the simulation if omitted. Similarly, the TARG point defaults to the end of simulation data. If all three of the TRIG, TARG, and the previous WHEN points are omitted, then the .MEAS statement operates over the entire range of data. The types of measurement operations that can be done over an interval are</p>
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Keyword</th>
+            <th>Operation performed over interval</th>
+          </tr>
+          <tr>
+            <td>AVG</td>
+            <td>Compute the average of &lt;expr&gt;</td>
+          </tr>
+          <tr>
+            <td>MAX</td>
+            <td>Find the maximum value of &lt;expr&gt;</td>
+          </tr>
+          <tr>
+            <td>MIN</td>
+            <td>Find the minimum value of &lt;expr&gt;</td>
+          </tr>
+          <tr>
+            <td>PP</td>
+            <td>Find the peak-to-peak of &lt;expr&gt;</td>
+          </tr>
+          <tr>
+            <td>RMS</td>
+            <td>Compute the root mean square of &lt;expr&gt;</td>
+          </tr>
+          <tr>
+            <td>INTEG</td>
+            <td>Integrate &lt;expr&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>If no measurement operation is specified, the result of the .MEAS statement is the distance along the abscissa between the TRIG and TARG points. Below are example interval .MEAS statements:</p>
+    <p class="netlist">.MEAS TRAN res7 AVG V(NS01)<br/>
+      + TRIG V(NS05) VAL=1.5 TD=1.1u FALL=1<br/>
+      + TARG V(NS03) VAL=1.5 TD=1.1u FALL=1</p>
+    <p>Print the value of average value of V(NS01) from the 1st fall of V(NS05) to 1.5V after 1.1us and the 1st fall of V(NS03) to 1.5V after 1.1us. This will be labeled res7.</p>
+    <p>For .AC analyses, the conditional expressions of complex data are translated to real conditions by considering only the real part of the complex value of the expression.</p>
+    <p>Also, the result of a .MEAS statement can be used in another .MEAS statement. In this example, the 3dB bandwidth is computed:</p>
+    <p class="netlist">.MEAS AC tmp max mag(V(out)); find the peak response and call it &quot;tmp&quot;<br/>
+      .MEAS AC BW trig mag(V(out))=tmp/sqrt(2) rise=1<br/>
+      + targ mag(V(out))=tmp/sqrt(2) fall=last</p>
+    <p>Print the difference in frequency between the two points 3dB down from peak response. NOTE: The data from a .AC analysis is complex and so are the .measurement statements results. However, the equality refers only to the real part of the complex number, that is, &quot;mag(V(out))=tmp/sqrt(2)&quot; is equivalent to Re(mag(V(out)))=Re(tmp/sqrt(2)).</p>
+    <p>When testing a condition such as &quot;when &lt;cond1&gt; = &lt;cond2&gt;&quot; you will want the condition to go through the equality, not just meet it. This relates to the fact that floating point equality should never be required due to the finite precision used in storing numbers.</p>
+    <p>The AVG, RMS, and INTEG operations are different for .NOISE analysis than the analysis types since the noise is more meaningfully integrated in quadrature over frequency. Hence AVG and RMS both give the RMS noise voltage and INTEG gives the integrated total noise. Hence, if you add the SPICE directives</p>
+    <p class="netlist">.MEAS NOISE out_totn INTEG V(onoise)<br/>
+      .MEAS NOISE in_totn INTEG V(inoise)</p>
+    <p>the total integrated input and output referenced rms noise will be printed in the .log file.</p>
+    <p>.MEAS statements are done in post processing after the simulation is completed. This allows you to write a script of .MEAS statements and execute them on a dataset. To do this, make the waveform window the active window and execute menu command File &gt; Execute .MEAS Script. Another consequence of .MEAS statements being done in post processing after the simulation is that the accuracy of the .MEAS statement output is limited by the accuracy of the waveform data after compression. You may want to adjust the compression settings for more precise .MEAS statement output.</p>
+    <p>.MEAS statements are usually just put on the schematic as a SPICE directive or in the netlist with the rest of the simulation commands and circuit definition. The output is put in the .log file which can be viewed with menu command View &gt; SPICE Error Log. If the simulation includes a .step command, the .measure statements are executed for each step and the results are printed as tables in the .log file. These tables for .measure results can be plotted like normal waveforms by this procedure:</p>
+    <p> i) After the simulation completes, execute menu menu command View &gt; SPICE Error Log</p>
+    <p>ii) Right click in the .log file and, execute context menu command Plot .step&#39;ed .meas data.</p>
+    <p>The .MEAS results are saved onto an SQLite .db file. The database is formed by four main tables: Parameters, Steps, Measurements, and Results. The Parameters table lists any .STEP items being swept, and the Steps table captures its values. The Measurements table captures the information about each .MEAS statement. And the Results table lists the values measure for each .MEAS and each .STEP value. If there are no parameters being swept, the Parameters and Steps tables will be empty.</p>
+    <p>The relationships between the tables are as follows.</p>
+    <p><img src="assets/images/dbMeasurementSchema.png" style="width: 960px; margin: 5px;"/></p>
+    <p>The following example circuit displays what the resulting tables would look like on a database browser.<br/>
+      <img src="assets/images/ac_stepDB.png"/>
+    </p>
+    <p>Note: To display the Step values together with the Results can be accomplished through an INNER JOIN query. For example, on your database browser issue the following SQL query:</p>
+    <p><span style="font-family:&#39;Courier New&#39;;">SELECT Results.*, Steps.Value AS Step_value FROM Steps INNER JOIN Results ON Results.Step = Steps.Step</span></p>
+    <p><img height="400" src="assets/images/ResultsWSteps.png" width="605"/></p>
+    <p>If your database browser supports plotting, place these results in a VIEW and plot:</p>
+    <p><span style="font-family:&#39;Courier New&#39;;">CREATE TEMP VIEW Resultswsteps AS SELECT Results.*, Steps.Value AS Step_value FROM Steps INNER JOIN Results ON Results.Step = Steps.Step</span></p>
+    <p><img height="440" src="assets/images/ResultsVsStepPlot.png" width="1153"/></p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.2.17"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

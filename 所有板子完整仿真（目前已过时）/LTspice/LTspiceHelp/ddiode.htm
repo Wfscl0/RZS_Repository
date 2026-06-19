@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>D. Diode</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="D. Diode"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>D. Diode</h1>
+    <p>Symbol Names: DIODE, ZENER, SCHOTTKY, VARACTOR, LED, TVS.</p>
+    <p>Syntax:</p>
+    <p class="netlist">Dnnn anode cathode &lt;model&gt;|&lt;string expression&gt; [area] [off] [m=&lt;val&gt;] [n=&lt;val&gt;] [temp=&lt;value&gt;]</p>
+    <p>Examples:</p>
+    <p class="netlist">D1 SW OUT MyIdealDiode<br/>
+      .model MyIdealDiode D(Ron=.1 Roff=1Meg Vfwd=.4)<br/>
+      D2 SW OUT dio2<br/>
+      .model dio2 D(Is=1e-10)</p>
+    <p>Instance parameter M sets the number of parallel devices while instance parameter N sets the number of series devices.</p>
+    <p>A diode requires a .model card to specify its characteristics. There are two types of diodes available. One is a conduction region-wise linear model that yields a computationally light weight representation of an idealized diode. It has three linear regions of conduction: on, off and reverse breakdown. Forward conduction and reverse breakdown can be nonlinear by specifying a current limit with Ilimit(revIlimit). tanh() is used to fit the slope of the forward conduction to the limit current. The parameters epsilon and revepsilon can be specified to smoothly switch between the off and conducting states. A quadratic function is fit between the off and on state such that the diode&#39;s I-V curve is continuous in value and slope and the transition occurs over a voltage specified by the value of epsilon for the off to forward conduction and revepsilon for the transition between off and reverse breakdown.</p>
+    <p>Below are the model parameters for this type of diode:</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+          <th>Default</th>
+        </tr>
+        <tr>
+          <td>Ron</td>
+          <td>Resistance in forward conduction</td>
+          <td>mΩ</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Roff</td>
+          <td>Resistance when off</td>
+          <td>Ω</td>
+          <td>1/Gmin</td>
+        </tr>
+        <tr>
+          <td>Vfwd</td>
+          <td>Forward threshold voltage to enter conduction</td>
+          <td>V</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Vrev</td>
+          <td>Reverse breakdown voltage</td>
+          <td>V</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Rrev</td>
+          <td>Breakdown impedance</td>
+          <td>Ω</td>
+          <td>Ron</td>
+        </tr>
+        <tr>
+          <td>Ilimit</td>
+          <td>Forward current limit</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Revilimit</td>
+          <td>Reverse current limit</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Epsilon</td>
+          <td>Width of quadratic region</td>
+          <td>V</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Revepsilon</td>
+          <td>Width of reverse quad. region</td>
+          <td>V</td>
+          <td>0.0</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>This idealized model is used if any of Ron, Roff, Vfwd, Vrev or Rrev is specified in the model.</p>
+    <p>The other model available is the standard Berkeley SPICE semiconductor diode but extended to handle more detailed breakdown behavior and recombination current. The area factor determines the number of equivalent parallel devices of a specified model. Below are the diode model parameters for this diode.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+          <th>Default</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Is</td>
+          <td>saturation current</td>
+          <td>A</td>
+          <td>1e-14</td>
+          <td>1e-7</td>
+        </tr>
+        <tr>
+          <td>Rs</td>
+          <td>Ohmic resistance</td>
+          <td>Ω</td>
+          <td>0.0</td>
+          <td>10.</td>
+        </tr>
+        <tr>
+          <td>N</td>
+          <td>Emission coefficient</td>
+          <td>-</td>
+          <td>1.0</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Tt</td>
+          <td>Transit-time</td>
+          <td>sec</td>
+          <td>0.0</td>
+          <td>2n</td>
+        </tr>
+        <tr>
+          <td>Cjo</td>
+          <td>Zero-bias junction cap.</td>
+          <td>F</td>
+          <td>0.0</td>
+          <td>2p</td>
+        </tr>
+        <tr>
+          <td>Vj</td>
+          <td>Junction potential</td>
+          <td>V</td>
+          <td>1.0</td>
+          <td>0.6</td>
+        </tr>
+        <tr>
+          <td>M</td>
+          <td>Grading coefficient</td>
+          <td>-</td>
+          <td>0.5</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>Eg</td>
+          <td>Activation energy</td>
+          <td>eV</td>
+          <td>1.11</td>
+          <td>
+            <p>1.11 Si<br/>
+              0.69 Sbd<br/>
+              0.67 Ge</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Xti</td>
+          <td>Sat.-current temp. exp</td>
+          <td>-</td>
+          <td>3.0</td>
+          <td>
+            <p>3.0 jn<br/>
+              2.0 Sbd</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Kf</td>
+          <td>Flicker noise coeff.</td>
+          <td>-</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Af</td>
+          <td>Flicker noise exponent</td>
+          <td>1.</td>
+          <td>1.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fc</td>
+          <td>Coeff. for forward-bias depletion capacitance formula</td>
+          <td>-</td>
+          <td>0.5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>BV</td>
+          <td>Reverse breakdown voltage</td>
+          <td>V</td>
+          <td>Infin.</td>
+          <td>40.</td>
+        </tr>
+        <tr>
+          <td>nbv</td>
+          <td>Reverse breakdown emission coefficient</td>
+          <td>-</td>
+          <td>1.0</td>
+          <td>2.0</td>
+        </tr>
+        <tr>
+          <td>Ibv</td>
+          <td>Current at breakdown voltage</td>
+          <td>A</td>
+          <td>1e-10</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ibvl</td>
+          <td>Low-level reverse breakdown knee current</td>
+          <td>A</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>nbvl</td>
+          <td>Low-level reverse breakdown emission coefficient</td>
+          <td>-</td>
+          <td>1.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tnom</td>
+          <td>Parameter measurement temp.</td>
+          <td>°C</td>
+          <td>27</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Isr</td>
+          <td>Recombination current parameter</td>
+          <td>A</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Nr</td>
+          <td>Isr emission coeff.</td>
+          <td>-</td>
+          <td>2.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ikf</td>
+          <td>High-injection knee current</td>
+          <td>A</td>
+          <td>Infin.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tikf</td>
+          <td>Linear Ikf temp coeff.</td>
+          <td>/°C</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Trs1</td>
+          <td>linear Rs temp coeff.</td>
+          <td>/°C</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Trs2</td>
+          <td>Quadratic Rs temp coeff.</td>
+          <td>/°C<sup>2</sup></td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tbv1</td>
+          <td>Breakdown voltage temp coeff.</td>
+          <td>/°C</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tbv2</td>
+          <td>Quadratic breakdown voltage temp coeff.</td>
+          <td>/°C<sup>2</sup></td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Perim</td>
+          <td>Default perimeter</td>
+          <td>m</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Isw</td>
+          <td>Sidewall Is</td>
+          <td>A</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ns</td>
+          <td>Sidewall emission coefficient</td>
+          <td>-</td>
+          <td>1.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Rsw</td>
+          <td>Sidewall series resistance</td>
+          <td>Ω</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Cjsw</td>
+          <td>Sidewall Cjo</td>
+          <td>F</td>
+          <td>0.0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Vjsw</td>
+          <td>Sidewall Vj</td>
+          <td>V</td>
+          <td>Vj</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>mjsw</td>
+          <td>Sidewall mj</td>
+          <td>-</td>
+          <td>0.33</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fcs</td>
+          <td>Sidewall Fc</td>
+          <td>-</td>
+          <td>Fc</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Vp</td>
+          <td>Soft reverse recovery parameter</td>
+          <td>-</td>
+          <td>0.0</td>
+          <td>0.65</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The soft reverse recovery parameter, Vp, adds a dQ/dt damping to diode charge as suggested by K.J. Teng and S. Pan in &#39;Modified charge-control equation for simulation of diode reverse recovery&#39;, Electronics Letters, 15th February 1996 Vol. 32 No. 4.</p>
+    <p>It is possible to annotate a model with voltage and current ratings. This information is displayed in the schematic capture GUI to assist in selecting a device but does not directly impact the electrical behavior in simulation. The following parameters may be specified.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>Vpk</td>
+          <td>Peak voltage rating</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Ipk</td>
+          <td>Peak current rating</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>Iave</td>
+          <td>Ave current rating</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>Irms</td>
+          <td>RMS current rating</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>diss</td>
+          <td>Maximum power dissipation rating</td>
+          <td>W</td>
+        </tr>
+      </tbody>
+    </table>
+    <p></p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.4"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

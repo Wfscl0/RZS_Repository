@@ -1,0 +1,1 @@
+rh._.exports({"0":[[".END — End of Netlist"]],"1":[[".END"]],"2":[[" ",".END — End of Netlist"]],"3":[[" ","This directive marks the end of the textual netlist. All lines after this one are ignored. Do not place this as text on the schematic, as the netlist extractor supplies it at the end."," ","Copyright © 1998–2026 by Analog Devices Inc.. All Rights Reserved."]],"id":"0"})

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>.OPTIONS — Set Simulator Options</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content=".OPTIONS"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>.OPTIONS — Set Simulator Options</h1>
+    <table>
+      <tbody>
+        <tr>
+          <th>Keyword</th>
+          <th>Default</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>abstol</td>
+          <td>1pA</td>
+          <td>Absolute current error tolerance</td>
+        </tr>
+        <tr>
+          <td>allow_ambiguous_models</td>
+          <td>false</td>
+          <td>A model in use that has more than one definition is an error. This option turns such errors into warnings and makes LTspice keep going.</td>
+        </tr>
+        <tr>
+          <td>baudrate</td>
+          <td>(none)</td>
+          <td>Used for eye diagrams. Tells the waveform viewer how to wrap the abscissa time to overlay the bit transitions.</td>
+        </tr>
+        <tr>
+          <td>chgtol</td>
+          <td>10fC</td>
+          <td>Absolute charge tolerance</td>
+        </tr>
+        <tr>
+          <td>cshunt</td>
+          <td>0.</td>
+          <td>Optional capacitance added from every node to ground</td>
+        </tr>
+        <tr>
+          <td>cshuntintern</td>
+          <td>cshunt</td>
+          <td>Optional capacitance added from every device internal node to ground.</td>
+        </tr>
+        <tr>
+          <td>debugtran</td>
+          <td>false</td>
+          <td>When “debugtran” keyword is present (no value required), device and node convergence difficulty scores are added to the log file. Useful for troubleshooting convergence problems. Slows down the simulation. Results are relative, but generally, values below 1 are negligible, while values above ~50 are problematic.</td>
+        </tr>
+        <tr>
+          <td>defad</td>
+          <td>0.</td>
+          <td>Default MOS drain diffusion area</td>
+        </tr>
+        <tr>
+          <td>defas</td>
+          <td>0.</td>
+          <td>Default MOS source diffusion area</td>
+        </tr>
+        <tr>
+          <td>defl</td>
+          <td>100μm</td>
+          <td>Default MOS channel length</td>
+        </tr>
+        <tr>
+          <td>defw</td>
+          <td>100μm</td>
+          <td>Default MOS channel width</td>
+        </tr>
+        <tr>
+          <td>delay</td>
+          <td>0.</td>
+          <td>Used for eye diagrams. Shifts the bit transitions in the diagram.</td>
+        </tr>
+        <tr>
+          <td>fastaccess</td>
+          <td>false</td>
+          <td>Convert to fastaccess file format at end of simulation.</td>
+        </tr>
+        <tr>
+          <td>flagloads</td>
+          <td>false</td>
+          <td>Flags external current sources as loads.</td>
+        </tr>
+        <tr>
+          <td>gfarad</td>
+          <td>1e-12</td>
+          <td>Conductivity leakage per farad of every capacitor element.</td>
+        </tr>
+        <tr>
+          <td>gfloat</td>
+          <td>1e-12</td>
+          <td>Conductivity added to from every floating node to ground if topology checking is enabled.</td>
+        </tr>
+        <tr>
+          <td>gmin</td>
+          <td>1e-12</td>
+          <td>Conductivity added to every PN junction to aid convergence.</td>
+        </tr>
+        <tr>
+          <td>gminsteps</td>
+          <td>25</td>
+          <td>Set to zero to prevent gminstepping for the initial DC solution.</td>
+        </tr>
+        <tr>
+          <td>gshunt</td>
+          <td>0.</td>
+          <td>Optional conductance added from every node to ground.</td>
+        </tr>
+        <tr>
+          <td>itl1</td>
+          <td>100</td>
+          <td>DC iteration count limit.</td>
+        </tr>
+        <tr>
+          <td>itl2</td>
+          <td>50</td>
+          <td>DC transfer curve iteration count limit.</td>
+        </tr>
+        <tr>
+          <td>itl4</td>
+          <td>10</td>
+          <td>Transient analysis time point iteration count limit</td>
+        </tr>
+        <tr>
+          <td>itl6</td>
+          <td>25</td>
+          <td>Set to zero to prevent source stepping for the initial DC solution.</td>
+        </tr>
+        <tr>
+          <td>srcsteps</td>
+          <td>25</td>
+          <td>Alternative name for itl6.</td>
+        </tr>
+        <tr>
+          <td>list</td>
+          <td>false</td>
+          <td>Put expanded netlist into log file. This has priority over the corresponding choice in the Settings window.</td>
+        </tr>
+        <tr>
+          <td>logparams</td>
+          <td>false</td>
+          <td>Puts all parameters into the log file. Useful as a diagnostic.</td>
+        </tr>
+        <tr>
+          <td>logopinfo</td>
+          <td>false</td>
+          <td>Puts operating point information of semiconductor devices into log file.</td>
+        </tr>
+        <tr>
+          <td>maxclocks</td>
+          <td>Infin.</td>
+          <td>maximum number of clock cycles to save</td>
+        </tr>
+        <tr>
+          <td>maxstep</td>
+          <td>Infin.</td>
+          <td>Maximum step size for transient analysis</td>
+        </tr>
+        <tr>
+          <td>meascplxfmt</td>
+          <td>bode</td>
+          <td>Complex number format of .meas statement results. One of &quot;polar&quot;, &quot;cartesian&quot;, or &quot;bode&quot;.</td>
+        </tr>
+        <tr>
+          <td>measdgt</td>
+          <td>6</td>
+          <td>Number of significant figures used for .measure statement output.</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td>trap</td>
+          <td>Numerical integration method, either &quot;trap&quot;, &quot;modtrap&quot;, or &quot;gear&quot;. This has priority over the corresponding choice in the Settings window.</td>
+        </tr>
+        <tr>
+          <td>minclocks</td>
+          <td>10</td>
+          <td>minimum number of clock cycles to save</td>
+        </tr>
+        <tr>
+          <td>mindeltagmin</td>
+          <td>1e-4</td>
+          <td>Limit for termination of adaptive gmin stepping.</td>
+        </tr>
+        <tr>
+          <td>no_caret_warning</td>
+          <td>false</td>
+          <td>Suppresses all caret operator warnings.</td>
+        </tr>
+        <tr>
+          <td>nomarch</td>
+          <td>false</td>
+          <td>Do not plot marching waveforms</td>
+        </tr>
+        <tr>
+          <td>noopiter</td>
+          <td>false</td>
+          <td>Go directly to gmin stepping.</td>
+        </tr>
+        <tr>
+          <td>numdgt</td>
+          <td>6</td>
+          <td>Historically &quot;numdgt&quot; was used to set the number of significant figures used for output data. In LTspice, if &quot;numdgt&quot; is set to be &gt; 6, double precision is used for dependent variable data.</td>
+        </tr>
+        <tr>
+          <td>pivrel</td>
+          <td>1e-3</td>
+          <td>Relative ratio between the largest column entry and an acceptable pivot value.</td>
+        </tr>
+        <tr>
+          <td>pivtol</td>
+          <td>1e-13</td>
+          <td>Absolute minimum value for a matrix entry to be accepted as a pivot.</td>
+        </tr>
+        <tr>
+          <td>plotreltol</td>
+          <td>.0025</td>
+          <td>Relative error tolerance for waveform compression.</td>
+        </tr>
+        <tr>
+          <td>plotvntol</td>
+          <td>10μV</td>
+          <td>Absolute voltage error tolerance for waveform compression.</td>
+        </tr>
+        <tr>
+          <td>plotabstol</td>
+          <td>1nA</td>
+          <td>Absolute current error tolerance for waveform compression.</td>
+        </tr>
+        <tr>
+          <td>plotwinsize</td>
+          <td>300</td>
+          <td>Number of data points to compress in one window. Set to zero to disable compression.</td>
+        </tr>
+        <tr>
+          <td>ptrantau</td>
+          <td>.1</td>
+          <td>Characteristic source start-up time for a damped pseudo transient analysis to find the operating point. Set to zero to disable pseudo transient.</td>
+        </tr>
+        <tr>
+          <td>ptranmax</td>
+          <td>0</td>
+          <td>If set non-zero, that time of the damped pseudo transient analysis is used as the operating point whether the circuit has settled or not.</td>
+        </tr>
+        <tr>
+          <td>reject_number_tails</td>
+          <td>false</td>
+          <td>Report any numeric literal with additional text following the number as syntax error.</td>
+        </tr>
+        <tr>
+          <td>reltol</td>
+          <td>.001</td>
+          <td>Relative error tolerance.</td>
+        </tr>
+        <tr>
+          <td>solver</td>
+          <td>(none)</td>
+          <td>Solver to use. One of &quot;norm&quot; or &quot;alt&quot;. This has priority over the corresponding choice in the Settings window and the corresponding command line flag.</td>
+        </tr>
+        <tr>
+          <td>srcstepmethod</td>
+          <td>0</td>
+          <td>Which source stepping algorithm to start with.</td>
+        </tr>
+        <tr>
+          <td>sstol</td>
+          <td>.001</td>
+          <td>Relative error for steady-state detection.</td>
+        </tr>
+        <tr>
+          <td>ststclocks</td>
+          <td>10</td>
+          <td>Number of clock cycles to process in continuous switching mode after steady state detection.</td>
+        </tr>
+        <tr>
+          <td>ststdelay</td>
+          <td>0</td>
+          <td>Time to wait before trying to detect steady state.</td>
+        </tr>
+        <tr>
+          <td>temp</td>
+          <td>27°C</td>
+          <td>Default temperature for circuit element instances that don&#39;t specify temperature.</td>
+        </tr>
+        <tr>
+          <td>thev_induc</td>
+          <td>0</td>
+          <td>Set to 1 to use Rser=0 as default for all inductors with no Rser specified. Otherwise, a default value of Rser=1mΩ will be used for inductors.</td>
+        </tr>
+        <tr>
+          <td>tnom</td>
+          <td>27°C</td>
+          <td>Default temperature at which device parameters were measured for models that don&#39;t specify this temperature.</td>
+        </tr>
+        <tr>
+          <td>topologycheck</td>
+          <td>1</td>
+          <td>Set to zero to skip check for floating nodes, loops of voltage sources, and non-physical transformer winding topology</td>
+        </tr>
+        <tr>
+          <td>trtol</td>
+          <td>2.0</td>
+          <td>Transient error tolerance. This parameter is an estimate of the factor by which the actual truncation error is overestimated.</td>
+        </tr>
+        <tr>
+          <td>trytocompact</td>
+          <td>1</td>
+          <td>When non-zero, the simulator tries to condense LTRA transmission lines&#39; history of input voltages and currents.</td>
+        </tr>
+        <tr>
+          <td>vntol</td>
+          <td>1μV</td>
+          <td>Absolute voltage error tolerance.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <div id="topic_footer">
+    <div id="topic_footer_content">Copyright © 1998-2026 by Analog Devices Inc.. All Rights Reserved.</div>
+  </div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.2.23"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

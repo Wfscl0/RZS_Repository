@@ -1,0 +1,56 @@
+* TSAL output logic and red-lamp blink timing check.
+* Voltage comparators and relay-status logic are represented behaviorally.
+* Scaling follows the workbook note: 60 V high-voltage input maps to 0.6 V.
+* The red blink source uses the standard 555 astable timing from the TSAL
+* schematic: R1=2k, R3=25k, C2=10uF.
+
+.option plotwinsize=0
+
+V5 vcc 0 5
+
+.param R1BLINK=2k R3BLINK=25k CBLINK=10u
+.param TBLINK={0.693*(R1BLINK+2*R3BLINK)*CBLINK}
+.param TONBLINK={0.693*(R1BLINK+R3BLINK)*CBLINK}
+.param TOFFBLINK={0.693*R3BLINK*CBLINK}
+
+* First interval: energized/unsafe and blinking. Second interval: safe and relays open.
+VV_CONTROLLER v_controller 0 PWL(0 0.7 1.20 0.7 1.201 0.4 1.50 0.4)
+VV_BATTERY v_battery 0 PWL(0 0.7 1.20 0.7 1.201 0.4 1.50 0.4)
+
+VMAINP_ACTUAL mainp_actual 0 PWL(0 5 1.20 5 1.201 0 1.50 0)
+VMAINN_ACTUAL mainn_actual 0 PWL(0 5 1.20 5 1.201 0 1.50 0)
+VPRE_ACTUAL pre_actual 0 PWL(0 5 1.20 5 1.201 0 1.50 0)
+
+VMAINP_HASH mainp_hash 0 PWL(0 0 1.20 0 1.201 5 1.50 5)
+VMAINN_HASH mainn_hash 0 PWL(0 0 1.20 0 1.201 5 1.50 5)
+VPRE_HASH pre_hash 0 PWL(0 0 1.20 0 1.201 5 1.50 5)
+
+VRED_BLINK red_blink 0 PULSE(0 5 0 1u 1u {TONBLINK} {TBLINK})
+
+B_RED_COND red_cond 0 V={if(V(v_controller)>0.6, 5, if(V(v_battery)>0.6, 5, 0))}
+B_V_SAFE v_safe 0 V={if(V(v_battery)<0.6, 5, 0)}
+B_RELAYS_OPEN relays_open 0 V={if(V(mainp_actual)<2.5, if(V(mainn_actual)<2.5, if(V(pre_actual)<2.5, if(V(mainp_hash)>2.5, if(V(mainn_hash)>2.5, if(V(pre_hash)>2.5, 5, 0), 0), 0), 0), 0), 0)}
+
+* Lamp cathode outputs are active-low sinks. red_on is a positive logic probe.
+B_RED_ON red_on 0 V={if(V(red_cond)>2.5, if(V(red_blink)>2.5, 5, 0), 0)}
+B_RED_OUT_K red_out_k 0 V={if(V(red_on)>2.5, 0, 5)}
+B_GREEN_OUT_K green_out_k 0 V={if(V(v_safe)>2.5, if(V(relays_open)>2.5, 0, 5), 5)}
+
+.tran 0 1.5 0 500u
+
+.meas tran red_unsafe_on FIND V(red_out_k) AT=50m
+.meas tran red_unsafe_off FIND V(red_out_k) AT=250m
+.meas tran green_unsafe FIND V(green_out_k) AT=50m
+.meas tran red_safe FIND V(red_out_k) AT=1.30
+.meas tran green_safe FIND V(green_out_k) AT=1.30
+.meas tran v_safe_final FIND V(v_safe) AT=1.30
+.meas tran relays_open_final FIND V(relays_open) AT=1.30
+.meas tran blink_rise_2 WHEN V(red_on)=2.5 RISE=2
+.meas tran blink_rise_3 WHEN V(red_on)=2.5 RISE=3
+.meas tran blink_fall_2 WHEN V(red_on)=2.5 FALL=2
+.meas tran blink_period_s PARAM blink_rise_3-blink_rise_2
+.meas tran blink_frequency_hz PARAM 1/(blink_rise_3-blink_rise_2)
+.meas tran blink_on_time_s PARAM blink_fall_2-blink_rise_2
+.meas tran blink_duty_percent PARAM 100*(blink_fall_2-blink_rise_2)/(blink_rise_3-blink_rise_2)
+
+.end

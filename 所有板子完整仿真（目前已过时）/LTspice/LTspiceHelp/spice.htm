@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>SPICE</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="SPICE"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>SPICE</h1>
+    <p>This pane allows you to define the various defaults for LTspice. These defaults can be overridden in any simulation by specifying the options in a <a href="options--setsimulatoroptions.htm">.option statement</a> in that simulation. Usually you can leave these options as they are.</p>
+    <p><img alt="" src="assets/images/lib/spiceopt.png" style="vertical-align: text-bottom;"/></p>
+    <p>One default you may want to change is Trtol. In LTspice this defaults to 2 so that simulations are extremely unlikely to show any simulation artifacts in their waveforms. Trtol affects the timestep strategy more than directly affecting the accuracy of the simulation. For transistor-level simulations, a value larger than 1 is usually a better overall solution. You might find that you get a speed of 2x if you increase trtol with out adversely affecting simulation accuracy. Your trtol setting is remembered between program invocations. However, most of the traditional SPICE tolerance parameters, gmin, abstol, reltol, chgtol, vntol are not remembered between program invocations in order to encourage use of the default values. If you want to use something other than the default values, you will have to write a .option statement specifying the values you want to use and place it on the schematic or keep the settings in a file and .inc that file.</p>
+    <p>LTspice contains two different simulator cores, named &quot;Normal&quot; and &quot;Alternate&quot;. The normal solver uses double precision (64 bit floating point math) while the alternate solver uses x87 extended precision (80 bit floating point math), which provides an increased machine precision by three decimal digits. This can be a useful diagnostic to have available. It is recommended to always use the normal solver and only resort to the alternate solver if neccessary, for example if the precision is actually needed or to resolve convergence problems. The solver can also be chosen via the <a href="options--setsimulatoroptions.htm">.option solver</a>.</p>
+    <p>The maximum number of threads is set to the maximum number of concurrently executing threads your OS and CPU hardware supports. The actual number used in any given simulation depends on the nature of the circuit. There are some circuits that cannot benefit from multiple threads. LTspice will not tie up additional threads that don&#39;t in the end make the simulation run faster.</p>
+    <p>The matrix compiler defaults to object code. That means that as LTspice solves your circuit, it will, on the fly, author machine code tailored to your circuit.</p>
+    <p>Check the box next to &quot;Accept 3K4 as 3.4K&quot; to force LTspice to understand a number written as 4K99 to be equal to 4.99K. Normal SPICE practice does not allow this, but it is available in LTspice by popular request.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "6.3"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

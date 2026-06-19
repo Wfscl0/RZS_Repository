@@ -1,0 +1,14 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\Alearn\chedui\1Wfscl\继电器检测\jdq.net
+Start Time: Sun Apr 19 14:23:52 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.229 seconds.
+
+Files loaded:
+D:\Alearn\chedui\1Wfscl\继电器检测\jdq.net
+

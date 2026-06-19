@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>C. Capacitor</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="C. Capacitor"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>C. Capacitor</h1>
+    <p>Symbol names: CAP, POLCAP</p>
+    <p>Syntax:</p>
+    <p class="netlist">Cnnn n1 n2 &lt;capacitance&gt; [ic=&lt;value&gt;]<br/>
+      + [Rser=&lt;value&gt;] [Lser=&lt;value&gt;] [Rpar=&lt;value&gt;]<br/>
+      + [Cpar=&lt;value&gt;] [m=&lt;value&gt;]<br/>
+      + [RLshunt=&lt;value&gt;] [temp=&lt;value&gt;]</p>
+    <p>It is possible to specify an equivalent series resistance, series inductance, parallel resistance and parallel shut capacitance. The equivalent circuit is given below:</p>
+    <p><img alt="" src="assets/images/lib/Capacitor.gif" style="vertical-align: text-bottom;"/></p>
+    <p>Capacitor Instance Parameters</p>
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Rser</td>
+            <td>Equivalent series resistance</td>
+          </tr>
+          <tr>
+            <td>Lser</td>
+            <td>Equivalent series inductance</td>
+          </tr>
+          <tr>
+            <td>Rpar</td>
+            <td>Equivalent parallel resistance</td>
+          </tr>
+          <tr>
+            <td>Cpar</td>
+            <td>Equivalent parallel capacitance</td>
+          </tr>
+          <tr>
+            <td>RLshunt</td>
+            <td>Shunt resistance across Lser</td>
+          </tr>
+          <tr>
+            <td>m</td>
+            <td>Number of parallel units</td>
+          </tr>
+          <tr>
+            <td>temp</td>
+            <td>Instance temperature(for tempcos in a corresponding .model statement)</td>
+          </tr>
+          <tr>
+            <td>ic</td>
+            <td>Initial voltage</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Note that since the capacitor element includes these parasitics, it is useful for macromodeling the fundamental of a piezoelectric crystal.</p>
+    <p>The parameter m can be set to zero to remove a capacitor from a simulation.</p>
+    <p>If an initial voltage (ic) is provided, LTspice will apply this as a constraint for the initial operating point solution for Transient (.tran), AC(.ac), Noise (.noise), Transfer Function (.tf), and DC Operating Point(.op) simulations. Initial voltage is ignored for DC sweep (.dc) simulations because these simulations are intended to analyze the DC response to a swept source or parameter, not constant initial conditions.</p>
+    <h1>Nonlinear Capacitor</h1>
+    <p>There is also a general nonlinear capacitor available which specifies charge instead of capacitance.</p>
+    <p>Syntax:</p>
+    <p class="netlist">Cnnn n1 n2 Q=&lt;expression&gt; [ic=&lt;value&gt;] [m=&lt;value&gt;]</p>
+    <p>There is a special variable, x, that means the voltage across the device. Therefore, a 100pF constant capacitance can be written as</p>
+    <p class="netlist">Cnnn n1 n2 Q=100p*x</p>
+    <p>A capacitance with an abrupt change from 100p to 300p at zero volts can be written as</p>
+    <p class="netlist">Cnnn n1 n2 Q=x*if(x&lt;0,100p,300p)</p>
+    <p>This device is useful for rapidly evaluating the behavior of a new a hypothetical charge model for, e.g., a transistor.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.3"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

@@ -1,0 +1,16 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\仿真\comparator.net
+Start Time: Sun Apr 19 09:47:56 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.105 seconds.
+
+Files loaded:
+D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\仿真\comparator.net
+D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\仿真\lm393.lib
+D:\Alearn\chedui\1Wfscl\IMD-BMS错误锁存\仿真\LM393.sub
+

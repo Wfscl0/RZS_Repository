@@ -1,0 +1,25 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\Alearn\chedui\1Wfscl\TSAL\仿真\gpt\TSAL_relayout_high_precision_LTspice\TSAL_relayout_high_precision.net
+Start Time: Sat May  2 14:03:46 2026
+Options:method=gear plotwinsize=0 reltol=0.001 abstol=100p vntol=100u method=gear
+D:\Alearn\chedui\1Wfscl\TSAL\仿真\gpt\TSAL_relayout_high_precision_LTspice\TSAL_high_precision_models_v2.lib(16): Ignoring unknown model parameter. This may or may not be a problem.
+.model AO3480C_NMOS NMOS(VTO=1.7 KP=22 RS=0.018 RD=0.018 CGS=650p CGD=130p CBD=90p Rg=2 Lambda=0.02)
+                                                         ^^^^^^^^^
+D:\Alearn\chedui\1Wfscl\TSAL\仿真\gpt\TSAL_relayout_high_precision_LTspice\TSAL_high_precision_models_v2.lib(16): Ignoring unknown model parameter. This may or may not be a problem.
+.model AO3480C_NMOS NMOS(VTO=1.7 KP=22 RS=0.018 RD=0.018 CGS=650p CGD=130p CBD=90p Rg=2 Lambda=0.02)
+                                                                  ^^^^^^^^^
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = Gear
+abstol = 1e-10
+volttol = 0.0001
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 1.531 seconds.
+
+Files loaded:
+D:\Alearn\chedui\1Wfscl\TSAL\仿真\gpt\TSAL_relayout_high_precision_LTspice\TSAL_relayout_high_precision.net
+C:\Users\30836\AppData\Local\LTspice\lib\cmp\standard.dio
+D:\Alearn\chedui\1Wfscl\TSAL\仿真\gpt\TSAL_relayout_high_precision_LTspice\TSAL_high_precision_models_v2.lib
+

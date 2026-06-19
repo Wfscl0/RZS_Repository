@@ -1,0 +1,60 @@
+* Lock/latch board timing check.
+* Error inputs are translated to active-low latch states. A low reset clears each latch.
+
+.option plotwinsize=0
+
+VCC vcc 0 5
+VSDC_IN sdc_in 0 24
+.model DCLAMP D(Is=1n Rs=0.1 N=1)
+
+* Interface inputs from the workbook.
+VIMD_ERROR imd_error 0 PWL(0 12 2m 12 2.01m 0 3m 0 3.01m 12 9m 12)
+VBMS_ERROR bms_error 0 12
+VEBS_ERROR ebs_error 0 5
+VRES_ERROR res_error 0 5
+
+VIMD_RESET imd_reset 0 PWL(0 5 5m 5 5.01m 0 5.5m 0 5.51m 5 9m 5)
+VBMS_RESET bms_reset 0 5
+VRE_RESET re_reset 0 5
+
+* State outputs are high when normal and low after a latched fault.
+CIMD imd_state 0 1u IC=5
+CBMS bms_state 0 1u IC=5
+CEBS ebs_state 0 1u IC=5
+CRES res_state 0 1u IC=5
+
+RIMD imd_state 0 1G
+RBMS bms_state 0 1G
+REBS ebs_state 0 1G
+RRES res_state 0 1G
+
+DIMD_H imd_state vcc DCLAMP
+DIMD_L 0 imd_state DCLAMP
+DBMS_H bms_state vcc DCLAMP
+DBMS_L 0 bms_state DCLAMP
+DEBS_H ebs_state vcc DCLAMP
+DEBS_L 0 ebs_state DCLAMP
+DRES_H res_state vcc DCLAMP
+DRES_L 0 res_state DCLAMP
+
+* Fault thresholds from the interface table:
+* IMD fault = 0 V, BMS fault = 10 V, EBS/RES fault = 0 V.
+BIMD imd_state 0 I={if(V(imd_error)<1, 0.02, 0)-if(V(imd_reset)<0.5, 0.02, 0)}
+BBMS bms_state 0 I={if(V(bms_error)<11, 0.02, 0)-if(V(bms_reset)<0.5, 0.02, 0)}
+BEBS ebs_state 0 I={if(V(ebs_error)<2.5, 0.02, 0)-if(V(re_reset)<0.5, 0.02, 0)}
+BRES res_state 0 I={if(V(res_error)<2.5, 0.02, 0)-if(V(re_reset)<0.5, 0.02, 0)}
+
+B_ALL_OK all_ok 0 V={if(V(imd_state)>2.5, if(V(bms_state)>2.5, if(V(ebs_state)>2.5, if(V(res_state)>2.5, 5, 0), 0), 0), 0)}
+B_SDC_OUT sdc_out 0 V={if(V(sdc_in)>10, if(V(all_ok)>2.5, 24, 0), 0)}
+
+.tran 0 9m 0 5u uic
+
+.meas tran sdc_normal FIND V(sdc_out) AT=1m
+.meas tran imd_state_fault FIND V(imd_state) AT=2.5m
+.meas tran sdc_after_imd_fault FIND V(sdc_out) AT=2.5m
+.meas tran imd_state_latched FIND V(imd_state) AT=4m
+.meas tran sdc_latched FIND V(sdc_out) AT=4m
+.meas tran imd_state_after_reset FIND V(imd_state) AT=6m
+.meas tran sdc_after_reset FIND V(sdc_out) AT=6m
+
+.end

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Circuit Elements</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="GENERATOR" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="Circuit Elements"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Circuit Elements</h1>
+    <h2>Flags</h2>
+    <p>Some circuit elements have parameters that are flags. For instance, the <a href="icurrentsource.htm">independent current source</a> has a <span class="netlist">load</span> flag. A flag is active if it is used. Alternatively, you can assign a value to the flag. A value ≥ 0.5 means the flag is on, anything else means the flag is off. For example:</p>
+    <p class="netlist">I1 N001 0 2m load=1</p>
+    <p>is the same as</p>
+    <p class="netlist">I1 N001 0 2m load</p>
+    <h2>Dynamic Nodes</h2>
+    <p>Instead of naming a node directly, its name can be the result of an expression. For instance:</p>
+    <p class="netlist">.param CONNECT = &quot;N001&quot;<br/>
+      I1 {CONNECT} 0 2m</p>
+    <p>is identical to</p>
+    <p class="netlist">I1 N001 0 2m</p>
+    <p>This is mainly useful for library authors to make connectivity dependent on parameters.</p>
+    <h2>List of Components</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th>Component</th>
+          <th>Syntax</th>
+        </tr>
+        <tr>
+          <td><a href="aspecialfunctions.htm">Special functions</a></td>
+          <td>
+            <p>Axx n1 n2 n3 n4 n5 n6 n7 n8<br/>
+              + &lt;model&gt; [extra parameters]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="barbitrarybehavioralvoltageorcur.htm">Arbitrary behavioral source</a></td>
+          <td>Bxx n+ n- &lt;V=... or I=...&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="ccapacitor.htm">Capacitor</a></td>
+          <td>
+            <p>Cxx n+ n- &lt;capacitance&gt;<br/>
+              + [ic=&lt;val.&gt;] [Rser=&lt;val.&gt;]<br/>
+              + [Lser=&lt;val.&gt;] [Rpar=&lt;val.&gt;]<br/>
+              + [Cpar=&lt;val.&gt;] [m=&lt;val.&gt;]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="ddiode.htm">Diode</a></td>
+          <td>Dxx A K &lt;model&gt; [area]</td>
+        </tr>
+        <tr>
+          <td><a href="evoltagedependentvoltagesource.htm">Voltage dependent voltage</a></td>
+          <td>Exx n+ n- nc+ nc- &lt;gain&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="fcurrentdependentcurrentsource.htm">Current dependent current</a></td>
+          <td>Fxx n+ n- &lt;Vnam&gt; &lt;gain&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="gvoltagedependentcurrentsource.htm">Voltage dependent current</a></td>
+          <td>Gxx n+ n- nc+ nc- &lt;transcond.&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="hcurrentdependentvoltagesource.htm">Current dependent voltage</a></td>
+          <td>Hxx n+ n- &lt;Vnam&gt; &lt;transres.&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="icurrentsource.htm">Independent current source</a></td>
+          <td>Ixx n+ n- &lt;current&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="jjfet.htm">JFET transistor</a></td>
+          <td>
+            <p>Jxx D G S &lt;model&gt; [area] [off]<br/>
+              +[IC=&lt;Vds,Vgs&gt;] [temp=&lt;T&gt;]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="kmutualinductance.htm">Mutual inductance</a></td>
+          <td>Kxx L1 L2 L3... &lt;coeff.&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="linductor.htm">Inductance</a></td>
+          <td>
+            <p>Lxx n+ n- &lt;inductance&gt;<br/>
+              + [ic=&lt;val.&gt;] [Rser=&lt;val.&gt;]<br/>
+              + [Rpar=&lt;val.&gt;]<br/>
+              + [Cpar=&lt;val.&gt;] [m=&lt;val.&gt;]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="mmosfet.htm">MOSFET transistor</a></td>
+          <td>
+            <p>Mxx D G S B &lt;model&gt; [L=&lt;len&gt;]<br/>
+              + [W=&lt;width&gt;] [AD=&lt;area&gt;]<br/>
+              + [AS=&lt;area&gt;] [PD=&lt;perim&gt;]<br/>
+              + [PS=&lt;perim&gt;] [NRD=&lt;value&gt;]<br/>
+              + [NRS=&lt;value&gt;] [off]<br/>
+              + [IC=&lt;Vds, Vgs, Vbs&gt;<br/>
+              + [temp=&lt;T&gt;]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="olossytransmissionline.htm">Lossy transmission line</a></td>
+          <td>Oxx L+ L- R+ R- &lt;model&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="qbipolartransistor.htm">Bipolar transistor</a></td>
+          <td>
+            <p>Qxx C B E [S] &lt;model&gt; [area]<br/>
+              + [off] [IC=Vbe,Vce][temp=&lt;T&gt;]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="rresistor.htm">Resistor</a></td>
+          <td>Rxx n1 n2 &lt;value&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="svoltagecontrolledswitch.htm">Voltage controlled switch</a></td>
+          <td>
+            <p>Sxx n1 n2 nc+ nc- &lt;model&gt;<br/>
+              + [on,off]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="tlosslesstransmissionline.htm">Lossless transmission line</a></td>
+          <td>
+            <p>Txx L+ L- R+ R- ZO=&lt;value&gt;<br/>
+              + TD=&lt;value&gt;</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="uuniformrc-line.htm">Uniform RC-line</a></td>
+          <td>
+            <p>Uxx n1 n2 ncommon &lt;model&gt;<br/>
+              + L=&lt;len&gt; [N=&lt;lumps&gt;]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="vvoltagesource.htm">Independent voltage source</a></td>
+          <td>Vxx n+ n- &lt;voltage&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="wcurrentcontrolledswitch.htm">Current controlled switch</a></td>
+          <td>
+            <p>Wxx n1 n2 &lt;Vnam&gt; &lt;model&gt;<br/>
+              + [on,off]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="xsubcircuit.htm">Subcircuit</a></td>
+          <td>Xxx n1 n2 n3... &lt;subckt name&gt;</td>
+        </tr>
+        <tr>
+          <td><a href="zmesfetandigbt.htm">MESFET or IGBT transistors</a></td>
+          <td>
+            <p>Zxx D G S model [area] [off]<br/>
+              + [IC=&lt;Vds,Vgs&gt;]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="fra_device.html">Frequency Response Analyzer</a></td>
+          <td>
+            <p>@xx fstart=&lt;val&gt; fend=&lt;val&gt;<br/>
+              + [delay=&lt;val&gt;] [oct=&lt;val&gt;]<br/>
+              + [fcoarse=&lt;val&gt;] [nmax=&lt;val&gt;]<br/>
+              + [[vpp0=&lt;val&gt;] [[vpp1=&lt;val&gt;]<br/>
+              + [f0=&lt;val&gt;f1=&lt;val&gt;]]]<br/>
+              + [tavgmin=&lt;val&gt;] [tsettle=&lt;val&gt;]<br/>
+              + [rpar=&lt;val&gt;] [flist=&lt;values&gt;]<br/>
+              + [acmag=&lt;val&gt;] [acphase=&lt;val&gt;]<br/>
+              + [refnode=&lt;netname&gt;]<br/>
+              + [intnode=&lt;netname&gt;]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="fra_probe.html">Frequency Response Analysis Probe</a></td>
+          <td>&amp;xx o+ o- i+ i-</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

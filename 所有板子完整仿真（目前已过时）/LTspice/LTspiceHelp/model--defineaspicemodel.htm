@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>.MODEL — Define a SPICE Model</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content=".MODEL"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>.MODEL — Define a SPICE Model</h1>
+    <p>Defines a model for a diode, transistor, switch, lossy transmission line or uniform RC line.</p>
+    <p>Some circuit elements, for example transistors, have many parameters. Instead of defining every transistor parameter for every instance of a transistor, transistors are grouped by model name and have parameters in common. The transistors of the same model can have different sizes and the electrical behavior is scaled to the size of the instance.</p>
+    <p>Syntax:</p>
+    <p class="netlist">.model &lt;modname&gt;|&lt;string expression&gt; &lt;type&gt;[(&lt;parameter list&gt;)]</p>
+    <p>It is allowed to define multiple models with the same name as long as they have different types. However, this is not recommended.</p>
+    <p>The parameter list depends on the type of model. Below is a list of model types:</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Type</th>
+          <th>Associated Circuit Element</th>
+        </tr>
+        <tr>
+          <td><a href="svoltagecontrolledswitch.htm">SW</a></td>
+          <td>Voltage Controlled Switch</td>
+        </tr>
+        <tr>
+          <td><a href="wcurrentcontrolledswitch.htm">CSW</a></td>
+          <td>Current Controlled Switch</td>
+        </tr>
+        <tr>
+          <td><a href="uuniformrc-line.htm">URC</a></td>
+          <td>Uniform Distributed RC Line</td>
+        </tr>
+        <tr>
+          <td><a href="olossytransmissionline.htm">LTRA</a></td>
+          <td>Lossy Transmission Line</td>
+        </tr>
+        <tr>
+          <td><a href="ddiode.htm">D</a></td>
+          <td>Diode</td>
+        </tr>
+        <tr>
+          <td><a href="qbipolartransistor.htm">NPN</a></td>
+          <td>NPN Bipolar Transistor</td>
+        </tr>
+        <tr>
+          <td><a href="qbipolartransistor.htm">PNP</a></td>
+          <td>PNP Bipolar Transistor</td>
+        </tr>
+        <tr>
+          <td><a href="jjfet.htm">NJF</a></td>
+          <td>N-channel JFET model</td>
+        </tr>
+        <tr>
+          <td><a href="jjfet.htm">PJF</a></td>
+          <td>P-channel JFET model</td>
+        </tr>
+        <tr>
+          <td><a href="mmosfet.htm">NMOS</a></td>
+          <td>N-channel MOSFET</td>
+        </tr>
+        <tr>
+          <td><a href="mmosfet.htm">PMOS</a></td>
+          <td>P-channel MOSFET</td>
+        </tr>
+        <tr>
+          <td><a href="zmesfetandigbt.htm">NMF</a></td>
+          <td>N-channel MESFET</td>
+        </tr>
+        <tr>
+          <td><a href="zmesfetandigbt.htm">PMF</a></td>
+          <td>P-channel MESFET</td>
+        </tr>
+        <tr>
+          <td><a href="zmesfetandigbt.htm">NIGBT</a></td>
+          <td>N-channel IGBT</td>
+        </tr>
+        <tr>
+          <td><a href="zmesfetandigbt.htm">PIGBT</a></td>
+          <td>P-channel IGBT</td>
+        </tr>
+        <tr>
+          <td><a href="mmosfet.htm">VDMOS</a></td>
+          <td>Vertical Double Diffused Power MOSFET</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>See the description of the circuit element for a list of which parameters are instance specific and which are common to a model.</p>
+    <p>You can also define a model that is based on another model:</p>
+    <p class="netlist">.model &lt;modname&gt;|&lt;string expression&gt; ako: &lt;modname&gt;|&lt;string expression&gt; [&lt;type&gt;] [(&lt;parameter list&gt;)]</p>
+    <p>For instance, this line:</p>
+    <p class="netlist">.model SLOW ako:NORMAL D(tt=10n)</p>
+    <p>defines a diode model &quot;SLOW&quot; which is identical to the diode model &quot;NORMAL&quot; except for the &quot;tt&quot; parameter. Although the type specification is optional, it must match the type of the source model if present.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.2.18"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>I. Current Source</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="I. Current Source"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>I. Current Source</h1>
+    <p>Symbol Name: CURRENT</p>
+    <h2>Constant Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- &lt;current&gt; [AC=&lt;amplitude&gt;] [load]</p>
+    <p>This circuit element sources a constant current between nodes n+ and n-. If the source is flagged as a load, the source is forced to be dissipative, that is, the current goes to zero if the voltage between nodes n+ and n- goes to zero. If a negative current is specified, the load keyword is ignored.  The purpose of this option is to model a current load on a power supply that doesn&#39;t draw current if the output voltage is zero. When flagged as a load, the current source starts to deviate from a constant current when the voltage across it drops to 0.5V. The impedance eventually drops to a resistance equal to .25Ω/A times the value of the current source.</p>
+    <p>For AC analysis, the value of AC is used as the amplitude of the source at the analysis frequency.</p>
+    <h2>Time-Dependent Pulsed Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- PULSE(Ioff Ion Tdelay Trise Tfall Ton Tperiod Ncycles)</p>
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Units</th>
+          </tr>
+          <tr>
+            <td>Ioff</td>
+            <td>Initial value</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Ion</td>
+            <td>Pulsed value</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Tdelay</td>
+            <td>Delay</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Tr</td>
+            <td>Rise time</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Tf</td>
+            <td>Fall time</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Ton</td>
+            <td>On time</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Tperiod</td>
+            <td>Period</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Ncycles</td>
+            <td>Number of cycles(Omit for free-running pulse function)</td>
+            <td>cycles</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Time-Dependent Sine Wave Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- SINE(Ioffset Iamp Freq Td Theta Phi Ncycles)</p>
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Units</th>
+          </tr>
+          <tr>
+            <td>Ioffset</td>
+            <td>DC offset</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Iamp</td>
+            <td>Amplitude</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Freq</td>
+            <td>Frequency</td>
+            <td>Hz</td>
+          </tr>
+          <tr>
+            <td>Td</td>
+            <td>Delay</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Theta</td>
+            <td>Damping factor</td>
+            <td>1/sec</td>
+          </tr>
+          <tr>
+            <td>Phi</td>
+            <td>Phase of sine wave</td>
+            <td>degrees</td>
+          </tr>
+          <tr>
+            <td>Ncycles</td>
+            <td>Number of cycles(Omit for free-running pulse function)</td>
+            <td>cycles</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>For times less than Td, the output current is given by</p>
+    <p>Ioffset+Iamp*sin(π*Phi/180)</p>
+    <p>For times after Td, but before Ncycles have completed, the current is given by</p>
+    <p>Ioffset+Iamp*exp(-(time-Td)*Theta)*sin(2*π*Freq*(time-Td)+π*Phi/180)</p>
+    <p>For times after Ncycles have completed, the current is the last current when Ncycles completed. Note Ncycles does not have to be an integer.</p>
+    <p>The damping factor, Theta, is the reciprocal of the decay time constant.</p>
+    <h2>Time-Dependent Exponential Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- EXP(I1 I2 Td1 Tau1 Td2 Tau2)</p>
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Units</th>
+          </tr>
+          <tr>
+            <td>I1</td>
+            <td>Initial value</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>I2</td>
+            <td>Pulsed value</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Td1</td>
+            <td>Rise delay time</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Tau1</td>
+            <td>Rise-time constant</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Td2</td>
+            <td>Fall delay time</td>
+            <td>sec</td>
+          </tr>
+          <tr>
+            <td>Tau2</td>
+            <td>Fall-time constant</td>
+            <td>sec</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>For times less than Td1, the output current is I1. For times between Td1 and Td2 the current is given by</p>
+    <p>I1+(I2-I1)*(1-exp(-(time-Td1)/Tau1))</p>
+    <p>For times after Td2 the current is given by</p>
+    <p>I1+(I2-I1)*(1-exp(-(time-Td1)/Tau1))-(I2-I1)*(1-exp(-(time-Td2)/Tau2))</p>
+    <h2>Time-Dependent Single-Frequency FM Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- SFFM(Ioff Iamp Fcar MDI Fsig)</p>
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Units</th>
+          </tr>
+          <tr>
+            <td>Ioff</td>
+            <td>DC offset</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Iamp</td>
+            <td>Amplitude</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Fcar</td>
+            <td>Carrier frequency</td>
+            <td>Hz</td>
+          </tr>
+          <tr>
+            <td>MDI</td>
+            <td>Modulation index</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Fsig</td>
+            <td>Signal frequency</td>
+            <td>Hz</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The current is given by</p>
+    <p>Ioff+Iamp*sin((2.*π*Fcar*time)+MDI*sin(2.*π*Fsig*time)).</p>
+    <h2>Lookup Table Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- tbl|table=(&lt;voltage, current&gt;, &lt;voltage, current&gt;, ...)</p>
+    <p>This is useful for modeling the characteristics of a load.</p>
+    <p>A lookup table is used to specify a transfer function. The table is a list of pairs of numbers. The second value of the pair is the device current when the voltage across the device is equal to the first value of that pair. The output is linearly interpolated when the voltage is between specified points. If the voltage is beyond the range of the look-up table, the current is extrapolated as a constant current of the last point of the look-up table.</p>
+    <p>The lookup table itself can be contained in a file:</p>
+    <p class="netlist">Ixxx n+ n- tbl=&lt;filename&gt;</p>
+    <p>No file name extension is assumed and the file name must be enclosed in quotes. The file name can be specified by a string parameter.</p>
+    <p>For example.</p>
+    <p class="netlist">Ixxx n+ n- tbl=&quot;mypath to\myfile.txt&quot;</p>
+    <p class="netlist"><span class="misspell-word"><span class="misspell-word"></span></span>Ixxx n+ n- table={my_file_string_param}</p>
+    <p class="netlist">Ixxx n+ n- tbl=<span class="misspell-word">my_file_string_param</span></p>
+    <h2>Step Load Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- &lt;value&gt; step(&lt;value1&gt;, [&lt;value2&gt;], [&lt;value3&gt;, ...]) [load]</p>
+    <p>This is a special form for the current source. The current is specified as a list of currents to use in a step load response transient analysis. In this mode, the simulation is computed until steady state is reached at the first current in the list, &lt;value1&gt;. Then the current is stepped to the next value in the list, &lt;value2&gt;. The simulation proceeds until steady state is achieved at that current. Then the current is stepped to the next value and the process repeats until the list is exhausted. If the .tran command doesn&#39;t specify “step”, then the original &lt;value&gt; is used.</p>
+    <h2>Resistive Load</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- R=&lt;value&gt;</p>
+    <p>This is not a current source at all, but a resistor. It is used to model a resistive load when the load is netlisted as a current source.</p>
+    <h2>Arbitrary Piece-Wise Linear Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- PWL [TIME_SCALE_FACTOR= ] [VALUE_SCALE_FACTOR= ] PwlSpec [ PwlSpec [ ... ] ]</p>
+    <p>Works as described for the <a href="vvoltagesource.htm">voltage source</a>, except that the current source does not support a trigger expression.</p>
+    <h2>.WAV-File Current Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Ixxx n+ n- wavefile=&lt;filename&gt; [chan=&lt;nnn&gt;]</p>
+    <p>This allows a .wav file to be used as an input to LTspice. &lt;filename&gt; is either a full, absolute path for the .wav file or a relative path computed from the directory containing the simulation schematic or netlist.  Double quotes may be used to specify a path containing spaces.  The .wav file may contain up to 65536 channels, numbered 0 to 65535. Chan may be set to specify which channel is used. By default, the first channel, number 0, is used. The .wav file is interpreted as having a full scale range from –1A to 1A.</p>
+    <p>This source only has meaning in a .tran analysis.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.9"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

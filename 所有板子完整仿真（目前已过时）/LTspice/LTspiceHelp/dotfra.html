@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>.FRA — Perform a Time-Domain Frequency Response Analysis</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="GENERATOR" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content=".FRA"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>.FRA — Perform a Time-Domain Frequency Response Analysis</h1>
+    <p>Perform a specialized transient simulation to analyze the frequency response of a feedback loop. The circuit must contain at least one FRA device instance (prefix &quot;@&quot;), which controls the detailed analysis parameters.  The Frequency Response Analysis is ideal for for analyzing the stability of Switched Mode Power Supplies.</p>
+    <p>Syntax:</p>
+    <p class="netlist">.fra [Tstart=&lt;val&gt;] [dTmax=&lt;val&gt;] [Tstep=&lt;val&gt;] [Tstop=&lt;val&gt;] [uic] [startup] [loadstate[=&lt;filename&gt;]] [savestate[=&lt;filename&gt;]] [savestatetime=&lt;time&gt;<time>]</time></p>
+    <p>Example:</p>
+    <p class="netlist">.fra</p>
+    <p>The.FRA command parameters and modifiers are all optional, specified by keyword, and may be included in any order. </p>
+    <ul>
+      <li>The UIC, startup, and convreport modifiers can be included with the .fra directive.<br/>
+        <a href="uic.htm">UIC</a>: Skip the D.C. operating solution and use user-specified initial conditions.<br/>
+        <a href="startup.htm">startup</a>: Solve the initial operating point with independent voltage and current sources turned off. Then start the transient analysis and turn these sources on in the first 20 us of the simulation.<br/>
+        convreport: Add a convergence report to the SPICE log, indicating a convergence difficulty score for applicable devices and nodes. Useful for troubleshooting convergence problems. Slows down the simulation. Results are relative, but generally, values below 1 are negligible, while values above ~50 are problematic.
+      </li>
+      <li>If Tstart is specified, the waveform data between time zero and Tstart is not saved, in order to reduce the size of waveform files. Regardless of the value of Tstart, simulation always starts at time equal to zero.</li>
+      <li>Tstop is an optional argument to allow early termination of the simulation, e.g. for debug. If Tstop is not specified, the FRA automatically stops when all of the FRA devices in the schematic have completed their analyses.</li>
+      <li>dTmax is the maximum time step to take while integrating the circuit equations.  </li>
+      <li>dTstep is the plotting increment for the waveforms but is also used as an initial step-size guess. LTspice uses waveform compression, so this parameter is of little value and can be omitted or set to zero.</li>
+      <li>The complete state of the circuit simulation can be saved to a file using the savestate parameter. The state can subsequently be reloaded using the loadstate parameter. If no filename is specified, LTspice will use the same base filename as the schematic with the extension .state.  If a savestatetime is specified, the state file will be saved at that time. If savestatetime is not specified, the final state will be saved when the simulation completes or is cancelled by the user. If the savestate file already exists, it will be overwritten.</li>
+    </ul>
+    <p>See the examples that are included with LTspice by choosing File &gt; Open Examples... and navigating to subdirectory Educational\FRA\</p>
+    <p> </p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.2.7"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

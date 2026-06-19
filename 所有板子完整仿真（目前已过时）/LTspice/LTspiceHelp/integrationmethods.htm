@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Integration Methods</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="Integration Methods"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Integration Methods</h1>
+    <p>LTspice offers three different integration methods in <a href="settings.htm" title="Go to Settings">Settings</a>. For the same accuracy, gear integration requires more time steps and is therefore generally slower than trap integration. It also imposes some artificial numerical dampening on the circuit, which can make unstable circuits look stable in simulation. Thus, trap integration is both faster and more accurate than gear integration. However, it can give rise to a numerical artifact called trap ringing, where the integrated discrete time step solution oscillates time step to time step about the true continuous-time behavior. The amplitude of this oscillation increases with increasing time step and can easily conceal important details of a waveform. That is why LTspice has an additional method called modified trap, which actually is identical to trap, except for an additional post-processing that eliminates the oscillation and which works like this:</p>
+    <p><img alt="" src="assets/images/lib/modified_trap_principle.png" style="vertical-align: text-bottom;"/></p>
+    <p>Using three points at a time, LTspice calculates an upper interpolating line and a lower interpolating line and then saves the average of these two lines instead of the original result. As long as a waveform exhibits trap ringing, this procedure restore the true continuous-time solution. However, note that waveforms without trap ringing are made slightly less accurate, as can be seen in the following picture:</p>
+    <p><img alt="" src="assets/images/lib/modified_trap_problem.png" style="vertical-align: text-bottom;"/></p>
+    <p>In this example, the average between the lower interpolator and the original data point is smaller than the original data point, which actually is the correct result. This leads to a small error in the saved value, which increases with increasing time step. If this error is unacceptable, use trap integration instead. In the majority of cases, the elimination of trap ringing far outweighs the small loss of accuracy.</p>
+    <p>Note that modified trap does not apply its post-processing to all waveforms, because certain nodes, like the output of an independent source, will never exhibit trap ringing and therefore need no correction. This can lead to surprising results, e.g. in this example circuit:</p>
+    <p><img alt="" src="assets/images/lib/modified_trap_problem_asc.png" style="vertical-align: text-bottom;"/></p>
+    <p>With modified trap, plotting the voltage V(a,b) across R1 may not produce the expected result, because LTspice saves the original V(a) but the post-processed V(b):</p>
+    <p><img alt="" src="assets/images/lib/modified_trap_problem_wave.png" style="vertical-align: text-bottom; cursor: nesw-resize;"/></p>
+    <p>Note though that this is an example as extreme as the ratio of R1 and R2.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.5"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

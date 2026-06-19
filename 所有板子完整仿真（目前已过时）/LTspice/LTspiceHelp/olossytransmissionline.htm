@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>O. Lossy Transmission Line</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="O. Lossy Transmission Line"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>O. Lossy Transmission Line</h1>
+    <p>Symbol Name: LTLINE</p>
+    <p>Syntax:</p>
+    <p class="netlist">Oxxx L+ L- R+ R- &lt;model&gt;|&lt;string expression&gt;</p>
+    <p>Example:</p>
+    <p class="netlist">O1 in 0 out 0 MyLossyTline<br/>
+      .model MyLossyTline LTRA(len=1 R=10 L=1u C=10n)</p>
+    <p>This is a single-conductor lossy transmission line. N1 and N2 are the nodes at port 1. N3 and N4 are the nodes at port 2. A model card is required to define the electrical characteristics of this circuit element.</p>
+    <p>Model parameters for Lossy Transmission Lines</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units/Type</th>
+          <th>Default</th>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td>Resistance per unit length</td>
+          <td>Ω</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>L</td>
+          <td>Inductance per unit length</td>
+          <td>H</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>Conductivity per unit length</td>
+          <td>1/Ω</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Capacitance per unit length</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Len</td>
+          <td>Number of unit lengths</td>
+          <td>-</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Rel</td>
+          <td>Relative rate of change of derivative to set a breakpoint</td>
+          <td> </td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Abs</td>
+          <td>Absolute rate of change of derivative to set a breakpoint</td>
+          <td> </td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>NoStepLimit</td>
+          <td>Don&#39;t limit time- step to less than line delay</td>
+          <td>(flag)</td>
+          <td>not set</td>
+        </tr>
+        <tr>
+          <td>NoControl</td>
+          <td>Don&#39;t attempt complex time-step control</td>
+          <td>(flag)</td>
+          <td>not set</td>
+        </tr>
+        <tr>
+          <td>LinInterp</td>
+          <td>Use linear interpolation</td>
+          <td>(flag)</td>
+          <td>not set</td>
+        </tr>
+        <tr>
+          <td>MixedInterp</td>
+          <td>Use linear interpolation when quadratic seems to fail</td>
+          <td>(flag)</td>
+          <td>not set</td>
+        </tr>
+        <tr>
+          <td>CompactRel</td>
+          <td>Reltol for history compaction</td>
+          <td> </td>
+          <td>RELTOL</td>
+        </tr>
+        <tr>
+          <td>CompactAbs</td>
+          <td>Abstol for history compaction</td>
+          <td> </td>
+          <td>ABSTOL</td>
+        </tr>
+        <tr>
+          <td>TruncNr</td>
+          <td>Use Newton-Raphson method for time-step control</td>
+          <td>(flag)</td>
+          <td>not set</td>
+        </tr>
+        <tr>
+          <td>TruncDontCut</td>
+          <td>Don&#39;t limit time-step to keep impulse-response errors low</td>
+          <td>(flag)</td>
+          <td>not set</td>
+        </tr>
+      </tbody>
+    </table>
+    <p> </p>
+  </div>
+  <div id="topic_footer">
+    <div id="topic_footer_content">Copyright © 1998-2026 by Analog Devices Inc.. All Rights Reserved.</div>
+  </div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.14"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

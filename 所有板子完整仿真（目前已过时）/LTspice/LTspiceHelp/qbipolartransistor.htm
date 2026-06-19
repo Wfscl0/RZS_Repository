@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Q. Bipolar Transistor</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="Q. Bipolar Transistor"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Q. Bipolar Transistor</h1>
+    <p>Symbol Names: NPN, PNP, NPN2, PNP2</p>
+    <p>Syntax:</p>
+    <p class="netlist">Qxxx Collector Base Emitter [Substrate Node] &lt;model&gt;|&lt;string expression&gt; [area] [off] [temp=&lt;T&gt;]</p>
+    <p>Example:</p>
+    <p class="netlist">Q1 C B E MyNPNmodel<br/>
+      .model MyNPNmodel NPN(Bf=75)</p>
+    <p>Bipolar transistors require a model card to specify its characteristics. The model card keywords NPN and PNP indicate the polarity of the transistor.</p>
+    <p>The bipolar junction transistor model is an adaptation of the integral charge control model of Gummel and Poon. This modified Gummel-Poon model extends the original model to include several effects at high bias levels, quasi-saturation, and substrate conductivity. The model automatically simplifies to the Ebers-Moll model when certain parameters are not specified. The DC model is defined by the parameters Is, Bf, Nf, Ise, Ikf, and Ne which determine the forward current gain characteristics, Is, Br, Nr, Isc, Ikr, and Nc which determine the reverse current gain characteristics, and Vaf and Var which determine the output conductance for forward and reverse regions. Three ohmic resistances Rb, Rc and Re, are included, where Rb can be high current dependent. Base charge storage is modeled by forward and reverse transit times, Tf and Tr, the forward transit time Tf being bias dependent if desired; and nonlinear depletion layer capacitances, which are determined by Cje, Vje and Mje, for the B-E junction, Cjc, Vjc, and MJC for the B-C junction and Cjs, Vjs, and Mjs for the collector-substrate junction. The temperature dependence of the saturation current, Is, is determined by the energy gap, Eg, and the saturation-current temperature exponent, XTI. Additionally base current temperature dependence is modeled by the beta temperature exponent XTB in the new model. The values specified are assumed to have been measured at the temperature TNOM, which can be specified on the .OPTIONS control line or overridden by a specification on the .model line.</p>
+    <p>The BJT parameters used in the modified Gummel-Poon model are listed below.</p>
+    <p>Modified Gummel-Poon BJT Parameters</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+          <th>Default</th>
+        </tr>
+        <tr>
+          <td>Is</td>
+          <td>Transport saturation current</td>
+          <td>A</td>
+          <td>1e-16</td>
+        </tr>
+        <tr>
+          <td>Ibc</td>
+          <td>Base-collector saturation current</td>
+          <td>A</td>
+          <td>Is</td>
+        </tr>
+        <tr>
+          <td>Ibe</td>
+          <td>Base-emitter saturation current</td>
+          <td>A</td>
+          <td>Is</td>
+        </tr>
+        <tr>
+          <td>Bf</td>
+          <td>Ideal maximum forward beta</td>
+          <td>-</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Nf</td>
+          <td>Forward current emission coefficient</td>
+          <td>-</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Vaf</td>
+          <td>Forward Early voltage</td>
+          <td>V</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Ikf</td>
+          <td>Corner for forward beta high current roll-off</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>nk</td>
+          <td>High current roll-off coefficient</td>
+          <td>-</td>
+          <td>.5</td>
+        </tr>
+        <tr>
+          <td>Ise</td>
+          <td>B-E leakage saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Ne</td>
+          <td>B-E leakage emission coefficient</td>
+          <td>-</td>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <td>Br</td>
+          <td>Ideal maximum reverse beta</td>
+          <td>-</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Nr</td>
+          <td>Reverse current emission coefficient</td>
+          <td>-</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Var</td>
+          <td>Reverse Early voltage</td>
+          <td>V</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Ikr</td>
+          <td>Corner for reverse beta high current roll-off</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Isc</td>
+          <td>B-C leakage saturation current</td>
+          <td>A</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Nc</td>
+          <td>B-C leakage emission coefficient</td>
+          <td>-</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Rb</td>
+          <td>Zero-bias base resistance</td>
+          <td>Ω</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Irb</td>
+          <td>Current where base resistance falls halfway to its min value</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Rbm</td>
+          <td>Minimum base resistance at high currents</td>
+          <td>Ω</td>
+          <td>Rb</td>
+        </tr>
+        <tr>
+          <td>Re</td>
+          <td>Emitter resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Rc</td>
+          <td>Collector resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Cje</td>
+          <td>B-E zero-bias depletion capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Vje</td>
+          <td>B-E built-in potential</td>
+          <td>V</td>
+          <td>0.75</td>
+        </tr>
+        <tr>
+          <td>Mje</td>
+          <td>B-E junction exponential factor</td>
+          <td>-</td>
+          <td>0.33</td>
+        </tr>
+        <tr>
+          <td>Tf</td>
+          <td>Ideal forward transit time</td>
+          <td>sec</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xtf</td>
+          <td>Coefficient for bias dependence of Tf</td>
+          <td>-</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Vtf</td>
+          <td>Voltage describing Vbc dependence of Tf</td>
+          <td>V</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Itf</td>
+          <td>High-current parameter for effect on Tf</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Ptf</td>
+          <td>Excess phase at freq=1/(Tf*2*Ω)Hz</td>
+          <td>°</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Cjc</td>
+          <td>B-C zero-bias depletion capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Vjc</td>
+          <td>B-C built-in potential</td>
+          <td>V</td>
+          <td>0.75</td>
+        </tr>
+        <tr>
+          <td>Mjc</td>
+          <td>B-C junction exponential factor</td>
+          <td>-</td>
+          <td>0.33</td>
+        </tr>
+        <tr>
+          <td>Xcjc</td>
+          <td>Fraction of B-C depletion capacitance connected to internal base node</td>
+          <td>-</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Xcjc2</td>
+          <td>Fraction of B-C depletion capacitance connected between internal base node and extrinsic collector</td>
+          <td>-</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>extsub</td>
+          <td>Extrinsicness of more intrinsic collector node used for substrate capacitance charge division</td>
+          <td>-</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Tr</td>
+          <td>Ideal reverse transit time</td>
+          <td>sec</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Cjs</td>
+          <td>Zero-bias collector-substrate capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xcjs</td>
+          <td>Fraction of Cjs connected internally to Rc</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Vjs</td>
+          <td>Substrate junction built-in potential</td>
+          <td>V</td>
+          <td>0.75</td>
+        </tr>
+        <tr>
+          <td>Mjs</td>
+          <td>Substrate junction exponential factor</td>
+          <td>-</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xtb</td>
+          <td>Forward and reverse beta temperature exponent</td>
+          <td>-</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Eg</td>
+          <td>Energy gap for temperature effect on Is</td>
+          <td>eV</td>
+          <td>1.11</td>
+        </tr>
+        <tr>
+          <td>Xti</td>
+          <td>Temperature exponent for effect on Is</td>
+          <td>-</td>
+          <td>3.</td>
+        </tr>
+        <tr>
+          <td>Kf</td>
+          <td>Flicker-noise coefficient</td>
+          <td>-</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Af</td>
+          <td>Flicker-noise exponent</td>
+          <td>-</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Fc</td>
+          <td>Coefficient for forward-bias depletion capacitance formula</td>
+          <td>-</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>subs</td>
+          <td>Geometry selector if LPNP is not used: 1 means vertical 2 means lateral</td>
+          <td>-</td>
+          <td>
+            <p>NPN: 1<br/>
+              PNP: 2</p>
+          </td>
+        </tr>
+        <tr>
+          <td>BVcbo</td>
+          <td>Collector-base breakdown voltage</td>
+          <td>-</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>nBVcbo</td>
+          <td>Collector-base breakdown voltage coefficient</td>
+          <td>-</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>BVbe</td>
+          <td>Base-emitter breakdown voltage</td>
+          <td>V</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Ibvbe</td>
+          <td>Current at base-emitter breakdown voltage</td>
+          <td>A</td>
+          <td>1e-10</td>
+        </tr>
+        <tr>
+          <td>nbvbe</td>
+          <td>Base-emitter breakdown coefficient</td>
+          <td>-</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Tnom</td>
+          <td>Parameter measurement temperature</td>
+          <td>°C</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>Cn</td>
+          <td>Quasi-saturation temperature coefficient for hole mobility</td>
+          <td>
+            <p>2.42 NPN<br/>
+              2.2  PNP</p>
+          </td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Quasi-saturation temperature coefficient for scattering-limited hole carrier velocity</td>
+          <td>
+            <p>.87 NPN<br/>
+              .52 PNP</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Gamma</td>
+          <td>Epitaxial region doping factor</td>
+          <td></td>
+          <td>1e-11</td>
+        </tr>
+        <tr>
+          <td>Qco</td>
+          <td>Epitaxial region charge factor</td>
+          <td>Coul</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Quasimod</td>
+          <td>Quasi-saturation flag for temperature dependence</td>
+          <td>-</td>
+          <td>(not set)</td>
+        </tr>
+        <tr>
+          <td>Rco</td>
+          <td>Epitaxial region resistance</td>
+          <td>Ω</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Vg</td>
+          <td>Quasi-saturation extrapolated bandgap voltage at 0°K</td>
+          <td>V</td>
+          <td>1.206</td>
+        </tr>
+        <tr>
+          <td>Vo</td>
+          <td>Carrier mobility knee voltage</td>
+          <td>V</td>
+          <td>10.</td>
+        </tr>
+        <tr>
+          <td>Tre1</td>
+          <td>Re linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tre2</td>
+          <td>Re quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Trb1</td>
+          <td>Rb linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Trb2</td>
+          <td>Rb quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Trc1</td>
+          <td>Rc linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Trc2</td>
+          <td>Rc quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Trm1</td>
+          <td>Rmb linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Trm2</td>
+          <td>Rmb quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Iss</td>
+          <td>Substrate junction saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Ns</td>
+          <td>Substrate junction emission Coefficient</td>
+          <td>-</td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Tvaf1</td>
+          <td>Vaf linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tvaf2</td>
+          <td>Vaf quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tvar1</td>
+          <td>Var linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tvar2</td>
+          <td>Var quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tikf1</td>
+          <td>Ikf linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tikf2</td>
+          <td>Ikf quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Trbm1</td>
+          <td>Rbm linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Trbm2</td>
+          <td>Rbm quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tbvcbo1</td>
+          <td>BVcbo linear temperature coefficient</td>
+          <td>1/°C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tbvcbo2</td>
+          <td>BVcbo quadratic temperature coefficient</td>
+          <td>1/°C<sup>2</sup></td>
+          <td>0.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>It is possible to annotate a model with device ratings. This information is displayed in the schematic capture GUI to assist in selecting a device but does not directly impact the electrical behavior in simulation. The following parameters may be specified.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>Vceo</td>
+          <td>Maximum collector-emitter voltage with the base floating</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Icrating</td>
+          <td>Maximum collector current</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>mfg</td>
+          <td>Name of manufacturer</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The model parameter &quot;level&quot; can be used to specify another type of BJT in LTspice.</p>
+    <p>Set Level=504 to use the MEXTRAM 504 transistor due to NXP(Philips).</p>
+    <p>Due to a generous contribution of source code from Dr.-Ing. Dietmar Warning of DAnalyse GmbH, Berlin, Germany; LTspice includes a version of VBIC. Set Level=9 to use the alternate device. Level 4 is a synonym for level 9. The following documentation has been supplied by Dr. Warning:</p>
+    <p>VBIC - Vertical Bipolar Inter Company model</p>
+    <p>The VBIC model is a extended development of the Standard Gummel-Poon (SGP) model with the focus of integrated bipolar transistors in today&#39;s modern semiconductor technologies. With the implemented modified quasi-saturation model from Kull and Nagel it is also possible to model the special output characteristic of switching transistors. It is a widely used alternative to the SGP model for silicon, SiGe and III-V HBT devices.</p>
+    <p>VBIC Capabilities compared to Standard Gummel-Poon Model</p>
+    <ul class="Disc">
+      <li>Integrated Substrate transistor for parasitic devices in integrated processes</li>
+      <li>Weak avalanche and Base-emitter breakdown model</li>
+      <li>Improved Early Effect modeling</li>
+      <li>Physical separation of Ic and Ib</li>
+      <li>Improved Depletion capacitance model</li>
+      <li>Improved temperature modeling</li>
+    </ul>
+    <p>Model Structure</p>
+    <p><img alt="" src="assets/images/lib/vbic.gif" style="vertical-align: text-bottom;"/></p>
+    <p>VBIC Parameters</p>
+    <p>Because the VBIC model is based on SGP model it is possible to start with SGP parameters, carry out some transformations. Following parameters are from VBIC version 1.2, which is implemented in LTspice in the 4-terminal version without excess phase network and self-heating effect. To switch from SGP to VBIC you should set the extra parameter level to 9.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Unit</th>
+          <th>Default</th>
+        </tr>
+        <tr>
+          <td>Tnom</td>
+          <td>Parameter measurement temperature</td>
+          <td>°C</td>
+          <td>27.</td>
+        </tr>
+        <tr>
+          <td>Rcx</td>
+          <td>Extrinsic collector resistance</td>
+          <td>Ω</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Rci</td>
+          <td>Intrinsic collector resistance</td>
+          <td>Ω</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Vo</td>
+          <td>Epi drift saturation voltage</td>
+          <td>V</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>gamm</td>
+          <td>Epi doping parameter</td>
+          <td></td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>hrcf</td>
+          <td>High current RC factor</td>
+          <td></td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Rbx</td>
+          <td>Extrinsic base resistance</td>
+          <td>Ω</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Rbi</td>
+          <td>Intrinsic base resistance</td>
+          <td>Ω</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Re</td>
+          <td>Intrinsic emitter resistance</td>
+          <td>Ω</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Rs</td>
+          <td>Intrinsic substrate resistance</td>
+          <td>Ω</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Rbp</td>
+          <td>Parasitic base resistance</td>
+          <td>Ω</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Is</td>
+          <td>Transport saturation current</td>
+          <td>A</td>
+          <td>1e-16</td>
+        </tr>
+        <tr>
+          <td>nf</td>
+          <td>Forward emission coefficient</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>nr</td>
+          <td>Reverse emission coefficient</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Fc</td>
+          <td>Fwd bias depletion capacitance limit</td>
+          <td></td>
+          <td>0.9</td>
+        </tr>
+        <tr>
+          <td>Cbeo</td>
+          <td>Extrinsic B-E overlap capacitance</td>
+          <td>F</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Cje</td>
+          <td>Zero bias B-E depletion capacitance</td>
+          <td>F</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>pe</td>
+          <td>B-E built in potential</td>
+          <td>V</td>
+          <td>0.75</td>
+        </tr>
+        <tr>
+          <td>me</td>
+          <td>B-E junction grading coefficient</td>
+          <td></td>
+          <td>0.33</td>
+        </tr>
+        <tr>
+          <td>Aje</td>
+          <td>B-E capacitance smoothing factor</td>
+          <td></td>
+          <td>-0.5</td>
+        </tr>
+        <tr>
+          <td>Cbco</td>
+          <td>Extrinsic B-C overlap capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Cjc</td>
+          <td>Zero bias B-C depletion capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Qco</td>
+          <td>Epi charge parameter</td>
+          <td>C</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Cjep</td>
+          <td>B-C extrinsic zero bias capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>pc</td>
+          <td>B-C built in potential</td>
+          <td>V</td>
+          <td>0.75</td>
+        </tr>
+        <tr>
+          <td>mc</td>
+          <td>B-C junction grading coefficient</td>
+          <td></td>
+          <td>0.33</td>
+        </tr>
+        <tr>
+          <td>Ajc</td>
+          <td>B-C capacitance smoothing factor</td>
+          <td></td>
+          <td>-0.5</td>
+        </tr>
+        <tr>
+          <td>Cjcp</td>
+          <td>Zero bias S-C capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>ps</td>
+          <td>S-C junction built in potential</td>
+          <td>V</td>
+          <td>0.75</td>
+        </tr>
+        <tr>
+          <td>ms</td>
+          <td>S-C junction grading coefficient</td>
+          <td></td>
+          <td>0.33</td>
+        </tr>
+        <tr>
+          <td>Ajs</td>
+          <td>S-C capacitance smoothing factor</td>
+          <td></td>
+          <td>-0.5</td>
+        </tr>
+        <tr>
+          <td>Ibei</td>
+          <td>Ideal B-E saturation current</td>
+          <td>A</td>
+          <td>1e-18</td>
+        </tr>
+        <tr>
+          <td>wbe</td>
+          <td>Portion of IBEI from Vbei 1-WBE from Vbex</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>nei</td>
+          <td>Ideal B-E emission coefficient</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Iben</td>
+          <td>Non-ideal B-E saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>nen</td>
+          <td>Non-ideal B-E emission coefficient</td>
+          <td></td>
+          <td>2.</td>
+        </tr>
+        <tr>
+          <td>ibci</td>
+          <td>Ideal B-C saturation current</td>
+          <td>A</td>
+          <td>1e-16</td>
+        </tr>
+        <tr>
+          <td>Nci</td>
+          <td>Ideal B-C emission coefficient</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>ibcn</td>
+          <td>Non-ideal B-C saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>ncn</td>
+          <td>Non-ideal B-C emission coefficient</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>avc1</td>
+          <td>B-C weak avalanche parameter 1</td>
+          <td>1/V</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>avc2</td>
+          <td>B-C weak avalanche parameter 2</td>
+          <td>1/V</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>isp</td>
+          <td>Parasitic transport saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>wsp</td>
+          <td>Portion of ICCP</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>nfp</td>
+          <td>Parasitic fwd emission coefficient</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Ibeip</td>
+          <td>Ideal parasitic B-E saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>ibenp</td>
+          <td>Non-ideal parasitic B-E saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>ibcip</td>
+          <td>Ideal parasitic B-C saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>ncip</td>
+          <td>Ideal parasitic B-C emission coefficient</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Ibcnp</td>
+          <td>Non-ideal parasitic B-C saturation current</td>
+          <td>A</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>ncnp</td>
+          <td>Non-ideal parasitic B-C emission coefficient</td>
+          <td></td>
+          <td>2.</td>
+        </tr>
+        <tr>
+          <td>Vef</td>
+          <td>Forward Early voltage</td>
+          <td></td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Ver</td>
+          <td>Reverse Early voltage</td>
+          <td></td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Ikf</td>
+          <td>Forward knee current</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>ikr</td>
+          <td>Reverse knee current</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Ikp</td>
+          <td>Parasitic knee current</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>tf</td>
+          <td>Ideal forward transit time</td>
+          <td>s</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Qtf</td>
+          <td>Variation of TF with base-width modulation</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xtf</td>
+          <td>Coefficient for bias dependence of TF</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Vtf</td>
+          <td>Voltage giving VBC dependence of TF</td>
+          <td>V</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>Itf</td>
+          <td>High current dependence of TF</td>
+          <td>A</td>
+          <td>Infin.</td>
+        </tr>
+        <tr>
+          <td>tr</td>
+          <td>Ideal reverse transit time</td>
+          <td>sec</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Td</td>
+          <td>Forward excess-phase delay time</td>
+          <td>Sec</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>kfn</td>
+          <td>B-E Flicker Noise Coefficient</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>afn</td>
+          <td>B-E Flicker Noise Exponent</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>bfn</td>
+          <td>B-E Flicker Noise 1/f dependence</td>
+          <td></td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Xre</td>
+          <td>Temperature exponent of RE</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xrbi</td>
+          <td>Temperature exponent of RBI</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xrci</td>
+          <td>Temperature exponent of RCI</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xrs</td>
+          <td>Temperature exponent of RS</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xvo</td>
+          <td>Temperature exponent of VO</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Ea</td>
+          <td>Activation energy for IS</td>
+          <td>V</td>
+          <td>1.12</td>
+        </tr>
+        <tr>
+          <td>Eaie</td>
+          <td>Activation energy for IBEI</td>
+          <td>V</td>
+          <td>1.12</td>
+        </tr>
+        <tr>
+          <td>Eaic</td>
+          <td>Activation energy for IBCI/IBEIP</td>
+          <td>V</td>
+          <td>1.12</td>
+        </tr>
+        <tr>
+          <td>Eais</td>
+          <td>Activation energy for IBCIP</td>
+          <td>V</td>
+          <td>1.12</td>
+        </tr>
+        <tr>
+          <td>Eane</td>
+          <td>Activation energy for IBEN</td>
+          <td>V</td>
+          <td>1.12</td>
+        </tr>
+        <tr>
+          <td>Eanc</td>
+          <td>Activation energy for IBCN/IBENP</td>
+          <td>V</td>
+          <td>1.12</td>
+        </tr>
+        <tr>
+          <td>Eans</td>
+          <td>Activation energy for IBCNP</td>
+          <td>V</td>
+          <td>1.12</td>
+        </tr>
+        <tr>
+          <td>Xis</td>
+          <td>Temperature exponent of IS</td>
+          <td></td>
+          <td>3.</td>
+        </tr>
+        <tr>
+          <td>Xii</td>
+          <td>Temperature exponent of IBEI,IBCI,IBEIP,IBCIP</td>
+          <td></td>
+          <td>3.</td>
+        </tr>
+        <tr>
+          <td>Xin</td>
+          <td>Temperature exponent of IBEN,IBCN,IBENP,IBCNP</td>
+          <td></td>
+          <td>3.</td>
+        </tr>
+        <tr>
+          <td>Tnf</td>
+          <td>Temperature exponent of NF</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tavc</td>
+          <td>Temperature exponent of AVC2</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>rth</td>
+          <td>Thermal resistance</td>
+          <td>K/W</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Cth</td>
+          <td>Thermal capacitance</td>
+          <td>Ws/K</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Vrt</td>
+          <td>Punch-through voltage of internal B-C junction</td>
+          <td>V</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Art</td>
+          <td>Smoothing parameter for reach-through</td>
+          <td></td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Ccso</td>
+          <td>Fixed C-S capacitance</td>
+          <td>F</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>qbm</td>
+          <td>Select SGP qb formulation</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>nkf</td>
+          <td>High current beta rolloff</td>
+          <td></td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>Xikf</td>
+          <td>Temperature exponent of IKF</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xrcx</td>
+          <td>Temperature exponent of RCX</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xrbx</td>
+          <td>Temperature exponent of RBX</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Xrbp</td>
+          <td>Temperature exponent of RBP</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Isrr</td>
+          <td>Separate IS for fwd and rev</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Xisr</td>
+          <td>Temperature exponent of ISR</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>dear</td>
+          <td>Delta activation energy for ISRR</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Eap</td>
+          <td>Excitation energy for ISP</td>
+          <td></td>
+          <td>1.12</td>
+        </tr>
+        <tr>
+          <td>Vbbe</td>
+          <td>B-E breakdown voltage</td>
+          <td>V</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>nbbe</td>
+          <td>B-E breakdown emission coefficient</td>
+          <td></td>
+          <td>1.</td>
+        </tr>
+        <tr>
+          <td>Ibbe</td>
+          <td>B-E breakdown current</td>
+          <td></td>
+          <td>1e-06</td>
+        </tr>
+        <tr>
+          <td>Tvbbe1</td>
+          <td>Linear temperature coefficient of VBBE</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tvbbe2</td>
+          <td>Quadratic temperature coefficient of VBBE</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Tnbbe</td>
+          <td>Temperature coefficient of NBBE</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>ebbe</td>
+          <td>exp(-VBBE/(NBBE*Vtv))</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>dtemp</td>
+          <td>Local Temperature difference</td>
+          <td>°</td>
+          <td>0.</td>
+        </tr>
+        <tr>
+          <td>Vers</td>
+          <td>Revision Version</td>
+          <td></td>
+          <td>1.2</td>
+        </tr>
+        <tr>
+          <td>Vref</td>
+          <td>Reference Version</td>
+          <td></td>
+          <td>0.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>References:</p>
+    <p>C. C. McAndrew et al., &quot;Vertical Bipolar Inter Company 1995: An Improved Vertical, IC Bipolar Transistor Model&quot;, Proceedings of the IEEE Bipolar Circuits and Technology Meeting, pp. 170 - 177, 1995</p>
+    <p>C. C. McAndrew et.al., VBIC95, &quot;The Vertical Bipolar Inter-Company Model&quot;, IEEE Journal of Solid State Circuits, vol. 31, No. 10, October 1996</p>
+    <p>C. C. McAndrew, VBIC Model Definition, Release 1.2, 18. Sep. 1999</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.15"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

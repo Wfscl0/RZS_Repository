@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+    <title>Super Expert Mode</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta name="description" content=""/>
+    <meta name="generator" content="Adobe RoboHelp 2022"/>    <meta name="rh-index-keywords" content="Super Expert Mode"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+    <div id="topic_content">
+      <h1>General Attribute Editor</h1>
+      <p>Sometimes it is desired to get direct access to every available component attribute to edit their contents and visibility. An editor that allows you to do this can be reached by placing the mouse over the body of a symbol, holding down the control key, and clicking the right mouse button. A dialog box will appear that displays all available symbol attributes. Next to each field is a check box to indicate if the field should be visible on the schematic.</p>
+      <p><img src="assets/images/image16.png"/></p>
+      <p>The attributes SpiceModel, Value, Value2, SpiceLine, and SpiceLine2 are all part of the overall value of the component. In terms of the way the component is netlisted for SPICE, the component will generate a line of SPICE that looks like this:</p>
+      <p>&lt;name&gt; node1 node2 [...] &lt;SpiceModel&gt;
+        <br/>
+        + &lt;Value&gt; &lt;Value2&gt; &lt;SpiceLine&gt; &lt;SpiceLine2&gt; </p>
+      <p>The prefix attribute character is prefixed to the reference designator if different than the first character of the reference designator. The Prefix character and InstName will be separated with a &#39;§&#39; character in this case. For example, if you have a Prefix attribute of &quot;M&quot; and an InstName attribute of &quot;Q1&quot;, the name in the netlist will be M§Q1. This allows you use reference designators with a leading character different than SPICE uses to identify the type of device.</p>
+      <p>There are three exceptions to the above rule. There is one special symbol, jumper, that does not translate into a circuit element, but is a directive to the netlist generator that there are two different names for the same electrically identical node. Another exception is a symbol defined to have a prefix of &#39;X&#39; and both a Value and Value2 attributes defined. Such a component netlists as two lines of SPICE:</p>
+      <p>.lib &lt;SpiceModel&gt;
+        <br/>
+        &lt;name&gt; node1 node2 [...] &lt;Value2&gt; </p>
+      <p>This allows symbols to be defined that automatically include the library that contains the definition of the subcircuit called by the component. The netlist compiler removes duplicate .lib statements. Note that such components are not editable on the schematic. The third exception is a symbol that has other exception is a symbol defined to have a prefix of &#39;X&#39; and a ModelFile attribute defined.  Such a component also netlists as two lines of SPICE:</p>
+      <p>.lib &lt;ModelFile&gt;
+        <br/>
+        &lt;name&gt; node1 node2 [...] &lt;SpiceModel&gt; &lt;Value&gt; &lt;Value2&gt; &lt;SpiceLine&gt; &lt;SpiceLine2&gt; </p>
+      <p>Use this method when you want to automatically include a library file yet still want to have an instance of this symbol editable. If the symbol attribute SpiceModel exists and is the name of a subcircuit in the file specified as &lt;ModelFile&gt; then a drop list of all subcircuits names will be available when an instance of the symbol is edited on a schematic.</p>
+    </div>  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+  
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "3.7.3"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

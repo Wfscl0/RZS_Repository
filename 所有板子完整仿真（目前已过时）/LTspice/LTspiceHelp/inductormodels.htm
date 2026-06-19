@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Inductor Models</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="Inductor Models"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Inductor Models</h1>
+    <h4>How do I design a coupled inductor?</h4>
+    <p>You first (i) draw at least two inductors and then (ii) define the K coefficient between the two inductors. See <a href="kmutualinductance.htm">mutual inductance</a> section.</p>
+    <h4>How do I control the inductor parasitic resistance?</h4>
+    <p>By default, LTspice adds power losses to inductors to aid SMPS transient analysis. For SMPS, these losses are of usually of no consequence, but may be turned off if desired. On the &quot;Tools &gt; Settings &gt; Hacks!&quot; page, uncheck &quot;Supply a min. inductor damping if no Rpar is given&quot; This setting will be remembered between invocations of the program. There is also a default series resistance of 1 milliohm for inductors that aren&#39;t mentioned in a mutual inductance statement. This Rser allows LTspice to integrate the inductance as a Norton equivalent circuit instead of Thevenin equivalent in order to reduce the size of the circuit&#39;s linearized matrix. If you don&#39;t want LTspice to introduce this minimum resistance, you must explicitly set Rser=0 for that inductor. This will require LTspice to use the more cumbersome Thevenin equivalent of the inductor during transient analysis.</p>
+    <h4>How do I add my own inductor model?</h4>
+    <p>Choose File &gt; New Library &gt; Inductor, add inductors, and save the file in Documents/LTspice/user.ind.  Do not edit %LOCALAPPDATA%\LTspice\lib\cmp\standard.ind - this file is overwritten when LTspice is updated.  However, standard.ind may be opened in LTspice to enable copying inductors to user.ind as a starting point.  To use one of the added inductor models, place an inductor on the schematic, right-click, and choose &quot;Select Inductor.&quot;  This will present a list of all of the inductors in standard.ind as well as those in user.ind.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "7.4"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

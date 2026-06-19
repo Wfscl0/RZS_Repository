@@ -1,0 +1,33 @@
+* EBS board logic check.
+* TI official SN74LVC1G14 and SN74LVC1G08 models are used for the inverter/AND.
+* The UCC2946 watchdog and relay contacts are represented by behavioral equivalents.
+
+.option plotwinsize=0
+.include ../models/official/extracted/SN74LVC1G14_SCEM637/SN74LVC1G14.cir
+.include ../models/official/extracted/SN74LVC1G08_SCEM642/SN74LVC1G08.cir
+
+VCC vcc 0 5
+VEBS_PWR ebs_pwr 0 24
+
+* watchdog_ok high = watchdog toggling is valid; low = watchdog fault.
+VWATCHDOG_OK watchdog_ok 0 PWL(0 5 2m 5 2.01m 0 4m 0 4.01m 5 9m 5)
+
+* EBS_TRIG: normal low, trigger fault high.
+VEBS_TRIG ebs_trig 0 PWL(0 0 5m 0 5.01m 5 7m 5 7.01m 0 9m 0)
+
+X_TRIG_OK trig_ok ebs_trig vcc 0 SN74LVC1G14
+X_DRIVE drive watchdog_ok trig_ok vcc 0 SN74LVC1G08
+
+* Relay output: EBS_WORK is fed from EBS_PWR only while the low-side driver is on.
+B_EBS_WORK ebs_work 0 V={if(V(drive)>2.5, if(V(ebs_pwr)>10, 24, 0), 0)}
+B_AS_LOCK as_lock 0 V={V(ebs_work)*4.7e3/(22e3+4.7e3)}
+
+.tran 0 9m 0 5u
+
+.meas tran ebs_work_normal FIND V(ebs_work) AT=1m
+.meas tran as_lock_normal FIND V(as_lock) AT=1m
+.meas tran ebs_work_watchdog_fault FIND V(ebs_work) AT=3m
+.meas tran ebs_work_trig_fault FIND V(ebs_work) AT=6m
+.meas tran ebs_work_recovered FIND V(ebs_work) AT=8m
+
+.end

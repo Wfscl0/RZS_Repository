@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>Basic Schematic Editing</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="Basic Schematic Editing"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>Basic Schematic Editing</h1>
+    <p>The schematic capture program is used to create new schematics or modify the example circuits provided. The circuit size and depth of hierarchy is limited only by computer resources.</p>
+    <p>The program ships with several thousand symbols. These symbols cover most of ADI&#39;s power ICs, opamps, comparators, and many general-purpose devices for circuit design. You can also draw your own symbols for devices and subcircuits.</p>
+    <p>LTspice schematic editing is a &quot;verb-noun&quot; interface instead of &quot;noun-verb.&quot; This means that instead of first selecting objects (the nouns) to move, stretch, copy, or delete (the verbs); you first select the action and then the object. Hence, when you wish to move, mirror, rotate, stretch or delete objects, first select the move, stretch or delete command. Then you can select an object by clicking on it. You can select multiple objects by dragging a box about them. The program will stay in the move, stretch, or delete mode until the right mouse button is clicked or the Esc key is pressed. The verb-noun approach reduces the amount of mouse syntax required to edit schematics. Once mastered, it allows the user to draft faster in LTspice than is possible with pencil and paper.</p>
+    <h2>Commands</h2>
+    <h3>Undo</h3>
+    <p>Undo the last command.</p>
+    <h3>Redo</h3>
+    <p>Redo the last Undo command.</p>
+    <h3>Text</h3>
+    <p>Place text on the schematic. This merely annotates the schematic with information. This text has no electrical impact on the circuit.</p>
+    <h3>SPICE Directive</h3>
+    <p>Place text on the schematic that will be included in the netlist. This lets you mix schematic capture with a SPICE netlist. It lets you set simulation options, include files that contain models, define new models, or use any other valid SPICE commands. You can even use it to run a subcircuit that you don&#39;t have a symbol for by stating an instance of the model (a SPICE command that begins with and &#39;X&#39;) on the schematic and including the definition.</p>
+    <h3>SPICE Analysis</h3>
+    <p>Enter/edit the simulation command.</p>
+    <h3>Resistor</h3>
+    <p>Place a new resistor on the schematic.</p>
+    <h3>Capacitor</h3>
+    <p>Place a new capacitor on the schematic.</p>
+    <h3>Inductor</h3>
+    <p>Place a new inductor on the schematic.</p>
+    <h3>Diode</h3>
+    <p>Place a new diode on the schematic.</p>
+    <h3>Component</h3>
+    <p>Place a new component on the schematic. The command brings up a dialog that lets you browse and preview the symbol database. This is a more general form of the Resistor, Capacitor, Inductor, and Diode commands.</p>
+    <h3>Rotate</h3>
+    <p>Rotate the sprited objects. Note this is grayed out when there are no objects sprited.</p>
+    <h3>Mirror</h3>
+    <p>Mirror the sprited objects. Note this is grayed out when there are no objects sprited.</p>
+    <h3>Draw Wire</h3>
+    <p>Click the left mouse button to start a wire. Each mouse click will define a new wire segment. Click on an existing wire segment to join the new wire with an existing one. Right click once to cancel the current wire. Right click again to quit this command. You can draw wires through components such as resistors. The wire will automatically be cut such that the resistor is now in series with the wire.</p>
+    <h3>Label Net</h3>
+    <p>Specify the name of a node so an arbitrary one isn&#39;t generated by the netlister for this node.</p>
+    <h3>Place GND</h3>
+    <p>Place a GROUND symbol. This is node &quot;0&quot;, the global circuit common.</p>
+    <h3>Delete</h3>
+    <p>Delete objects by clicking on them or dragging a box around them.</p>
+    <h3>Duplicate</h3>
+    <p>Duplicate objects by clicking on them or dragging a box around them. You can copy from one schematic to another if they are both opened in the same invocation of LTspice. Start the Duplicate command in the window of the first schematic. Then make the second schematic the active window and type Ctrl-V.</p>
+    <h3>Move</h3>
+    <p>Click on or drag a box around the objects you wish to move. Then you can move those objects to a new location.</p>
+    <h3>Paste</h3>
+    <p>It is enabled in a new schematic window when objects were already selected with the &#39;Duplicate&#39; command.</p>
+    <h3>Stretch</h3>
+    <p>Click on or drag a box around the objects you wish to stretch. Then you can move those objects to a new location and the attached the wires will stretch to the new location.</p>
+    <h3>Draw &gt; Line</h3>
+    <p>Draw a line on the schematic. Such lines have no electrical impact on the circuit, but can be useful for annotating the circuit with notes.</p>
+    <h3>Draw &gt; Rectangle</h3>
+    <p>Draw a rectangle on the schematic. This rectangle has no electrical impact on the circuit, but can be useful for annotating the circuit with notes.</p>
+    <h3>Draw &gt; Circle</h3>
+    <p>Draw a circle on the schematic. This circle has no electrical impact on the circuit, but can be useful for annotating the circuit with notes.</p>
+    <h3>Draw &gt; Arc</h3>
+    <p>Draw an arc on the schematic. This arc has no electrical impact on the circuit, but can be useful for annotating the circuit with notes.</p>
+    <p>NOTE: The graphical annotations to the schematic; lines, rectangles, circles, and arcs; snap by default to the same grid as the used for electrical contacts of wires and pins. Hold down the control key while positioning these to defeat this snap.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "3.1"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

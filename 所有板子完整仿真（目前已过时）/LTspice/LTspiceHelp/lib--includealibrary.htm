@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>.LIB — Include a Library</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="LIB"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>.LIB — Include a Library</h1>
+    <p>Syntax:</p>
+    <p class="netlist">.lib &lt;filename&gt;</p>
+    <p>This directive includes the model and subcircuit definitions of the named file as if that file had been typed into the netlist instead of the .lib command. Circuit elements at global scope are ignored.</p>
+    <p>An absolute path name may be entered for the filename. Otherwise LTspice searches the following folders in order:</p>
+    <ol class="Decimal">
+      <li>The directory that contains the calling netlist</li>
+      <li>The user libraries directory</li>
+      <li>Any of the user specified library search paths</li>
+      <li>%LOCALAPPDATA%\LTspice\lib\cmp *</li>
+      <li>%LOCALAPPDATA%\LTspice\lib\sub *</li>
+    </ol>
+    <p>* Do not edit ADI-provided files in %LOCALAPPDATA%\LTspice—these files may be overwritten or deleted when LTspice is updated.</p>
+    <p>No file name extension is assumed.</p>
+    <p>For example.</p>
+    <p class="netlist">.lib &quot;mypath to\myfile.lib&quot;</p>
+    <p>Section syntax:</p>
+    <p class="netlist"><span>.lib &#39;filename&#39; &lt;entryname&gt;</span></p>
+    <p class="netlist"><span>.lib &quot;filename&quot; &lt;entryname&gt;</span></p>
+    <p>This directive searches the file specified by filename for a section enclosed by:</p>
+    <p class="netlist">.lib &lt;entryname&gt;</p>
+    <p>and</p>
+    <p class="netlist">.endl</p>
+    <p>and only loads the contents in that section.</p>
+    <h2>Encrypted Libraries</h2>
+    <p>LTspice can generate and read a special form of encrypted libraries. This allows one user to prepare a library that another user can use in a simulation without revealing the implementation of the library. A reasonable attempt has been made to make the encrypted library difficult to decode by unauthorized concerns, but it cannot be considered perfectly secure if for no other reason than it is implemented in software.</p>
+    <p>To prepare an encrypted library, you need to invoke LTspice from the command line with the command line option &quot;-encrypt&quot;. You will need to first backup the library because it will be replaced with the encrypted version. THERE EXISTS NO UTILITY TO CONVERT AN ENCRYPTED LIBRARY BACK TO CLEAR TEXT. Below summarizes the two steps:</p>
+    <ol>
+      <li>Make a backup copy of the library. The version you encrypt is deleted.</li>
+      <li>From a command line, type</li>
+    </ol>
+    <p class="netlist">\ltspice.exe -encrypt &lt; filename&gt;</p>
+    <p>The file &lt;filename&gt; will be replaced with an encrypted version. The encryption process will take a few minutes.</p>
+    <p>One this process is finished, you have an encrypted ASCII file. It&#39;s possible to add a copyright notice above the &quot;* Begin:&quot; line, but the first 9 lines of the file must remain unchanged and each line of copyright notice you add must begin with the character &#39;*&#39;.</p>
+    <p>That is, here an encrypted file written by LTspice:</p>
+    <p class="netlist">* LTspice Encrypted File<br/>
+      *<br/>
+      * This encrypted file has been supplied by a 3rd<br/>
+      * party vendor that does not wish to publicize<br/>
+      * the technology used to implement this library.<br/>
+      *<br/>
+      * Permission is granted to use this file for<br/>
+      * simulations but not to reverse engineer its<br/>
+      * contents.<br/>
+      *<br/>
+      * Begin:<br/>
+      50 3E 46 0F FA 6E 67 FF B8 4D D9 62 14 32 60 24<br/>
+      36 71 35 0B 66 4F AD 52 B8 F5 9E 22 9F C0 18 8B<br/>
+      FB FE 1D...</p>
+    <p>which you can change to</p>
+    <p class="netlist">* LTspice Encrypted File<br/>
+      *<br/>
+      * This encrypted file has been supplied by a 3rd<br/>
+      * party vendor that does not wish to publicize<br/>
+      * the technology used to implement this library.<br/>
+      *<br/>
+      * Permission is granted to use this file for<br/>
+      * simulations but not to reverse engineer its<span class="netlist"></span><br/>
+      * contents.<br/>
+      *<br/>
+      * Copyright © 2005 Acme SPICE Modeling<br/>
+      * For additional information, see<br/>
+      * www.acmespicemodels.com<br/>
+      *<br/>
+      * Begin:<br/>
+      50 3E 46 0F FA 6E 67 FF B8 4D D9 62 14 32 60 24<br/>
+      36 71 35 0B 66 4F AD 52 B8 F5 9E 22 9F C0 18 8B<br/>
+      FB FE 1D...</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.2.13"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

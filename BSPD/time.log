@@ -1,0 +1,17 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\Alearn\chedui\1Wfscl\BSPD\time.net
+Start Time: Fri May 15 19:13:02 2026
+Options:NO_CARET_WARNING
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.352 seconds.
+
+Files loaded:
+D:\Alearn\chedui\1Wfscl\BSPD\time.net
+C:\Users\30836\AppData\Local\LTspice\lib\cmp\standard.mos
+D:\Alearn\chedui\1Wfscl\BSPD\SN74AHC1G08.cir
+

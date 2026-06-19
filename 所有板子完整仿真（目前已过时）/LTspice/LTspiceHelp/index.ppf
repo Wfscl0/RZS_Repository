@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ppfml version="2.00" project="LTspice Help" type="4">
+  <contextmap>
+    
+  </contextmap>
+  <topiclist defaulttopic="introduction.htm">
+    
+    <topic>
+      introduction.htm
+    </topic>
+    
+    <topic>
+      softwareinstallation.htm
+    </topic>
+    
+    <topic>
+      licenseagreementdisclaimer.htm
+    </topic>
+    
+    <topic>
+      modesofoperation.htm
+    </topic>
+    
+    <topic>
+      examplecircuits.htm
+    </topic>
+    
+    <topic>
+      generalpurposeschematicdrivenspi.htm
+    </topic>
+    
+    <topic>
+      externallygeneratednetlists.htm
+    </topic>
+    
+    <topic>
+      efficiencyreport.htm
+    </topic>
+    
+    <topic>
+      commandlineswitches.htm
+    </topic>
+    
+    <topic>
+      schematiccapture.htm
+    </topic>
+    
+    <topic>
+      basicschematicediting.htm
+    </topic>
+    
+    <topic>
+      labelanodename.htm
+    </topic>
+    
+    <topic>
+      schematiccolors.htm
+    </topic>
+    
+    <topic>
+      placingcomponents.htm
+    </topic>
+    
+    <topic>
+      keyboardshortcuts.htm
+    </topic>
+    
+    <topic>
+      pcbnetlistextraction.htm
+    </topic>
+    
+    <topic>
+      editingcomponents.htm
+    </topic>
+    
+    <topic>
+      expertmode.htm
+    </topic>
+    
+    <topic>
+      assistedmode.htm
+    </topic>
+    
+    <topic>
+      superexpertmode.htm
+    </topic>
+    
+    <topic>
+      creatingnewsymbols.htm
+    </topic>
+    
+    <topic>
+      drawingthebody.htm
+    </topic>
+    
+    <topic>
+      addingthepins.htm
+    </topic>
+    
+    <topic>
+      addingattributes.htm
+    </topic>
+    
+    <topic>
+      attributevisibility.htm
+    </topic>
+    
+    <topic>
+      automaticsymbolgeneration.htm
+    </topic>
+    
+    <topic>
+      hierarchy.htm
+    </topic>
+    
+    <topic>
+      rulesofhierarchy.htm
+    </topic>
+    
+    <topic>
+      navigatingthehierarchy.htm
+    </topic>
+    
+    <topic>
+      waveformviewer.htm
+    </topic>
+    
+    <topic>
+      datatraceselection.htm
+    </topic>
+    
+    <topic>
+      zooming.htm
+    </topic>
+    
+    <topic>
+      waveformarithmetic.htm
+    </topic>
+    
+    <topic>
+      user-definedfunctions.htm
+    </topic>
+    
+    <topic>
+      axiscontrol.htm
+    </topic>
+    
+    <topic>
+      plotpanes.htm
+    </topic>
+    
+    <topic>
+      colorcontrol.htm
+    </topic>
+    
+    <topic>
+      attachedcursors.htm
+    </topic>
+    
+    <topic>
+      saveplotconfigurations.htm
+    </topic>
+    
+    <topic>
+      fastaccessfileformat.htm
+    </topic>
+    
+    <topic>
+      ltspice.htm
+    </topic>
+    
+    <topic>
+      introduction1.htm
+    </topic>
+    
+    <topic>
+      generalstructureandconventions.htm
+    </topic>
+    
+    <topic>
+      dotcommands.htm
+    </topic>
+    
+    <topic>
+      ac--performansmallsignalacanalys.htm
+    </topic>
+    
+    <topic>
+      backanno--annotatethesubcircuitp.htm
+    </topic>
+    
+    <topic>
+      dc--performadcsourcesweepanalysi.htm
+    </topic>
+    
+    <topic>
+      end--endofnetlist.htm
+    </topic>
+    
+    <topic>
+      ends--endofsubcircuitdefinition.htm
+    </topic>
+    
+    <topic>
+      four--computeafouriercomponent.htm
+    </topic>
+    
+    <topic>
+      dotfra.html
+    </topic>
+    
+    <topic>
+      func--userdefinedfunctions.htm
+    </topic>
+    
+    <topic>
+      global--declareglobalnodes.htm
+    </topic>
+    
+    <topic>
+      ic--setinitialconditions.htm
+    </topic>
+    
+    <topic>
+      include--includeanotherfile.htm
+    </topic>
+    
+    <topic>
+      dotkeep.htm
+    </topic>
+    
+    <topic>
+      lib--includealibrary.htm
+    </topic>
+    
+    <topic>
+      loadbias--loadapreviouslysolvedd.htm
+    </topic>
+    
+    <topic>
+      loadstate.htm
+    </topic>
+    
+    <topic>
+      machine--arbitrarystatemachine.htm
+    </topic>
+    
+    <topic>
+      measure--evaluateuser-definedele.htm
+    </topic>
+    
+    <topic>
+      model--defineaspicemodel.htm
+    </topic>
+    
+    <topic>
+      net--computenetworkparametersina.htm
+    </topic>
+    
+    <topic>
+      nodeset--supplyhintsforinitialdc.htm
+    </topic>
+    
+    <topic>
+      noise--performanoiseanalysis.htm
+    </topic>
+    
+    <topic>
+      op--findthedcoperatingpoint.htm
+    </topic>
+    
+    <topic>
+      options--setsimulatoroptions.htm
+    </topic>
+    
+    <topic>
+      param--user-definedparameters.htm
+    </topic>
+    
+    <topic>
+      save--limitthequantityofsaveddat.htm
+    </topic>
+    
+    <topic>
+      savebias--saveoperatingpointtodi.htm
+    </topic>
+    
+    <topic>
+      savestate.htm
+    </topic>
+    
+    <topic>
+      step--parametersweeps.htm
+    </topic>
+    
+    <topic>
+      subckt--defineasubcircuit.htm
+    </topic>
+    
+    <topic>
+      temp--temperaturesweeps.htm
+    </topic>
+    
+    <topic>
+      tf--findthedcsmall-signaltransfe.htm
+    </topic>
+    
+    <topic>
+      tran--doanonlineartransientanaly.htm
+    </topic>
+    
+    <topic>
+      wave--writeselectednodestoawavfi.htm
+    </topic>
+    
+    <topic>
+      transientanalysisoptions.htm
+    </topic>
+    
+    <topic>
+      uic.htm
+    </topic>
+    
+    <topic>
+      startup.htm
+    </topic>
+    
+    <topic>
+      steady.htm
+    </topic>
+    
+    <topic>
+      nodiscard.htm
+    </topic>
+    
+    <topic>
+      step.htm
+    </topic>
+    
+    <topic>
+      circuitelements.htm
+    </topic>
+    
+    <topic>
+      aspecialfunctions.htm
+    </topic>
+    
+    <topic>
+      barbitrarybehavioralvoltageorcur.htm
+    </topic>
+    
+    <topic>
+      ccapacitor.htm
+    </topic>
+    
+    <topic>
+      ddiode.htm
+    </topic>
+    
+    <topic>
+      evoltagedependentvoltagesource.htm
+    </topic>
+    
+    <topic>
+      fcurrentdependentcurrentsource.htm
+    </topic>
+    
+    <topic>
+      gvoltagedependentcurrentsource.htm
+    </topic>
+    
+    <topic>
+      hcurrentdependentvoltagesource.htm
+    </topic>
+    
+    <topic>
+      icurrentsource.htm
+    </topic>
+    
+    <topic>
+      jjfet.htm
+    </topic>
+    
+    <topic>
+      kmutualinductance.htm
+    </topic>
+    
+    <topic>
+      linductor.htm
+    </topic>
+    
+    <topic>
+      mmosfet.htm
+    </topic>
+    
+    <topic>
+      olossytransmissionline.htm
+    </topic>
+    
+    <topic>
+      qbipolartransistor.htm
+    </topic>
+    
+    <topic>
+      rresistor.htm
+    </topic>
+    
+    <topic>
+      svoltagecontrolledswitch.htm
+    </topic>
+    
+    <topic>
+      tlosslesstransmissionline.htm
+    </topic>
+    
+    <topic>
+      uuniformrc-line.htm
+    </topic>
+    
+    <topic>
+      vvoltagesource.htm
+    </topic>
+    
+    <topic>
+      wcurrentcontrolledswitch.htm
+    </topic>
+    
+    <topic>
+      xsubcircuit.htm
+    </topic>
+    
+    <topic>
+      zmesfetandigbt.htm
+    </topic>
+    
+    <topic>
+      fra_device.html
+    </topic>
+    
+    <topic>
+      fra_probe.html
+    </topic>
+    
+    <topic>
+      integrationmethods.htm
+    </topic>
+    
+    <topic>
+      settings.htm
+    </topic>
+    
+    <topic>
+      compression.htm
+    </topic>
+    
+    <topic>
+      savedefaults.htm
+    </topic>
+    
+    <topic>
+      spice.htm
+    </topic>
+    
+    <topic>
+      draftingoptions.htm
+    </topic>
+    
+    <topic>
+      netlistoptions.htm
+    </topic>
+    
+    <topic>
+      symbolandlibrarysearchpaths.htm
+    </topic>
+    
+    <topic>
+      waveforms.htm
+    </topic>
+    
+    <topic>
+      operation.htm
+    </topic>
+    
+    <topic>
+      hacks.htm
+    </topic>
+    
+    <topic>
+      internetoptions.htm
+    </topic>
+    
+    <topic>
+      faq.htm
+    </topic>
+    
+    <topic>
+      programupdates.htm
+    </topic>
+    
+    <topic>
+      simulatingtransformers.htm
+    </topic>
+    
+    <topic>
+      third-partymodels.htm
+    </topic>
+    
+    <topic>
+      inductormodels.htm
+    </topic>
+    
+    <topic>
+      mosfetmodels.htm
+    </topic>
+    
+    <topic>
+      licenseanddistribution.htm
+    </topic>
+    
+    <topic>
+      efficiencycalculation.htm
+    </topic>
+    
+    <topic>
+      customsymbols.htm
+    </topic>
+    
+    <topic>
+      memoryproblems.htm
+    </topic>
+    
+    <topic>
+      modelcompatibility.htm
+    </topic>
+    
+    <topic>
+      spicenetlist.htm
+    </topic>
+    
+    <topic>
+      exportingwaveformdata.htm
+    </topic>
+    
+    <topic>
+      universalopampmodels.htm
+    </topic>
+    
+    <topic>
+      howtogetabodeplotfromasmps.htm
+    </topic>
+    
+    <topic>
+      runningunderlinux.htm
+    </topic>
+    
+    <topic>
+      additionalresources.html
+    </topic>
+    
+  </topiclist>
+  <filenamemap>
+    <filenameentry moniker="wh_languagetype">
+      <filename>
+        en_US
+      </filename>
+    </filenameentry>
+    <filenameentry moniker="wh_stoplist">
+      <filename>
+        whxdata/stopwords.xml
+      </filename>
+    </filenameentry>
+    <filenameentry moniker="startpage">
+      <filename>
+        index.htm
+      </filename>
+    </filenameentry>
+        
+  </filenamemap>
+</ppfml>

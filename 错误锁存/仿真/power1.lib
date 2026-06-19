@@ -1,0 +1,40 @@
+* ===========================================================
+* LM7805 / LM340-5.0 简易行为级宏模型 for LTSpice
+* 基于 TI 数据手册参数 (5V, 1.5A+, 2V Dropout)
+* 引脚顺序: IN (输入) | GND (地) | OUT (输出)
+* ===========================================================
+.SUBCKT LM7805 IN GND OUT
+
+* 1. 静态电流模拟 (约 3mA 恒流 + 2mA 偏置 = 约 5mA 的 Iq)
+I_q IN GND 3m
+
+* 2. 为调整管提供基极拉电流偏置 (2mA)
+I_bias IN B_pass 2m
+
+* 3. 达林顿调整管 (模拟真实的压降行为：约 1.4V 的 Vbe 压降)
+Q1 IN B_pass E1 NPN_model
+Q2 IN E1 E_pass NPN_model
+
+* 4. 输出电流检测与限流 (限流点: 0.65V / 0.3Ω ≈ 2.16A，符合手册 2.1A 短路限流)
+Rsense E_pass OUT 0.3
+Q3 B_pass E_pass OUT NPN_model
+
+* 5. 5.0V 内部精准基准电压
+Vref Nref GND 5.0
+
+* 6. 误差放大器 (压控电流源 VCCS)
+* 当 OUT 大于 5V 时，按 0.1A/V 的跨导从基极抽走电流，维持稳压
+G_err B_pass GND OUT Nref 0.1
+
+* 7. 环路补偿电容 (防止 LTSpice 瞬态仿真时发生高频振荡)
+C_comp B_pass GND 1n
+
+* 8. 内部反向保护二极管 (对应手册提及的输出高于输入时的寄生通路)
+D_rev OUT IN D_model
+
+* 内部半导体模型定义
+.MODEL NPN_model NPN(Is=1e-14 Bf=100 Vaf=50)
+.MODEL D_model D(Is=1e-14)
+
+.ENDS LM7805
+* ===========================================================

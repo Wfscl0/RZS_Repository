@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.4.0"/>
+  <link rel="StyleSheet" href="./template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="./template/LTspice/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="./template/LTspice/userstyles.css" type="text/css"/>
+  
+  <script data-relpath="." src="./template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <title>V. Voltage Source</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <meta name="description" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="rh-index-keywords" content="V. Voltage Source,Voltage Source"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/default.css"/>
+<meta name="rh-version" content="2022.6.26"/></head>
+
+<body class="rh-BODY-wrapper">
+  <div class="cookie-widget-holder" id="cookie-status-widget-holder"></div>
+  <div class="RH-LAYOUT-HEADER-skip-content-container" id="skip-to-content"></div>
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+    <div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+      <div class="RH-LAYOUT-HEADER-title" id="topic-title-holder"></div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <div id="topic_content">
+    <h1>V. Voltage Source</h1>
+    <p>Symbol Names: VOLTAGE, BATTERY</p>
+    <h2>Constant Voltage Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Vxxx n+ n- &lt;voltage&gt; [AC=&lt;amplitude&gt;] [Rser=&lt;value&gt;] [Cpar=&lt;value&gt;]</p>
+    <p>This element sources a constant voltage between nodes n+ and n-. For AC analysis, the value of AC is used as the amplitude of the source at the analysis frequency. A series resistance and parallel capacitance can be defined. The equivalent circuit is:</p>
+    <p><img alt="" src="assets/images/lib/Voltage.gif" style="vertical-align: text-bottom;"/></p>
+    <p>Voltage sources have historically been used as the current meters in SPICE and are used as current sensors for current-controlled elements. If Rser is specified, the voltage source can not be used as a sense element for F, H, or W elements. However, the current of any circuit element, including the voltage source, can be plotted.</p>
+    <h2>Time-Dependent Pulsed Voltage Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Vxxx n+ n- PULSE(V1 V2 Tdelay Trise Tfall Ton Tperiod Ncycles) [Trigger=&lt;expression&gt; [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;]]</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>Voff</td>
+          <td>Initial value</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Von</td>
+          <td>Pulsed value</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Tdelay</td>
+          <td>Delay</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Tr</td>
+          <td>Rise time</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Tf</td>
+          <td>Fall time</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Ton</td>
+          <td>On time</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Tperiod</td>
+          <td>Period</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Ncycles</td>
+          <td>Number of cycles (Omit for free-running pulse function)</td>
+          <td>cycles</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Time-Dependent Sine Wave Voltage Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Vxxx n+ n- SINE(Voffset Vamp Freq Td Theta Phi Ncycles) [Trigger=&lt;expression&gt; [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;]]</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>Voffset</td>
+          <td>DC offset</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Vamp</td>
+          <td>Amplitude</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Freq</td>
+          <td>Frequency</td>
+          <td>Hz</td>
+        </tr>
+        <tr>
+          <td>Td</td>
+          <td>Delay</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Theta</td>
+          <td>Damping factor</td>
+          <td>1/sec</td>
+        </tr>
+        <tr>
+          <td>Phi</td>
+          <td>Phase of sine wave</td>
+          <td>degrees</td>
+        </tr>
+        <tr>
+          <td>Ncycles</td>
+          <td>Number of cycles (Omit for free-running sine function)</td>
+          <td>cycles</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>For times less than Td, the output voltage is given by</p>
+    <p>Voffset+Vamp*sin(π*Phi/180)</p>
+    <p>For times after Td, but before Ncycles have completed, the voltage is given by</p>
+    <p>Voffset+Vamp*exp(-(time-Td)*Theta)*sin(2*π*Freq*(time-Td)+π*Phi/180)</p>
+    <p>For times after Ncycles have completed, the voltage is the last voltage when Ncycles completed. Note Ncycles does not have to be an integer.</p>
+    <p>The damping factor, Theta, is the reciprocal of the decay time constant.</p>
+    <h2>Time-Dependent Exponential Voltage Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Vxxx n+ n- EXP(V1 V2 Td1 Tau1 Td2 Tau2) [Trigger=&lt;expression&gt; [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;]]</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>V1</td>
+          <td>Initial value</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>V2</td>
+          <td>Pulsed value</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Td1</td>
+          <td>Rise delay time</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Tau1</td>
+          <td>Rise-time constant</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Td2</td>
+          <td>Fall delay time</td>
+          <td>sec</td>
+        </tr>
+        <tr>
+          <td>Tau2</td>
+          <td>Fall-time constant</td>
+          <td>sec</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>For times less than Td1, the output voltage is V1. For times between Td1 and Td2 the voltage is given by</p>
+    <p>V1+(V2-V1)*(1-exp(-(time-Td1)/Tau1))</p>
+    <p>For times after Td2 the voltage is given by</p>
+    <p>V1+(V2-V1)*(1-exp(-(time-Td1)/Tau1))-(V2-V1)*(1-exp(-(time-Td2)/Tau2))</p>
+    <h2>Time-Dependent Single Frequency FM Voltage Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Vxxx n+ n- SFFM(Voff Vamp Fcar MDI Fsig) [Trigger=&lt;expression&gt; [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;]]</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>Voff</td>
+          <td>DC offset</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Vamp</td>
+          <td>Amplitude</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>Fcar</td>
+          <td>Carrier frequency</td>
+          <td>Hz</td>
+        </tr>
+        <tr>
+          <td>MDI</td>
+          <td>Modulation index</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Fsig</td>
+          <td>Signal frequency</td>
+          <td>Hz</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The voltage is given by</p>
+    <p>Voff+Vamp*sin((2.*π*Fcar*time)+MDI*sin(2.*π*Fsig*time))</p>
+    <h2>Arbitrary Piece-Wise Linear Voltage Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Vxxx n+ n- PWL [TIME_SCALE_FACTOR=&lt;time_factor&gt;] [VALUE_SCALE_FACTOR=&lt;value_factor&gt;] PwlSpec [ PwlSpec [ ... ] ]<br/>
+      + [Trigger=&lt;expression&gt; [tripdv=&lt;value&gt;] [tripdt=&lt;value&gt;]]</p>
+    <p>TIME_SCALE_FACTOR scales all time values in this source by &lt;time_factor&gt;, and VALUE_SCALE_FACTOR scales all magnitude values by &lt;value_factor&gt;. PwlSpec can be any of the following:</p>
+    <ul class="Disc">
+      <li><span class="netlist">(&lt;time&gt;, &lt;value&gt; [, &lt;time&gt;, &lt;value&gt; [, ...]] )</span><br/>
+        One or more data points. LTspice uses linear interpolation between these points.</li>
+      <li><span class="netlist">REPEAT FOR &lt;n&gt; PwlSpec ENDREPEAT</span><br/>
+        Repeats PwlSpec &lt;n&gt; times.</li>
+      <li><span class="netlist">REPEAT FOREVER PwlSpec ENDREPEAT</span><br/>
+        Repeats PwlSpec until the end of the simulation.</li>
+      <li><span class="netlist">FILE=&lt;filename&gt;</span><br/>
+        One or more data points read from file &lt;filename&gt;. &lt;filename&gt; is either an absolute path or a relative path computed from the directory containing the simulation netlist. Double quotes may be used to specify a path containing spaces. The data points must be separated by white space or comma and can be put in multiple lines. Each number can be specified using the usual SPICE engineering notation, comments are also allowed.<br/>
+        If the size of this file exceeds 2GiB, LTspice employs a specialized high-speed parser which only recognizes pure floating point numbers separated by white space, comma or new lines, with no comments.</li>
+      <li><span class="netlist">SCOPEDATA=&lt;filename&gt;</span><br/>
+        One or more data points read from file &lt;filename&gt;. &lt;filename&gt; is either an absolute path or a relative path computed from the directory containing the simulation netlist. Double quotes may be used to specify a path containing spaces. The data points must be separated by white space or comma and can be put in multiple lines. A leading &quot;+&quot; has no special meaning. Only pure floating point number are allowed, no comments.<br/>
+        Negative x-values are discarded. Multiple pairs with identical x-values are combined by averaging their y-values.</li>
+    </ul>
+    <p>All these variants can be combined and nested indefinitely. A time value that starts with &quot;+&quot; is relative to the previous time point. This even works for expressions, for example:</p>
+    <p class="netlist">+10u<br/>
+      +{PARAM/23+1n}</p>
+    <p>Data points which are shifted in time by <span class="netlist">REPEAT</span> or <span class="netlist">Trigger</span> are relative to their respective start time. For example:</p>
+    <p class="netlist">REPEAT FOR 3 (1,10,3,30) ENDREPEAT</p>
+    <p>creates these data points:</p>
+    <table>
+      <tbody>
+        <tr>
+          <th>time</th>
+          <th>value</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Note that it is possible to specify contradicting values, for example:</p>
+    <p class="netlist">REPEAT FOR 3 (0,0,1,10) ENDREPEAT</p>
+    <p>This is ill-formed and will raise an error, because the first time is zero but the corresponding value differs from the last one.</p>
+    <p>The voltage source will output the first specified value for all times less than the first time point and the last specified value for all times larger than the last time point.</p>
+    <h2>Trigger Parameter</h2>
+    <p>Trigger is an optional expression that is continuously evaluated and converted to a Boolean value. It restarts the entire sequence every time it changes from false to true. When it is false, the voltage source outputs the first value of the sequence. <span class="netlist">Tripdv</span> and <span class="netlist">tripdt</span> control step rejection for this trigger expression. If the value of the trigger expression changes by more than <span class="netlist">tripdv</span> in <span class="netlist">tripdt</span> seconds, that simulation time step is rejected.</p>
+    <h2>.WAV-File Voltage Source</h2>
+    <p>Syntax:</p>
+    <p class="netlist">Vxxx n+ n- wavefile=&lt;filename&gt; [chan=&lt;nnn&gt;]</p>
+    <p>This allows a .wav file to be used as an input to LTspice. &lt;filename&gt; is either an absolute path for the .wav file or a relative path computed from the directory containing the simulation schematic or netlist.  Double quotes may be used to specify a path containing spaces.  The .wav file may contain up to 65536 channels, numbered 0 to 65535.  Chan may be set to specify which channel is used.  By default, the first channel, number 0, is used.  The .wav file is interpreted as having a full scale range from -1V to 1V.</p>
+    <p>This source only has meaning in a .tran analysis.</p>
+  </div>
+  <div data-conref="assets/snippets/copyright_at_bottom_of_page.hts">
+  <p class="copyright">Copyright © 1998–2026 by Analog Devices Inc. All Rights Reserved.</p>
+
+</div>
+
+</div>
+          <div class="RH-LAYOUT-BRS-container" id="rh-brs"></div>
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer"></footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "."
+    gCommonRootRelPath = "."
+    gTopicId = "5.4.20"
+  
+//]]></script>
+
+
+  <script src="./template/scripts/topicpage.js"></script>
+  <script src="./whxdata/layoutconfig.js"></script>
+  <script src="./whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+
+</body></html>

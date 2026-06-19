@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Software Installation","type":"book","tilePath":"","description":"","url":"softwareinstallation.htm","key":"toc2"},{"name":"License Agreement/Disclaimer","type":"book","tilePath":"","description":"","url":"licenseagreementdisclaimer.htm","key":"toc3"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
