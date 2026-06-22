@@ -25,4 +25,4 @@ git clone https://github.com/Wfscl0/RZS_Repository.git
 
 ## 许可证
 
-本仓库中由项目维护者原创且有权授权的内容采用 GNU General Public License v3.0（GPLv3）。第三方软件、赛事规则、数据手册及其他外部资料仍受其各自许可证和版权条款约束，不因存放于本仓库而转为 GPLv3 授权。完整条款见 [LICENSE](LICENSE)。
+本仓库中由项目维护者原创且有权授权的内容采用 Apache License 2.0（Apache-2.0）。第三方软件、赛事规则、数据手册及其他外部资料仍受其各自许可证和版权条款约束，不因存放于本仓库而转为 Apache-2.0 授权。完整条款见 [LICENSE](LICENSE)。
