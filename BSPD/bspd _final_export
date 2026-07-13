@@ -1,0 +1,26 @@
+嘉立创 EDA 专业版 BOM 和网表导出日志
+========================================
+EDA 版本: 3.2.149.88089769
+插件版本: 1.0.1
+工程名称: bspd _final
+工程 UUID: f7bd84e79aa19d4a80b7c22d3c8920e464825a59baeca873e4d69db344116a10
+导出时间: 2026-07-13T05:47:38.210Z
+网表类型: ESYS_NetlistType.JLCEDA_PRO (JLCEDA)
+原理图数量: 1
+图页数量: 1
+目标目录: D:\git\RZS_Repository\BSPD\bspd _final_export
+警告数量: 1
+错误数量: 1
+
+输出文件
+--------
+（尚未生成文件）
+
+过程记录
+--------
+[2026-07-13T05:47:38.210Z] [INFO] 工程文档树读取完成：1 个原理图，1 个图页。
+[2026-07-13T05:47:38.210Z] [INFO] 官方 SCH_ManufactureData 文档将导出范围定义为“当前原理图图页”；插件将逐图页激活、校验并导出。
+[2026-07-13T05:47:38.210Z] [INFO] 当前 SDK 未提供未保存状态查询；插件在检查每个图页时调用 SCH_Document.save()。
+[2026-07-13T05:47:38.210Z] [WARN] 创建目录 D:\git\RZS_Repository\BSPD\bspd _final_export 时出现异常；写入失败时将自动回退：eda.sys_FileSystem.createDirectoryInFileSystem is not a function
+[2026-07-13T05:47:38.377Z] [INFO] 已检查 Schematic1 / P1，共 55 个普通器件。
+[2026-07-13T05:47:39.801Z] [ERROR] 文件写入校验: bspd _final_BOM.xlsx 回读校验失败（期望 9114 bytes，实际 0 bytes）。

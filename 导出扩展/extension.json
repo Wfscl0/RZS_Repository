@@ -1,0 +1,61 @@
+{
+  "name": "jlc-bom-netlist-exporter",
+  "uuid": "4d2f6b1c8a9345e7b0d1f2a3c4e5b678",
+  "displayName": "一键导出 BOM 和网表",
+  "description": "为嘉立创 EDA 专业版 V3 导出当前工程原理图的 XLSX BOM、嘉立创专业版网表和校验日志。",
+  "version": "1.0.2",
+  "publisher": "RZS",
+  "engines": { "eda": "^3.0.0" },
+  "license": "Apache-2.0",
+  "categories": ["Schematic", "Project"],
+  "keywords": ["BOM", "Netlist", "Export"],
+  "activationEvents": {},
+  "entry": "./dist/index",
+  "dependentExtensions": {},
+  "headerMenus": {
+    "home": [
+      {
+        "id": "rzs-export-tools-home",
+        "title": "工具",
+        "menuItems": [
+          { "id": "rzs-export-bom-netlist-home", "title": "一键导出 BOM 和网表", "registerFn": "oneClickExport" },
+          null,
+          { "id": "rzs-export-settings-home", "title": "BOM 和网表导出设置...", "registerFn": "openExportSettings" }
+        ]
+      }
+    ],
+    "blank": [
+      {
+        "id": "rzs-export-tools-blank",
+        "title": "工具",
+        "menuItems": [
+          { "id": "rzs-export-bom-netlist-blank", "title": "一键导出 BOM 和网表", "registerFn": "oneClickExport" },
+          null,
+          { "id": "rzs-export-settings-blank", "title": "BOM 和网表导出设置...", "registerFn": "openExportSettings" }
+        ]
+      }
+    ],
+    "sch": [
+      {
+        "id": "rzs-export-tools-sch",
+        "title": "工具",
+        "menuItems": [
+          { "id": "rzs-export-bom-netlist-sch", "title": "一键导出 BOM 和网表", "registerFn": "oneClickExport" },
+          null,
+          { "id": "rzs-export-settings-sch", "title": "BOM 和网表导出设置...", "registerFn": "openExportSettings" }
+        ]
+      }
+    ],
+    "pcb": [
+      {
+        "id": "rzs-export-tools-pcb",
+        "title": "工具",
+        "menuItems": [
+          { "id": "rzs-export-bom-netlist-pcb", "title": "一键导出 BOM 和网表", "registerFn": "oneClickExport" },
+          null,
+          { "id": "rzs-export-settings-pcb", "title": "BOM 和网表导出设置...", "registerFn": "openExportSettings" }
+        ]
+      }
+    ]
+  }
+}
