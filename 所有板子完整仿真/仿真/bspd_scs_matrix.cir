@@ -1,0 +1,26 @@
+* BSPD four-oil/current/SCS static matrix; CASE 0..13.
+.option plotwinsize=0
+.param CASE=0
+.step param CASE 0 13 1
+.param O1=if(CASE==1|CASE==5,2,if(CASE==7,5,.5))
+.param O2=if(CASE==2|CASE==5,2,.5)
+.param O3=if(CASE==3|CASE==5,2,.5)
+.param O4=if(CASE==4|CASE==5,2,.5)
+.param CUR=if(CASE>=1 & CASE<=4,2,if(CASE==6,2,if(CASE==8,0,if(CASE==9,5,.5))))
+VO1 oil1 0 {O1}
+VO2 oil2 0 {O2}
+VO3 oil3 0 {O3}
+VO4 oil4 0 {O4}
+VC current 0 {CUR}
+BOV1 ov1 0 V=if(V(oil1)>1.4837,5,0)
+BOV2 ov2 0 V=if(V(oil2)>1.4837,5,0)
+BOV3 ov3 0 V=if(V(oil3)>1.4837,5,0)
+BOV4 ov4 0 V=if(V(oil4)>1.4837,5,0)
+BBRAKE brake 0 V=if(V(ov1)>2.5|V(ov2)>2.5|V(ov3)>2.5|V(ov4)>2.5,5,0)
+BCUR cv 0 V=if(V(current)>1.2019,5,0)
+BCONF conflict 0 V=if(V(brake)>2.5 & V(cv)>2.5,5,0)
+.tran 0 1m
+.meas tran oil_or FIND V(brake) AT=.5m
+.meas tran current_valid FIND V(cv) AT=.5m
+.meas tran conflict_result FIND V(conflict) AT=.5m
+.end

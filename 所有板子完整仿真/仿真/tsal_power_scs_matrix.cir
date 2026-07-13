@@ -1,0 +1,27 @@
+* TSAL dual-supply loss and complete SCS state matrix.
+.option plotwinsize=0
+.param CASE=0
+.step param CASE 0 12 1
+.param VR=if(CASE==1,0,5)
+.param VG=if(CASE==2,0,5)
+.param HV=if(CASE==3,0.4,0.7)
+.param ACT=if(CASE>=4 & CASE<=6,0,5)
+.param HASH=if(CASE>=7 & CASE<=9,5,0)
+V5R v5r 0 {VR}
+V5G v5g 0 {VG}
+VBAT bat 0 {HV}
+VCTRL ctrl 0 {HV}
+VPA pa 0 {ACT}
+VNA na 0 {ACT}
+VRA ra 0 {ACT}
+VPH ph 0 {HASH}
+VNH nh 0 {HASH}
+VRH rh 0 {HASH}
+BRED red_enable 0 V=if(V(v5r)>4.5 & (V(bat)>.6|V(ctrl)>.6),5,0)
+BGREEN green_enable 0 V=if(V(v5g)>4.5 & V(bat)<.6 & V(ctrl)<.6 & V(pa)<2.5 & V(na)<2.5 & V(ra)<2.5 & V(ph)>2.5 & V(nh)>2.5 & V(rh)>2.5,5,0)
+BSCS scs_fault 0 V=if((V(pa)>2.5 & V(ph)>2.5)|(V(na)>2.5 & V(nh)>2.5)|(V(ra)>2.5 & V(rh)>2.5),5,0)
+.tran 0 1m
+.meas tran red FIND V(red_enable) AT=.5m
+.meas tran green FIND V(green_enable) AT=.5m
+.meas tran fault FIND V(scs_fault) AT=.5m
+.end

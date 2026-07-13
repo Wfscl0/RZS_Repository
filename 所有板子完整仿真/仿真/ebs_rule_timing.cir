@@ -1,0 +1,33 @@
+* EBS electrical trigger response. Mechanical deceleration is outside PCB simulation.
+.include models/functional_models.lib
+.option plotwinsize=0
+.param CORNER=0
+.param TREL=if(CORNER==1,7m,if(CORNER==2,15m,10m))
+.param TPROP=if(CORNER==1,5u,if(CORNER==2,50u,15u))
+.step param CORNER list 0 1 2
+VPWR ebs_pwr 0 PWL(0 24 1.5 24 1.501 0 2 0)
+VSDC sdc_in 0 PWL(0 24 1.1 24 1.1001 0 1.3 0 1.3001 24 2 24)
+VTRIG trig 0 PWL(0 0 .5 0 .5001 5 1.0 5 1.0001 0 2 0)
+VWDI wdi_ok 0 PWL(0 5 1.2 5 1.2001 0 2 0)
+BOK logic_ok 0 V=delay(if(V(ebs_pwr)>18 & V(trig)<2.5 & V(wdi_ok)>2.5,5,0),TPROP)
+XREL logic_ok relay_closed RELAY_NO TOP={TREL} TREL={TREL}
+BEBSWORK ebs_work 0 V=if(V(ebs_pwr)>18 & V(relay_closed)>2.5,24,0)
+BASLOCK as_lock 0 V=V(ebs_work)*4.7k/(22k+4.7k)
+BRLY2 rly2_cmd 0 V=if(V(sdc_in)>18,5,0)
+XRLY2 rly2_cmd sdc_contact RELAY_NO TOP={TREL} TREL={TREL}
+BSDCOUT sdc_out 0 V=if(V(ebs_pwr)>18 & V(sdc_contact)>2.5,24,0)
+BVCUFB vcu_fb 0 V=if(V(ebs_work)>12,5,0)
+BEBSCHECK ebs_check 0 V=if(V(vcu_fb)>2.5 & V(sdc_out)>12,12,0)
+.tran 0 2 0 50u uic
+.meas tran t_trigger WHEN V(trig)=2.5 RISE=1
+.meas tran t_brake_cmd WHEN V(ebs_work)=12 FALL=1
+.meas tran response_delay PARAM t_brake_cmd-t_trigger
+.meas tran work_normal FIND V(ebs_work) AT=.3
+.meas tran work_triggered FIND V(ebs_work) AT=.8
+.meas tran work_wdi_fault FIND V(ebs_work) AT=1.35
+.meas tran work_power_loss FIND V(ebs_work) AT=1.7
+.meas tran sdc_normal FIND V(sdc_out) AT=.3
+.meas tran sdc_open FIND V(sdc_out) AT=1.28
+.meas tran ebs_check_normal FIND V(ebs_check) AT=.3
+.meas tran ebs_check_fault FIND V(ebs_check) AT=.8
+.end

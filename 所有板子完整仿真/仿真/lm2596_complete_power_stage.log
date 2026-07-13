@@ -1,0 +1,22 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\仿真\lm2596_complete_power_stage.cir
+Start Time: Sun Jul 12 21:38:54 2026
+Options:plotwinsize=0 reltol=.003 abstol=10n
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+abstol = 1e-08
+reltol = 0.003
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 36.439 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\仿真\lm2596_complete_power_stage.cir
+D:\git\RZS_Repository\所有板子完整仿真\models\official\extracted\LM2596_5P0_unencrypted_SNVMA62\LM2596_5P0_TRANS.LIB
+
+vout_20m: AVG(V(vout) )=4.99052731718 FROM 0.018 TO 0.02
+ripple_20m: PP(V(vout) )=0.0320401191711 FROM 0.018 TO 0.02
+startup_90: V(vout)=4.5  AT 0.00192729644917
+vout_after_loss: V(vout) =1.31478938459e-08 at 0.045

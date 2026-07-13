@@ -1,0 +1,19 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\fin_simulation_2026\bspd_q2_orientation.cir
+Start Time: Sun Jul 12 20:41:16 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 0.085 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\fin_simulation_2026\bspd_q2_orientation.cir
+D:\git\RZS_Repository\所有板子完整仿真\fin_simulation_2026\models\functional_models.lib
+
+c3_reversed_15s: V(c3_reversed) =0.416409552097 at 15
+c3_netlist_15s: V(c3_netlist) =3.56740396309 at 15
+reversed_diode_current_15s: I(DREV) =4.58359063487e-05 at 15

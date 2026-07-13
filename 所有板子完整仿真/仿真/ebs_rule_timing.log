@@ -1,0 +1,88 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\仿真\ebs_rule_timing.cir
+Start Time: Sun Jul 12 21:19:10 2026
+Options:plotwinsize=0
+
+.step corner=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Per .tran options, skipping operating point for transient analysis.
+
+.step corner=1
+
+.step corner=2
+Total elapsed time: 0.835 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\仿真\ebs_rule_timing.cir
+D:\git\RZS_Repository\所有板子完整仿真\仿真\models\functional_models.lib
+
+
+Measurement: t_trigger
+  step	V(trig)=2.5 
+     1	0.50005
+     2	0.50005
+     3	0.50005
+
+Measurement: t_brake_cmd
+  step	V(ebs_work)=12 
+     1	0.59086753125
+     2	0.580350539062
+     3	0.608327492187
+
+Measurement: response_delay
+  step	t_brake_cmd-t_trigger
+     1	0.09081753125
+     2	0.0803005390625
+     3	0.108277492187
+
+Measurement: work_normal
+  step	V(ebs_work) 	at
+     1	24	0.3
+     2	24	0.3
+     3	24	0.3
+
+Measurement: work_triggered
+  step	V(ebs_work) 	at
+     1	0	0.8
+     2	0	0.8
+     3	0	0.8
+
+Measurement: work_wdi_fault
+  step	V(ebs_work) 	at
+     1	0	1.35
+     2	0	1.35
+     3	0	1.35
+
+Measurement: work_power_loss
+  step	V(ebs_work) 	at
+     1	0	1.7
+     2	0	1.7
+     3	0	1.7
+
+Measurement: sdc_normal
+  step	V(sdc_out) 	at
+     1	24	0.3
+     2	24	0.3
+     3	24	0.3
+
+Measurement: sdc_open
+  step	V(sdc_out) 	at
+     1	0	1.28
+     2	0	1.28
+     3	0	1.28
+
+Measurement: ebs_check_normal
+  step	V(ebs_check) 	at
+     1	12	0.3
+     2	12	0.3
+     3	12	0.3
+
+Measurement: ebs_check_fault
+  step	V(ebs_check) 	at
+     1	0	0.8
+     2	0	0.8
+     3	0	0.8

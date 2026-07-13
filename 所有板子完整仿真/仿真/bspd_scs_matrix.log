@@ -1,0 +1,107 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\仿真\bspd_scs_matrix.cir
+Start Time: Sun Jul 12 21:38:20 2026
+Options:plotwinsize=0
+
+.step case=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=1
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=2
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=3
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=4
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=5
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=6
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=7
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=8
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=9
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=10
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=11
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=12
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=13
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.440 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\仿真\bspd_scs_matrix.cir
+
+
+Measurement: oil_or
+  step	V(brake) 	at
+     1	0	0.0005
+     2	5	0.0005
+     3	5	0.0005
+     4	5	0.0005
+     5	5	0.0005
+     6	5	0.0005
+     7	0	0.0005
+     8	5	0.0005
+     9	0	0.0005
+    10	0	0.0005
+    11	0	0.0005
+    12	0	0.0005
+    13	0	0.0005
+    14	0	0.0005
+
+Measurement: current_valid
+  step	V(cv) 	at
+     1	0	0.0005
+     2	5	0.0005
+     3	5	0.0005
+     4	5	0.0005
+     5	5	0.0005
+     6	0	0.0005
+     7	5	0.0005
+     8	0	0.0005
+     9	0	0.0005
+    10	5	0.0005
+    11	0	0.0005
+    12	0	0.0005
+    13	0	0.0005
+    14	0	0.0005
+
+Measurement: conflict_result
+  step	V(conflict) 	at
+     1	0	0.0005
+     2	5	0.0005
+     3	5	0.0005
+     4	5	0.0005
+     5	5	0.0005
+     6	0	0.0005
+     7	0	0.0005
+     8	0	0.0005
+     9	0	0.0005
+    10	0	0.0005
+    11	0	0.0005
+    12	0	0.0005
+    13	0	0.0005
+    14	0	0.0005

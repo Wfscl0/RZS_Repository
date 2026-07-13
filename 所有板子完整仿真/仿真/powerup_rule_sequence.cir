@@ -1,0 +1,34 @@
+* Vehicle inspection order: TSMS with LVMS off; LVMS with TSMS off; then both on and TS activation.
+.include models/functional_models.lib
+.option plotwinsize=0
+VLVMS lvms 0 PWL(0 0 2 0 2.001 12 12 12)
+VTSMS tsms 0 PWL(0 0 .5 0 .501 12 1.5 12 1.501 0 5 0 5.001 12 12 12)
+VACT activate 0 PWL(0 0 7 0 7.001 5 12 5)
+* Board regulator start-up delays and finite slopes.
+B5_LOCK v5_lock 0 V=delay(if(V(lvms)>8,5,0),8m)
+B5_RELAY v5_relay 0 V=delay(if(V(lvms)>8,5,0),12m)
+B5_BSPD v5_bspd 0 V=delay(if(V(lvms)>8,5,0),18m)
+B5_TSAL v5_tsal 0 V=delay(if(V(lvms)>8,5,0),25m)
+B5_EBS v5_ebs 0 V=delay(if(V(lvms)>8,5,0),30m)
+* SDC may close only after LV rails are valid and all safety boards report OK.
+BSDC sdc_closed 0 V=if(V(v5_lock)>4.5 & V(v5_bspd)>4.5 & V(v5_ebs)>4.5,5,0)
+* Precharge precedes AIR2. TS voltage remains zero until explicit activation.
+BPRE precharge 0 V=if(V(tsms)>8 & V(lvms)>8 & V(activate)>2.5 & V(sdc_closed)>2.5,5,0)
+BAIR2 air2 0 V=delay(if(V(precharge)>2.5,5,0),500m)
+BTSV ts_voltage 0 V=if(V(precharge)>2.5,if(V(air2)>2.5,400,360),0)
+* TSAL: LV on/TS off = green; active TS = flashing red.
+VBL blink 0 PULSE(0 5 0 1u 1u 180m 360m)
+BGREEN green_on 0 V=if(V(v5_tsal)>4.5 & V(ts_voltage)<60 & V(air2)<2.5,5,0)
+BRED red_on 0 V=if(V(v5_tsal)>4.5 & V(ts_voltage)>60 & V(blink)>2.5,5,0)
+* Required 1-3 s visibility check after LVMS power-up.
+BSELFTEST self_test 0 V=if(time>2.001 & time<4.001,5,0)
+.tran 0 12 0 100u
+.meas tran ts_when_only_tsms FIND V(ts_voltage) AT=1
+.meas tran ts_when_only_lvms FIND V(ts_voltage) AT=4
+.meas tran green_lv_only FIND V(green_on) AT=4
+.meas tran self_test_1s FIND V(self_test) AT=3
+.meas tran pre_before_air2 FIND V(precharge) AT=7.2
+.meas tran air2_before_precharge_done FIND V(air2) AT=7.2
+.meas tran ts_after_activation FIND V(ts_voltage) AT=8
+.meas tran red_after_activation FIND V(red_on) AT=8.1
+.end

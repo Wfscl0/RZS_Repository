@@ -1,0 +1,31 @@
+* All external SCS classes: BSPD OIL1-4/CURRENT, lock IMD/BMS/EBS/RES,
+* relay MAINP/MAINN/PRE, TSAL V_CONTROLLER/V_BATTERY/SENSOR_READY.
+.include models/functional_models.lib
+.option plotwinsize=0
+.param CASE=0
+.step param CASE 0 14 1
+.param BASE=if(CASE<=4,.5,if(CASE<=8,5,if(CASE<=11,5,.4)))
+.param TH=if(CASE<=3,1.4837,if(CASE==4,1.2019,if(CASE<=11,2.42,.6)))
+VS remote 0 {BASE}
+R1 remote n1 .4
+L1 n1 n2 3.5u
+C1 n2 0 300p
+R2 n2 n3 .4
+L2 n3 n4 3.5u
+C2 n4 0 300p
+R3 n4 n5 .4
+L3 n5 pin 3.5u
+C3 pin 0 300p
+VHV hv 0 PULSE(0 400 2m 1u 1u 500u 2m)
+CC hv n4 120p
+RIN pin filt 10k
+CF filt 0 100n
+DHI filt v5 DSTD
+DLO 0 filt DSTD
+V5 v5 0 5
+BSTATE state 0 V=if(V(filt)>TH,5,0)
+.tran 0 6m 0 200n
+.meas tran peak_pin MAX V(pin) FROM=1.9m TO=3m
+.meas tran peak_filt MAX V(filt) FROM=1.9m TO=3m
+.meas tran state_during_emi MAX V(state) FROM=1.9m TO=3m
+.end

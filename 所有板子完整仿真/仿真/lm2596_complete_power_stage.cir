@@ -1,0 +1,18 @@
+* Exact latest-BOM LM2596S-5.0 power stage using TI official transient model.
+.include ../models/official/extracted/LM2596_5P0_unencrypted_SNVMA62/LM2596_5P0_TRANS.LIB
+.option plotwinsize=0 reltol=.003 abstol=10n
+VIN vin 0 PWL(0 0 1m 0 1.1m 24 40m 24 40.1m 0 50m 0)
+VON onoff 0 0
+XU1 vin vout sw 0 onoff LM2596_5P0_TRANS
+L1 sw vout 47u Rser=.08
+D2 0 sw DSS34
+C2 vout 0 220u Rser=.12
+CLOAD vout 0 10u Rser=.02
+RLOAD vout 0 25
+.model DSS34 D(Is=20u Rs=.045 N=1.08 Cjo=450p Bv=40 Ibv=1m)
+.tran 0 50m 0 200n startup
+.meas tran vout_20m AVG V(vout) FROM=18m TO=20m
+.meas tran ripple_20m PP V(vout) FROM=18m TO=20m
+.meas tran startup_90 WHEN V(vout)=4.5 RISE=1
+.meas tran vout_after_loss FIND V(vout) AT=45m
+.end

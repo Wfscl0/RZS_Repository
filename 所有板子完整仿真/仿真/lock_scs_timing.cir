@@ -1,0 +1,52 @@
+* Complete lock-board functional path: IMD, BMS and combined EBS/RES latches.
+.include models/functional_models.lib
+.option plotwinsize=0
+.param CORNER=0
+.param TREL=if(CORNER==1,7m,if(CORNER==2,15m,10m))
+.step param CORNER list 0 1 2
+V5 v5 0 5
+* Latest interface levels: IMD 12V normal/0 fault; BMS 12V normal/10V fault;
+* EBS and RES 5V normal/0 fault. Comparator thresholds follow R7/R11 and R8/R14.
+VIMD imd_error 0 PWL(0 12 .2 12 .2001 0 .4 0 .4001 12 2.8 12)
+VBMS bms_error 0 PWL(0 12 .8 12 .8001 10 1.0 10 1.0001 12 2.8 12)
+VEBS ebs_error 0 PWL(0 5 1.4 5 1.4001 0 1.6 0 1.6001 5 2.8 5)
+VRES res_error 0 PWL(0 5 2.0 5 2.0001 0 2.2 0 2.2001 5 2.8 5)
+VIMDRST imd_reset 0 PWL(0 5 .6 5 .6001 0 .62 0 .6201 5 2.8 5)
+VBMSRST bms_reset 0 PWL(0 5 1.2 5 1.2001 0 1.22 0 1.2201 5 2.8 5)
+VRERST re_reset 0 PWL(0 5 1.8 5 1.8001 0 1.82 0 1.8201 5 2.6 5 2.6001 0 2.62 0 2.6201 5 2.8 5)
+* Input processing from LM393 and resistor networks.
+BIMDF imd_fault 0 V=if(V(imd_error)<9,5,0)
+BBMSF bms_fault 0 V=if(V(bms_error)<11,5,0)
+BREF re_fault 0 V=if(V(ebs_error)<2.5 | V(res_error)<2.5,5,0)
+* Hardware D-FF latches represented by bounded state capacitors.
+CIMD imd_state 0 1u IC=5
+CBMS bms_state 0 1u IC=5
+CRE re_state 0 1u IC=5
+RIMD imd_state 0 1G
+RBMS bms_state 0 1G
+RRE re_state 0 1G
+BLI imd_state 0 I=if(V(imd_fault)>2.5,20m,0)-if(V(imd_reset)<.5,20m,0)
+BLB bms_state 0 I=if(V(bms_fault)>2.5,20m,0)-if(V(bms_reset)<.5,20m,0)
+BLR re_state 0 I=if(V(re_fault)>2.5,20m,0)-if(V(re_reset)<.5,20m,0)
+D1I imd_state v5 DSTD
+D2I 0 imd_state DSTD
+D1B bms_state v5 DSTD
+D2B 0 bms_state DSTD
+D1R re_state v5 DSTD
+D2R 0 re_state DSTD
+BALL all_ok 0 V=if(V(imd_state)>2.5 & V(bms_state)>2.5 & V(re_state)>2.5,5,0)
+XREL all_ok sc_closed RELAY_NO TOP={TREL} TREL={TREL}
+BSC sc_out 0 V=if(V(sc_closed)>2.5,24,0)
+.tran 0 2.8 0 20u uic
+.meas tran imd_latched FIND V(sc_out) AT=.5
+.meas tran imd_reset_ok FIND V(sc_out) AT=.75
+.meas tran bms_latched FIND V(sc_out) AT=1.1
+.meas tran bms_reset_ok FIND V(sc_out) AT=1.35
+.meas tran ebs_latched FIND V(sc_out) AT=1.7
+.meas tran ebs_reset_ok FIND V(sc_out) AT=1.95
+.meas tran res_latched FIND V(sc_out) AT=2.3
+.meas tran res_reset_ok FIND V(sc_out) AT=2.75
+.meas tran imd_led_state FIND V(imd_state) AT=.5
+.meas tran bms_led_state FIND V(bms_state) AT=1.1
+.meas tran re_led_state FIND V(re_state) AT=2.3
+.end

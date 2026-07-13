@@ -1,0 +1,77 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\fin_simulation_2026\bspd_rule_timing.cir
+Start Time: Sun Jul 12 20:38:30 2026
+Options:plotwinsize=0 reltol=0.002
+
+.step corner=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+reltol = 0.002
+Per .tran options, skipping operating point for transient analysis.
+
+.step corner=1
+
+.step corner=2
+Total elapsed time: 2.220 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\fin_simulation_2026\bspd_rule_timing.cir
+D:\git\RZS_Repository\所有板子完整仿真\fin_simulation_2026\models\functional_models.lib
+
+
+Measurement: t_conflict_start
+  step	V(conflict)=2.5 
+     1	1.00065682401
+     2	1.00065682401
+     3	1.00065682401
+
+Measurement: t_sc_open
+  step	V(sc_out)=12 
+     1	1.30105327314
+     2	1.24797858487
+     3	1.36756199741
+
+Measurement: trip_delay
+  step	t_sc_open-t_conflict_start
+     1	0.300396449133
+     2	0.247321760862
+     3	0.366905173406
+
+Measurement: t_conflict_clear
+  step	V(conflict)=2.5 
+     1	1.70034553282
+     2	1.70034553282
+     3	1.70034553282
+
+Measurement: t_sc_close
+  step	V(sc_out)=12 
+     1	15.2047598932
+     2	12.4426318486
+     3	18.0181274063
+
+Measurement: reset_delay
+  step	t_sc_close-t_conflict_clear
+     1	13.5044143604
+     2	10.7422863158
+     3	16.3177818735
+
+Measurement: sc_at_100ms
+  step	V(sc_out) 	at
+     1	24	1.101
+     2	24	1.101
+     3	24	1.101
+
+Measurement: sc_at_clear_plus_10s
+  step	V(sc_out) 	at
+     1	0	11.701
+     2	0	11.701
+     3	0	11.701
+
+Measurement: sc_after_power_loss
+  step	V(sc_out) 	at
+     1	0	20.2
+     2	0	20.2
+     3	0	20.2

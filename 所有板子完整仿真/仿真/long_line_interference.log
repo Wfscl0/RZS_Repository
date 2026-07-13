@@ -1,0 +1,23 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\仿真\long_line_interference.cir
+Start Time: Sun Jul 12 21:29:56 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 2.457 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\仿真\long_line_interference.cir
+D:\git\RZS_Repository\所有板子完整仿真\仿真\models\functional_models.lib
+
+peak_pin: MAX(V(pin) )=6.14334630966 FROM 0.0019 TO 0.003
+min_pin: MIN(V(pin) )=-5.07620477676 FROM 0.0019 TO 0.003
+peak_filtered: MAX(V(filt) )=0.500701665878 FROM 0.0019 TO 0.003
+false_valid_before_real: MAX(V(valid) )=0 FROM 0 TO 0.0049
+t_remote: V(remote)=1.4837  AT 0.00500655799984
+t_valid: V(valid)=2.5  AT 0.00607191512765
+line_filter_delay: t_valid-t_remote=0.00106535712781

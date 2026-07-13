@@ -1,0 +1,41 @@
+* TSAL rule-state and blink tolerance using latest BOM R5=2k R7=25k C2=10uF.
+.include models/functional_models.lib
+.option plotwinsize=0
+.param CORNER=0
+.param R5=if(CORNER==1,1.98k,if(CORNER==2,2.02k,2k))
+.param R7=if(CORNER==1,22.5k,if(CORNER==2,27.5k,25k))
+.param C2=if(CORNER==1,8u,if(CORNER==2,12u,10u))
+.param PERIOD=0.693*(R5+2*R7)*C2
+.param TON=0.693*(R5+R7)*C2
+.step param CORNER list 0 1 2
+VCTRL v_controller 0 PWL(0 .7 1.5 .7 1.5001 .4 3 .4)
+VBAT v_battery 0 PWL(0 .7 1.5 .7 1.5001 .4 3 .4)
+VMPA mainp_actual 0 PWL(0 5 1.5 5 1.5001 0 2.2 0 2.2001 5 3 5)
+VMNA mainn_actual 0 PWL(0 5 1.5 5 1.5001 0 3 0)
+VPRA pre_actual 0 PWL(0 5 1.5 5 1.5001 0 3 0)
+VMPH mainp_hash 0 PWL(0 0 1.5 0 1.5001 5 2.2 5 2.2001 0 3 0)
+VMNH mainn_hash 0 PWL(0 0 1.5 0 1.5001 5 3 5)
+VPRH pre_hash 0 PWL(0 0 1.5 0 1.5001 5 3 5)
+VSREADY sensor_ready 0 PWL(0 5 2.6 5 2.6001 0 3 0)
+VBL blink 0 PULSE(0 5 0 1u 1u {TON} {PERIOD})
+BRED red_on 0 V=if((V(v_controller)>.6 | V(v_battery)>.6) & V(blink)>2.5,5,0)
+BRELOPEN relays_open 0 V=if(V(mainp_actual)<2.5 & V(mainn_actual)<2.5 & V(pre_actual)<2.5 & V(mainp_hash)>2.5 & V(mainn_hash)>2.5 & V(pre_hash)>2.5,5,0)
+* TPS3840 delay and disconnect latch from the original line-monitor block.
+BFAULT_RAW rel_fault_raw 0 V=if(V(sensor_ready)<2.5 | (V(mainp_actual)>2.5 & V(mainp_hash)>2.5),5,0)
+BFAULTSET rel_fault_set 0 V=if(V(rel_fault_raw)>2.5,5,0)
+BGREEN green_on 0 V=if(V(v_controller)<.6 & V(v_battery)<.6 & V(relays_open)>2.5 & V(rel_fault_set)<2.5,5,0)
+.tran 0 3 0 200u
+.meas tran rise2 WHEN V(red_on)=2.5 RISE=2
+.meas tran rise3 WHEN V(red_on)=2.5 RISE=3
+.meas tran fall2 WHEN V(red_on)=2.5 FALL=2
+.meas tran blink_period PARAM rise3-rise2
+.meas tran blink_frequency PARAM 1/(rise3-rise2)
+.meas tran blink_duty PARAM 100*(fall2-rise2)/(rise3-rise2)
+.meas tran red_unsafe FIND V(red_on) AT=.1
+.meas tran green_unsafe FIND V(green_on) AT=.1
+.meas tran green_safe FIND V(green_on) AT=2
+.meas tran green_stuck_contact FIND V(green_on) AT=2.4
+.meas tran relays_open_safe FIND V(relays_open) AT=2
+.meas tran relays_open_stuck FIND V(relays_open) AT=2.4
+.meas tran disconnect_latched FIND V(rel_fault_set) AT=2.8
+.end

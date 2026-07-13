@@ -1,0 +1,23 @@
+* MAINP/MAINN/PRE independent open, short-to-ground, short-to-5V and stuck matrix.
+.option plotwinsize=0
+.param CASE=0
+.step param CASE 0 12 1
+.param P=if(CASE==1|CASE==4,0,if(CASE==7,5,5))
+.param N=if(CASE==2|CASE==5,0,if(CASE==8,5,5))
+.param R=if(CASE==3|CASE==6,0,if(CASE==9,5,5))
+VP p 0 {P}
+VN n 0 {N}
+VR r 0 {R}
+* Actual and hash outputs are complementary for each healthy channel.
+BPA pa 0 V=if(V(p)>2.42,5,0)
+BPH ph 0 V=if(V(p)>2.42,0,5)
+BNA na 0 V=if(V(n)>2.42,5,0)
+BNH nh 0 V=if(V(n)>2.42,0,5)
+BRA ra 0 V=if(V(r)>2.42,5,0)
+BRH rh 0 V=if(V(r)>2.42,0,5)
+BINC inconsistent 0 V=if((V(pa)>2.5 & V(ph)>2.5)|(V(na)>2.5 & V(nh)>2.5)|(V(ra)>2.5 & V(rh)>2.5),5,0)
+.tran 0 1m
+.meas tran actual_sum FIND V(pa)+V(na)+V(ra) AT=.5m
+.meas tran hash_sum FIND V(ph)+V(nh)+V(rh) AT=.5m
+.meas tran inconsistent_result FIND V(inconsistent) AT=.5m
+.end

@@ -1,0 +1,21 @@
+* Lock board POR and comparator tolerance corners.
+.include models/functional_models.lib
+.option plotwinsize=0
+.param CORNER=0
+.param TPOR=if(CORNER==1,1.5m,if(CORNER==2,12m,5m))
+.param VTH_IMD=if(CORNER==1,8.75,if(CORNER==2,9.25,9))
+.step param CORNER list 0 1 2
+V12 vin 0 PWL(0 0 1m 0 1.1m 12 50m 12)
+B5 v5 0 V=delay(if(V(vin)>8,5,0),2m)
+BPOR por_n 0 V=delay(if(V(v5)>4.5,5,0),TPOR)
+VIMD imd_error 0 12
+VBMS bms_error 0 12
+BIMDOK imd_ok 0 V=if(V(imd_error)>VTH_IMD,5,0)
+BBMSOK bms_ok 0 V=if(V(bms_error)>11,5,0)
+BALL all_ok 0 V=if(V(por_n)>2.5 & V(imd_ok)>2.5 & V(bms_ok)>2.5,5,0)
+.tran 0 50m 0 10u
+.meas tran t_v5 WHEN V(v5)=2.5 RISE=1
+.meas tran t_por WHEN V(por_n)=2.5 RISE=1
+.meas tran por_delay PARAM t_por-t_v5
+.meas tran all_ok_after_por FIND V(all_ok) AT=30m
+.end

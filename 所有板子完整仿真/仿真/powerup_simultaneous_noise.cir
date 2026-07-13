@@ -1,0 +1,37 @@
+* Simultaneous LVMS/TSMS closure with bounded random/multitone noise and rail-delay corners.
+.include models/functional_models.lib
+.option plotwinsize=0 reltol=.002
+.param CORNER=0
+.param DLY=if(CORNER==1,5m,if(CORNER==2,50m,20m))
+.step param CORNER list 0 1 2
+VLV lv_raw 0 PWL(0 0 5m 0 5.1m 12 200m 12)
+VTS tsms 0 PWL(0 0 5m 0 5.1m 12 200m 12)
+* Deterministic pseudo-random multitone noise; incommensurate tones emulate a repeatable random seed.
+BNOISE rail_noise 0 V=.18*sin(2*pi*100e3*time)+.12*sin(2*pi*17.3e3*time)+.075*sin(2*pi*43.7e3*time)+.05*sin(2*pi*71.9e3*time)
+BLV lvms 0 V=V(lv_raw)+V(rail_noise)
+B5 v5 0 V=delay(if(V(lvms)>8,5,0),DLY)+.05*sin(2*pi*100e3*time)
+* Long sensor lines carry independent bounded noise while their real state is normal.
+BOIL oil_remote 0 V=.5+.12*sin(2*pi*23e3*time)+.04*sin(2*pi*37.1e3*time)+.03*sin(2*pi*61.7e3*time)
+BCUR current_remote 0 V=.5+.1*sin(2*pi*31e3*time)+.04*sin(2*pi*47.3e3*time)+.03*sin(2*pi*73.1e3*time)
+RLO oil_remote oil_local 12
+LLO oil_local oil_pin 12u
+CLO oil_pin 0 1.2n
+RLC current_remote current_local 12
+LLC current_local current_pin 12u
+CLC current_pin 0 1.2n
+* BSPD thresholds from latest BOM; noise alone must not create conflict.
+BOV oil_valid 0 V=if(V(oil_pin)>1.4837,5,0)
+BCV current_valid 0 V=if(V(current_pin)>1.2019,5,0)
+BCONF conflict 0 V=if(V(oil_valid)>2.5 & V(current_valid)>2.5,5,0)
+* All safety outputs remain de-energized until the delayed 5 V rail is valid.
+BSC sc_closed 0 V=if(V(v5)>4.5 & V(conflict)<2.5,5,0)
+BEBSWORK ebs_work 0 V=if(V(v5)>4.5 & V(tsms)>8,24,0)
+.tran 0 200m 0 10u
+.meas tran max_oil_noise MAX V(oil_pin) FROM=5m TO=200m
+.meas tran max_current_noise MAX V(current_pin) FROM=5m TO=200m
+.meas tran max_false_conflict MAX V(conflict) FROM=5m TO=200m
+.meas tran sc_before_rail_valid FIND V(sc_closed) AT=6m
+.meas tran sc_after_settle FIND V(sc_closed) AT=100m
+.meas tran ebs_before_rail_valid FIND V(ebs_work) AT=6m
+.meas tran ebs_after_settle FIND V(ebs_work) AT=100m
+.end

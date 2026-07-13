@@ -1,0 +1,48 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\仿真\lock_por_corner.cir
+Start Time: Sun Jul 12 21:38:25 2026
+Options:plotwinsize=0
+
+.step corner=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step corner=1
+Direct Newton iteration succeeded in finding operating point.
+
+.step corner=2
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.145 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\仿真\lock_por_corner.cir
+D:\git\RZS_Repository\所有板子完整仿真\仿真\models\functional_models.lib
+
+
+Measurement: t_v5
+  step	V(v5)=2.5 
+     1	0.00307
+     2	0.00307
+     3	0.00307
+
+Measurement: t_por
+  step	V(por_n)=2.5 
+     1	0.008073875
+     2	0.004573875
+     3	0.015073875
+
+Measurement: por_delay
+  step	t_por-t_v5
+     1	0.005003875
+     2	0.001503875
+     3	0.012003875
+
+Measurement: all_ok_after_por
+  step	V(all_ok) 	at
+     1	5	0.03
+     2	5	0.03
+     3	5	0.03

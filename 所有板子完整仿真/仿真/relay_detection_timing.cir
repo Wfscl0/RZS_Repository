@@ -1,0 +1,35 @@
+* Three relay auxiliary channels, latest 4.7k/100k/100n topology.
+.include models/functional_models.lib
+.option plotwinsize=0
+V5 v5 0 5
+VCONTACT contact 0 PWL(0 5 .1 5 .1001 0 .25 0 .2501 5 .4 5)
+RPU_P v5 feed_p 4.7k
+RPD_P sense_p 0 100k
+CP sense_p 0 100n
+SP feed_p sense_p contact 0 SWIDEAL
+BAP mainp_actual 0 V=if(V(sense_p)>2.42,5,0)
+BHP mainp_hash 0 V=if(V(sense_p)>2.42,0,5)
+RPU_N v5 feed_n 4.7k
+RPD_N sense_n 0 100k
+CN sense_n 0 100n
+SN feed_n sense_n contact 0 SWIDEAL
+BAN mainn_actual 0 V=if(V(sense_n)>2.42,5,0)
+BHN mainn_hash 0 V=if(V(sense_n)>2.42,0,5)
+RPU_R v5 feed_r 4.7k
+RPD_R sense_r 0 100k
+CR sense_r 0 100n
+SR feed_r sense_r contact 0 SWIDEAL
+BAPR pre_actual 0 V=if(V(sense_r)>2.42,5,0)
+BHPR pre_hash 0 V=if(V(sense_r)>2.42,0,5)
+.tran 0 .4 0 10u uic
+.meas tran t_open_cmd WHEN V(contact)=2.5 FALL=1
+.meas tran t_actual_low WHEN V(mainp_actual)=2.5 FALL=1
+.meas tran open_detect_delay PARAM t_actual_low-t_open_cmd
+.meas tran sense_open FIND V(sense_p) AT=.2
+.meas tran actual_open FIND V(mainp_actual) AT=.2
+.meas tran hash_open FIND V(mainp_hash) AT=.2
+.meas tran actual_closed FIND V(mainp_actual) AT=.35
+.meas tran hash_closed FIND V(mainp_hash) AT=.35
+.meas tran actual_sum_open FIND V(mainp_actual)+V(mainn_actual)+V(pre_actual) AT=.2
+.meas tran hash_sum_open FIND V(mainp_hash)+V(mainn_hash)+V(pre_hash) AT=.2
+.end

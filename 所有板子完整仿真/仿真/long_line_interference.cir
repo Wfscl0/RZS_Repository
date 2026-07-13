@@ -1,0 +1,35 @@
+* 15 m harness distributed approximation and capacitive transient interference.
+.include models/functional_models.lib
+.option plotwinsize=0
+V5 v5 0 5
+VSIG remote 0 PWL(0 .5 5m .5 5.01m 2 15m 2 15.01m .5 20m .5)
+* Three-section 15 m line: total R=1.2 ohm, L=10.5 uH, C=900 pF.
+R1 remote n1 .4
+L1 n1 n2 3.5u
+C1 n2 0 300p
+R2 n2 n3 .4
+L2 n3 n4 3.5u
+C2 n4 0 300p
+R3 n4 n5 .4
+L3 n5 pin 3.5u
+C3 pin 0 300p
+* Adjacent HV cable dv/dt coupled through 120 pF; common-mode burst plus 1 MHz ringing.
+VHV hv 0 PULSE(0 400 2m 1u 1u 500u 2m)
+CCOUP hv n4 120p
+BEMI emi 0 V=20*sin(2*pi*200e3*time)*exp(-time/3m)
+CEMI emi pin 47p
+* Input protection/filter representative of board inputs.
+RIN pin filt 10k
+CFILT filt 0 100n
+DHI filt v5 DSTD
+DLO 0 filt DSTD
+BVALID valid 0 V=if(V(filt)>1.4837,5,0)
+.tran 0 20m 0 200n
+.meas tran peak_pin MAX V(pin) FROM=1.9m TO=3m
+.meas tran min_pin MIN V(pin) FROM=1.9m TO=3m
+.meas tran peak_filtered MAX V(filt) FROM=1.9m TO=3m
+.meas tran false_valid_before_real MAX V(valid) FROM=0 TO=4.9m
+.meas tran t_remote WHEN V(remote)=1.4837 RISE=1
+.meas tran t_valid WHEN V(valid)=2.5 RISE=1
+.meas tran line_filter_delay PARAM t_valid-t_remote
+.end

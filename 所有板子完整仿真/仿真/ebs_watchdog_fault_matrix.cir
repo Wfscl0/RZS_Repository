@@ -1,0 +1,24 @@
+* UCC2946 functional window/timeout and EBS cross-fault matrix.
+.option plotwinsize=0
+.param CASE=0
+.step param CASE 0 8 1
+.param PWR=if(CASE==5,0,24)
+.param SDC=if(CASE==6,0,24)
+.param TRIG=if(CASE==2,5,0)
+.param WDI=if(CASE==1,0,5)
+.param FB=if(CASE==3,0,5)
+VP pwr 0 {PWR}
+VS sdc 0 {SDC}
+VT trig 0 {TRIG}
+VW wdi 0 {WDI}
+VF fb 0 {FB}
+* CASE4 represents watchdog frequency outside its valid window.
+BWDO wdo_ok 0 V=if(V(wdi)>2.5 & CASE!=4,5,0)
+BWORK ebs_work 0 V=if(V(pwr)>18 & V(trig)<2.5 & V(wdo_ok)>2.5,24,0)
+BSDCO sdc_out 0 V=if(V(sdc)>18 & V(pwr)>18,24,0)
+BCHECK ebs_check 0 V=if(V(fb)>2.5 & V(ebs_work)>12 & V(sdc_out)>12,12,0)
+.tran 0 1m
+.meas tran work FIND V(ebs_work) AT=.5m
+.meas tran sdcout FIND V(sdc_out) AT=.5m
+.meas tran check FIND V(ebs_check) AT=.5m
+.end

@@ -1,0 +1,26 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\仿真\relay_detection_timing.cir
+Start Time: Sun Jul 12 21:17:12 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 0.394 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\仿真\relay_detection_timing.cir
+D:\git\RZS_Repository\所有板子完整仿真\仿真\models\functional_models.lib
+
+t_open_cmd: V(contact)=2.5  AT 0.10005
+t_actual_low: V(mainp_actual)=2.5  AT 0.10685078125
+open_detect_delay: t_actual_low-t_open_cmd=0.00680078125045
+sense_open: V(sense_p) =0.000718168270397 at 0.2
+actual_open: V(mainp_actual) =0 at 0.2
+hash_open: V(mainp_hash) =5 at 0.2
+actual_closed: V(mainp_actual) =5 at 0.35
+hash_closed: V(mainp_hash) =0 at 0.35
+actual_sum_open: V(mainp_actual)+V(mainn_actual)+V(pre_actual) =0 at 0.2
+hash_sum_open: V(mainp_hash)+V(mainn_hash)+V(pre_hash) =15 at 0.2

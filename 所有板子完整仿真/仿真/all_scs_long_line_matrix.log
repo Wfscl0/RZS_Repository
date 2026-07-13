@@ -1,0 +1,114 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\git\RZS_Repository\所有板子完整仿真\仿真\all_scs_long_line_matrix.cir
+Start Time: Sun Jul 12 21:38:26 2026
+Options:plotwinsize=0
+
+.step case=0
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=1
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=2
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=3
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=4
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=5
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=6
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=7
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=8
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=9
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=10
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=11
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=12
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=13
+Direct Newton iteration succeeded in finding operating point.
+
+.step case=14
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 13.925 seconds.
+
+Files loaded:
+D:\git\RZS_Repository\所有板子完整仿真\仿真\all_scs_long_line_matrix.cir
+D:\git\RZS_Repository\所有板子完整仿真\仿真\models\functional_models.lib
+
+
+Measurement: peak_pin
+  step	MAX(V(pin) )	FROM	TO
+     1	6.42239999771	0.0019	0.003
+     2	6.42239999771	0.0019	0.003
+     3	6.42239999771	0.0019	0.003
+     4	6.42239999771	0.0019	0.003
+     5	6.42239999771	0.0019	0.003
+     6	10.9234771729	0.0019	0.003
+     7	10.9234771729	0.0019	0.003
+     8	10.9234771729	0.0019	0.003
+     9	10.9234771729	0.0019	0.003
+    10	10.9234771729	0.0019	0.003
+    11	10.9234771729	0.0019	0.003
+    12	10.9234771729	0.0019	0.003
+    13	6.32147979736	0.0019	0.003
+    14	6.32147979736	0.0019	0.003
+    15	6.32147979736	0.0019	0.003
+
+Measurement: peak_filt
+  step	MAX(V(filt) )	FROM	TO
+     1	0.500694870949	0.0019	0.003
+     2	0.500694870949	0.0019	0.003
+     3	0.500694870949	0.0019	0.003
+     4	0.500694870949	0.0019	0.003
+     5	0.500694870949	0.0019	0.003
+     6	5.00067520142	0.0019	0.003
+     7	5.00067520142	0.0019	0.003
+     8	5.00067520142	0.0019	0.003
+     9	5.00067520142	0.0019	0.003
+    10	5.00067520142	0.0019	0.003
+    11	5.00067520142	0.0019	0.003
+    12	5.00067520142	0.0019	0.003
+    13	0.400694876909	0.0019	0.003
+    14	0.400694876909	0.0019	0.003
+    15	0.400694876909	0.0019	0.003
+
+Measurement: state_during_emi
+  step	MAX(V(state) )	FROM	TO
+     1	0	0.0019	0.003
+     2	0	0.0019	0.003
+     3	0	0.0019	0.003
+     4	0	0.0019	0.003
+     5	0	0.0019	0.003
+     6	5	0.0019	0.003
+     7	5	0.0019	0.003
+     8	5	0.0019	0.003
+     9	5	0.0019	0.003
+    10	5	0.0019	0.003
+    11	5	0.0019	0.003
+    12	5	0.0019	0.003
+    13	0	0.0019	0.003
+    14	0	0.0019	0.003
+    15	0	0.0019	0.003

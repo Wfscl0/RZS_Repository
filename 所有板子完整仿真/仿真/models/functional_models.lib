@@ -1,0 +1,32 @@
+* Functional timing models. Not transistor-level exact device models.
+.model DSTD D(Is=2n Rs=.08 N=1.7 Cjo=25p Tt=20n)
+.model DAO3400 D(Is=1n Rs=.06 N=1.5 Cjo=80p Tt=35n)
+.model SWIDEAL SW(Ron=.04 Roff=1G Vt=2.5 Vh=.15)
+
+* Open-collector comparator with input offset and finite propagation delay.
+* Pins: noninv inv out; output requires an external pull-up.
+.subckt OCMP noninv inv out params: VOS=0 TD=1u VOL=.15
+BCTL ctl 0 V=delay(if(V(noninv)+VOS>V(inv),5,0),TD)
+SOUT out nvol ctl 0 SWOC
+VN nvol 0 {VOL}
+.model SWOC SW(Ron=2 Roff=1G Vt=2.5 Vh=.02)
+.ends OCMP
+
+* Schmitt non-inverting/inverting gates with explicit thresholds and delay.
+.subckt SCHMITT_BUF in out params: VTP=2.73 VTN=1.94 TD=6n
+BOUT out 0 V=delay(if(V(in)>VTP,5,if(V(in)<VTN,0,V(out))),TD)
+.ends SCHMITT_BUF
+.subckt SCHMITT_INV in out params: VTP=2.73 VTN=1.94 TD=6n
+BOUT out 0 V=delay(if(V(in)>VTP,0,if(V(in)<VTN,5,V(out))),TD)
+.ends SCHMITT_INV
+
+* Relay timing proxy: coil command is filtered by operate/release time.
+* Output CONTACT is 5 V when the NO contact is closed.
+.subckt RELAY_NO cmd contact params: TOP=10m TREL=10m
+BCHG n 0 I=if(V(cmd)>2.5,-1/TOP,1/TREL)
+CSTATE n 0 1 IC=0
+DHI n limhi DSTD
+VHI limhi 0 5
+DLO 0 n DSTD
+BCON contact 0 V=if(V(n)>2.5,5,0)
+.ends RELAY_NO

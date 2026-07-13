@@ -1,0 +1,44 @@
+* 2026 BSPD rule timing and tolerance verification from latest fin BOM/netlist.
+.include models/functional_models.lib
+.option plotwinsize=0 reltol=0.002
+.param CORNER=0
+.param R8=if(CORNER==1,38.61k,if(CORNER==2,39.39k,39k))
+.param C11=if(CORNER==1,6.12u,if(CORNER==2,7.48u,6.8u))
+.param VTP=if(CORNER==1,2.42,if(CORNER==2,3.04,2.73))
+.param R10=if(CORNER==1,99k,if(CORNER==2,101k,100k))
+.param C3=if(CORNER==1,96u,if(CORNER==2,144u,120u))
+.step param CORNER list 0 1 2
+V5 v5 0 PWL(0 5 20 5 20.001 0 20.5 0)
+VOIL oil1 0 PWL(0 .5 1 .5 1.001 2 1.70 2 1.701 .5 20.5 .5)
+VCUR current 0 PWL(0 .5 1 .5 1.001 2 1.70 2 1.701 .5 20.5 .5)
+ROTH v5 oilth 23.7k
+ROTL oilth 0 10k
+RCTH v5 curth 31.6k
+RCTL curth 0 10k
+XOIL oilth oil1 oil_oc OCMP VOS=0 TD=1u
+XCUR curth current cur_oc OCMP VOS=0 TD=1u
+RPO v5 oil_oc 10k
+RPC v5 cur_oc 10k
+BVALID brake_valid 0 V=if(V(oil_oc)>2.5,5,0)
+BCONF conflict 0 V=if(V(brake_valid)>2.5 & V(cur_oc)>2.5,5,0)
+RDELAY conflict rc_delay {R8}
+CDELAY rc_delay 0 {C11} IC=0
+XBUF rc_delay filtered SCHMITT_BUF VTP={VTP} VTN=1.94 TD=6n
+* corrected Q2: discharge timing capacitor after a qualified conflict.
+SDIS c3node 0 filtered 0 SWIDEAL
+RRESET v5 c3node {R10}
+CRESET c3node 0 {C3} IC=5
+BTRIP trip_cmd 0 V=if(V(filtered)>2.5 | V(c3node)<3.333,0,5)
+XREL trip_cmd sc_closed RELAY_NO TOP=10m TREL=10m
+BSC sc_out 0 V=if(V(v5)>2.5 & V(sc_closed)>2.5,24,0)
+.tran 0 20.5 0 200u uic
+.meas tran t_conflict_start WHEN V(conflict)=2.5 RISE=2
+.meas tran t_sc_open WHEN V(sc_out)=12 FALL=1
+.meas tran trip_delay PARAM t_sc_open-t_conflict_start
+.meas tran t_conflict_clear WHEN V(conflict)=2.5 FALL=2
+.meas tran t_sc_close WHEN V(sc_out)=12 RISE=2
+.meas tran reset_delay PARAM t_sc_close-t_conflict_clear
+.meas tran sc_at_100ms FIND V(sc_out) AT=1.101
+.meas tran sc_at_clear_plus_10s FIND V(sc_out) AT=11.701
+.meas tran sc_after_power_loss FIND V(sc_out) AT=20.2
+.end

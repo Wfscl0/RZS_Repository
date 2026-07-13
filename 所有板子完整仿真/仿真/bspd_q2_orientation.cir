@@ -1,0 +1,17 @@
+* AO3400 body-diode comparison for latest netlist Q2 pin orientation.
+.include models/functional_models.lib
+.option plotwinsize=0
+V5 v5 0 5
+RREV v5 c3_reversed 100k
+CREV c3_reversed 0 120u IC=0
+* Reversed comparison: source at timing node, drain at GND.
+DREV c3_reversed 0 DAO3400
+RNET v5 c3_netlist 100k
+CNET c3_netlist 0 120u IC=0
+* Latest TEL netlist: Q2.2/source at GND, Q2.3/drain at timing node.
+DNET 0 c3_netlist DAO3400
+.tran 0 20 0 1m uic
+.meas tran c3_reversed_15s FIND V(c3_reversed) AT=15
+.meas tran c3_netlist_15s FIND V(c3_netlist) AT=15
+.meas tran reversed_diode_current_15s FIND I(DREV) AT=15
+.end
