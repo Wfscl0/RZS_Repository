@@ -1,0 +1,297 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU TS BMS IPC AMI RES ESP EPS
+
+
+BO_ 2365524463 MCU1_Rx_Command3: 8 VCU
+ SG_ f32_speed_KP : 0|16@1+ (1,0) [0|65535] ""  TS
+ SG_ f32_speed_KI : 16|16@1+ (1,0) [0|65535] ""  TS
+
+BO_ 2365524207 MCU1_Rx_Command: 8 VCU
+ SG_ MCU1_Rx_Limit_Positive_Value : 8|12@1+ (1,0) [0|24570] "Nm/rpm"  TS
+ SG_ MCU1_Rx_Limit_Negative_Value : 20|12@1+ (1,0) [0|24570] "Nm/rpm"  TS
+ SG_ MCU1_Rx_HandBrake : 7|1@1+ (1,0) [0|1] ""  TS
+ SG_ MCU1_Rx_Gear : 4|2@1+ (1,0) [0|3] ""  TS
+ SG_ MCU1_Rx_FootBrake : 6|1@1+ (1,0) [0|1] ""  TS
+ SG_ MCU1_Rx_Fault_Reset : 1|1@1+ (1,0) [0|1] ""  TS
+ SG_ MCU1_Rx_Enable : 0|1@1+ (1,0) [0|1] ""  TS
+ SG_ MCU1_Rx_Demand_Torque : 32|16@1+ (1,-5000) [-5000|60535] "Nm"  TS
+ SG_ MCU1_Rx_Demand_Speed : 48|16@1+ (1,-15000) [-15000|50535] "rpm"  TS
+ SG_ MCU1_Rx_Control_Mode : 2|2@1+ (1,0) [0|3] ""  TS
+
+BO_ 484 Res_Msg: 8 RES
+ SG_ res_xorcheck : 16|8@1+ (1,0) [0|255] ""  VCU
+ SG_ res_stop : 3|1@1+ (1,0) [0|1] ""  VCU
+ SG_ res_heartbeat : 8|8@1+ (1,0) [0|255] ""  VCU
+ SG_ res_gobutton : 2|1@1+ (1,0) [0|1] ""  VCU
+ SG_ res_go : 1|1@1+ (1,0) [0|1] ""  VCU
+ SG_ res_communication : 0|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 18 IPC_Tx_Msg2: 8 IPC
+ SG_ ipc_task_finish : 30|1@0+ (1,0) [0|1] ""  VCU
+ SG_ ipc_err : 31|1@0+ (1,0) [0|1] ""  VCU
+ SG_ ipc_eps_velocity : 23|8@0+ (1,0) [20|250] ""  VCU
+ SG_ ipc_cmd_angle : 7|16@0+ (1,-1024) [-1024|64511] ""  VCU
+
+BO_ 17 IPC_Tx_Msg1: 8 IPC
+ SG_ ipc_motor_torque : 48|16@1+ (1,-5000) [-5000|60535] ""  VCU
+ SG_ ipc_esp_rrprs : 30|10@1+ (0.01,0) [0|0] "MPa"  VCU
+ SG_ ipc_esp_rlprs : 20|10@1+ (0.01,0) [0|0] "MPa"  VCU
+ SG_ ipc_esp_frprs : 10|10@1+ (0.01,0) [0|0] "MPa"  VCU
+ SG_ ipc_esp_flprs : 0|10@1+ (0.01,0) [0|0] "MPa"  VCU
+
+BO_ 16 IPC_Rx_Msg: 8 VCU
+ SG_ ipc_astask : 8|8@1+ (1,0) [0|5] ""  IPC
+ SG_ ipc_resstop : 1|1@1+ (1,0) [0|1] ""  IPC
+ SG_ ipc_resgo : 0|1@1+ (1,0) [0|1] ""  IPC
+
+BO_ 19 ESP_T_03: 8 ESP
+ SG_ esp13_lifeSig : 51|4@0+ (1,0) [0|15] ""  VCU
+ SG_ esp13_checkSum : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ curPrsRR : 35|12@0+ (0.01,0) [0|20] ""  VCU
+ SG_ curPrsRL : 31|12@0+ (0.01,0) [0|20] ""  VCU
+ SG_ curPrsFR : 11|12@0+ (0.01,0) [0|20] ""  VCU
+ SG_ curPrsFL : 7|12@0+ (0.01,0) [0|20] ""  VCU
+
+BO_ 32 ESP_R_00: 8 VCU
+ SG_ esp20_lifeSig : 51|4@0+ (1,0) [0|15] ""  ESP
+ SG_ esp20_checkSum : 63|8@0+ (1,0) [0|255] ""  ESP
+ SG_ tarPrsReqRR : 35|12@0+ (0.01,0) [0|8] ""  ESP
+ SG_ tarPrsReqRL : 31|12@0+ (0.01,0) [0|8] ""  ESP
+ SG_ tarPrsReqFR : 11|12@0+ (0.01,0) [0|8] ""  ESP
+ SG_ tarPrsReqFL : 7|12@0+ (0.01,0) [0|8] ""  ESP
+ SG_ esp_mode : 55|2@0+ (1,0) [0|3] ""  ESP
+
+BO_ 1129 EPS_ReceiveMessage: 8 VCU
+ SG_ eps_command_workmode : 7|8@0- (1,0) [0|255] ""  EPS
+ SG_ eps_command_angle : 31|16@0- (1,-1024) [0|65535] ""  EPS
+ SG_ eps_command_middle : 47|8@0- (1,0) [0|255] ""  EPS
+ SG_ eps_command_velocity : 55|8@0- (1,0) [0|255] ""  EPS
+ SG_ eps_receive_xor : 63|8@0- (1,0) [0|255] ""  EPS
+
+BO_ 1025 EPS_Send_Msg1: 8 EPS
+ SG_ eps_workmode : 7|8@0- (1,0) [0|255] ""  VCU
+ SG_ eps_torque : 15|8@0- (1,-12.8) [0|255] "Nm"  VCU
+ SG_ eps_errorcode1 : 23|8@0- (1,0) [0|255] ""  VCU
+ SG_ eps_middlefeedback : 47|8@0- (1,0) [0|255] ""  VCU
+ SG_ eps_angle : 31|16@0- (1,-1024) [0|65535] ""  VCU
+ SG_ eps_errorcode2 : 55|8@0- (1,0) [0|255] ""  VCU
+ SG_ eps_send_xor : 63|8@0- (1,0) [0|255] ""  VCU
+
+BO_ 33 AMI_Rx: 8 VCU
+ SG_ ami_taskfin : 0|1@0+ (1,0) [0|0] ""  AMI
+ SG_ ami_process : 7|7@0+ (1,0) [0|0] ""  AMI
+
+BO_ 34 AMI_Tx: 8 AMI
+ SG_ ami_astask : 7|4@0+ (1,0) [0|0] ""  VCU
+
+
+
+CM_ BO_ 2365524207 "Period 10ms";
+CM_ SG_ 2365524207 MCU1_Rx_Limit_Positive_Value "转矩/转速指令限值上限 
+转矩控制模式时，转速限制起作用；转速控制模式时， 转矩限制起作用。 
+Torque/Speed demand limit .In torque control mode, speed limit is in effect;
+ In speed control mode, Torque limits come into play.";
+CM_ SG_ 2365524207 MCU1_Rx_Limit_Negative_Value "转矩/转速指令限值下限 
+转矩控制模式时，转速限制起作用；转速控制模式时，转矩限制起作用。
+注意：此处网络上发送的是正数
+Torque/Speed demand limit .In torque control mode, speed limit is in effect; In speed control mode, Torque limits come into play. 
+Note: The value sent on the network is positive.
+
+";
+CM_ SG_ 2365524207 MCU1_Rx_HandBrake "用于整车控制器反馈给电机控制器手刹信号 
+Used for vehicle controller feedback to motor controller handbrake signal";
+CM_ SG_ 2365524207 MCU1_Rx_Gear "档位信息，分别为空档
+（Neutral），前进档(Drive)，后退档（Reverse）。
+Gear information, respectively, is neutral 
+(Neutral), Drive, Reverse";
+CM_ SG_ 2365524207 MCU1_Rx_FootBrake "用于整车控制器反馈给电机控制器脚刹信号
+Used for vehicle controller feedback to motor controller foot brake signal。";
+CM_ SG_ 2365524207 MCU1_Rx_Fault_Reset "0 = disable
+1 = enable";
+CM_ SG_ 2365524207 MCU1_Rx_Enable "控制器的使能指令，具体指控制器 IGBT 的 PWM 开关指令。
+MCU enable, indicating PWM enable. 
+";
+CM_ SG_ 2365524207 MCU1_Rx_Demand_Torque "转矩的正负表示力的方向，规定发动机旋转方向为正向。
+The positive and negative torque indicates the direction of the force, and specifies that the direction of engine rotation is positive";
+CM_ SG_ 2365524207 MCU1_Rx_Demand_Speed "转速的正负表示电机旋转的方向（与发动机正常转动方向同向为正）
+The positive or negative speed indicates the direction of motor rotation 
+(positive in the same direction as the normal rotation direction of the engine).";
+CM_ SG_ 2365524207 MCU1_Rx_Control_Mode "0 = Standby
+1 = Speed Control
+2 = Torque Control
+3 = Active Discharge";
+CM_ SG_ 484 res_xorcheck "BYTE2 = BYTE1 ⊕ BYTE0，确保 Byte 0 和 Byte 1 的数据完整性";
+CM_ SG_ 484 res_stop "0=急停按下/故障，1=急停未按下/安全";
+CM_ SG_ 484 res_heartbeat "0~255 循环递增，接收端通过检测该值是否连续变化来判断通讯是否中断";
+CM_ SG_ 484 res_gobutton "0=未按下，1=按下";
+CM_ SG_ 484 res_go "0=待机，1=运行中";
+CM_ SG_ 484 res_communication "0=通讯断开，1=通讯正常";
+CM_ SG_ 18 ipc_task_finish "无人任务结束信号";
+CM_ SG_ 18 ipc_err "IPC相关系统（无人传感器与工控机）故障信号：0无故障；1有故障";
+CM_ SG_ 18 ipc_eps_velocity "数据范围为: 20-250，对应电机转速120-1500转/分";
+CM_ SG_ 18 ipc_cmd_angle "ESP角度值";
+CM_ BO_ 17 "工控机发送报文1";
+CM_ SG_ 17 ipc_motor_torque "无人模式下电机扭矩";
+CM_ SG_ 17 ipc_esp_rrprs "ESP右后油压";
+CM_ SG_ 17 ipc_esp_rlprs "ESP左后油压";
+CM_ SG_ 17 ipc_esp_frprs "ESP右前油压";
+CM_ SG_ 17 ipc_esp_flprs "ESP左前油压";
+CM_ BO_ 16 "工控机接收报文";
+CM_ SG_ 16 ipc_astask "AMI任务选择：
+0：非无人任务；
+1：直线加速（Acceleration）;
+2：高速寻迹（Trackdrive）;
+3：八字绕环（Skidpad）；
+4：EBS测试(EBS Test)
+5：有人模式选择";
+CM_ SG_ 16 ipc_resstop "RES的stop信号传递给工控机";
+CM_ SG_ 16 ipc_resgo "RES的go信号的传递给工控机";
+CM_ BO_ 19 "ESC反馈信号，轮缸压力";
+CM_ SG_ 19 esp13_lifeSig "生命信号，0~15循环";
+CM_ SG_ 19 esp13_checkSum "校验";
+CM_ SG_ 19 curPrsRR "左前轮缸压力反馈MPa";
+CM_ SG_ 19 curPrsRL "右前前轮缸压力反馈MPa";
+CM_ SG_ 19 curPrsFR "左后轮缸压力反馈MPa";
+CM_ SG_ 19 curPrsFL "右后轮缸压力反馈MPa";
+CM_ BO_ 32 "目标压力请求，控制时必须发送使能信号";
+CM_ SG_ 32 esp20_lifeSig "生命信号，0~15循环";
+CM_ SG_ 32 esp20_checkSum "校验";
+CM_ SG_ 32 tarPrsReqRR "右后轮缸目标压力请求";
+CM_ SG_ 32 tarPrsReqRL "左后轮缸目标压力请求";
+CM_ SG_ 32 tarPrsReqFR "右前轮缸目标压力请求";
+CM_ SG_ 32 tarPrsReqFL "左前轮缸目标压力请求";
+CM_ SG_ 32 esp_mode "ESP控制模式；
+1闭环
+2开环";
+CM_ SG_ 1129 eps_command_workmode "控制方式
+0x00：机械模式；
+0x10：助力模式；
+0x20：角度控制模式；
+0x22：清手动干涉；";
+CM_ SG_ 1129 eps_command_angle "角度计算公式： angle=(receive[3]*256+receive[4])-1024；";
+CM_ SG_ 1129 eps_command_middle "角度对中：0x55，
+不需要角度对中：0x00；
+角度控制模式下无法对中";
+CM_ SG_ 1129 eps_command_velocity "角速度控制 数据范围为: 20-250，对应电机转速120-1500转/分；";
+CM_ SG_ 1129 eps_receive_xor "异或校验";
+CM_ SG_ 1025 eps_workmode "00：机械模式；
+0x10：助力模式；
+0x20：角度控制模式；
+0x01：机械受限模式（角度模式禁止）；
+0x02：机械受限模式（助力模式禁止）；
+0x03：机械受限模式（全功能禁止）；
+0x13：助力模式（角度模式禁止）；
+0x23：角度模式（助力模式禁止）；
+0x41：手动干涉（角度模式禁止）；";
+CM_ SG_ 1025 eps_torque "EPS反馈实际扭矩值";
+CM_ SG_ 1025 eps_errorcode1 "0x11:扭矩未对中
+0X12:未写入方向盘角度传感器中点
+0X14:EEPROM读写故障
+0X21:主力矩传感器断开
+0X22:主力矩传感器输出异常
+0X23:副力矩传感器断开
+0X24:副力矩传感器输出异常
+0X25:主副力矩差异过大
+0X32:电机无助力
+0X33:过电流
+0X35:电机电流异常
+0X37:母线电流异常
+0x43:电机端电压异常
+0X46:热保护
+0X51:方向盘角度超限
+0X55:异或校验错误
+0X61:小齿角度断开
+0X62:中齿角度断开";
+CM_ SG_ 1025 eps_middlefeedback "角度对中结果反馈
+0x00:未进行过角度对中
+0x55:已进行过角度对中
+0x11:角度对中失败
+0xee:角度对中成功";
+CM_ SG_ 1025 eps_angle "角度计算公式：angle=(receive[3]*256+receive[4])-1024；";
+CM_ SG_ 1025 eps_errorcode2 "0x11:扭矩未对中
+0X12:未写入方向盘角度传感器中点
+0X14:EEPROM读写故障
+0X21:主力矩传感器断开
+0X22:主力矩传感器输出异常
+0X23:副力矩传感器断开
+0X24:副力矩传感器输出异常
+0X25:主副力矩差异过大
+0X32:电机无助力
+0X33:过电流
+0X35:电机电流异常
+0X37:母线电流异常
+0x43:电机端电压异常
+0X46:热保护
+0X51:方向盘角度超限
+0X55:异或校验错误
+0X61:小齿角度断开
+0X62:中齿角度断开";
+CM_ SG_ 1025 eps_send_xor "EPS发送校验";
+CM_ SG_ 33 ami_taskfin "0:无人任务未结束；
+1：无人任务结束";
+CM_ SG_ 33 ami_process "0x01:as_off_flag；
+0x02:manual_driving_flag;
+0x04:as_ready_flag;
+0x08:r2d_flag;
+0x10:as_driving;
+0x20:as_finished_flag;
+0x40:as_emergency_flag
+";
+CM_ SG_ 34 ami_astask "0：直线加速；1：八字绕环；2:高速循迹；3：EBS测试；4：车检；5：有人模式选择";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 30000;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","spontaneous","cyclicIfActive","spontaneousWithDelay";
+BA_DEF_ BO_  "GenMsgDelayTime" FLOAT 0 300000;
+BA_DEF_ BO_  "GenMsgCycleTime" FLOAT 0 30000;
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 20;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 2365524463 100;
+BA_ "GenMsgCycleTime" BO_ 2365524207 10;
+BA_ "GenMsgCycleTime" BO_ 484 50;
+BA_ "GenMsgCycleTime" BO_ 16 50;
+BA_ "GenSigStartValue" SG_ 2365524207 MCU1_Rx_Demand_Torque 5000;
+BA_ "GenSigStartValue" SG_ 2365524207 MCU1_Rx_Demand_Speed 15000;
+BA_ "GenSigStartValue" SG_ 18 ipc_cmd_angle 1024;
+BA_ "GenSigStartValue" SG_ 17 ipc_motor_torque 5000;
+

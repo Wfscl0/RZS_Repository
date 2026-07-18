@@ -1,0 +1,21 @@
+This file is the manifest for the generated code from model 'rzs10thnew2021b'.
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rtGetInf.c
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rtGetNaN.c
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rt_nonfinite.c
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rtmodel.c
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rzs10thnew2021b.c
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rzs10thnew2021b_data.c
+D:\matlab\rtw\c\src\common\rt_main.c
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rtGetInf.h
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rtGetNaN.h
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rt_nonfinite.h
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rtmodel.h
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rtwtypes.h
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rzs10thnew2021b.h
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rzs10thnew2021b_private.h
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rzs10thnew2021b_types.h
+D:\matlab\rtw\c\src\ext_mode\common\ext_work.h
+D:\matlab\rtw\c\src\rt_logging.h
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\defines.txt
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b.exe
+C:\Users\LENOVO\Desktop\方程式\2021b\2021b\rzs10thnew2021b_ert_rtw\rzs10thnew2021b_manifest.txt

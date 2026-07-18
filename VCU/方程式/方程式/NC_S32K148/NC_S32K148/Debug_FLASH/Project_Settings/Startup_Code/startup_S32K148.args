@@ -1,0 +1,19 @@
+-c
+-I"C:/Users/LENOVO/Desktop/NC_S32K148/NC_S32K148/include"
+-I"C:/Users/LENOVO/Desktop/NC_S32K148/NC_S32K148/ImpCode/bsp/inc"
+-I"C:/Users/LENOVO/Desktop/NC_S32K148/NC_S32K148/ImpCode/os/inc"
+-I"C:/Users/LENOVO/Desktop/NC_S32K148/NC_S32K148/ImpCode/interface"
+-I"C:/Users/LENOVO/Desktop/NC_S32K148/NC_S32K148/rzs10thnew2021b/2021b/rzs10thnew2021b_ert_rtw"
+-I"C:/Users/LENOVO/Desktop/NC_S32K148/NC_S32K148/rzs10thnew2021b/matlab/rtw/c/src/ext_mode/common"
+-x assembler-with-cpp
+-DTURN_ON_CPU0
+-DSEMIHOSTING
+-DUSING_OS_FREERTOS
+-g3
+-mcpu=cortex-m4
+-mthumb
+-mfloat-abi=hard
+-mfpu=fpv4-sp-d16
+-specs=nano.specs
+-specs=nosys.specs
+--sysroot="D:/S32DS/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib"
