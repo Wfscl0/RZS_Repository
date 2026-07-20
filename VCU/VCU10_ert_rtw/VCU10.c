@@ -5,7 +5,7 @@
  *
  * Model version              : 1.31
  * Simulink Coder version : 9.6 (R2021b) 14-May-2021
- * C source code generated on : Fri Jul 17 15:45:49 2026
+ * C source code generated on : Sun Jul 19 00:53:26 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -844,12 +844,12 @@ void VCU10_step(void)
   /* DataTypeConversion: '<S14>/Data Type Conversion12' incorporates:
    *  Gain: '<S14>/Gain'
    */
-  airprs_sensor1 = 33554.0 * (real_T)airprs1 * 5.9604644775390625E-8;
+  airprs_sensor1 = 33554.0 * (real_T)airprs1 * 2.9802322387695312E-8;
 
   /* DataTypeConversion: '<S14>/Data Type Conversion15' incorporates:
    *  Gain: '<S14>/Gain1'
    */
-  airprs_sensor2_tmp = 33554.0 * (real_T)airprs2 * 5.9604644775390625E-8;
+  airprs_sensor2_tmp = 33554.0 * (real_T)airprs2 * 2.9802322387695312E-8;
 
   /* Product: '<S279>/Product1' incorporates:
    *  Constant: '<S279>/Constant'
