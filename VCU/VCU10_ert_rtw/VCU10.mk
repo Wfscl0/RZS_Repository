@@ -2,7 +2,7 @@
 ## Makefile generated for component 'VCU10'. 
 ## 
 ## Makefile     : VCU10.mk
-## Generated on : Fri Jul 17 15:46:04 2026
+## Generated on : Sun Jul 19 00:53:33 2026
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/VCU10.exe
 ## Product type : executable
 ## 
@@ -22,7 +22,7 @@ MAKEFILE                  = VCU10.mk
 MATLAB_ROOT               = D:/21b
 MATLAB_BIN                = D:/21b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/icemi/Desktop/RZS_Repository/VCU/NC_S32K148/NC_S32K148
+START_DIR                 = C:/Users/icemi/Desktop/RZS_Repository/VCU
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
