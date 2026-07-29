@@ -9,6 +9,7 @@ LTspice: 26.0.1 for Windows
 - Board sources: `fin/*.png`, `fin/*.tel`
 - LTspice decks: `simulations/*.cir`
 - LTspice logs/waveforms: `simulations/*.log`, `simulations/*.raw`
+- EBS watchdog input definition: `VCU_WDI` is a VCU-driven push-pull 0–5 V, 10 Hz square wave; the timing deck abstracts the UCC2946 validity result as `watchdog_ok`.
 
 ## Official models downloaded
 

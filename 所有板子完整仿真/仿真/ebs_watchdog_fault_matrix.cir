@@ -5,6 +5,8 @@
 .param PWR=if(CASE==5,0,24)
 .param SDC=if(CASE==6,0,24)
 .param TRIG=if(CASE==2,5,0)
+* Raw VCU_WDI is a VCU-driven push-pull 0-5 V, 10 Hz square wave.
+* WDI below is the abstracted valid-level state used by this fault matrix.
 .param WDI=if(CASE==1,0,5)
 .param FB=if(CASE==3,0,5)
 VP pwr 0 {PWR}

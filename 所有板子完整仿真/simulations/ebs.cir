@@ -9,7 +9,8 @@
 VCC vcc 0 5
 VEBS_PWR ebs_pwr 0 24
 
-* watchdog_ok high = watchdog toggling is valid; low = watchdog fault.
+* Raw VCU_WDI is a VCU-driven push-pull 0-5 V, 10 Hz square wave.
+* watchdog_ok abstracts the UCC2946 result: high = valid toggling; low = watchdog fault.
 VWATCHDOG_OK watchdog_ok 0 PWL(0 5 2m 5 2.01m 0 4m 0 4.01m 5 9m 5)
 
 * EBS_TRIG: normal low, trigger fault high.

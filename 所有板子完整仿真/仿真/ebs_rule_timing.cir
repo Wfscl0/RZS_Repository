@@ -8,6 +8,8 @@
 VPWR ebs_pwr 0 PWL(0 24 1.5 24 1.501 0 2 0)
 VSDC sdc_in 0 PWL(0 24 1.1 24 1.1001 0 1.3 0 1.3001 24 2 24)
 VTRIG trig 0 PWL(0 0 .5 0 .5001 5 1.0 5 1.0001 0 2 0)
+* Raw VCU_WDI is a VCU-driven push-pull 0-5 V, 10 Hz square wave.
+* wdi_ok below abstracts the UCC2946 validity result for response-timing tests.
 VWDI wdi_ok 0 PWL(0 5 1.2 5 1.2001 0 2 0)
 BOK logic_ok 0 V=delay(if(V(ebs_pwr)>18 & V(trig)<2.5 & V(wdi_ok)>2.5,5,0),TPROP)
 XREL logic_ok relay_closed RELAY_NO TOP={TREL} TREL={TREL}
