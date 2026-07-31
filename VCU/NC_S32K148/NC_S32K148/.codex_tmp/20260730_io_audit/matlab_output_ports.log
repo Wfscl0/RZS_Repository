@@ -1,0 +1,5 @@
+ 
+要开始，请键入 doc。
+有关产品信息，请访问 www.mathworks.com。
+ 
+OUTPORT name=model_lox port=1 dtype=Inherit: auto signal=model_hox source=Physical_OUT1_7_Pack\nOUTPORT name=model_hox port=2 dtype=Inherit: auto signal=model_lox source=Physical_HO1_4_Pack\nDICT model_lox class=Simulink.Signal dtype=fixdt(0,5,0)\nDICT model_hox class=Simulink.Signal dtype=uint8\n

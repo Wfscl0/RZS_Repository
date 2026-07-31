@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 1707, 913]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">150</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="res_communication" SID="914">
+    <P Name="Position">[510, 293, 540, 307]</P>
+    <P Name="ZOrder">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_heartbeat" SID="915">
+    <P Name="Position">[505, 378, 535, 392]</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_xorcheck" SID="916">
+    <P Name="Position">[505, 458, 535, 472]</P>
+    <P Name="ZOrder">180</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="xor_consequence" SID="917">
+    <P Name="Position">[505, 488, 535, 502]</P>
+    <P Name="ZOrder">181</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="918">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[905, 292, 930, 478]</P>
+    <P Name="ZOrder">4</P>
+    <P Name="Inputs">3</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="heaartbeat_chart" SID="919">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[610, 359, 750, 411]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_919"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="xor_Check" SID="920">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[610, 452, 750, 508]</P>
+    <P Name="ZOrder">182</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_920"/>
+  </Block>
+  <Block BlockType="Outport" Name="res_check" SID="921">
+    <P Name="Position">[1040, 378, 1070, 392]</P>
+    <P Name="ZOrder">179</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">915#out:1</P>
+    <P Name="Dst">919#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">919#out:1</P>
+    <P Name="Dst">918#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">914#out:1</P>
+    <P Name="Points">[278, 0; 0, 25]</P>
+    <P Name="Dst">918#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">918#out:1</P>
+    <P Name="Dst">921#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">916#out:1</P>
+    <P Name="Dst">920#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">917#out:1</P>
+    <P Name="Dst">920#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">920#out:1</P>
+    <P Name="Points">[68, 0; 0, -35]</P>
+    <P Name="Dst">918#in:3</P>
+  </Line>
+  <Annotation SID="924">
+    <P Name="Name">异或校验可靠性判断</P>
+    <P Name="Position">[634, 434, 726, 448]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="923">
+    <P Name="Name">赛车端与VCU断联</P>
+    <P Name="Position">[638, 344, 721, 358]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-2</P>
+  </Annotation>
+  <Annotation SID="922">
+    <P Name="Name">赛车端与遥控端断联</P>
+    <P Name="Position">[630, 283, 722, 297]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-3</P>
+  </Annotation>
+</System>

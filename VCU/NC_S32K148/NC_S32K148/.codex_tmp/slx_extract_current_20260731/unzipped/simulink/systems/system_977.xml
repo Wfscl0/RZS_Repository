@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">175</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="canb_ipctsmsg1" SID="978">
+    <P Name="Position">[290, 228, 320, 242]</P>
+    <P Name="ZOrder">628</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_ipctsmsg2" SID="979">
+    <P Name="Position">[300, 648, 330, 662]</P>
+    <P Name="ZOrder">632</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="IPC_Tx_Msg1" SID="980">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[410, 127, 1045, 343]</P>
+    <P Name="ZOrder">629</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_980"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="IPC_Tx_Msg2" SID="1022">
+    <P Name="Ports">[1, 7]</P>
+    <P Name="Position">[425, 530, 1060, 780]</P>
+    <P Name="ZOrder">633</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1022"/>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_esp_pressure" SID="1054">
+    <P Name="Position">[1125, 173, 1155, 187]</P>
+    <P Name="ZOrder">630</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_motor_torque" SID="1055">
+    <P Name="Position">[1125, 283, 1155, 297]</P>
+    <P Name="ZOrder">631</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_eps_angle" SID="1056">
+    <P Name="Position">[1155, 543, 1185, 557]</P>
+    <P Name="ZOrder">634</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_eps_velocity" SID="1057">
+    <P Name="Position">[1155, 578, 1185, 592]</P>
+    <P Name="ZOrder">635</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_err" SID="1058">
+    <P Name="Position">[1155, 613, 1185, 627]</P>
+    <P Name="ZOrder">636</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="task_finish" SID="1059">
+    <P Name="Position">[1155, 648, 1185, 662]</P>
+    <P Name="ZOrder">637</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_heartbeat" SID="1060">
+    <P Name="Position">[1155, 683, 1185, 697]</P>
+    <P Name="ZOrder">638</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_lspd" SID="1061">
+    <P Name="Position">[1155, 718, 1185, 732]</P>
+    <P Name="ZOrder">639</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_hspd" SID="1062">
+    <P Name="Position">[1155, 753, 1185, 767]</P>
+    <P Name="ZOrder">640</P>
+    <P Name="Port">9</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">978#out:1</P>
+    <P Name="Dst">980#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">980#out:1</P>
+    <P Name="Dst">1054#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">980#out:2</P>
+    <P Name="Dst">1055#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">979#out:1</P>
+    <P Name="Dst">1022#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1022#out:2</P>
+    <P Name="Dst">1057#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1022#out:1</P>
+    <P Name="Dst">1056#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">1022#out:3</P>
+    <P Name="Dst">1058#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">1022#out:4</P>
+    <P Name="Dst">1059#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">1022#out:6</P>
+    <P Name="Dst">1061#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">1022#out:5</P>
+    <P Name="Dst">1060#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">1022#out:7</P>
+    <P Name="Dst">1062#in:1</P>
+  </Line>
+</System>

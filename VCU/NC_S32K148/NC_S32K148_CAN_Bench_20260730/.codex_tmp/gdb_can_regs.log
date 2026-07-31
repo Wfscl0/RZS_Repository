@@ -1,0 +1,16 @@
+0x00004e94 in ?? ()
+Expected an decimal digit (0-9)
+Hardware assisted breakpoint 1 at 0x2dbb2: file ../Sources/main.c, line 46.
+
+Breakpoint 1, main () at ../Sources/main.c:46
+46	    PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
+Hardware assisted breakpoint 2 at 0x2351c: file ../ImpCode/os/os_task_CanOut.c, line 36.
+
+Breakpoint 2, OS_Task_CanOut (pvPara=0x0) at ../ImpCode/os/os_task_CanOut.c:36
+36	{
+CAN_TASK_REACHED pc=0x2351c sp=0x200089a8
+.codex_tmp\app_can_regs.gdb:22: Error in sourced command file:
+-a is meaningless in all-stop mode.
+Cannot execute this command while the target is running.
+Use the "interrupt" command to stop the target
+and then try again.

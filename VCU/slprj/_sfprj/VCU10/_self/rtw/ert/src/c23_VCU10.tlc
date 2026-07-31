@@ -1,0 +1,67 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   7 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "last_counter"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1587:133-145"\
+    }\
+    ChartData {\
+      Name         "last_counter_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1587:133-145"\
+    }\
+    ChartData {\
+      Name         "seen_count"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1587:146-156"\
+    }\
+    ChartData {\
+      Name         "stale_count"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1587:157-168"\
+    }\
+    ChartData {\
+      Name         "bad_count"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1587:169-178"\
+    }\
+    ChartData {\
+      Name         "good_count"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1587:179-189"\
+    }\
+    ChartData {\
+      Name         "fault"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1587:190-195"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

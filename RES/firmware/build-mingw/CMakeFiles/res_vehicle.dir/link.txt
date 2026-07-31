@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libres_vehicle.a CMakeFiles/res_vehicle.dir/vehicle_g0b1/Core/Src/res_vehicle_app.c.obj
+C:\mingw64\bin\ranlib.exe libres_vehicle.a

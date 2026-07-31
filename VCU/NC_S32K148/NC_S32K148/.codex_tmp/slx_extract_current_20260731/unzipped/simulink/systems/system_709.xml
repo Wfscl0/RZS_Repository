@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="ipc_esp_pressure" SID="710">
+    <P Name="Position">[910, 608, 940, 622]</P>
+    <P Name="ZOrder">749</P>
+  </Block>
+  <Block BlockType="Inport" Name="brake_flag" SID="711">
+    <P Name="Position">[910, 668, 940, 682]</P>
+    <P Name="ZOrder">750</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="lifeSig" SID="712">
+    <P Name="Position">[910, 728, 940, 742]</P>
+    <P Name="ZOrder">844</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="checkSum" SID="713">
+    <P Name="Position">[910, 788, 940, 802]</P>
+    <P Name="ZOrder">845</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="ESP_R_00" SID="714">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[1015, 586, 1480, 824]</P>
+    <P Name="ZOrder">843</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_714"/>
+  </Block>
+  <Block BlockType="Outport" Name="canb_esp_r00" SID="762">
+    <P Name="Position">[1545, 698, 1575, 712]</P>
+    <P Name="ZOrder">842</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">710#out:1</P>
+    <P Name="Dst">714#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">711#out:1</P>
+    <P Name="Dst">714#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">714#out:1</P>
+    <P Name="Dst">762#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">713#out:1</P>
+    <P Name="Dst">714#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">712#out:1</P>
+    <P Name="Dst">714#in:3</P>
+  </Line>
+</System>

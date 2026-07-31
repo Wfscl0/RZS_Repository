@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">25</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="trigger" SID="1555::1">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="asms" SID="1555::22">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="driver_ok" SID="1555::23">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">14</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="air_ready_bar" SID="1555::24">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">15</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="air_work_bar" SID="1555::25">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="1555::20">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="1555::19">
+    <P Name="Tag">Stateflow S-Function 22</P>
+    <P Name="Ports">[5, 2]</P>
+    <P Name="Position">[180, 105, 230, 225]</P>
+    <P Name="ZOrder">10</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[5 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">ebs_sensor_fault</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="1555::21">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">12</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_sensor_fault" SID="1555::5">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">-5</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">27</P>
+    <P Name="Src">1555::1#out:1</P>
+    <P Name="Dst">1555::19#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">28</P>
+    <P Name="Src">1555::22#out:1</P>
+    <P Name="Dst">1555::19#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">29</P>
+    <P Name="Src">1555::23#out:1</P>
+    <P Name="Dst">1555::19#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">30</P>
+    <P Name="Src">1555::24#out:1</P>
+    <P Name="Dst">1555::19#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">31</P>
+    <P Name="Src">1555::25#out:1</P>
+    <P Name="Dst">1555::19#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">ebs_sensor_fault</P>
+    <P Name="ZOrder">32</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1555::19#out:2</P>
+    <P Name="Dst">1555::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">33</P>
+    <P Name="Src">1555::20#out:1</P>
+    <P Name="Dst">1555::21#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">34</P>
+    <P Name="Src">1555::19#out:1</P>
+    <P Name="Dst">1555::20#in:1</P>
+  </Line>
+</System>

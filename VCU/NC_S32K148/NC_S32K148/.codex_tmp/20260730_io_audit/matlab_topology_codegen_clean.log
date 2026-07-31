@@ -1,0 +1,53 @@
+ 
+要开始，请键入 doc。
+有关产品信息，请访问 www.mathworks.com。
+ 
+TOPOLOGY_UPDATE=PASS
+MODEL=C:\Users\icemi\Desktop\RZS_Repository\VCU\Models\DBC_Debug\VCU10.slx
+MODEL_VERSION=1.43
+ROOT_INPUTS=19 ROOT_OUTPUTS=12
+OUT1=led_brake
+OUT2=led_assi_b
+OUT3=led_assi_y
+OUT4=led_ebserror
+OUT5=res_error
+OUT6=Unused_OUT_Bit
+OUT7=Unused_OUT_Bit
+HO1=ebs_trig
+HO2=led_bmserr
+HO3=led_imderr
+HO4=di8
+HO5=run
+HO6=buzzer_r2d
+HO7=buzzer_ebs
+HO8=Unused_HO_Bit
+### Starting build procedure for: VCU10
+### Generating code and artifacts to '模型特定' folder structure
+### Generating code into build folder: C:\Users\icemi\Desktop\RZS_Repository\VCU\Models\DBC_Debug\VCU10_ert_rtw
+[警告: Parameter precision loss occurred for 'Gain' of 'VCU10/Sensor_Signal/Gain'. The parameter's value cannot be represented exactly using the run-time data type.
+A small quantization error has occurred. To disable this warning or error, in the Configuration Parameters > Diagnostics > Data Validity pane, set the 'Detect
+precision loss' option in the Parameters group to 'none'.
+Suggested Actions:
+    •  - Suppress
+] 
+[警告: Parameter precision loss occurred for 'Gain' of 'VCU10/Sensor_Signal/Gain1'. The parameter's value cannot be represented exactly using the run-time data type.
+A small quantization error has occurred. To disable this warning or error, in the Configuration Parameters > Diagnostics > Data Validity pane, set the 'Detect
+precision loss' option in the Parameters group to 'none'.
+Suggested Actions:
+    •  - Suppress
+] 
+[警告: 没有为 'VCU10'指定代码生成目标。
+Suggested Actions:
+    • 指定目标 - Open
+    • 将 '生成代码前检查模型' 设置为 '关闭' - Open
+] 
+### Generated code for 'VCU10' is up to date because no structural, parameter or code replacement library changes were found.
+### 正在保存二进制信息缓存。
+### Skipping makefile generation and compilation because C:\Users\icemi\Desktop\RZS_Repository\VCU\Models\DBC_Debug\VCU10.exe is up to date
+### Successful completion of code generation for: VCU10
+
+编译摘要
+
+编译了 0 个模型，共 1 个模型(1 个模型已经是最新的)
+编译持续时间: 0h 0m 28.19s
+TOPOLOGY_CODEGEN_CLEAN=PASS

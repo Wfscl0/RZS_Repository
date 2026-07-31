@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">180</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="brake_on" SID="1310">
+    <P Name="Position">[-115, 178, -85, 192]</P>
+    <P Name="ZOrder">244</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_led_blue" SID="1311">
+    <P Name="Position">[-115, 413, -85, 427]</P>
+    <P Name="ZOrder">245</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_led_yellow" SID="1312">
+    <P Name="Position">[-115, 933, -85, 947]</P>
+    <P Name="ZOrder">247</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="asms_button" SID="1315">
+    <P Name="Position">[-115, 648, -85, 662]</P>
+    <P Name="ZOrder">296</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="sensor_signal" SID="1316">
+    <P Name="Position">[-20, 1408, 10, 1422]</P>
+    <P Name="ZOrder">298</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_stop" SID="1317">
+    <P Name="Position">[-20, 1248, 10, 1262]</P>
+    <P Name="ZOrder">4551</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_communication" SID="1318">
+    <P Name="Position">[-20, 1288, 10, 1302]</P>
+    <P Name="ZOrder">4552</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Inport" Name="Shutdown_Start" SID="1319">
+    <P Name="Position">[-20, 1328, 10, 1342]</P>
+    <P Name="ZOrder">4558</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Inport" Name="Shutdown_End" SID="1320">
+    <P Name="Position">[-20, 1368, 10, 1382]</P>
+    <P Name="ZOrder">4559</P>
+    <P Name="Port">9</P>
+  </Block>
+  <Block BlockType="Inport" Name="ESP_T_03signal" SID="1321">
+    <P Name="Position">[-20, 1448, 10, 1462]</P>
+    <P Name="ZOrder">4585</P>
+    <P Name="Port">10</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="1322">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[665, 20, 685, 40]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="EBS_LED" SID="1330">
+    <P Name="Ports">[7, 1]</P>
+    <P Name="Position">[40, 1229, 620, 1521]</P>
+    <P Name="ZOrder">4595</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1330"/>
+  </Block>
+  <Block BlockType="From" Name="From" SID="1363">
+    <P Name="Position">[-125, 1476, 10, 1514]</P>
+    <P Name="ZOrder">4596</P>
+    <P Name="GotoTag">asms_button</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto" SID="1364">
+    <P Name="Position">[145, 636, 280, 674]</P>
+    <P Name="ZOrder">4563</P>
+    <P Name="GotoTag">asms_button</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Subsystem" SID="1365">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[55, 364, 500, 586]</P>
+    <P Name="ZOrder">267</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1365"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Subsystem1" SID="1382">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[55, 777, 500, 993]</P>
+    <P Name="ZOrder">285</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1382"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="TSLED_Inspection" SID="1517">
+    <P Name="Ports">[0, 2]</P>
+    <P Name="Position">[250, 1689, 360, 1851]</P>
+    <P Name="ZOrder">4604</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1517"/>
+  </Block>
+  <Block BlockType="Outport" Name="led_brake" SID="1399">
+    <P Name="Position">[660, 178, 690, 192]</P>
+    <P Name="ZOrder">248</P>
+  </Block>
+  <Block BlockType="Outport" Name="led_assi_blue" SID="1400">
+    <P Name="Position">[660, 468, 690, 482]</P>
+    <P Name="ZOrder">269</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="led_assi_yellow" SID="1401">
+    <P Name="Position">[660, 878, 690, 892]</P>
+    <P Name="ZOrder">250</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="led_ebs_error" SID="1402">
+    <P Name="Position">[725, 1368, 755, 1382]</P>
+    <P Name="ZOrder">251</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="led_imderr" SID="1518">
+    <P Name="Position">[565, 1723, 595, 1737]</P>
+    <P Name="ZOrder">4605</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="led_bmserr" SID="1519">
+    <P Name="Position">[565, 1803, 595, 1817]</P>
+    <P Name="ZOrder">4606</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1310#out:1</P>
+    <P Name="Dst">1399#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1311#out:1</P>
+    <P Name="Dst">1365#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">1365#out:1</P>
+    <P Name="Dst">1400#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">1382#out:1</P>
+    <P Name="Dst">1401#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1312#out:1</P>
+    <P Name="Dst">1382#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">1315#out:1</P>
+    <P Name="Points">[80, 0]</P>
+    <Branch>
+      <P Name="ZOrder">11</P>
+      <P Name="Points">[0, 175]</P>
+      <P Name="Dst">1382#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">12</P>
+      <P Name="Dst">1364#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">13</P>
+      <P Name="Points">[0, -125]</P>
+      <P Name="Dst">1365#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">1317#out:1</P>
+    <P Name="Dst">1330#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">1318#out:1</P>
+    <P Name="Dst">1330#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">1319#out:1</P>
+    <P Name="Dst">1330#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">1320#out:1</P>
+    <P Name="Dst">1330#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">1316#out:1</P>
+    <P Name="Dst">1330#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">19</P>
+    <P Name="Src">1321#out:1</P>
+    <P Name="Dst">1330#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">1330#out:1</P>
+    <P Name="Dst">1402#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">21</P>
+    <P Name="Src">1363#out:1</P>
+    <P Name="Dst">1330#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">39</P>
+    <P Name="Src">1517#out:1</P>
+    <P Name="Dst">1518#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">40</P>
+    <P Name="Src">1517#out:2</P>
+    <P Name="Dst">1519#in:1</P>
+  </Line>
+</System>

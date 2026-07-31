@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">154</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="model_hin" SID="91">
+    <P Name="Position">[120, 188, 150, 202]</P>
+    <P Name="ZOrder">1</P>
+  </Block>
+  <Block BlockType="Inport" Name="model_ain" SID="92">
+    <P Name="Position">[120, 563, 150, 577]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="87">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[210, 15, 230, 35]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion" SID="1492">
+    <P Name="Position">[645, 643, 720, 677]</P>
+    <P Name="ZOrder">206</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion1" SID="1493">
+    <P Name="Position">[645, 598, 720, 632]</P>
+    <P Name="ZOrder">208</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion2" SID="1495">
+    <P Name="Position">[645, 553, 720, 587]</P>
+    <P Name="ZOrder">210</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion3" SID="1497">
+    <P Name="Position">[645, 508, 720, 542]</P>
+    <P Name="ZOrder">212</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion4" SID="1499">
+    <P Name="Position">[645, 463, 720, 497]</P>
+    <P Name="ZOrder">214</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Data_Analysis" SID="96">
+    <P Name="Ports">[1, 8]</P>
+    <P Name="Position">[345, 77, 575, 313]</P>
+    <P Name="ZOrder">6</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_96"/>
+  </Block>
+  <Block BlockType="Demux" Name="Demux" SID="154">
+    <P Name="Ports">[1, 5]</P>
+    <P Name="Position">[345, 458, 350, 682]</P>
+    <P Name="ZOrder">194</P>
+    <P Name="Outputs">5</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="1491">
+    <P Name="Position">[540, 645, 580, 675]</P>
+    <P Name="ZOrder">205</P>
+    <P Name="Gain">1000</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="1494">
+    <P Name="Position">[540, 600, 580, 630]</P>
+    <P Name="ZOrder">207</P>
+    <P Name="Gain">1000</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain2" SID="1496">
+    <P Name="Position">[540, 555, 580, 585]</P>
+    <P Name="ZOrder">209</P>
+    <P Name="Gain">1000</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain3" SID="1498">
+    <P Name="Position">[540, 510, 580, 540]</P>
+    <P Name="ZOrder">211</P>
+    <P Name="Gain">1000</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain4" SID="1500">
+    <P Name="Position">[540, 465, 580, 495]</P>
+    <P Name="ZOrder">213</P>
+    <P Name="Gain">1000</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Pedal_AinConvert_APP1" SID="425">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[410, 469, 495, 491]</P>
+    <P Name="ZOrder">200</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_425"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Pedal_AinConvert_APP2" SID="437">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[410, 514, 495, 536]</P>
+    <P Name="ZOrder">202</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_437"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Pedal_AinConvert_Brake" SID="443">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[410, 559, 495, 581]</P>
+    <P Name="ZOrder">203</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_443"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Pressure_AinConvert1" SID="431">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[410, 606, 495, 624]</P>
+    <P Name="ZOrder">201</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_431"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Pressure_AinConvert2" SID="449">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[410, 651, 495, 669]</P>
+    <P Name="ZOrder">204</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_449"/>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_driver_check" SID="146">
+    <P Name="Position">[765, 83, 795, 97]</P>
+    <P Name="ZOrder">179</P>
+  </Block>
+  <Block BlockType="Outport" Name="shutdown_s" SID="147">
+    <P Name="Position">[765, 113, 795, 127]</P>
+    <P Name="ZOrder">187</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="shutdown_e" SID="148">
+    <P Name="Position">[765, 143, 795, 157]</P>
+    <P Name="ZOrder">188</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="di8_cockpit" SID="149">
+    <P Name="Position">[765, 173, 795, 187]</P>
+    <P Name="ZOrder">189</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="di8_side" SID="150">
+    <P Name="Position">[765, 203, 795, 217]</P>
+    <P Name="ZOrder">190</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="run_button" SID="151">
+    <P Name="Position">[765, 233, 795, 247]</P>
+    <P Name="ZOrder">191</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Outport" Name="tsms" SID="152">
+    <P Name="Position">[765, 263, 795, 277]</P>
+    <P Name="ZOrder">192</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Outport" Name="asms" SID="153">
+    <P Name="Position">[765, 293, 795, 307]</P>
+    <P Name="ZOrder">193</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Outport" Name="apps1" SID="155">
+    <P Name="Position">[760, 473, 790, 487]</P>
+    <P Name="ZOrder">195</P>
+    <P Name="Port">9</P>
+  </Block>
+  <Block BlockType="Outport" Name="apps2" SID="156">
+    <P Name="Position">[760, 518, 790, 532]</P>
+    <P Name="ZOrder">196</P>
+    <P Name="Port">10</P>
+  </Block>
+  <Block BlockType="Outport" Name="brkps" SID="157">
+    <P Name="Position">[760, 563, 790, 577]</P>
+    <P Name="ZOrder">197</P>
+    <P Name="Port">11</P>
+  </Block>
+  <Block BlockType="Outport" Name="airprs1" SID="158">
+    <P Name="Position">[760, 608, 790, 622]</P>
+    <P Name="ZOrder">198</P>
+    <P Name="Port">12</P>
+  </Block>
+  <Block BlockType="Outport" Name="airprs2" SID="159">
+    <P Name="Position">[760, 653, 790, 667]</P>
+    <P Name="ZOrder">199</P>
+    <P Name="Port">13</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">91#out:1</P>
+    <P Name="Dst">96#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">96#out:1</P>
+    <P Name="Dst">146#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">96#out:2</P>
+    <P Name="Dst">147#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">96#out:3</P>
+    <P Name="Dst">148#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">96#out:4</P>
+    <P Name="Dst">149#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">96#out:5</P>
+    <P Name="Dst">150#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">96#out:6</P>
+    <P Name="Dst">151#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">96#out:7</P>
+    <P Name="Dst">152#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">96#out:8</P>
+    <P Name="Dst">153#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">92#out:1</P>
+    <P Name="Dst">154#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">154#out:1</P>
+    <P Name="Dst">425#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">154#out:2</P>
+    <P Name="Dst">437#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">154#out:3</P>
+    <P Name="Dst">443#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">154#out:4</P>
+    <P Name="Dst">431#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">154#out:5</P>
+    <P Name="Dst">449#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">35</P>
+    <P Name="Src">425#out:1</P>
+    <P Name="Dst">1500#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">36</P>
+    <P Name="Src">437#out:1</P>
+    <P Name="Dst">1498#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">37</P>
+    <P Name="Src">443#out:1</P>
+    <P Name="Dst">1496#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">38</P>
+    <P Name="Src">431#out:1</P>
+    <P Name="Dst">1494#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">39</P>
+    <P Name="Src">449#out:1</P>
+    <P Name="Dst">1491#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">40</P>
+    <P Name="Src">1500#out:1</P>
+    <P Name="Dst">1499#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">41</P>
+    <P Name="Src">1498#out:1</P>
+    <P Name="Dst">1497#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">42</P>
+    <P Name="Src">1496#out:1</P>
+    <P Name="Dst">1495#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">43</P>
+    <P Name="Src">1494#out:1</P>
+    <P Name="Dst">1493#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">44</P>
+    <P Name="Src">1491#out:1</P>
+    <P Name="Dst">1492#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">45</P>
+    <P Name="Src">1499#out:1</P>
+    <P Name="Dst">155#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">46</P>
+    <P Name="Src">1497#out:1</P>
+    <P Name="Dst">156#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">47</P>
+    <P Name="Src">1495#out:1</P>
+    <P Name="Dst">157#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">48</P>
+    <P Name="Src">1493#out:1</P>
+    <P Name="Dst">158#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">49</P>
+    <P Name="Src">1492#out:1</P>
+    <P Name="Dst">159#in:1</P>
+  </Line>
+  <Annotation SID="1547">
+    <P Name="Name">ADC mapping: APP1/APP2/Brake = ADS1115 0-5 V; Air1/Air2 = MCU ADC 0-10 V.</P>
+    <P Name="Position">[170, 15, 534, 29]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+</System>

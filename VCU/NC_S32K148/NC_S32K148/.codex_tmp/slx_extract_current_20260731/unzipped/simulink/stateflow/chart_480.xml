@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="480">
+  <P Name="name">Res/Res_Msg/Subsystem/heaartbeat_chart</P>
+  <P Name="windowPosition">[-7 -7 1721 1033]</P>
+  <P Name="viewLimits">[-11.57 1633.097 115.274 546.608]</P>
+  <P Name="zoomFactor">1.333</P>
+  <P Name="screen">[1 1 3200 1200 1.25]</P>
+  <P Name="viewObj">480</P>
+  <P Name="ssIdHighWaterMark">26</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="chartFileNumber">10</P>
+  <P Name="allowGlobalAccessToExportedFunctions">0</P>
+  <P Name="saturateOnIntegerOverflow">1</P>
+  <P Name="userSpecifiedStateTransitionExecutionOrder">1</P>
+  <P Name="disableImplicitCasting">1</P>
+  <P Name="actionLanguage">2</P>
+  <Children>
+    <state SSID="5">
+      <P Name="labelString">begin
+</P>
+      <P Name="position">[465.6667 141.3333 90 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">480</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="8">
+      <P Name="labelString">compare
+res_hbcheck=1;</P>
+      <P Name="position">[769.1905 141.3333 90 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">480</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="16">
+      <P Name="labelString">same
+hbcnt = hbcnt + 1;</P>
+      <P Name="position">[748.4127 297.8238 131.5556 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">480</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="18">
+      <P Name="labelString">judge
+res_hbcheck=0;</P>
+      <P Name="position">[751.0099 415.8651 126.3611 65.7143]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">480</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <data SSID="1" name="res_heartbeat">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="25" name="res_hbcheck">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="26" name="hbcnt">
+      <P Name="scope">LOCAL_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: From definition in chart</P>
+    </data>
+    <transition SSID="6">
+      <P Name="labelString"/>
+      <P Name="labelPosition">[486.217 126.333 0 0]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 486.2167 111.3333 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">5</P>
+        <P Name="intersection">[1 0 -1 0.2283 486.2167 141.3333 0 0]</P>
+      </dst>
+      <P Name="midPoint">[486.2167 126.3333]</P>
+      <P Name="dataLimits">[483.817 488.617 111.333 141.333]</P>
+      <P Name="subviewer">480</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="9">
+      <P Name="labelString">[hasChanged(res_heartbeat)]</P>
+      <P Name="labelPosition">[586.766 129.232 158.656 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">5</P>
+        <P Name="intersection">[2 1 0 0.1612 555.6667 151.0032 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[4 -1 -0 0.8388 769.1905 151.0032 0 0]</P>
+      </dst>
+      <P Name="midPoint">[658.4286 151.0032]</P>
+      <P Name="dataLimits">[555.667 769.191 148.603 153.403]</P>
+      <P Name="subviewer">480</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="24">
+      <P Name="labelString">[hasChanged(res_heartbeat)]</P>
+      <P Name="labelPosition">[1025.943 248.235 158.656 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">18</P>
+        <P Name="intersection">[2 1 0 0.1799 877.371 427.6845 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[2 1 0 0.5 859.1905 171.3333 0 0]</P>
+      </dst>
+      <P Name="midPoint">[1021.6905 288.2254]</P>
+      <P Name="dataLimits">[859.191 1021.587 168.933 427.685]</P>
+      <P Name="subviewer">480</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="22">
+      <P Name="labelString">[hasChanged(res_heartbeat)]{hbcnt=0}</P>
+      <P Name="labelPosition">[552.19 246.69 209.672 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">16</P>
+        <P Name="intersection">[1 0 -1 0.2905 786.6349 297.8238 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[3 -0 1 0.8062 786.6349 201.3333 0 0]</P>
+      </dst>
+      <P Name="midPoint">[786.6349 253.5786]</P>
+      <P Name="dataLimits">[784.235 789.035 201.333 297.824]</P>
+      <P Name="subviewer">480</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">2</P>
+    </transition>
+    <transition SSID="23">
+      <P Name="labelString">[~hasChanged(res_heartbeat)]</P>
+      <P Name="labelPosition">[834.262 245.579 165.656 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[3 0 1 0.277 834.2619 201.3333 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">16</P>
+        <P Name="intersection">[1 -0 -1 0.6526 834.2619 297.8238 0 0]</P>
+      </dst>
+      <P Name="midPoint">[834.2619 245.5786]</P>
+      <P Name="dataLimits">[831.862 836.662 201.333 297.824]</P>
+      <P Name="subviewer">480</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="17">
+      <P Name="labelString">[hbcnt&gt;30]</P>
+      <P Name="labelPosition">[806.045 377.833 58.344 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">16</P>
+        <P Name="intersection">[3 0 1 0.6123 799.4131 363.8238 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">18</P>
+        <P Name="intersection">[1 0 -1 0.3831 799.4131 415.8651 0 0]</P>
+      </dst>
+      <P Name="midPoint">[799.4131 385.8444]</P>
+      <P Name="dataLimits">[797.013 801.813 363.824 415.865]</P>
+      <P Name="subviewer">480</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+  </Children>
+</chart>

@@ -3,7 +3,7 @@
  * VCU CAN0
  * bsp_can0.c
  *
- * Created on: 2024Äê12ÔÂxÈÕ
+ * Created on: 2024å¹´12æœˆxæ—¥
  *     Author: ROG
  */
 #include "bsp_can0.h"
@@ -15,34 +15,34 @@
 /* ********************************************************************************
  * CAN0
  */
-/*´Ë½á¹¹Ìå±ØĞëÉèÖÃÎªÈ«¾Ö±äÁ¿ ·ñÔò·¢ËÍ±¨ÎÄÎªÒ£¿ØÖ¡*/
+/*æ­¤ç»“æ„ä½“å¿…é¡»è®¾ç½®ä¸ºå…¨å±€å˜é‡ å¦åˆ™å‘é€æŠ¥æ–‡ä¸ºé¥æ§å¸§*/
 static can_buff_config_t Rx_buffCfg_STD =  {
-	.enableFD = false,  //CANFDÖ¡ true false
-	.enableBRS = false, //¿É±ä²¨ÌØÂÊ
+	.enableFD = false,  //CANFDå¸§ true false
+	.enableBRS = false, //å¯å˜æ³¢ç‰¹ç‡
 	.fdPadding = 8U,    //data length code (DLC)
 	.idType = CAN_MSG_ID_STD, //standard or extended CAN_MSG_ID_STD
 	.isRemote = false   //standard or remote
 };
 
 static can_buff_config_t Rx_buffCfg_EXT =  {
-	.enableFD = false,  //CANFDÖ¡ true false
-	.enableBRS = false, //¿É±ä²¨ÌØÂÊ
+	.enableFD = false,  //CANFDå¸§ true false
+	.enableBRS = false, //å¯å˜æ³¢ç‰¹ç‡
 	.fdPadding = 8U,    //data length code (DLC)
 	.idType = CAN_MSG_ID_EXT, //standard or extended CAN_MSG_ID_EXT
 	.isRemote = false   //standard or remote
 };
 
 static can_buff_config_t Tx_buffCfg_STD =  {
-	.enableFD = false,  //CANFDÖ¡
-	.enableBRS = false, //¿É±ä²¨ÌØÂÊ
+	.enableFD = false,  //CANFDå¸§
+	.enableBRS = false, //å¯å˜æ³¢ç‰¹ç‡
 	.fdPadding = 8U,    //data length code (DLC)
 	.idType = CAN_MSG_ID_STD, //standard or extended
 	.isRemote = false   //standard or remote
 };
 
 static can_buff_config_t Tx_buffCfg_EXT =  {
-	.enableFD = false,  //CANFDÖ¡
-	.enableBRS = false, //¿É±ä²¨ÌØÂÊ
+	.enableFD = false,  //CANFDå¸§
+	.enableBRS = false, //å¯å˜æ³¢ç‰¹ç‡
 	.fdPadding = 8U,    //data length code (DLC)
 	.idType = CAN_MSG_ID_EXT, //standard or extended
 	.isRemote = false   //standard or remote
@@ -51,67 +51,66 @@ static can_buff_config_t Tx_buffCfg_EXT =  {
 
 static can_message_t 	recvMsg_CAN0_STD;
 static can_message_t 	recvMsg_CAN0_EXT;
-static HCAN0RX_PAR		can0_recv1; //½ÓÊÕ»º´æ
-static HCAN0RX_PAR		*pcan0_recv1; //½ÓÊÕ»º´æ
+static HCAN0RX_PAR		can0_recv1; //æ¥æ”¶ç¼“å­˜
+static HCAN0RX_PAR		*pcan0_recv1; //æ¥æ”¶ç¼“å­˜
 
 /* ********************************************************************************
  * CAN0_Callback
  */
 void CAN0_Callback(uint32_t instance,can_event_t event,uint32_t buffIdx,void *flexcanState)
 {
-	(void)flexcanState;//´Ë´¦·ÀÖ¹¾¯±¨
+	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+
+	(void)flexcanState;//æ­¤å¤„é˜²æ­¢è­¦æŠ¥
 	(void)instance;
-	(void)buffIdx;
 
-	//½ÓÊÕ±¨ÎÄ²¢ÖØĞÂ×¢²á»Øµ÷º¯Êı
-	CAN_Receive(&can0_instance, RX_MAILBOX_CAN0_STD, &recvMsg_CAN0_STD); //±ê×¼Ö¡
-	CAN_Receive(&can0_instance, RX_MAILBOX_CAN0_EXT, &recvMsg_CAN0_EXT); //À©Õ¹Ö¡
-
-	switch(event)//»Øµ÷ÊÂ¼ş
+	switch(event)//å›è°ƒäº‹ä»¶
 	{
-		case CAN_EVENT_RX_COMPLETE: //½ÓÊÕÍê³ÉÊÂ¼ş
-			
-			if(recvMsg_CAN0_STD.id != 0)
+		case CAN_EVENT_RX_COMPLETE: //æ¥æ”¶å®Œæˆäº‹ä»¶
+			if(buffIdx == RX_MAILBOX_CAN0_STD)
 			{
-				switch (recvMsg_CAN0_STD.id)
+				if((recvMsg_CAN0_STD.id == RX_ID) &&
+					(recvMsg_CAN0_STD.length > 0U) &&
+					(recvMsg_CAN0_STD.data[0] == 0x42U))
 				{
-					//SES·´À¡
-					/*
-					case 0x201 :
-						memcpy((void *)can0_recv1.Rx201,(void *)recvMsg_CAN0_STD.data,8);
-						break;
-					case 0x202 :
-						memcpy((void *)can0_recv1.Rx202,(void *)recvMsg_CAN0_STD.data,8);
-						break;
-						*/
-					case RX_ID:
-						if(recvMsg_CAN0_STD.data[0] == 0x42){
-							bootjumpflag = 1;
-						}
-						break;
-
-					default:
-						break;
+					bootjumpflag = 1U;
 				}
+				CAN_Receive(&can0_instance, RX_MAILBOX_CAN0_STD, &recvMsg_CAN0_STD);
+			}
+			else if(buffIdx == RX_MAILBOX_CAN0_EXT)
+			{
+				CAN_Receive(&can0_instance, RX_MAILBOX_CAN0_EXT, &recvMsg_CAN0_EXT);
 			}
 			
-			if(recvMsg_CAN0_EXT.id != 0)
-			{		}
-			
-			//Ïò¶ÓÁĞÖĞ£¬·¢ËÍÊı¾İ¡£·¢ËÍÒ»¸öÖ¸Ïò½á¹¹Ìå¶ÔÏóµÄÖ¸Õë
+			//å‘é˜Ÿåˆ—ä¸­ï¼Œå‘é€æ•°æ®ã€‚å‘é€ä¸€ä¸ªæŒ‡å‘ç»“æ„ä½“å¯¹è±¡çš„æŒ‡é’ˆ
 			pcan0_recv1 = &can0_recv1;
-			xQueueSendFromISR(Que_Hcan0_CanIn, (void *)&pcan0_recv1, 0);
+			xQueueSendFromISR(Que_Hcan0_CanIn, (void *)&pcan0_recv1,
+				&xHigherPriorityTaskWoken);
 			
 			PrgSts.can0_isr++;
-			recvMsg_CAN0_STD.id = 0;
-			recvMsg_CAN0_EXT.id = 0;
+			portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
 			break;
 
-		case CAN_EVENT_TX_COMPLETE: //·¢ËÍÍê³ÉÊÂ¼ş
+		case CAN_EVENT_TX_COMPLETE: //å‘é€å®Œæˆäº‹ä»¶
 			break;
 		default:
 			break;
 	}
+}
+
+static void CAN0_Send(uint32_t mailbox, uint32_t id, const uint8_t *data,
+	uint8_t length)
+{
+	can_message_t message = {0};
+
+	if(length > 8U)
+	{
+		length = 8U;
+	}
+	message.id = id;
+	message.length = length;
+	memcpy(message.data, data, length);
+	(void)CAN_SendBlocking(&can0_instance, mailbox, &message, 2U);
 }
 
 /* ********************************************************************************
@@ -119,94 +118,22 @@ void CAN0_Callback(uint32_t instance,can_event_t event,uint32_t buffIdx,void *fl
  */
 void BSP_CAN0_Send_STD(uint16_t id, uint8_t data[8])
 {
-	uint16_t i;
-	can_message_t Tx_msg; 
-	
-	Tx_msg.id = id;
-	Tx_msg.length = 8;
-	Tx_msg.cs = 0;
-	
-	for(i=0; i<8; i++)
-	{
-		Tx_msg.data[i] = data[i];
-	}
-	
-	_Bool  EX_Flag = false;
-    while(CAN_GetTransferStatus(&can0_instance, TX_MAILBOX_CAN0_STD) != STATUS_SUCCESS){
-		if((++i) > 500)
-		{
-			EX_Flag = true;
-			CAN_AbortTransfer(&can0_instance,TX_MAILBOX_CAN0_STD);
-			CAN_Send(&can0_instance, TX_MAILBOX_CAN0_STD, &Tx_msg);
-			break;
-		}
-	}
-	if (!EX_Flag) CAN_Send(&can0_instance, TX_MAILBOX_CAN0_STD, &Tx_msg);
+	CAN0_Send(TX_MAILBOX_CAN0_STD, id, data, 8U);
 }
 
 void BSP_CAN0_Send_EXT(uint32_t id, uint8_t data[8])
 {
-	uint16_t i;
-	can_message_t Tx_msg; 
-	
-	Tx_msg.id = id;
-	Tx_msg.length = 8;
-	Tx_msg.cs = 0;
-	
-	for(i=0; i<8; i++)
-	{
-		Tx_msg.data[i] = data[i];
-	}
-
-	_Bool  EX_Flag = false;
-    while(CAN_GetTransferStatus(&can0_instance, TX_MAILBOX_CAN0_EXT) != STATUS_SUCCESS){
-		if((++i) > 500)
-		{
-			EX_Flag = true;
-			CAN_AbortTransfer(&can0_instance,TX_MAILBOX_CAN0_EXT);
-			CAN_Send(&can0_instance, TX_MAILBOX_CAN0_EXT, &Tx_msg);
-			break;
-		}
-	}
-	if (!EX_Flag) CAN_Send(&can0_instance, TX_MAILBOX_CAN0_EXT, &Tx_msg);
+	CAN0_Send(TX_MAILBOX_CAN0_EXT, id, data, 8U);
 }
 
 void BSP_CAN0_Send_XCP(uint16_t id, uint8_t* data,uint8_t len)
 {
-	uint16_t i;
-	can_message_t Tx_msg;
-
-	Tx_msg.id = id;
-	Tx_msg.length = len;
-	Tx_msg.cs = 0;
-    memcpy(Tx_msg.data, data, len);
-
-    CAN_AbortTransfer(&can0_instance, TX_MAILBOX_CAN0_STD);
-	CAN_Send(&can0_instance, TX_MAILBOX_CAN0_STD, &Tx_msg);
-	while(CAN_GetTransferStatus(&can0_instance, TX_MAILBOX_CAN0_STD) != STATUS_SUCCESS){
-		if((++i) > 1000) break;
-	}
+	CAN0_Send(TX_MAILBOX_CAN0_STD, id, data, len);
 }
 
 void BSP_CAN0_Send_BSW(uint32_t id, uint8_t data[8], uint8_t len)
 {
-	uint16_t i;
-	can_message_t Tx_msg;
-
-	Tx_msg.id = id;
-	Tx_msg.length = len;
-	Tx_msg.cs = 0;
-
-	for(i=0; i<8; i++)
-	{
-		Tx_msg.data[i] = data[i];
-	}
-
-    while(CAN_GetTransferStatus(&can0_instance, TX_MAILBOX_CAN0_EXT) != STATUS_SUCCESS){
-		if((++i) > 1000) break;
-	}
-    //CAN_AbortTransfer(&can0_instance,TX_MAILBOX_CAN0_STD);
-	CAN_Send(&can0_instance, TX_MAILBOX_CAN0_STD, &Tx_msg);
+	CAN0_Send(TX_MAILBOX_CAN0_STD, id, data, len);
 }
 
 
@@ -218,27 +145,27 @@ void BSP_CAN0_Init(void)
 	uint32_t Rx_Filter = 0x00;
 
 	CAN_Init(&can0_instance, &can0_Config0);
-	//×¢²á½ÓÊÕÅäÖÃºÍMSGID¹ıÂËÆ÷
+	//æ³¨å†Œæ¥æ”¶é…ç½®å’ŒMSGIDè¿‡æ»¤å™¨
 	CAN_ConfigRxBuff(&can0_instance, RX_MAILBOX_CAN0_STD, &Rx_buffCfg_STD, Rx_Filter);
-	CAN_ConfigTxBuff(&can0_instance, TX_MAILBOX_CAN0_STD, &Tx_buffCfg_STD); //ÅäÖÃ·¢ËÍ
+	CAN_ConfigTxBuff(&can0_instance, TX_MAILBOX_CAN0_STD, &Tx_buffCfg_STD); //é…ç½®å‘é€
 
 	CAN_ConfigRxBuff(&can0_instance, RX_MAILBOX_CAN0_EXT, &Rx_buffCfg_EXT, Rx_Filter);
-	CAN_ConfigTxBuff(&can0_instance, TX_MAILBOX_CAN0_EXT, &Tx_buffCfg_EXT); //ÅäÖÃ·¢ËÍ
+	CAN_ConfigTxBuff(&can0_instance, TX_MAILBOX_CAN0_EXT, &Tx_buffCfg_EXT); //é…ç½®å‘é€
 
-	/*ÉèÖÃMSGIDµÄÑÚÂë£¬ÑÚÂë´ÖÂÔ¿ÉÒÔÀí½âÎª¶Ô11bit MSGIDµØÖ·µÄ¹ıÂË£¬
-	Èç¹ûÄ³bitÎ»ĞèÒª¹ıÂËÉèÖÃÎª1,²»¹ıÂËÉèÖÃÎª0,ÀıÈçÑÚÂëÉèÖÃÎª0x7ffÔò¹ıÂËÈ«²¿±ê×¼id,
-	Èç¹ûÉèÖÃÎª0x7fe,ÕâÖ»ÄÜ½ÓÊÜ0x01µÄ±¨ÎÄ(²»´æÔÚ0x0µÄµØÖ·)*/
-	CAN_SetRxFilter(&can0_instance, CAN_MSG_ID_STD, RX_MAILBOX_CAN0_STD, 0x0000); //ÉèÖÃMSGIDÑÚÂë
-	CAN_SetRxFilter(&can0_instance, CAN_MSG_ID_EXT, RX_MAILBOX_CAN0_EXT, 0x00000000); //ÉèÖÃMSGIDÑÚÂë
-	CAN_InstallEventCallback(&can0_instance, &CAN0_Callback, (void*)0); //×¢²á»Øµ÷º¯Êı
+	/*è®¾ç½®MSGIDçš„æ©ç ï¼Œæ©ç ç²—ç•¥å¯ä»¥ç†è§£ä¸ºå¯¹11bit MSGIDåœ°å€çš„è¿‡æ»¤ï¼Œ
+	å¦‚æœæŸbitä½éœ€è¦è¿‡æ»¤è®¾ç½®ä¸º1,ä¸è¿‡æ»¤è®¾ç½®ä¸º0,ä¾‹å¦‚æ©ç è®¾ç½®ä¸º0x7ffåˆ™è¿‡æ»¤å…¨éƒ¨æ ‡å‡†id,
+	å¦‚æœè®¾ç½®ä¸º0x7fe,è¿™åªèƒ½æ¥å—0x01çš„æŠ¥æ–‡(ä¸å­˜åœ¨0x0çš„åœ°å€)*/
+	CAN_SetRxFilter(&can0_instance, CAN_MSG_ID_STD, RX_MAILBOX_CAN0_STD, 0x0000); //è®¾ç½®MSGIDæ©ç 
+	CAN_SetRxFilter(&can0_instance, CAN_MSG_ID_EXT, RX_MAILBOX_CAN0_EXT, 0x00000000); //è®¾ç½®MSGIDæ©ç 
+	CAN_InstallEventCallback(&can0_instance, &CAN0_Callback, (void*)0); //æ³¨å†Œå›è°ƒå‡½æ•°
 	
-	//ÍâÉèÄ¬ÈÏÓÅÏÈ¼¶00£¡»áµ¼ÖÂ²Ù×÷ÏµÍ³ÄÚºËº¯ÊıÎŞ·¨µ÷ÓÃ£¬µ¼ÖÂÏµÍ³´íÎó£¡£¡£¡
-	//ÖØĞÂÉèÖÃÍâÉèÖĞ¶ÏÓÅÏÈ¼¶¡£
+	//å¤–è®¾é»˜è®¤ä¼˜å…ˆçº§00ï¼ä¼šå¯¼è‡´æ“ä½œç³»ç»Ÿå†…æ ¸å‡½æ•°æ— æ³•è°ƒç”¨ï¼Œå¯¼è‡´ç³»ç»Ÿé”™è¯¯ï¼ï¼ï¼
+	//é‡æ–°è®¾ç½®å¤–è®¾ä¸­æ–­ä¼˜å…ˆçº§ã€‚
 	INT_SYS_SetPriority(CAN0_ORed_0_15_MB_IRQn, 0x02);
 
-	//´Ëº¯Êı²»Ö»ÓĞ½ÓÊÕ×÷ÓÃ »¹ÓĞĞø¶©»Øµ÷º¯ÊıµÄ×÷ÓÃ
-	CAN_Receive(&can0_instance, RX_MAILBOX_CAN0_STD, &recvMsg_CAN0_STD); //±ê×¼Ö¡
-	CAN_Receive(&can0_instance, RX_MAILBOX_CAN0_EXT, &recvMsg_CAN0_EXT); //À©Õ¹Ö¡
+	//æ­¤å‡½æ•°ä¸åªæœ‰æ¥æ”¶ä½œç”¨ è¿˜æœ‰ç»­è®¢å›è°ƒå‡½æ•°çš„ä½œç”¨
+	CAN_Receive(&can0_instance, RX_MAILBOX_CAN0_STD, &recvMsg_CAN0_STD); //æ ‡å‡†å¸§
+	CAN_Receive(&can0_instance, RX_MAILBOX_CAN0_EXT, &recvMsg_CAN0_EXT); //æ‰©å±•å¸§
 }
 
 

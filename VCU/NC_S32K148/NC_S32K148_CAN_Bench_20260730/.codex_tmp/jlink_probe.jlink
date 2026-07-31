@@ -1,0 +1,8 @@
+device S32K148
+si SWD
+speed 4000
+connect
+h
+mem32 0xE000ED00 1
+mem32 0x00000410 1
+q

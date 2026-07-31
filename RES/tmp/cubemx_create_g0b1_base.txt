@@ -1,0 +1,3 @@
+load STM32G0B1CBTx
+config saveext C:\Users\icemi\Desktop\RZS_Repository\RES\tmp\RES_Remote_G0B1_base.ioc
+exit

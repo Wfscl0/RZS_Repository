@@ -3,9 +3,9 @@
  *
  * Code generation for model "VCU10".
  *
- * Model version              : 1.31
+ * Model version              : 1.44
  * Simulink Coder version : 9.6 (R2021b) 14-May-2021
- * C source code generated on : Sun Jul 19 00:53:26 2026
+ * C source code generated on : Fri Jul 31 01:34:11 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M

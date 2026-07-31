@@ -1,0 +1,15 @@
+device S32K148
+si SWD
+speed 4000
+connect
+r
+h
+mem32 0x00020000 2
+wreg MSP, 0x2001EFF0
+setpc 0x00020410
+g
+sleep 1000
+h
+mem32 0xE000ED28 1
+g
+q

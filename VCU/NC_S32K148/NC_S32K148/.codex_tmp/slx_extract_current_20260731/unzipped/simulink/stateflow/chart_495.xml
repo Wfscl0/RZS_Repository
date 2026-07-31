@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="495">
+  <P Name="name">Buzzer/Chart</P>
+  <P Name="windowPosition">[-1 -7 1708 920]</P>
+  <P Name="viewLimits">[-204.682 1582.288 167.363 624.696]</P>
+  <P Name="zoomFactor">1.926</P>
+  <P Name="screen">[1 1 3200 1200 1.25]</P>
+  <P Name="viewObj">495</P>
+  <P Name="ssIdHighWaterMark">11</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="chartFileNumber">11</P>
+  <P Name="allowGlobalAccessToExportedFunctions">0</P>
+  <P Name="saturateOnIntegerOverflow">1</P>
+  <P Name="userSpecifiedStateTransitionExecutionOrder">1</P>
+  <P Name="disableImplicitCasting">1</P>
+  <P Name="actionLanguage">2</P>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">Default
+en:
+ebs_buzzer=F;
+</P>
+      <P Name="position">[657 266.1464 208 120]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">495</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="4">
+      <P Name="labelString">Emergency
+en:
+ebs_buzzer=T;</P>
+      <P Name="position">[657 489.7784 208 104.1905]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">495</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <data SSID="3" name="as_emergency_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="7" name="ebs_buzzer">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="10" name="F">
+      <P Name="scope">PARAMETER_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="11" name="T">
+      <P Name="scope">PARAMETER_DATA</P>
+      <P Name="paramIndexForInitFromWorkspace">1</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString"/>
+      <P Name="labelPosition">[704.493 244.396 0 0]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 0 0 704.4933 236.1464 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">1</P>
+        <P Name="intersection">[1 0 -1 0.2283 704.4933 266.1464 0 0]</P>
+      </dst>
+      <P Name="midPoint">[704.4933 244.3964]</P>
+      <P Name="dataLimits">[702.093 706.893 236.146 266.146]</P>
+      <P Name="subviewer">495</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="5">
+      <P Name="labelString">[as_emergency_flag==1]</P>
+      <P Name="labelPosition">[556.095 424.076 134 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">1</P>
+        <P Name="intersection">[3 0 1 0.7598 706.9524 386.1464 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">4</P>
+        <P Name="intersection">[1 -0 -1 0.2402 706.9524 489.7784 0 0]</P>
+      </dst>
+      <P Name="midPoint">[706.9524 433.9624]</P>
+      <P Name="dataLimits">[704.552 709.352 386.146 489.778]</P>
+      <P Name="subviewer">495</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="6">
+      <P Name="labelString">[after(9,sec)]</P>
+      <P Name="labelPosition">[793.429 446.439 69.281 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">4</P>
+        <P Name="intersection">[1 0 -1 0.6559 793.4286 489.7784 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">1</P>
+        <P Name="intersection">[3 -0 1 0.3441 793.4286 386.1464 0 0]</P>
+      </dst>
+      <P Name="midPoint">[793.4286 441.9624]</P>
+      <P Name="dataLimits">[791.029 795.829 386.146 489.778]</P>
+      <P Name="subviewer">495</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+  </Children>
+</chart>

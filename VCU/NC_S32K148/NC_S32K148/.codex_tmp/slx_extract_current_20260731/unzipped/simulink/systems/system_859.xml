@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[8, 8, 1716, 928]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">138</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="steering_flag" SID="859::110">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">90</P>
+  </Block>
+  <Block BlockType="Inport" Name="steer_return" SID="859::111">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">91</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_cmdangle" SID="859::115">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">95</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_eps_velocity" SID="859::113">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">93</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="steer_zero" SID="859::109">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">89</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="859::137">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 280, 320, 320]</P>
+    <P Name="ZOrder">117</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="859::136">
+    <P Name="Tag">Stateflow S-Function 15</P>
+    <P Name="Ports">[5, 5]</P>
+    <P Name="Position">[180, 100, 230, 220]</P>
+    <P Name="ZOrder">116</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[5 5]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">eps_cmdworkmode</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">eps_cmdangle</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">eps_cmdmiddle</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">5</P>
+      <P Name="Name">eps_cmdvelocity</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="859::138">
+    <P Name="Position">[460, 291, 480, 309]</P>
+    <P Name="ZOrder">118</P>
+  </Block>
+  <Block BlockType="Outport" Name="eps_cmdworkmode" SID="859::126">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">106</P>
+  </Block>
+  <Block BlockType="Outport" Name="eps_cmdangle" SID="859::116">
+    <P Name="Position">[460, 136, 480, 154]</P>
+    <P Name="ZOrder">96</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="eps_cmdmiddle" SID="859::117">
+    <P Name="Position">[460, 171, 480, 189]</P>
+    <P Name="ZOrder">97</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="eps_cmdvelocity" SID="859::118">
+    <P Name="Position">[460, 206, 480, 224]</P>
+    <P Name="ZOrder">98</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">859::110#out:1</P>
+    <P Name="Dst">859::136#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">859::111#out:1</P>
+    <P Name="Dst">859::136#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">859::115#out:1</P>
+    <P Name="Dst">859::136#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">859::113#out:1</P>
+    <P Name="Dst">859::136#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">859::109#out:1</P>
+    <P Name="Dst">859::136#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_cmdworkmode</P>
+    <P Name="ZOrder">6</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">859::136#out:2</P>
+    <P Name="Points">[0, -25]</P>
+    <P Name="Dst">859::126#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_cmdangle</P>
+    <P Name="ZOrder">7</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">859::136#out:3</P>
+    <P Name="Dst">859::116#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_cmdmiddle</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">859::136#out:4</P>
+    <P Name="Dst">859::117#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_cmdvelocity</P>
+    <P Name="ZOrder">9</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">859::136#out:5</P>
+    <P Name="Dst">859::118#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">859::137#out:1</P>
+    <P Name="Dst">859::138#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">859::136#out:1</P>
+    <P Name="Dst">859::137#in:1</P>
+  </Line>
+</System>

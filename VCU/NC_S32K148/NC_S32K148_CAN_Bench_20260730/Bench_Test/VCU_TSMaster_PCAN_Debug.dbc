@@ -1,0 +1,304 @@
+VERSION "VCU_TSMaster_PCAN_Single_CAN0_2026-07-30"
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU TS IPC AMI RES ESP EPS TSMaster
+
+
+BO_ 2365524463 MCU1_Rx_Command3: 8 VCU
+ SG_ f32_speed_KP : 0|16@1+ (1,0) [0|65535] "" TS,TSMaster
+ SG_ f32_speed_KI : 16|16@1+ (1,0) [0|65535] "" TS,TSMaster
+
+BO_ 2365524207 MCU1_Rx_Command: 8 VCU
+ SG_ MCU1_Rx_Enable : 0|1@1+ (1,0) [0|1] "" TS,TSMaster
+ SG_ MCU1_Rx_Fault_Reset : 1|1@1+ (1,0) [0|1] "" TS,TSMaster
+ SG_ MCU1_Rx_Control_Mode : 2|2@1+ (1,0) [0|3] "" TS,TSMaster
+ SG_ MCU1_Rx_Gear : 4|2@1+ (1,0) [0|3] "" TS,TSMaster
+ SG_ MCU1_Rx_FootBrake : 6|1@1+ (1,0) [0|1] "" TS,TSMaster
+ SG_ MCU1_Rx_HandBrake : 7|1@1+ (1,0) [0|1] "" TS,TSMaster
+ SG_ MCU1_Rx_Limit_Positive_Value : 8|12@1+ (1,0) [0|4095] "Nm/rpm" TS,TSMaster
+ SG_ MCU1_Rx_Limit_Negative_Value : 20|12@1+ (1,0) [0|4095] "Nm/rpm" TS,TSMaster
+ SG_ MCU1_Rx_Demand_Torque : 32|16@1+ (1,-5000) [-5000|60535] "Nm" TS,TSMaster
+ SG_ MCU1_Rx_Demand_Speed : 48|16@1+ (1,-15000) [-15000|50535] "rpm" TS,TSMaster
+
+BO_ 484 RES_Msg: 8 RES
+ SG_ res_stop : 0|1@1+ (1,0) [0|1] "" VCU
+ SG_ res_gobutton : 1|1@1+ (1,0) [0|1] "" VCU
+ SG_ res_communication : 2|1@1+ (1,0) [0|1] "" VCU
+ SG_ res_go : 4|1@1+ (1,0) [0|1] "" VCU
+ SG_ res_heartbeat : 8|8@1+ (1,0) [0|255] "" VCU
+ SG_ res_xorcheck : 16|8@1+ (1,0) [0|255] "" VCU
+
+BO_ 18 IPC_Tx_Msg2: 8 IPC
+ SG_ ipc_cmd_angle : 7|16@0+ (1,-1024) [-1024|64511] "deg_raw" VCU
+ SG_ ipc_eps_velocity : 23|8@0+ (1,0) [20|250] "" VCU
+ SG_ ipc_heartbeat : 29|4@0+ (1,0) [0|15] "" VCU
+ SG_ ipc_task_finish : 30|1@0+ (1,0) [0|1] "" VCU
+ SG_ ipc_err : 31|1@0+ (1,0) [0|1] "" VCU
+ SG_ ipc_lspd : 32|16@1- (1,0) [-32768|32767] "m/s_raw" VCU
+ SG_ ipc_hspd : 48|16@1- (1,0) [-32768|32767] "m/s_raw" VCU
+
+BO_ 17 IPC_Tx_Msg1: 8 IPC
+ SG_ ipc_esp_flprs : 0|10@1+ (0.01,0) [0|8] "MPa" VCU
+ SG_ ipc_esp_frprs : 10|10@1+ (0.01,0) [0|8] "MPa" VCU
+ SG_ ipc_esp_rlprs : 20|10@1+ (0.01,0) [0|8] "MPa" VCU
+ SG_ ipc_esp_rrprs : 30|10@1+ (0.01,0) [0|8] "MPa" VCU
+ SG_ ipc_motor_torque : 48|16@1+ (1,-5000) [-5000|60535] "Nm" VCU
+
+BO_ 16 IPC_Rx_Msg: 8 VCU
+ SG_ steer_return : 0|1@1+ (1,0) [0|1] "" IPC,TSMaster
+ SG_ ipc_resgo : 1|1@1+ (1,0) [0|1] "" IPC,TSMaster
+ SG_ ipc_resstop : 2|1@1+ (1,0) [0|1] "" IPC,TSMaster
+ SG_ ipc_astask : 8|8@1+ (1,0) [0|6] "" IPC,TSMaster
+
+BO_ 19 ESP_T_03: 8 ESP
+ SG_ curPrsFL : 7|12@0+ (0.01,0) [0|20] "MPa" VCU
+ SG_ curPrsFR : 11|12@0+ (0.01,0) [0|20] "MPa" VCU
+ SG_ curPrsRL : 31|12@0+ (0.01,0) [0|20] "MPa" VCU
+ SG_ curPrsRR : 35|12@0+ (0.01,0) [0|20] "MPa" VCU
+ SG_ esp13_lifeSig : 51|4@0+ (1,0) [0|15] "" VCU
+ SG_ esp13_checkSum : 63|8@0+ (1,0) [0|255] "" VCU
+
+BO_ 22 ESP_T_06: 8 ESP
+ SG_ WheelSpdPulseFL : 7|11@0+ (1,0) [0|2046] "pulse" VCU
+ SG_ WheelSpdPulseFR : 12|11@0+ (1,0) [0|2046] "pulse" VCU
+ SG_ WheelSpdPulseRL : 17|11@0+ (1,0) [0|2046] "pulse" VCU
+ SG_ WheelSpdPulseRR : 38|11@0+ (1,0) [0|2046] "pulse" VCU
+ SG_ esp16_lifeSig : 51|4@0+ (1,0) [0|15] "" VCU
+ SG_ esp16_checkSum : 63|8@0+ (1,0) [0|255] "" VCU
+
+BO_ 23 ESP_T_07: 8 ESP
+ SG_ SIipRatFL : 7|12@0+ (0.05,0) [0|100] "%" VCU
+ SG_ SIipRatFR : 11|12@0+ (0.05,0) [0|100] "%" VCU
+ SG_ SIipRatRL : 31|12@0+ (0.05,0) [0|100] "%" VCU
+ SG_ SIipRatRR : 35|12@0+ (0.05,0) [0|100] "%" VCU
+ SG_ esp17_lifeSig : 51|4@0+ (1,0) [0|15] "" VCU
+ SG_ esp17_checkSum : 63|8@0+ (1,0) [0|255] "" VCU
+
+BO_ 32 ESP_R_00: 8 VCU
+ SG_ tarPrsReqFL : 7|12@0+ (0.01,0) [0|8] "MPa" ESP,TSMaster
+ SG_ tarPrsReqFR : 11|12@0+ (0.01,0) [0|8] "MPa" ESP,TSMaster
+ SG_ tarPrsReqRL : 31|12@0+ (0.01,0) [0|8] "MPa" ESP,TSMaster
+ SG_ tarPrsReqRR : 35|12@0+ (0.01,0) [0|8] "MPa" ESP,TSMaster
+ SG_ esp20_lifeSig : 51|4@0+ (1,0) [0|15] "" ESP,TSMaster
+ SG_ esp_mode : 55|2@0+ (1,0) [0|3] "" ESP,TSMaster
+ SG_ esp20_checkSum : 63|8@0+ (1,0) [0|255] "" ESP,TSMaster
+
+BO_ 1129 EPS_ReceiveMessage: 8 VCU
+ SG_ eps_command_workmode : 7|8@0+ (1,0) [0|255] "" EPS,TSMaster
+ SG_ eps_command_angle : 31|16@0+ (1,-1024) [-1024|64511] "angle" EPS,TSMaster
+ SG_ eps_command_middle : 47|8@0+ (1,0) [0|255] "" EPS,TSMaster
+ SG_ eps_command_velocity : 55|8@0+ (1,0) [20|250] "" EPS,TSMaster
+ SG_ eps_receive_xor : 63|8@0+ (1,0) [0|255] "" EPS,TSMaster
+
+BO_ 1025 EPS_Send_Msg1: 8 EPS
+ SG_ eps_workmode : 7|8@0+ (1,0) [0|255] "" VCU
+ SG_ eps_torque : 15|8@0+ (0.1,-12.8) [-12.8|12.7] "Nm" VCU
+ SG_ eps_errorcode1 : 23|8@0+ (1,0) [0|255] "" VCU
+ SG_ eps_angle : 31|16@0+ (1,-1024) [-1024|64511] "angle" VCU
+ SG_ eps_middlefeedback : 47|8@0+ (1,0) [0|255] "" VCU
+ SG_ eps_errorcode2 : 55|8@0+ (1,0) [0|255] "" VCU
+ SG_ eps_send_xor : 63|8@0+ (1,0) [0|255] "" VCU
+
+BO_ 1026 EPS_Send_Msg2: 8 EPS
+ SG_ eps2_workmode : 7|8@0+ (1,0) [0|255] "" VCU
+ SG_ eps2_received_command_count : 15|16@0+ (1,0) [0|65535] "" VCU
+ SG_ eps2_received_angle : 31|16@0+ (1,-1024) [-1024|64511] "angle" VCU
+ SG_ eps2_actual_angle : 47|16@0+ (1,-1024) [-1024|64511] "angle" VCU
+ SG_ eps2_send_counter : 63|8@0+ (1,0) [0|255] "" VCU
+
+BO_ 65 AMI_Rx: 8 VCU
+ SG_ ami_taskfin : 0|1@1+ (1,0) [0|1] "" AMI,TSMaster
+ SG_ ami_process : 1|7@1+ (1,0) [0|127] "" AMI,TSMaster
+
+BO_ 66 AMI_Tx: 8 AMI
+ SG_ ami_astask : 4|4@1+ (1,0) [0|15] "" VCU
+
+
+BO_ 1952 VCU_DBG_Control: 8 TSMaster
+ SG_ Dbg_Unlock : 0|16@1+ (1,0) [0|65535] "" VCU
+ SG_ Dbg_MasterEnable : 16|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_PedalADCEnable : 17|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_AirWheelEnable : 18|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_DigitalEnable : 19|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_ControlCounter : 24|8@1+ (1,0) [0|255] "" VCU
+
+BO_ 1953 VCU_DBG_PedalADC: 8 TSMaster
+ SG_ Dbg_APP1_V : 0|16@1+ (0.0001875,0) [0|5] "V" VCU
+ SG_ Dbg_APP2_V : 16|16@1+ (0.0001875,0) [0|5] "V" VCU
+ SG_ Dbg_Brake_V : 32|16@1+ (0.0001875,0) [0|5] "V" VCU
+ SG_ Dbg_PedalCounter : 48|8@1+ (1,0) [0|255] "" VCU
+
+BO_ 1954 VCU_DBG_AirWheel: 8 TSMaster
+ SG_ Dbg_AirPressure1 : 0|16@1+ (0.000241699219,0) [0|1] "MPa" VCU
+ SG_ Dbg_AirPressure2 : 16|16@1+ (0.000241699219,0) [0|1] "MPa" VCU
+ SG_ Dbg_WheelFront_Hz : 32|16@1+ (0.1,0) [0|2000] "Hz" VCU
+ SG_ Dbg_WheelRear_Hz : 48|16@1+ (0.1,0) [0|2000] "Hz" VCU
+
+BO_ 1955 VCU_DBG_Digital: 8 TSMaster
+ SG_ Dbg_HIN1_EBSDriverCheck : 0|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN2_ShutdownS : 1|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN3_ShutdownE : 2|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN4_OutsideDI8 : 3|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN5_InsideDI8 : 4|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN6_RunButton : 5|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN7_TSMS : 6|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN8_ASMS : 7|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN9 : 8|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN10 : 9|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN11 : 10|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN12 : 11|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN13 : 12|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_HIN14 : 13|1@1+ (1,0) [0|1] "" VCU
+ SG_ Dbg_DigitalCounter : 16|8@1+ (1,0) [0|255] "" VCU
+
+BO_ 1968 VCU_DBG_Status: 8 VCU
+ SG_ Dbg_ActiveMaster : 0|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_ActivePedalADC : 1|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_ActiveAirWheel : 2|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_ActiveDigital : 3|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_RequestedMaster : 8|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_RequestedPedalADC : 9|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_RequestedAirWheel : 10|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_RequestedDigital : 11|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_EchoHINRaw : 16|16@1+ (1,0) [0|65535] "" TSMaster
+ SG_ Dbg_ModelLOX : 32|8@1+ (1,0) [0|255] "" TSMaster
+ SG_ Dbg_ModelHOX : 40|8@1+ (1,0) [0|255] "" TSMaster
+ SG_ Dbg_ControlAge : 48|8@1+ (10,0) [0|500] "ms" TSMaster
+ SG_ Dbg_ControlRxCount : 56|8@1+ (1,0) [0|255] "" TSMaster
+
+BO_ 1969 VCU_DBG_PedalEcho: 8 VCU
+ SG_ Dbg_EchoAPP1_V : 0|16@1+ (0.0001875,0) [0|5] "V" TSMaster
+ SG_ Dbg_EchoAPP2_V : 16|16@1+ (0.0001875,0) [0|5] "V" TSMaster
+ SG_ Dbg_EchoBrake_V : 32|16@1+ (0.0001875,0) [0|5] "V" TSMaster
+ SG_ Dbg_EchoPedalActive : 48|1@1+ (1,0) [0|1] "" TSMaster
+ SG_ Dbg_EchoPedalRxCount : 56|8@1+ (1,0) [0|255] "" TSMaster
+
+BO_ 1970 VCU_DBG_AirWheelEcho: 8 VCU
+ SG_ Dbg_EchoAirPressure1 : 0|16@1+ (0.000241699219,0) [0|1] "MPa" TSMaster
+ SG_ Dbg_EchoAirPressure2 : 16|16@1+ (0.000241699219,0) [0|1] "MPa" TSMaster
+ SG_ Dbg_EchoWheelFront_Hz : 32|16@1+ (0.1,0) [0|2000] "Hz" TSMaster
+ SG_ Dbg_EchoWheelRear_Hz : 48|16@1+ (0.1,0) [0|2000] "Hz" TSMaster
+
+BO_ 186 VCU_JY60_Acceleration: 8 VCU
+ SG_ JY60_AXL : 7|16@0- (0.01,0) [-327.68|327.67] "g" TSMaster
+ SG_ JY60_AYL : 23|16@0- (0.01,0) [-327.68|327.67] "g" TSMaster
+ SG_ JY60_AZL : 39|16@0- (0.01,0) [-327.68|327.67] "g" TSMaster
+ SG_ JY60_Temperature : 55|16@0- (0.01,0) [-327.68|327.67] "degC" TSMaster
+
+BO_ 187 VCU_JY60_AngularVelocity: 8 VCU
+ SG_ JY60_WXL : 7|16@0- (0.01,0) [-327.68|327.67] "deg/s" TSMaster
+ SG_ JY60_WYL : 23|16@0- (0.01,0) [-327.68|327.67] "deg/s" TSMaster
+ SG_ JY60_WZL : 39|16@0- (0.01,0) [-327.68|327.67] "deg/s" TSMaster
+
+BO_ 188 VCU_JY60_Attitude: 8 VCU
+ SG_ JY60_Pitch : 7|16@0- (0.01,0) [-327.68|327.67] "deg" TSMaster
+ SG_ JY60_Roll : 23|16@0- (0.01,0) [-327.68|327.67] "deg" TSMaster
+ SG_ JY60_Yaw : 39|16@0- (0.01,0) [-327.68|327.67] "deg" TSMaster
+
+
+CM_ BO_ 2365524207 "CAN0 only. Extended ID 0x0CFF08EF, 10 ms motor command.";
+CM_ BO_ 2365524463 "CAN0 only. Extended ID 0x0CFF09EF, 100 ms motor parameter command.";
+CM_ BO_ 17 "Bench CAN0 standard ID 0x011 is assigned to IPC_Tx_Msg1. ESP_T_01 uses the same ID in the supplier DBC and therefore cannot coexist on this bus.";
+CM_ BO_ 1026 "SBW2001 authoritative layout: byte0 mode, bytes1-2 command counter, bytes3-4 received angle, bytes5-6 actual angle, byte7 send counter.";
+CM_ BO_ 1952 "Bench CAN0 only. Set Dbg_Unlock to 0x5AA5 (23205). Send cyclically at 100 ms. Overrides automatically expire after 500 ms.";
+CM_ BO_ 1953 "Bench CAN0 only. Values are encoded as the raw ADC counts expected by the current model, with DBC scaling displayed in volts.";
+CM_ BO_ 1954 "Bench CAN0 only. Air pressure is displayed as final MPa; wheel inputs are sensor frequencies in Hz.";
+CM_ BO_ 1955 "Bench CAN0 only. HIN1-HIN8 map directly to the eight digital inputs used by the current model.";
+CM_ BO_ 1968 "Bench CAN0 VCU debug status. LOX bits 0..4 are Brake, ASSI-B, ASSI-Y, EBS error and RES error. HOX bits 0..6 are EBS trigger, BMS, IMD, DI8, RUN, R2D buzzer and Emergency buzzer.";
+CM_ BO_ 186 "Bench CAN0 VCU output, ID 0x0BA, JY60 acceleration and temperature, 500 ms.";
+CM_ BO_ 187 "Bench CAN0 VCU output, ID 0x0BB, JY60 angular velocity, 500 ms.";
+CM_ BO_ 188 "Bench CAN0 VCU output, ID 0x0BC, JY60 attitude angle, 500 ms.";
+CM_ SG_ 484 res_xorcheck "Byte2 must equal Byte0 XOR Byte1.";
+CM_ SG_ 1952 Dbg_Unlock "Required value: 0x5AA5 (23205 decimal).";
+CM_ SG_ 1952 Dbg_MasterEnable "Master safety gate. Set to 1 only for bench testing.";
+CM_ SG_ 1954 Dbg_AirPressure1 "0 to 1 MPa sensor, physical 0 to 10 V, sampled by MCU AIN4 0 to 10 V input.";
+CM_ SG_ 1954 Dbg_AirPressure2 "0 to 1 MPa sensor, physical 0 to 10 V, sampled by MCU AIN5 0 to 10 V input.";
+
+VAL_ 2365524207 MCU1_Rx_Enable 0 "Disable" 1 "Enable";
+VAL_ 2365524207 MCU1_Rx_Control_Mode 0 "Standby" 1 "Speed" 2 "Torque" 3 "ActiveDischarge";
+VAL_ 2365524207 MCU1_Rx_Gear 0 "Neutral" 1 "Drive" 2 "Reverse" 3 "Reserved";
+VAL_ 32 esp_mode 0 "Mechanical" 1 "ClosedLoop" 2 "OpenLoop" 3 "Reserved";
+VAL_ 1952 Dbg_MasterEnable 0 "HardwareInputs" 1 "DebugAllowed";
+VAL_ 1952 Dbg_PedalADCEnable 0 "Hardware" 1 "CANOverride";
+VAL_ 1952 Dbg_AirWheelEnable 0 "Hardware" 1 "CANOverride";
+VAL_ 1952 Dbg_DigitalEnable 0 "Hardware" 1 "CANOverride";
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ SG_ "GenSigStartValue" FLOAT -1000000000 1000000000;
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+
+BA_ "GenMsgCycleTime" BO_ 2365524207 10;
+BA_ "GenMsgCycleTime" BO_ 2365524463 100;
+BA_ "GenMsgCycleTime" BO_ 484 50;
+BA_ "GenMsgCycleTime" BO_ 18 20;
+BA_ "GenMsgCycleTime" BO_ 17 20;
+BA_ "GenMsgCycleTime" BO_ 16 50;
+BA_ "GenMsgCycleTime" BO_ 19 20;
+BA_ "GenMsgCycleTime" BO_ 22 20;
+BA_ "GenMsgCycleTime" BO_ 23 20;
+BA_ "GenMsgCycleTime" BO_ 32 20;
+BA_ "GenMsgCycleTime" BO_ 1129 20;
+BA_ "GenMsgCycleTime" BO_ 1025 20;
+BA_ "GenMsgCycleTime" BO_ 1026 20;
+BA_ "GenMsgCycleTime" BO_ 65 20;
+BA_ "GenMsgCycleTime" BO_ 66 20;
+BA_ "GenMsgCycleTime" BO_ 1952 100;
+BA_ "GenMsgCycleTime" BO_ 1953 100;
+BA_ "GenMsgCycleTime" BO_ 1954 100;
+BA_ "GenMsgCycleTime" BO_ 1955 100;
+BA_ "GenMsgCycleTime" BO_ 1968 100;
+BA_ "GenMsgCycleTime" BO_ 1969 100;
+BA_ "GenMsgCycleTime" BO_ 1970 100;
+BA_ "GenMsgCycleTime" BO_ 186 500;
+BA_ "GenMsgCycleTime" BO_ 187 500;
+BA_ "GenMsgCycleTime" BO_ 188 500;
+
+BA_ "GenSigStartValue" SG_ 2365524207 MCU1_Rx_Demand_Torque 5000;
+BA_ "GenSigStartValue" SG_ 2365524207 MCU1_Rx_Demand_Speed 15000;
+BA_ "GenSigStartValue" SG_ 1952 Dbg_Unlock 23205;
+BA_ "GenSigStartValue" SG_ 1952 Dbg_MasterEnable 0;
+BA_ "GenSigStartValue" SG_ 1952 Dbg_PedalADCEnable 1;
+BA_ "GenSigStartValue" SG_ 1952 Dbg_AirWheelEnable 1;
+BA_ "GenSigStartValue" SG_ 1952 Dbg_DigitalEnable 1;
+BA_ "GenSigStartValue" SG_ 1953 Dbg_APP1_V 0.252;
+BA_ "GenSigStartValue" SG_ 1953 Dbg_APP2_V 0.252;
+BA_ "GenSigStartValue" SG_ 1953 Dbg_Brake_V 0.5;
+BA_ "GenSigStartValue" SG_ 1954 Dbg_AirPressure1 0.4;
+BA_ "GenSigStartValue" SG_ 1954 Dbg_AirPressure2 0.2;
+BA_ "GenSigStartValue" SG_ 1955 Dbg_HIN1_EBSDriverCheck 1;
+BA_ "GenSigStartValue" SG_ 1955 Dbg_HIN4_OutsideDI8 1;
+BA_ "GenSigStartValue" SG_ 1955 Dbg_HIN5_InsideDI8 1;
+BA_ "GenSigStartValue" SG_ 1955 Dbg_HIN6_RunButton 1;
+BA_ "GenSigStartValue" SG_ 1955 Dbg_HIN7_TSMS 1;

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">135</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="di8" SID="288::110">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">90</P>
+  </Block>
+  <Block BlockType="Inport" Name="run" SID="288::112">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">92</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="tsms_button" SID="288::113">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">93</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="brake_on" SID="288::114">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">94</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_flag" SID="288::135">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">115</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="288::133">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">113</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="288::132">
+    <P Name="Tag">Stateflow S-Function 9</P>
+    <P Name="Ports">[5, 3]</P>
+    <P Name="Position">[180, 105, 230, 225]</P>
+    <P Name="ZOrder">112</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="Parameters">F,T</P>
+    <P Name="PortCounts">[5 3]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">ts</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">ts_warning</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="288::134">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">114</P>
+  </Block>
+  <Block BlockType="Outport" Name="ts" SID="288::109">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">89</P>
+  </Block>
+  <Block BlockType="Outport" Name="ts_warning" SID="288::125">
+    <P Name="Position">[460, 136, 480, 154]</P>
+    <P Name="ZOrder">105</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">288::110#out:1</P>
+    <P Name="Dst">288::132#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">288::112#out:1</P>
+    <P Name="Dst">288::132#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">288::113#out:1</P>
+    <P Name="Dst">288::132#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">288::114#out:1</P>
+    <P Name="Dst">288::132#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">288::135#out:1</P>
+    <P Name="Dst">288::132#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">ts</P>
+    <P Name="ZOrder">14</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">288::132#out:2</P>
+    <P Name="Dst">288::109#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ts_warning</P>
+    <P Name="ZOrder">15</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">288::132#out:3</P>
+    <P Name="Dst">288::125#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">288::133#out:1</P>
+    <P Name="Dst">288::134#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">288::132#out:1</P>
+    <P Name="Dst">288::133#in:1</P>
+  </Line>
+</System>

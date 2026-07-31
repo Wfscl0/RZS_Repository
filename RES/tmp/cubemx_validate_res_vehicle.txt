@@ -1,0 +1,4 @@
+config load C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\vehicle_g0b1\RES_Vehicle_G0B1.ioc
+config saveext C:\Users\icemi\Desktop\RZS_Repository\RES\tmp\RES_Vehicle_G0B1_validated.ioc
+csv pinout C:\Users\icemi\Desktop\RZS_Repository\RES\tmp\RES_Vehicle_G0B1_pinout.csv
+exit

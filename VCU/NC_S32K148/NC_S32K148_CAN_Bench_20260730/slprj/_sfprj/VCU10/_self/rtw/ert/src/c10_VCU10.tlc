@@ -1,0 +1,53 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   5 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c10_VCU10"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c10_VCU10"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "hbcnt"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "hbcnt"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "res_heartbeat_prev"\
+      Description  "ChangeDetectionDoubleBuffer"\
+      SFName       ""\
+      Path         "res_heartbeat"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "res_heartbeat_start"\
+      Description  "ChangeDetectionDoubleBuffer"\
+      SFName       ""\
+      Path         "res_heartbeat"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">50</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="steering_flag" SID="787">
+    <P Name="Position">[-245, 488, -215, 502]</P>
+    <P Name="ZOrder">745</P>
+  </Block>
+  <Block BlockType="Inport" Name="steer_return" SID="788">
+    <P Name="Position">[-245, 543, -215, 557]</P>
+    <P Name="ZOrder">748</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_eps_angle" SID="789">
+    <P Name="Position">[-245, 598, -215, 612]</P>
+    <P Name="ZOrder">746</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_eps_velocity" SID="790">
+    <P Name="Position">[-245, 653, -215, 667]</P>
+    <P Name="ZOrder">747</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_epssendmsg1" SID="791">
+    <P Name="Position">[-255, 953, -225, 967]</P>
+    <P Name="ZOrder">866</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_epssendmsg2" SID="792">
+    <P Name="Position">[-255, 1073, -225, 1087]</P>
+    <P Name="ZOrder">867</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="ami_inspection" SID="793">
+    <P Name="Position">[-245, 763, -215, 777]</P>
+    <P Name="ZOrder">873</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="794">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[55, 385, 75, 405]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="795">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-255, 696, -250, 734]</P>
+    <P Name="ZOrder">871</P>
+    <P Name="OutputSignals">eps_realangle</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;eps_realangle&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="SubSystem" Name="EPS_ReceiveMsg" SID="796">
+    <P Name="Ports">[2, 2]</P>
+    <P Name="Position">[-165, 902, 315, 1138]</P>
+    <P Name="ZOrder">414</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_796"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="EPS_TransmitMsg" SID="836">
+    <P Name="Ports">[6, 2]</P>
+    <P Name="Position">[-160, 469, 305, 796]</P>
+    <P Name="ZOrder">864</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_836"/>
+  </Block>
+  <Block BlockType="From" Name="From" SID="877">
+    <P Name="Position">[-450, 697, -280, 733]</P>
+    <P Name="ZOrder">870</P>
+    <P Name="GotoTag">canb_epssendmsg1signal</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto1" SID="878">
+    <P Name="Position">[365, 942, 535, 978]</P>
+    <P Name="ZOrder">868</P>
+    <P Name="GotoTag">canb_epssendmsg1signal</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator" SID="879">
+    <P Name="Position">[375, 1070, 395, 1090]</P>
+    <P Name="ZOrder">872</P>
+  </Block>
+  <Block BlockType="Outport" Name="steer_zero" SID="880">
+    <P Name="Position">[385, 708, 415, 722]</P>
+    <P Name="ZOrder">865</P>
+  </Block>
+  <Block BlockType="Outport" Name="canb_epsmsg" SID="881">
+    <P Name="Position">[385, 543, 415, 557]</P>
+    <P Name="ZOrder">757</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">787#out:1</P>
+    <P Name="Dst">836#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">788#out:1</P>
+    <P Name="Dst">836#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">789#out:1</P>
+    <P Name="Dst">836#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">790#out:1</P>
+    <P Name="Dst">836#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">836#out:1</P>
+    <P Name="Dst">881#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">836#out:2</P>
+    <P Name="Dst">880#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">791#out:1</P>
+    <P Name="Dst">796#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">792#out:1</P>
+    <P Name="Dst">796#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">796#out:2</P>
+    <P Name="Dst">879#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">796#out:1</P>
+    <P Name="Dst">878#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;eps_realangle&gt;</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">795#out:1</P>
+    <P Name="Dst">836#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">877#out:1</P>
+    <P Name="Dst">795#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">793#out:1</P>
+    <P Name="Dst">836#in:6</P>
+  </Line>
+</System>

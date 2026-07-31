@@ -1,0 +1,20 @@
+GNU gdb (GDB build.sh rev=g7fea41d s=L631 Earmv7 -V release_g7fea41d_build_Fed_Earmv7) 7.12.1
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "--host=i686-mingw32 --target=arm-none-eabi".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from C:\Users\icemi\Desktop\RZS_Repository\VCU\NC_S32K148\NC_S32K148_CAN_Bench_20260730\Debug_FLASH\NC_S32K148.elf...done.
+0x00004e94 in ?? ()
+Hardware assisted breakpoint 1 at 0x2dbb2: file ../Sources/main.c, line 46.
+
+Breakpoint 1, main () at ../Sources/main.c:46
+46	    PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */

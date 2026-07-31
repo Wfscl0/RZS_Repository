@@ -1,0 +1,17 @@
+device S32K148
+si SWD
+speed 4000
+connect
+r
+h
+sleep 200
+w4 0xE000ED08 0x00020000
+wreg MSP, 0x2001EFF0
+wreg PSP, 0x00000000
+wreg CONTROL, 0x00000000
+wreg XPSR, 0x01000000
+setpc 0x00020411
+g
+// Keep the debugger attached without halting the CPU for the complete test.
+sleep 60000
+q

@@ -1,0 +1,244 @@
+
+===== PAGE 1 / 8 =====
+ 
+                                                                   I 
+JJE CONFIDENTIAL  
+JJE confidential documents, no part of this document may be used, copied, or given to a third party without written 
+JJE authorization. 
+文档编号：JJE/RD-SW-OTR-COM-13813-502/20 
+ 
+ 
+ 
+单体式 HVP3-600 控制器规格书 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Version: V1.0 
+Drafted 
+by Jianling.Guo Checked 
+by 
+Mechanical Harness Software Reviewed 
+by  Approved 
+by  
+   
+Date 20220912 Date    Date  Date  
+
+
+===== PAGE 2 / 8 =====
+ 
+                                                                   II 
+JJE CONFIDENTIAL  
+JJE confidential documents, no part of this document may be used, copied, or given to a third party without written 
+JJE authorization. 
+文档编号：JJE/RD-SW-OTR-COM-13813-502/20 
+ 
+History 
+Index Version Date Description Name 
+1 V1.0 2022-09-12 The first version Jianling.Guo 
+     
+   •   
+     
+     
+     
+     
+
+===== PAGE 3 / 8 =====
+ 
+2 
+ 
+JJE Confidential 
+1   主要特征 
+➢ 12V/24V 兼容的电压工作电源 
+➢ 集成驻车控制功能（可选） 
+➢ 设计架构基于 ISO26262 
+➢ 高效率: 98%（峰值） 
+➢ 高精确控制：力矩控制精度高和快速响应；转速控制精度高及过冲量小 
+➢ 全汽车级元器件 
+➢ 旋转变压器的零位自动校正功能，可在车辆行驶情况下自动校正零位 
+➢ 符合 ISO14229 的 UDS 诊断服务及 Bootloader 功能，满足整车厂对 UDS 的需
+求 
+➢ 具有直流母线电压过高、欠压低、相过流、IGBT 过温、电机过温、通信丢
+失、短路、超速等故障保护措施及低压备用电源功能 
+2   应用领域 
+➢ 纯电动/混合动力商用车 
+➢ 纯电动/混合动力轿车 
+ 
+3 控制器指标 
+表 1.单体式 HVP3-600 控制器参数 
+描述 参数 
+性能  
+高压直流电压范围 300V to 750V 
+高压直流降额电压范围 750V to 850V 
+峰值相电流 410Arms @ 4kHz, 60℃,15L/min, 30s 
+持续相电流 300Arms @ 4kHz 60℃ 15L/min 
+峰值AC 功率 230kW, 300kVA @650V, 30s 
+持续AC 功率 180kW, 210kVA @650V 
+效率 ≥98% 
+机械  
+重量 13.4kg 
+长X 宽 X 高 502mm x 243mm x 110mm 
+环境  
+工作环境温度范围 -40℃  to 85℃ 
+冷却液温度范围 -40℃ to 65℃ 
+储存温度范围 -40℃ to 105℃ 
+
+===== PAGE 4 / 8 =====
+ 
+3 
+ 
+JJE Confidential 
+描述 参数 
+相对湿度 95% @ 40℃ 
+防护等级 IP68, IP6K9K 
+冷却  
+冷却形式 50% 水, 50% 乙二醇 
+冷却流量 15-20L/min 
+低压接口  
+输入电压 12V or 24V 
+电压范围 6 - 36V (工作电压 9-32V) 
+整车通讯   
+通讯协议 2 Channels, CAN 2.0, SAE J2284, ISO 
+11898 
+波特率 250kB/s or 500kB/s dual wire 
+CAN 终端电阻 120Ω optional 
+车载诊断 UDS 
+工作模式 转矩/转速控制 
+保护类型 
+过压，欠压，过流，短路，IGBT 过温，电
+机过温，通讯故障，自检，超速，及低压
+备用电源功能。 
+ 
+4 线束和连接器的布置 
+4.1 注意事项 
+ 警告！不可靠的接地会导致控制器电器损坏，控制器和电机必须通过
+20mm
+2
+以上的接地线接地。 
+ 电机三相线缆必须通过屏蔽连接装置连接到电机控制器及电机壳体，
+双端接地连接，否则可能导致严重的电磁干扰。 
+ 
+4.2 控制器进出线连接器（X1）线缆及芯脚信号定义 
+ 
+控制器进出线连接器图示见图 1。 
+ 
+
+
+===== PAGE 5 / 8 =====
+ 
+4 
+ 
+JJE Confidential 
+ 
+图 1.X1 引脚分布 
+ 
+控制器进出线连接器芯脚信号定义具体见表 2：  
+ 
+表 2.X1 引脚分布 
+针脚
+号 信号 描述 电流（A） 备注 
+1 PWR+ 低压电源输入   ＜1A@24V， 
+＜2A@12V 6V-36V(工作电压9-32V) 
+2 Wake up 使能信号输入 ＜0.5 外部信号> 6V, < 36V 
+3 5V_S_1 Park Pawl position 
+power+ ＜0.5 驻车控制功能（可选） 
+4 ISN-Position1 Park Pawl position 1  ＜0.5 驻车控制功能（可选） 
+5 ISN-Position2 Park Pawl position 2  ＜0.5 驻车控制功能（可选） 
+6 GND Park Pawl position GND ＜0.5 驻车控制功能（可选） 
+7 Ext+ Resolver REF+ ＜0.5  
+8 Sin- Resolver SIN- ＜0.5  
+9 Cos- Resolver COS- ＜0.5  
+10 MTmp2+ Temperature sensor 2+ ＜0.5  
+11 OUT+ Park Pawl Motor+ ＜5 驻车控制功能（可选） 
+12 OUT- Park Pawl Motor- ＜5 驻车控制功能（可选） 
+13 PGND 低压电源地   ＜1A@24V， 
+＜2A@12V 低压电源地（配合PWR+） 
+14 CANAH CAN A ＜0.5 屏蔽双绞线 
+15 CANAL ＜0.5 屏蔽双绞线 
+16 CANBH CAN B ＜0.5 屏蔽双绞线 
+17 CANBL ＜0.5 屏蔽双绞线 
+18 Pawl Position Pawl position ＜0.5 驻车控制功能（可选） 
+19 Ext- Resolver REF- ＜0.5  
+20 Sin+ Resolver SIN+ ＜0.5  
+21 Cos+ Resolver COS+ ＜0.5  
+22 MTmp2- Temperature sensor 2- ＜0.5  
+23 MTMP1+ Temperature sensor 1+ ＜0.5  
+24 MTMP1- Temperature sensor 1- ＜0.5  
+
+
+===== PAGE 6 / 8 =====
+ 
+5 
+ 
+JJE Confidential 
+25 Pawl GND Pawl sensor GND ＜0.5 驻车控制功能（可选） 
+26 CANA_TERM CAN 终端电阻 CAN_A  
+CAN 总线的终端电阻（120
+Ω）是否使用，可以在外
+部线束由客户进行选择；
+例如：若使用终端电阻，
+需要此管脚在外部线束连
+接到 CANAL；若不使用，
+则无需连接。 
+27 Pawl 5V_S_1 Pawl sensor power+ ＜0.5 驻车控制功能（可选） 
+28 CANB_TERM CAN 终端电阻 CAN_B  
+CAN 总线的终端电阻（120
+Ω）是否使用，可以在外
+部线束由客户进行选择；
+例如：若使用终端电阻，
+需要此管脚在外部线束连
+接到 CANAL；若不使用，
+则无需连接。 
+29 HVIL_IN 高压互锁输入 ＜0.5  
+30 HVIL_OUT 高压互锁输出 ＜0.5  
+31 /NC    
+32 /NC    
+33 Park Pawl _BAT+ Park Pawl power+ ＜5 驻车控制功能（可选） 
+34 Park Pawl _BAT- Park Pawl power- ＜5 驻车控制功能（可选） 
+35 ENCLOSURE 屏蔽地  屏蔽层接地 
+ 
+4.3 控制器进出线连接器（X1）信息说明 
+ 
+连接器（X1）为国威通品牌，其具体信息如表 3： 
+ 
+表 3.控制器壳体端芯脚型号及其明细表 
+名称 型号 安装位置 Pins 
+连接器 国威通 GVT03-RS013-35-L02 控制器壳体端 35 
+连接器 国威通 GE01-P008-35NNB-Y01 线束端 35 
+端子 国威通 S06-0017P-NA-N   
+防水栓 国威通 H13-0002-NA-N   
+ 
+5 控制器高压线缆技术要求 
+5.1 DC+、DC-、U、V、W 端要求 
+线缆铜芯截面积: 50mm²/70mm²。 
+ 
+
+===== PAGE 7 / 8 =====
+ 
+6 
+ 
+JJE Confidential 
+5.2 高压线缆接线端子和电缆密封面尺寸说明 
+50mm²电缆的安装尺寸详见图 2 和图 3。 
+ 
+ 
+图 2.端子安装尺寸和电缆密封的剖面图 
+ 
+图 3. 端子和电缆密封的安装尺寸 
+
+
+===== PAGE 8 / 8 =====
+ 
+7 
+ 
+JJE Confidential 
+6 机械尺寸 
+ 
+ 
+ 

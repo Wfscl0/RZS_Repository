@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2021b_202101212121">
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="826e5a15-3543-4275-a733-33a7a7f88957">
+    <entities type="diagram.editor.model.Entity" uuid="66504024-c242-4509-8f4a-b7ab36b2f287">
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="3a9577e9-3733-42d5-8a7e-f662547f32a4"/>
+      <title>D1</title>
+      <type>implicit-periodic</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="88cfe9ed-1b8f-44f2-9572-c140fc0ce0b6">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="9506371b-f49a-47b7-a563-e3e21c849b77"/>
+        <title>D1</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="00e9a1c7-bb00-4997-8ca4-8bcf7814e3a7"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="3d8eb7ab-0f77-408a-8048-b4401641b6a3">
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="8c50ce45-8111-4df8-b2b2-ee8eecf03b24">
+      <dataName>portAMI_RX</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="9d338fb8-f0fe-4594-9552-a1d0b4374ee1">
+      <dataName>portAMI_Tx</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="756861c5-730e-421c-8ee0-d30f401f924d">
+      <dataName>portESP_R_00</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="8815d2ac-f915-4adb-9b10-c5a8f0766bd4">
+      <dataName>portESP_T_01</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="75e67318-9be6-48aa-a9c3-02a460bd7fae">
+      <dataName>portESP_T_03</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="4930c86d-2eca-4623-bf7d-9255ed1e287b">
+      <dataName>portESP_T_06</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="4d73741d-f1e4-4dc6-92b4-aa0c5cb7581f">
+      <dataName>portESP_T_07</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="e85269e7-86b2-480e-b5cd-6bc0ef2e111b">
+      <dataName>portShutdown_End</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="9cc0b60a-59d3-40cb-acb1-ad97401bd954">
+      <dataName>portShutdown_Start</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="d2e9f1f4-7d80-4606-aa52-94ba2ee4b7aa">
+      <dataName>portcana_motor_cmd</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="a1897912-9a24-41c0-83a5-8de53f54c855">
+      <dataName>portcana_motor_cmd3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="8dc880f2-9fb9-4c4d-803a-257ec4a6c7c9">
+      <dataName>portcanb_epsmsg</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="1f8faf29-20bf-4728-afd4-243e10ed4d7f">
+      <dataName>portcanb_epssendmsg1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="40758e2c-19b4-40bb-86b9-d10eb80a2961">
+      <dataName>portcanb_epssendmsg2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="f825cd68-7cdb-4fa4-8d0b-7f20fe455832">
+      <dataName>portcanb_ipcrxmsg</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="bb98d77e-8e1c-46bc-89de-119d89a81d61">
+      <dataName>portcanb_ipctsmsg1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3917e859-3c1e-4a0b-b6fd-30fee5eb7306">
+      <dataName>portcanb_ipctsmsg2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="6a52d158-3fe5-4ba7-9b34-2cfc7602eeda">
+      <dataName>portebs_watchdog</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="1271039d-8ed1-4170-b274-840659bccc55">
+      <dataName>portmodel_ain</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ab53dbb7-21a6-4560-951c-598cc8115b38">
+      <dataName>portmodel_hin</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3b33d9d1-3d86-41f8-b3f8-fb443e46bec8">
+      <dataName>portmodel_hox</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="0ee4e02d-18c3-4eb9-b06f-dc54c0c1c827">
+      <dataName>portmodel_lox</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="1bcbc83a-0aca-45be-9b7c-85c9301280d1">
+      <dataName>portres_msg</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="632321fe-f80c-487b-8ce1-f78c66e6fc05">
+      <dataName>portvcu_dbg_air_wheel</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3b328b1c-1e18-4ce2-8aeb-14522acfc63f">
+      <dataName>portvcu_dbg_air_wheel_echo</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="d8017818-44fc-4ff3-97e9-d3d82910cf56">
+      <dataName>portvcu_dbg_control</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ef6a7587-987d-4492-8ac5-18e443dd98d9">
+      <dataName>portvcu_dbg_digital</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="2ad3d797-a387-4c5d-b0f3-21a138aaccea">
+      <dataName>portvcu_dbg_pedal_adc</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ad6495c2-68db-43b0-83b5-bc26ae5fbda7">
+      <dataName>portvcu_dbg_pedal_echo</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="96ddd1e0-cd3e-4bea-8b82-9b9fa4c738d0">
+      <dataName>portvcu_dbg_rx_count</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="66d2c740-3400-4c34-a091-0d7dca53626d">
+      <dataName>portvcu_dbg_status</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="884818eb-113f-4517-9793-826b692ddc47">
+      <dataName>portwlspd_fsensor</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="f60add1d-0860-47aa-a3ad-7be82e022aa7">
+      <dataName>portwlspd_hsensor</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="00e9a1c7-bb00-4997-8ca4-8bcf7814e3a7">
+      <children type="sltp.mm.syntax.Node" uuid="3a9577e9-3733-42d5-8a7e-f662547f32a4">
+        <priority>40</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#e60000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0.01</rate>
+          <title>D1</title>
+        </rates>
+        <title>D1</title>
+        <type>implicit-periodic</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="66504024-c242-4509-8f4a-b7ab36b2f287"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="9506371b-f49a-47b7-a563-e3e21c849b77">
+          <title>D1</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="88cfe9ed-1b8f-44f2-9572-c140fc0ce0b6"/>
+        </subgraph>
+      </children>
+      <title>Default</title>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="826e5a15-3543-4275-a733-33a7a7f88957"/>
+    </rootGraph>
+  </sltp.mm.syntax.Context>
+</sltp_editor>

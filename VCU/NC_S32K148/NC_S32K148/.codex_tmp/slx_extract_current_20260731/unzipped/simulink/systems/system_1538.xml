@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">35</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="hin_hw" SID="1538::1">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="ain_hw" SID="1538::22">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="wheel_f_hw" SID="1538::23">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">14</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="wheel_h_hw" SID="1538::24">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">15</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="control" SID="1538::25">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="pedal_adc" SID="1538::26">
+    <P Name="Position">[20, 281, 40, 299]</P>
+    <P Name="ZOrder">17</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="air_wheel" SID="1538::27">
+    <P Name="Position">[20, 316, 40, 334]</P>
+    <P Name="ZOrder">18</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Inport" Name="digital" SID="1538::28">
+    <P Name="Position">[20, 351, 40, 369]</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Inport" Name="rx_count" SID="1538::29">
+    <P Name="Position">[20, 386, 40, 404]</P>
+    <P Name="ZOrder">20</P>
+    <P Name="Port">9</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="1538::20">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 390, 320, 430]</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="1538::19">
+    <P Name="Tag">Stateflow S-Function 5</P>
+    <P Name="Ports">[9, 8]</P>
+    <P Name="Position">[180, 110, 230, 310]</P>
+    <P Name="ZOrder">10</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[9 8]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">hin_sel</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">ain_sel</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">wheel_f_sel</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">5</P>
+      <P Name="Name">wheel_h_sel</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">6</P>
+      <P Name="Name">status_base</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">7</P>
+      <P Name="Name">pedal_echo</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">8</P>
+      <P Name="Name">air_wheel_echo</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="1538::21">
+    <P Name="Position">[460, 401, 480, 419]</P>
+    <P Name="ZOrder">12</P>
+  </Block>
+  <Block BlockType="Outport" Name="hin_sel" SID="1538::5">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">-5</P>
+  </Block>
+  <Block BlockType="Outport" Name="ain_sel" SID="1538::30">
+    <P Name="Position">[460, 136, 480, 154]</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="wheel_f_sel" SID="1538::31">
+    <P Name="Position">[460, 171, 480, 189]</P>
+    <P Name="ZOrder">22</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="wheel_h_sel" SID="1538::32">
+    <P Name="Position">[460, 206, 480, 224]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="status_base" SID="1538::33">
+    <P Name="Position">[460, 246, 480, 264]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="pedal_echo" SID="1538::34">
+    <P Name="Position">[460, 281, 480, 299]</P>
+    <P Name="ZOrder">25</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Outport" Name="air_wheel_echo" SID="1538::35">
+    <P Name="Position">[460, 316, 480, 334]</P>
+    <P Name="ZOrder">26</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">152</P>
+    <P Name="Src">1538::1#out:1</P>
+    <P Name="Dst">1538::19#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">153</P>
+    <P Name="Src">1538::22#out:1</P>
+    <P Name="Dst">1538::19#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">154</P>
+    <P Name="Src">1538::23#out:1</P>
+    <P Name="Dst">1538::19#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">155</P>
+    <P Name="Src">1538::24#out:1</P>
+    <P Name="Dst">1538::19#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">156</P>
+    <P Name="Src">1538::25#out:1</P>
+    <P Name="Dst">1538::19#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">157</P>
+    <P Name="Src">1538::26#out:1</P>
+    <P Name="Dst">1538::19#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">158</P>
+    <P Name="Src">1538::27#out:1</P>
+    <P Name="Dst">1538::19#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">159</P>
+    <P Name="Src">1538::28#out:1</P>
+    <P Name="Dst">1538::19#in:8</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">160</P>
+    <P Name="Src">1538::29#out:1</P>
+    <P Name="Dst">1538::19#in:9</P>
+  </Line>
+  <Line>
+    <P Name="Name">hin_sel</P>
+    <P Name="ZOrder">161</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1538::19#out:2</P>
+    <P Name="Dst">1538::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ain_sel</P>
+    <P Name="ZOrder">162</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1538::19#out:3</P>
+    <P Name="Dst">1538::30#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">wheel_f_sel</P>
+    <P Name="ZOrder">163</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1538::19#out:4</P>
+    <P Name="Dst">1538::31#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">wheel_h_sel</P>
+    <P Name="ZOrder">164</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1538::19#out:5</P>
+    <P Name="Dst">1538::32#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">status_base</P>
+    <P Name="ZOrder">165</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1538::19#out:6</P>
+    <P Name="Dst">1538::33#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">pedal_echo</P>
+    <P Name="ZOrder">166</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1538::19#out:7</P>
+    <P Name="Dst">1538::34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">air_wheel_echo</P>
+    <P Name="ZOrder">167</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1538::19#out:8</P>
+    <P Name="Dst">1538::35#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">168</P>
+    <P Name="Src">1538::20#out:1</P>
+    <P Name="Dst">1538::21#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">169</P>
+    <P Name="Src">1538::19#out:1</P>
+    <P Name="Dst">1538::20#in:1</P>
+  </Line>
+</System>

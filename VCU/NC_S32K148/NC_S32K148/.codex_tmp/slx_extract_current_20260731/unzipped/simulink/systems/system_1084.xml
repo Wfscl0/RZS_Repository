@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="sensor_signal" SID="1085">
+    <P Name="Position">[275, 338, 305, 352]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="manual_driving_flag" SID="1086">
+    <P Name="Position">[275, 253, 305, 267]</P>
+    <P Name="ZOrder">177</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_flag" SID="1087">
+    <P Name="Position">[275, 423, 305, 437]</P>
+    <P Name="ZOrder">183</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_motor_torque" SID="1088">
+    <P Name="Position">[275, 508, 305, 522]</P>
+    <P Name="ZOrder">184</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="ts" SID="1089">
+    <P Name="Position">[1200, 373, 1230, 387]</P>
+    <P Name="ZOrder">747</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="1090">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[960, -80, 980, -60]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="ASTorque_Calculation" SID="1446">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[445, 488, 605, 542]</P>
+    <P Name="ZOrder">760</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1446"/>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="AS_Driving_Read" SID="1569">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[655, 582, 775, 608]</P>
+    <P Name="ZOrder">764</P>
+    <P Name="DataStoreName">as_driving_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="AS_Emergency_Read" SID="1542">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[695, 520, 800, 550]</P>
+    <P Name="ZOrder">761</P>
+    <P Name="DataStoreName">as_emergency_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="Logic" Name="AS_Torque_Enable" SID="1574">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[885, 570, 940, 650]</P>
+    <P Name="ZOrder">769</P>
+    <P Name="Inputs">4</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Switch" Name="Emergency_Torque_Gate" SID="1544">
+    <P Name="Position">[850, 430, 905, 520]</P>
+    <P Name="ZOrder">763</P>
+    <P Name="Threshold">0.5</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Constant" Name="Emergency_Zero_Torque" SID="1543">
+    <P Name="Position">[700, 455, 750, 485]</P>
+    <P Name="ZOrder">762</P>
+    <P Name="Value">0</P>
+    <P Name="OutDataTypeStr">double</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="FSEC_Safety_Lock_Read" SID="1571">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[655, 662, 775, 688]</P>
+    <P Name="ZOrder">766</P>
+    <P Name="DataStoreName">safety_lock</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="From" Name="From3" SID="1099">
+    <P Name="Position">[1180, 482, 1275, 508]</P>
+    <P Name="ZOrder">748</P>
+    <P Name="GotoTag">motor_torque</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto2" SID="1102">
+    <P Name="Position">[835, 377, 930, 403]</P>
+    <P Name="ZOrder">189</P>
+    <P Name="GotoTag">motor_torque</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="MCU1_Rx_Command" SID="1103">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[1395, 321, 1810, 554]</P>
+    <P Name="ZOrder">746</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1103"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MCU1_Rx_Command3" SID="1165">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1400, 659, 1805, 861]</P>
+    <P Name="ZOrder">750</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1165"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="ManualTorque_Calculation" SID="1431">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[445, 319, 605, 371]</P>
+    <P Name="ZOrder">759</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1431"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Motor_Torque_Stateflow" SID="1197">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[645, 220, 780, 555]</P>
+    <P Name="ZOrder">186</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <P Name="PortSchema">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;sides&quot;:[{&quot;content&quot;:{&quot;connectorIds&quot;:[&quot;In1&quot;,&quot;In3&quot;,&quot;In2&quot;,&quot;In4&quot;]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;d9a8263c-4b6f-42da-8ac2-d6351ac22d7e&quot;},{&quot;content&quot;:{&quot;connectorIds&quot;:[&quot;Out1&quot;],&quot;side&quot;:&quot;RIGHT&quot;},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;5afddd84-d4d9-4932-bab9-0cf7e7557aa2&quot;},{&quot;content&quot;:{&quot;connectorIds&quot;:[],&quot;side&quot;:&quot;TOP&quot;},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;31244ac9-97b6-45b3-a8be-c5389c850836&quot;}]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedConnector&quot;,&quot;uuid&quot;:&quot;4a9ac252-b735-4ae7-9487-f10bc9e5bec6&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/Connector/R2020b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+    <System Ref="system_1197"/>
+  </Block>
+  <Block BlockType="Logic" Name="No_FSEC_Safety_Lock" SID="1573">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[805, 657, 850, 693]</P>
+    <P Name="ZOrder">768</P>
+    <P Name="Operator">NOT</P>
+    <P Name="Inputs">1</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="R2D_Complete" SID="1572">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[805, 617, 850, 653]</P>
+    <P Name="ZOrder">767</P>
+    <P Name="Operator">NOT</P>
+    <P Name="Inputs">1</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="R2D_Read" SID="1570">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[655, 622, 775, 648]</P>
+    <P Name="ZOrder">765</P>
+    <P Name="DataStoreName">r2d_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="Outport" Name="cana_motor_cmd" SID="1198">
+    <P Name="Position">[1855, 433, 1885, 447]</P>
+    <P Name="ZOrder">749</P>
+  </Block>
+  <Block BlockType="Outport" Name="cana_motor_cmd3" SID="1199">
+    <P Name="Position">[1855, 753, 1885, 767]</P>
+    <P Name="ZOrder">752</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">42</P>
+    <P Name="Src">1085#out:1</P>
+    <P Name="Points">[-5, 0]</P>
+    <P Name="Dst">1431#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1086#out:1</P>
+    <P Name="Points">[-5, 0]</P>
+    <P Name="Dst">1197#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">46</P>
+    <P Name="Src">1431#out:1</P>
+    <P Name="Dst">1197#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">47</P>
+    <P Name="Src">1446#out:1</P>
+    <P Name="Dst">1197#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">1089#out:1</P>
+    <P Name="Dst">1103#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">1099#out:1</P>
+    <P Name="Dst">1103#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">1103#out:1</P>
+    <P Name="Dst">1198#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">1165#out:1</P>
+    <P Name="Dst">1199#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">44</P>
+    <P Name="Src">1088#out:1</P>
+    <P Name="Points">[-5, 0]</P>
+    <P Name="Dst">1446#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">59</P>
+    <P Name="Src">1543#out:1</P>
+    <P Name="Points">[40, 0; 0, -25]</P>
+    <P Name="Dst">1544#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">60</P>
+    <P Name="Src">1542#out:1</P>
+    <P Name="Points">[15, 0; 0, -60]</P>
+    <P Name="Dst">1544#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">61</P>
+    <P Name="Src">1197#out:1</P>
+    <P Name="Points">[40, 0; 0, 115]</P>
+    <P Name="Dst">1544#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">62</P>
+    <P Name="Src">1544#out:1</P>
+    <P Name="Points">[0, -65; -80, 0; 0, -25; -10, 0]</P>
+    <P Name="Dst">1102#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">77</P>
+    <P Name="Src">1570#out:1</P>
+    <P Name="Dst">1572#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">78</P>
+    <P Name="Src">1571#out:1</P>
+    <P Name="Dst">1573#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">79</P>
+    <P Name="Src">1087#out:1</P>
+    <P Name="Points">[0, 75; -40, 0; 0, 70; 600, 0]</P>
+    <P Name="Dst">1574#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">80</P>
+    <P Name="Src">1569#out:1</P>
+    <P Name="Points">[45, 0; 0, 5]</P>
+    <P Name="Dst">1574#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">81</P>
+    <P Name="Src">1572#out:1</P>
+    <P Name="Points">[5, 0; 0, -15]</P>
+    <P Name="Dst">1574#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">82</P>
+    <P Name="Src">1573#out:1</P>
+    <P Name="Points">[5, 0; 0, -35]</P>
+    <P Name="Dst">1574#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">83</P>
+    <P Name="Src">1574#out:1</P>
+    <P Name="Points">[0, -50; -320, 0; 0, -130]</P>
+    <P Name="Dst">1197#in:2</P>
+  </Line>
+  <Annotation SID="1575">
+    <P Name="Name">AS torque enable = ASMS AND AS_Driving AND R2D complete AND no Emergency lock.</P>
+    <P Name="Position">[620, 710, 1016, 724]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+</System>

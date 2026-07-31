@@ -1,0 +1,2073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GraphicalInterface>
+  <P Name="NumRootInports">19</P>
+  <Inport Name="model_hin">
+    <P Name="BusObject"/>
+    <P Name="SignalName">model_hin</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="model_ain">
+    <P Name="BusObject"/>
+    <P Name="SignalName">model_ain</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="wlspd_fsensor">
+    <P Name="BusObject"/>
+    <P Name="SignalName">wlspd_fsensor</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="wlspd_hsensor">
+    <P Name="BusObject"/>
+    <P Name="SignalName">wlspd_hsensor</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="AMI_Tx">
+    <P Name="BusObject"/>
+    <P Name="SignalName">AMI_Tx</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="ESP_T_01">
+    <P Name="BusObject"/>
+    <P Name="SignalName">ESP_T_01</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="ESP_T_03">
+    <P Name="BusObject"/>
+    <P Name="SignalName">ESP_T_03</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="ESP_T_06">
+    <P Name="BusObject"/>
+    <P Name="SignalName">ESP_T_06</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="ESP_T_07">
+    <P Name="BusObject"/>
+    <P Name="SignalName">ESP_T_07</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="canb_epssendmsg1">
+    <P Name="BusObject"/>
+    <P Name="SignalName">canb_epssendmsg1</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="canb_epssendmsg2">
+    <P Name="BusObject"/>
+    <P Name="SignalName">canb_epssendmsg2</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="res_msg">
+    <P Name="BusObject"/>
+    <P Name="SignalName">res_msg</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="canb_ipctsmsg1">
+    <P Name="BusObject"/>
+    <P Name="SignalName">canb_ipctsmsg1</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="canb_ipctsmsg2">
+    <P Name="BusObject"/>
+    <P Name="SignalName">canb_ipctsmsg2</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="vcu_dbg_control">
+    <P Name="BusObject"/>
+    <P Name="SignalName">vcu_dbg_control</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+    <P Name="DataTypeExpr">uint8</P>
+    <P Name="DimensionsExpr">[8]</P>
+  </Inport>
+  <Inport Name="vcu_dbg_pedal_adc">
+    <P Name="BusObject"/>
+    <P Name="SignalName">vcu_dbg_pedal_adc</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+    <P Name="DataTypeExpr">uint8</P>
+    <P Name="DimensionsExpr">[8]</P>
+  </Inport>
+  <Inport Name="vcu_dbg_air_wheel">
+    <P Name="BusObject"/>
+    <P Name="SignalName">vcu_dbg_air_wheel</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+    <P Name="DataTypeExpr">uint8</P>
+    <P Name="DimensionsExpr">[8]</P>
+  </Inport>
+  <Inport Name="vcu_dbg_digital">
+    <P Name="BusObject"/>
+    <P Name="SignalName">vcu_dbg_digital</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+    <P Name="DataTypeExpr">uint8</P>
+    <P Name="DimensionsExpr">[8]</P>
+  </Inport>
+  <Inport Name="vcu_dbg_rx_count">
+    <P Name="BusObject"/>
+    <P Name="SignalName">vcu_dbg_rx_count</P>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+    <P Name="DataTypeExpr">uint8</P>
+    <P Name="DimensionsExpr">[4]</P>
+  </Inport>
+  <P Name="NumRootOutports">12</P>
+  <Outport Name="model_lox">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">model_lox</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="model_hox">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">model_hox</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="ebs_watchdog">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">ebs_watchdog</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="AMI_RX">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">AMI_Rx</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="ESP_R_00">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="canb_epsmsg">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">canb_epsmsg</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="canb_ipcrxmsg">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">canb_ipcrxmsg</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="cana_motor_cmd">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">cana_motor_cmd</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="cana_motor_cmd3">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">cana_motor_cmd3</P>
+    <P Name="UnitExpr">inherit</P>
+  </Outport>
+  <Outport Name="vcu_dbg_status">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">status</P>
+    <P Name="UnitExpr">inherit</P>
+    <P Name="DataTypeExpr">uint8</P>
+    <P Name="DimensionsExpr">[8]</P>
+  </Outport>
+  <Outport Name="vcu_dbg_pedal_echo">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">pedal_echo</P>
+    <P Name="UnitExpr">inherit</P>
+    <P Name="DataTypeExpr">uint8</P>
+    <P Name="DimensionsExpr">[8]</P>
+  </Outport>
+  <Outport Name="vcu_dbg_air_wheel_echo">
+    <P Name="BusObject"/>
+    <P Name="BusOutputAsStruct">off</P>
+    <P Name="SignalName">air_wheel_echo</P>
+    <P Name="UnitExpr">inherit</P>
+    <P Name="DataTypeExpr">uint8</P>
+    <P Name="DimensionsExpr">[8]</P>
+  </Outport>
+  <P Name="ParameterArgumentNames"/>
+  <P Name="NumModelReferences">0</P>
+  <P Name="NumTestPointedSignals">0</P>
+  <P Name="NumProvidedFunctions">0</P>
+  <P Name="NumRequiredFunctions">0</P>
+  <P Name="NumResetEvents">0</P>
+  <P Name="HasInitializeEvent">0</P>
+  <P Name="HasTerminateEvent">0</P>
+  <P Name="PreCompExecutionDomainType">Unset</P>
+  <P Name="IsExportFunctionModel">0</P>
+  <P Name="SimulinkSubDomainType">Simulink</P>
+  <P Name="NumParameterArguments">0</P>
+  <P Name="NumExternalFileReferences">241</P>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms</P>
+    <P Name="SID">208</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms1</P>
+    <P Name="SID">271</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms10</P>
+    <P Name="SID">888</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms11</P>
+    <P Name="SID">935</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms12</P>
+    <P Name="SID">1406</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms13</P>
+    <P Name="SID">458</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms2</P>
+    <P Name="SID">1294</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms3</P>
+    <P Name="SID">326</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms4</P>
+    <P Name="SID">1077</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms6</P>
+    <P Name="SID">1210</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms7</P>
+    <P Name="SID">388</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms8</P>
+    <P Name="SID">510</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/10ms9</P>
+    <P Name="SID">782</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/AMI_CAN/AMI_Receivemsg/Bit Shift</P>
+    <P Name="SID">466</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/AMI_CAN/AMI_Receivemsg/Bitwise AND</P>
+    <P Name="SID">467</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/AMI_CAN/AMI_Transmitmsg/Bit Shift</P>
+    <P Name="SID">481</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/AMI_CAN/AMI_Transmitmsg/Bitwise AND</P>
+    <P Name="SID">482</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/AMI_CAN/Compare To Constant</P>
+    <P Name="SID">1464</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/AMI_CAN/Compare To Constant1</P>
+    <P Name="SID">1470</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant</P>
+    <P Name="SID">340</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant1</P>
+    <P Name="SID">341</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant2</P>
+    <P Name="SID">342</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant3</P>
+    <P Name="SID">343</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant4</P>
+    <P Name="SID">344</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant5</P>
+    <P Name="SID">345</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant6</P>
+    <P Name="SID">346</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant7</P>
+    <P Name="SID">347</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/ASB_Selfcheck/Brake_Sensor_Check/Compare To Constant8</P>
+    <P Name="SID">348</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/AS_Stateflow/Car_Spdzero_Check/Compare To Constant</P>
+    <P Name="SID">1233</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/AS_Stateflow/Car_Spdzero_Check/Compare To Constant1</P>
+    <P Name="SID">1234</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/EBS/Compare To Constant</P>
+    <P Name="SID">420</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/EBS/Compare To Constant1</P>
+    <P Name="SID">422</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">spsEdgeDetectorLib/Edge Detector</P>
+    <P Name="Path">$bdroot/EBS/Edge Detector</P>
+    <P Name="SID">396</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">spsEdgeDetectorLib/Edge Detector</P>
+    <P Name="Path">$bdroot/EBS/Edge Detector2</P>
+    <P Name="SID">397</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/EPS/EPS_ReceiveMsg/EPS_Send_Msg2/Bit Shift1</P>
+    <P Name="SID">818</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/EPS/EPS_TransmitMsg/Bit Shift</P>
+    <P Name="SID">843</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/EPS/EPS_TransmitMsg/Bitwise AND</P>
+    <P Name="SID">844</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/EPS/EPS_TransmitMsg/Bitwise AND1</P>
+    <P Name="SID">845</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/EPS/EPS_TransmitMsg/Bitwise AND2</P>
+    <P Name="SID">846</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/EPS/EPS_TransmitMsg/Bitwise AND3</P>
+    <P Name="SID">847</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/EPS/EPS_TransmitMsg/Compare To Constant2</P>
+    <P Name="SID">848</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/EPS/EPS_TransmitMsg/Compare To Constant3</P>
+    <P Name="SID">849</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/EPS/EPS_TransmitMsg/Logical Operator2</P>
+    <P Name="SID">1522</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift</P>
+    <P Name="SID">533</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift1</P>
+    <P Name="SID">534</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift10</P>
+    <P Name="SID">535</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift11</P>
+    <P Name="SID">536</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift12</P>
+    <P Name="SID">537</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift13</P>
+    <P Name="SID">538</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift14</P>
+    <P Name="SID">539</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift15</P>
+    <P Name="SID">540</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift16</P>
+    <P Name="SID">541</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift2</P>
+    <P Name="SID">542</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift3</P>
+    <P Name="SID">543</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift4</P>
+    <P Name="SID">544</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift5</P>
+    <P Name="SID">545</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift6</P>
+    <P Name="SID">546</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift7</P>
+    <P Name="SID">547</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift8</P>
+    <P Name="SID">548</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bit Shift9</P>
+    <P Name="SID">549</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND</P>
+    <P Name="SID">550</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND1</P>
+    <P Name="SID">551</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND10</P>
+    <P Name="SID">552</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND11</P>
+    <P Name="SID">553</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND12</P>
+    <P Name="SID">554</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND13</P>
+    <P Name="SID">555</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND14</P>
+    <P Name="SID">556</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND15</P>
+    <P Name="SID">557</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND16</P>
+    <P Name="SID">558</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND17</P>
+    <P Name="SID">559</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND18</P>
+    <P Name="SID">560</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND19</P>
+    <P Name="SID">561</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND2</P>
+    <P Name="SID">562</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND3</P>
+    <P Name="SID">563</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND4</P>
+    <P Name="SID">564</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND5</P>
+    <P Name="SID">565</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND6</P>
+    <P Name="SID">566</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND7</P>
+    <P Name="SID">567</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND8</P>
+    <P Name="SID">568</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_01/Bitwise AND9</P>
+    <P Name="SID">569</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bit Shift</P>
+    <P Name="SID">590</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bit Shift1</P>
+    <P Name="SID">591</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bit Shift2</P>
+    <P Name="SID">592</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bit Shift3</P>
+    <P Name="SID">593</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bit Shift4</P>
+    <P Name="SID">594</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bit Shift5</P>
+    <P Name="SID">595</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bitwise AND</P>
+    <P Name="SID">596</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bitwise AND1</P>
+    <P Name="SID">597</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bitwise AND2</P>
+    <P Name="SID">598</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bitwise AND3</P>
+    <P Name="SID">599</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bitwise AND4</P>
+    <P Name="SID">600</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bitwise AND5</P>
+    <P Name="SID">601</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bitwise AND6</P>
+    <P Name="SID">602</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/Bitwise AND7</P>
+    <P Name="SID">603</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_03/LifeSig Mask</P>
+    <P Name="SID">1523</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift</P>
+    <P Name="SID">629</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift1</P>
+    <P Name="SID">630</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift2</P>
+    <P Name="SID">631</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift3</P>
+    <P Name="SID">632</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift4</P>
+    <P Name="SID">633</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift5</P>
+    <P Name="SID">634</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift6</P>
+    <P Name="SID">635</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift7</P>
+    <P Name="SID">636</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bit Shift8</P>
+    <P Name="SID">637</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND</P>
+    <P Name="SID">638</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND1</P>
+    <P Name="SID">639</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND2</P>
+    <P Name="SID">640</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND3</P>
+    <P Name="SID">641</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND4</P>
+    <P Name="SID">642</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND5</P>
+    <P Name="SID">643</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND6</P>
+    <P Name="SID">644</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND7</P>
+    <P Name="SID">645</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND8</P>
+    <P Name="SID">646</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_06/Bitwise AND9</P>
+    <P Name="SID">647</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bit Shift</P>
+    <P Name="SID">666</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bit Shift1</P>
+    <P Name="SID">667</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bit Shift2</P>
+    <P Name="SID">668</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bit Shift3</P>
+    <P Name="SID">669</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bit Shift4</P>
+    <P Name="SID">670</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bit Shift5</P>
+    <P Name="SID">671</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND</P>
+    <P Name="SID">672</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND1</P>
+    <P Name="SID">673</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND2</P>
+    <P Name="SID">674</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND3</P>
+    <P Name="SID">675</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND4</P>
+    <P Name="SID">676</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND5</P>
+    <P Name="SID">677</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND6</P>
+    <P Name="SID">678</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND7</P>
+    <P Name="SID">679</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_ReceiveMsg/ESP_T_07/Bitwise AND8</P>
+    <P Name="SID">680</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bit Shift</P>
+    <P Name="SID">722</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bit Shift1</P>
+    <P Name="SID">723</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bit Shift2</P>
+    <P Name="SID">724</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bit Shift3</P>
+    <P Name="SID">725</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bit Shift4</P>
+    <P Name="SID">726</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bit Shift5</P>
+    <P Name="SID">727</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bit Shift6</P>
+    <P Name="SID">728</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND</P>
+    <P Name="SID">729</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND1</P>
+    <P Name="SID">730</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND2</P>
+    <P Name="SID">731</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND3</P>
+    <P Name="SID">732</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND4</P>
+    <P Name="SID">733</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND5</P>
+    <P Name="SID">734</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND6</P>
+    <P Name="SID">735</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND7</P>
+    <P Name="SID">736</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND8</P>
+    <P Name="SID">737</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/ESP/ESP_TransmitMsg/ESP_R_00/Bitwise AND9</P>
+    <P Name="SID">738</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/Function-Call Generator</P>
+    <P Name="SID">90</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="Path">$bdroot/Function-Call Generator1</P>
+    <P Name="SID">168</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_ReceiveMsg/IPC_Rx_Msg/Bit Shift</P>
+    <P Name="SID">964</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_ReceiveMsg/IPC_Rx_Msg/Bit Shift1</P>
+    <P Name="SID">965</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_ReceiveMsg/IPC_Rx_Msg/Bitwise AND</P>
+    <P Name="SID">966</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_ReceiveMsg/IPC_Rx_Msg/Bitwise AND1</P>
+    <P Name="SID">967</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_ReceiveMsg/IPC_Rx_Msg/Bitwise AND2</P>
+    <P Name="SID">968</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bit Shift</P>
+    <P Name="SID">987</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bit Shift1</P>
+    <P Name="SID">988</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bit Shift2</P>
+    <P Name="SID">989</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bit Shift3</P>
+    <P Name="SID">990</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bit Shift4</P>
+    <P Name="SID">991</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bit Shift5</P>
+    <P Name="SID">992</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bit Shift6</P>
+    <P Name="SID">993</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bit Shift8</P>
+    <P Name="SID">994</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bitwise AND</P>
+    <P Name="SID">995</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bitwise AND1</P>
+    <P Name="SID">996</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bitwise AND2</P>
+    <P Name="SID">997</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bitwise AND3</P>
+    <P Name="SID">998</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bitwise AND4</P>
+    <P Name="SID">999</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg1/Bitwise AND5</P>
+    <P Name="SID">1000</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bit Shift</P>
+    <P Name="SID">1027</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bit Shift1</P>
+    <P Name="SID">1028</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bit Shift2</P>
+    <P Name="SID">1029</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bit Shift3</P>
+    <P Name="SID">1030</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bit Shift4</P>
+    <P Name="SID">1031</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bit Shift5</P>
+    <P Name="SID">1032</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bitwise AND</P>
+    <P Name="SID">1033</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bitwise AND1</P>
+    <P Name="SID">1034</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/IPC/IPC_TransmitMsg/IPC_Tx_Msg2/Bitwise AND2</P>
+    <P Name="SID">1035</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bit Shift</P>
+    <P Name="SID">120</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bit Shift1</P>
+    <P Name="SID">121</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bit Shift2</P>
+    <P Name="SID">122</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bit Shift3</P>
+    <P Name="SID">123</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bit Shift4</P>
+    <P Name="SID">124</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bit Shift5</P>
+    <P Name="SID">125</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bit Shift6</P>
+    <P Name="SID">126</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bit Shift7</P>
+    <P Name="SID">127</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bitwise AND1</P>
+    <P Name="SID">1484</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bitwise AND2</P>
+    <P Name="SID">1485</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bitwise AND3</P>
+    <P Name="SID">1486</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bitwise AND4</P>
+    <P Name="SID">1487</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bitwise AND5</P>
+    <P Name="SID">1488</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bitwise AND6</P>
+    <P Name="SID">1489</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bitwise AND7</P>
+    <P Name="SID">1483</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Input_Convert/Data_Analysis/Bitwise AND8</P>
+    <P Name="SID">1490</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/LED_Control/EBS_LED/Compare To Constant</P>
+    <P Name="SID">1340</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/LED_Control/EBS_LED/Compare To Constant1</P>
+    <P Name="SID">1341</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/LED_Control/EBS_LED/Compare To Constant2</P>
+    <P Name="SID">1342</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/LED_Control/EBS_LED/Compare To Constant3</P>
+    <P Name="SID">1343</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/LED_Control/EBS_LED/Compare To Constant4</P>
+    <P Name="SID">1344</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/LED_Control/EBS_LED/Compare To Constant5</P>
+    <P Name="SID">1345</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/LED_Control/EBS_LED/Compare To Constant6</P>
+    <P Name="SID">1346</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift</P>
+    <P Name="SID">1110</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift1</P>
+    <P Name="SID">1111</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift2</P>
+    <P Name="SID">1112</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift3</P>
+    <P Name="SID">1113</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift4</P>
+    <P Name="SID">1114</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift5</P>
+    <P Name="SID">1115</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift6</P>
+    <P Name="SID">1116</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift7</P>
+    <P Name="SID">1117</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift8</P>
+    <P Name="SID">1118</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bit Shift9</P>
+    <P Name="SID">1119</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND</P>
+    <P Name="SID">1120</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND1</P>
+    <P Name="SID">1121</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND10</P>
+    <P Name="SID">1122</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND11</P>
+    <P Name="SID">1123</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND12</P>
+    <P Name="SID">1124</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND13</P>
+    <P Name="SID">1125</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND2</P>
+    <P Name="SID">1126</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND3</P>
+    <P Name="SID">1127</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND4</P>
+    <P Name="SID">1128</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND5</P>
+    <P Name="SID">1129</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND6</P>
+    <P Name="SID">1130</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND7</P>
+    <P Name="SID">1131</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND8</P>
+    <P Name="SID">1132</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command/Bitwise AND9</P>
+    <P Name="SID">1133</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command3/Bit Shift</P>
+    <P Name="SID">1166</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command3/Bit Shift1</P>
+    <P Name="SID">1167</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command3/Bitwise AND</P>
+    <P Name="SID">1168</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command3/Bitwise AND1</P>
+    <P Name="SID">1169</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command3/Bitwise AND2</P>
+    <P Name="SID">1170</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Motor_Control/MCU1_Rx_Command3/Bitwise AND3</P>
+    <P Name="SID">1171</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Concat</P>
+    <P Name="Path">$bdroot/Output_Convert/Physical_HO1_8_Pack</P>
+    <P Name="SID">180</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Concat</P>
+    <P Name="Path">$bdroot/Output_Convert/Physical_OUT1_7_Pack</P>
+    <P Name="SID">197</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bit Shift</P>
+    <P Name="SID">897</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bit Shift1</P>
+    <P Name="SID">898</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bit Shift2</P>
+    <P Name="SID">899</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bitwise AND</P>
+    <P Name="SID">900</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bitwise AND1</P>
+    <P Name="SID">901</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bitwise AND2</P>
+    <P Name="SID">902</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bitwise AND3</P>
+    <P Name="SID">903</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bitwise AND4</P>
+    <P Name="SID">904</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Bitwise AND5</P>
+    <P Name="SID">905</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="Path">$bdroot/Res/Res_Msg/Logical Operator</P>
+    <P Name="SID">1521</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <P Name="OrderedModelArguments">1</P>
+</GraphicalInterface>

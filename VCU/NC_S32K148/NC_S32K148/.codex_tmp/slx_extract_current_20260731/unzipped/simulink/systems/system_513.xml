@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">128</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="ipc_esp_pressure" SID="514">
+    <P Name="Position">[-1320, 278, -1290, 292]</P>
+    <P Name="ZOrder">587</P>
+  </Block>
+  <Block BlockType="Inport" Name="brake_flag" SID="515">
+    <P Name="Position">[-1320, 333, -1290, 347]</P>
+    <P Name="ZOrder">588</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_esp_t01" SID="516">
+    <P Name="Position">[-1325, 518, -1295, 532]</P>
+    <P Name="ZOrder">718</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_esp_t03" SID="517">
+    <P Name="Position">[-1325, 568, -1295, 582]</P>
+    <P Name="ZOrder">719</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_esp_t06" SID="518">
+    <P Name="Position">[-1325, 618, -1295, 632]</P>
+    <P Name="ZOrder">720</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_esp_t07" SID="519">
+    <P Name="Position">[-1325, 668, -1295, 682]</P>
+    <P Name="ZOrder">721</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="520">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[-950, 415, -930, 435]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="ESP_ReceiveMsg" SID="521">
+    <P Name="Ports">[4, 5]</P>
+    <P Name="Position">[-1240, 501, -1055, 699]</P>
+    <P Name="ZOrder">655</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_521"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="ESP_TransmitMsg" SID="709">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[-1210, 260, -1085, 475]</P>
+    <P Name="ZOrder">710</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_709"/>
+  </Block>
+  <Block BlockType="Ground" Name="checkSum" SID="763">
+    <P Name="Position">[-1315, 440, -1295, 460]</P>
+    <P Name="ZOrder">1502</P>
+    <P Name="NameLocation">left</P>
+  </Block>
+  <Block BlockType="Ground" Name="lifeSig" SID="764">
+    <P Name="Position">[-1315, 385, -1295, 405]</P>
+    <P Name="ZOrder">1501</P>
+    <P Name="NameLocation">left</P>
+  </Block>
+  <Block BlockType="Outport" Name="canb_esp_r00" SID="765">
+    <P Name="Position">[-1040, 363, -1010, 377]</P>
+    <P Name="ZOrder">728</P>
+  </Block>
+  <Block BlockType="Outport" Name="ESP_T_01sigal" SID="766">
+    <P Name="Position">[-1010, 513, -980, 527]</P>
+    <P Name="ZOrder">722</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="ESP_T_03signal" SID="767">
+    <P Name="Position">[-1010, 553, -980, 567]</P>
+    <P Name="ZOrder">723</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="ESP_T_06signal" SID="768">
+    <P Name="Position">[-1010, 593, -980, 607]</P>
+    <P Name="ZOrder">724</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="ESP_T_07signal" SID="769">
+    <P Name="Position">[-1010, 633, -980, 647]</P>
+    <P Name="ZOrder">725</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="brkmotor_check" SID="770">
+    <P Name="Position">[-1010, 673, -980, 687]</P>
+    <P Name="ZOrder">717</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">521#out:5</P>
+    <P Name="Dst">770#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">515#out:1</P>
+    <P Name="Dst">709#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">514#out:1</P>
+    <P Name="Dst">709#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">516#out:1</P>
+    <P Name="Dst">521#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">519#out:1</P>
+    <P Name="Dst">521#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">518#out:1</P>
+    <P Name="Dst">521#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">517#out:1</P>
+    <P Name="Dst">521#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">521#out:1</P>
+    <P Name="Dst">766#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">521#out:4</P>
+    <P Name="Dst">769#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">521#out:3</P>
+    <P Name="Dst">768#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">521#out:2</P>
+    <P Name="Dst">767#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">763#out:1</P>
+    <P Name="Dst">709#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">709#out:1</P>
+    <P Name="Dst">765#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">764#out:1</P>
+    <P Name="Dst">709#in:3</P>
+  </Line>
+  <Annotation SID="771">
+    <P Name="Name">可不发</P>
+    <P Name="Position">[-1358, 413, -1326, 427]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+</System>

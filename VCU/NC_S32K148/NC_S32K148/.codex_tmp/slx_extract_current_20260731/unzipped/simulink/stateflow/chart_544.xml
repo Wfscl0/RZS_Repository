@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="544">
+  <P Name="name">LED_Control/Subsystem1/yellow</P>
+  <P Name="windowPosition">[-1 -7 1708 920]</P>
+  <P Name="viewLimits">[-1325.432 1914.568 236.826 1168.826]</P>
+  <P Name="zoomFactor">2.667</P>
+  <P Name="screen">[1 1 3200 1200 1.25]</P>
+  <P Name="viewObj">544</P>
+  <P Name="ssIdHighWaterMark">53</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="chartFileNumber">14</P>
+  <P Name="allowGlobalAccessToExportedFunctions">0</P>
+  <P Name="saturateOnIntegerOverflow">1</P>
+  <P Name="userSpecifiedStateTransitionExecutionOrder">1</P>
+  <P Name="disableImplicitCasting">1</P>
+  <P Name="actionLanguage">2</P>
+  <Children>
+    <state SSID="51">
+      <P Name="labelString">delay
+en:
+yellow=uint16(60000);</P>
+      <P Name="position">[465.3222 52.7666 124.2222 72.3175]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">544</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="45">
+      <P Name="labelString">node
+en:
+yellow=uint16(0);</P>
+      <P Name="position">[465.3222 190.6391 124.2222 71.0222]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">544</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="24">
+      <P Name="labelString">Close
+en:
+yellow=uint16(0);</P>
+      <P Name="position">[93.5873 413.1111 134.0889 89.4222]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">544</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="28">
+      <P Name="labelString">On
+en:
+yellow=uint16(60000);</P>
+      <P Name="position">[460.3889 413.1111 134.0889 89.4222]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">544</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="29">
+      <P Name="labelString">Blink
+en:
+yellow=uint16(30000);</P>
+      <P Name="position">[804.3333 413.1111 134.0889 89.4222]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">544</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <data SSID="4" name="as_led_yellow">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="44" name="yellow">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="53" name="asms_button">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="49">
+      <P Name="labelString"/>
+      <P Name="labelPosition">[525.31 32.876 0 0]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 -0 1 0 525.1136 20.9863 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">51</P>
+        <P Name="intersection">[1 0 -1 0.4845 525.5054 52.7666 0 0]</P>
+      </dst>
+      <P Name="midPoint">[525.3095 32.8765]</P>
+      <P Name="dataLimits">[523.105 527.905 20.986 52.767]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="52">
+      <P Name="labelString">after(2,sec)</P>
+      <P Name="labelPosition">[532.755 146.045 62.625 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">51</P>
+        <P Name="intersection">[3 0 1 0.5 527.4333 125.084 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">45</P>
+        <P Name="intersection">[1 -0 -1 0.5 527.4333 190.6391 0 0]</P>
+      </dst>
+      <P Name="midPoint">[527.4333 153.8616]</P>
+      <P Name="dataLimits">[525.033 529.833 125.084 190.639]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="31">
+      <P Name="labelString">[as_led_yellow==2&amp;&amp;asms_button==1]</P>
+      <P Name="labelPosition">[818.863 271.204 210 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">45</P>
+        <P Name="intersection">[2 1 0 0.4556 589.5445 222.9947 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">29</P>
+        <P Name="intersection">[1 0 -1 0.5 871.3778 413.1111 0 0]</P>
+      </dst>
+      <P Name="midPoint">[772.4054 272.1087]</P>
+      <P Name="dataLimits">[589.544 873.778 222.995 413.111]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">3</P>
+    </transition>
+    <transition SSID="25">
+      <P Name="labelString">[as_led_yellow==0||asms_button==0]</P>
+      <P Name="labelPosition">[20.464 293.512 200.219 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">45</P>
+        <P Name="intersection">[4 -1 0 0.4506 465.3222 229.6614 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">24</P>
+        <P Name="intersection">[1 0 -1 0.441 152.7199 413.1111 0 0]</P>
+      </dst>
+      <P Name="midPoint">[264.2119 272.5771]</P>
+      <P Name="dataLimits">[150.32 465.322 229.661 413.111]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">2</P>
+    </transition>
+    <transition SSID="30">
+      <P Name="labelString">[as_led_yellow==1&amp;&amp;asms_button==1]</P>
+      <P Name="labelPosition">[536.505 334.645 210 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">45</P>
+        <P Name="intersection">[3 0 1 0.4911 528.5346 261.6614 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">28</P>
+        <P Name="intersection">[1 0 -1 0.5082 528.5346 413.1111 0 0]</P>
+      </dst>
+      <P Name="midPoint">[528.5346 333.3862]</P>
+      <P Name="dataLimits">[526.135 530.935 261.661 413.111]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="34">
+      <P Name="labelString">[as_led_yellow==1&amp;&amp;asms_button==1]</P>
+      <P Name="labelPosition">[253.185 397.693 210 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">24</P>
+        <P Name="intersection">[2 1 0 0.1631 227.6762 427.6928 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">28</P>
+        <P Name="intersection">[4 -1 -0 0.8369 460.3889 427.6928 0 0]</P>
+      </dst>
+      <P Name="midPoint">[340.0325 427.6928]</P>
+      <P Name="dataLimits">[227.676 460.389 425.293 430.093]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="36">
+      <P Name="labelString">[as_led_yellow==2&amp;&amp;asms_button==1]</P>
+      <P Name="labelPosition">[606.385 401.79 210 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">28</P>
+        <P Name="intersection">[2 1 0 0.1631 594.4778 427.6928 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">29</P>
+        <P Name="intersection">[4 -1 -0 0.8369 804.3333 427.6928 0 0]</P>
+      </dst>
+      <P Name="midPoint">[695.4056 427.6928]</P>
+      <P Name="dataLimits">[594.478 804.333 425.293 430.093]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="43">
+      <P Name="labelString">[as_led_yellow==1||asms_button==0]</P>
+      <P Name="labelPosition">[606.399 462.931 200.219 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">29</P>
+        <P Name="intersection">[4 -1 0 0.158 804.3333 488.4071 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">28</P>
+        <P Name="intersection">[2 1 -0 0.842 594.4778 488.4071 0 0]</P>
+      </dst>
+      <P Name="midPoint">[703.4056 488.4071]</P>
+      <P Name="dataLimits">[594.478 804.333 486.007 490.807]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">2</P>
+    </transition>
+    <transition SSID="35">
+      <P Name="labelString">[as_led_yellow==0||asms_button==0]</P>
+      <P Name="labelPosition">[249.817 470.523 200.219 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">28</P>
+        <P Name="intersection">[4 -1 0 0.1403 460.3889 489.9896 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">24</P>
+        <P Name="intersection">[2 1 -0 0.8597 227.6762 489.9896 0 0]</P>
+      </dst>
+      <P Name="midPoint">[348.0325 489.9896]</P>
+      <P Name="dataLimits">[227.676 460.389 487.59 492.39]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">2</P>
+    </transition>
+    <transition SSID="39">
+      <P Name="labelString">[as_led_yellow==2&amp;&amp;asms_button==1]</P>
+      <P Name="labelPosition">[429.387 726.793 210 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">24</P>
+        <P Name="intersection">[3 0 1 0.8706 110.9357 502.5333 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">29</P>
+        <P Name="intersection">[3 0 1 0.1294 921.0739 502.5333 0 0]</P>
+      </dst>
+      <P Name="midPoint">[516.0048 709.0777]</P>
+      <P Name="dataLimits">[110.936 923.474 502.533 708.956]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">2</P>
+    </transition>
+    <transition SSID="38">
+      <P Name="labelString">[as_led_yellow==0||asms_button==0]</P>
+      <P Name="labelPosition">[413.231 630.626 200.219 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">29</P>
+        <P Name="intersection">[3 0 1 0.7865 832.9595 502.5333 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">24</P>
+        <P Name="intersection">[3 0 1 0.2135 199.0501 502.5333 0 0]</P>
+      </dst>
+      <P Name="midPoint">[516.0048 665.0233]</P>
+      <P Name="dataLimits">[196.65 832.96 502.533 664.984]</P>
+      <P Name="subviewer">544</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+  </Children>
+</chart>

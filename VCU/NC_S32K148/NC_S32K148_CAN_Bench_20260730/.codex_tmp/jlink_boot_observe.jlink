@@ -1,0 +1,13 @@
+device S32K148
+si SWD
+speed 4000
+connect
+r
+g
+sleep 3000
+h
+regs
+mem32 0xE000ED08 1
+mem32 0xE000ED28 1
+mem32 0x2001EFF0 4
+q

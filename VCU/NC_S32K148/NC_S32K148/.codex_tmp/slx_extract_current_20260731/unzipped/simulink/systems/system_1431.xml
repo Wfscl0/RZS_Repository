@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">180</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="sensor_signal" SID="1434">
+    <P Name="Position">[-5, 103, 25, 117]</P>
+    <P Name="ZOrder">183</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add" SID="1435">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[435, 72, 470, 163]</P>
+    <P Name="ZOrder">186</P>
+    <P Name="IconShape">rectangular</P>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="1436">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[150, 43, 155, 172]</P>
+    <P Name="ZOrder">184</P>
+    <P Name="OutputSignals">apps1_01,apps2_01</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;apps1_01&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;apps2_01&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="1437">
+    <P Name="Position">[505, 160, 535, 190]</P>
+    <P Name="ZOrder">188</P>
+    <P Name="Value">2</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="1438">
+    <P Name="Position">[820, 240, 850, 270]</P>
+    <P Name="ZOrder">194</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Product" Name="Divide" SID="1439">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[610, 112, 640, 143]</P>
+    <P Name="ZOrder">187</P>
+    <P Name="Inputs">*/</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="1440">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[655, 349, 685, 381]</P>
+    <P Name="ZOrder">193</P>
+    <P Name="Operator">NOT</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Pedal_Fault_Check" SID="1441">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[420, 296, 490, 429]</P>
+    <P Name="ZOrder">185</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1441"/>
+  </Block>
+  <Block BlockType="Product" Name="Product" SID="1442">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[780, 122, 810, 153]</P>
+    <P Name="ZOrder">189</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch" SID="1443">
+    <P Name="Position">[900, 145, 940, 225]</P>
+    <P Name="ZOrder">192</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Constant" Name="max_torque" SID="1444">
+    <P Name="Position">[675, 185, 705, 215]</P>
+    <P Name="ZOrder">190</P>
+    <P Name="Value">50</P>
+  </Block>
+  <Block BlockType="Outport" Name="manual_torque" SID="1445">
+    <P Name="Position">[1050, 178, 1080, 192]</P>
+    <P Name="ZOrder">191</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1438#out:1</P>
+    <P Name="Points">[20, 0; 0, -45]</P>
+    <P Name="Dst">1443#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">1443#out:1</P>
+    <P Name="Dst">1445#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">1440#out:1</P>
+    <P Name="Points">[112, 0; 0, -180]</P>
+    <P Name="Dst">1443#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1444#out:1</P>
+    <P Name="Points">[33, 0; 0, -55]</P>
+    <P Name="Dst">1442#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1434#out:1</P>
+    <P Name="Dst">1436#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;apps1_01&gt;</P>
+    <P Name="ZOrder">9</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1436#out:1</P>
+    <P Name="Points">[173, 0]</P>
+    <Branch>
+      <P Name="ZOrder">8</P>
+      <P Name="Points">[67, 0; 0, 20]</P>
+      <P Name="Dst">1435#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">7</P>
+      <P Name="Points">[0, 255]</P>
+      <P Name="Dst">1441#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;apps2_01&gt;</P>
+    <P Name="ZOrder">12</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1436#out:2</P>
+    <P Name="Points">[85, 0]</P>
+    <Branch>
+      <P Name="ZOrder">11</P>
+      <P Name="Points">[0, 255]</P>
+      <P Name="Dst">1441#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">10</P>
+      <P Name="Dst">1435#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">1439#out:1</P>
+    <P Name="Dst">1442#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">1442#out:1</P>
+    <P Name="Points">[40, 0; 0, 20]</P>
+    <P Name="Dst">1443#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">1437#out:1</P>
+    <P Name="Points">[37, 0; 0, -40]</P>
+    <P Name="Dst">1439#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">1441#out:1</P>
+    <P Name="Dst">1440#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">1435#out:1</P>
+    <P Name="Dst">1439#in:1</P>
+  </Line>
+</System>

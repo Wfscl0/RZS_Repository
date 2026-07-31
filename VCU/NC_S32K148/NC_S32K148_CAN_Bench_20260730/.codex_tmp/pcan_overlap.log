@@ -1,0 +1,11 @@
+PCAN_STATUS=0x00000000
+RX_COUNTS 7B0=0 7B1=0 7B2=0 MOTOR=0
+STATUS_INITIAL=0x-1 STATUS_TIMEOUT=0x-1 STATUS_RECOVERED=0x-1
+LAST_7B0=
+LAST_7B1=
+LAST_7B2=
+FAIL: initial Active=0x-1, expected 0x0F
+FAIL: pedal echo mismatch: 
+FAIL: air echo mismatch: 
+FAIL: pedal-timeout Active=0x-1, expected 0x0D
+FAIL: recovered Active=0x-1, expected 0x0F

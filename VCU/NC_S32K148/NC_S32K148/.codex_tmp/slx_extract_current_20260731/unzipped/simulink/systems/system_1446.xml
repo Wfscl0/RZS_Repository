@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="ipc_motor_torque" SID="1459">
+    <P Name="Position">[-230, -122, -200, -108]</P>
+    <P Name="ZOrder">195</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion" SID="1460">
+    <P Name="Position">[100, -132, 175, -98]</P>
+    <P Name="ZOrder">198</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Saturate" Name="Saturation" SID="1461">
+    <P Name="Position">[-15, -130, 15, -100]</P>
+    <P Name="ZOrder">196</P>
+    <P Name="UpperLimit">55</P>
+    <P Name="LowerLimit">0</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_torque" SID="1462">
+    <P Name="Position">[240, -122, 270, -108]</P>
+    <P Name="ZOrder">197</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">1459#out:1</P>
+    <P Name="Dst">1461#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">1460#out:1</P>
+    <P Name="Dst">1462#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">19</P>
+    <P Name="Src">1461#out:1</P>
+    <P Name="Dst">1460#in:1</P>
+  </Line>
+</System>

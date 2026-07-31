@@ -1,0 +1,10 @@
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/res_protocol.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/res_remote.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/res_vehicle.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/res_bridge_syntax.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/test_res_protocol.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/test_res_remote.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/test_res_vehicle.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/test.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/edit_cache.dir
+C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/build-mingw/CMakeFiles/rebuild_cache.dir

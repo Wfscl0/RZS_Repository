@@ -1,0 +1,3311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">FitSystem</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">1585</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="model_hin" SID="81">
+    <P Name="Position">[370, 458, 400, 472]</P>
+    <P Name="ZOrder">1205</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:5"/>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">model_hin</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="model_ain" SID="82">
+    <P Name="Position">[370, 633, 400, 647]</P>
+    <P Name="ZOrder">1206</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:7"/>
+    <P Name="Port">2</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">model_ain</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="wlspd_fsensor" SID="265">
+    <P Name="Position">[1345, 333, 1375, 347]</P>
+    <P Name="ZOrder">1247</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:9"/>
+    <P Name="Port">3</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">wlspd_fsensor</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="wlspd_hsensor" SID="266">
+    <P Name="Position">[1345, 383, 1375, 397]</P>
+    <P Name="ZOrder">1248</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:11"/>
+    <P Name="Port">4</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">wlspd_hsensor</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="AMI_Tx" SID="457">
+    <P Name="Position">[1530, 1378, 1560, 1392]</P>
+    <P Name="ZOrder">1315</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:13"/>
+    <P Name="Port">5</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">AMI_Tx</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="ESP_T_01" SID="506">
+    <P Name="Position">[3055, 728, 3085, 742]</P>
+    <P Name="ZOrder">1329</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:15"/>
+    <P Name="Port">6</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">ESP_T_01</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="ESP_T_03" SID="507">
+    <P Name="Position">[3055, 803, 3085, 817]</P>
+    <P Name="ZOrder">1330</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:17"/>
+    <P Name="Port">7</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">ESP_T_03</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="ESP_T_06" SID="508">
+    <P Name="Position">[3055, 878, 3085, 892]</P>
+    <P Name="ZOrder">1331</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:19"/>
+    <P Name="Port">8</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">ESP_T_06</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="ESP_T_07" SID="509">
+    <P Name="Position">[3055, 953, 3085, 967]</P>
+    <P Name="ZOrder">1332</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:21"/>
+    <P Name="Port">9</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">ESP_T_07</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="canb_epssendmsg1" SID="780">
+    <P Name="Position">[3055, 1388, 3085, 1402]</P>
+    <P Name="ZOrder">1346</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:23"/>
+    <P Name="Port">10</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">canb_epssendmsg1</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="canb_epssendmsg2" SID="781">
+    <P Name="Position">[3055, 1433, 3085, 1447]</P>
+    <P Name="ZOrder">1347</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:25"/>
+    <P Name="Port">11</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">canb_epssendmsg2</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="res_msg" SID="887">
+    <P Name="Position">[2335, 1288, 2365, 1302]</P>
+    <P Name="ZOrder">1354</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:27"/>
+    <P Name="Port">12</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">res_msg</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="canb_ipctsmsg1" SID="933">
+    <P Name="Position">[2270, 1763, 2300, 1777]</P>
+    <P Name="ZOrder">1364</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:29"/>
+    <P Name="Port">13</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">canb_ipctsmsg1</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="canb_ipctsmsg2" SID="934">
+    <P Name="Position">[2270, 1808, 2300, 1822]</P>
+    <P Name="ZOrder">1365</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:31"/>
+    <P Name="Port">14</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">canb_ipctsmsg2</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="vcu_dbg_control" SID="1530">
+    <P Name="Position">[370, 1978, 400, 1992]</P>
+    <P Name="ZOrder">1457</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:33"/>
+    <P Name="Port">15</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="PortDimensions">8</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">vcu_dbg_control</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="vcu_dbg_pedal_adc" SID="1531">
+    <P Name="Position">[370, 2028, 400, 2042]</P>
+    <P Name="ZOrder">1458</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:35"/>
+    <P Name="Port">16</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="PortDimensions">8</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">vcu_dbg_pedal_adc</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="vcu_dbg_air_wheel" SID="1532">
+    <P Name="Position">[370, 2078, 400, 2092]</P>
+    <P Name="ZOrder">1459</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:37"/>
+    <P Name="Port">17</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="PortDimensions">8</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">vcu_dbg_air_wheel</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="vcu_dbg_digital" SID="1533">
+    <P Name="Position">[370, 2128, 400, 2142]</P>
+    <P Name="ZOrder">1460</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:39"/>
+    <P Name="Port">18</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="PortDimensions">8</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">vcu_dbg_digital</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="vcu_dbg_rx_count" SID="1534">
+    <P Name="Position">[370, 2178, 400, 2192]</P>
+    <P Name="ZOrder">1461</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:41"/>
+    <P Name="Port">19</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="PortDimensions">4</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">vcu_dbg_rx_count</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="10ms" SID="208">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1650, 24, 1670, 46]</P>
+    <P Name="ZOrder">1235</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms1" SID="271">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1665, 579, 1685, 601]</P>
+    <P Name="ZOrder">1250</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms10" SID="888">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[2480, 1134, 2505, 1156]</P>
+    <P Name="ZOrder">1353</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms11" SID="935">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[2510, 1539, 2530, 1561]</P>
+    <P Name="ZOrder">1357</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms12" SID="1406">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[4080, 814, 4100, 836]</P>
+    <P Name="ZOrder">1430</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms13" SID="458">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1670, 1134, 1690, 1156]</P>
+    <P Name="ZOrder">1318</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms2" SID="1294">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[4110, 149, 4130, 171]</P>
+    <P Name="ZOrder">1410</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms3" SID="326">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[2490, 39, 2510, 61]</P>
+    <P Name="ZOrder">1289</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms4" SID="1077">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3240, 49, 3260, 71]</P>
+    <P Name="ZOrder">1374</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms6" SID="1210">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1905, -741, 1925, -719]</P>
+    <P Name="ZOrder">1389</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms7" SID="388">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[2465, 574, 2485, 596]</P>
+    <P Name="ZOrder">1302</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms8" SID="510">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3170, 449, 3190, 471]</P>
+    <P Name="ZOrder">1325</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="10ms9" SID="782">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3305, 1059, 3325, 1081]</P>
+    <P Name="ZOrder">1340</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="SubSystem" Name="AMI_CAN" SID="459">
+    <P Name="Ports">[3, 4, 0, 1]</P>
+    <P Name="Position">[1640, 1197, 1930, 1428]</P>
+    <P Name="ZOrder">1313</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">AMI_Rx</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_459"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="ASB_Selfcheck" SID="327">
+    <P Name="Ports">[5, 3, 0, 1]</P>
+    <P Name="Position">[2430, 95, 2705, 415]</P>
+    <P Name="ZOrder">1288</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_327"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="AS_Stateflow" SID="1211">
+    <P Name="Ports">[14, 7, 0, 1]</P>
+    <P Name="Position">[1795, -631, 2260, -114]</P>
+    <P Name="ZOrder">1384</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1211"/>
+  </Block>
+  <Block BlockType="BusCreator" Name="Ain Bus&#xA;Creator" SID="161">
+    <P Name="Ports">[5, 1]</P>
+    <P Name="Position">[1000, 589, 1005, 711]</P>
+    <P Name="ZOrder">1213</P>
+    <P Name="Inputs">5</P>
+    <P Name="DisplayOption">bar</P>
+    <P Name="InheritFromInputs">on</P>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="263">
+    <P Name="Ports">[1, 5]</P>
+    <P Name="Position">[1450, 70, 1455, 310]</P>
+    <P Name="ZOrder">1245</P>
+    <P Name="OutputSignals">apps1,apps2,brkps,airprs1,airprs2</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;apps1&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;apps2&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">&lt;brkps&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">&lt;airprs1&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">5</P>
+      <P Name="Name">&lt;airprs2&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector1" SID="324">
+    <P Name="Ports">[1, 4]</P>
+    <P Name="Position">[1520, 650, 1525, 785]</P>
+    <P Name="ZOrder">1287</P>
+    <P Name="OutputSignals">di8_side,run_button,tsms,di8_cockpit</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;di8_side&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;run_button&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">&lt;tsms&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">&lt;di8_cockpit&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector2" SID="387">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[2355, 106, 2360, 144]</P>
+    <P Name="ZOrder">1300</P>
+    <P Name="OutputSignals">ebs_driver_check</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;ebs_driver_check&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector3" SID="511">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[3145, 641, 3150, 679]</P>
+    <P Name="ZOrder">1327</P>
+    <P Name="OutputSignals">brake_flag</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;brake_flag&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector4" SID="783">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[3130, 1196, 3135, 1234]</P>
+    <P Name="ZOrder">1343</P>
+    <P Name="OutputSignals">steering_flag</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;steering_flag&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector5" SID="1078">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[3185, 181, 3190, 219]</P>
+    <P Name="ZOrder">1378</P>
+    <P Name="OutputSignals">manual_driving_flag</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;manual_driving_flag&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector6" SID="1289">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[1735, -634, 1740, -596]</P>
+    <P Name="ZOrder">1408</P>
+    <P Name="OutputSignals">asms</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;asms&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector7" SID="1295">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[3970, 438, 3975, 527]</P>
+    <P Name="ZOrder">1418</P>
+    <P Name="OutputSignals">res_stop,res_communication</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;res_stop&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;res_communication&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector8" SID="1407">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[3970, 976, 3975, 1014]</P>
+    <P Name="ZOrder">1432</P>
+    <P Name="OutputSignals">as_emergency_flag</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;as_emergency_flag&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector9" SID="1527">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[3970, 528, 3975, 617]</P>
+    <P Name="ZOrder">1456</P>
+    <P Name="OutputSignals">shutdown_s,shutdown_e</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;shutdown_s&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;shutdown_e&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="SubSystem" Name="Buzzer" SID="1408">
+    <P Name="Ports">[4, 2, 0, 1]</P>
+    <P Name="Position">[4020, 912, 4395, 1133]</P>
+    <P Name="ZOrder">1429</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">r2d_buzzer</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">ebs_buzzer</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_1408"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="DBC_Debug_Select" SID="1538">
+    <P Name="Ports">[9, 7]</P>
+    <P Name="Position">[650, 1948, 1120, 2252]</P>
+    <P Name="ZOrder">1465</P>
+    <P Name="BackgroundColor">lightBlue</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1538"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="DBC_Debug_StatusPack" SID="1539">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[4850, 1940, 5210, 2020]</P>
+    <P Name="ZOrder">1466</P>
+    <P Name="BackgroundColor">lightBlue</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1539"/>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory" SID="298">
+    <P Name="Position">[2890, -510, 2992, -480]</P>
+    <P Name="ZOrder">1262</P>
+    <P Name="DataStoreName">brkmotor_check</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory1" SID="299">
+    <P Name="Position">[3050, -510, 3152, -480]</P>
+    <P Name="ZOrder">1263</P>
+    <P Name="DataStoreName">asb_check</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory10" SID="300">
+    <P Name="Position">[3050, -370, 3152, -340]</P>
+    <P Name="ZOrder">1272</P>
+    <P Name="DataStoreName">as_ready_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory11" SID="301">
+    <P Name="Position">[3370, -300, 3472, -270]</P>
+    <P Name="ZOrder">1273</P>
+    <P Name="DataStoreName">ts</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory12" SID="302">
+    <P Name="Position">[3530, -300, 3632, -270]</P>
+    <P Name="ZOrder">1274</P>
+    <P Name="DataStoreName">r2d_warning</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory13" SID="303">
+    <P Name="Position">[2890, -300, 2992, -270]</P>
+    <P Name="ZOrder">1275</P>
+    <P Name="DataStoreName">ts_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory14" SID="304">
+    <P Name="Position">[3050, -300, 3152, -270]</P>
+    <P Name="ZOrder">1276</P>
+    <P Name="DataStoreName">steer_return</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory15" SID="305">
+    <P Name="Position">[2890, -370, 2992, -340]</P>
+    <P Name="ZOrder">1277</P>
+    <P Name="DataStoreName">as_off_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory16" SID="306">
+    <P Name="Position">[3370, -440, 3472, -410]</P>
+    <P Name="ZOrder">1278</P>
+    <P Name="DataStoreName">as_emergency_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory17" SID="307">
+    <P Name="Position">[3210, -370, 3312, -340]</P>
+    <P Name="ZOrder">1279</P>
+    <P Name="DataStoreName">as_driving_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory18" SID="308">
+    <P Name="Position">[3530, -370, 3632, -340]</P>
+    <P Name="ZOrder">1280</P>
+    <P Name="DataStoreName">r2d_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory19" SID="309">
+    <P Name="Position">[3370, -370, 3472, -340]</P>
+    <P Name="ZOrder">1281</P>
+    <P Name="DataStoreName">as_finished_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory2" SID="310">
+    <P Name="Position">[3210, -510, 3312, -480]</P>
+    <P Name="ZOrder">1264</P>
+    <P Name="DataStoreName">ebs_working</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory20" SID="311">
+    <P Name="Position">[2890, -230, 2992, -200]</P>
+    <P Name="ZOrder">1282</P>
+    <P Name="DataStoreName">ebs_warning</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory21" SID="312">
+    <P Name="Position">[3050, -230, 3152, -200]</P>
+    <P Name="ZOrder">1283</P>
+    <P Name="DataStoreName">task_finish</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory22" SID="313">
+    <P Name="Position">[3210, -230, 3312, -200]</P>
+    <P Name="ZOrder">1284</P>
+    <P Name="DataStoreName">ipc_astask</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory23" SID="314">
+    <P Name="Position">[3530, -230, 3632, -200]</P>
+    <P Name="ZOrder">1286</P>
+    <P Name="DataStoreName">ami_astask</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory24" SID="315">
+    <P Name="Position">[3370, -230, 3472, -200]</P>
+    <P Name="ZOrder">1285</P>
+    <P Name="DataStoreName">oilprs_frsensordata</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory25" SID="1466">
+    <P Name="Position">[3215, -125, 3317, -95]</P>
+    <P Name="ZOrder">1442</P>
+    <P Name="DataStoreName">inspection_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory26" SID="1471">
+    <P Name="Position">[3370, -125, 3472, -95]</P>
+    <P Name="ZOrder">1445</P>
+    <P Name="DataStoreName">astask_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory27" SID="1476">
+    <P Name="Position">[3050, -125, 3152, -95]</P>
+    <P Name="ZOrder">1449</P>
+    <P Name="DataStoreName">as_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory3" SID="316">
+    <P Name="Position">[3370, -510, 3472, -480]</P>
+    <P Name="ZOrder">1265</P>
+    <P Name="DataStoreName">brake_on</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory4" SID="317">
+    <P Name="Position">[3530, -510, 3632, -480]</P>
+    <P Name="ZOrder">1266</P>
+    <P Name="DataStoreName">ebs_check</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory5" SID="318">
+    <P Name="Position">[2890, -440, 2992, -410]</P>
+    <P Name="ZOrder">1267</P>
+    <P Name="DataStoreName">steering_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory6" SID="319">
+    <P Name="Position">[3050, -440, 3152, -410]</P>
+    <P Name="ZOrder">1268</P>
+    <P Name="DataStoreName">brake_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory7" SID="320">
+    <P Name="Position">[3210, -440, 3312, -410]</P>
+    <P Name="ZOrder">1269</P>
+    <P Name="DataStoreName">manual_driving_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory8" SID="321">
+    <P Name="Position">[3530, -440, 3632, -410]</P>
+    <P Name="ZOrder">1270</P>
+    <P Name="DataStoreName">ebs_system_flag</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="Data Store&#xA;Memory9" SID="322">
+    <P Name="Position">[3210, -300, 3312, -270]</P>
+    <P Name="ZOrder">1271</P>
+    <P Name="DataStoreName">steer_zero</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read" SID="378">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[2215, 370, 2305, 400]</P>
+    <P Name="ZOrder">1292</P>
+    <P Name="DataStoreName">brkmotor_check</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read1" SID="389">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[2285, 660, 2385, 690]</P>
+    <P Name="ZOrder">1306</P>
+    <P Name="DataStoreName">asb_check</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read10" SID="1268">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -270, 1710, -240]</P>
+    <P Name="ZOrder">1399</P>
+    <P Name="DataStoreName">steer_zero</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read11" SID="1269">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -190, 1710, -160]</P>
+    <P Name="ZOrder">1400</P>
+    <P Name="DataStoreName">ebs_warning</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read12" SID="497">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1495, 1295, 1595, 1325]</P>
+    <P Name="ZOrder">1316</P>
+    <P Name="DataStoreName">task_finish</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read13" SID="1296">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3850, 215, 3940, 245]</P>
+    <P Name="ZOrder">1416</P>
+    <P Name="DataStoreName">brake_on</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read14" SID="1468">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3030, 1470, 3110, 1500]</P>
+    <P Name="ZOrder">1444</P>
+    <P Name="DataStoreName">inspection_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read15" SID="1079">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3035, 320, 3135, 350]</P>
+    <P Name="ZOrder">1381</P>
+    <P Name="DataStoreName">ts</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read16" SID="1473">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -550, 1710, -520]</P>
+    <P Name="ZOrder">1447</P>
+    <P Name="DataStoreName">astask_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read17" SID="936">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[2235, 1665, 2335, 1695]</P>
+    <P Name="ZOrder">1367</P>
+    <P Name="DataStoreName">ipc_astask</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read18" SID="1270">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -310, 1710, -280]</P>
+    <P Name="ZOrder">1403</P>
+    <P Name="DataStoreName">task_finish</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read19" SID="937">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[2235, 1845, 2335, 1875]</P>
+    <P Name="ZOrder">1372</P>
+    <P Name="DataStoreName">steer_return</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read2" SID="784">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3005, 1245, 3105, 1275]</P>
+    <P Name="ZOrder">1348</P>
+    <P Name="DataStoreName">steer_return</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read20" SID="1475">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -150, 1710, -120]</P>
+    <P Name="ZOrder">1448</P>
+    <P Name="DataStoreName">inspection_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read21" SID="1478">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3035, 230, 3135, 260]</P>
+    <P Name="ZOrder">1451</P>
+    <P Name="DataStoreName">as_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read22" SID="1479">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3855, 350, 3940, 380]</P>
+    <P Name="ZOrder">1452</P>
+    <P Name="DataStoreName">as_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read23" SID="1480">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1380, 790, 1480, 820]</P>
+    <P Name="ZOrder">1453</P>
+    <P Name="DataStoreName">as_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read24" SID="1481">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3835, 1090, 3935, 1120]</P>
+    <P Name="ZOrder">1454</P>
+    <P Name="DataStoreName">as_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read3" SID="1421">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[3835, 925, 3935, 955]</P>
+    <P Name="ZOrder">1433</P>
+    <P Name="DataStoreName">r2d_warning</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read4" SID="1271">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -590, 1710, -560]</P>
+    <P Name="ZOrder">1394</P>
+    <P Name="DataStoreName">ebs_check</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read5" SID="272">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1380, 825, 1480, 855]</P>
+    <P Name="ZOrder">1255</P>
+    <P Name="DataStoreName">brake_on</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read6" SID="1272">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -510, 1710, -480]</P>
+    <P Name="ZOrder">1395</P>
+    <P Name="DataStoreName">ts</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read7" SID="1273">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -470, 1710, -440]</P>
+    <P Name="ZOrder">1396</P>
+    <P Name="DataStoreName">ebs_working</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read8" SID="1274">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -430, 1710, -400]</P>
+    <P Name="ZOrder">1397</P>
+    <P Name="DataStoreName">brake_on</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="Data Store&#xA;Read9" SID="1275">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[1610, -390, 1710, -360]</P>
+    <P Name="ZOrder">1398</P>
+    <P Name="DataStoreName">asb_check</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write" SID="379">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[2770, 160, 2870, 190]</P>
+    <P Name="ZOrder">1293</P>
+    <P Name="DataStoreName">asb_check</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write1" SID="380">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[2770, 807, 2850, 833]</P>
+    <P Name="ZOrder">1294</P>
+    <P Name="DataStoreName">ebs_working</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write10" SID="1467">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1975, 1325, 2075, 1355]</P>
+    <P Name="ZOrder">1443</P>
+    <P Name="DataStoreName">inspection_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write11" SID="938">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[2785, 1765, 2885, 1795]</P>
+    <P Name="ZOrder">1368</P>
+    <P Name="DataStoreName">task_finish</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write12" SID="498">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1975, 1270, 2075, 1300]</P>
+    <P Name="ZOrder">1319</P>
+    <P Name="DataStoreName">ami_astask</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write13" SID="1472">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1975, 1380, 2075, 1410]</P>
+    <P Name="ZOrder">1446</P>
+    <P Name="DataStoreName">astask_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write14" SID="1477">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1130, 555, 1215, 585]</P>
+    <P Name="ZOrder">1450</P>
+    <P Name="DataStoreName">as_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write2" SID="381">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[2770, 320, 2870, 350]</P>
+    <P Name="ZOrder">1295</P>
+    <P Name="DataStoreName">brake_on</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write3" SID="382">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[2770, 877, 2850, 903]</P>
+    <P Name="ZOrder">1296</P>
+    <P Name="DataStoreName">ebs_check</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write4" SID="512">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[3645, 945, 3745, 975]</P>
+    <P Name="ZOrder">1337</P>
+    <P Name="DataStoreName">brkmotor_check</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write5" SID="785">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[3685, 1255, 3785, 1285]</P>
+    <P Name="ZOrder">1349</P>
+    <P Name="DataStoreName">steer_zero</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write6" SID="273">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1920, 655, 2020, 685]</P>
+    <P Name="ZOrder">1254</P>
+    <P Name="DataStoreName">ts</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write7" SID="1422">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[4495, 1100, 4595, 1130]</P>
+    <P Name="ZOrder">1434</P>
+    <P Name="DataStoreName">ebs_warning</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write8" SID="1276">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[2335, -520, 2435, -490]</P>
+    <P Name="ZOrder">1401</P>
+    <P Name="DataStoreName">r2d_warning</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="Data Store&#xA;Write9" SID="1277">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[2325, -265, 2425, -235]</P>
+    <P Name="ZOrder">1402</P>
+    <P Name="DataStoreName">steer_return</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="EBS" SID="390">
+    <P Name="Ports">[5, 5, 0, 1]</P>
+    <P Name="Position">[2450, 648, 2685, 922]</P>
+    <P Name="ZOrder">1301</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">ebs_trig</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">ebs_watchdog</P>
+      <P Name="PropagatedSignals">asms</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_390"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="EPS" SID="786">
+    <P Name="Ports">[7, 2, 0, 1]</P>
+    <P Name="Position">[3185, 1188, 3640, 1512]</P>
+    <P Name="ZOrder">1339</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">canb_epsmsg</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_786"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="ESP" SID="513">
+    <P Name="Ports">[6, 6, 0, 1]</P>
+    <P Name="Position">[3170, 540, 3575, 1005]</P>
+    <P Name="ZOrder">1324</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_513"/>
+  </Block>
+  <Block BlockType="Logic" Name="FSEC_EBS_Error_OR" SID="1576">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[1755, 799, 1810, 846]</P>
+    <P Name="ZOrder">1471</P>
+    <P Name="Operator">OR</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="UnitDelay" Name="FSEC_Safety_Fault_Delay" SID="1560">
+    <P Name="Position">[995, 972, 1045, 1008]</P>
+    <P Name="ZOrder">1468</P>
+    <P Name="InitialCondition">false</P>
+    <P Name="SampleTime">0.01</P>
+    <P Name="HasFrameUpgradeWarning">on</P>
+  </Block>
+  <Block BlockType="Logic" Name="FSEC_Safety_Fault_OR" SID="1559">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[915, 969, 970, 1016]</P>
+    <P Name="ZOrder">1467</P>
+    <P Name="Operator">OR</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="DataStoreMemory" Name="FSEC_Safety_Lock_Memory" SID="1563">
+    <P Name="Position">[1025, 960, 1155, 995]</P>
+    <P Name="ZOrder">1469</P>
+    <P Name="DataStoreName">safety_lock</P>
+    <P Name="ReadBeforeWriteMsg">warning</P>
+    <P Name="WriteAfterWriteMsg">warning</P>
+    <P Name="WriteAfterReadMsg">warning</P>
+    <P Name="ShowAdditionalParam">off</P>
+    <P Name="OutDataTypeStr">double</P>
+  </Block>
+  <Block BlockType="DataStoreWrite" Name="FSEC_Safety_Lock_Write" SID="1564">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1185, 960, 1285, 990]</P>
+    <P Name="ZOrder">1470</P>
+    <P Name="DataStoreName">safety_lock</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="From" Name="From" SID="169">
+    <P Name="Position">[4645, 538, 4755, 562]</P>
+    <P Name="ZOrder">1218</P>
+    <P Name="GotoTag">led_brake</P>
+  </Block>
+  <Block BlockType="From" Name="From1" SID="171">
+    <P Name="Position">[4645, 578, 4755, 602]</P>
+    <P Name="ZOrder">1220</P>
+    <P Name="GotoTag">led_assi_y</P>
+  </Block>
+  <Block BlockType="From" Name="From10" SID="188">
+    <P Name="Position">[4645, 938, 4755, 962]</P>
+    <P Name="ZOrder">1230</P>
+    <P Name="GotoTag">buzzer_r2d</P>
+  </Block>
+  <Block BlockType="From" Name="From11" SID="189">
+    <P Name="Position">[4645, 978, 4755, 1002]</P>
+    <P Name="ZOrder">1231</P>
+    <P Name="GotoTag">buzzer_ebs</P>
+  </Block>
+  <Block BlockType="From" Name="From12" SID="264">
+    <P Name="Position">[1315, 179, 1400, 201]</P>
+    <P Name="ZOrder">1246</P>
+    <P Name="GotoTag">Ain</P>
+  </Block>
+  <Block BlockType="From" Name="From13" SID="297">
+    <P Name="Position">[1385, 709, 1470, 731]</P>
+    <P Name="ZOrder">1261</P>
+    <P Name="GotoTag">Hin</P>
+  </Block>
+  <Block BlockType="From" Name="From14" SID="383">
+    <P Name="Position">[2215, 178, 2300, 202]</P>
+    <P Name="ZOrder">1297</P>
+    <P Name="GotoTag">sensor_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From15" SID="384">
+    <P Name="Position">[2215, 242, 2305, 268]</P>
+    <P Name="ZOrder">1298</P>
+    <P Name="GotoTag">ESP_T_03signal</P>
+  </Block>
+  <Block BlockType="From" Name="From16" SID="386">
+    <P Name="Position">[2215, 114, 2300, 136]</P>
+    <P Name="ZOrder">1299</P>
+    <P Name="GotoTag">Hin</P>
+  </Block>
+  <Block BlockType="From" Name="From17" SID="406">
+    <P Name="Position">[2290, 829, 2375, 851]</P>
+    <P Name="ZOrder">1308</P>
+    <P Name="GotoTag">Hin</P>
+  </Block>
+  <Block BlockType="From" Name="From18" SID="413">
+    <P Name="Position">[2290, 883, 2375, 907]</P>
+    <P Name="ZOrder">1311</P>
+    <P Name="GotoTag">sensor_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From19" SID="385">
+    <P Name="Position">[2215, 306, 2305, 334]</P>
+    <P Name="ZOrder">1291</P>
+    <P Name="GotoTag">res_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From2" SID="172">
+    <P Name="Position">[4645, 618, 4755, 642]</P>
+    <P Name="ZOrder">1221</P>
+    <P Name="GotoTag">led_assi_b</P>
+  </Block>
+  <Block BlockType="From" Name="From20" SID="499">
+    <P Name="Position">[1485, 1222, 1600, 1248]</P>
+    <P Name="ZOrder">1314</P>
+    <P Name="GotoTag">as_flag_state</P>
+  </Block>
+  <Block BlockType="From" Name="From21" SID="772">
+    <P Name="Position">[3010, 573, 3125, 597]</P>
+    <P Name="ZOrder">1326</P>
+    <P Name="GotoTag">ipc_esp_pressure</P>
+  </Block>
+  <Block BlockType="From" Name="From22" SID="1526">
+    <P Name="Position">[3830, 564, 3915, 586]</P>
+    <P Name="ZOrder">1455</P>
+    <P Name="GotoTag">Hin</P>
+  </Block>
+  <Block BlockType="From" Name="From24" SID="1081">
+    <P Name="Position">[3035, 278, 3150, 302]</P>
+    <P Name="ZOrder">1376</P>
+    <P Name="GotoTag">ipc_motor_torque</P>
+  </Block>
+  <Block BlockType="From" Name="From25" SID="1083">
+    <P Name="Position">[3025, 141, 3160, 169]</P>
+    <P Name="ZOrder">1382</P>
+    <P Name="GotoTag">sensor_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From26" SID="1278">
+    <P Name="Position">[1610, -229, 1715, -201]</P>
+    <P Name="ZOrder">1390</P>
+    <P Name="GotoTag">res_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From27" SID="883">
+    <P Name="Position">[3000, 1202, 3115, 1228]</P>
+    <P Name="ZOrder">1344</P>
+    <P Name="GotoTag">as_flag_state</P>
+  </Block>
+  <Block BlockType="From" Name="From3" SID="173">
+    <P Name="Position">[4645, 658, 4755, 682]</P>
+    <P Name="ZOrder">1222</P>
+    <P Name="GotoTag">led_ebserror</P>
+  </Block>
+  <Block BlockType="From" Name="From30" SID="884">
+    <P Name="Position">[2995, 1291, 3110, 1319]</P>
+    <P Name="ZOrder">1341</P>
+    <P Name="GotoTag">ipc_eps_angle</P>
+  </Block>
+  <Block BlockType="From" Name="From31" SID="402">
+    <P Name="Position">[2290, 720, 2380, 740]</P>
+    <P Name="ZOrder">1303</P>
+    <P Name="GotoTag">ipc_err</P>
+  </Block>
+  <Block BlockType="From" Name="From32" SID="885">
+    <P Name="Position">[2995, 1336, 3110, 1364]</P>
+    <P Name="ZOrder">1342</P>
+    <P Name="GotoTag">ipc_eps_velocity</P>
+  </Block>
+  <Block BlockType="From" Name="From33" SID="939">
+    <P Name="Position">[2245, 1714, 2335, 1736]</P>
+    <P Name="ZOrder">1358</P>
+    <P Name="GotoTag">res_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From34" SID="403">
+    <P Name="Position">[2290, 774, 2380, 796]</P>
+    <P Name="ZOrder">1305</P>
+    <P Name="GotoTag">as_ebs_trig</P>
+  </Block>
+  <Block BlockType="From" Name="From35" SID="773">
+    <P Name="Position">[3010, 647, 3125, 673]</P>
+    <P Name="ZOrder">1328</P>
+    <P Name="GotoTag">as_flag_state</P>
+  </Block>
+  <Block BlockType="From" Name="From37" SID="1282">
+    <P Name="Position">[1610, -348, 1715, -322]</P>
+    <P Name="ZOrder">1404</P>
+    <P Name="GotoTag">sensor_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From38" SID="1288">
+    <P Name="Position">[1615, -626, 1700, -604]</P>
+    <P Name="ZOrder">1407</P>
+    <P Name="GotoTag">Hin</P>
+  </Block>
+  <Block BlockType="From" Name="From39" SID="1082">
+    <P Name="Position">[3035, 187, 3150, 213]</P>
+    <P Name="ZOrder">1377</P>
+    <P Name="GotoTag">as_flag_state</P>
+  </Block>
+  <Block BlockType="From" Name="From4" SID="174">
+    <P Name="Position">[4645, 698, 4755, 722]</P>
+    <P Name="ZOrder">1223</P>
+    <P Name="GotoTag">res_err</P>
+  </Block>
+  <Block BlockType="From" Name="From40" SID="1297">
+    <P Name="Position">[3855, 265, 3940, 285]</P>
+    <P Name="ZOrder">1411</P>
+    <P Name="GotoTag">as_led_blue</P>
+  </Block>
+  <Block BlockType="From" Name="From41" SID="1298">
+    <P Name="Position">[3860, 625, 3975, 655]</P>
+    <P Name="ZOrder">1422</P>
+    <P Name="GotoTag">ESP_T_03signal</P>
+  </Block>
+  <Block BlockType="From" Name="From42" SID="1299">
+    <P Name="Position">[3855, 310, 3940, 330]</P>
+    <P Name="ZOrder">1412</P>
+    <P Name="GotoTag">as_led_yellow</P>
+  </Block>
+  <Block BlockType="From" Name="From44" SID="1301">
+    <P Name="Position">[3860, 399, 3940, 421]</P>
+    <P Name="ZOrder">1421</P>
+    <P Name="GotoTag">sensor_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From45" SID="1302">
+    <P Name="Position">[3830, 474, 3920, 496]</P>
+    <P Name="ZOrder">1417</P>
+    <P Name="GotoTag">res_signal</P>
+  </Block>
+  <Block BlockType="From" Name="From46" SID="1423">
+    <P Name="Position">[3835, 1040, 3940, 1060]</P>
+    <P Name="ZOrder">1435</P>
+    <P Name="GotoTag">ts_warning</P>
+  </Block>
+  <Block BlockType="From" Name="From47" SID="1424">
+    <P Name="Position">[3835, 984, 3940, 1006]</P>
+    <P Name="ZOrder">1431</P>
+    <P Name="GotoTag">as_flag_state</P>
+  </Block>
+  <Block BlockType="From" Name="From5" SID="183">
+    <P Name="Position">[4645, 738, 4755, 762]</P>
+    <P Name="ZOrder">1225</P>
+    <P Name="GotoTag">ebs_trig</P>
+  </Block>
+  <Block BlockType="From" Name="From6" SID="184">
+    <P Name="Position">[4645, 778, 4755, 802]</P>
+    <P Name="ZOrder">1226</P>
+    <P Name="GotoTag">led_bmserr</P>
+  </Block>
+  <Block BlockType="From" Name="From7" SID="185">
+    <P Name="Position">[4645, 818, 4755, 842]</P>
+    <P Name="ZOrder">1227</P>
+    <P Name="GotoTag">led_imderr</P>
+  </Block>
+  <Block BlockType="From" Name="From8" SID="186">
+    <P Name="Position">[4645, 858, 4755, 882]</P>
+    <P Name="ZOrder">1228</P>
+    <P Name="GotoTag">di8</P>
+  </Block>
+  <Block BlockType="From" Name="From9" SID="187">
+    <P Name="Position">[4645, 898, 4755, 922]</P>
+    <P Name="ZOrder">1229</P>
+    <P Name="GotoTag">run</P>
+  </Block>
+  <Block BlockType="Reference" Name="Function-Call&#xA;Generator" SID="90">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[605, 284, 625, 306]</P>
+    <P Name="ZOrder">1211</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Function-Call&#xA;Generator1" SID="168">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[5055, 459, 5075, 481]</P>
+    <P Name="ZOrder">1217</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Ports &amp;
+Subsystems/Function-Call
+Generator</P>
+    <P Name="SourceType">Function-Call Generator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">0.01</P>
+      <P Name="numberOfIterations">1</P>
+      <P Name="DisallowWideOutput">off</P>
+      <P Name="ShowEnablePort">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Goto" Name="Goto" SID="162">
+    <P Name="Position">[1130, 479, 1215, 501]</P>
+    <P Name="ZOrder">1214</P>
+    <P Name="GotoTag">Hin</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto1" SID="163">
+    <P Name="Position">[1130, 639, 1215, 661]</P>
+    <P Name="ZOrder">1215</P>
+    <P Name="GotoTag">Ain</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto10" SID="1303">
+    <P Name="Position">[4485, 305, 4590, 335]</P>
+    <P Name="ZOrder">1424</P>
+    <P Name="GotoTag">led_assi_b</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto11" SID="1304">
+    <P Name="Position">[4485, 385, 4590, 415]</P>
+    <P Name="ZOrder">1425</P>
+    <P Name="GotoTag">led_assi_y</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto13" SID="1305">
+    <P Name="Position">[4485, 460, 4590, 490]</P>
+    <P Name="ZOrder">1426</P>
+    <P Name="GotoTag">led_ebserror</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto14" SID="889">
+    <P Name="Position">[2790, 1329, 2880, 1351]</P>
+    <P Name="ZOrder">1355</P>
+    <P Name="GotoTag">res_err</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto15" SID="404">
+    <P Name="Position">[2770, 669, 2850, 691]</P>
+    <P Name="ZOrder">1307</P>
+    <P Name="GotoTag">ebs_trig</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto16" SID="940">
+    <P Name="Position">[2785, 1647, 2885, 1663]</P>
+    <P Name="ZOrder">1359</P>
+    <P Name="GotoTag">ipc_esp_pressure</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto17" SID="941">
+    <P Name="Position">[2785, 1697, 2885, 1713]</P>
+    <P Name="ZOrder">1360</P>
+    <P Name="GotoTag">ipc_eps_angle</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto18" SID="942">
+    <P Name="Position">[2785, 1722, 2885, 1738]</P>
+    <P Name="ZOrder">1361</P>
+    <P Name="GotoTag">ipc_eps_velocity</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto19" SID="943">
+    <P Name="Position">[2785, 1747, 2885, 1763]</P>
+    <P Name="ZOrder">1362</P>
+    <P Name="GotoTag">ipc_err</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto2" SID="209">
+    <P Name="Position">[1920, 226, 2020, 254]</P>
+    <P Name="ZOrder">1243</P>
+    <P Name="GotoTag">sensor_signal</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto20" SID="890">
+    <P Name="Position">[2790, 1239, 2880, 1261]</P>
+    <P Name="ZOrder">1351</P>
+    <P Name="GotoTag">res_signal</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto21" SID="1306">
+    <P Name="Position">[4490, 535, 4595, 565]</P>
+    <P Name="ZOrder">1427</P>
+    <P Name="GotoTag">led_imderr</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto22" SID="1307">
+    <P Name="Position">[4490, 610, 4595, 640]</P>
+    <P Name="ZOrder">1428</P>
+    <P Name="GotoTag">led_bmserr</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto23" SID="944">
+    <P Name="Position">[2790, 1670, 2885, 1690]</P>
+    <P Name="ZOrder">1363</P>
+    <P Name="GotoTag">ipc_motor_torque</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto24" SID="275">
+    <P Name="Position">[1920, 710, 2025, 740]</P>
+    <P Name="ZOrder">1259</P>
+    <P Name="GotoTag">di8</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto25" SID="276">
+    <P Name="Position">[1920, 765, 2025, 795]</P>
+    <P Name="ZOrder">1260</P>
+    <P Name="GotoTag">run</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto26" SID="1425">
+    <P Name="Position">[4490, 950, 4595, 980]</P>
+    <P Name="ZOrder">1436</P>
+    <P Name="GotoTag">buzzer_r2d</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto29" SID="1427">
+    <P Name="Position">[4490, 1005, 4595, 1035]</P>
+    <P Name="ZOrder">1438</P>
+    <P Name="GotoTag">buzzer_ebs</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto3" SID="774">
+    <P Name="Position">[3650, 720, 3765, 750]</P>
+    <P Name="ZOrder">1338</P>
+    <P Name="GotoTag">ESP_T_03signal</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto4" SID="1283">
+    <P Name="Position">[2330, -433, 2460, -407]</P>
+    <P Name="ZOrder">1386</P>
+    <P Name="GotoTag">as_led_blue</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto5" SID="277">
+    <P Name="Position">[1920, 820, 2025, 850]</P>
+    <P Name="ZOrder">1257</P>
+    <P Name="GotoTag">ts_warning</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto6" SID="1285">
+    <P Name="Position">[2325, -348, 2455, -322]</P>
+    <P Name="ZOrder">1387</P>
+    <P Name="GotoTag">as_led_yellow</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto7" SID="1286">
+    <P Name="Position">[2340, -178, 2455, -152]</P>
+    <P Name="ZOrder">1393</P>
+    <P Name="GotoTag">as_flag_state</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto8" SID="1308">
+    <P Name="Position">[4485, 230, 4590, 260]</P>
+    <P Name="ZOrder">1423</P>
+    <P Name="GotoTag">led_brake</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto9" SID="1287">
+    <P Name="Position">[2335, -603, 2465, -577]</P>
+    <P Name="ZOrder">1388</P>
+    <P Name="GotoTag">as_ebs_trig</P>
+  </Block>
+  <Block BlockType="BusCreator" Name="Hin Bus&#xA;Creator" SID="160">
+    <P Name="Ports">[8, 1]</P>
+    <P Name="Position">[1000, 388, 1005, 587]</P>
+    <P Name="ZOrder">1212</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">8</P>
+    <P Name="DisplayOption">bar</P>
+    <P Name="InheritFromInputs">on</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="IPC" SID="945">
+    <P Name="Ports">[5, 10, 0, 1]</P>
+    <P Name="Position">[2425, 1649, 2710, 1886]</P>
+    <P Name="ZOrder">1356</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">10</P>
+      <P Name="Name">canb_ipcrxmsg</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_945"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Input_Convert" SID="85">
+    <P Name="Ports">[2, 13, 0, 1]</P>
+    <P Name="Position">[520, 375, 855, 725]</P>
+    <P Name="ZOrder">1209</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">ebs_driver_check</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">shutdown_s</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">shutdown_e</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">di8_cockpit</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">5</P>
+      <P Name="Name">di8_side</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">6</P>
+      <P Name="Name">run_button</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">7</P>
+      <P Name="Name">tsms</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">8</P>
+      <P Name="Name">asms</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">9</P>
+      <P Name="Name">apps1</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">10</P>
+      <P Name="Name">apps2</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">11</P>
+      <P Name="Name">brkps</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">12</P>
+      <P Name="Name">airprs1</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">13</P>
+      <P Name="Name">airprs2</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_85"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="LED_Control" SID="1309">
+    <P Name="Ports">[10, 6, 0, 1]</P>
+    <P Name="Position">[4030, 211, 4380, 664]</P>
+    <P Name="ZOrder">1409</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">led_brake</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">led_assi_blue</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">led_assi_yellow</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">led_ebs_error</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">5</P>
+      <P Name="Name">led_imd_error</P>
+      <P Name="PropagatedSignals">led_imderr</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">6</P>
+      <P Name="Name">led_bms_error</P>
+      <P Name="PropagatedSignals">led_bmserr</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_1309"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Motor_Control" SID="1084">
+    <P Name="Ports">[5, 2, 0, 1]</P>
+    <P Name="Position">[3240, 134, 3510, 356]</P>
+    <P Name="ZOrder">1373</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">cana_motor_cmd</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">cana_motor_cmd3</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_1084"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Output_Convert" SID="164">
+    <P Name="Ports">[12, 2, 0, 1]</P>
+    <P Name="Position">[4955, 529, 5280, 1011]</P>
+    <P Name="ZOrder">1216</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_164"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Res" SID="891">
+    <P Name="Ports">[1, 2, 0, 1]</P>
+    <P Name="Position">[2425, 1203, 2710, 1387]</P>
+    <P Name="ZOrder">1352</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">res_error</P>
+      <P Name="PropagatedSignals">res_stop</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_891"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Sensor_Signal" SID="210">
+    <P Name="Ports">[7, 1, 0, 1]</P>
+    <P Name="Position">[1655, 68, 1855, 412]</P>
+    <P Name="ZOrder">1234</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_210"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="TS_Activation" SID="278">
+    <P Name="Ports">[6, 4, 0, 1]</P>
+    <P Name="Position">[1655, 643, 1860, 862]</P>
+    <P Name="ZOrder">1249</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_278"/>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator" SID="775">
+    <P Name="Position">[3650, 650, 3670, 670]</P>
+    <P Name="ZOrder">1334</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator1" SID="1073">
+    <P Name="Position">[2825, 1795, 2845, 1815]</P>
+    <P Name="ZOrder">1369</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator2" SID="776">
+    <P Name="Position">[3650, 800, 3670, 820]</P>
+    <P Name="ZOrder">1335</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator3" SID="777">
+    <P Name="Position">[3650, 875, 3670, 895]</P>
+    <P Name="ZOrder">1336</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator4" SID="1074">
+    <P Name="Position">[2825, 1820, 2845, 1840]</P>
+    <P Name="ZOrder">1370</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator5" SID="1075">
+    <P Name="Position">[2825, 1845, 2845, 1865]</P>
+    <P Name="ZOrder">1371</P>
+  </Block>
+  <Block BlockType="Outport" Name="model_lox" SID="199">
+    <P Name="Position">[5445, 643, 5475, 657]</P>
+    <P Name="ZOrder">1232</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:43"/>
+  </Block>
+  <Block BlockType="Outport" Name="model_hox" SID="200">
+    <P Name="Position">[5445, 883, 5475, 897]</P>
+    <P Name="ZOrder">1233</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:45"/>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_watchdog" SID="405">
+    <P Name="Position">[2795, 743, 2825, 757]</P>
+    <P Name="ZOrder">1304</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:47"/>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="AMI_RX" SID="500">
+    <P Name="Position">[2010, 1223, 2040, 1237]</P>
+    <P Name="ZOrder">1317</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:49"/>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="ESP_R_00" SID="778">
+    <P Name="Position">[3645, 578, 3675, 592]</P>
+    <P Name="ZOrder">1333</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:51"/>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="canb_epsmsg" SID="886">
+    <P Name="Position">[3715, 1423, 3745, 1437]</P>
+    <P Name="ZOrder">1345</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:53"/>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Outport" Name="canb_ipcrxmsg" SID="1076">
+    <P Name="Position">[2820, 1873, 2850, 1887]</P>
+    <P Name="ZOrder">1366</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:55"/>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Outport" Name="cana_motor_cmd" SID="1200">
+    <P Name="Position">[3615, 183, 3645, 197]</P>
+    <P Name="ZOrder">1379</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:57"/>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Outport" Name="cana_motor_cmd3" SID="1201">
+    <P Name="Position">[3615, 293, 3645, 307]</P>
+    <P Name="ZOrder">1380</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:59"/>
+    <P Name="Port">9</P>
+  </Block>
+  <Block BlockType="Outport" Name="vcu_dbg_status" SID="1535">
+    <P Name="Position">[5445, 1988, 5475, 2002]</P>
+    <P Name="ZOrder">1462</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:61"/>
+    <P Name="Port">10</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="PortDimensions">8</P>
+  </Block>
+  <Block BlockType="Outport" Name="vcu_dbg_pedal_echo" SID="1536">
+    <P Name="Position">[5445, 2038, 5475, 2052]</P>
+    <P Name="ZOrder">1463</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:63"/>
+    <P Name="Port">11</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="PortDimensions">8</P>
+  </Block>
+  <Block BlockType="Outport" Name="vcu_dbg_air_wheel_echo" SID="1537">
+    <P Name="Position">[5445, 2088, 5475, 2102]</P>
+    <P Name="ZOrder">1464</P>
+    <Object Reference="true" PropName="Mappings" ObjectID="/simulink/blockdiagram.xml:65"/>
+    <P Name="Port">12</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="PortDimensions">8</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">24</P>
+    <P Name="Src">90#out:1</P>
+    <P Name="Points">[55, 0]</P>
+    <P Name="Dst">85#trigger</P>
+  </Line>
+  <Line>
+    <P Name="Name">ebs_driver_check</P>
+    <P Name="ZOrder">29</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:1</P>
+    <P Name="Dst">160#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">shutdown_s</P>
+    <P Name="ZOrder">30</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:2</P>
+    <P Name="Dst">160#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">shutdown_e</P>
+    <P Name="ZOrder">31</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:3</P>
+    <P Name="Dst">160#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">di8_cockpit</P>
+    <P Name="ZOrder">32</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:4</P>
+    <P Name="Dst">160#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">di8_side</P>
+    <P Name="ZOrder">33</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:5</P>
+    <P Name="Dst">160#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">run_button</P>
+    <P Name="ZOrder">34</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:6</P>
+    <P Name="Dst">160#in:6</P>
+  </Line>
+  <Line>
+    <P Name="Name">tsms</P>
+    <P Name="ZOrder">35</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:7</P>
+    <P Name="Dst">160#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">asms</P>
+    <P Name="ZOrder">36</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:8</P>
+    <P Name="Points">[100, 0]</P>
+    <Branch>
+      <P Name="ZOrder">263</P>
+      <P Name="Points">[0, -5]</P>
+      <P Name="Dst">1477#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">256</P>
+      <P Name="Dst">160#in:8</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">apps1</P>
+    <P Name="ZOrder">37</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:9</P>
+    <P Name="Dst">161#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">apps2</P>
+    <P Name="ZOrder">38</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:10</P>
+    <P Name="Dst">161#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">brkps</P>
+    <P Name="ZOrder">39</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:11</P>
+    <P Name="Dst">161#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">airprs1</P>
+    <P Name="ZOrder">40</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:12</P>
+    <P Name="Dst">161#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">airprs2</P>
+    <P Name="ZOrder">41</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">85#out:13</P>
+    <P Name="Dst">161#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">42</P>
+    <P Name="Src">160#out:1</P>
+    <P Name="Dst">162#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">43</P>
+    <P Name="Src">161#out:1</P>
+    <P Name="Dst">163#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">44</P>
+    <P Name="Src">168#out:1</P>
+    <P Name="Points">[35, 0]</P>
+    <P Name="Dst">164#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">45</P>
+    <P Name="Src">169#out:1</P>
+    <P Name="Dst">164#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">46</P>
+    <P Name="Src">171#out:1</P>
+    <P Name="Dst">164#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">47</P>
+    <P Name="Src">172#out:1</P>
+    <P Name="Dst">164#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">48</P>
+    <P Name="Src">173#out:1</P>
+    <P Name="Dst">164#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">49</P>
+    <P Name="Src">174#out:1</P>
+    <P Name="Dst">164#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">50</P>
+    <P Name="Src">183#out:1</P>
+    <P Name="Dst">164#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">51</P>
+    <P Name="Src">184#out:1</P>
+    <P Name="Dst">164#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">52</P>
+    <P Name="Src">185#out:1</P>
+    <P Name="Dst">164#in:8</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">53</P>
+    <P Name="Src">186#out:1</P>
+    <P Name="Dst">164#in:9</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">54</P>
+    <P Name="Src">187#out:1</P>
+    <P Name="Dst">164#in:10</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">55</P>
+    <P Name="Src">188#out:1</P>
+    <P Name="Dst">164#in:11</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">56</P>
+    <P Name="Src">189#out:1</P>
+    <P Name="Dst">164#in:12</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">456</P>
+    <P Name="Src">164#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">57</P>
+      <P Name="Dst">199#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">457</P>
+      <P Name="Points">[5, 0; 0, 1285; -460, 0; 0, 45]</P>
+      <P Name="Dst">1539#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">458</P>
+    <P Name="Src">164#out:2</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">58</P>
+      <P Name="Dst">200#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">459</P>
+      <P Name="Points">[0, 1045; -455, 0; 0, 70]</P>
+      <P Name="Dst">1539#in:3</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">65</P>
+    <P Name="Src">208#out:1</P>
+    <P Name="Points">[80, 0]</P>
+    <P Name="Dst">210#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">67</P>
+    <P Name="Src">210#out:1</P>
+    <P Name="Dst">209#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">69</P>
+    <P Name="Src">264#out:1</P>
+    <P Name="Dst">263#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;apps1&gt;</P>
+    <P Name="ZOrder">71</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">263#out:1</P>
+    <P Name="Dst">210#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;apps2&gt;</P>
+    <P Name="ZOrder">72</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">263#out:2</P>
+    <P Name="Dst">210#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;brkps&gt;</P>
+    <P Name="ZOrder">73</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">263#out:3</P>
+    <P Name="Dst">210#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs1&gt;</P>
+    <P Name="ZOrder">74</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">263#out:4</P>
+    <P Name="Dst">210#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs2&gt;</P>
+    <P Name="ZOrder">75</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">263#out:5</P>
+    <P Name="Dst">210#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">80</P>
+    <P Name="Src">278#out:1</P>
+    <P Name="Dst">273#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">81</P>
+    <P Name="Src">278#out:3</P>
+    <P Name="Dst">276#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">83</P>
+    <P Name="Src">278#out:2</P>
+    <P Name="Dst">275#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">84</P>
+    <P Name="Src">272#out:1</P>
+    <P Name="Dst">278#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">85</P>
+    <P Name="Src">278#out:4</P>
+    <P Name="Dst">277#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">88</P>
+    <P Name="Src">271#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">278#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">94</P>
+    <P Name="Src">297#out:1</P>
+    <P Name="Dst">324#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;di8_side&gt;</P>
+    <P Name="ZOrder">95</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">324#out:1</P>
+    <P Name="Dst">278#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;run_button&gt;</P>
+    <P Name="ZOrder">96</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">324#out:2</P>
+    <P Name="Dst">278#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;tsms&gt;</P>
+    <P Name="ZOrder">97</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">324#out:3</P>
+    <P Name="Dst">278#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;di8_cockpit&gt;</P>
+    <P Name="ZOrder">98</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">324#out:4</P>
+    <P Name="Dst">278#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">99</P>
+    <P Name="Src">327#out:2</P>
+    <P Name="Points">[0, 80]</P>
+    <P Name="Dst">381#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">100</P>
+    <P Name="Src">383#out:1</P>
+    <P Name="Dst">327#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">101</P>
+    <P Name="Src">385#out:1</P>
+    <P Name="Dst">327#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">102</P>
+    <P Name="Src">378#out:1</P>
+    <P Name="Dst">327#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">103</P>
+    <P Name="Src">384#out:1</P>
+    <P Name="Dst">327#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">105</P>
+    <P Name="Src">327#out:1</P>
+    <P Name="Points">[0, 25]</P>
+    <P Name="Dst">379#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">107</P>
+    <P Name="Src">326#out:1</P>
+    <P Name="Points">[50, 0]</P>
+    <P Name="Dst">327#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">109</P>
+    <P Name="Src">386#out:1</P>
+    <P Name="Dst">387#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;ebs_driver_check&gt;</P>
+    <P Name="ZOrder">110</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">387#out:1</P>
+    <P Name="Dst">327#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">111</P>
+    <P Name="Src">388#out:1</P>
+    <P Name="Points">[75, 0]</P>
+    <P Name="Dst">390#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">112</P>
+    <P Name="Src">389#out:1</P>
+    <P Name="Dst">390#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">113</P>
+    <P Name="Src">403#out:1</P>
+    <P Name="Dst">390#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">114</P>
+    <P Name="Src">402#out:1</P>
+    <P Name="Dst">390#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">ebs_watchdog</P>
+    <P Name="ZOrder">115</P>
+    <P Name="Labels">[2, 1]</P>
+    <P Name="Src">390#out:2</P>
+    <P Name="Points">[0, 20]</P>
+    <P Name="Dst">405#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ebs_trig</P>
+    <P Name="ZOrder">125</P>
+    <P Name="Labels">[2, 1]</P>
+    <P Name="Src">390#out:1</P>
+    <P Name="Points">[0, 5]</P>
+    <P Name="Dst">404#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">127</P>
+    <P Name="Src">413#out:1</P>
+    <P Name="Dst">390#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">128</P>
+    <P Name="Src">406#out:1</P>
+    <P Name="Dst">390#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">129</P>
+    <P Name="Src">390#out:3</P>
+    <P Name="Points">[0, 35]</P>
+    <P Name="Dst">380#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">130</P>
+    <P Name="Src">390#out:4</P>
+    <P Name="Points">[0, 50]</P>
+    <P Name="Dst">382#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">AMI_Rx</P>
+    <P Name="ZOrder">131</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">459#out:1</P>
+    <P Name="Dst">500#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">132</P>
+    <P Name="Src">499#out:1</P>
+    <P Name="Points">[15, 0; 0, 5]</P>
+    <P Name="Dst">459#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">AMI_Tx</P>
+    <P Name="ZOrder">133</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">457#out:1</P>
+    <P Name="Points">[45, 0; 0, 5]</P>
+    <P Name="Dst">459#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">134</P>
+    <P Name="Src">458#out:1</P>
+    <P Name="Points">[90, 0]</P>
+    <P Name="Dst">459#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">135</P>
+    <P Name="Src">459#out:2</P>
+    <P Name="Dst">498#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">136</P>
+    <P Name="Src">497#out:1</P>
+    <P Name="Points">[15, 0; 0, 5]</P>
+    <P Name="Dst">459#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">143</P>
+    <P Name="Src">773#out:1</P>
+    <P Name="Dst">511#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ESP_T_06</P>
+    <P Name="ZOrder">144</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">508#out:1</P>
+    <P Name="Dst">513#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">145</P>
+    <P Name="Src">513#out:5</P>
+    <P Name="Dst">777#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ESP_T_01</P>
+    <P Name="ZOrder">146</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">506#out:1</P>
+    <P Name="Dst">513#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">ESP_T_03</P>
+    <P Name="ZOrder">147</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">507#out:1</P>
+    <P Name="Dst">513#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;brake_flag&gt;</P>
+    <P Name="ZOrder">148</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">511#out:1</P>
+    <P Name="Dst">513#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">149</P>
+    <P Name="Src">513#out:1</P>
+    <P Name="Dst">778#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">150</P>
+    <P Name="Src">513#out:2</P>
+    <P Name="Dst">775#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">151</P>
+    <P Name="Src">513#out:3</P>
+    <P Name="Dst">774#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">152</P>
+    <P Name="Src">513#out:6</P>
+    <P Name="Dst">512#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">153</P>
+    <P Name="Src">513#out:4</P>
+    <P Name="Dst">776#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ESP_T_07</P>
+    <P Name="ZOrder">154</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">509#out:1</P>
+    <P Name="Dst">513#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">155</P>
+    <P Name="Src">772#out:1</P>
+    <P Name="Dst">513#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">156</P>
+    <P Name="Src">510#out:1</P>
+    <P Name="Points">[175, 0]</P>
+    <P Name="Dst">513#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">157</P>
+    <P Name="Src">784#out:1</P>
+    <P Name="Dst">786#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">259</P>
+    <P Name="Src">1468#out:1</P>
+    <P Name="Dst">786#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">canb_epsmsg</P>
+    <P Name="ZOrder">159</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">786#out:2</P>
+    <P Name="Dst">886#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">160</P>
+    <P Name="Src">786#out:1</P>
+    <P Name="Dst">785#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">161</P>
+    <P Name="Src">883#out:1</P>
+    <P Name="Dst">783#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">162</P>
+    <P Name="Src">884#out:1</P>
+    <P Name="Dst">786#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">canb_epssendmsg2</P>
+    <P Name="ZOrder">163</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">781#out:1</P>
+    <P Name="Dst">786#in:6</P>
+  </Line>
+  <Line>
+    <P Name="Name">canb_epssendmsg1</P>
+    <P Name="ZOrder">164</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">780#out:1</P>
+    <P Name="Dst">786#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;steering_flag&gt;</P>
+    <P Name="ZOrder">165</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">783#out:1</P>
+    <P Name="Dst">786#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">166</P>
+    <P Name="Src">782#out:1</P>
+    <P Name="Points">[80, 0]</P>
+    <P Name="Dst">786#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">167</P>
+    <P Name="Src">885#out:1</P>
+    <P Name="Dst">786#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">res_msg</P>
+    <P Name="ZOrder">168</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">887#out:1</P>
+    <P Name="Dst">891#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">169</P>
+    <P Name="Src">888#out:1</P>
+    <P Name="Points">[55, 0]</P>
+    <P Name="Dst">891#trigger</P>
+  </Line>
+  <Line>
+    <P Name="Name">res_error</P>
+    <P Name="ZOrder">170</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">891#out:2</P>
+    <P Name="Dst">889#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">171</P>
+    <P Name="Src">891#out:1</P>
+    <P Name="Dst">890#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">172</P>
+    <P Name="Src">939#out:1</P>
+    <P Name="Dst">945#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">173</P>
+    <P Name="Src">945#out:3</P>
+    <P Name="Dst">941#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">174</P>
+    <P Name="Src">945#out:5</P>
+    <P Name="Dst">943#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">175</P>
+    <P Name="Src">945#out:1</P>
+    <P Name="Dst">940#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">canb_ipctsmsg1</P>
+    <P Name="ZOrder">176</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">933#out:1</P>
+    <P Name="Dst">945#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">canb_ipctsmsg2</P>
+    <P Name="ZOrder">177</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">934#out:1</P>
+    <P Name="Dst">945#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">canb_ipcrxmsg</P>
+    <P Name="ZOrder">178</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">945#out:10</P>
+    <P Name="Points">[105, 0]</P>
+    <P Name="Dst">1076#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">179</P>
+    <P Name="Src">945#out:6</P>
+    <P Name="Dst">938#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">180</P>
+    <P Name="Src">945#out:8</P>
+    <P Name="Points">[110, 0]</P>
+    <P Name="Dst">1074#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">181</P>
+    <P Name="Src">945#out:4</P>
+    <P Name="Dst">942#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">182</P>
+    <P Name="Src">945#out:9</P>
+    <P Name="Points">[110, 0]</P>
+    <P Name="Dst">1075#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">183</P>
+    <P Name="Src">937#out:1</P>
+    <P Name="Dst">945#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">184</P>
+    <P Name="Src">936#out:1</P>
+    <P Name="Dst">945#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">185</P>
+    <P Name="Src">945#out:2</P>
+    <P Name="Dst">944#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">186</P>
+    <P Name="Src">935#out:1</P>
+    <P Name="Points">[30, 0]</P>
+    <P Name="Dst">945#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">187</P>
+    <P Name="Src">945#out:7</P>
+    <P Name="Points">[110, 0]</P>
+    <P Name="Dst">1073#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">cana_motor_cmd</P>
+    <P Name="ZOrder">188</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">1084#out:1</P>
+    <P Name="Dst">1200#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">189</P>
+    <P Name="Src">1083#out:1</P>
+    <P Name="Dst">1084#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">190</P>
+    <P Name="Src">1081#out:1</P>
+    <P Name="Dst">1084#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">191</P>
+    <P Name="Src">1082#out:1</P>
+    <P Name="Dst">1078#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">264</P>
+    <P Name="Src">1478#out:1</P>
+    <P Name="Dst">1084#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;manual_driving_flag&gt;</P>
+    <P Name="ZOrder">193</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1078#out:1</P>
+    <P Name="Dst">1084#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">cana_motor_cmd3</P>
+    <P Name="ZOrder">194</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">1084#out:2</P>
+    <P Name="Dst">1201#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">195</P>
+    <P Name="Src">1079#out:1</P>
+    <P Name="Dst">1084#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">196</P>
+    <P Name="Src">1077#out:1</P>
+    <P Name="Points">[110, 0]</P>
+    <P Name="Dst">1084#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">199</P>
+    <P Name="Src">1268#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:10</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">201</P>
+    <P Name="Src">1211#out:5</P>
+    <P Name="Points">[32, 0; 0, 45]</P>
+    <P Name="Dst">1277#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">202</P>
+    <P Name="Src">1211#out:2</P>
+    <P Name="Points">[13, 0; 0, 15]</P>
+    <P Name="Dst">1276#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">262</P>
+    <P Name="Src">1475#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:13</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">204</P>
+    <P Name="Src">1282#out:1</P>
+    <P Name="Points">[60, 0]</P>
+    <P Name="Dst">1211#in:8</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">205</P>
+    <P Name="Src">1274#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">206</P>
+    <P Name="Src">1269#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:12</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">207</P>
+    <P Name="Src">1211#out:6</P>
+    <P Name="Points">[39, 0; 0, 55]</P>
+    <P Name="Dst">1286#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">208</P>
+    <P Name="Src">1278#out:1</P>
+    <P Name="Points">[60, 0]</P>
+    <P Name="Dst">1211#in:11</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">209</P>
+    <P Name="Src">1210#out:1</P>
+    <P Name="Points">[95, 0]</P>
+    <P Name="Dst">1211#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">210</P>
+    <P Name="Src">1211#out:4</P>
+    <P Name="Points">[26, 0; 0, 35]</P>
+    <P Name="Dst">1285#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">211</P>
+    <P Name="Src">1275#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">212</P>
+    <P Name="Src">1272#out:1</P>
+    <P Name="Dst">1211#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">213</P>
+    <P Name="Src">1273#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">214</P>
+    <P Name="Src">1270#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:9</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">261</P>
+    <P Name="Src">1473#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">216</P>
+    <P Name="Src">1271#out:1</P>
+    <P Name="Points">[65, 0]</P>
+    <P Name="Dst">1211#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">217</P>
+    <P Name="Src">1211#out:1</P>
+    <P Name="Points">[6, 0; 0, 5]</P>
+    <P Name="Dst">1287#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">221</P>
+    <P Name="Src">1211#out:3</P>
+    <P Name="Points">[19, 0; 0, 25]</P>
+    <P Name="Dst">1283#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">222</P>
+    <P Name="Src">1288#out:1</P>
+    <P Name="Dst">1289#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;asms&gt;</P>
+    <P Name="ZOrder">223</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1289#out:1</P>
+    <P Name="Points">[35, 0]</P>
+    <P Name="Dst">1211#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">led_assi_yellow</P>
+    <P Name="ZOrder">224</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1309#out:3</P>
+    <P Name="Dst">1304#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">226</P>
+    <P Name="Src">1298#out:1</P>
+    <P Name="Dst">1309#in:10</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;res_stop&gt;</P>
+    <P Name="ZOrder">227</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1295#out:1</P>
+    <P Name="Dst">1309#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">228</P>
+    <P Name="Src">1301#out:1</P>
+    <P Name="Points">[40, 0; 0, 5]</P>
+    <P Name="Dst">1309#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;res_communication&gt;</P>
+    <P Name="ZOrder">230</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">1295#out:2</P>
+    <P Name="Dst">1309#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">231</P>
+    <P Name="Src">1296#out:1</P>
+    <P Name="Points">[35, 0; 0, 5]</P>
+    <P Name="Dst">1309#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">265</P>
+    <P Name="Src">1479#out:1</P>
+    <P Name="Points">[40, 0; 0, 5]</P>
+    <P Name="Dst">1309#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">233</P>
+    <P Name="Src">1294#out:1</P>
+    <P Name="Points">[70, 0]</P>
+    <P Name="Dst">1309#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">234</P>
+    <P Name="Src">1299#out:1</P>
+    <P Name="Points">[40, 0; 0, 5]</P>
+    <P Name="Dst">1309#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">led_assi_blue</P>
+    <P Name="ZOrder">236</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1309#out:2</P>
+    <P Name="Points">[38, 0; 0, -5]</P>
+    <P Name="Dst">1303#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">239</P>
+    <P Name="Src">1297#out:1</P>
+    <P Name="Points">[40, 0; 0, 5]</P>
+    <P Name="Dst">1309#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">led_brake</P>
+    <P Name="ZOrder">241</P>
+    <P Name="Labels">[2, 1]</P>
+    <P Name="Src">1309#out:1</P>
+    <P Name="Points">[19, 0; 0, -5]</P>
+    <P Name="Dst">1308#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">243</P>
+    <P Name="Src">1302#out:1</P>
+    <P Name="Dst">1295#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">244</P>
+    <P Name="Src">1421#out:1</P>
+    <P Name="Dst">1408#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ebs_buzzer</P>
+    <P Name="ZOrder">247</P>
+    <P Name="Src">1408#out:2</P>
+    <P Name="Points">[6, 0]</P>
+    <Branch>
+      <P Name="ZOrder">268</P>
+      <P Name="Labels">[2, 1]</P>
+      <P Name="Points">[0, -60]</P>
+      <P Name="Dst">1427#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">245</P>
+      <P Name="Points">[0, 35]</P>
+      <P Name="Dst">1422#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;as_emergency_flag&gt;</P>
+    <P Name="ZOrder">249</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1407#out:1</P>
+    <P Name="Dst">1408#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">250</P>
+    <P Name="Src">1423#out:1</P>
+    <P Name="Dst">1408#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">251</P>
+    <P Name="Src">1424#out:1</P>
+    <P Name="Dst">1407#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">252</P>
+    <P Name="Src">1406#out:1</P>
+    <P Name="Points">[100, 0]</P>
+    <P Name="Dst">1408#trigger</P>
+  </Line>
+  <Line>
+    <P Name="Name">r2d_buzzer</P>
+    <P Name="ZOrder">253</P>
+    <P Name="Labels">[2, 1]</P>
+    <P Name="Src">1408#out:1</P>
+    <P Name="Points">[43, 0; 0, -5]</P>
+    <P Name="Dst">1425#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">258</P>
+    <P Name="Src">459#out:3</P>
+    <P Name="Dst">1467#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">260</P>
+    <P Name="Src">459#out:4</P>
+    <P Name="Dst">1472#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">266</P>
+    <P Name="Src">1480#out:1</P>
+    <P Name="Dst">278#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">267</P>
+    <P Name="Src">1481#out:1</P>
+    <P Name="Dst">1408#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">led_imd_error</P>
+    <P Name="ZOrder">272</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">1309#out:5</P>
+    <P Name="Dst">1306#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">led_bms_error</P>
+    <P Name="ZOrder">273</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">1309#out:6</P>
+    <P Name="Dst">1307#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">439</P>
+    <P Name="Src">1526#out:1</P>
+    <P Name="Dst">1527#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;shutdown_s&gt;</P>
+    <P Name="ZOrder">440</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1527#out:1</P>
+    <P Name="Dst">1309#in:8</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;shutdown_e&gt;</P>
+    <P Name="ZOrder">441</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1527#out:2</P>
+    <P Name="Dst">1309#in:9</P>
+  </Line>
+  <Line>
+    <P Name="Name">model_hin</P>
+    <P Name="ZOrder">442</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">81#out:1</P>
+    <P Name="Points">[105, 0; 0, 1495]</P>
+    <P Name="Dst">1538#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">443</P>
+    <P Name="Src">1538#out:1</P>
+    <P Name="Points">[95, 0; 0, -1685; -715, 0]</P>
+    <P Name="Dst">85#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">model_ain</P>
+    <P Name="ZOrder">444</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">82#out:1</P>
+    <P Name="Points">[95, 0; 0, 1355]</P>
+    <P Name="Dst">1538#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">445</P>
+    <P Name="Src">1538#out:2</P>
+    <P Name="Points">[5, 0; 0, -1280; -625, 0]</P>
+    <P Name="Dst">85#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">wlspd_fsensor</P>
+    <P Name="ZOrder">446</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">265#out:1</P>
+    <P Name="Points">[0, 40; -155, 0; 0, 1880; -590, 0]</P>
+    <P Name="Dst">1538#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">447</P>
+    <P Name="Src">1538#out:3</P>
+    <P Name="Points">[310, 0; 0, -1195; 200, 0; 0, -520]</P>
+    <P Name="Dst">210#in:6</P>
+  </Line>
+  <Line>
+    <P Name="Name">wlspd_hsensor</P>
+    <P Name="ZOrder">448</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">266#out:1</P>
+    <P Name="Points">[0, 395; -750, 0; 0, 1280]</P>
+    <P Name="Dst">1538#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">449</P>
+    <P Name="Src">1538#out:4</P>
+    <P Name="Points">[310, 0; 0, -1240; 200, 0; 0, -470]</P>
+    <P Name="Dst">210#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">vcu_dbg_control</P>
+    <P Name="ZOrder">450</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1530#out:1</P>
+    <P Name="Points">[225, 0; 0, 115]</P>
+    <P Name="Dst">1538#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">vcu_dbg_pedal_adc</P>
+    <P Name="ZOrder">451</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1531#out:1</P>
+    <P Name="Points">[225, 0; 0, 100]</P>
+    <P Name="Dst">1538#in:6</P>
+  </Line>
+  <Line>
+    <P Name="Name">vcu_dbg_air_wheel</P>
+    <P Name="ZOrder">452</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1532#out:1</P>
+    <P Name="Points">[225, 0; 0, 85]</P>
+    <P Name="Dst">1538#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">vcu_dbg_digital</P>
+    <P Name="ZOrder">453</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1533#out:1</P>
+    <P Name="Points">[225, 0; 0, 70]</P>
+    <P Name="Dst">1538#in:8</P>
+  </Line>
+  <Line>
+    <P Name="Name">vcu_dbg_rx_count</P>
+    <P Name="ZOrder">454</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1534#out:1</P>
+    <P Name="Points">[225, 0; 0, 55]</P>
+    <P Name="Dst">1538#in:9</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">455</P>
+    <P Name="Src">1538#out:5</P>
+    <P Name="Points">[3710, 0]</P>
+    <P Name="Dst">1539#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">460</P>
+    <P Name="Src">1539#out:1</P>
+    <P Name="Points">[105, 0; 0, 15]</P>
+    <P Name="Dst">1535#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">461</P>
+    <P Name="Src">1538#out:6</P>
+    <P Name="Points">[4305, 0]</P>
+    <P Name="Dst">1536#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">462</P>
+    <P Name="Src">1538#out:7</P>
+    <P Name="Points">[4305, 0]</P>
+    <P Name="Dst">1537#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">670</P>
+    <P Name="Src">1559#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">668</P>
+      <P Name="Points">[0, -5]</P>
+      <P Name="Dst">1560#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">671</P>
+      <P Name="Points">[380, 0; 0, -160]</P>
+      <P Name="Dst">1576#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">661</P>
+    <P Name="Src">327#out:3</P>
+    <P Name="Points">[0, 595; -1810, 0]</P>
+    <P Name="Dst">1559#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">662</P>
+    <P Name="Src">390#out:5</P>
+    <P Name="Points">[0, 60; -1795, 0; 0, 50]</P>
+    <P Name="Dst">1559#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">666</P>
+    <P Name="Src">1560#out:1</P>
+    <P Name="Points">[365, 0; 0, -1135]</P>
+    <P Name="Dst">1211#in:14</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">667</P>
+    <P Name="Src">1211#out:7</P>
+    <P Name="Points">[0, 255; -400, 0; 0, 515; -645, 0; 0, 330; -50, 0]</P>
+    <P Name="Dst">1564#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">led_ebs_error</P>
+    <P Name="ZOrder">669</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1309#out:4</P>
+    <P Name="Points">[-1325, 0; 0, 335]</P>
+    <P Name="Dst">1576#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">672</P>
+    <P Name="Src">1576#out:1</P>
+    <P Name="Points">[1325, 0; 0, -350]</P>
+    <P Name="Dst">1305#in:1</P>
+  </Line>
+  <Annotation SID="779">
+    <P Name="Name">等待油压数据</P>
+    <P Name="Position">[3265, 1018, 3327, 1032]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="323">
+    <P Name="Name">内存</P>
+    <P Name="Position">[2866, -551, 3662, -164]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">289</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="501">
+    <P Name="Name">VCU发送状态机运行状态以及无人任务结束，接收无人任务选择</P>
+    <P Name="Position">[1442, 1108, 1725, 1122]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-2</P>
+  </Annotation>
+  <Annotation SID="1577">
+    <P Name="Name">FSEC preliminary safety layer (2026-07-29): debounced sensor faults, EBS response diagnostics, Emergency lock, TS shutdown and post-R2D torque permission. Root interfaces are unchanged.</P>
+    <P Name="Position">[760, 20, 1622, 34]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-4</P>
+  </Annotation>
+</System>

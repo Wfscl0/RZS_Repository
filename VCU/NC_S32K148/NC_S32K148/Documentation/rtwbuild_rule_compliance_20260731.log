@@ -1,0 +1,89 @@
+### Starting build procedure for: VCU10
+### Generating code and artifacts to '模型特定' folder structure
+### Generating code into build folder: C:\Users\icemi\Desktop\RZS_Repository\VCU\VCU10_ert_rtw
+[警告: '输出端口 1' of 'VCU10/LED_Control/EBS_LED/Compare To Constant1' is not connected.] 
+[警告: 在 'VCU10/EBS/as_ebs_trig' 上找到未连接的输出信号线(输出端口: 1)] 
+[警告: 在 'VCU10/EBS' 中发现未连接的行(从视图左侧开始 15% 和从视图顶部开始 30%)] 
+[警告: 在 'VCU10/EBS' 中发现未连接的行(从视图左侧开始 15% 和从视图顶部开始 30%)] 
+[警告: 在 'VCU10/EBS/ipc_err' 上找到未连接的输出信号线(输出端口: 1)] 
+[警告: 在 'VCU10/EBS/asb_check' 上找到未连接的输出信号线(输出端口: 1)] 
+[警告: 在 'VCU10/LED_Control/EBS_LED/display' 上找到未连接的输出信号线(输出端口: 1)] 
+[警告: <a href="matlab:sfprivate('sfOpenObjectBySId','VCU10:1380:::50')">'asms_button'</a> is defined, but is not used in the Stateflow chart. <a href= "matlab:
+internal.stateflow.dialogs.UnusedObjectDeleter.createDeleter('VCU10:1380:::50')">Delete this object</a> or <a href= "matlab:
+sfprivate('openConfigParamsSFDiagnostics',21)">configure the diagnostic</a>.
+
+] 
+[警告: <a href="matlab:sfprivate('sfOpenObjectBySId','VCU10:1397:::53')">'asms_button'</a> is defined, but is not used in the Stateflow chart. <a href= "matlab:
+internal.stateflow.dialogs.UnusedObjectDeleter.createDeleter('VCU10:1397:::53')">Delete this object</a> or <a href= "matlab:
+sfprivate('openConfigParamsSFDiagnostics',21)">configure the diagnostic</a>.
+
+] 
+[警告: Parameter precision loss occurred for 'Gain' of 'VCU10/Sensor_Signal/Gain'. The parameter's value cannot be represented exactly using the run-time data type.
+A small quantization error has occurred. To disable this warning or error, in the Configuration Parameters > Diagnostics > Data Validity pane, set the 'Detect
+precision loss' option in the Parameters group to 'none'.
+Suggested Actions:
+    •  - Suppress
+] 
+[警告: Parameter precision loss occurred for 'Gain' of 'VCU10/Sensor_Signal/Gain1'. The parameter's value cannot be represented exactly using the run-time data type.
+A small quantization error has occurred. To disable this warning or error, in the Configuration Parameters > Diagnostics > Data Validity pane, set the 'Detect
+precision loss' option in the Parameters group to 'none'.
+Suggested Actions:
+    •  - Suppress
+] 
+[警告: 没有为 'VCU10'指定代码生成目标。
+Suggested Actions:
+    • 指定目标 - Open
+    • 将 '生成代码前检查模型' 设置为 '关闭' - Open
+] 
+### Invoking Target Language Compiler on VCU10.rtw
+### Using System Target File: D:\21b\rtw\c\ert\ert.tlc
+        ### Loading TLC function libraries
+............
+### Generating TLC interface API for custom data
+......
+### Initial pass through model to cache user defined code
+.....................
+### Caching model source code
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+...............................................................................
+.....
+### Writing header file VCU10_types.h
+### Writing source file VCU10.c
+.
+### Writing header file VCU10_private.h
+### Writing header file VCU10.h
+### Writing header file rtwtypes.h
+### Writing header file rt_nonfinite.h
+### Writing source file rt_nonfinite.c
+.
+### Writing header file rtGetInf.h
+### Writing source file rtGetInf.c
+### Writing header file rtGetNaN.h
+### Writing source file rtGetNaN.c
+### Writing source file VCU10_data.c
+.
+### Writing source file ert_main.c
+### TLC code generation complete.
+.......### 正在保存二进制信息缓存。
+### Using toolchain: LCC-win64 v2.4.1 | gmake (64-bit Windows)
+### 'C:\Users\icemi\Desktop\RZS_Repository\VCU\VCU10_ert_rtw\VCU10.mk' is up to date
+### Successful completion of code generation for: VCU10
+### 'VCU10' 的 Simulink 缓存工件是在 'C:\Users\icemi\Desktop\RZS_Repository\VCU\VCU10.slxc' 中创建的。
+
+编译摘要
+
+编译的顶层模型目标:
+
+模型     操作     重新编译原因     
+=========================
+VCU10  生成的代码  生成的代码已过期。  
+
+编译了 1 个模型，共 1 个模型(0 个模型已经是最新的)
+编译持续时间: 0h 1m 5.708s
+[警告: Cannot close the model 'hdlsllib' because it has been changed. Use the command 'save_system' to first save the model] 
+[警告: Cannot close the model 'hdlmdlgenlib' because it has been changed. Use the command 'save_system' to first save the model] 

@@ -1,0 +1,7 @@
+0x00004e94 in ?? ()
+Expected an decimal digit (0-9)
+Hardware assisted breakpoint 1 at 0x2dbb2: file ../Sources/main.c, line 46.
+
+Breakpoint 1, main () at ../Sources/main.c:46
+46	    PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
+Hardware assisted breakpoint 2 at 0x22850: file ../ImpCode/bsp/com/bsp_can0.c, line 135.

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1026]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">150</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="asb_check" SID="391">
+    <P Name="Position">[30, 278, 60, 292]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_err" SID="392">
+    <P Name="Position">[30, 323, 60, 337]</P>
+    <P Name="ZOrder">281</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_ebs_trig" SID="393">
+    <P Name="Position">[30, 368, 60, 382]</P>
+    <P Name="ZOrder">4544</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="Hin" SID="408">
+    <P Name="Position">[30, 498, 60, 512]</P>
+    <P Name="ZOrder">4552</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="sensor_signal" SID="415">
+    <P Name="Position">[30, 643, 60, 657]</P>
+    <P Name="ZOrder">4553</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="394">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[225, 210, 245, 230]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="416">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[165, 486, 170, 524]</P>
+    <P Name="ZOrder">4554</P>
+    <P Name="OutputSignals">asms,ebs_driver_check</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;asms&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;ebs_driver_check&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector1" SID="417">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[165, 631, 170, 669]</P>
+    <P Name="ZOrder">4555</P>
+    <P Name="OutputSignals">airprs_sensor1,airprs_sensor2</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;airprs_sensor1&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;airprs_sensor2&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant" SID="420">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[255, 585, 285, 615]</P>
+    <P Name="ZOrder">4558</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&gt;=</P>
+      <P Name="const">6</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant1" SID="422">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[255, 675, 285, 705]</P>
+    <P Name="ZOrder">4559</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&lt;=</P>
+      <P Name="const">5.5</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="SubSystem" Name="EBS_Response_Monitor" SID="1555">
+    <P Name="Ports">[5, 1]</P>
+    <P Name="Position">[555, 325, 745, 445]</P>
+    <P Name="ZOrder">4563</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1555"/>
+  </Block>
+  <Block BlockType="UnitDelay" Name="EBS_Sensor_Fault_Delay" SID="1556">
+    <P Name="Position">[785, 362, 835, 398]</P>
+    <P Name="ZOrder">4564</P>
+    <P Name="InitialCondition">false</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="HasFrameUpgradeWarning">on</P>
+  </Block>
+  <Block BlockType="Reference" Name="Edge Detector" SID="396">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[140, 267, 190, 303]</P>
+    <P Name="ZOrder">8</P>
+    <P Name="LibraryVersion">2.0</P>
+    <P Name="FontName">Arial</P>
+    <P Name="SourceBlock">spsEdgeDetectorLib/Edge Detector</P>
+    <P Name="SourceType">Edge Detector</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="model">Falling</P>
+      <P Name="ic">0</P>
+      <P Name="Ts">-1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Edge Detector2" SID="397">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[140, 312, 190, 348]</P>
+    <P Name="ZOrder">4548</P>
+    <P Name="LibraryVersion">2.0</P>
+    <P Name="FontName">Arial</P>
+    <P Name="SourceBlock">spsEdgeDetectorLib/Edge Detector</P>
+    <P Name="SourceType">Edge Detector</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="model">Rising</P>
+      <P Name="ic">0</P>
+      <P Name="Ts">-1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="398">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[325, 261, 360, 399]</P>
+    <P Name="ZOrder">4547</P>
+    <P Name="Operator">OR</P>
+    <P Name="Inputs">3</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator1" SID="423">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[330, 564, 355, 611]</P>
+    <P Name="ZOrder">4560</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator2" SID="455">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[450, 653, 475, 702]</P>
+    <P Name="ZOrder">4561</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator3" SID="456">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[390, 609, 420, 641]</P>
+    <P Name="ZOrder">4562</P>
+    <P Name="Operator">NOT</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_trig" SID="400">
+    <P Name="Position">[555, 323, 585, 337]</P>
+    <P Name="ZOrder">-3</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_watchdog" SID="401">
+    <P Name="Position">[555, 488, 585, 502]</P>
+    <P Name="ZOrder">4543</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_working" SID="418">
+    <P Name="Position">[555, 583, 585, 597]</P>
+    <P Name="ZOrder">4556</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_check" SID="419">
+    <P Name="Position">[555, 673, 585, 687]</P>
+    <P Name="ZOrder">4557</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_sensor_fault" SID="1557">
+    <P Name="Position">[885, 365, 915, 385]</P>
+    <P Name="ZOrder">4565</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">391#out:1</P>
+    <P Name="Dst">396#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">392#out:1</P>
+    <P Name="Dst">397#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">396#out:1</P>
+    <P Name="Dst">398#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">397#out:1</P>
+    <P Name="Dst">398#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">393#out:1</P>
+    <P Name="Dst">398#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">94</P>
+    <P Name="Src">398#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">91</P>
+      <P Name="Dst">400#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">95</P>
+      <P Name="Points">[85, 0; 0, 5]</P>
+      <P Name="Dst">1555#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">408#out:1</P>
+    <P Name="Dst">416#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;asms&gt;</P>
+    <P Name="ZOrder">96</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">416#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">92</P>
+      <P Name="Labels">[1, 0]</P>
+      <P Name="Dst">401#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">97</P>
+      <P Name="Points">[360, 0; 0, -135]</P>
+      <P Name="Dst">1555#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">415#out:1</P>
+    <P Name="Dst">417#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">420#out:1</P>
+    <P Name="Dst">423#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">423#out:1</P>
+    <P Name="Points">[9, 0]</P>
+    <Branch>
+      <P Name="ZOrder">27</P>
+      <P Name="Dst">418#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">23</P>
+      <P Name="Points">[0, 35]</P>
+      <P Name="Dst">456#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;ebs_driver_check&gt;</P>
+    <P Name="ZOrder">98</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">416#out:2</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">93</P>
+      <P Name="Labels">[1, 0]</P>
+      <P Name="Points">[132, 0; 0, 60]</P>
+      <P Name="Dst">423#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">99</P>
+      <P Name="Points">[360, 0; 0, -130]</P>
+      <P Name="Dst">1555#in:3</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs_sensor2&gt;</P>
+    <P Name="ZOrder">34</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">417#out:2</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">20</P>
+      <P Name="Labels">[1, 0]</P>
+      <P Name="Points">[38, 0; 0, 30]</P>
+      <P Name="Dst">422#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">90</P>
+      <P Name="Points">[30, 0; 0, -60]</P>
+      <P Name="Dst">420#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">101</P>
+      <P Name="Points">[255, 0; 0, -225]</P>
+      <P Name="Dst">1555#in:5</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">24</P>
+    <P Name="Src">456#out:1</P>
+    <P Name="Points">[10, 0]</P>
+    <P Name="Dst">455#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">25</P>
+    <P Name="Src">422#out:1</P>
+    <P Name="Dst">455#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">26</P>
+    <P Name="Src">455#out:1</P>
+    <P Name="Dst">419#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs_sensor1&gt;</P>
+    <P Name="ZOrder">100</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">417#out:1</P>
+    <P Name="Points">[95, 0; 0, -20; 100, 0; 0, -210]</P>
+    <P Name="Dst">1555#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">102</P>
+    <P Name="Src">1555#out:1</P>
+    <P Name="Points">[10, 0; 0, -5]</P>
+    <P Name="Dst">1556#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">103</P>
+    <P Name="Src">1556#out:1</P>
+    <P Name="Points">[15, 0; 0, -5]</P>
+    <P Name="Dst">1557#in:1</P>
+  </Line>
+  <Annotation SID="424">
+    <P Name="Name">气压传感器值待定</P>
+    <P Name="Position">[275, 638, 357, 652]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="1558">
+    <P Name="Name">EBS response check: after a trigger with available reservoir pressure, the cylinder-side pressure must exceed 1.0 bar within 500 ms. EBS_Driver retains its independent hardware diagnostics.</P>
+    <P Name="Position">[360, 15, 1202, 29]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-2</P>
+  </Annotation>
+</System>

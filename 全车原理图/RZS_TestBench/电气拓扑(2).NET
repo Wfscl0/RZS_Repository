@@ -1,0 +1,384 @@
+PARTS LIST
+
+HVErr_Lock                        
+侧面板右                              
+气压传感器2                            *
+IMD                               *?
+BMS主控                             *?
+霍尔电流传感器                           *?
+BMS从控                             *?
+Amphenol PL282X-301-35                *?
+VCU                               *?
+Resistor                          ?
+Single-Pole, Single-Throw Normally Closed Relay                ?
+APPS                              APPS
+Switch Normally Opened                AS_Reset
+Switch Normally Opened                ASMS
+Single-Pole, Single-Throw Normally Opened Relay                ASRC
+Light-Emitting Diode                ASSI_B
+Single-Pole, Single-Throw Normally Opened Relay                ASSI_B
+Light-Emitting Diode                ASSI_Y
+Single-Pole, Single-Throw Normally Opened Relay                ASSI_Y
+Light-Emitting Diode                BMS_LED
+Switch Normally Opened                BMS故障消除
+Switch Normally Opened                BMS锁存复位
+Switch Normally Closed                BOTS
+BSPD                              BSPD
+Fuse                              Bussmann FWH-?
+Fuse                              Bussmann PV-?
+Diode                             D?
+Diode                             D?
+DCDC                              DCDC
+Switch Normally Opened                DI8
+Switch Normally Opened                DI8
+Single-Pole, Single-Throw Normally Opened Relay                DI8
+EBS_Driver                        EBS
+Light-Emitting Diode                EBS_Error_LED
+Switch Normally Opened                EBS_Release
+蜂鸣器                               Emergency_Buzzer
+Single-Pole, Single-Throw Normally Opened Relay                Emergency_Buzzer
+高压盒                               HV_Box
+驾驶舱面板                             HVBox_BMS_Error_OUT
+Light-Emitting Diode                IMD_LED
+Switch Normally Opened                IMD锁存复位
+Single-Pole, Single-Throw Normally Opened Relay                LED_BMS_Error
+Light-Emitting Diode                LED_Brake
+Single-Pole, Single-Throw Normally Opened Relay                LED_Brake
+Single-Pole, Single-Throw Normally Opened Relay                LED_EBS_Error
+Single-Pole, Single-Throw Normally Opened Relay                LED_IMD_Error
+Fuse                              Littelfuse ?
+Fuse                              Littelfuse ?
+Switch Normally Opened                LVMS
+连接线 0.75mm2                       PV
+连接线 0.75mm2                       PV-?
+连接线 0.75mm2                       PV-?
+蜂鸣器                               R2D_Buzzer
+Single-Pole, Single-Throw Normally Opened Relay                R2D_Buzzer
+Resistor                          R?
+Resistor                          R?
+Resistor                          R?
+Resistor                          R?
+RES                               RES
+Switch Normally Opened                RUN
+Switch Normally Opened                RUN
+Single-Pole, Single-Throw Normally Opened Relay                RUN
+Based_PCB                         RUN?
+Resistor                          RXG?
+Light-Emitting Diode                TS_off_LED
+Light-Emitting Diode                TSAL_G
+TSAL_PCB                          TSAL_PCB
+Light-Emitting Diode                TSAL_R
+Switch Normally Opened                TSMS
+Double-Pole, Single-Throw Relay                主正继电器?
+Double-Pole, Single-Throw Relay                主负继电器?
+Resistor                          人体保护电阻+
+Resistor                          人体保护电阻-
+LV_Battery                        低压电池
+LV_Box                            低压盒
+侧面板左                              侧面板左
+Switch Normally Closed                急停_右
+Switch Normally Closed                急停_左
+Switch Normally Closed                惯性开关
+Resistor                          放电电阻1
+Resistor                          放电电阻2
+Single-Pole, Single-Throw Normally Opened Relay                放电继电器
+                                  气压传感器1
+Switch Normally Opened                水泵开关
+油压传感器                             油压传感器
+电压传感器                             电压传感器
+Motor_Controller                  电机控制器
+电池箱低压插头                           电池箱低压插头
+霍尔电流传感器                           电流传感器
+Solenoid_Valve                    电磁阀
+Energe_Meter                      能量计
+角位移传感器                            角位移
+Double-Pole, Single-Throw Relay                预充继电器?
+Switch Normally Closed                驾驶舱急停开关
+EOS
+NET LIST
+
+NODENAME +12              $
+    ASSI_B     1  ASSI_B     3  ASSI_Y     1  ASSI_Y     3  BMS_LED    1  DI8        1  DI8        1  DI8        2  EBS_Error_LED1  Emergency_Buzzer2  Emergency_Buzzer4  IMD_LED    1  LED_BMS_Error4  LED_Brake  1  LED_Brake  3  LED_EBS_Error4  LED_IMD_Error4  R2D_Buzzer +  RUN        1  RUN        1  RUN        2  TS_off_LED 1  TSAL_G     1  TSAL_R     1
+NODENAME +24              $
+    ASMS       2
+NODENAME GND              $
+    *?       GND  *?       GND  *?       GND  ?          4  ASRC       4  ASSI_B     2  ASSI_Y     2  DCDC     GND  DI8        4  EBS  SDC_OUT  Emergency_Buzzer+  LED_BMS_Error2  LED_Brake  2  LED_EBS_Error2  LED_IMD_Error2  R2D_Buzzer 2  R2D_Buzzer 4  RUN        4  RUN?          低压电池     GND  低压盒  SDC_OUT  电磁阀      GND
+NODENAME N00001           $
+  
+NODENAME N00002           $
+  
+NODENAME N00003           $
+  
+NODENAME N00004           $
+  
+NODENAME N00005           $
+  
+NODENAME N00006           $
+  
+NODENAME N00007           $
+  
+NODENAME N00008           $
+  
+NODENAME N00009           $
+  
+NODENAME N00010           $
+  
+NODENAME N00011           $
+  
+NODENAME N00012           $
+  
+NODENAME N00013           $
+  
+NODE     17               $
+    *?            预充继电器?     3
+NODE     18               $
+    *?            主负继电器?     3
+NODE     19               $
+    *?            主正继电器?     3
+NODE     20               $
+    *?        5V  低压盒         
+NODE     21               $
+    *?       12V  *?       12V  *?       12V
+NODE     22               $
+    *?      AIN0  APPS  V_OUT1  低压盒         
+NODE     23               $
+    *?      AIN1  APPS  V_OUT2  低压盒         
+NODE     24               $
+    *?      AIN2  低压盒           角位移    V_OUT
+NODE     25               $
+    *      V_OUT  *?      AIN4  低压盒AirPressureSensor1
+NODE     26               $
+    *?      AIN5  低压盒AirPressureSensor2  气压传感器1 V_OUT
+NODE     31               $
+       AMS_ERROR  *?   BMS_Err  RUN?          低压盒         
+NODE     32               $
+    *?     CAN_H  *?     CAN_H
+NODE     33               $
+    *?     CAN_L  *?     CAN_L
+NODE     34               $
+    *?     CANAH  低压盒         
+NODE     35               $
+    *?     CANAL  低压盒         
+NODE     36               $
+    *?     CANBH  低压盒         
+NODE     37               $
+    *?     CANBL  低压盒         
+NODE     38               $
+    *?       GND  低压盒      GND
+NODE     39               $
+    *?      HIN1  EBSEBS_Check  RUN?        
+NODE     42               $
+    *?      HIN4  低压盒         
+NODE     43               $
+    *?      HIN5  低压盒         
+NODE     44               $
+    *?      HIN6  低压盒         
+NODE     47               $
+    *?       HO1  EBS EBS_Trig  RUN?        
+NODE     54               $
+    *?       HV+  Bussmann PV-?2  PV-?       1  PV-?       1  主正继电器?     2
+NODE     55               $
+    *?       HV+  Bussmann FWH-?2  主正继电器?     1  预充继电器?     1
+NODE     56               $
+    *?       HV+  *?       HV-  主负继电器?     1
+NODE     57               $
+    *?       HV-  主负继电器?     2
+NODE     59               $
+    *?      I_in  *?     I_out
+NODE     60               $
+    *?   IMD_Err
+NODE     61               $
+    *?       K1-  预充继电器?     5
+NODE     62               $
+    *?       K2-  主正继电器?     5
+NODE     63               $
+    *?       K6-  主负继电器?     5
+NODE     68               $
+       RES_ERROR  *?      OUT5
+NODE     69               $
+    *?      PA30  EBS WatchDog  RUN?        
+NODE     70               $
+    *?Temperature  Littelfuse ?1
+NODE     71               $
+    *?       VCC  低压盒      12V
+NODE     72               $
+    *?   Voltage  Littelfuse ?1
+NODE     76               $
+    ?          1  RUN?          低压盒         
+NODE     78               $
+    ?          2  RUN?          低压盒         
+NODE     80               $
+    ?          3  ASRC       1  ASRC       3  RUN?          低压盒         
+NODENAME Net_BMS_Err      $
+         BMS_Err  D?         2  LED_BMS_Error3
+NODENAME Net_BMS_Rst      $
+         BMS_Rst  RUN?          低压盒         
+NODENAME Net_EBS_Error    $
+       EBS_Error  EBS  AS_Lock
+NODENAME Net_IMD_Err      $
+         IMD_Err  D?         2  LED_IMD_Error3
+NODENAME Net_IMD_ERROR    $
+       IMD_ERROR  RUN?          低压盒         
+NODENAME Net_IMD_Rst      $
+         IMD_Rst  RUN?          低压盒         
+NODENAME Net_R_E_Rst      $
+         R_E_Rst  RUN?          低压盒         
+NODENAME Net_SDC_IN       $
+          SDC_IN  BSPD SDC_OUT
+NODENAME Net_SDC_OUT      $
+         SDC_OUT  RUN?          低压盒         
+NODENAME NetAS_Reset-2    $
+    AS_Reset   2
+NODENAME NetASMS-1        $
+    ASMS       1
+NODENAME NetASRC-2        $
+    ASRC       2  R?         2  RUN?          低压盒         
+NODENAME NetASSI_B-1      $
+    ASSI_B     1  ASSI_B     2  RUN?          低压盒         
+NODENAME NetASSI_B-4      $
+    ASSI_B     4  RUN?        
+NODENAME NetASSI_Y-1      $
+    ASSI_Y     1  ASSI_Y     2  RUN?          低压盒         
+NODENAME NetBMS锁存复位-2     $
+    BMS锁存复位    2
+NODENAME NetBOTS-1        $
+    BOTS       1  惯性开关       1
+NODENAME NetBOTS-2        $
+    BOTS       2  HV_Box  HVD+  HV_Box  HVD-  HV_BoxSDCIL_I  HV_BoxSDCIL_O
+NODENAME NetBSPD_I_IN     $
+    BSPD    I_IN  RUN?          低压盒         
+NODENAME NetBSPD_OP1_IN   $
+    BSPD  OP1_IN  RUN?          低压盒         
+NODENAME NetBSPD_OP2_IN   $
+    BSPD  OP2_IN  RUN?          低压盒         
+NODENAME NetBSPD_OP3_IN   $
+    BSPD  OP3_IN  RUN?          低压盒         
+NODENAME NetBSPD_OP4_IN   $
+    BSPD  OP4_IN  RUN?          低压盒         
+NODENAME NetBSPD_SDC_IN   $
+    BSPD  SDC_IN  RUN?     24V  低压盒      24V
+NODE     124              $
+    Bussmann PV-?1  RXG?       2
+NODE     125              $
+    D?         1  RUN?        
+NODENAME NetDCDC_12V      $
+    DCDC     12V  RES   Kj2_IN
+NODENAME NetDCDC_24V      $
+    DCDC     24V  急停_左       2
+NODENAME NetDI8-1         $
+    DI8        1  RUN?          低压盒         
+NODENAME NetDI8-2         $
+    DI8        2
+NODENAME NetDI8-3         $
+    DI8        3  RUN?        
+NODENAME NetEBS_24V_EBS_PWR$
+    EBS24V_EBS_PWR  RUN?          低压盒         
+NODENAME NetEBS_EBS_Work  $
+    EBS EBS_Work  RUN?          低压盒           电磁阀      24V
+NODENAME NetEBS_SDC_IN    $
+    EBS   SDC_IN  R?         1  RUN?          低压盒   SDC_IN
+NODENAME NetEmergency_Buzzer-1$
+    Emergency_Buzzer1  Emergency_BuzzerGND  RUN?          低压盒         
+NODENAME NetHV_Box        $
+    HV_Box        HV_Box   HV+  电流传感器    HV+
+NODENAME NetHV_Box        $
+    HV_Box        人体保护电阻-    1
+NODENAME NetHV_Box        $
+    HV_Box        人体保护电阻+    1
+NODENAME NetHV_Box_12V    $
+    HV_Box   12V  放电继电器      4  电压传感器    12V
+NODENAME NetHV_Box_24V    $
+    HV_Box   24V  电流传感器    24V  能量计      24V
+NODENAME NetHV_Box_CANAH  $
+    HV_Box CANAH  能量计   CANA_H
+NODENAME NetHV_Box_CANAL  $
+    HV_Box CANAL  能量计   CANA_L
+NODENAME NetHV_Box_CurrentSensor$
+    HV_BoxCurrentSensor  电流传感器  I_out
+NODENAME NetHV_Box_GND    $
+    HV_Box   GND  电压传感器    GND  电流传感器    GND  能量计      GND
+NODENAME NetHV_Box_HV+    $
+    HV_Box   HV+  人体保护电阻+    2  放电继电器      1  电压传感器    HV+  电机控制器    HV+  电流传感器    HV+  能量计      HV+
+NODENAME NetHV_Box_HV-    $
+    HV_Box   HV-  人体保护电阻-    2  放电电阻1      1  放电电阻2      1  能量计      HV-
+NODENAME NetHV_Box_HV-    $
+    HV_Box   HV-  PV         2  电机控制器    HV-  能量计      HV-
+NODENAME NetHV_Box_Vol_Sensor$
+    HV_BoxVol_Sensor  放电继电器      3
+NODENAME NetHV_Box_Vol_Sensor$
+    HV_BoxVol_Sensor  电压传感器  V_out
+NODENAME NetIMD锁存复位-2     $
+    IMD锁存复位    2
+NODENAME NetLED_BMS_Error-1$
+    LED_BMS_Error1  RUN?          低压盒         
+NODENAME NetLED_Brake-1   $
+    LED_Brake  1  LED_Brake  2  RUN?          低压盒         
+NODENAME NetLED_EBS_Error-1$
+    LED_EBS_Error1  RUN?          低压盒         
+NODENAME NetLED_IMD_Error-1$
+    LED_IMD_Error1  RUN?          低压盒         
+NODENAME NetLVMS-1        $
+    LVMS       1
+NODENAME NetLVMS-2        $
+    LVMS       2  低压电池     24V
+NODENAME NetPV-1          $
+    PV         1  电压传感器    HV-
+NODENAME NetR2D_Buzzer-1  $
+    R2D_Buzzer 1  R2D_BuzzerGND  RUN?          低压盒         
+NODE     178              $
+    R?         1  RUN?        
+NODE     181              $
+    R?         2  RUN?          低压盒         
+NODE     182              $
+    R?         2  RUN?          低压盒         
+NODENAME NetRES_Kj1_IN    $
+    RES   Kj1_IN
+NODENAME NetRES_Kj1_OUT   $
+    RES  Kj1_OUT
+NODENAME NetRES_Kj2_OUT   $
+    RES  Kj2_OUT  惯性开关       2
+NODE     191              $
+    RUN?          TSAL_G     2  TSAL_PCBGREEN_OUT  低压盒         
+NODE     192              $
+    RUN?          TSAL_PCBRED_OUT  TSAL_R     2  低压盒         
+NODE     193              $
+    RUN?          TSAL_PCBV_Controlled  低压盒         
+NODE     194              $
+    RUN        1  RUN?          低压盒         
+NODE     195              $
+    RUN?          TSAL_PCBV_Battery  低压盒         
+NODE     196              $
+    RUN?          TSAL_PCBPreC  低压盒         
+NODE     197              $
+    RUN?          TSAL_PCB  MN  低压盒         
+NODE     198              $
+    RUN?          TSAL_PCB  MP  低压盒         
+NODE     199              $
+    RUN?          TSAL_PCBMP_Actual  低压盒         
+NODE     200              $
+    RUN?          TSAL_PCBMN_Actual  低压盒         
+NODE     201              $
+    RUN?          TSAL_PCBPRE_Actual  低压盒         
+NODE     212              $
+    RUN?     12V  低压盒      +12
+NODE     213              $
+    RUN?     GND  低压盒      GND
+NODENAME NetRUN-2         $
+    RUN        2
+NODE     217              $
+    RXG?       1  预充继电器?     2
+NODENAME NetTSMS-1        $
+    TSMS       1
+NODENAME NetTSMS-2        $
+    TSMS       2
+NODE     221              $
+    主正继电器?     4  主正继电器?     6  主负继电器?     4  主负继电器?     6  预充继电器?     4  预充继电器?     6
+NODENAME Net急停_右-1        $
+    急停_右       1
+NODENAME Net急停_左-1        $
+    急停_左       1
+NODENAME Net放电电阻1-2       $
+    放电电阻1      2  放电电阻2      2  放电继电器      2
+NODENAME Net驾驶舱急停开关-1     $
+    驾驶舱急停开关    1
+EOS

@@ -3,9 +3,9 @@
  *
  * Code generation for model "VCU10".
  *
- * Model version              : 1.31
+ * Model version              : 1.44
  * Simulink Coder version : 9.6 (R2021b) 14-May-2021
- * C source code generated on : Sun Jul 19 00:53:26 2026
+ * C source code generated on : Fri Jul 31 01:34:11 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -129,8 +129,8 @@ typedef struct {
 
 #endif
 
-#ifndef DEFINED_TYPEDEF_FOR_struct_obAbwEgUmQqTZ0WAm2Y8FD_
-#define DEFINED_TYPEDEF_FOR_struct_obAbwEgUmQqTZ0WAm2Y8FD_
+#ifndef DEFINED_TYPEDEF_FOR_struct_CSAJSnlNFr1gDpAjKumwKE_
+#define DEFINED_TYPEDEF_FOR_struct_CSAJSnlNFr1gDpAjKumwKE_
 
 typedef struct {
   real_T apps1_01;
@@ -143,7 +143,9 @@ typedef struct {
   real_T wlspd_hsensor;
   real_T airprs_sensor1;
   real_T airprs_sensor2;
-} struct_obAbwEgUmQqTZ0WAm2Y8FD;
+  uint16_T airprs1_raw;
+  uint16_T airprs2_raw;
+} struct_CSAJSnlNFr1gDpAjKumwKE;
 
 #endif
 

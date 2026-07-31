@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">80</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="as_led_blue" SID="1366">
+    <P Name="Position">[35, 58, 65, 72]</P>
+    <P Name="ZOrder">267</P>
+  </Block>
+  <Block BlockType="Inport" Name="asms_button" SID="1367">
+    <P Name="Position">[35, 133, 65, 147]</P>
+    <P Name="ZOrder">269</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="1368">
+    <P Name="Position">[45, 557, 85, 593]</P>
+    <P Name="ZOrder">260</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="1369">
+    <P Name="Position">[40, 817, 80, 853]</P>
+    <P Name="ZOrder">262</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant2" SID="1370">
+    <P Name="Position">[510, 292, 550, 328]</P>
+    <P Name="ZOrder">265</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion" SID="1371">
+    <P Name="Position">[950, 503, 1025, 537]</P>
+    <P Name="ZOrder">266</P>
+    <P Name="OutDataTypeStr">boolean</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="From" Name="From" SID="1372">
+    <P Name="Position">[25, 447, 110, 483]</P>
+    <P Name="ZOrder">256</P>
+    <P Name="GotoTag">blue</P>
+  </Block>
+  <Block BlockType="From" Name="From1" SID="1373">
+    <P Name="Position">[25, 502, 110, 538]</P>
+    <P Name="ZOrder">257</P>
+    <P Name="GotoTag">blue</P>
+  </Block>
+  <Block BlockType="From" Name="From2" SID="1374">
+    <P Name="Position">[20, 762, 105, 798]</P>
+    <P Name="ZOrder">258</P>
+    <P Name="GotoTag">blue</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto" SID="1375">
+    <P Name="Position">[510, 87, 595, 123]</P>
+    <P Name="ZOrder">255</P>
+    <P Name="GotoTag">blue</P>
+  </Block>
+  <Block BlockType="DiscretePulseGenerator" Name="Pulse&#xA;Generator" SID="1376">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[30, 701, 95, 749]</P>
+    <P Name="ZOrder">261</P>
+    <P Name="Period">100</P>
+    <P Name="PulseWidth">50</P>
+    <P Name="SampleTime">-1</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch" SID="1377">
+    <P Name="Position">[240, 434, 395, 606]</P>
+    <P Name="ZOrder">259</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="Threshold">10</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch1" SID="1378">
+    <P Name="Position">[240, 694, 395, 866]</P>
+    <P Name="ZOrder">263</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="Threshold">10</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch2" SID="1379">
+    <P Name="Position">[655, 434, 810, 606]</P>
+    <P Name="ZOrder">264</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="Threshold">40000</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="blue" SID="1380">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[215, 25, 420, 180]</P>
+    <P Name="ZOrder">254</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1380"/>
+  </Block>
+  <Block BlockType="Outport" Name="led_assi_blue" SID="1381">
+    <P Name="Position">[1180, 513, 1210, 527]</P>
+    <P Name="ZOrder">268</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1366#out:1</P>
+    <P Name="Dst">1380#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1379#out:1</P>
+    <P Name="Dst">1371#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">1377#out:1</P>
+    <P Name="Dst">1379#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">1370#out:1</P>
+    <P Name="Points">[72, 0; 0, 155]</P>
+    <P Name="Dst">1379#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1374#out:1</P>
+    <P Name="Dst">1378#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1369#out:1</P>
+    <P Name="Dst">1378#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">1371#out:1</P>
+    <P Name="Dst">1381#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">1378#out:1</P>
+    <P Name="Points">[125, 0; 0, -205]</P>
+    <P Name="Dst">1379#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">1372#out:1</P>
+    <P Name="Dst">1377#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">1376#out:1</P>
+    <P Name="Dst">1378#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">1380#out:1</P>
+    <P Name="Dst">1375#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">1373#out:1</P>
+    <P Name="Dst">1377#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">1368#out:1</P>
+    <P Name="Dst">1377#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">1367#out:1</P>
+    <P Name="Dst">1380#in:2</P>
+  </Line>
+</System>

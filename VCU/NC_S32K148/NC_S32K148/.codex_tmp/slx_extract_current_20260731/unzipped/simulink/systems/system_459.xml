@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">124</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="as_flag_state" SID="460">
+    <P Name="Position">[-150, 108, -120, 122]</P>
+    <P Name="ZOrder">184</P>
+  </Block>
+  <Block BlockType="Inport" Name="task_finish" SID="461">
+    <P Name="Position">[-155, 188, -125, 202]</P>
+    <P Name="ZOrder">290</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="AMI_Tx" SID="462">
+    <P Name="Position">[-155, 343, -125, 357]</P>
+    <P Name="ZOrder">181</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="463">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[155, 10, 175, 30]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="AMI_Receivemsg" SID="464">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-60, 271, 325, 429]</P>
+    <P Name="ZOrder">183</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_464"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="AMI_Transmitmsg" SID="477">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[-65, 76, 320, 234]</P>
+    <P Name="ZOrder">180</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_477"/>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant" SID="1464">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[440, 455, 470, 485]</P>
+    <P Name="ZOrder">293</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">==</P>
+      <P Name="const">5</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant1" SID="1470">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[440, 575, 470, 605]</P>
+    <P Name="ZOrder">295</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&gt;</P>
+      <P Name="const">0</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Outport" Name="AMI_RX" SID="495">
+    <P Name="Position">[545, 148, 575, 162]</P>
+    <P Name="ZOrder">291</P>
+  </Block>
+  <Block BlockType="Outport" Name="ami_astask" SID="496">
+    <P Name="Position">[545, 343, 575, 357]</P>
+    <P Name="ZOrder">289</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="inspection_flag" SID="1463">
+    <P Name="Position">[545, 463, 575, 477]</P>
+    <P Name="ZOrder">292</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="astask_flag" SID="1469">
+    <P Name="Position">[545, 583, 575, 597]</P>
+    <P Name="ZOrder">294</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">464#out:1</P>
+    <P Name="Points">[28, 0]</P>
+    <Branch>
+      <P Name="ZOrder">7</P>
+      <P Name="Points">[0, 120]</P>
+      <Branch>
+        <P Name="ZOrder">11</P>
+        <P Name="Points">[0, 120]</P>
+        <P Name="Dst">1470#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">10</P>
+        <P Name="Dst">1464#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">6</P>
+      <P Name="Dst">496#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">462#out:1</P>
+    <P Name="Dst">464#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">460#out:1</P>
+    <P Name="Dst">477#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">461#out:1</P>
+    <P Name="Dst">477#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">477#out:1</P>
+    <P Name="Dst">495#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">1464#out:1</P>
+    <P Name="Dst">1463#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">1470#out:1</P>
+    <P Name="Dst">1469#in:1</P>
+  </Line>
+</System>

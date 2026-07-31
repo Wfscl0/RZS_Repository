@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">129</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="di8_out" SID="279">
+    <P Name="Position">[170, 98, 200, 112]</P>
+    <P Name="ZOrder">177</P>
+  </Block>
+  <Block BlockType="Inport" Name="run_button" SID="280">
+    <P Name="Position">[170, 218, 200, 232]</P>
+    <P Name="ZOrder">180</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="tsms_button" SID="281">
+    <P Name="Position">[485, 298, 515, 312]</P>
+    <P Name="ZOrder">184</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="di8_in" SID="284">
+    <P Name="Position">[170, 178, 200, 192]</P>
+    <P Name="ZOrder">189</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_flag" SID="283">
+    <P Name="Position">[170, 138, 200, 152]</P>
+    <P Name="ZOrder">188</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="brake_on" SID="282">
+    <P Name="Position">[485, 378, 515, 392]</P>
+    <P Name="ZOrder">186</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="285">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[380, -60, 400, -40]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="AS_Emergency_Read" SID="1580">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[690, 502, 805, 528]</P>
+    <P Name="ZOrder">198</P>
+    <P Name="DataStoreName">as_emergency_flag</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Chart" SID="286">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[405, 116, 510, 174]</P>
+    <P Name="ZOrder">179</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">di8</P>
+      <P Name="PropagatedSignals">di8</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_286"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Chart1" SID="287">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[395, 195, 500, 255]</P>
+    <P Name="ZOrder">182</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">run</P>
+      <P Name="PropagatedSignals">run</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+    <System Ref="system_287"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Chart2" SID="288">
+    <P Name="Ports">[5, 2]</P>
+    <P Name="Position">[625, 108, 725, 502]</P>
+    <P Name="ZOrder">183</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_288"/>
+  </Block>
+  <Block BlockType="DataStoreRead" Name="FSEC_Safety_Lock_Read" SID="1565">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[690, 457, 805, 483]</P>
+    <P Name="ZOrder">195</P>
+    <P Name="DataStoreName">safety_lock</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">1</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="289">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[235, 89, 265, 121]</P>
+    <P Name="ZOrder">178</P>
+    <P Name="Operator">NOT</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator1" SID="290">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[310, 209, 340, 241]</P>
+    <P Name="ZOrder">181</P>
+    <P Name="Operator">NOT</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator2" SID="291">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[235, 169, 265, 201]</P>
+    <P Name="ZOrder">190</P>
+    <P Name="Operator">NOT</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="No_AS_Emergency" SID="1581">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[835, 497, 880, 533]</P>
+    <P Name="ZOrder">199</P>
+    <P Name="Operator">NOT</P>
+    <P Name="Inputs">1</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="No_FSEC_Safety_Lock" SID="1566">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[835, 452, 880, 488]</P>
+    <P Name="ZOrder">196</P>
+    <P Name="Operator">NOT</P>
+    <P Name="Inputs">1</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch" SID="292">
+    <P Name="Position">[300, 125, 350, 165]</P>
+    <P Name="ZOrder">187</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Logic" Name="TS_Safety_Gate" SID="1567">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[910, 391, 960, 439]</P>
+    <P Name="ZOrder">197</P>
+    <P Name="Inputs">3</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Outport" Name="ts" SID="293">
+    <P Name="Position">[765, 203, 795, 217]</P>
+    <P Name="ZOrder">185</P>
+  </Block>
+  <Block BlockType="Outport" Name="di8" SID="294">
+    <P Name="Position">[555, 183, 585, 197]</P>
+    <P Name="ZOrder">191</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="run" SID="295">
+    <P Name="Position">[555, 263, 585, 277]</P>
+    <P Name="ZOrder">192</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="ts_warning" SID="296">
+    <P Name="Position">[765, 398, 795, 412]</P>
+    <P Name="ZOrder">194</P>
+    <P Name="Port">4</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">279#out:1</P>
+    <P Name="Dst">289#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">280#out:1</P>
+    <P Name="Dst">290#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">290#out:1</P>
+    <P Name="Dst">287#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">di8</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">286#out:1</P>
+    <P Name="Points">[13, 0]</P>
+    <Branch>
+      <P Name="ZOrder">6</P>
+      <P Name="Labels">[2, 1]</P>
+      <P Name="Points">[0, 45]</P>
+      <P Name="Dst">294#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">7</P>
+      <P Name="Dst">288#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">run</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">287#out:1</P>
+    <P Name="Points">[24, 0]</P>
+    <Branch>
+      <P Name="ZOrder">21</P>
+      <P Name="Labels">[2, 1]</P>
+      <P Name="Points">[0, 45]</P>
+      <P Name="Dst">295#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">10</P>
+      <P Name="Dst">288#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">281#out:1</P>
+    <P Name="Dst">288#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">282#out:1</P>
+    <P Name="Dst">288#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">283#out:1</P>
+    <P Name="Points">[66, 0]</P>
+    <Branch>
+      <P Name="ZOrder">20</P>
+      <P Name="Points">[0, 320]</P>
+      <P Name="Dst">288#in:5</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">19</P>
+      <P Name="Dst">292#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">284#out:1</P>
+    <P Name="Dst">291#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">289#out:1</P>
+    <P Name="Points">[13, 0; 0, 25]</P>
+    <P Name="Dst">292#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">291#out:1</P>
+    <P Name="Points">[13, 0; 0, -25]</P>
+    <P Name="Dst">292#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">292#out:1</P>
+    <P Name="Dst">286#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">288#out:2</P>
+    <P Name="Dst">296#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">41</P>
+    <P Name="Src">1565#out:1</P>
+    <P Name="Dst">1566#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">42</P>
+    <P Name="Src">288#out:1</P>
+    <P Name="Points">[25, 0; 0, 185; 140, 0]</P>
+    <P Name="Dst">1567#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">43</P>
+    <P Name="Src">1566#out:1</P>
+    <P Name="Points">[5, 0; 0, -55]</P>
+    <P Name="Dst">1567#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">44</P>
+    <P Name="Src">1580#out:1</P>
+    <P Name="Dst">1581#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">45</P>
+    <P Name="Src">1581#out:1</P>
+    <P Name="Points">[10, 0]</P>
+    <P Name="Dst">1567#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">46</P>
+    <P Name="Src">1567#out:1</P>
+    <P Name="Points">[0, -190; -205, 0; 0, -20; -10, 0]</P>
+    <P Name="Dst">293#in:1</P>
+  </Line>
+  <Annotation SID="1568">
+    <P Name="Name">Software Emergency lock forces TS=0 until VCU low-voltage power cycle.</P>
+    <P Name="Position">[610, 520, 938, 534]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="1582">
+    <P Name="Name">AS Emergency forces TS=0 in the same model step; the software lock keeps TS off until VCU low-voltage power cycle.</P>
+    <P Name="Position">[610, 520, 1136, 534]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-2</P>
+  </Annotation>
+</System>

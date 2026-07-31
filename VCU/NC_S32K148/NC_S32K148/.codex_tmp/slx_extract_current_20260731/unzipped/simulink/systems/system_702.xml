@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">129</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="lifesig" SID="702::113">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">93</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="702::128">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">106</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="702::127">
+    <P Name="Tag">Stateflow S-Function 18</P>
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[180, 100, 230, 160]</P>
+    <P Name="ZOrder">105</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="Parameters">F,T</P>
+    <P Name="PortCounts">[1 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">brkmotor_check</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="702::129">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">107</P>
+  </Block>
+  <Block BlockType="Outport" Name="brkmotor_check" SID="702::117">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">95</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">702::113#out:1</P>
+    <P Name="Dst">702::127#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">brkmotor_check</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">702::127#out:2</P>
+    <P Name="Dst">702::117#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">702::128#out:1</P>
+    <P Name="Dst">702::129#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">702::127#out:1</P>
+    <P Name="Dst">702::128#in:1</P>
+  </Line>
+</System>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">125</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="canb_ipctsmsg2" SID="1023">
+    <P Name="Position">[275, 483, 305, 497]</P>
+    <P Name="ZOrder">890</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add" SID="1024">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[680, 269, 710, 311]</P>
+    <P Name="ZOrder">895</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">++-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add1" SID="1025">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[715, 567, 745, 598]</P>
+    <P Name="ZOrder">913</P>
+    <P Name="IconShape">rectangular</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add2" SID="1026">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[715, 747, 745, 778]</P>
+    <P Name="ZOrder">918</P>
+    <P Name="IconShape">rectangular</P>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift" SID="1027">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[570, 156, 620, 194]</P>
+    <P Name="ZOrder">894</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">8</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift1" SID="1028">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[545, 381, 595, 419]</P>
+    <P Name="ZOrder">897</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Right Logical</P>
+      <P Name="N">7</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift2" SID="1029">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[545, 426, 595, 464]</P>
+    <P Name="ZOrder">900</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Right Logical</P>
+      <P Name="N">6</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift3" SID="1030">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[545, 471, 595, 509]</P>
+    <P Name="ZOrder">908</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Right Logical</P>
+      <P Name="N">2</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift4" SID="1031">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[545, 516, 595, 554]</P>
+    <P Name="ZOrder">914</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">8</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift5" SID="1032">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[545, 696, 595, 734]</P>
+    <P Name="ZOrder">919</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">8</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bitwise AND" SID="1033">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[470, 381, 510, 419]</P>
+    <P Name="ZOrder">896</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="SourceType">Bitwise Operator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="logicop">AND</P>
+      <P Name="UseBitMask">on</P>
+      <P Name="NumInputPorts">1</P>
+      <P Name="BitMask">bin2dec(&apos;10000000&apos;)</P>
+      <P Name="BitMaskRealWorld">Stored Integer</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bitwise AND1" SID="1034">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[470, 426, 510, 464]</P>
+    <P Name="ZOrder">899</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="SourceType">Bitwise Operator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="logicop">AND</P>
+      <P Name="UseBitMask">on</P>
+      <P Name="NumInputPorts">1</P>
+      <P Name="BitMask">bin2dec(&apos;01000000&apos;)</P>
+      <P Name="BitMaskRealWorld">Stored Integer</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bitwise AND2" SID="1035">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[470, 471, 510, 509]</P>
+    <P Name="ZOrder">907</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="SourceType">Bitwise Operator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="logicop">AND</P>
+      <P Name="UseBitMask">on</P>
+      <P Name="NumInputPorts">1</P>
+      <P Name="BitMask">bin2dec(&apos;00111100&apos;)</P>
+      <P Name="BitMaskRealWorld">Stored Integer</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="1036">
+    <P Name="Position">[620, 300, 650, 330]</P>
+    <P Name="ZOrder">906</P>
+    <P Name="Value">1024</P>
+    <P Name="OutDataTypeStr">double</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion1" SID="1037">
+    <P Name="Position">[450, 248, 525, 282]</P>
+    <P Name="ZOrder">893</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion2" SID="1038">
+    <P Name="Position">[450, 158, 525, 192]</P>
+    <P Name="ZOrder">892</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion3" SID="1039">
+    <P Name="Position">[630, 383, 705, 417]</P>
+    <P Name="ZOrder">898</P>
+    <P Name="OutDataTypeStr">boolean</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion4" SID="1040">
+    <P Name="Position">[630, 428, 705, 462]</P>
+    <P Name="ZOrder">901</P>
+    <P Name="OutDataTypeStr">boolean</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion5" SID="1041">
+    <P Name="Position">[630, 473, 705, 507]</P>
+    <P Name="ZOrder">909</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion6" SID="1042">
+    <P Name="Position">[455, 518, 530, 552]</P>
+    <P Name="ZOrder">911</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion7" SID="1043">
+    <P Name="Position">[455, 608, 530, 642]</P>
+    <P Name="ZOrder">912</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion8" SID="1044">
+    <P Name="Position">[455, 698, 530, 732]</P>
+    <P Name="ZOrder">916</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion9" SID="1045">
+    <P Name="Position">[455, 788, 530, 822]</P>
+    <P Name="ZOrder">917</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Demux" Name="Demux" SID="1046">
+    <P Name="Ports">[1, 8]</P>
+    <P Name="Position">[385, 131, 400, 849]</P>
+    <P Name="ZOrder">891</P>
+    <P Name="Outputs">8</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_eps_angle" SID="1047">
+    <P Name="Position">[835, 283, 865, 297]</P>
+    <P Name="ZOrder">902</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_eps_velocity" SID="1048">
+    <P Name="Position">[835, 348, 865, 362]</P>
+    <P Name="ZOrder">903</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_err" SID="1049">
+    <P Name="Position">[835, 393, 865, 407]</P>
+    <P Name="ZOrder">904</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="task_finish" SID="1050">
+    <P Name="Position">[835, 438, 865, 452]</P>
+    <P Name="ZOrder">905</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_heartbeat" SID="1051">
+    <P Name="Position">[835, 483, 865, 497]</P>
+    <P Name="ZOrder">910</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_lspd" SID="1052">
+    <P Name="Position">[835, 578, 865, 592]</P>
+    <P Name="ZOrder">915</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_hspd" SID="1053">
+    <P Name="Position">[835, 758, 865, 772]</P>
+    <P Name="ZOrder">920</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1025#out:1</P>
+    <P Name="Dst">1052#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1030#out:1</P>
+    <P Name="Dst">1041#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">1046#out:3</P>
+    <P Name="Dst">1048#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">1031#out:1</P>
+    <P Name="Points">[50, 0; 0, 40]</P>
+    <P Name="Dst">1025#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1036#out:1</P>
+    <P Name="Points">[10, 0]</P>
+    <P Name="Dst">1024#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1046#out:8</P>
+    <P Name="Dst">1045#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">1038#out:1</P>
+    <P Name="Dst">1027#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">1043#out:1</P>
+    <P Name="Points">[115, 0; 0, -35]</P>
+    <P Name="Dst">1025#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">1035#out:1</P>
+    <P Name="Dst">1030#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">1044#out:1</P>
+    <P Name="Dst">1032#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">1045#out:1</P>
+    <P Name="Points">[104, 0; 0, -35]</P>
+    <P Name="Dst">1026#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">1046#out:1</P>
+    <P Name="Dst">1038#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">1032#out:1</P>
+    <P Name="Points">[39, 0; 0, 40]</P>
+    <P Name="Dst">1026#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">1026#out:1</P>
+    <P Name="Dst">1053#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">1028#out:1</P>
+    <P Name="Dst">1039#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">1046#out:5</P>
+    <P Name="Dst">1042#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">1042#out:1</P>
+    <P Name="Dst">1031#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">1041#out:1</P>
+    <P Name="Dst">1051#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">19</P>
+    <P Name="Src">1046#out:6</P>
+    <P Name="Dst">1043#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">1040#out:1</P>
+    <P Name="Dst">1050#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">21</P>
+    <P Name="Src">1029#out:1</P>
+    <P Name="Dst">1040#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">22</P>
+    <P Name="Src">1046#out:4</P>
+    <P Name="Points">[50, 0]</P>
+    <Branch>
+      <P Name="ZOrder">23</P>
+      <P Name="Dst">1035#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">24</P>
+      <P Name="Dst">1033#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">25</P>
+      <P Name="Dst">1034#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">26</P>
+    <P Name="Src">1039#out:1</P>
+    <P Name="Dst">1049#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">27</P>
+    <P Name="Src">1024#out:1</P>
+    <P Name="Dst">1047#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">28</P>
+    <P Name="Src">1033#out:1</P>
+    <P Name="Dst">1028#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">29</P>
+    <P Name="Src">1034#out:1</P>
+    <P Name="Dst">1029#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">30</P>
+    <P Name="Src">1023#out:1</P>
+    <P Name="Dst">1046#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">31</P>
+    <P Name="Src">1046#out:2</P>
+    <P Name="Dst">1037#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">32</P>
+    <P Name="Src">1027#out:1</P>
+    <P Name="Points">[34, 0; 0, 100]</P>
+    <P Name="Dst">1024#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">33</P>
+    <P Name="Src">1037#out:1</P>
+    <P Name="Points">[112, 0; 0, 25]</P>
+    <P Name="Dst">1024#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">34</P>
+    <P Name="Src">1046#out:7</P>
+    <P Name="Dst">1044#in:1</P>
+  </Line>
+</System>

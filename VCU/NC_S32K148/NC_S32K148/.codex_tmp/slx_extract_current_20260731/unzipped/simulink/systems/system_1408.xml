@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">60</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="r2d_warning" SID="1409">
+    <P Name="Position">[20, 378, 50, 392]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_emergency_flag" SID="1410">
+    <P Name="Position">[360, 448, 390, 462]</P>
+    <P Name="ZOrder">177</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="ts_warning" SID="1411">
+    <P Name="Position">[20, 508, 50, 522]</P>
+    <P Name="ZOrder">821</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_flag" SID="1482">
+    <P Name="Position">[20, 448, 50, 462]</P>
+    <P Name="ZOrder">825</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="1412">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[215, 140, 235, 160]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Chart" SID="1413">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[435, 429, 575, 481]</P>
+    <P Name="ZOrder">178</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1413"/>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="1414">
+    <P Name="Position">[530, 485, 560, 515]</P>
+    <P Name="ZOrder">278</P>
+    <P Name="Value">0</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion6" SID="1415">
+    <P Name="Position">[510, 363, 585, 397]</P>
+    <P Name="ZOrder">818</P>
+    <P Name="OutDataTypeStr">boolean</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DiscretePulseGenerator" Name="Pulse&#xA;Generator" SID="1416">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[420, 356, 485, 404]</P>
+    <P Name="ZOrder">277</P>
+    <P Name="Period">100</P>
+    <P Name="PulseWidth">50</P>
+    <P Name="SampleTime">-1</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch" SID="1417">
+    <P Name="Position">[655, 435, 705, 475]</P>
+    <P Name="ZOrder">180</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch1" SID="1428">
+    <P Name="Position">[120, 435, 170, 475]</P>
+    <P Name="ZOrder">824</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Outport" Name="r2d_buzzer" SID="1418">
+    <P Name="Position">[270, 448, 300, 462]</P>
+    <P Name="ZOrder">-3</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_buzzer" SID="1419">
+    <P Name="Position">[755, 448, 785, 462]</P>
+    <P Name="ZOrder">179</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1410#out:1</P>
+    <P Name="Dst">1413#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">1413#out:1</P>
+    <P Name="Dst">1417#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">1417#out:1</P>
+    <P Name="Dst">1419#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1414#out:1</P>
+    <P Name="Points">[50, 0; 0, -30]</P>
+    <P Name="Dst">1417#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1416#out:1</P>
+    <P Name="Dst">1415#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">1415#out:1</P>
+    <P Name="Points">[31, 0; 0, 60]</P>
+    <P Name="Dst">1417#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">1409#out:1</P>
+    <P Name="Points">[35, 0; 0, 55]</P>
+    <P Name="Dst">1428#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">1411#out:1</P>
+    <P Name="Points">[30, 0; 0, -45]</P>
+    <P Name="Dst">1428#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">1482#out:1</P>
+    <P Name="Dst">1428#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">1428#out:1</P>
+    <P Name="Dst">1418#in:1</P>
+  </Line>
+</System>

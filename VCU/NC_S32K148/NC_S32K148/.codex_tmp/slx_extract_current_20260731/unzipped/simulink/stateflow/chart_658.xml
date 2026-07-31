@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="658">
+  <P Name="name">AMI_CAN/AMI_Transmitmsg/Chart</P>
+  <P Name="windowPosition">[199.5 216.75 417 348.75]</P>
+  <P Name="viewLimits">[-358.167 1285.833 -8.993 685.674]</P>
+  <P Name="zoomFactor">1.333</P>
+  <P Name="screen">[1 1 3200 1200 1.25]</P>
+  <P Name="viewObj">658</P>
+  <P Name="ssIdHighWaterMark">39</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="chartFileNumber">20</P>
+  <P Name="allowGlobalAccessToExportedFunctions">0</P>
+  <P Name="saturateOnIntegerOverflow">1</P>
+  <P Name="userSpecifiedStateTransitionExecutionOrder">1</P>
+  <P Name="disableImplicitCasting">1</P>
+  <P Name="actionLanguage">2</P>
+  <Children>
+    <state SSID="17">
+      <P Name="labelString">as_off
+en:
+ami_process=0x01
+</P>
+      <P Name="position">[161.2667 66.6159 108.2222 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">658</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="16">
+      <P Name="labelString">as_emergency
+en:
+ami_process=0x40</P>
+      <P Name="position">[610.0667 74.6667 108.2222 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">658</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="8">
+      <P Name="labelString">begin
+</P>
+      <P Name="position">[375 190.9079 129.5556 91.4667]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">658</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="18">
+      <P Name="labelString">munual_driving
+en:
+ami_process=0x02</P>
+      <P Name="position">[98.7333 206.6413 108.2222 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">658</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="15">
+      <P Name="labelString">as_finished
+en:
+ami_process=0x20</P>
+      <P Name="position">[626.7333 210.6667 108.2222 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">658</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="19">
+      <P Name="labelString">as_ready
+en:
+ami_process=0x04</P>
+      <P Name="position">[161.2667 346.6667 108.2222 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">658</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="11">
+      <P Name="labelString">as_driving
+en:
+ami_process=0x10</P>
+      <P Name="position">[624.0667 346.6667 108.2222 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">658</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="10">
+      <P Name="labelString">r2d
+en:
+ami_process=0x08</P>
+      <P Name="position">[385.6667 449.1667 108.2222 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">658</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <data SSID="1" name="as_off_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="2" name="munual_driving_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="3" name="as_ready_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="4" name="r2d_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="5" name="as_driving_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="6" name="as_finished_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="7" name="as_emergency_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="38" name="ami_process">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="22">
+      <P Name="labelString">[as_off_flag==1]</P>
+      <P Name="labelPosition">[325.53 102.605 87.781 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[1 0 -1 0.2733 410.4041 190.9079 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">17</P>
+        <P Name="intersection">[2 1 0 0.4528 269.4889 93.7817 0 0]</P>
+      </dst>
+      <P Name="midPoint">[364.5241 121.7672]</P>
+      <P Name="dataLimits">[269.489 410.404 91.382 190.908]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="36">
+      <P Name="labelString">[as_emergency_flag==1]</P>
+      <P Name="labelPosition">[433.101 88.624 134 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[1 0 -1 0.7063 466.5048 190.9079 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">16</P>
+        <P Name="intersection">[4 -1 0 0.6342 610.0667 96.6159 0 0]</P>
+      </dst>
+      <P Name="midPoint">[513.6444 123.1206]</P>
+      <P Name="dataLimits">[466.505 610.067 94.216 190.908]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">7</P>
+    </transition>
+    <transition SSID="37">
+      <P Name="labelString">[as_emergency_flag~=1]</P>
+      <P Name="labelPosition">[516.323 140.069 134 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">16</P>
+        <P Name="intersection">[4 -1 0 0.3092 610.0667 116.1133 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[1 0 -1 0.8568 486.0022 190.9079 0 0]</P>
+      </dst>
+      <P Name="midPoint">[530.4216 131.8978]</P>
+      <P Name="dataLimits">[483.602 610.067 116.113 190.908]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="23">
+      <P Name="labelString">[as_off_flag~=1]</P>
+      <P Name="labelPosition">[280.989 136.067 87.781 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">17</P>
+        <P Name="intersection">[2 1 0 0.8365 269.4889 116.807 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[1 0 -1 0.0939 387.1651 190.9079 0 0]</P>
+      </dst>
+      <P Name="midPoint">[345.1983 132.9862]</P>
+      <P Name="dataLimits">[269.489 389.565 116.807 190.908]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="9">
+      <P Name="labelString"/>
+      <P Name="labelPosition">[439.541 175.908 0 0]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 -0 1 0 439.5406 160.9079 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[1 0 -1 0.4982 439.5406 190.9079 0 0]</P>
+      </dst>
+      <P Name="midPoint">[439.5406 175.9079]</P>
+      <P Name="dataLimits">[437.141 441.941 160.908 190.908]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="24">
+      <P Name="labelString">[munual_driving_flag==1]</P>
+      <P Name="labelPosition">[226.777 201.208 136.641 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[4 -1 0 0.6964 375 218.6746 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">18</P>
+        <P Name="intersection">[2 1 -0 0.2006 206.9555 218.6746 0 0]</P>
+      </dst>
+      <P Name="midPoint">[294.9778 218.6746]</P>
+      <P Name="dataLimits">[206.956 375 216.275 221.075]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">2</P>
+    </transition>
+    <transition SSID="34">
+      <P Name="labelString">[as_finished_flag==1]</P>
+      <P Name="labelPosition">[520.981 196.006 116 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[2 1 0 0.3362 504.5556 221.6625 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">15</P>
+        <P Name="intersection">[4 -1 -0 0.8167 626.7333 221.6625 0 0]</P>
+      </dst>
+      <P Name="midPoint">[561.6444 221.6625]</P>
+      <P Name="dataLimits">[504.556 626.733 219.262 224.062]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">6</P>
+    </transition>
+    <transition SSID="25">
+      <P Name="labelString">[munual_driving_flag~=1]</P>
+      <P Name="labelPosition">[225.813 234.929 136.641 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">18</P>
+        <P Name="intersection">[2 1 0 0.7715 206.9555 252.9293 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[4 -1 -0 0.3219 375 252.9293 0 0]</P>
+      </dst>
+      <P Name="midPoint">[286.9778 252.9293]</P>
+      <P Name="dataLimits">[206.956 375 250.529 255.329]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="35">
+      <P Name="labelString">[as_finished_flag~=1]</P>
+      <P Name="labelPosition">[514.891 262.329 116 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">15</P>
+        <P Name="intersection">[4 -1 0 0.2223 626.7333 257.3292 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[2 1 -0 0.7262 504.5556 257.3292 0 0]</P>
+      </dst>
+      <P Name="midPoint">[569.6444 257.3292]</P>
+      <P Name="dataLimits">[504.556 626.733 254.929 259.729]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="27">
+      <P Name="labelString">[as_ready_flag==1]</P>
+      <P Name="labelPosition">[260.366 315.188 104.672 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[3 0 1 0.8836 390.0803 282.3746 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">19</P>
+        <P Name="intersection">[2 1 0 0.2785 269.4889 363.3785 0 0]</P>
+      </dst>
+      <P Name="midPoint">[351.1224 340.2144]</P>
+      <P Name="dataLimits">[269.489 390.08 282.375 365.778]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">3</P>
+    </transition>
+    <transition SSID="29">
+      <P Name="labelString">[as_ready_flag~=1]</P>
+      <P Name="labelPosition">[288.02 358.474 104.672 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">19</P>
+        <P Name="intersection">[2 1 0 0.5624 269.4889 380.4136 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[3 0 1 0.7395 408.747 282.3746 0 0]</P>
+      </dst>
+      <P Name="midPoint">[359.8468 356.123]</P>
+      <P Name="dataLimits">[269.489 411.147 282.375 380.414]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="30">
+      <P Name="labelString">[r2d_flag==1]</P>
+      <P Name="labelPosition">[379.976 380.025 72.656 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[3 0 1 0.5897 428.1533 282.3746 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">10</P>
+        <P Name="intersection">[1 -0 -1 0.3926 428.1533 449.1667 0 0]</P>
+      </dst>
+      <P Name="midPoint">[428.1533 361.7706]</P>
+      <P Name="dataLimits">[425.753 430.553 282.375 449.167]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">4</P>
+    </transition>
+    <transition SSID="31">
+      <P Name="labelString">[r2d_flag~=1]</P>
+      <P Name="labelPosition">[434.253 411.042 72.656 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">10</P>
+        <P Name="intersection">[1 0 -1 0.5839 448.8533 449.1667 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[3 -0 1 0.4299 448.8533 282.3746 0 0]</P>
+      </dst>
+      <P Name="midPoint">[448.8533 369.7706]</P>
+      <P Name="dataLimits">[446.453 451.253 282.375 449.167]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="32">
+      <P Name="labelString">[as_driving_flag==1]</P>
+      <P Name="labelPosition">[469.904 365.916 109.984 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[3 0 1 0.2776 468.5867 282.3746 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">11</P>
+        <P Name="intersection">[4 -1 0 0.3564 624.0667 385.2849 0 0]</P>
+      </dst>
+      <P Name="midPoint">[519.8472 356.3092]</P>
+      <P Name="dataLimits">[468.587 624.067 282.375 387.685]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">5</P>
+    </transition>
+    <transition SSID="33">
+      <P Name="labelString">[as_driving_flag~=1]</P>
+      <P Name="labelPosition">[504.738 332.236 109.984 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">11</P>
+        <P Name="intersection">[4 -1 0 0.7116 624.0667 363.9689 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">8</P>
+        <P Name="intersection">[3 0 1 0.1035 491.1422 282.3746 0 0]</P>
+      </dst>
+      <P Name="midPoint">[538.6122 346.1639]</P>
+      <P Name="dataLimits">[488.742 624.067 282.375 363.969]</P>
+      <P Name="subviewer">658</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+  </Children>
+</chart>

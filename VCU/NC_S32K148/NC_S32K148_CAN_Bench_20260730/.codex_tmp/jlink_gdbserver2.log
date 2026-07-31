@@ -1,0 +1,172 @@
+SEGGER J-Link GDB Server V8.26 Command Line Version
+
+JLinkARM.dll V8.26 (DLL compiled Apr 11 2025 07:53:44)
+
+Command line: -select USB=69400240 -device S32K148 -if SWD -speed 4000 -port 2331 -swoport 2332 -telnetport 2333 -singlerun -nogui
+-----GDB Server start settings-----
+GDBInit file:                  none
+GDB Server Listening port:     2331
+SWO raw output listening port: 2332
+Terminal I/O port:             2333
+Accept remote connection:      localhost only
+Generate logfile:              off
+Verify download:               off
+Init regs on start:            off
+Silent mode:                   off
+Single run mode:               on
+Target connection timeout:     0 ms
+------J-Link related settings------
+J-Link Host interface:         USB
+J-Link script:                 none
+J-Link settings file:          none
+------Target related settings------
+Target device:                 S32K148
+Target device parameters:      none
+Target interface:              SWD
+Target interface speed:        4000kHz
+Target endian:                 little
+
+Connecting to J-Link...
+J-Link is connected.
+Firmware: J-Link V9 compiled May  7 2021 16:26:12
+Hardware: V9.40
+S/N: 69400240
+Feature(s): RDI, FlashBP, FlashDL, JFlash, GDB
+Checking target voltage...
+Target voltage: 3.32 V
+Listening on TCP/IP port 2331
+Connecting to target...
+Connected to target
+Waiting for GDB connection...Connected to 127.0.0.1
+GDB client (conn. 804) requested target.xml from GDB Server
+Reading common registers: Read register 'r0' (4 bytes) from hardware: 0x00000000
+Read register 'r1' (4 bytes) from hardware: 0x00000000
+Read register 'r2' (4 bytes) from hardware: 0x00000000
+Read register 'r3' (4 bytes) from hardware: 0x00000000
+Read register 'r4' (4 bytes) from hardware: 0x00000000
+Read register 'r5' (4 bytes) from hardware: 0x00000000
+Read register 'r6' (4 bytes) from hardware: 0x00000000
+Read register 'r7' (4 bytes) from hardware: 0x00000000
+Read register 'r8' (4 bytes) from hardware: 0x00000000
+Read register 'r9' (4 bytes) from hardware: 0x00000000
+Read register 'r10' (4 bytes) from hardware: 0x00000000
+Read register 'r11' (4 bytes) from hardware: 0x00000000
+Read register 'r12' (4 bytes) from hardware: 0x00000000
+Read register 'sp' (4 bytes) from hardware: 0xF0EF0120
+Read register 'lr' (4 bytes) from hardware: 0xFFFFFFFF
+Read register 'pc' (4 bytes) from hardware: 0x944E0000
+Read register 'xpsr' (4 bytes) from hardware: 0x00000001
+Read 4 bytes @ address 0x00004E94 (Data = 0x2100B672)
+Read 2 bytes @ address 0x00004E94 (Data = 0xB672)
+Received monitor command: reset halt
+Expected an decimal digit (0-9)
+Reading register 'msp' = 0x2001EFF0
+Read 4 bytes @ address 0x00020000 (Data = 0x2001EFF0)
+Reading common registers: Read register 'r0' (4 bytes) from hardware: 0x00000000
+Read register 'r1' (4 bytes) from hardware: 0x00000000
+Read register 'r2' (4 bytes) from hardware: 0x00000000
+Read register 'r3' (4 bytes) from hardware: 0x00000000
+Read register 'r4' (4 bytes) from hardware: 0x00000000
+Read register 'r5' (4 bytes) from hardware: 0x00000000
+Read register 'r6' (4 bytes) from hardware: 0x00000000
+Read register 'r7' (4 bytes) from hardware: 0x00000000
+Read register 'r8' (4 bytes) from hardware: 0x00000000
+Read register 'r9' (4 bytes) from hardware: 0x00000000
+Read register 'r10' (4 bytes) from hardware: 0x00000000
+Read register 'r11' (4 bytes) from hardware: 0x00000000
+Read register 'r12' (4 bytes) from hardware: 0x00000000
+Read register 'sp' (4 bytes) from hardware: 0xF0EF0120
+Read register 'lr' (4 bytes) from hardware: 0xFFFFFFFF
+Read register 'pc' (4 bytes) from hardware: 0x944E0000
+Read register 'xpsr' (4 bytes) from hardware: 0x00000001
+Read 4 bytes @ address 0x00004E94 (Data = 0x2100B672)
+Read 2 bytes @ address 0x00004E94 (Data = 0xB672)
+Reading register 'psp' = 0x00000000
+Reading common registers: Read register 'r0' (4 bytes) from hardware: 0x00000000
+Read register 'r1' (4 bytes) from hardware: 0x00000000
+Read register 'r2' (4 bytes) from hardware: 0x00000000
+Read register 'r3' (4 bytes) from hardware: 0x00000000
+Read register 'r4' (4 bytes) from hardware: 0x00000000
+Read register 'r5' (4 bytes) from hardware: 0x00000000
+Read register 'r6' (4 bytes) from hardware: 0x00000000
+Read register 'r7' (4 bytes) from hardware: 0x00000000
+Read register 'r8' (4 bytes) from hardware: 0x00000000
+Read register 'r9' (4 bytes) from hardware: 0x00000000
+Read register 'r10' (4 bytes) from hardware: 0x00000000
+Read register 'r11' (4 bytes) from hardware: 0x00000000
+Read register 'r12' (4 bytes) from hardware: 0x00000000
+Read register 'sp' (4 bytes) from hardware: 0xF0EF0120
+Read register 'lr' (4 bytes) from hardware: 0xFFFFFFFF
+Read register 'pc' (4 bytes) from hardware: 0x944E0000
+Read register 'xpsr' (4 bytes) from hardware: 0x00000001
+Read 4 bytes @ address 0x00004E94 (Data = 0x2100B672)
+Read 2 bytes @ address 0x00004E94 (Data = 0xB672)
+Reading common registers: Read register 'r0' (4 bytes) from hardware: 0x00000000
+Read register 'r1' (4 bytes) from hardware: 0x00000000
+Read register 'r2' (4 bytes) from hardware: 0x00000000
+Read register 'r3' (4 bytes) from hardware: 0x00000000
+Read register 'r4' (4 bytes) from hardware: 0x00000000
+Read register 'r5' (4 bytes) from hardware: 0x00000000
+Read register 'r6' (4 bytes) from hardware: 0x00000000
+Read register 'r7' (4 bytes) from hardware: 0x00000000
+Read register 'r8' (4 bytes) from hardware: 0x00000000
+Read register 'r9' (4 bytes) from hardware: 0x00000000
+Read register 'r10' (4 bytes) from hardware: 0x00000000
+Read register 'r11' (4 bytes) from hardware: 0x00000000
+Read register 'r12' (4 bytes) from hardware: 0x00000000
+Read register 'sp' (4 bytes) from hardware: 0xF0EF0120
+Read register 'lr' (4 bytes) from hardware: 0xFFFFFFFF
+Read register 'pc' (4 bytes) from hardware: 0x944E0000
+Read register 'xpsr' (4 bytes) from hardware: 0x00000001
+Read 4 bytes @ address 0x00004E94 (Data = 0x2100B672)
+Read 2 bytes @ address 0x00004E94 (Data = 0xB672)
+Writing register 'pc' = 0x00020410
+Reading common registers: Read register 'r0' (4 bytes) from hardware: 0x00000000
+Read register 'r1' (4 bytes) from hardware: 0x00000000
+Read register 'r2' (4 bytes) from hardware: 0x00000000
+Read register 'r3' (4 bytes) from hardware: 0x00000000
+Read register 'r4' (4 bytes) from hardware: 0x00000000
+Read register 'r5' (4 bytes) from hardware: 0x00000000
+Read register 'r6' (4 bytes) from hardware: 0x00000000
+Read register 'r7' (4 bytes) from hardware: 0x00000000
+Read register 'r8' (4 bytes) from hardware: 0x00000000
+Read register 'r9' (4 bytes) from hardware: 0x00000000
+Read register 'r10' (4 bytes) from hardware: 0x00000000
+Read register 'r11' (4 bytes) from hardware: 0x00000000
+Read register 'r12' (4 bytes) from hardware: 0x00000000
+Read register 'sp' (4 bytes) from hardware: 0xF0EF0120
+Read register 'lr' (4 bytes) from hardware: 0xFFFFFFFF
+Read register 'pc' (4 bytes) from hardware: 0x10040200
+Read register 'xpsr' (4 bytes) from hardware: 0x00000001
+Read 4 bytes @ address 0x00020410 (Data = 0xF04FB672)
+Read 2 bytes @ address 0x00020410 (Data = 0xB672)
+Read 2 bytes @ address 0x0002DBB2 (Data = 0xF7F5)
+Read 2 bytes @ address 0x0002DBB2 (Data = 0xF7F5)
+Read 2 bytes @ address 0x0002DBB2 (Data = 0xF7F5)
+Setting breakpoint @ address 0x0002DBB2, Kind = 2, Type = THUMB, BPHandle = 0x0001
+Starting target CPU...
+...Breakpoint (set by 'GDB') reached @ address 0x0002DBB2
+Reading common registers: Read register 'r0' (4 bytes) from hardware: 0xFFFFFFFF
+Read register 'r1' (4 bytes) from hardware: 0x00040200
+Read register 'r2' (4 bytes) from hardware: 0x0000FE1F
+Read register 'r3' (4 bytes) from hardware: 0x08ED00E0
+Read register 'r4' (4 bytes) from hardware: 0x00000000
+Read register 'r5' (4 bytes) from hardware: 0x00000000
+Read register 'r6' (4 bytes) from hardware: 0x00000000
+Read register 'r7' (4 bytes) from hardware: 0x00000000
+Read register 'r8' (4 bytes) from hardware: 0x00000000
+Read register 'r9' (4 bytes) from hardware: 0x00000000
+Read register 'r10' (4 bytes) from hardware: 0x00000000
+Read register 'r11' (4 bytes) from hardware: 0x00000000
+Read register 'r12' (4 bytes) from hardware: 0x00000000
+Read register 'sp' (4 bytes) from hardware: 0xE8EF0120
+Read register 'lr' (4 bytes) from hardware: 0x4B040200
+Read register 'pc' (4 bytes) from hardware: 0xB2DB0200
+Read register 'xpsr' (4 bytes) from hardware: 0x00000061
+Read 4 bytes @ address 0x0002DBB2 (Data = 0xFB87F7F5)
+Removing breakpoint @ address 0x0002DBB2, Size = 2
+Starting target CPU...
+Debugger requested to halt target...
+...Target halted (PC = 0x0002C902)
+GDB closed TCP/IP connection (Socket 804)
+Restoring target state and closing J-Link connection...

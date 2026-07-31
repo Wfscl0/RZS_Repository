@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">300</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="lifesig" SID="701">
+    <P Name="Position">[675, 338, 705, 352]</P>
+    <P Name="ZOrder">3</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="brkmotor_check_system" SID="702">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[810, 319, 950, 371]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_702"/>
+  </Block>
+  <Block BlockType="Outport" Name="brkmotor_check" SID="703">
+    <P Name="Position">[1055, 338, 1085, 352]</P>
+    <P Name="ZOrder">179</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">701#out:1</P>
+    <P Name="Dst">702#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">702#out:1</P>
+    <P Name="Dst">703#in:1</P>
+  </Line>
+</System>

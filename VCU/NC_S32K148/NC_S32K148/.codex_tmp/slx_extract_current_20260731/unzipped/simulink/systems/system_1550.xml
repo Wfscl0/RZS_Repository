@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">31</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="brake_raw_mv" SID="1550::1">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="air_ready_raw_mv" SID="1550::22">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="air_work_raw_mv" SID="1550::23">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">14</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="air_ready_bar" SID="1550::24">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">15</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="air_work_bar" SID="1550::25">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="esp_ok" SID="1550::26">
+    <P Name="Position">[20, 281, 40, 299]</P>
+    <P Name="ZOrder">17</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_ok" SID="1550::27">
+    <P Name="Position">[20, 316, 40, 334]</P>
+    <P Name="ZOrder">18</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Inport" Name="ebs_driver_ok" SID="1550::28">
+    <P Name="Position">[20, 351, 40, 369]</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="1550::20">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 280, 320, 320]</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="1550::19">
+    <P Name="Tag">Stateflow S-Function 12</P>
+    <P Name="Ports">[8, 5]</P>
+    <P Name="Position">[180, 110, 230, 290]</P>
+    <P Name="ZOrder">10</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[8 5]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">brake_sensor_valid</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">safety_fault</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">brake_sensor_fault</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">5</P>
+      <P Name="Name">air_sensor_fault</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="1550::21">
+    <P Name="Position">[460, 291, 480, 309]</P>
+    <P Name="ZOrder">12</P>
+  </Block>
+  <Block BlockType="Outport" Name="brake_sensor_valid" SID="1550::5">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">-5</P>
+  </Block>
+  <Block BlockType="Outport" Name="safety_fault" SID="1550::29">
+    <P Name="Position">[460, 136, 480, 154]</P>
+    <P Name="ZOrder">20</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="brake_sensor_fault" SID="1550::30">
+    <P Name="Position">[460, 171, 480, 189]</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="air_sensor_fault" SID="1550::31">
+    <P Name="Position">[460, 206, 480, 224]</P>
+    <P Name="ZOrder">22</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">90</P>
+    <P Name="Src">1550::1#out:1</P>
+    <P Name="Dst">1550::19#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">91</P>
+    <P Name="Src">1550::22#out:1</P>
+    <P Name="Dst">1550::19#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">92</P>
+    <P Name="Src">1550::23#out:1</P>
+    <P Name="Dst">1550::19#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">93</P>
+    <P Name="Src">1550::24#out:1</P>
+    <P Name="Dst">1550::19#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">94</P>
+    <P Name="Src">1550::25#out:1</P>
+    <P Name="Dst">1550::19#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">95</P>
+    <P Name="Src">1550::26#out:1</P>
+    <P Name="Dst">1550::19#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">96</P>
+    <P Name="Src">1550::27#out:1</P>
+    <P Name="Dst">1550::19#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">97</P>
+    <P Name="Src">1550::28#out:1</P>
+    <P Name="Dst">1550::19#in:8</P>
+  </Line>
+  <Line>
+    <P Name="Name">brake_sensor_valid</P>
+    <P Name="ZOrder">98</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1550::19#out:2</P>
+    <P Name="Dst">1550::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">safety_fault</P>
+    <P Name="ZOrder">99</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1550::19#out:3</P>
+    <P Name="Dst">1550::29#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">brake_sensor_fault</P>
+    <P Name="ZOrder">100</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1550::19#out:4</P>
+    <P Name="Dst">1550::30#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">air_sensor_fault</P>
+    <P Name="ZOrder">101</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1550::19#out:5</P>
+    <P Name="Dst">1550::31#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">102</P>
+    <P Name="Src">1550::20#out:1</P>
+    <P Name="Dst">1550::21#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">103</P>
+    <P Name="Src">1550::19#out:1</P>
+    <P Name="Dst">1550::20#in:1</P>
+  </Line>
+</System>

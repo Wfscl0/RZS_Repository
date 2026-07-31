@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libres_remote.a CMakeFiles/res_remote.dir/remote_g0b1/Core/Src/res_remote_app.c.obj
+C:\mingw64\bin\ranlib.exe libres_remote.a

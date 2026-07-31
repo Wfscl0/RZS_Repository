@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[29, 0, 1010, 751]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">60</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="canb_epssendmsg1" SID="800">
+    <P Name="Position">[-80, -87, -50, -73]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add" SID="801">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[540, -129, 575, -51]</P>
+    <P Name="ZOrder">858</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">-++</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add1" SID="802">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[435, -303, 465, -272]</P>
+    <P Name="ZOrder">860</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">eps_torque</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="803">
+    <P Name="Ports">[7, 1]</P>
+    <P Name="Position">[1000, -442, 1030, 262]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Inputs">7</P>
+    <P Name="DisplayOption">bar</P>
+    <P Name="InheritFromInputs">on</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="804">
+    <P Name="Position">[385, -290, 415, -260]</P>
+    <P Name="ZOrder">861</P>
+    <P Name="Value">12.8</P>
+    <P Name="OutDataTypeStr">double</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="805">
+    <P Name="Position">[455, -183, 490, -147]</P>
+    <P Name="ZOrder">863</P>
+    <P Name="Value">1024</P>
+    <P Name="OutDataTypeStr">double</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion1" SID="806">
+    <P Name="Position">[210, -142, 285, -108]</P>
+    <P Name="ZOrder">854</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion2" SID="807">
+    <P Name="Position">[210, -57, 285, -23]</P>
+    <P Name="ZOrder">855</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion3" SID="808">
+    <P Name="Position">[700, -107, 765, -73]</P>
+    <P Name="ZOrder">864</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">eps_realangle</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion9" SID="809">
+    <P Name="Position">[240, -312, 315, -278]</P>
+    <P Name="ZOrder">859</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Demux" Name="Demux" SID="810">
+    <P Name="Ports">[1, 8]</P>
+    <P Name="Position">[95, -423, 120, 258]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Outputs">8</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">eps_workmode</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">eps_errorcode1</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">eps_midddlefeedback</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">6</P>
+      <P Name="Name">eps_midddlefeedback</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">7</P>
+      <P Name="Name">eps_errorcode2</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">8</P>
+      <P Name="Name">eps_sned_xor</P>
+    </Port>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="811">
+    <P Name="Position">[315, -138, 360, -112]</P>
+    <P Name="ZOrder">862</P>
+    <P Name="Gain">256</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">eps_realangle</P>
+    </Port>
+  </Block>
+  <Block BlockType="Gain" Name="TorqueScale" SID="1524">
+    <P Name="Position">[340, -312, 380, -278]</P>
+    <P Name="ZOrder">865</P>
+    <P Name="Gain">0.1</P>
+  </Block>
+  <Block BlockType="Outport" Name="canb_epssendmsg1signal" SID="812">
+    <P Name="Position">[1120, -97, 1150, -83]</P>
+    <P Name="ZOrder">-2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">800#out:1</P>
+    <P Name="Dst">810#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">803#out:1</P>
+    <P Name="Dst">812#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_workmode</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Labels">[3, 1]</P>
+    <P Name="Src">810#out:1</P>
+    <P Name="Points">[636, 0; 0, -10]</P>
+    <P Name="Dst">803#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">810#out:2</P>
+    <P Name="Dst">809#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_errorcode1</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[3, 1]</P>
+    <P Name="Src">810#out:3</P>
+    <P Name="Points">[686, 0; 0, 20]</P>
+    <P Name="Dst">803#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_realangle</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">808#out:1</P>
+    <P Name="Dst">803#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_errorcode2</P>
+    <P Name="ZOrder">10</P>
+    <P Name="Labels">[2, 1]</P>
+    <P Name="Src">810#out:7</P>
+    <P Name="Points">[702, 0; 0, -20]</P>
+    <P Name="Dst">803#in:6</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_sned_xor</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Labels">[3, 1]</P>
+    <P Name="Src">810#out:8</P>
+    <P Name="Points">[612, 0; 0, -5]</P>
+    <P Name="Dst">803#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">29</P>
+    <P Name="Src">809#out:1</P>
+    <P Name="Dst">1524#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">804#out:1</P>
+    <P Name="Dst">802#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_torque</P>
+    <P Name="ZOrder">14</P>
+    <P Name="Labels">[3, 1]</P>
+    <P Name="Src">802#out:1</P>
+    <P Name="Points">[258, 0; 0, -5]</P>
+    <P Name="Dst">803#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">806#out:1</P>
+    <P Name="Dst">811#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">805#out:1</P>
+    <P Name="Points">[18, 0; 0, 50]</P>
+    <P Name="Dst">801#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">807#out:1</P>
+    <P Name="Points">[123, 0; 0, -25]</P>
+    <P Name="Dst">801#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">801#out:1</P>
+    <P Name="Dst">808#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_realangle</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Labels">[2, 1]</P>
+    <P Name="Src">811#out:1</P>
+    <P Name="Points">[127, 0; 0, 35]</P>
+    <P Name="Dst">801#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">30</P>
+    <P Name="Src">1524#out:1</P>
+    <P Name="Dst">802#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_midddlefeedback</P>
+    <P Name="ZOrder">40</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">810#out:4</P>
+    <P Name="Dst">806#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">41</P>
+    <P Name="Src">810#out:5</P>
+    <P Name="Dst">807#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_midddlefeedback</P>
+    <P Name="ZOrder">42</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">810#out:6</P>
+    <P Name="Points">[430, 0; 0, -35]</P>
+    <P Name="Dst">803#in:5</P>
+  </Line>
+</System>

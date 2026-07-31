@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1026]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">129</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="res_heartbeat" SID="919::113">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">93</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="919::128">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">106</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="919::127">
+    <P Name="Tag">Stateflow S-Function 10</P>
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[180, 100, 230, 160]</P>
+    <P Name="ZOrder">105</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[1 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">res_hbcheck</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="919::129">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">107</P>
+  </Block>
+  <Block BlockType="Outport" Name="res_hbcheck" SID="919::117">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">95</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">919::113#out:1</P>
+    <P Name="Dst">919::127#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">res_hbcheck</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">919::127#out:2</P>
+    <P Name="Dst">919::117#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">919::128#out:1</P>
+    <P Name="Dst">919::129#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">919::127#out:1</P>
+    <P Name="Dst">919::128#in:1</P>
+  </Line>
+</System>

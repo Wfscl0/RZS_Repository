@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="f_frequency" SID="241">
+    <P Name="Position">[110, 103, 140, 117]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="h_frequency" SID="242">
+    <P Name="Position">[110, 398, 140, 412]</P>
+    <P Name="ZOrder">180</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="243">
+    <P Name="Position">[400, 135, 430, 165]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Value">180</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="244">
+    <P Name="Position">[410, 240, 440, 270]</P>
+    <P Name="ZOrder">7</P>
+    <P Name="Value">0.225</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant2" SID="245">
+    <P Name="Position">[410, 290, 440, 320]</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Value">3.6</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant3" SID="246">
+    <P Name="Position">[400, 430, 430, 460]</P>
+    <P Name="ZOrder">184</P>
+    <P Name="Value">180</P>
+  </Block>
+  <Block BlockType="Product" Name="Divide" SID="247">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[565, 89, 595, 171]</P>
+    <P Name="ZOrder">4</P>
+    <P Name="Inputs">*/</P>
+  </Block>
+  <Block BlockType="Product" Name="Divide1" SID="248">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[565, 384, 595, 466]</P>
+    <P Name="ZOrder">183</P>
+    <P Name="Inputs">*/</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="249">
+    <P Name="Position">[255, 95, 285, 125]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Gain">36</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="250">
+    <P Name="Position">[400, 95, 450, 125]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Gain">3.1415</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain2" SID="251">
+    <P Name="Position">[255, 390, 285, 420]</P>
+    <P Name="ZOrder">181</P>
+    <P Name="Gain">36</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain3" SID="252">
+    <P Name="Position">[400, 390, 450, 420]</P>
+    <P Name="ZOrder">182</P>
+    <P Name="Gain">3.1415</P>
+  </Block>
+  <Block BlockType="Product" Name="Product" SID="253">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[565, 229, 595, 331]</P>
+    <P Name="ZOrder">6</P>
+  </Block>
+  <Block BlockType="Product" Name="Product1" SID="254">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[725, 169, 755, 236]</P>
+    <P Name="ZOrder">9</P>
+  </Block>
+  <Block BlockType="Product" Name="Product2" SID="255">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[725, 319, 755, 386]</P>
+    <P Name="ZOrder">185</P>
+  </Block>
+  <Block BlockType="Outport" Name="wheel_speed_f" SID="256">
+    <P Name="Position">[860, 198, 890, 212]</P>
+    <P Name="ZOrder">179</P>
+  </Block>
+  <Block BlockType="Outport" Name="wheel_speed_h" SID="257">
+    <P Name="Position">[860, 348, 890, 362]</P>
+    <P Name="ZOrder">186</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">241#out:1</P>
+    <P Name="Dst">249#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">249#out:1</P>
+    <P Name="Dst">250#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">250#out:1</P>
+    <P Name="Dst">247#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">244#out:1</P>
+    <P Name="Dst">253#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">245#out:1</P>
+    <P Name="Dst">253#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">243#out:1</P>
+    <P Name="Dst">247#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">247#out:1</P>
+    <P Name="Points">[55, 0; 0, 55]</P>
+    <P Name="Dst">254#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">253#out:1</P>
+    <P Name="Points">[55, 0]</P>
+    <Branch>
+      <P Name="ZOrder">9</P>
+      <P Name="Points">[0, 55]</P>
+      <P Name="Dst">255#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">10</P>
+      <P Name="Points">[0, -60]</P>
+      <P Name="Dst">254#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">254#out:1</P>
+    <P Name="Dst">256#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">242#out:1</P>
+    <P Name="Dst">251#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">251#out:1</P>
+    <P Name="Dst">252#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">246#out:1</P>
+    <P Name="Dst">248#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">252#out:1</P>
+    <P Name="Dst">248#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">255#out:1</P>
+    <P Name="Dst">257#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">248#out:1</P>
+    <P Name="Points">[60, 0; 0, -55]</P>
+    <P Name="Dst">255#in:2</P>
+  </Line>
+  <Annotation SID="258">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#00b050;&quot;&gt;% u为频率，r为车轮滚动半径y=u*36.0*pi/180.0*0.225*3.6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[-70, -30, 188, -16]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+</System>

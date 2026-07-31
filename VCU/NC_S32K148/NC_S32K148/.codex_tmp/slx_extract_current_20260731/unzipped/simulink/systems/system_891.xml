@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">50</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="res_msg" SID="892">
+    <P Name="Position">[-140, 573, -110, 587]</P>
+    <P Name="ZOrder">620</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="893">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[255, 415, 275, 435]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="894">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[610, 626, 615, 664]</P>
+    <P Name="ZOrder">622</P>
+    <P Name="OutputSignals">res_stop</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;res_stop&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="SubSystem" Name="Res_Msg" SID="895">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-15, 462, 540, 698]</P>
+    <P Name="ZOrder">621</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_895"/>
+  </Block>
+  <Block BlockType="Outport" Name="res_signal" SID="931">
+    <P Name="Position">[660, 573, 690, 587]</P>
+    <P Name="ZOrder">617</P>
+  </Block>
+  <Block BlockType="Outport" Name="res_error" SID="932">
+    <P Name="Position">[660, 638, 690, 652]</P>
+    <P Name="ZOrder">623</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">892#out:1</P>
+    <P Name="Dst">895#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">895#out:1</P>
+    <P Name="Points">[40, 0]</P>
+    <Branch>
+      <P Name="ZOrder">3</P>
+      <P Name="Points">[0, 65]</P>
+      <P Name="Dst">894#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">4</P>
+      <P Name="Dst">931#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;res_stop&gt;</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">894#out:1</P>
+    <P Name="Dst">932#in:1</P>
+  </Line>
+</System>

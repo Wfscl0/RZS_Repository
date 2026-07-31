@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="316">
+  <P Name="name">Motor_Control/Motor_Torque_Stateflow</P>
+  <P Name="windowPosition">[-7 -7 1721 1025]</P>
+  <P Name="viewLimits">[47.904 1530.157 17.448 724.833]</P>
+  <P Name="zoomFactor">1.184</P>
+  <P Name="screen">[1 1 3200 1200 1.25]</P>
+  <P Name="viewObj">316</P>
+  <P Name="ssIdHighWaterMark">13</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="chartFileNumber">4</P>
+  <P Name="allowGlobalAccessToExportedFunctions">0</P>
+  <P Name="saturateOnIntegerOverflow">1</P>
+  <P Name="userSpecifiedStateTransitionExecutionOrder">1</P>
+  <P Name="disableImplicitCasting">1</P>
+  <P Name="actionLanguage">2</P>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">Default
+en:
+motor_torque=0;
+du:
+motor_torque=0;</P>
+      <P Name="position">[573 208.6667 119.3333 64]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">316</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="6">
+      <P Name="labelString">AS_Driving
+en:
+motor_torque=as_torque;
+du:
+motor_torque=as_torque;</P>
+      <P Name="position">[967 210.6667 172 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">316</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="3">
+      <P Name="labelString">Manual_Driving
+en:
+motor_torque=manual_torque;
+du:
+motor_torque=manual_torque;</P>
+      <P Name="position">[573 436.6667 174 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">316</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <data SSID="9" name="manual_driving_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="10" name="as_task">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="11" name="manual_torque">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="12" name="as_torque">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="13" name="motor_torque">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString"/>
+      <P Name="labelPosition">[600.248 193.667 0 0]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 600.2478 178.6667 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">1</P>
+        <P Name="intersection">[1 0 -1 0.2283 600.2478 208.6667 0 0]</P>
+      </dst>
+      <P Name="midPoint">[600.2478 193.6667]</P>
+      <P Name="dataLimits">[597.848 602.648 178.667 208.667]</P>
+      <P Name="subviewer">316</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="7">
+      <P Name="labelString">[as_task==1]</P>
+      <P Name="labelPosition">[790.331 208 70.672 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">1</P>
+        <P Name="intersection">[2 1 0 0.2708 692.3333 226 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">6</P>
+        <P Name="intersection">[4 -1 -0 0.7444 967 226 0 0]</P>
+      </dst>
+      <P Name="midPoint">[825.6667 226]</P>
+      <P Name="dataLimits">[692.333 967 223.6 228.4]</P>
+      <P Name="subviewer">316</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">2</P>
+    </transition>
+    <transition SSID="8">
+      <P Name="labelString">[as_task==0]</P>
+      <P Name="labelPosition">[790.997 255.333 70.672 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">6</P>
+        <P Name="intersection">[4 -1 0 0.3222 967 251.3333 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">1</P>
+        <P Name="intersection">[2 1 -0 0.6667 692.3333 251.3333 0 0]</P>
+      </dst>
+      <P Name="midPoint">[833.6667 251.3333]</P>
+      <P Name="dataLimits">[692.333 967 248.933 253.733]</P>
+      <P Name="subviewer">316</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="4">
+      <P Name="labelString">[manual_driving_flag==1]</P>
+      <P Name="labelPosition">[447.667 332.043 136.641 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">1</P>
+        <P Name="intersection">[3 0 1 0.7737 600 272.6667 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 -0 -1 0.1552 600 436.6667 0 0]</P>
+      </dst>
+      <P Name="midPoint">[600 350.6667]</P>
+      <P Name="dataLimits">[597.6 602.4 272.667 436.667]</P>
+      <P Name="subviewer">316</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="5">
+      <P Name="labelString">[manual_driving_flag==0]</P>
+      <P Name="labelPosition">[666.667 358.623 136.641 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0.5383 666.6667 436.6667 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">1</P>
+        <P Name="intersection">[3 -0 1 0.2151 666.6667 272.6667 0 0]</P>
+      </dst>
+      <P Name="midPoint">[666.6667 358.6667]</P>
+      <P Name="dataLimits">[664.267 669.067 272.667 436.667]</P>
+      <P Name="subviewer">316</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+  </Children>
+</chart>

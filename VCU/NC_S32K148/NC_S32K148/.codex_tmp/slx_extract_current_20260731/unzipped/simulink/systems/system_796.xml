@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">150</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="canb_epssendmsg1" SID="797">
+    <P Name="Position">[-140, -482, -110, -468]</P>
+    <P Name="ZOrder">747</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_epssendmsg2" SID="798">
+    <P Name="Position">[-140, -62, -110, -48]</P>
+    <P Name="ZOrder">855</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="EPS_Send_Msg1" SID="799">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-50, -566, 350, -384]</P>
+    <P Name="ZOrder">748</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_799"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="EPS_Send_Msg2" SID="813">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-50, -146, 350, 36]</P>
+    <P Name="ZOrder">856</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_813"/>
+  </Block>
+  <Block BlockType="Outport" Name="canb_epssendmsg1signal" SID="834">
+    <P Name="Position">[410, -482, 440, -468]</P>
+    <P Name="ZOrder">854</P>
+  </Block>
+  <Block BlockType="Outport" Name="canb_epssendmsg2signal" SID="835">
+    <P Name="Position">[435, -62, 465, -48]</P>
+    <P Name="ZOrder">857</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">797#out:1</P>
+    <P Name="Dst">799#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">799#out:1</P>
+    <P Name="Dst">834#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">798#out:1</P>
+    <P Name="Dst">813#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">813#out:1</P>
+    <P Name="Dst">835#in:1</P>
+  </Line>
+</System>

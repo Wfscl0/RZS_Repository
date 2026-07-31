@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[854, 0, 1706, 911]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">125</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="res_xorcheck" SID="920::109">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">89</P>
+  </Block>
+  <Block BlockType="Inport" Name="xor_consequence" SID="920::112">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">92</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="920::124">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">104</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="920::123">
+    <P Name="Tag">Stateflow S-Function 19</P>
+    <P Name="Ports">[2, 2]</P>
+    <P Name="Position">[180, 100, 230, 160]</P>
+    <P Name="ZOrder">103</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[2 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">xorcheck</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="920::125">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">105</P>
+  </Block>
+  <Block BlockType="Outport" Name="xorcheck" SID="920::113">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">93</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">920::109#out:1</P>
+    <P Name="Points">[120, 0]</P>
+    <P Name="Dst">920::123#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">920::112#out:1</P>
+    <P Name="Dst">920::123#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">xorcheck</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">920::123#out:2</P>
+    <P Name="Dst">920::113#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">920::124#out:1</P>
+    <P Name="Dst">920::125#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">920::123#out:1</P>
+    <P Name="Dst">920::124#in:1</P>
+  </Line>
+</System>

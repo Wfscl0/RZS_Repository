@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[29, 0, 1010, 751]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="eps_wheel_angle" SID="866">
+    <P Name="Position">[110, 103, 140, 117]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add1" SID="867">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[385, 49, 415, 131]</P>
+    <P Name="ZOrder">406</P>
+    <P Name="IconShape">rectangular</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="868">
+    <P Name="Position">[315, 55, 345, 85]</P>
+    <P Name="ZOrder">407</P>
+    <P Name="Value">1024</P>
+    <P Name="OutDataTypeStr">double</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion4" SID="869">
+    <P Name="Position">[200, 93, 275, 127]</P>
+    <P Name="ZOrder">405</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion5" SID="870">
+    <P Name="Position">[470, 73, 545, 107]</P>
+    <P Name="ZOrder">408</P>
+    <P Name="OutDataTypeStr">uint32</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="871">
+    <P Name="Position">[315, 95, 345, 125]</P>
+    <P Name="ZOrder">404</P>
+    <P Name="Gain">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_cmdangle" SID="872">
+    <P Name="Position">[605, 83, 635, 97]</P>
+    <P Name="ZOrder">-2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">868#out:1</P>
+    <P Name="Dst">867#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">867#out:1</P>
+    <P Name="Dst">870#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">869#out:1</P>
+    <P Name="Dst">871#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">871#out:1</P>
+    <P Name="Dst">867#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">866#out:1</P>
+    <P Name="Dst">869#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">870#out:1</P>
+    <P Name="Dst">872#in:1</P>
+  </Line>
+</System>

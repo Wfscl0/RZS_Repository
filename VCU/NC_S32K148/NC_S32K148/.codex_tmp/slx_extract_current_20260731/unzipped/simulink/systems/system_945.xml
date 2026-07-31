@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">150</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="ipc_astask" SID="946">
+    <P Name="Position">[-75, 523, -45, 537]</P>
+    <P Name="ZOrder">190</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_signal" SID="947">
+    <P Name="Position">[-75, 448, -45, 462]</P>
+    <P Name="ZOrder">194</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_ipctsmsg1" SID="948">
+    <P Name="Position">[-15, 128, 15, 142]</P>
+    <P Name="ZOrder">633</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="canb_ipctsmsg2" SID="949">
+    <P Name="Position">[-15, 258, 15, 272]</P>
+    <P Name="ZOrder">634</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="steer_return" SID="950">
+    <P Name="Position">[-75, 373, -45, 387]</P>
+    <P Name="ZOrder">863</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="951">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[210, 0, 230, 20]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="952">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[-15, 407, -10, 503]</P>
+    <P Name="ZOrder">193</P>
+    <P Name="OutputSignals">res_go,res_stop</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;res_go&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;res_stop&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="SubSystem" Name="IPC_ReceiveMsg" SID="953">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[40, 355, 390, 555]</P>
+    <P Name="ZOrder">189</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_953"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="IPC_TransmitMsg" SID="977">
+    <P Name="Ports">[2, 9]</P>
+    <P Name="Position">[45, 68, 385, 332]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_977"/>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_esp_pressure" SID="1063">
+    <P Name="Position">[440, 73, 470, 87]</P>
+    <P Name="ZOrder">181</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_motor_torque" SID="1064">
+    <P Name="Position">[440, 103, 470, 117]</P>
+    <P Name="ZOrder">195</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_eps_angle" SID="1065">
+    <P Name="Position">[440, 133, 470, 147]</P>
+    <P Name="ZOrder">185</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_eps_velocity" SID="1066">
+    <P Name="Position">[440, 163, 470, 177]</P>
+    <P Name="ZOrder">186</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_err" SID="1067">
+    <P Name="Position">[440, 193, 470, 207]</P>
+    <P Name="ZOrder">187</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="task_finish" SID="1068">
+    <P Name="Position">[440, 223, 470, 237]</P>
+    <P Name="ZOrder">188</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_heartbeat" SID="1069">
+    <P Name="Position">[440, 253, 470, 267]</P>
+    <P Name="ZOrder">860</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_lspd" SID="1070">
+    <P Name="Position">[440, 283, 470, 297]</P>
+    <P Name="ZOrder">861</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Outport" Name="ipc_hspd" SID="1071">
+    <P Name="Position">[440, 313, 470, 327]</P>
+    <P Name="ZOrder">862</P>
+    <P Name="Port">9</P>
+  </Block>
+  <Block BlockType="Outport" Name="canb_ipcrxmsg" SID="1072">
+    <P Name="Position">[455, 448, 485, 462]</P>
+    <P Name="ZOrder">859</P>
+    <P Name="Port">10</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">946#out:1</P>
+    <P Name="Dst">953#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">947#out:1</P>
+    <P Name="Dst">952#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;res_go&gt;</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">952#out:1</P>
+    <P Name="Dst">953#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;res_stop&gt;</P>
+    <P Name="ZOrder">4</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">952#out:2</P>
+    <P Name="Dst">953#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">977#out:6</P>
+    <P Name="Dst">1068#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">977#out:5</P>
+    <P Name="Dst">1067#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">977#out:4</P>
+    <P Name="Dst">1066#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">977#out:3</P>
+    <P Name="Dst">1065#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">977#out:2</P>
+    <P Name="Dst">1064#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">977#out:1</P>
+    <P Name="Dst">1063#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">949#out:1</P>
+    <P Name="Dst">977#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">948#out:1</P>
+    <P Name="Dst">977#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">953#out:1</P>
+    <P Name="Dst">1072#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">977#out:7</P>
+    <P Name="Dst">1069#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">977#out:8</P>
+    <P Name="Dst">1070#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">977#out:9</P>
+    <P Name="Dst">1071#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">950#out:1</P>
+    <P Name="Dst">953#in:1</P>
+  </Line>
+</System>

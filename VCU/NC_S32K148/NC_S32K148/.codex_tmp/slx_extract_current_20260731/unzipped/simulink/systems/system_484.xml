@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 1707, 913]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">130</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="as_off_flag" SID="484::113">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">93</P>
+  </Block>
+  <Block BlockType="Inport" Name="munual_driving_flag" SID="484::114">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">94</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_ready_flag" SID="484::115">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">95</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="r2d_flag" SID="484::116">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">96</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_driving_flag" SID="484::117">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">97</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_finished_flag" SID="484::118">
+    <P Name="Position">[20, 281, 40, 299]</P>
+    <P Name="ZOrder">98</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_emergency_flag" SID="484::119">
+    <P Name="Position">[20, 316, 40, 334]</P>
+    <P Name="ZOrder">99</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="484::129">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">108</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="484::128">
+    <P Name="Tag">Stateflow S-Function 20</P>
+    <P Name="Ports">[7, 2]</P>
+    <P Name="Position">[180, 100, 230, 260]</P>
+    <P Name="ZOrder">107</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[7 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">ami_process</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="484::130">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">109</P>
+  </Block>
+  <Block BlockType="Outport" Name="ami_process" SID="484::120">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">100</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">484::113#out:1</P>
+    <P Name="Dst">484::128#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">484::114#out:1</P>
+    <P Name="Dst">484::128#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">484::115#out:1</P>
+    <P Name="Dst">484::128#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">484::116#out:1</P>
+    <P Name="Dst">484::128#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">484::117#out:1</P>
+    <P Name="Dst">484::128#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">484::118#out:1</P>
+    <P Name="Dst">484::128#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">484::119#out:1</P>
+    <P Name="Dst">484::128#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">ami_process</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">484::128#out:2</P>
+    <P Name="Dst">484::120#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">484::129#out:1</P>
+    <P Name="Dst">484::130#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">484::128#out:1</P>
+    <P Name="Dst">484::129#in:1</P>
+  </Line>
+</System>

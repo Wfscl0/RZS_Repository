@@ -1,0 +1,81 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   9 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "brake_bad"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:310-319"\
+    }\
+    ChartData {\
+      Name         "brake_good"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:320-330"\
+    }\
+    ChartData {\
+      Name         "air_bad"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:331-338"\
+    }\
+    ChartData {\
+      Name         "air_good"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:339-347"\
+    }\
+    ChartData {\
+      Name         "comm_bad"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:348-356"\
+    }\
+    ChartData {\
+      Name         "comm_good"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:357-366"\
+    }\
+    ChartData {\
+      Name         "brake_fault"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:367-378"\
+    }\
+    ChartData {\
+      Name         "air_fault"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:379-388"\
+    }\
+    ChartData {\
+      Name         "comm_fault"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "VCU10:1550:389-399"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">150</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="led_brake" SID="175">
+    <P Name="Position">[240, 258, 270, 272]</P>
+    <P Name="ZOrder">1</P>
+  </Block>
+  <Block BlockType="Inport" Name="led_assi_y" SID="176">
+    <P Name="Position">[240, 223, 270, 237]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="led_assi_b" SID="177">
+    <P Name="Position">[240, 188, 270, 202]</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="led_ebserror" SID="178">
+    <P Name="Position">[240, 153, 270, 167]</P>
+    <P Name="ZOrder">4</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_error" SID="179">
+    <P Name="Position">[240, 118, 270, 132]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="ebs_trig" SID="190">
+    <P Name="Position">[240, 643, 270, 657]</P>
+    <P Name="ZOrder">180</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="led_bmserr" SID="191">
+    <P Name="Position">[240, 603, 270, 617]</P>
+    <P Name="ZOrder">181</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Inport" Name="led_imderr" SID="192">
+    <P Name="Position">[240, 563, 270, 577]</P>
+    <P Name="ZOrder">182</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Inport" Name="di8" SID="193">
+    <P Name="Position">[240, 523, 270, 537]</P>
+    <P Name="ZOrder">183</P>
+    <P Name="Port">9</P>
+  </Block>
+  <Block BlockType="Inport" Name="run" SID="194">
+    <P Name="Position">[240, 483, 270, 497]</P>
+    <P Name="ZOrder">184</P>
+    <P Name="Port">10</P>
+  </Block>
+  <Block BlockType="Inport" Name="buzzer_r2d" SID="195">
+    <P Name="Position">[240, 443, 270, 457]</P>
+    <P Name="ZOrder">185</P>
+    <P Name="Port">11</P>
+  </Block>
+  <Block BlockType="Inport" Name="buzzer_ebs" SID="196">
+    <P Name="Position">[240, 403, 270, 417]</P>
+    <P Name="ZOrder">186</P>
+    <P Name="Port">12</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="166">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[380, 40, 400, 60]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="Reference" Name="Physical_HO1_8_Pack" SID="180">
+    <P Name="Ports">[8, 1]</P>
+    <P Name="Position">[370, 120, 405, 290]</P>
+    <P Name="ZOrder">65</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Concat</P>
+    <P Name="SourceType">Bit Concat</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="numInputs">8</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">model_hox</P>
+      <P Name="PropagatedSignals">y</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Physical_OUT1_7_Pack" SID="197">
+    <P Name="Ports">[7, 1]</P>
+    <P Name="Position">[370, 382, 405, 678]</P>
+    <P Name="ZOrder">187</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Concat</P>
+    <P Name="SourceType">Bit Concat</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="numInputs">7</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">model_lox</P>
+      <P Name="PropagatedSignals">y</P>
+      <P Name="MustResolveToSignalObject">on</P>
+    </Port>
+  </Block>
+  <Block BlockType="Constant" Name="Unused_HO_Bit" SID="1545">
+    <P Name="Position">[380, 430, 430, 460]</P>
+    <P Name="ZOrder">189</P>
+    <P Name="Value">false</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Constant" Name="Unused_OUT_Bit" SID="1583">
+    <P Name="Position">[365, 365, 425, 395]</P>
+    <P Name="ZOrder">191</P>
+    <P Name="Value">false</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Outport" Name="model_lox" SID="181">
+    <P Name="Position">[505, 188, 535, 202]</P>
+    <P Name="ZOrder">179</P>
+  </Block>
+  <Block BlockType="Outport" Name="model_hox" SID="198">
+    <P Name="Position">[525, 523, 555, 537]</P>
+    <P Name="ZOrder">188</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">76</P>
+    <P Name="Src">1583#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">75</P>
+      <P Name="Points">[0, -20; -75, 0]</P>
+      <P Name="Dst">197#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">77</P>
+      <P Name="Points">[0, -20; -80, 0; 0, 90]</P>
+      <P Name="Dst">197#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">78</P>
+    <P Name="Src">179#out:1</P>
+    <P Name="Points">[40, 0; 0, 365]</P>
+    <P Name="Dst">197#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">79</P>
+    <P Name="Src">178#out:1</P>
+    <P Name="Points">[30, 0; 0, 370]</P>
+    <P Name="Dst">197#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">80</P>
+    <P Name="Src">176#out:1</P>
+    <P Name="Points">[20, 0; 0, 340]</P>
+    <P Name="Dst">197#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">81</P>
+    <P Name="Src">177#out:1</P>
+    <P Name="Points">[0, 25; -40, 0; 0, 380; 120, 0]</P>
+    <P Name="Dst">197#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">82</P>
+    <P Name="Src">175#out:1</P>
+    <P Name="Points">[75, 0; 0, 385]</P>
+    <P Name="Dst">197#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">model_lox</P>
+    <P Name="ZOrder">83</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">197#out:1</P>
+    <P Name="Points">[40, 0; 0, -335]</P>
+    <P Name="Dst">181#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">84</P>
+    <P Name="Src">1545#out:1</P>
+    <P Name="Points">[0, -150; -80, 0]</P>
+    <P Name="Dst">180#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">85</P>
+    <P Name="Src">196#out:1</P>
+    <P Name="Points">[75, 0; 0, -255]</P>
+    <P Name="Dst">180#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">86</P>
+    <P Name="Src">195#out:1</P>
+    <P Name="Points">[75, 0; 0, -275]</P>
+    <P Name="Dst">180#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">87</P>
+    <P Name="Src">194#out:1</P>
+    <P Name="Points">[75, 0; 0, -295]</P>
+    <P Name="Dst">180#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">88</P>
+    <P Name="Src">193#out:1</P>
+    <P Name="Points">[75, 0; 0, -315]</P>
+    <P Name="Dst">180#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">89</P>
+    <P Name="Src">192#out:1</P>
+    <P Name="Points">[75, 0; 0, -335]</P>
+    <P Name="Dst">180#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">90</P>
+    <P Name="Src">191#out:1</P>
+    <P Name="Points">[75, 0; 0, -355]</P>
+    <P Name="Dst">180#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">91</P>
+    <P Name="Src">190#out:1</P>
+    <P Name="Points">[75, 0; 0, -375]</P>
+    <P Name="Dst">180#in:8</P>
+  </Line>
+  <Line>
+    <P Name="Name">model_hox</P>
+    <P Name="ZOrder">92</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">180#out:1</P>
+    <P Name="Points">[30, 0; 0, -20; 100, 0; 0, 335; -30, 0]</P>
+    <P Name="Dst">198#in:1</P>
+  </Line>
+  <Annotation SID="1585">
+    <P Name="Name">Hardware mapping (netlist 2026-07-30): OUT1..7 = Brake, ASSI-B, ASSI-Y, EBS error, RES error, reserved, reserved; HO1..8 = EBS trigger, BMS, IMD, DI8, RUN, R2D, Emergency, reserved.</P>
+    <P Name="Position">[180, 20, 1023, 34]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-3</P>
+  </Annotation>
+</System>

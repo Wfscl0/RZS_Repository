@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libres_bridge_syntax.a CMakeFiles/res_bridge_syntax.dir/radio_bridge_stm8/res_bridge_main.c.obj CMakeFiles/res_bridge_syntax.dir/radio_bridge_stm8/res_bridge_callback.c.obj
+C:\mingw64\bin\ranlib.exe libres_bridge_syntax.a

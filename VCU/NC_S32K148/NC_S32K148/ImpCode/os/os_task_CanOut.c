@@ -2,7 +2,7 @@
  * ********************************************************************************
  * os_task_CanOut.c
  *
- * Created on: 2024Äê12ÔÂxÈÕ
+ * Created on: 2024å¹´12æœˆxæ—¥
  *     Author: ROG
  */
 #include "os_task_CanOut.h"
@@ -20,18 +20,18 @@ static void Task_CanOut_SignalReceive(HCANSEND_PAR *pcan_send);
 static void Task_CanOut_50ms(void);
 static void Task_CanOut_10ms(void);
 static void Task_CanOut_20ms(void);
+static void Task_CanOut_100ms(void);
 static void Task_CanOut_500ms(void);
 static void Task_CanOut_1000ms(void);
 
 /* ********************************************************************************
- * CAN·¢ËÍÈÎÎñÏß³Ì
+ * CANå‘é€ä»»åŠ¡çº¿ç¨‹
  */
 void OS_Task_CanOut(void *pvPara)
 {
 	uint16_t k1=1;
-	uint32_t timer=0;
 
-    //ĞÂÔöLastTick£¬ÓÃÓÚÊ¹ÓÃvTaskDelayUntilº¯Êı
+    //æ–°å¢LastTickï¼Œç”¨äºä½¿ç”¨vTaskDelayUntilå‡½æ•°
 	TickType_t LastTick = 0;
 	LastTick = xTaskGetTickCount();
 	
@@ -39,13 +39,13 @@ void OS_Task_CanOut(void *pvPara)
 
 	while(1)
 	{   
-		//ÇëÇóÏûÏ¢¡£hcan_send
+		//è¯·æ±‚æ¶ˆæ¯ã€‚hcan_send
         if(xQueueReceive(Que_Hcore_CanSend, &(pcan_send1), 0) == pdTRUE)
         {
 			Task_CanOut_SignalReceive(pcan_send1);
         }
 
-        //ÇëÇóÏûÏ¢¡£comIn
+        //è¯·æ±‚æ¶ˆæ¯ã€‚comIn
 		if(xQueueReceive(Que_ComIn_CoreApp, &(pcomIn1), 0) == pdTRUE)
 		{
 			hcomIn1.jy60.AXL = pcomIn1->jy60.AXL;
@@ -60,7 +60,6 @@ void OS_Task_CanOut(void *pvPara)
 			hcomIn1.jy60.Temperature = pcomIn1->jy60.Temperature;
 		}
 
-        timer = k1*10;
         Task_CanOut_10ms();
         if((k1%2) == 0) { //20ms
             Task_CanOut_20ms();
@@ -69,6 +68,10 @@ void OS_Task_CanOut(void *pvPara)
         if((k1%5) == 0) { //50ms
         	Task_CanOut_50ms();
         }
+
+        if((k1%10) == 0) { //100ms
+			Task_CanOut_100ms();
+		}
 
         if((k1%50) == 0) { //500ms
         	Task_CanOut_500ms();
@@ -83,14 +86,14 @@ void OS_Task_CanOut(void *pvPara)
             k1 = 1;
         }
 
-        vTaskDelayUntil(&LastTick,10); //ÓÅ»¯£¬Î´Ê¹ÓÃvTaskDelayº¯Êı£¬Ê¹ÓÃ¸Ãº¯ÊıÒÔÏà¶ÔÊ±¼ädelay
+        vTaskDelayUntil(&LastTick,10); //ä¼˜åŒ–ï¼Œæœªä½¿ç”¨vTaskDelayå‡½æ•°ï¼Œä½¿ç”¨è¯¥å‡½æ•°ä»¥ç›¸å¯¹æ—¶é—´delay
         PrgSts.task_CanOut++;
 	}
 }
 
 
 /* ********************************************************************************
-* ÏûÏ¢¶ÓÁĞ£¬Êı¾İ×ª»»
+* æ¶ˆæ¯é˜Ÿåˆ—ï¼Œæ•°æ®è½¬æ¢
 */
 static void Task_CanOut_SignalReceive(HCANSEND_PAR *pcan_send)
 {
@@ -104,6 +107,11 @@ static void Task_CanOut_SignalReceive(HCANSEND_PAR *pcan_send)
 	memcpy(hcansend1.canb_ipcrxmsg, pcan_send->canb_ipcrxmsg, 8);
 	memcpy(hcansend1.AMI_Rx, pcan_send->AMI_Rx, 8);
 	memcpy(hcansend1.canb_epsmsg, pcan_send->canb_epsmsg, 8);
+#if (VCU_ENABLE_BENCH_DEBUG != 0U)
+	memcpy(hcansend1.vcu_dbg_status, pcan_send->vcu_dbg_status, 8);
+	memcpy(hcansend1.vcu_dbg_pedal_echo, pcan_send->vcu_dbg_pedal_echo, 8);
+	memcpy(hcansend1.vcu_dbg_air_wheel_echo, pcan_send->vcu_dbg_air_wheel_echo, 8);
+#endif
 }
 
 static void Task_CanOut_20ms(void)
@@ -114,6 +122,7 @@ static void Task_CanOut_20ms(void)
 	BSP_CAN1_Send_STD((uint32_t)0x20, hcansend1.ESP_R_00);
 	BSP_CAN1_Send_STD((uint32_t)0x41, hcansend1.AMI_Rx);
 	BSP_CAN1_Send_STD((uint32_t)0x469, hcansend1.canb_epsmsg);
+
 }
 
 static void Task_CanOut_1000ms(void)
@@ -129,9 +138,22 @@ static void Task_CanOut_50ms(void)
 
 }
 
+static void Task_CanOut_100ms(void)
+{
+	/* Motor protocol parameter frame, CAN0 extended ID, 100 ms. */
+	BSP_CAN0_Send_EXT((uint32_t)0x0CFF09EF, hcansend1.cana_motor_cmd3);
+
+#if (VCU_ENABLE_BENCH_DEBUG != 0U)
+	BSP_CAN1_Send_STD((uint32_t)VCU_DBG_STATUS_ID, hcansend1.vcu_dbg_status);
+	BSP_CAN1_Send_STD((uint32_t)VCU_DBG_PEDAL_ECHO_ID, hcansend1.vcu_dbg_pedal_echo);
+	BSP_CAN1_Send_STD((uint32_t)VCU_DBG_AIR_WHEEL_ECHO_ID,
+		hcansend1.vcu_dbg_air_wheel_echo);
+#endif
+}
+
 static void Task_CanOut_10ms(void)
 {
-	/* µç»úĞ­ÒéÒªÇó£ºMCU1_Rx_Command£¬29Î»À©Õ¹Ö¡£¬DLC=8£¬ÖÜÆÚ10ms¡£ */
+	/* ç”µæœºåè®®è¦æ±‚ï¼šMCU1_Rx_Commandï¼Œ29ä½æ‰©å±•å¸§ï¼ŒDLC=8ï¼Œå‘¨æœŸ10msã€‚ */
 	BSP_CAN0_Send_EXT((uint32_t)0x0CFF08EF, hcansend1.cana_motor_cmd);
 }
 

@@ -1,0 +1,91 @@
+{
+  "assumed_resin_density_g_cm3": 1.1,
+  "quoted_unit_cost_cny_g": 0.45,
+  "parts": [
+    {
+      "file": "RES_MainHousing.stl",
+      "triangles": 32544,
+      "bbox_min_mm": [
+        -100.0,
+        -75.0,
+        -0.0
+      ],
+      "bbox_max_mm": [
+        100.0,
+        75.0,
+        74.0
+      ],
+      "size_mm": [
+        200.0,
+        150.0,
+        74.0
+      ],
+      "surface_area_mm2": 187270.93,
+      "volume_mm3": 329317.83,
+      "volume_cm3": 329.318,
+      "degenerate_triangles": 0,
+      "nonmanifold_or_boundary_edges": 0,
+      "watertight": true,
+      "estimated_mass_g": 362.2,
+      "estimated_part_cost_cny": 162.99
+    },
+    {
+      "file": "RES_TopCover.stl",
+      "triangles": 7820,
+      "bbox_min_mm": [
+        -94.0,
+        -75.0,
+        -12.3
+      ],
+      "bbox_max_mm": [
+        94.0,
+        75.0,
+        4.0
+      ],
+      "size_mm": [
+        188.0,
+        150.0,
+        16.3
+      ],
+      "surface_area_mm2": 75638.84,
+      "volume_mm3": 112340.97,
+      "volume_cm3": 112.341,
+      "degenerate_triangles": 0,
+      "nonmanifold_or_boundary_edges": 0,
+      "watertight": true,
+      "estimated_mass_g": 123.6,
+      "estimated_part_cost_cny": 55.62
+    },
+    {
+      "file": "RES_BatteryCover.stl",
+      "triangles": 5340,
+      "bbox_min_mm": [
+        -69.0,
+        -59.0,
+        -5.0
+      ],
+      "bbox_max_mm": [
+        69.0,
+        59.0,
+        2.5
+      ],
+      "size_mm": [
+        138.0,
+        118.0,
+        7.5
+      ],
+      "surface_area_mm2": 39160.83,
+      "volume_mm3": 53919.28,
+      "volume_cm3": 53.919,
+      "degenerate_triangles": 0,
+      "nonmanifold_or_boundary_edges": 0,
+      "watertight": true,
+      "estimated_mass_g": 59.3,
+      "estimated_part_cost_cny": 26.68
+    }
+  ],
+  "total_volume_cm3": 495.578,
+  "total_estimated_mass_g": 545.1,
+  "total_estimated_part_cost_cny": 245.29,
+  "all_watertight": true
+}

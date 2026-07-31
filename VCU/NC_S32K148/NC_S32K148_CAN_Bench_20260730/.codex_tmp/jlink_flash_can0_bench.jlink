@@ -1,0 +1,15 @@
+device S32K148
+si SWD
+speed 4000
+connect
+r
+h
+loadfile C:\Users\icemi\Desktop\RZS_Repository\VCU\NC_S32K148\NC_S32K148_CAN_Bench_20260730\Bench_Test\NC_S32K148_CAN0_Bench.hex
+r
+g
+sleep 500
+h
+mem32 0xE000ED28 1
+mem32 0x00000410 1
+g
+q

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">125</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="canb_epssendmsg2" SID="814">
+    <P Name="Position">[-35, 3, -5, 17]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add1" SID="815">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[395, 146, 430, 224]</P>
+    <P Name="ZOrder">897</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">-++</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add2" SID="816">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[340, -144, 370, -111]</P>
+    <P Name="ZOrder">910</P>
+    <P Name="IconShape">rectangular</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">received_command_number</P>
+    </Port>
+  </Block>
+  <Block BlockType="Sum" Name="Add5" SID="817">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[395, -14, 430, 64]</P>
+    <P Name="ZOrder">903</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">-++</P>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift1" SID="818">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[255, -209, 305, -171]</P>
+    <P Name="ZOrder">909</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Left Logical</P>
+      <P Name="N">8</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="819">
+    <P Name="Ports">[5, 1]</P>
+    <P Name="Position">[610, -336, 625, 366]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Inputs">5</P>
+    <P Name="DisplayOption">bar</P>
+    <P Name="InheritFromInputs">on</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="820">
+    <P Name="Position">[310, 82, 345, 118]</P>
+    <P Name="ZOrder">899</P>
+    <P Name="Value">1024</P>
+    <P Name="OutDataTypeStr">uint16</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant2" SID="821">
+    <P Name="Position">[310, -78, 345, -42]</P>
+    <P Name="ZOrder">905</P>
+    <P Name="Value">1024</P>
+    <P Name="OutDataTypeStr">uint16</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion1" SID="822">
+    <P Name="Position">[445, -2, 520, 32]</P>
+    <P Name="ZOrder">906</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">received_angle</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion10" SID="823">
+    <P Name="Position">[140, 33, 215, 67]</P>
+    <P Name="ZOrder">902</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion2" SID="824">
+    <P Name="Position">[460, 138, 535, 172]</P>
+    <P Name="ZOrder">900</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">actual_angle</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion3" SID="825">
+    <P Name="Position">[140, -207, 215, -173]</P>
+    <P Name="ZOrder">907</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion4" SID="826">
+    <P Name="Position">[140, -127, 215, -93]</P>
+    <P Name="ZOrder">908</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion5" SID="827">
+    <P Name="Position">[140, 193, 215, 227]</P>
+    <P Name="ZOrder">896</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion6" SID="828">
+    <P Name="Position">[140, 113, 215, 147]</P>
+    <P Name="ZOrder">895</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion8" SID="829">
+    <P Name="Position">[140, -47, 215, -13]</P>
+    <P Name="ZOrder">901</P>
+    <P Name="OutDataTypeStr">uint16</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Demux" Name="Demux" SID="830">
+    <P Name="Ports">[1, 8]</P>
+    <P Name="Position">[65, -310, 70, 330]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Outputs">8</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">eps_mode</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">eps_send_cound</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">8</P>
+      <P Name="Name">eps_send_cound</P>
+    </Port>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="831">
+    <P Name="Position">[270, 12, 315, 38]</P>
+    <P Name="ZOrder">904</P>
+    <P Name="Gain">256</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain2" SID="832">
+    <P Name="Position">[270, 172, 315, 198]</P>
+    <P Name="ZOrder">898</P>
+    <P Name="Gain">256</P>
+  </Block>
+  <Block BlockType="Outport" Name="canb_epssendmsg2signal" SID="833">
+    <P Name="Position">[700, 8, 730, 22]</P>
+    <P Name="ZOrder">-2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">814#out:1</P>
+    <P Name="Dst">830#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">819#out:1</P>
+    <P Name="Dst">833#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_mode</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Labels">[3, 1]</P>
+    <P Name="Src">830#out:1</P>
+    <P Name="Points">[237, 0; 0, 5]</P>
+    <P Name="Dst">819#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">actual_angle</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">824#out:1</P>
+    <P Name="Dst">819#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">828#out:1</P>
+    <P Name="Points">[23, 0; 0, 55]</P>
+    <P Name="Dst">832#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">827#out:1</P>
+    <P Name="Dst">815#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">820#out:1</P>
+    <P Name="Points">[27, 0; 0, 60]</P>
+    <P Name="Dst">815#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">832#out:1</P>
+    <P Name="Dst">815#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">815#out:1</P>
+    <P Name="Points">[4, 0; 0, -30]</P>
+    <P Name="Dst">824#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">received_angle</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">822#out:1</P>
+    <P Name="Dst">819#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">829#out:1</P>
+    <P Name="Points">[28, 0; 0, 55]</P>
+    <P Name="Dst">831#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">823#out:1</P>
+    <P Name="Dst">817#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">821#out:1</P>
+    <P Name="Points">[27, 0; 0, 60]</P>
+    <P Name="Dst">817#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">831#out:1</P>
+    <P Name="Dst">817#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">817#out:1</P>
+    <P Name="Points">[3, 0; 0, -10]</P>
+    <P Name="Dst">822#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">received_command_number</P>
+    <P Name="ZOrder">23</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">816#out:1</P>
+    <P Name="Dst">819#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">24</P>
+    <P Name="Src">818#out:1</P>
+    <P Name="Points">[8, 0; 0, 55]</P>
+    <P Name="Dst">816#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">25</P>
+    <P Name="Src">825#out:1</P>
+    <P Name="Dst">818#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">26</P>
+    <P Name="Src">826#out:1</P>
+    <P Name="Points">[98, 0; 0, -10]</P>
+    <P Name="Dst">816#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_send_cound</P>
+    <P Name="ZOrder">63</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">830#out:2</P>
+    <P Name="Dst">825#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">64</P>
+    <P Name="Src">830#out:3</P>
+    <P Name="Dst">826#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">65</P>
+    <P Name="Src">830#out:4</P>
+    <P Name="Dst">829#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">66</P>
+    <P Name="Src">830#out:5</P>
+    <P Name="Dst">823#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">67</P>
+    <P Name="Src">830#out:6</P>
+    <P Name="Dst">828#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">68</P>
+    <P Name="Src">830#out:7</P>
+    <P Name="Dst">827#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">eps_send_cound</P>
+    <P Name="ZOrder">69</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">830#out:8</P>
+    <P Name="Points">[260, 0; 0, 5]</P>
+    <P Name="Dst">819#in:5</P>
+  </Line>
+</System>

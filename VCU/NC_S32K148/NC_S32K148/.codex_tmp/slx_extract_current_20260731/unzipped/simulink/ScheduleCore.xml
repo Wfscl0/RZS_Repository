@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="f9eec864-9b14-4271-a8ff-204bce557783">
+    <globalData type="sltp.mm.core.GlobalData" uuid="ba309491-3b54-4ba7-91d9-6c4e0a6b7a9e">
+      <dataName>portAMI_RX</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="f55983b8-b699-4cb1-8769-54500492501b">
+      <dataName>portAMI_Tx</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="16c17fcb-de2a-4199-bc0d-29c6c6f99272">
+      <dataName>portESP_R_00</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="328ddb8a-54f6-481a-a224-0ce4b9b61dd3">
+      <dataName>portESP_T_01</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="5825bfd1-1bb7-4ec7-b917-ab8512d7a65a">
+      <dataName>portESP_T_03</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="9f78d8b9-9fe6-49d1-8b5a-79b0feb20361">
+      <dataName>portESP_T_06</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="7dad50f6-6c8f-47c0-98ba-576bed9b121c">
+      <dataName>portESP_T_07</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="1cd1ab90-b398-45b5-8c83-3e91fee108ed">
+      <dataName>portShutdown_End</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="62c04ed1-9f57-4a2a-af6e-a61a695c80e9">
+      <dataName>portShutdown_Start</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="d661a4fd-520e-4707-b642-423266281ca6">
+      <dataName>portcana_motor_cmd</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="1690dc14-e005-4417-b336-49ba29dd0a47">
+      <dataName>portcana_motor_cmd3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="decac54c-4251-4737-9edb-be08d89e5431">
+      <dataName>portcanb_epsmsg</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="9acdb483-8d35-4229-9b95-4fcd5e465081">
+      <dataName>portcanb_epssendmsg1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="0557a51d-43b0-4719-a1ac-7b9f9c871762">
+      <dataName>portcanb_epssendmsg2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="facf5886-6c6f-46a9-b037-3cb79136b5bd">
+      <dataName>portcanb_ipcrxmsg</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="98219d32-8fca-49a0-823f-d4f1390b15c2">
+      <dataName>portcanb_ipctsmsg1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="0668f4ef-7449-4011-9035-36a974af1692">
+      <dataName>portcanb_ipctsmsg2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="d6ee3327-b53e-4e23-9bea-c7308e9a1931">
+      <dataName>portebs_watchdog</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="972a6ce3-983b-49a8-9c72-86d90f21273b">
+      <dataName>portmodel_ain</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="ad8f25fa-1271-48b9-bb55-5fcda869eaa4">
+      <dataName>portmodel_hin</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="08540f05-966d-4281-8304-71e71804d1d9">
+      <dataName>portmodel_hox</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="b2e42e0d-1385-45f2-9155-0feacfab2c01">
+      <dataName>portmodel_lox</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="1963dace-34b6-4255-b6e9-ea66bbee3470">
+      <dataName>portres_msg</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="3234c088-816c-49be-a986-762283449bd3">
+      <dataName>portvcu_dbg_air_wheel</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="97f6fc27-5854-4d5a-99cb-cd49a798af5e">
+      <dataName>portvcu_dbg_air_wheel_echo</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="4bd5b4cc-d7e0-4714-abce-98115aca2197">
+      <dataName>portvcu_dbg_control</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="91174bbe-8f1c-4d8c-8a80-098fc225db52">
+      <dataName>portvcu_dbg_digital</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="514070da-25ab-4603-bef5-9e5ae307e549">
+      <dataName>portvcu_dbg_pedal_adc</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="15043c26-68ed-4e6f-ab62-e52f14f300a7">
+      <dataName>portvcu_dbg_pedal_echo</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="473c62d7-32c1-413d-ae00-db3ef681bb20">
+      <dataName>portvcu_dbg_rx_count</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="8a6552bf-5874-41de-8845-8d4f3aca3361">
+      <dataName>portvcu_dbg_status</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="beeff424-7ea1-4281-86a2-1c1d6ca5c393">
+      <dataName>portwlspd_fsensor</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="972b2c80-d5e9-4252-8c05-1486c3bdf95b">
+      <dataName>portwlspd_hsensor</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <priorityDirection>HighNumberLast</priorityDirection>
+    <unusedTaskIds>1</unusedTaskIds>
+    <editorState type="sltp.mm.core.EditorState" uuid="a3c4ec6a-7855-463f-baf4-fe367fe33e4d">
+      <isSynchronized>true</isSynchronized>
+      <panelState type="sltp.mm.core.EditorPanelState" uuid="edf6590e-e711-4558-8d24-67e4e3cfa886"/>
+    </editorState>
+    <rootTask type="sltp.mm.core.Task" uuid="474f2353-1d1e-41be-a1ce-647eeab7436b">
+      <context type="sltp.mm.core.Context" uuid="f9eec864-9b14-4271-a8ff-204bce557783"/>
+      <explicit>false</explicit>
+      <name>Default</name>
+      <priority>-2147483648</priority>
+      <subgraph type="sltp.mm.core.Graph" uuid="dbe2d5d2-ace2-4ce8-babb-05ff9900f939">
+        <tasks type="sltp.mm.core.Task" uuid="36d9ae43-699d-45e0-838b-7675c0754117">
+          <context type="sltp.mm.core.Context" uuid="f9eec864-9b14-4271-a8ff-204bce557783"/>
+          <explicit>false</explicit>
+          <id>2</id>
+          <isTimed>true</isTimed>
+          <name>D1</name>
+          <priority>40</priority>
+          <rates type="sltp.mm.core.Rate" uuid="bf18e348-6323-4b68-96d9-4df5f1e51729">
+            <annotation>D1</annotation>
+            <color>-436207361</color>
+            <hasBlocks>true</hasBlocks>
+            <identifier>ClassicPeriodicDiscrete0.010</identifier>
+            <rateSpec type="sltp.mm.core.RateSpec">
+              <period>.01</period>
+            </rateSpec>
+            <sti>0</sti>
+          </rates>
+        </tasks>
+      </subgraph>
+    </rootTask>
+  </sltp.mm.core.Context>
+</sltp_graph>

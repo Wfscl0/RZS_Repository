@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">133</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="run_button" SID="287::114">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">94</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="287::132">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">112</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="287::131">
+    <P Name="Tag">Stateflow S-Function 8</P>
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[180, 100, 230, 160]</P>
+    <P Name="ZOrder">111</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="Parameters">F,T</P>
+    <P Name="PortCounts">[1 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">run</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="287::133">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">113</P>
+  </Block>
+  <Block BlockType="Outport" Name="run" SID="287::115">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">95</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">287::114#out:1</P>
+    <P Name="Dst">287::131#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">run</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">287::131#out:2</P>
+    <P Name="Dst">287::115#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">287::132#out:1</P>
+    <P Name="Dst">287::133#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">287::131#out:1</P>
+    <P Name="Dst">287::132#in:1</P>
+  </Line>
+</System>

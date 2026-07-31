@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 1707, 913]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">151</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="as_led_blue" SID="1380::115">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">94</P>
+  </Block>
+  <Block BlockType="Inport" Name="asms_button" SID="1380::133">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">103</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="1380::150">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">120</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="1380::149">
+    <P Name="Tag">Stateflow S-Function 13</P>
+    <P Name="Ports">[2, 2]</P>
+    <P Name="Position">[180, 100, 230, 160]</P>
+    <P Name="ZOrder">119</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[2 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">blue</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="1380::151">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">121</P>
+  </Block>
+  <Block BlockType="Outport" Name="blue" SID="1380::128">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">99</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1380::115#out:1</P>
+    <P Name="Points">[120, 0]</P>
+    <P Name="Dst">1380::149#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1380::133#out:1</P>
+    <P Name="Dst">1380::149#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">blue</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1380::149#out:2</P>
+    <P Name="Dst">1380::128#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">1380::150#out:1</P>
+    <P Name="Dst">1380::151#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1380::149#out:1</P>
+    <P Name="Dst">1380::150#in:1</P>
+  </Line>
+</System>

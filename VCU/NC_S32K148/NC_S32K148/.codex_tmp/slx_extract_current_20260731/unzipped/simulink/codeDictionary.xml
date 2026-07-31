@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" defaultPackage="coderdictionary.data" packageUris="http://schema.mathworks.com/mf0/coderdictionary_data/R2021b http://schema.mathworks.com/mf0/coderdictionary_data/R2021b/coderdictionary.data">
+  <Container type="Container" uuid="168d43f2-cf95-4eec-af68-17b5ca2125f1">
+    <ReferencedContainers type="ReferenceContainerInfo" uuid="2bac5d5a-4dbb-47be-9995-d3660f8a3182">
+      <Name>SimulinkBuiltin</Name>
+    </ReferencedContainers>
+    <ReferencedContainers type="ReferenceContainerInfo" uuid="93d94766-72c3-4abe-bad6-113100e7cb68">
+      <Name>Simulink</Name>
+    </ReferencedContainers>
+    <CDefinitions type="C_Definitions" uuid="62655e13-8dea-435d-a63a-8def754bb46c">
+      <SoftwareComponentTemplates type="SoftwareComponentTemplate" uuid="a031fb5e-3ad1-4581-a3a8-fc4d59689dfb">
+        <Name>CODER_DICTIONARY</Name>
+        <Constants type="DataConfiguration" uuid="1f4ad1c5-1889-481f-a3bb-b104187cd1e3">
+          <category>Constants</category>
+        </Constants>
+        <DataTransfers type="DataConfiguration" uuid="963a1a7f-f2b4-4cc2-8511-26e3cce74e70">
+          <category>DataTransfers</category>
+        </DataTransfers>
+        <Execution type="FunctionConfiguration" uuid="55066a4b-4be6-41c3-81ea-b79cf2eb5060"/>
+        <GlobalDataStores type="DataConfiguration" uuid="94458456-5642-452a-9179-fff72e141804">
+          <category>GlobalDataStores</category>
+        </GlobalDataStores>
+        <GlobalParameters type="DataConfiguration" uuid="dcf99ee2-6bb8-467f-90ff-ca330f05caa6">
+          <category>GlobalParameters</category>
+        </GlobalParameters>
+        <InitializeTerminate type="FunctionConfiguration" uuid="b9e3ce1d-ddef-4f77-a4dc-ad1a9bacaf50"/>
+        <Inports type="DataConfiguration" uuid="8b745cd5-d6f8-478f-82ea-4ea3f7fd9eaa">
+          <category>Inports</category>
+        </Inports>
+        <InternalData type="DataConfiguration" uuid="821b0bc5-eec6-4ddc-b715-c19182832c3c">
+          <category>InternalData</category>
+        </InternalData>
+        <LocalParameters type="DataConfiguration" uuid="e0aff1f8-85d1-4c63-bf13-e3378e3d7f58">
+          <category>LocalParameters</category>
+        </LocalParameters>
+        <ModelData type="DataConfiguration" uuid="b875f707-775c-4f8c-b3a6-0c0635271c6f">
+          <category>ModelData</category>
+        </ModelData>
+        <Outports type="DataConfiguration" uuid="c2ced405-7db6-4d83-a7a4-6878898281af">
+          <category>Outports</category>
+        </Outports>
+        <ParameterArguments type="DataConfiguration" uuid="2fc6c250-a9dd-4ae6-a5ab-af71af4443c2">
+          <category>ParameterArguments</category>
+        </ParameterArguments>
+        <SharedLocalDataStores type="DataConfiguration" uuid="da3a7b35-6321-4116-8fc7-91ee1752cdb2">
+          <category>SharedLocalDataStores</category>
+        </SharedLocalDataStores>
+        <SharedUtility type="FunctionConfiguration" uuid="b51e6a36-7d01-4841-ab78-4c1114c96830"/>
+      </SoftwareComponentTemplates>
+    </CDefinitions>
+  </Container>
+</MF0>

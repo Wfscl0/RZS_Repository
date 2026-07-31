@@ -1,0 +1,7 @@
+RULE_COMPLIANCE_UPDATE=PASS
+MODEL=C:\Users\icemi\Desktop\RZS_Repository\VCU\VCU10.slx
+MODEL_VERSION=1.44
+ROOT_INPUTS=19 ROOT_OUTPUTS=12
+[警告: Cannot close the model 'eml_lib' because it has been changed. Use the command 'save_system' to first save the model] 
+[警告: Cannot close the model 'hdlsllib' because it has been changed. Use the command 'save_system' to first save the model] 
+[警告: Cannot close the model 'hdlmdlgenlib' because it has been changed. Use the command 'save_system' to first save the model] 

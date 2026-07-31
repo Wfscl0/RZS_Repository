@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="586">
+  <P Name="name">ESP/ESP_TransmitMsg/ESP_R_00/ESP_Chart1</P>
+  <P Name="windowPosition">[-7 -7 1721 1025]</P>
+  <P Name="viewLimits">[-37.904 1042.984 -3.414 515.252]</P>
+  <P Name="zoomFactor">0.889</P>
+  <P Name="screen">[1 1 3200 1200 1.25]</P>
+  <P Name="viewObj">586</P>
+  <P Name="ssIdHighWaterMark">21</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="chartFileNumber">16</P>
+  <P Name="allowGlobalAccessToExportedFunctions">0</P>
+  <P Name="saturateOnIntegerOverflow">1</P>
+  <P Name="userSpecifiedStateTransitionExecutionOrder">1</P>
+  <P Name="disableImplicitCasting">1</P>
+  <P Name="actionLanguage">2</P>
+  <Children>
+    <state SSID="3">
+      <P Name="labelString">ESC_Unable
+en:
+mode=0;
+%mode=机械模式;</P>
+      <P Name="position">[214.8667 53.2222 215.3333 163.4667]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">586</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="5">
+      <P Name="labelString">ESC_Engage
+en:
+%开环模式;
+mode=1;
+tarPrsReqFL=ipc_esp_flprs;
+tarPrsReqFR=ipc_esp_frprs;
+tarPrsReqRL=ipc_esp_rlprs;
+tarPrsReqRR=ipc_esp_rrprs;
+du:
+mode=1;
+tarPrsReqFL=ipc_esp_flprs;
+tarPrsReqFR=ipc_esp_frprs;
+tarPrsReqRL=ipc_esp_rlprs;
+tarPrsReqRR=ipc_esp_rrprs;</P>
+      <P Name="position">[214.8667 297.5333 236.1333 189.0667]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">586</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="7">
+      <P Name="labelString">ESC_Able
+en:
+%开环模式;
+mode=1;
+tarPrsReqFL=ipc_esp_flprs;
+tarPrsReqFR=ipc_esp_frprs;
+tarPrsReqRL=ipc_esp_rlprs;
+tarPrsReqRR=ipc_esp_rrprs;
+du:
+mode=1;
+tarPrsReqFL=ipc_esp_flprs;
+tarPrsReqFR=ipc_esp_frprs;
+tarPrsReqRL=ipc_esp_rlprs;
+tarPrsReqRR=ipc_esp_rrprs;</P>
+      <P Name="position">[589.1222 297.5333 274.9167 189.0667]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">586</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <data SSID="17" name="ipc_esp_flprs">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="16" name="ipc_esp_frprs">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="18" name="ipc_esp_rlprs">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="19" name="ipc_esp_rrprs">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="2" name="brake_flag">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="11" name="tarPrsReqFL">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="12" name="tarPrsReqFR">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="13" name="tarPrsReqRL">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="14" name="tarPrsReqRR">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="15" name="mode">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="4">
+      <P Name="labelString"/>
+      <P Name="labelPosition">[264.034 38.222 0 0]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 264.0344 23.2222 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0.2283 264.0344 53.2222 0 0]</P>
+      </dst>
+      <P Name="midPoint">[264.0344 38.2222]</P>
+      <P Name="dataLimits">[261.634 266.434 23.222 53.222]</P>
+      <P Name="subviewer">586</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="9">
+      <P Name="labelString">[brake_flag==0]</P>
+      <P Name="labelPosition">[663.667 184.738 85.328 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">7</P>
+        <P Name="intersection">[1 0 -1 0.4162 703.5546 297.5333 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[2 1 0 0.4779 430.2 131.3469 0 0]</P>
+      </dst>
+      <P Name="midPoint">[610.0147 175.3027]</P>
+      <P Name="dataLimits">[430.2 703.555 128.947 297.533]</P>
+      <P Name="subviewer">586</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="mode">MIRROR_SLIDE</P>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="6">
+      <P Name="labelString">[brake_flag==2]</P>
+      <P Name="labelPosition">[320.978 243.774 85.328 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[3 0 1 0.5366 314.6442 216.6889 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">5</P>
+        <P Name="intersection">[1 -0 -1 0.4225 314.6442 297.5333 0 0]</P>
+      </dst>
+      <P Name="midPoint">[314.6442 253.1111]</P>
+      <P Name="dataLimits">[312.244 317.044 216.689 297.533]</P>
+      <P Name="subviewer">586</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="8">
+      <P Name="labelString">[brake_flag==1]</P>
+      <P Name="labelPosition">[471.509 393.204 85.328 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">5</P>
+        <P Name="intersection">[2 1 0 0.6012 451 411.2043 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">7</P>
+        <P Name="intersection">[4 -1 0 0.3988 589.1222 411.2043 0 0]</P>
+      </dst>
+      <P Name="midPoint">[516.0611 411.2043]</P>
+      <P Name="dataLimits">[451 589.122 408.804 413.604]</P>
+      <P Name="subviewer">586</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+  </Children>
+</chart>

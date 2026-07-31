@@ -4,63 +4,116 @@
 #include <string.h>
 #include <stdio.h>
 
+/*
+ * CAN1å°æ¶è°ƒè¯•åè®®å¼€å…³ã€‚
+ * æœ¬ä½“å·¥ç¨‹ä¿æŒä¸º0ï¼Œå¿½ç•¥0x7A0~0x7A3å¹¶åœæ­¢0x7B0~0x7B2å›æ˜¾ï¼›
+ * ä»…åœ¨ç‹¬ç«‹TSMaster/PCANæµ‹è¯•å‰¯æœ¬ä¸­æ”¹ä¸º1ï¼Œé˜²æ­¢å®è½¦è¯¯è§¦å‘è¾“å…¥è¦†ç›–ã€‚
+ */
+#ifndef VCU_ENABLE_BENCH_DEBUG
+#define VCU_ENABLE_BENCH_DEBUG       (0U)
+#endif
+
+/* CAN1å°æ¶è°ƒè¯•åè®®IDï¼ˆ11ä½æ ‡å‡†å¸§ï¼‰ã€‚ */
+#define VCU_DBG_CONTROL_ID          (0x7A0U)
+#define VCU_DBG_PEDAL_ADC_ID        (0x7A1U)
+#define VCU_DBG_AIR_WHEEL_ID        (0x7A2U)
+#define VCU_DBG_DIGITAL_ID          (0x7A3U)
+#define VCU_DBG_STATUS_ID           (0x7B0U)
+#define VCU_DBG_PEDAL_ECHO_ID       (0x7B1U)
+#define VCU_DBG_AIR_WHEEL_ECHO_ID   (0x7B2U)
+
+#define VCU_DBG_FLAG_MASTER         (0x01U)
+#define VCU_DBG_FLAG_PEDAL_ADC      (0x02U)
+#define VCU_DBG_FLAG_AIR_WHEEL      (0x04U)
+#define VCU_DBG_FLAG_DIGITAL        (0x08U)
+#define VCU_DBG_UNLOCK_BYTE0        (0xA5U)
+#define VCU_DBG_UNLOCK_BYTE1        (0x5AU)
+
 
 /*******************************************************************************
-** CAN½ÓÊÕ»º´æ ½á¹¹Ìå±äÁ¿ÉùÃ÷
+** CANæ¥æ”¶ç¼“å­˜ ç»“æ„ä½“å˜é‡å£°æ˜
 */
 
-//CAN0 ¶ÓÁĞÊı¾İ½»»¥¡£Êı¾İ¸ñÊ½¶¨Òå
+//CAN0 é˜Ÿåˆ—æ•°æ®äº¤äº’ã€‚æ•°æ®æ ¼å¼å®šä¹‰
 typedef struct
 {
-	//uint8_t  Rx201[8]; //SES·´À¡
-	//uint8_t  Rx202[8]; //SES·´À¡
+	//uint8_t  Rx201[8]; //SESåé¦ˆ
+	//uint8_t  Rx202[8]; //SESåé¦ˆ
+	uint8_t reserved;    //CAN0å½“å‰ä¸é€šè¿‡é˜Ÿåˆ—æ¥æ”¶ä¸šåŠ¡æŠ¥æ–‡ï¼Œé¿å…ç©ºç»“æ„ä½“æ‰©å±•
 
 }HCAN0RX_PAR;
 
-//CAN1 ¶ÓÁĞÊı¾İ½»»¥¡£Êı¾İ¸ñÊ½¶¨Òå
+//CAN1 é˜Ÿåˆ—æ•°æ®äº¤äº’ã€‚æ•°æ®æ ¼å¼å®šä¹‰
 typedef struct
 {
-	//uint8_t  Rx1A0[8]; //µç»ú·´À¡
-	//uint8_t  Rx2A0[8]; //µç»ú·´À¡
-	//uint8_t  Rx142[8]; //DBS·´À¡
-	//uint8_t  Rx143[8]; //DBS·´À¡
+	//uint8_t  Rx1A0[8]; //ç”µæœºåé¦ˆ
+	//uint8_t  Rx2A0[8]; //ç”µæœºåé¦ˆ
+	//uint8_t  Rx142[8]; //DBSåé¦ˆ
+	//uint8_t  Rx143[8]; //DBSåé¦ˆ
 	uint8_t  ESP_T_03[8];
+	uint8_t  ESP_T_06[8];
+	uint8_t  ESP_T_07[8];
 	uint8_t  res_msg[8];
 	uint8_t  canb_ipctsmsg1[8];
 	uint8_t  canb_ipctsmsg2[8];
 	uint8_t  AMI_Tx[8];
 	uint8_t  canb_epssendmsg1[8];
 	uint8_t  canb_epssendmsg2[8];
+
+	/* Production-frame counters are incremented only after ID/DLC validation. */
+	uint8_t  esp_t03_rx_count;
+	uint8_t  esp_t06_rx_count;
+	uint8_t  esp_t07_rx_count;
+	uint8_t  res_rx_count;
+	uint8_t  ipc_msg1_rx_count;
+	uint8_t  ipc_msg2_rx_count;
+	uint8_t  ami_rx_count;
+	uint8_t  eps_msg1_rx_count;
+	uint8_t  eps_msg2_rx_count;
+
+	/* TSMaster bench-debug inputs. Receive counters support timeout handling. */
+	uint8_t  vcu_dbg_control[8];
+	uint8_t  vcu_dbg_pedal_adc[8];
+	uint8_t  vcu_dbg_air_wheel[8];
+	uint8_t  vcu_dbg_digital[8];
+	uint8_t  vcu_dbg_control_rx_count;
+	uint8_t  vcu_dbg_pedal_rx_count;
+	uint8_t  vcu_dbg_air_wheel_rx_count;
+	uint8_t  vcu_dbg_digital_rx_count;
 }HCAN1RX_PAR;
 
-//CAN2 ¶ÓÁĞÊı¾İ½»»¥¡£Êı¾İ¸ñÊ½¶¨Òå
+//CAN2 é˜Ÿåˆ—æ•°æ®äº¤äº’ã€‚æ•°æ®æ ¼å¼å®šä¹‰
 typedef struct
 {
 	//uint8_t  Rx1B0[3][9]; //VCU
+	uint8_t reserved;    //CAN2å½“å‰é¢„ç•™ï¼Œé¿å…éæ ‡å‡†ç©ºç»“æ„ä½“
 
 }HCAN2RX_PAR;
 
 
 /*******************************************************************************
-** CAN·¢ËÍ»º´æ ½á¹¹Ìå±äÁ¿ÉùÃ÷
+** CANå‘é€ç¼“å­˜ ç»“æ„ä½“å˜é‡å£°æ˜
 */
-//CAN·¢ËÍ ¶ÓÁĞÊı¾İ½»»¥¡£Êı¾İ¸ñÊ½¶¨Òå
+//CANå‘é€ é˜Ÿåˆ—æ•°æ®äº¤äº’ã€‚æ•°æ®æ ¼å¼å®šä¹‰
 typedef struct
 {
 	//CAN0
-	//uint8_t Tx169[8]; //×ªÏò
-	//uint8_t Tx20A[8]; //ÏÔÊ¾ÆÁ
-	//uint8_t Tx20B[8]; //ÏÔÊ¾ÆÁ
+	//uint8_t Tx169[8]; //è½¬å‘
+	//uint8_t Tx20A[8]; //æ˜¾ç¤ºå±
+	//uint8_t Tx20B[8]; //æ˜¾ç¤ºå±
 	uint8_t cana_motor_cmd[8];
 	uint8_t cana_motor_cmd3[8];
 
 	//CAN1
-	//uint8_t Tx220[8]; //µç»ú
-	//uint8_t Tx154[8]; //ÖÆ¶¯
+	//uint8_t Tx220[8]; //ç”µæœº
+	//uint8_t Tx154[8]; //åˆ¶åŠ¨
 	uint8_t ESP_R_00[8];
 	uint8_t canb_ipcrxmsg[8];
 	uint8_t AMI_Rx[8];
 	uint8_t canb_epsmsg[8];
+	uint8_t vcu_dbg_status[8];
+	uint8_t vcu_dbg_pedal_echo[8];
+	uint8_t vcu_dbg_air_wheel_echo[8];
 
 	//CAN2
 

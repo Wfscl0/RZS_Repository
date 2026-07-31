@@ -1,0 +1,12 @@
+ 
+要开始，请键入 doc。
+有关产品信息，请访问 www.mathworks.com。
+ 
+错误使用 apply_topology_20260730 (第 98 行)
+Error due to multiple causes.
+Caused by:
+    错误使用 apply_topology_20260730 (第 98 行)
+    Data type mismatch. '输出端口 1' of 'VCU10/Output_Convert/Physical_HO1_8_Pack' is a signal of 数据类型 'uint8'. However, it is driving a signal of 数据类型 'ufix5'.
+    错误使用 apply_topology_20260730 (第 98 行)
+    Data type mismatch. Input port 1 of '<hidden_inserted_signal_specification_block>' expects a signal of 数据类型 'ufix5'. However, it is driven by a signal of 数据类型 'uint8'. This message is related to a hidden SignalSpecification block.
+    此模块是为信号对象 'model_lox' 添加的，它是从模块 'VCU10/Output_Convert/Physical_HO1_8_Pack' '输出端口 1' 解析而来的。请考虑更改信号对象属性或模块设置来解决此冲突。

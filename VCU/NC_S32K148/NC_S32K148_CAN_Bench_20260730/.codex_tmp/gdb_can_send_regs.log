@@ -1,0 +1,34 @@
+0x00004e94 in ?? ()
+Expected an decimal digit (0-9)
+Hardware assisted breakpoint 1 at 0x2dbb2: file ../Sources/main.c, line 46.
+
+Breakpoint 1, main () at ../Sources/main.c:46
+46	    PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
+Hardware assisted breakpoint 2 at 0x22adc: file ../ImpCode/bsp/com/bsp_can0.c, line 184.
+
+Breakpoint 2, CAN0_Send (mailbox=mailbox@entry=3, id=id@entry=218040559, data=data@entry=0x200007a0 <hcansend1> "\030S", length=length@entry=8 '\b') at ../ImpCode/bsp/com/bsp_can0.c:184
+184	{
+CAN0_SEND_REACHED mailbox=3 id=0xcff08ef len=8
+Temporary breakpoint 3 at 0x22b14: file ../ImpCode/bsp/com/bsp_can0.c, line 195.
+
+Temporary breakpoint 3, CAN0_Send (mailbox=mailbox@entry=3, id=id@entry=218040559, data=data@entry=0x200007a0 <hcansend1> "\030S", length=length@entry=8 '\b') at ../ImpCode/bsp/com/bsp_can0.c:195
+195	}
+CAN_SendBlocking return register r0=0x3
+PrgSts:
+$1 = {hin = 0, uln_out = 0 '\000', mc3_outl = 0 '\000', mc3_outh = 0 '\000', rct_live = 0 '\000', rct_online = 0 '\000', rct_emerg = 0 '\000', can0_isr = 0 '\000', can1_isr = 0 '\000', can2_isr = 0 '\000', jy60_isr = 2 '\002', task_getIn1 = 1 '\001', task_getIn2 = 0 '\000', task_ComIn = 1 '\001', task_CoreApp = 1 '\001', task_VcuCtrl = 1 '\001', task_CanOut = 0 '\000', task_Debug = 0 '\000'}
+CAN0 MCR CTRL1 TIMER ECR ESR1 IMASK1 IFLAG1 CTRL2:
+0x40024000:	0x0003100f
+0x40024004:	0x00610007
+0x40024008:	0x0000e4d8
+0x4002401c:	0x00000000
+0x40024020:	0x00000000
+0x40024028:	0x00000005
+0x40024030:	0x00000000
+0x40024034:	0x00a00000
+PCC_CAN0 PORTE_PCR4 PORTE_PCR5:
+0x40065090:	0xc0000000
+0x4004d010:	0x00000500
+0x4004d014:	0x00000500
+SCB CFSR VTOR:
+0xe000ed28:	0x00000000
+0xe000ed08:	0x1ffe0000

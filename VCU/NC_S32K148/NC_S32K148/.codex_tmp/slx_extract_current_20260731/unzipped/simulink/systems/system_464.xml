@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">173</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="AMI_Tx" SID="465">
+    <P Name="Position">[55, 238, 85, 252]</P>
+    <P Name="ZOrder">286</P>
+  </Block>
+  <Block BlockType="Reference" Name="Bit Shift" SID="466">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[310, 121, 360, 159]</P>
+    <P Name="ZOrder">304</P>
+    <P Name="LibraryVersion">3.7</P>
+    <P Name="SourceBlock">hdlsllib/Logic and Bit
+Operations/Bit Shift</P>
+    <P Name="SourceType">Bit Shift</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="mode">Shift Right Logical</P>
+      <P Name="N">4</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Bitwise AND" SID="467">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[210, 121, 250, 159]</P>
+    <P Name="ZOrder">303</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Bitwise
+Operator</P>
+    <P Name="SourceType">Bitwise Operator</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="logicop">AND</P>
+      <P Name="UseBitMask">on</P>
+      <P Name="NumInputPorts">1</P>
+      <P Name="BitMask">bin2dec(&apos;11110000&apos;)</P>
+      <P Name="BitMaskRealWorld">Stored Integer</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Demux" Name="Demux" SID="468">
+    <P Name="Ports">[1, 8]</P>
+    <P Name="Position">[140, 128, 150, 362]</P>
+    <P Name="ZOrder">288</P>
+    <P Name="Outputs">8</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator" SID="469">
+    <P Name="Position">[220, 190, 240, 210]</P>
+    <P Name="ZOrder">289</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator1" SID="470">
+    <P Name="Position">[220, 220, 240, 240]</P>
+    <P Name="ZOrder">290</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator2" SID="471">
+    <P Name="Position">[220, 250, 240, 270]</P>
+    <P Name="ZOrder">291</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator3" SID="472">
+    <P Name="Position">[220, 280, 240, 300]</P>
+    <P Name="ZOrder">292</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator4" SID="473">
+    <P Name="Position">[220, 310, 240, 330]</P>
+    <P Name="ZOrder">293</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator5" SID="474">
+    <P Name="Position">[220, 340, 240, 360]</P>
+    <P Name="ZOrder">294</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator6" SID="475">
+    <P Name="Position">[220, 160, 240, 180]</P>
+    <P Name="ZOrder">295</P>
+  </Block>
+  <Block BlockType="Outport" Name="ami_astask" SID="476">
+    <P Name="Position">[505, 133, 535, 147]</P>
+    <P Name="ZOrder">287</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">468#out:6</P>
+    <P Name="Dst">472#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">468#out:2</P>
+    <P Name="Dst">475#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">468#out:4</P>
+    <P Name="Dst">470#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">465#out:1</P>
+    <P Name="Dst">468#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">468#out:7</P>
+    <P Name="Dst">473#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">468#out:5</P>
+    <P Name="Dst">471#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">468#out:8</P>
+    <P Name="Dst">474#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">468#out:3</P>
+    <P Name="Dst">469#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">468#out:1</P>
+    <P Name="Dst">467#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">467#out:1</P>
+    <P Name="Dst">466#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">466#out:1</P>
+    <P Name="Dst">476#in:1</P>
+  </Line>
+</System>

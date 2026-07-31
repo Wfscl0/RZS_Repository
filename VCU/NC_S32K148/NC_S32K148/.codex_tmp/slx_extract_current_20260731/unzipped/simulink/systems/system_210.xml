@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="apps1" SID="211">
+    <P Name="Position">[-15, 158, 15, 172]</P>
+    <P Name="ZOrder">177</P>
+  </Block>
+  <Block BlockType="Inport" Name="apps2" SID="212">
+    <P Name="Position">[-15, 308, 15, 322]</P>
+    <P Name="ZOrder">178</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="brkps" SID="213">
+    <P Name="Position">[-15, 458, 15, 472]</P>
+    <P Name="ZOrder">179</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="airprs_sensor1" SID="216">
+    <P Name="Position">[-15, 758, 15, 772]</P>
+    <P Name="ZOrder">245</P>
+    <P Name="Port">4</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">airprs1_raw</P>
+      <P Name="PropagatedSignals">airprs1</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="airprs_sensor2" SID="217">
+    <P Name="Position">[-15, 833, 15, 847]</P>
+    <P Name="ZOrder">247</P>
+    <P Name="Port">5</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">airprs2_raw</P>
+      <P Name="PropagatedSignals">airprs2</P>
+    </Port>
+  </Block>
+  <Block BlockType="Inport" Name="wlspd_fsensor" SID="214">
+    <P Name="Position">[-15, 608, 15, 622]</P>
+    <P Name="ZOrder">180</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="wlspd_hsensor" SID="215">
+    <P Name="Position">[-15, 683, 15, 697]</P>
+    <P Name="ZOrder">181</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="218">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[485, 85, 505, 105]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="Lookup_n-D" Name="1-D Lookup&#xA;Table" SID="219">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[185, 145, 255, 185]</P>
+    <P Name="ZOrder">185</P>
+    <P Name="InputPortMap">u0</P>
+    <P Name="NumberOfTableDimensions">1</P>
+    <P Name="BreakpointsForDimension1">[252 2000]</P>
+    <P Name="IndexSearchMethod">Linear search</P>
+    <P Name="Table">[0.0 1.0]</P>
+    <P Name="ExtrapMethod">Clip</P>
+    <P Name="UseLastTableValue">on</P>
+    <P Name="InternalRulePriority">Speed</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Simplest</P>
+  </Block>
+  <Block BlockType="Lookup_n-D" Name="1-D Lookup&#xA;Table1" SID="220">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[185, 445, 255, 485]</P>
+    <P Name="ZOrder">226</P>
+    <P Name="InputPortMap">u0</P>
+    <P Name="NumberOfTableDimensions">1</P>
+    <P Name="BreakpointsForDimension1">[252 2000]</P>
+    <P Name="IndexSearchMethod">Linear search</P>
+    <P Name="Table">[0.0 1.0]</P>
+    <P Name="ExtrapMethod">Clip</P>
+    <P Name="UseLastTableValue">on</P>
+    <P Name="InternalRulePriority">Speed</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Simplest</P>
+  </Block>
+  <Block BlockType="Lookup_n-D" Name="1-D Lookup&#xA;Table9" SID="223">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[185, 295, 255, 335]</P>
+    <P Name="ZOrder">225</P>
+    <P Name="InputPortMap">u0</P>
+    <P Name="NumberOfTableDimensions">1</P>
+    <P Name="BreakpointsForDimension1">[252 2000]</P>
+    <P Name="IndexSearchMethod">Linear search</P>
+    <P Name="Table">[0.0 1.0]</P>
+    <P Name="ExtrapMethod">Clip</P>
+    <P Name="UseLastTableValue">on</P>
+    <P Name="InternalRulePriority">Speed</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Simplest</P>
+  </Block>
+  <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="224">
+    <P Name="Ports">[12, 1]</P>
+    <P Name="Position">[770, 120, 780, 885]</P>
+    <P Name="ZOrder">189</P>
+    <P Name="Inputs">12</P>
+    <P Name="DisplayOption">bar</P>
+    <P Name="InheritFromInputs">on</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion" SID="225">
+    <P Name="Position">[360, 148, 435, 182]</P>
+    <P Name="ZOrder">186</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion1" SID="226">
+    <P Name="Position">[360, 223, 435, 257]</P>
+    <P Name="ZOrder">190</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">apps1_raw</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion12" SID="227">
+    <P Name="Position">[360, 748, 435, 782]</P>
+    <P Name="ZOrder">246</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">airprs_sensor1</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion15" SID="228">
+    <P Name="Position">[360, 823, 435, 857]</P>
+    <P Name="ZOrder">248</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">airprs_sensor2</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion2" SID="229">
+    <P Name="Position">[360, 298, 435, 332]</P>
+    <P Name="ZOrder">192</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion3" SID="230">
+    <P Name="Position">[360, 373, 435, 407]</P>
+    <P Name="ZOrder">198</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">apps2_raw</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion4" SID="231">
+    <P Name="Position">[360, 448, 435, 482]</P>
+    <P Name="ZOrder">200</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion5" SID="232">
+    <P Name="Position">[360, 523, 435, 557]</P>
+    <P Name="ZOrder">202</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">brkps_raw</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion6" SID="233">
+    <P Name="Position">[190, 603, 250, 627]</P>
+    <P Name="ZOrder">203</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion7" SID="234">
+    <P Name="Position">[190, 678, 250, 702]</P>
+    <P Name="ZOrder">205</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion8" SID="235">
+    <P Name="Position">[565, 603, 625, 627]</P>
+    <P Name="ZOrder">206</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">wlspd_fsensor</P>
+    </Port>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion9" SID="236">
+    <P Name="Position">[565, 678, 625, 702]</P>
+    <P Name="ZOrder">207</P>
+    <P Name="OutDataTypeStr">double</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">wlspd_hsensor</P>
+    </Port>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="1528">
+    <P Name="Position">[205, 750, 235, 780]</P>
+    <P Name="ZOrder">251</P>
+    <P Name="Gain">single(0.001)</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="1529">
+    <P Name="Position">[205, 825, 235, 855]</P>
+    <P Name="ZOrder">252</P>
+    <P Name="Gain">single(0.001)</P>
+  </Block>
+  <Block BlockType="Saturate" Name="Saturation" SID="237">
+    <P Name="Position">[580, 150, 610, 180]</P>
+    <P Name="ZOrder">187</P>
+    <P Name="UpperLimit">1</P>
+    <P Name="LowerLimit">0</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">apps1_01</P>
+    </Port>
+  </Block>
+  <Block BlockType="Saturate" Name="Saturation1" SID="238">
+    <P Name="Position">[580, 300, 610, 330]</P>
+    <P Name="ZOrder">194</P>
+    <P Name="UpperLimit">1</P>
+    <P Name="LowerLimit">0</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">apps2_01</P>
+    </Port>
+  </Block>
+  <Block BlockType="Saturate" Name="Saturation2" SID="239">
+    <P Name="Position">[580, 450, 610, 480]</P>
+    <P Name="ZOrder">201</P>
+    <P Name="UpperLimit">1</P>
+    <P Name="LowerLimit">0</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">brkps</P>
+    </Port>
+  </Block>
+  <Block BlockType="SubSystem" Name="Subsystem" SID="240">
+    <P Name="Ports">[2, 2]</P>
+    <P Name="Position">[330, 578, 465, 727]</P>
+    <P Name="ZOrder">204</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_240"/>
+  </Block>
+  <Block BlockType="Outport" Name="sensor_signal" SID="259">
+    <P Name="Position">[910, 498, 940, 512]</P>
+    <P Name="ZOrder">215</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">211#out:1</P>
+    <P Name="Points">[143, 0]</P>
+    <Branch>
+      <P Name="ZOrder">2</P>
+      <P Name="Points">[0, 75]</P>
+      <P Name="Dst">226#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">3</P>
+      <P Name="Dst">219#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">219#out:1</P>
+    <P Name="Dst">225#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">225#out:1</P>
+    <P Name="Dst">237#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">apps1_01</P>
+    <P Name="ZOrder">6</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">237#out:1</P>
+    <P Name="Points">[140, 0]</P>
+    <P Name="Dst">224#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">apps1_raw</P>
+    <P Name="ZOrder">7</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">226#out:1</P>
+    <P Name="Points">[315, 0]</P>
+    <P Name="Dst">224#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">229#out:1</P>
+    <P Name="Dst">238#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">212#out:1</P>
+    <P Name="Points">[144, 0]</P>
+    <Branch>
+      <P Name="ZOrder">10</P>
+      <P Name="Dst">223#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">11</P>
+      <P Name="Points">[0, 75]</P>
+      <P Name="Dst">230#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">223#out:1</P>
+    <P Name="Dst">229#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">apps2_01</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">238#out:1</P>
+    <P Name="Points">[140, 0]</P>
+    <P Name="Dst">224#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">apps2_raw</P>
+    <P Name="ZOrder">14</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">230#out:1</P>
+    <P Name="Points">[315, 0]</P>
+    <P Name="Dst">224#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">213#out:1</P>
+    <P Name="Points">[145, 0]</P>
+    <Branch>
+      <P Name="ZOrder">16</P>
+      <P Name="Dst">220#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">17</P>
+      <P Name="Points">[0, 75]</P>
+      <P Name="Dst">232#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">220#out:1</P>
+    <P Name="Dst">231#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">19</P>
+    <P Name="Src">231#out:1</P>
+    <P Name="Dst">239#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">brkps</P>
+    <P Name="ZOrder">20</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">239#out:1</P>
+    <P Name="Points">[140, 0]</P>
+    <P Name="Dst">224#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">brkps_raw</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">232#out:1</P>
+    <P Name="Points">[315, 0]</P>
+    <P Name="Dst">224#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">22</P>
+    <P Name="Src">214#out:1</P>
+    <P Name="Dst">233#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">23</P>
+    <P Name="Src">233#out:1</P>
+    <P Name="Dst">240#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">24</P>
+    <P Name="Src">215#out:1</P>
+    <P Name="Dst">234#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">25</P>
+    <P Name="Src">234#out:1</P>
+    <P Name="Dst">240#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">26</P>
+    <P Name="Src">240#out:1</P>
+    <P Name="Dst">235#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">27</P>
+    <P Name="Src">240#out:2</P>
+    <P Name="Dst">236#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">wlspd_fsensor</P>
+    <P Name="ZOrder">28</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">235#out:1</P>
+    <P Name="Points">[125, 0]</P>
+    <P Name="Dst">224#in:7</P>
+  </Line>
+  <Line>
+    <P Name="Name">wlspd_hsensor</P>
+    <P Name="ZOrder">29</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">236#out:1</P>
+    <P Name="Points">[125, 0]</P>
+    <P Name="Dst">224#in:8</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">30</P>
+    <P Name="Src">224#out:1</P>
+    <P Name="Dst">259#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">airprs_sensor1</P>
+    <P Name="ZOrder">31</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">227#out:1</P>
+    <P Name="Points">[315, 0]</P>
+    <P Name="Dst">224#in:9</P>
+  </Line>
+  <Line>
+    <P Name="Name">airprs2_raw</P>
+    <P Name="ZOrder">71</P>
+    <P Name="Src">217#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">70</P>
+      <P Name="Labels">[1, 0]</P>
+      <P Name="Dst">1529#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">72</P>
+      <P Name="Labels">[0, 0]</P>
+      <P Name="Points">[165, 0; 0, 25; 570, 0]</P>
+      <P Name="Dst">224#in:12</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">airprs_sensor2</P>
+    <P Name="ZOrder">33</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">228#out:1</P>
+    <P Name="Points">[315, 0]</P>
+    <P Name="Dst">224#in:10</P>
+  </Line>
+  <Line>
+    <P Name="Name">airprs1_raw</P>
+    <P Name="ZOrder">68</P>
+    <P Name="Src">216#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">67</P>
+      <P Name="Labels">[1, 0]</P>
+      <P Name="Dst">1528#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">69</P>
+      <P Name="Labels">[0, 0]</P>
+      <P Name="Points">[165, 0; 0, 30]</P>
+      <P Name="Dst">224#in:11</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">39</P>
+    <P Name="Src">1528#out:1</P>
+    <P Name="Dst">227#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">40</P>
+    <P Name="Src">1529#out:1</P>
+    <P Name="Dst">228#in:1</P>
+  </Line>
+  <Annotation SID="261">
+    <P Name="Name">EBS气缸侧气压</P>
+    <P Name="Position">[-112, 817, -41, 831]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="260">
+    <P Name="Name">EBS气瓶侧气压</P>
+    <P Name="Position">[-112, 742, -41, 756]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-2</P>
+  </Annotation>
+  <Annotation SID="1549">
+    <P Name="Name">FSEC diagnostics: brkps_raw is checked against 0.10-4.90 V. Air pressure sensor 1 is the reservoir/ready side; sensor 2 is the solenoid downstream/cylinder side.</P>
+    <P Name="Position">[170, 55, 886, 69]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-3</P>
+  </Annotation>
+</System>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="331">
+  <P Name="name">DBC_Debug_Select</P>
+  <P Name="windowPosition">[422 539.941 189 413]</P>
+  <P Name="viewLimits">[0 156.75 0 153.75]</P>
+  <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
+  <P Name="viewObj">331</P>
+  <P Name="toolbarMode">LIBRARY_TOOLBAR</P>
+  <P Name="ssIdHighWaterMark">19</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="type">EML_CHART</P>
+  <P Name="chartFileNumber">5</P>
+  <P Name="disableImplicitCasting">1</P>
+  <eml>
+    <P Name="name">dbg_select</P>
+  </eml>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">eML_blk_kernel()</P>
+      <P Name="position">[18 64.5 118 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="superState">SUBCHART</P>
+      <P Name="subviewer">331</P>
+      <P Name="type">FUNC_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+      <eml>
+        <P Name="isEML">1</P>
+        <P Name="script">function [hin_sel, ain_sel, wheel_f_sel, wheel_h_sel, status_base, pedal_echo, air_wheel_echo] = dbg_select(hin_hw, ain_hw, wheel_f_hw, wheel_h_hw, control, pedal_adc, air_wheel, digital, rx_count)
+%#codegen
+% Bench-only CAN override. Any stale control/data frame restores hardware input.
+persistent last_count ages initialized
+if isempty(initialized)
+    last_count = uint8(zeros(4,1));
+    ages = repmat(uint8(50),4,1);
+    initialized = true;
+end
+for i = 1:4
+    if rx_count(i) ~= last_count(i)
+        last_count(i) = rx_count(i);
+        ages(i) = uint8(0);
+    elseif ages(i) &lt; uint8(50)
+        ages(i) = ages(i) + uint8(1);
+    end
+end
+requested = uint8(0);
+if control(1) == uint8(165) &amp;&amp; control(2) == uint8(90) &amp;&amp; ages(1) &lt; uint8(50)
+    requested = bitand(control(3), uint8(15));
+end
+active = uint8(0);
+if bitand(requested,uint8(1)) ~= uint8(0)
+    active = bitor(active,uint8(1));
+    if bitand(requested,uint8(2)) ~= uint8(0) &amp;&amp; ages(2) &lt; uint8(50)
+        active = bitor(active,uint8(2));
+    end
+    if bitand(requested,uint8(4)) ~= uint8(0) &amp;&amp; ages(3) &lt; uint8(50)
+        active = bitor(active,uint8(4));
+    end
+    if bitand(requested,uint8(8)) ~= uint8(0) &amp;&amp; ages(4) &lt; uint8(50)
+        active = bitor(active,uint8(8));
+    end
+end
+hin_sel = uint16(hin_hw);
+ain_sel = uint16(ain_hw);
+wheel_f_sel = single(wheel_f_hw);
+wheel_h_sel = single(wheel_h_hw);
+if bitand(active,uint8(8)) ~= uint8(0)
+    hin_sel = uint16(digital(1)) + bitshift(uint16(digital(2)),8);
+end
+if bitand(active,uint8(2)) ~= uint8(0)
+    ain_sel(1) = uint16(pedal_adc(1)) + bitshift(uint16(pedal_adc(2)),8);
+    ain_sel(2) = uint16(pedal_adc(3)) + bitshift(uint16(pedal_adc(4)),8);
+    ain_sel(3) = uint16(pedal_adc(5)) + bitshift(uint16(pedal_adc(6)),8);
+end
+if bitand(active,uint8(4)) ~= uint8(0)
+    ain_sel(4) = uint16(air_wheel(1)) + bitshift(uint16(air_wheel(2)),8);
+    ain_sel(5) = uint16(air_wheel(3)) + bitshift(uint16(air_wheel(4)),8);
+    wheel_f_sel = single(uint16(air_wheel(5)) + bitshift(uint16(air_wheel(6)),8)) * single(0.1);
+    wheel_h_sel = single(uint16(air_wheel(7)) + bitshift(uint16(air_wheel(8)),8)) * single(0.1);
+end
+status_base = uint8(zeros(8,1));
+status_base(1) = active;
+status_base(2) = requested;
+status_base(3) = uint8(bitand(hin_sel,uint16(255)));
+status_base(4) = uint8(bitshift(hin_sel,-8));
+status_base(7) = ages(1);
+status_base(8) = rx_count(1);
+pedal_echo = uint8(zeros(8,1));
+pedal_echo(1) = uint8(bitand(ain_sel(1),uint16(255)));
+pedal_echo(2) = uint8(bitshift(ain_sel(1),-8));
+pedal_echo(3) = uint8(bitand(ain_sel(2),uint16(255)));
+pedal_echo(4) = uint8(bitshift(ain_sel(2),-8));
+pedal_echo(5) = uint8(bitand(ain_sel(3),uint16(255)));
+pedal_echo(6) = uint8(bitshift(ain_sel(3),-8));
+if bitand(active,uint8(2)) ~= uint8(0)
+    pedal_echo(7) = uint8(1);
+end
+pedal_echo(8) = rx_count(2);
+air_wheel_echo = uint8(zeros(8,1));
+air_wheel_echo(1) = uint8(bitand(ain_sel(4),uint16(255)));
+air_wheel_echo(2) = uint8(bitshift(ain_sel(4),-8));
+air_wheel_echo(3) = uint8(bitand(ain_sel(5),uint16(255)));
+air_wheel_echo(4) = uint8(bitshift(ain_sel(5),-8));
+wheel_raw = wheel_f_sel * single(10.0);
+if wheel_raw &lt;= single(0.0)
+    wheel_u16 = uint16(0);
+elseif wheel_raw &gt;= single(65535.0)
+    wheel_u16 = uint16(65535);
+else
+    wheel_u16 = uint16(floor(wheel_raw + single(0.5)));
+end
+air_wheel_echo(5) = uint8(bitand(wheel_u16,uint16(255)));
+air_wheel_echo(6) = uint8(bitshift(wheel_u16,-8));
+wheel_raw = wheel_h_sel * single(10.0);
+if wheel_raw &lt;= single(0.0)
+    wheel_u16 = uint16(0);
+elseif wheel_raw &gt;= single(65535.0)
+    wheel_u16 = uint16(65535);
+else
+    wheel_u16 = uint16(floor(wheel_raw + single(0.5)));
+end
+air_wheel_echo(7) = uint8(bitand(wheel_u16,uint16(255)));
+air_wheel_echo(8) = uint8(bitshift(wheel_u16,-8));
+end</P>
+        <P Name="editorLayout" Class="double">Matrix(4,1)
+[10.0, 5.0, 700.0, 500.0]</P>
+      </eml>
+    </state>
+    <data SSID="4" name="hin_hw">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="5" name="hin_sel">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="6" name="ain_hw">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="7" name="wheel_f_hw">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="8" name="wheel_h_hw">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="9" name="control">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="10" name="pedal_adc">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="11" name="air_wheel">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="12" name="digital">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="13" name="rx_count">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="14" name="ain_sel">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="15" name="wheel_f_sel">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="16" name="wheel_h_sel">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="17" name="status_base">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="18" name="pedal_echo">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="19" name="air_wheel_echo">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString">{eML_blk_kernel();}</P>
+      <P Name="labelPosition">[28.125 13.875 102.544 14.964]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 23.5747 14.625 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0 23.5747 42.5747 0 0]</P>
+      </dst>
+      <P Name="midPoint">[23.5747 24.9468]</P>
+      <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
+      <P Name="subviewer">331</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <junction SSID="3">
+      <P Name="position">[23.5747 49.5747 7]</P>
+      <P Name="subviewer">331</P>
+      <P Name="type">CONNECTIVE_JUNCTION</P>
+    </junction>
+  </Children>
+</chart>

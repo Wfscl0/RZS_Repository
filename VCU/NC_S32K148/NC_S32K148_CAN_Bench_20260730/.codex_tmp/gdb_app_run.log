@@ -1,0 +1,13 @@
+0x00004e94 in ?? ()
+Expected an decimal digit (0-9)
+Hardware assisted breakpoint 1 at 0x2dbb2: file ../Sources/main.c, line 46.
+
+Breakpoint 1, main () at ../Sources/main.c:46
+46	    PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
+APP_MAIN_REACHED pc=0x2dbb2 sp=0x2001efe8
+python "C:/Users/icemi/Desktop/RZS_Repository/VCU/NC_S32K148/NC_S32K148_CAN_Bench_20260730/Bench_Test/pcan_raw_can0_smoke.py" > "C:/Users/icemi/Desktop/RZS_Repository/VCU/NC_S32K148/NC_S32K148_CAN_Bench_20260730/.codex_tmp/pcan_during_gdb.log" 2>&1 exited with status 2
+.codex_tmp\app_run_pcan.gdb:20: Error in sourced command file:
+Selected thread is running.
+Cannot execute this command while the target is running.
+Use the "interrupt" command to stop the target
+and then try again.

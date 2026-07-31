@@ -1,0 +1,94 @@
+{
+  "assumed_resin_density_g_cm3": 1.1,
+  "quoted_unit_cost_cny_g": 0.45,
+  "parts": [
+    {
+      "file": "RES_MainHousing.stl",
+      "triangles": 30284,
+      "bbox_min_mm": [
+        -100.0,
+        -75.0,
+        -0.0
+      ],
+      "bbox_max_mm": [
+        100.0,
+        75.0,
+        68.0
+      ],
+      "size_mm": [
+        200.0,
+        150.0,
+        68.0
+      ],
+      "surface_area_mm2": 186342.99,
+      "volume_mm3": 327510.27,
+      "volume_cm3": 327.51,
+      "degenerate_triangles": 0,
+      "nonmanifold_or_boundary_edges": 0,
+      "bad_edge_samples": [],
+      "watertight": true,
+      "estimated_mass_g": 360.3,
+      "estimated_part_cost_cny": 162.14
+    },
+    {
+      "file": "RES_TopCover.stl",
+      "triangles": 6164,
+      "bbox_min_mm": [
+        -94.0,
+        -75.0,
+        -15.3
+      ],
+      "bbox_max_mm": [
+        94.0,
+        75.0,
+        4.0
+      ],
+      "size_mm": [
+        188.0,
+        150.0,
+        19.3
+      ],
+      "surface_area_mm2": 79540.91,
+      "volume_mm3": 118663.82,
+      "volume_cm3": 118.664,
+      "degenerate_triangles": 0,
+      "nonmanifold_or_boundary_edges": 0,
+      "bad_edge_samples": [],
+      "watertight": true,
+      "estimated_mass_g": 130.5,
+      "estimated_part_cost_cny": 58.73
+    },
+    {
+      "file": "RES_BatteryCover.stl",
+      "triangles": 5340,
+      "bbox_min_mm": [
+        -69.0,
+        -59.0,
+        -5.0
+      ],
+      "bbox_max_mm": [
+        69.0,
+        59.0,
+        2.5
+      ],
+      "size_mm": [
+        138.0,
+        118.0,
+        7.5
+      ],
+      "surface_area_mm2": 39160.83,
+      "volume_mm3": 53919.28,
+      "volume_cm3": 53.919,
+      "degenerate_triangles": 0,
+      "nonmanifold_or_boundary_edges": 0,
+      "bad_edge_samples": [],
+      "watertight": true,
+      "estimated_mass_g": 59.3,
+      "estimated_part_cost_cny": 26.68
+    }
+  ],
+  "total_volume_cm3": 500.093,
+  "total_estimated_mass_g": 550.1,
+  "total_estimated_part_cost_cny": 247.55,
+  "all_watertight": true
+}

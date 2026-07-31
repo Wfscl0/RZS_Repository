@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="352">
+  <P Name="name">LED_Control/EBS_LED/display</P>
+  <P Name="windowPosition">[-1 -7 1708 920]</P>
+  <P Name="viewLimits">[148.528 774.577 147.298 411.833]</P>
+  <P Name="zoomFactor">0.508</P>
+  <P Name="screen">[1 1 3200 1200 1.25]</P>
+  <P Name="viewObj">352</P>
+  <P Name="ssIdHighWaterMark">8</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="chartFileNumber">6</P>
+  <P Name="allowGlobalAccessToExportedFunctions">0</P>
+  <P Name="saturateOnIntegerOverflow">1</P>
+  <P Name="userSpecifiedStateTransitionExecutionOrder">1</P>
+  <P Name="disableImplicitCasting">1</P>
+  <P Name="actionLanguage">2</P>
+  <Children>
+    <state SSID="2">
+      <P Name="labelString">begin
+spark=T;</P>
+      <P Name="position">[546.3333 235.3333 90 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">352</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <state SSID="4">
+      <P Name="labelString">end
+spark=F;</P>
+      <P Name="position">[722.3333 235.3333 90 60]</P>
+      <P Name="fontSize">12</P>
+      <P Name="subviewer">352</P>
+      <P Name="type">OR_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+    </state>
+    <data SSID="6" name="spark">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="7" name="T">
+      <P Name="scope">PARAMETER_DATA</P>
+      <P Name="paramIndexForInitFromWorkspace">1</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="8" name="F">
+      <P Name="scope">PARAMETER_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="3">
+      <P Name="labelString"/>
+      <P Name="labelPosition">[566.883 220.333 0 0]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 566.8833 205.3333 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">2</P>
+        <P Name="intersection">[1 0 -1 0.2283 566.8833 235.3333 0 0]</P>
+      </dst>
+      <P Name="midPoint">[566.8833 220.3333]</P>
+      <P Name="dataLimits">[564.483 569.283 205.333 235.333]</P>
+      <P Name="subviewer">352</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <transition SSID="5">
+      <P Name="labelString">after(2,sec)</P>
+      <P Name="labelPosition">[644.957 233.794 62.625 16]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="SSID">2</P>
+        <P Name="intersection">[2 1 0 0.3317 636.3333 255.2381 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">4</P>
+        <P Name="intersection">[4 -1 -0 0.6683 722.3333 255.2381 0 0]</P>
+      </dst>
+      <P Name="midPoint">[675.3333 255.2381]</P>
+      <P Name="dataLimits">[636.333 722.333 252.838 257.638]</P>
+      <P Name="subviewer">352</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+  </Children>
+</chart>

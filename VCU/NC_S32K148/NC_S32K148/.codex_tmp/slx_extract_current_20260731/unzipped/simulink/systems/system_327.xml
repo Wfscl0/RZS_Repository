@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">150</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="ebs_drivercheck" SID="328">
+    <P Name="Position">[710, 123, 740, 137]</P>
+    <P Name="ZOrder">185</P>
+  </Block>
+  <Block BlockType="Inport" Name="sensor_signal" SID="329">
+    <P Name="Position">[285, 213, 315, 227]</P>
+    <P Name="ZOrder">186</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="ESP_T_03signal" SID="332">
+    <P Name="Position">[285, 288, 315, 302]</P>
+    <P Name="ZOrder">215</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_signal" SID="330">
+    <P Name="Position">[710, 178, 740, 192]</P>
+    <P Name="ZOrder">208</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="brkmotor_check" SID="331">
+    <P Name="Position">[710, 288, 740, 302]</P>
+    <P Name="ZOrder">188</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="function" SID="333">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[590, 95, 610, 115]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">(inherit)</P>
+    <P Name="StatesWhenEnabling">held</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Air_Fault_Class_Terminator" SID="1579">
+    <P Name="Position">[805, 535, 825, 555]</P>
+    <P Name="ZOrder">222</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Brake_Fault_Class_Terminator" SID="1578">
+    <P Name="Position">[805, 500, 825, 520]</P>
+    <P Name="ZOrder">221</P>
+  </Block>
+  <Block BlockType="Logic" Name="Brake_On_Valid_Gate" SID="1551">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[835, 279, 885, 326]</P>
+    <P Name="ZOrder">218</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Brake_Sensor_Check" SID="334">
+    <P Name="Ports">[5, 2]</P>
+    <P Name="Position">[460, 202, 615, 358]</P>
+    <P Name="ZOrder">190</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_334"/>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="356">
+    <P Name="Ports">[1, 5]</P>
+    <P Name="Position">[360, 204, 365, 236]</P>
+    <P Name="ZOrder">189</P>
+    <P Name="OutputSignals">airprs_sensor1,brkps_raw,airprs1_raw,airprs2_raw,airprs_sensor2</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;airprs_sensor1&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;brkps_raw&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">&lt;airprs1_raw&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">&lt;airprs2_raw&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">5</P>
+      <P Name="Name">&lt;airprs_sensor2&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector1" SID="357">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[790, 166, 795, 204]</P>
+    <P Name="ZOrder">210</P>
+    <P Name="OutputSignals">res_check</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;res_check&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector2" SID="358">
+    <P Name="Ports">[1, 4]</P>
+    <P Name="Position">[360, 238, 365, 352]</P>
+    <P Name="ZOrder">216</P>
+    <P Name="OutputSignals">oilprs_flsensor,oilprs_frsensor,oilprs_rlsensor,oilprs_rrsensor</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;oilprs_flsensor&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;oilprs_frsensor&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">&lt;oilprs_rlsensor&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">&lt;oilprs_rrsensor&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="SubSystem" Name="FSEC_Sensor_Monitor" SID="1550">
+    <P Name="Ports">[8, 4]</P>
+    <P Name="Position">[560, 404, 760, 556]</P>
+    <P Name="ZOrder">217</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1550"/>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="367">
+    <P Name="Ports">[5, 1]</P>
+    <P Name="Position">[860, 106, 875, 324]</P>
+    <P Name="ZOrder">191</P>
+    <P Name="Inputs">5</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="No_FSEC_Safety_Fault" SID="1552">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[795, 430, 840, 460]</P>
+    <P Name="ZOrder">219</P>
+    <P Name="Operator">NOT</P>
+    <P Name="Inputs">1</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Outport" Name="asb_check" SID="369">
+    <P Name="Position">[925, 208, 955, 222]</P>
+    <P Name="ZOrder">192</P>
+  </Block>
+  <Block BlockType="Outport" Name="brake_on" SID="371">
+    <P Name="Position">[640, 313, 670, 327]</P>
+    <P Name="ZOrder">196</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="safety_fault" SID="1553">
+    <P Name="Position">[915, 440, 945, 460]</P>
+    <P Name="ZOrder">220</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">329#out:1</P>
+    <P Name="Dst">356#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs_sensor1&gt;</P>
+    <P Name="ZOrder">128</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">356#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">121</P>
+      <P Name="Labels">[1, 0]</P>
+      <P Name="Points">[0, 10]</P>
+      <P Name="Dst">334#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">129</P>
+      <P Name="Points">[70, 0; 0, 260]</P>
+      <P Name="Dst">1550#in:4</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">135</P>
+    <P Name="Src">328#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">124</P>
+      <P Name="Points">[100, 0]</P>
+      <P Name="Dst">367#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">136</P>
+      <P Name="Points">[0, 45; -70, 0; 0, 225; -135, 0; 0, 150]</P>
+      <P Name="Dst">1550#in:8</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">131</P>
+    <P Name="Src">331#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">122</P>
+      <P Name="Points">[100, 0]</P>
+      <P Name="Dst">367#in:4</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">132</P>
+      <P Name="Points">[0, 105; -205, 0; 0, 110]</P>
+      <P Name="Dst">1550#in:6</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">367#out:1</P>
+    <P Name="Dst">369#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">330#out:1</P>
+    <P Name="Dst">357#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">22</P>
+    <P Name="Src">332#out:1</P>
+    <P Name="Dst">358#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;oilprs_flsensor&gt;</P>
+    <P Name="ZOrder">23</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">358#out:1</P>
+    <P Name="Dst">334#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;oilprs_frsensor&gt;</P>
+    <P Name="ZOrder">24</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">358#out:2</P>
+    <P Name="Dst">334#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;oilprs_rlsensor&gt;</P>
+    <P Name="ZOrder">25</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">358#out:3</P>
+    <P Name="Dst">334#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;oilprs_rrsensor&gt;</P>
+    <P Name="ZOrder">26</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">358#out:4</P>
+    <P Name="Dst">334#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;res_check&gt;</P>
+    <P Name="ZOrder">133</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">357#out:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">123</P>
+      <P Name="Labels">[1, 0]</P>
+      <P Name="Points">[45, 0]</P>
+      <P Name="Dst">367#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">134</P>
+      <P Name="Points">[0, 215; -260, 0; 0, 130]</P>
+      <P Name="Dst">1550#in:7</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">36</P>
+    <P Name="Src">334#out:1</P>
+    <P Name="Points">[-5, 0]</P>
+    <P Name="Dst">367#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">145</P>
+    <P Name="Src">1550#out:2</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch>
+      <P Name="ZOrder">144</P>
+      <P Name="Points">[5, 0; 0, -15]</P>
+      <P Name="Dst">1552#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">146</P>
+      <P Name="Points">[25, 0; 0, 5; 110, 0]</P>
+      <P Name="Dst">1553#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;brkps_raw&gt;</P>
+    <P Name="ZOrder">125</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">356#out:2</P>
+    <P Name="Points">[70, 0; 0, 195]</P>
+    <P Name="Dst">1550#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs1_raw&gt;</P>
+    <P Name="ZOrder">126</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">356#out:3</P>
+    <P Name="Points">[70, 0; 0, 210]</P>
+    <P Name="Dst">1550#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs2_raw&gt;</P>
+    <P Name="ZOrder">127</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">356#out:4</P>
+    <P Name="Points">[70, 0; 0, 225]</P>
+    <P Name="Dst">1550#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs_sensor2&gt;</P>
+    <P Name="ZOrder">130</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">356#out:5</P>
+    <P Name="Points">[70, 0; 0, 260]</P>
+    <P Name="Dst">1550#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">137</P>
+    <P Name="Src">334#out:2</P>
+    <P Name="Points">[10, 0; 0, -10; 190, 0]</P>
+    <P Name="Dst">1551#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">138</P>
+    <P Name="Src">1550#out:1</P>
+    <P Name="Points">[55, 0]</P>
+    <P Name="Dst">1551#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">139</P>
+    <P Name="Src">1551#out:1</P>
+    <P Name="Points">[0, 30; -265, 0]</P>
+    <P Name="Dst">371#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">143</P>
+    <P Name="Src">1552#out:1</P>
+    <P Name="Dst">367#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">147</P>
+    <P Name="Src">1550#out:3</P>
+    <P Name="Points">[10, 0; 0, 10]</P>
+    <P Name="Dst">1578#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">148</P>
+    <P Name="Src">1550#out:4</P>
+    <P Name="Points">[10, 0; 0, 5]</P>
+    <P Name="Dst">1579#in:1</P>
+  </Line>
+  <Annotation SID="377">
+    <P Name="Name">制动相关压力是否支持正常工作</P>
+    <P Name="Position">[467, 183, 609, 197]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="374">
+    <P Name="Name">EBS驱动板上电检查</P>
+    <P Name="Position">[747, 99, 838, 113]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-4</P>
+  </Annotation>
+  <Annotation SID="1554">
+    <P Name="Name">Brake sensor open/short confirmation = 100 ms; recovery = 500 ms. ESP/RES/EBS_Driver fault confirmation = 300 ms. Hydraulic brake pressure still comes from ESP_T_03.</P>
+    <P Name="Position">[460, 15, 1228, 29]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-5</P>
+  </Annotation>
+</System>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 1707, 913]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">200</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="wlspd_fsensor" SID="1231">
+    <P Name="Position">[110, 103, 140, 117]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="wlspd_hsensor" SID="1232">
+    <P Name="Position">[110, 198, 140, 212]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant" SID="1233">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[340, 95, 370, 125]</P>
+    <P Name="ZOrder">4</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">==</P>
+      <P Name="const">0</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant1" SID="1234">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[340, 190, 370, 220]</P>
+    <P Name="ZOrder">5</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">==</P>
+      <P Name="const">0</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="DeadZone" Name="Dead Zone" SID="1235">
+    <P Name="Position">[225, 95, 255, 125]</P>
+    <P Name="ZOrder">2</P>
+  </Block>
+  <Block BlockType="DeadZone" Name="Dead Zone1" SID="1236">
+    <P Name="Position">[225, 190, 255, 220]</P>
+    <P Name="ZOrder">3</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="1237">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[445, 147, 475, 178]</P>
+    <P Name="ZOrder">6</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Outport" Name="car_spdzero" SID="1238">
+    <P Name="Position">[545, 158, 575, 172]</P>
+    <P Name="ZOrder">-2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1231#out:1</P>
+    <P Name="Dst">1235#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1232#out:1</P>
+    <P Name="Dst">1236#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">1235#out:1</P>
+    <P Name="Dst">1233#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">1236#out:1</P>
+    <P Name="Dst">1234#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1233#out:1</P>
+    <P Name="Points">[28, 0; 0, 45]</P>
+    <P Name="Dst">1237#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1234#out:1</P>
+    <P Name="Points">[28, 0; 0, -35]</P>
+    <P Name="Dst">1237#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">1237#out:1</P>
+    <P Name="Dst">1238#in:1</P>
+  </Line>
+</System>

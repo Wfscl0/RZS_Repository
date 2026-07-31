@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[29, 0, 1010, 751]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="steer_return" SID="954">
+    <P Name="Position">[435, 298, 465, 312]</P>
+    <P Name="ZOrder">860</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_resgo" SID="955">
+    <P Name="Position">[435, 378, 465, 392]</P>
+    <P Name="ZOrder">855</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_resstop" SID="956">
+    <P Name="Position">[435, 458, 465, 472]</P>
+    <P Name="ZOrder">856</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="ipc_astask" SID="957">
+    <P Name="Position">[435, 538, 465, 552]</P>
+    <P Name="ZOrder">857</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="IPC_Rx_Msg" SID="958">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[575, 266, 1175, 584]</P>
+    <P Name="ZOrder">854</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_958"/>
+  </Block>
+  <Block BlockType="Outport" Name="canb_ipcrxmsg" SID="976">
+    <P Name="Position">[1320, 418, 1350, 432]</P>
+    <P Name="ZOrder">858</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">955#out:1</P>
+    <P Name="Dst">958#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">956#out:1</P>
+    <P Name="Dst">958#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">957#out:1</P>
+    <P Name="Dst">958#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">958#out:1</P>
+    <P Name="Dst">976#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">954#out:1</P>
+    <P Name="Dst">958#in:1</P>
+  </Line>
+</System>

@@ -1,0 +1,8 @@
+config load C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\RES_Remote_G0B1.ioc
+config saveext C:\Users\icemi\Desktop\RZS_Repository\RES\tmp\RES_Remote_G0B1_validated.ioc
+csv pinout C:\Users\icemi\Desktop\RZS_Repository\RES\tmp\RES_Remote_G0B1_pinout.csv
+project name RES_Remote_G0B1
+project path C:\Users\icemi\Desktop\RZS_Repository\RES\tmp\cubemx_generated
+project toolchain STM32CubeIDE
+project generate
+exit

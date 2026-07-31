@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 1707, 913]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">127</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="res_stop" SID="1331">
+    <P Name="Position">[95, 53, 125, 67]</P>
+    <P Name="ZOrder">4587</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_communication" SID="1332">
+    <P Name="Position">[95, 98, 125, 112]</P>
+    <P Name="ZOrder">4588</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="Shutdown_Start" SID="1333">
+    <P Name="Position">[95, 123, 125, 137]</P>
+    <P Name="ZOrder">4589</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="Shutdown_End" SID="1334">
+    <P Name="Position">[95, 158, 125, 172]</P>
+    <P Name="ZOrder">4590</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="sensor_signal" SID="1335">
+    <P Name="Position">[65, 258, 95, 272]</P>
+    <P Name="ZOrder">4591</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="ESP_T_03signal" SID="1336">
+    <P Name="Position">[65, 378, 95, 392]</P>
+    <P Name="ZOrder">4592</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="asms_button" SID="1337">
+    <P Name="Position">[425, 188, 455, 202]</P>
+    <P Name="ZOrder">4594</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="1338">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[130, 214, 135, 316]</P>
+    <P Name="ZOrder">4570</P>
+    <P Name="OutputSignals">airprs_sensor1,airprs_sensor2</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;airprs_sensor1&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;airprs_sensor2&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector1" SID="1339">
+    <P Name="Ports">[1, 4]</P>
+    <P Name="Position">[130, 323, 135, 447]</P>
+    <P Name="ZOrder">4586</P>
+    <P Name="OutputSignals">oilprs_flsensor,oilprs_frsensor,oilprs_rlsensor,oilprs_rrsensor</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">&lt;oilprs_flsensor&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">&lt;oilprs_frsensor&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">&lt;oilprs_rlsensor&gt;</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">&lt;oilprs_rrsensor&gt;</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant" SID="1340">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[360, 225, 425, 255]</P>
+    <P Name="ZOrder">301</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&lt;=</P>
+      <P Name="const">1</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant1" SID="1341">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[360, 265, 425, 295]</P>
+    <P Name="ZOrder">4549</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&lt;=</P>
+      <P Name="const">1</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant2" SID="1342">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[360, 305, 425, 335]</P>
+    <P Name="ZOrder">4550</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&gt;=</P>
+      <P Name="const">3.5</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant3" SID="1343">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[250, 325, 315, 355]</P>
+    <P Name="ZOrder">4571</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&lt;=</P>
+      <P Name="const">0.11</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant4" SID="1344">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[250, 355, 315, 385]</P>
+    <P Name="ZOrder">4572</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&lt;=</P>
+      <P Name="const">0.11</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant5" SID="1345">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[250, 385, 315, 415]</P>
+    <P Name="ZOrder">4573</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&lt;=</P>
+      <P Name="const">0.11</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant6" SID="1346">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[250, 415, 315, 445]</P>
+    <P Name="ZOrder">4574</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&lt;=</P>
+      <P Name="const">0.11</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="SubSystem" Name="Enabled&#xA;Subsystem" SID="1347">
+    <P Name="Ports">[1, 1, 1]</P>
+    <P Name="Position">[485, 292, 565, 348]</P>
+    <P Name="ZOrder">4567</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1347"/>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="1351">
+    <P Name="Ports">[5, 1]</P>
+    <P Name="Position">[730, 225, 760, 375]</P>
+    <P Name="ZOrder">4548</P>
+    <P Name="Operator">OR</P>
+    <P Name="Inputs">5</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator2" SID="1352">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[485, 41, 500, 214]</P>
+    <P Name="ZOrder">4554</P>
+    <P Name="Inputs">4</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator3" SID="1353">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[355, 358, 390, 427]</P>
+    <P Name="ZOrder">4575</P>
+    <P Name="Operator">OR</P>
+    <P Name="Inputs">4</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Shutdown_Button" SID="1354">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[185, 111, 325, 184]</P>
+    <P Name="ZOrder">4560</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1354"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="display" SID="1355">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[445, 404, 505, 456]</P>
+    <P Name="ZOrder">4580</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">Chart</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_1355"/>
+  </Block>
+  <Block BlockType="Outport" Name="led_ebs_error" SID="1356">
+    <P Name="Position">[815, 293, 845, 307]</P>
+    <P Name="ZOrder">4593</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1345#out:1</P>
+    <P Name="Dst">1353#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs_sensor2&gt;</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">1338#out:2</P>
+    <P Name="Points">[174, 0]</P>
+    <Branch>
+      <P Name="ZOrder">3</P>
+      <P Name="Points">[0, -10]</P>
+      <P Name="Dst">1341#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">4</P>
+      <P Name="Points">[0, 30]</P>
+      <P Name="Dst">1342#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1342#out:1</P>
+    <P Name="Dst">1347#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1341#out:1</P>
+    <P Name="Points">[193, 0; 0, -10]</P>
+    <P Name="Dst">1351#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">1351#out:1</P>
+    <P Name="Dst">1356#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;oilprs_rrsensor&gt;</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1339#out:4</P>
+    <P Name="Dst">1346#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">1344#out:1</P>
+    <P Name="Points">[14, 0; 0, 15]</P>
+    <P Name="Dst">1353#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;airprs_sensor1&gt;</P>
+    <P Name="ZOrder">10</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1338#out:1</P>
+    <P Name="Dst">1340#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">1346#out:1</P>
+    <P Name="Points">[15, 0; 0, -15]</P>
+    <P Name="Dst">1353#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;oilprs_flsensor&gt;</P>
+    <P Name="ZOrder">12</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1339#out:1</P>
+    <P Name="Dst">1343#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">1355#out:1</P>
+    <P Name="Points">[169, 0; 0, -70]</P>
+    <P Name="Dst">1351#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">1353#out:1</P>
+    <P Name="Points">[264, 0; 0, -65]</P>
+    <P Name="Dst">1351#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">1337#out:1</P>
+    <P Name="Dst">1352#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">1352#out:1</P>
+    <P Name="Points">[20, 0]</P>
+    <P Name="Dst">1347#enable</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">1340#out:1</P>
+    <P Name="Dst">1351#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">1347#out:1</P>
+    <P Name="Points">[83, 0; 0, -20]</P>
+    <P Name="Dst">1351#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">19</P>
+    <P Name="Src">1354#out:1</P>
+    <P Name="Dst">1352#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">1343#out:1</P>
+    <P Name="Points">[20, 0]</P>
+    <P Name="Dst">1353#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;oilprs_frsensor&gt;</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1339#out:2</P>
+    <P Name="Dst">1344#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;oilprs_rlsensor&gt;</P>
+    <P Name="ZOrder">22</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1339#out:3</P>
+    <P Name="Dst">1345#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">23</P>
+    <P Name="Src">1336#out:1</P>
+    <P Name="Dst">1339#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">24</P>
+    <P Name="Src">1331#out:1</P>
+    <P Name="Dst">1352#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">25</P>
+    <P Name="Src">1332#out:1</P>
+    <P Name="Dst">1352#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">26</P>
+    <P Name="Src">1334#out:1</P>
+    <P Name="Dst">1354#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">27</P>
+    <P Name="Src">1333#out:1</P>
+    <P Name="Dst">1354#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">28</P>
+    <P Name="Src">1335#out:1</P>
+    <P Name="Dst">1338#in:1</P>
+  </Line>
+  <Annotation SID="1362">
+    <P Name="Name">液压元件失效</P>
+    <P Name="Position">[433, 378, 495, 392]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="1361">
+    <P Name="Name">手动阀未关</P>
+    <P Name="Position">[287, 264, 339, 278]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-2</P>
+  </Annotation>
+  <Annotation SID="1360">
+    <P Name="Name">前气路故障</P>
+    <P Name="Position">[258, 223, 310, 237]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-3</P>
+  </Annotation>
+  <Annotation SID="1359">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#00b050;&quot;&gt;上电亮灯&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[504, 456, 546, 470]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-4</P>
+  </Annotation>
+  <Annotation SID="1358">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#00b050;&quot;&gt;气动元件检测与气压检测&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[2, 295, 114, 309]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-5</P>
+  </Annotation>
+  <Annotation SID="1357">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10px; color:#00b050;&quot;&gt;油压检测&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[161, 456, 203, 470]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-6</P>
+  </Annotation>
+</System>

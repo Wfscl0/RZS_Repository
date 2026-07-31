@@ -305,7 +305,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KALEKXRL
 
 [Document16]
-DocumentPath=电气拓扑.SchDoc
+DocumentPath=Copy of 电气拓扑(2).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -322,7 +322,7 @@ GenerateClassCluster=0
 DocumentUniqueId=QJZLNHTT
 
 [Document17]
-DocumentPath=电气拓扑.Harness
+DocumentPath=电气拓扑(2).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0

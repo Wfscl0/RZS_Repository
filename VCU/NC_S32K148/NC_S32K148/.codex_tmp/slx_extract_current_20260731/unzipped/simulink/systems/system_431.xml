@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">250</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="raw_data" SID="432">
+    <P Name="Position">[-80, 103, -50, 117]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion" SID="434">
+    <P Name="Position">[25, 93, 100, 127]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="OutDataTypeStr">single</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="435">
+    <P Name="Position">[175, 97, 305, 123]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Gain">single(0.0024169921875)</P>
+  </Block>
+  <Block BlockType="Saturate" Name="Saturation" SID="436">
+    <P Name="Position">[335, 95, 365, 125]</P>
+    <P Name="ZOrder">3</P>
+    <P Name="UpperLimit">10</P>
+    <P Name="LowerLimit">0</P>
+  </Block>
+  <Block BlockType="Outport" Name="real_vol" SID="433">
+    <P Name="Position">[440, 103, 470, 117]</P>
+    <P Name="ZOrder">-2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">432#out:1</P>
+    <P Name="Dst">434#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">434#out:1</P>
+    <P Name="Dst">435#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">435#out:1</P>
+    <P Name="Dst">436#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">436#out:1</P>
+    <P Name="Dst">433#in:1</P>
+  </Line>
+</System>

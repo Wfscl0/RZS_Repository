@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1714, 1018]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">179</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="asms_button" SID="1239::123">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">102</P>
+  </Block>
+  <Block BlockType="Inport" Name="ebs_check" SID="1239::124">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">103</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="ami_manualdriving" SID="1239::125">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">104</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="as_task" SID="1239::126">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">105</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="ts" SID="1239::127">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">106</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Inport" Name="ebs_warning" SID="1239::148">
+    <P Name="Position">[20, 281, 40, 299]</P>
+    <P Name="ZOrder">127</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Inport" Name="ebs_working" SID="1239::129">
+    <P Name="Position">[20, 316, 40, 334]</P>
+    <P Name="ZOrder">108</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Inport" Name="brake_on" SID="1239::130">
+    <P Name="Position">[20, 351, 40, 369]</P>
+    <P Name="ZOrder">109</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Inport" Name="asb_check" SID="1239::131">
+    <P Name="Position">[20, 386, 40, 404]</P>
+    <P Name="ZOrder">110</P>
+    <P Name="Port">9</P>
+  </Block>
+  <Block BlockType="Inport" Name="car_spdzero" SID="1239::132">
+    <P Name="Position">[20, 426, 40, 444]</P>
+    <P Name="ZOrder">111</P>
+    <P Name="Port">10</P>
+  </Block>
+  <Block BlockType="Inport" Name="task_finish" SID="1239::133">
+    <P Name="Position">[20, 461, 40, 479]</P>
+    <P Name="ZOrder">112</P>
+    <P Name="Port">11</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_go" SID="1239::134">
+    <P Name="Position">[20, 496, 40, 514]</P>
+    <P Name="ZOrder">113</P>
+    <P Name="Port">12</P>
+  </Block>
+  <Block BlockType="Inport" Name="steer_zero" SID="1239::135">
+    <P Name="Position">[20, 531, 40, 549]</P>
+    <P Name="ZOrder">114</P>
+    <P Name="Port">13</P>
+  </Block>
+  <Block BlockType="Inport" Name="safety_fault" SID="1239::178">
+    <P Name="Position">[20, 566, 40, 584]</P>
+    <P Name="ZOrder">156</P>
+    <P Name="Port">14</P>
+  </Block>
+  <Block BlockType="Inport" Name="res_stop" SID="1239::136">
+    <P Name="Position">[20, 606, 40, 624]</P>
+    <P Name="ZOrder">115</P>
+    <P Name="Port">15</P>
+  </Block>
+  <Block BlockType="Inport" Name="ami_inspection" SID="1239::165">
+    <P Name="Position">[20, 641, 40, 659]</P>
+    <P Name="ZOrder">143</P>
+    <P Name="Port">16</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="1239::176">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 750, 320, 790]</P>
+    <P Name="ZOrder">154</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="1239::175">
+    <P Name="Tag">Stateflow S-Function 1</P>
+    <P Name="Ports">[16, 18]</P>
+    <P Name="Position">[180, 80, 230, 460]</P>
+    <P Name="ZOrder">153</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="Parameters">F,T</P>
+    <P Name="PortCounts">[16 18]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">as_ebs_trig</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">3</P>
+      <P Name="Name">r2d_warning</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">4</P>
+      <P Name="Name">as_led_blue</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">5</P>
+      <P Name="Name">as_led_yellow</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">6</P>
+      <P Name="Name">steer_return</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">7</P>
+      <P Name="Name">steering_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">8</P>
+      <P Name="Name">safety_lock</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">9</P>
+      <P Name="Name">brake_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">10</P>
+      <P Name="Name">manual_driving_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">11</P>
+      <P Name="Name">as_emergency_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">12</P>
+      <P Name="Name">ebs_system_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">13</P>
+      <P Name="Name">as_off_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">14</P>
+      <P Name="Name">as_ready_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">15</P>
+      <P Name="Name">as_driving_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">16</P>
+      <P Name="Name">as_finished_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">17</P>
+      <P Name="Name">r2d_flag</P>
+    </Port>
+    <Port>
+      <P Name="PortNumber">18</P>
+      <P Name="Name">ts_flag</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="1239::177">
+    <P Name="Position">[460, 761, 480, 779]</P>
+    <P Name="ZOrder">155</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_ebs_trig" SID="1239::137">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">116</P>
+  </Block>
+  <Block BlockType="Outport" Name="r2d_warning" SID="1239::138">
+    <P Name="Position">[460, 136, 480, 154]</P>
+    <P Name="ZOrder">117</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_led_blue" SID="1239::139">
+    <P Name="Position">[460, 171, 480, 189]</P>
+    <P Name="ZOrder">118</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_led_yellow" SID="1239::140">
+    <P Name="Position">[460, 206, 480, 224]</P>
+    <P Name="ZOrder">119</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Outport" Name="steer_return" SID="1239::150">
+    <P Name="Position">[460, 246, 480, 264]</P>
+    <P Name="ZOrder">129</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Outport" Name="steering_flag" SID="1239::144">
+    <P Name="Position">[460, 281, 480, 299]</P>
+    <P Name="ZOrder">123</P>
+    <P Name="Port">6</P>
+  </Block>
+  <Block BlockType="Outport" Name="safety_lock" SID="1239::179">
+    <P Name="Position">[460, 316, 480, 334]</P>
+    <P Name="ZOrder">157</P>
+    <P Name="Port">7</P>
+  </Block>
+  <Block BlockType="Outport" Name="brake_flag" SID="1239::145">
+    <P Name="Position">[460, 351, 480, 369]</P>
+    <P Name="ZOrder">124</P>
+    <P Name="Port">8</P>
+  </Block>
+  <Block BlockType="Outport" Name="manual_driving_flag" SID="1239::147">
+    <P Name="Position">[460, 386, 480, 404]</P>
+    <P Name="ZOrder">126</P>
+    <P Name="Port">9</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_emergency_flag" SID="1239::149">
+    <P Name="Position">[460, 426, 480, 444]</P>
+    <P Name="ZOrder">128</P>
+    <P Name="Port">10</P>
+  </Block>
+  <Block BlockType="Outport" Name="ebs_system_flag" SID="1239::151">
+    <P Name="Position">[460, 461, 480, 479]</P>
+    <P Name="ZOrder">130</P>
+    <P Name="Port">11</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_off_flag" SID="1239::152">
+    <P Name="Position">[460, 496, 480, 514]</P>
+    <P Name="ZOrder">131</P>
+    <P Name="Port">12</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_ready_flag" SID="1239::153">
+    <P Name="Position">[460, 531, 480, 549]</P>
+    <P Name="ZOrder">132</P>
+    <P Name="Port">13</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_driving_flag" SID="1239::154">
+    <P Name="Position">[460, 566, 480, 584]</P>
+    <P Name="ZOrder">133</P>
+    <P Name="Port">14</P>
+  </Block>
+  <Block BlockType="Outport" Name="as_finished_flag" SID="1239::155">
+    <P Name="Position">[460, 606, 480, 624]</P>
+    <P Name="ZOrder">134</P>
+    <P Name="Port">15</P>
+  </Block>
+  <Block BlockType="Outport" Name="r2d_flag" SID="1239::156">
+    <P Name="Position">[460, 641, 480, 659]</P>
+    <P Name="ZOrder">135</P>
+    <P Name="Port">16</P>
+  </Block>
+  <Block BlockType="Outport" Name="ts_flag" SID="1239::157">
+    <P Name="Position">[460, 676, 480, 694]</P>
+    <P Name="ZOrder">136</P>
+    <P Name="Port">17</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">137</P>
+    <P Name="Src">1239::123#out:1</P>
+    <P Name="Dst">1239::175#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">138</P>
+    <P Name="Src">1239::124#out:1</P>
+    <P Name="Dst">1239::175#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">139</P>
+    <P Name="Src">1239::125#out:1</P>
+    <P Name="Dst">1239::175#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">140</P>
+    <P Name="Src">1239::126#out:1</P>
+    <P Name="Dst">1239::175#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">141</P>
+    <P Name="Src">1239::127#out:1</P>
+    <P Name="Dst">1239::175#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">142</P>
+    <P Name="Src">1239::148#out:1</P>
+    <P Name="Dst">1239::175#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">143</P>
+    <P Name="Src">1239::129#out:1</P>
+    <P Name="Dst">1239::175#in:7</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">144</P>
+    <P Name="Src">1239::130#out:1</P>
+    <P Name="Dst">1239::175#in:8</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">145</P>
+    <P Name="Src">1239::131#out:1</P>
+    <P Name="Dst">1239::175#in:9</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">146</P>
+    <P Name="Src">1239::132#out:1</P>
+    <P Name="Dst">1239::175#in:10</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">147</P>
+    <P Name="Src">1239::133#out:1</P>
+    <P Name="Dst">1239::175#in:11</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">148</P>
+    <P Name="Src">1239::134#out:1</P>
+    <P Name="Dst">1239::175#in:12</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">149</P>
+    <P Name="Src">1239::135#out:1</P>
+    <P Name="Dst">1239::175#in:13</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">150</P>
+    <P Name="Src">1239::178#out:1</P>
+    <P Name="Dst">1239::175#in:14</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">151</P>
+    <P Name="Src">1239::136#out:1</P>
+    <P Name="Dst">1239::175#in:15</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">152</P>
+    <P Name="Src">1239::165#out:1</P>
+    <P Name="Dst">1239::175#in:16</P>
+  </Line>
+  <Line>
+    <P Name="Name">as_ebs_trig</P>
+    <P Name="ZOrder">153</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:2</P>
+    <P Name="Dst">1239::137#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">r2d_warning</P>
+    <P Name="ZOrder">154</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:3</P>
+    <P Name="Dst">1239::138#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">as_led_blue</P>
+    <P Name="ZOrder">155</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:4</P>
+    <P Name="Dst">1239::139#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">as_led_yellow</P>
+    <P Name="ZOrder">156</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:5</P>
+    <P Name="Dst">1239::140#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">steer_return</P>
+    <P Name="ZOrder">157</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:6</P>
+    <P Name="Dst">1239::150#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">steering_flag</P>
+    <P Name="ZOrder">158</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:7</P>
+    <P Name="Dst">1239::144#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">safety_lock</P>
+    <P Name="ZOrder">159</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:8</P>
+    <P Name="Dst">1239::179#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">brake_flag</P>
+    <P Name="ZOrder">160</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:9</P>
+    <P Name="Dst">1239::145#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">manual_driving_flag</P>
+    <P Name="ZOrder">161</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:10</P>
+    <P Name="Dst">1239::147#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">as_emergency_flag</P>
+    <P Name="ZOrder">162</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:11</P>
+    <P Name="Dst">1239::149#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ebs_system_flag</P>
+    <P Name="ZOrder">163</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:12</P>
+    <P Name="Dst">1239::151#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">as_off_flag</P>
+    <P Name="ZOrder">164</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:13</P>
+    <P Name="Dst">1239::152#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">as_ready_flag</P>
+    <P Name="ZOrder">165</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:14</P>
+    <P Name="Dst">1239::153#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">as_driving_flag</P>
+    <P Name="ZOrder">166</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:15</P>
+    <P Name="Dst">1239::154#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">as_finished_flag</P>
+    <P Name="ZOrder">167</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:16</P>
+    <P Name="Dst">1239::155#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">r2d_flag</P>
+    <P Name="ZOrder">168</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:17</P>
+    <P Name="Dst">1239::156#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">ts_flag</P>
+    <P Name="ZOrder">169</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1239::175#out:18</P>
+    <P Name="Dst">1239::157#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">170</P>
+    <P Name="Src">1239::176#out:1</P>
+    <P Name="Dst">1239::177#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">171</P>
+    <P Name="Src">1239::175#out:1</P>
+    <P Name="Dst">1239::176#in:1</P>
+  </Line>
+</System>

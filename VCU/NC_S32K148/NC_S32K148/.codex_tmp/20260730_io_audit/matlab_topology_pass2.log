@@ -1,0 +1,23 @@
+ 
+要开始，请键入 doc。
+有关产品信息，请访问 www.mathworks.com。
+ 
+TOPOLOGY_UPDATE=PASS
+MODEL=C:\Users\icemi\Desktop\RZS_Repository\VCU\Models\DBC_Debug\VCU10.slx
+MODEL_VERSION=1.42
+ROOT_INPUTS=19 ROOT_OUTPUTS=12
+OUT1=led_brake
+OUT2=led_assi_b
+OUT3=led_assi_y
+OUT4=led_ebserror
+OUT5=res_error
+OUT6=Unused_OUT_Bit
+OUT7=Unused_OUT_Bit
+HO1=ebs_trig
+HO2=led_bmserr
+HO3=led_imderr
+HO4=di8
+HO5=run
+HO6=buzzer_r2d
+HO7=buzzer_ebs
+HO8=Unused_HO_Bit

@@ -1,0 +1,1342 @@
+MODEL=C:\Users\icemi\Desktop\RZS_Repository\VCU\VCU10.slx
+VERSION=1.44
+SOLVER=FixedStepDiscrete FIXED_STEP=0.01 DICTIONARY=VCU10DB.sldd
+MODEL_UPDATE=OK
+
+[ROOT_INPORTS]
+VCU10/model_hin | port=1 | dimensions=-1 | datatype=Inherit: auto
+VCU10/model_ain | port=2 | dimensions=-1 | datatype=Inherit: auto
+VCU10/wlspd_fsensor | port=3 | dimensions=-1 | datatype=Inherit: auto
+VCU10/wlspd_hsensor | port=4 | dimensions=-1 | datatype=Inherit: auto
+VCU10/AMI_Tx | port=5 | dimensions=-1 | datatype=Inherit: auto
+VCU10/ESP_T_01 | port=6 | dimensions=-1 | datatype=Inherit: auto
+VCU10/ESP_T_03 | port=7 | dimensions=-1 | datatype=Inherit: auto
+VCU10/ESP_T_06 | port=8 | dimensions=-1 | datatype=Inherit: auto
+VCU10/ESP_T_07 | port=9 | dimensions=-1 | datatype=Inherit: auto
+VCU10/canb_epssendmsg1 | port=10 | dimensions=-1 | datatype=Inherit: auto
+VCU10/canb_epssendmsg2 | port=11 | dimensions=-1 | datatype=Inherit: auto
+VCU10/res_msg | port=12 | dimensions=-1 | datatype=Inherit: auto
+VCU10/canb_ipctsmsg1 | port=13 | dimensions=-1 | datatype=Inherit: auto
+VCU10/canb_ipctsmsg2 | port=14 | dimensions=-1 | datatype=Inherit: auto
+VCU10/vcu_dbg_control | port=15 | dimensions=8 | datatype=uint8
+VCU10/vcu_dbg_pedal_adc | port=16 | dimensions=8 | datatype=uint8
+VCU10/vcu_dbg_air_wheel | port=17 | dimensions=8 | datatype=uint8
+VCU10/vcu_dbg_digital | port=18 | dimensions=8 | datatype=uint8
+VCU10/vcu_dbg_rx_count | port=19 | dimensions=4 | datatype=uint8
+
+[ROOT_OUTPORTS]
+VCU10/model_lox | port=1 | dimensions=-1 | datatype=Inherit: auto
+VCU10/model_hox | port=2 | dimensions=-1 | datatype=Inherit: auto
+VCU10/ebs_watchdog | port=3 | dimensions=-1 | datatype=Inherit: auto
+VCU10/AMI_RX | port=4 | dimensions=-1 | datatype=Inherit: auto
+VCU10/ESP_R_00 | port=5 | dimensions=-1 | datatype=Inherit: auto
+VCU10/canb_epsmsg | port=6 | dimensions=-1 | datatype=Inherit: auto
+VCU10/canb_ipcrxmsg | port=7 | dimensions=-1 | datatype=Inherit: auto
+VCU10/cana_motor_cmd | port=8 | dimensions=-1 | datatype=Inherit: auto
+VCU10/cana_motor_cmd3 | port=9 | dimensions=-1 | datatype=Inherit: auto
+VCU10/vcu_dbg_status | port=10 | dimensions=8 | datatype=uint8
+VCU10/vcu_dbg_pedal_echo | port=11 | dimensions=8 | datatype=uint8
+VCU10/vcu_dbg_air_wheel_echo | port=12 | dimensions=8 | datatype=uint8
+
+[TOP_LEVEL_BLOCKS]
+VCU10/model_ain | Inport
+VCU10/wlspd_fsensor | Inport
+VCU10/wlspd_hsensor | Inport
+VCU10/AMI_Tx | Inport
+VCU10/ESP_T_01 | Inport
+VCU10/ESP_T_03 | Inport
+VCU10/ESP_T_06 | Inport
+VCU10/ESP_T_07 | Inport
+VCU10/canb_epssendmsg1 | Inport
+VCU10/canb_epssendmsg2 | Inport
+VCU10/res_msg | Inport
+VCU10/canb_ipctsmsg1 | Inport
+VCU10/canb_ipctsmsg2 | Inport
+VCU10/vcu_dbg_control | Inport
+VCU10/vcu_dbg_pedal_adc | Inport
+VCU10/vcu_dbg_air_wheel | Inport
+VCU10/vcu_dbg_digital | Inport
+VCU10/vcu_dbg_rx_count | Inport
+VCU10/10ms | S-Function
+VCU10/10ms1 | S-Function
+VCU10/10ms10 | S-Function
+VCU10/10ms11 | S-Function
+VCU10/10ms12 | S-Function
+VCU10/10ms13 | S-Function
+VCU10/10ms2 | S-Function
+VCU10/10ms3 | S-Function
+VCU10/10ms4 | S-Function
+VCU10/10ms6 | S-Function
+VCU10/10ms7 | S-Function
+VCU10/10ms8 | S-Function
+VCU10/10ms9 | S-Function
+VCU10/AMI_CAN | SubSystem
+VCU10/ASB_Selfcheck | SubSystem
+VCU10/AS_Stateflow | SubSystem
+VCU10/Ain Bus
+Creator | BusCreator
+VCU10/Bus
+Selector | BusSelector
+VCU10/Bus
+Selector1 | BusSelector
+VCU10/Bus
+Selector2 | BusSelector
+VCU10/Bus
+Selector3 | BusSelector
+VCU10/Bus
+Selector4 | BusSelector
+VCU10/Bus
+Selector5 | BusSelector
+VCU10/Bus
+Selector6 | BusSelector
+VCU10/Bus
+Selector7 | BusSelector
+VCU10/Bus
+Selector8 | BusSelector
+VCU10/Bus
+Selector9 | BusSelector
+VCU10/Buzzer | SubSystem
+VCU10/DBC_Debug_Select | SubSystem
+VCU10/DBC_Debug_StatusPack | SubSystem
+VCU10/Data Store
+Memory | DataStoreMemory
+VCU10/Data Store
+Memory1 | DataStoreMemory
+VCU10/Data Store
+Memory10 | DataStoreMemory
+VCU10/Data Store
+Memory11 | DataStoreMemory
+VCU10/Data Store
+Memory12 | DataStoreMemory
+VCU10/Data Store
+Memory13 | DataStoreMemory
+VCU10/Data Store
+Memory14 | DataStoreMemory
+VCU10/Data Store
+Memory15 | DataStoreMemory
+VCU10/Data Store
+Memory16 | DataStoreMemory
+VCU10/Data Store
+Memory17 | DataStoreMemory
+VCU10/Data Store
+Memory18 | DataStoreMemory
+VCU10/Data Store
+Memory19 | DataStoreMemory
+VCU10/Data Store
+Memory2 | DataStoreMemory
+VCU10/Data Store
+Memory20 | DataStoreMemory
+VCU10/Data Store
+Memory21 | DataStoreMemory
+VCU10/Data Store
+Memory22 | DataStoreMemory
+VCU10/Data Store
+Memory23 | DataStoreMemory
+VCU10/Data Store
+Memory24 | DataStoreMemory
+VCU10/Data Store
+Memory25 | DataStoreMemory
+VCU10/Data Store
+Memory26 | DataStoreMemory
+VCU10/Data Store
+Memory27 | DataStoreMemory
+VCU10/Data Store
+Memory3 | DataStoreMemory
+VCU10/Data Store
+Memory4 | DataStoreMemory
+VCU10/Data Store
+Memory5 | DataStoreMemory
+VCU10/Data Store
+Memory6 | DataStoreMemory
+VCU10/Data Store
+Memory7 | DataStoreMemory
+VCU10/Data Store
+Memory8 | DataStoreMemory
+VCU10/Data Store
+Memory9 | DataStoreMemory
+VCU10/Data Store
+Read | DataStoreRead
+VCU10/Data Store
+Read1 | DataStoreRead
+VCU10/Data Store
+Read10 | DataStoreRead
+VCU10/Data Store
+Read11 | DataStoreRead
+VCU10/Data Store
+Read12 | DataStoreRead
+VCU10/Data Store
+Read13 | DataStoreRead
+VCU10/Data Store
+Read14 | DataStoreRead
+VCU10/Data Store
+Read15 | DataStoreRead
+VCU10/Data Store
+Read16 | DataStoreRead
+VCU10/Data Store
+Read17 | DataStoreRead
+VCU10/Data Store
+Read18 | DataStoreRead
+VCU10/Data Store
+Read19 | DataStoreRead
+VCU10/Data Store
+Read2 | DataStoreRead
+VCU10/Data Store
+Read20 | DataStoreRead
+VCU10/Data Store
+Read21 | DataStoreRead
+VCU10/Data Store
+Read22 | DataStoreRead
+VCU10/Data Store
+Read23 | DataStoreRead
+VCU10/Data Store
+Read24 | DataStoreRead
+VCU10/Data Store
+Read3 | DataStoreRead
+VCU10/Data Store
+Read4 | DataStoreRead
+VCU10/Data Store
+Read5 | DataStoreRead
+VCU10/Data Store
+Read6 | DataStoreRead
+VCU10/Data Store
+Read7 | DataStoreRead
+VCU10/Data Store
+Read8 | DataStoreRead
+VCU10/Data Store
+Read9 | DataStoreRead
+VCU10/Data Store
+Write | DataStoreWrite
+VCU10/Data Store
+Write1 | DataStoreWrite
+VCU10/Data Store
+Write10 | DataStoreWrite
+VCU10/Data Store
+Write11 | DataStoreWrite
+VCU10/Data Store
+Write12 | DataStoreWrite
+VCU10/Data Store
+Write13 | DataStoreWrite
+VCU10/Data Store
+Write14 | DataStoreWrite
+VCU10/Data Store
+Write2 | DataStoreWrite
+VCU10/Data Store
+Write3 | DataStoreWrite
+VCU10/Data Store
+Write4 | DataStoreWrite
+VCU10/Data Store
+Write5 | DataStoreWrite
+VCU10/Data Store
+Write6 | DataStoreWrite
+VCU10/Data Store
+Write7 | DataStoreWrite
+VCU10/Data Store
+Write8 | DataStoreWrite
+VCU10/Data Store
+Write9 | DataStoreWrite
+VCU10/EBS | SubSystem
+VCU10/EPS | SubSystem
+VCU10/EPS_SCS_Monitor | SubSystem
+VCU10/ESP | SubSystem
+VCU10/FSEC_EBS_Error_OR | Logic
+VCU10/FSEC_Safety_Fault_Delay | UnitDelay
+VCU10/FSEC_Safety_Fault_OR | Logic
+VCU10/FSEC_Safety_Lock_Memory | DataStoreMemory
+VCU10/FSEC_Safety_Lock_Write | DataStoreWrite
+VCU10/From | From
+VCU10/From1 | From
+VCU10/From10 | From
+VCU10/From11 | From
+VCU10/From12 | From
+VCU10/From13 | From
+VCU10/From14 | From
+VCU10/From15 | From
+VCU10/From16 | From
+VCU10/From17 | From
+VCU10/From18 | From
+VCU10/From19 | From
+VCU10/From2 | From
+VCU10/From20 | From
+VCU10/From21 | From
+VCU10/From22 | From
+VCU10/From24 | From
+VCU10/From25 | From
+VCU10/From26 | From
+VCU10/From27 | From
+VCU10/From3 | From
+VCU10/From30 | From
+VCU10/From31 | From
+VCU10/From32 | From
+VCU10/From33 | From
+VCU10/From34 | From
+VCU10/From35 | From
+VCU10/From37 | From
+VCU10/From38 | From
+VCU10/From39 | From
+VCU10/From4 | From
+VCU10/From40 | From
+VCU10/From41 | From
+VCU10/From42 | From
+VCU10/From44 | From
+VCU10/From45 | From
+VCU10/From46 | From
+VCU10/From47 | From
+VCU10/From5 | From
+VCU10/From6 | From
+VCU10/From7 | From
+VCU10/From8 | From
+VCU10/From9 | From
+VCU10/Function-Call
+Generator | S-Function
+VCU10/Function-Call
+Generator1 | S-Function
+VCU10/Goto | Goto
+VCU10/Goto1 | Goto
+VCU10/Goto10 | Goto
+VCU10/Goto11 | Goto
+VCU10/Goto13 | Goto
+VCU10/Goto14 | Goto
+VCU10/Goto15 | Goto
+VCU10/Goto16 | Goto
+VCU10/Goto17 | Goto
+VCU10/Goto18 | Goto
+VCU10/Goto19 | Goto
+VCU10/Goto2 | Goto
+VCU10/Goto20 | Goto
+VCU10/Goto21 | Goto
+VCU10/Goto22 | Goto
+VCU10/Goto23 | Goto
+VCU10/Goto24 | Goto
+VCU10/Goto25 | Goto
+VCU10/Goto26 | Goto
+VCU10/Goto29 | Goto
+VCU10/Goto3 | Goto
+VCU10/Goto4 | Goto
+VCU10/Goto5 | Goto
+VCU10/Goto6 | Goto
+VCU10/Goto7 | Goto
+VCU10/Goto8 | Goto
+VCU10/Goto9 | Goto
+VCU10/Hin Bus
+Creator | BusCreator
+VCU10/IPC | SubSystem
+VCU10/Input_Convert | SubSystem
+VCU10/LED_Control | SubSystem
+VCU10/Motor_Control | SubSystem
+VCU10/Output_Convert | SubSystem
+VCU10/Res | SubSystem
+VCU10/Sensor_Signal | SubSystem
+VCU10/TS_Activation | SubSystem
+VCU10/Terminator | Terminator
+VCU10/Terminator1 | Terminator
+VCU10/Terminator2 | Terminator
+VCU10/Terminator3 | Terminator
+VCU10/Terminator4 | Terminator
+VCU10/Terminator5 | Terminator
+VCU10/model_lox | Outport
+VCU10/model_hox | Outport
+VCU10/ebs_watchdog | Outport
+VCU10/AMI_RX | Outport
+VCU10/ESP_R_00 | Outport
+VCU10/canb_epsmsg | Outport
+VCU10/canb_ipcrxmsg | Outport
+VCU10/cana_motor_cmd | Outport
+VCU10/cana_motor_cmd3 | Outport
+VCU10/vcu_dbg_status | Outport
+VCU10/vcu_dbg_pedal_echo | Outport
+VCU10/vcu_dbg_air_wheel_echo | Outport
+
+[STATEFLOW]
+
+CHART=VCU10/AS_Stateflow/Chart
+ STATE AS_Driving | AS_Driving 
+ STATE AS_Ready | AS_Ready ts_flag=1; r2d_flag=0; steering_flag=1; brake_flag=2; ebs_system_flag=1; as_led_yellow=1; as_led_blue=0; as_off_flag=0; as_ready_flag=1; as_driving_flag=0; as_finished_flag=0; as_emergency_flag=0; manual_driving_flag=0; as_ebs_trig=0;
+ STATE transition | transition
+ STATE AS_Off | AS_Off ts_flag=0; r2d_flag=0; steering_flag=0; brake_flag=0; ebs_system_flag=0; as_led_yellow=0; as_led_blue=0; as_off_flag=1; as_ready_flag=0; as_driving_flag=0; as_finished_flag=0; as_emergency_flag=0; manual_driving_flag=0; as_ebs_trig=0;
+ STATE AS_Emergency | AS_Emergency ts_flag=0; r2d_flag=0; steering_flag=1; brake_flag=1; ebs_system_flag=2; as_ebs_trig=1; as_led_yellow=0; as_led_blue=2; as_off_flag=0; as_ready_flag=0; as_driving_flag=0; as_finished_flag=0; as_emergency_flag=1; manual_driving_flag=0; safety_lock=1;
+ STATE AS_Finished | AS_Finished ts_flag=0; r2d_flag=0; steering_flag=0; brake_flag=0; ebs_system_flag=2; as_ebs_trig=1; as_led_yellow=0; as_led_blue=1; as_off_flag=0; as_ready_flag=0; as_driving_flag=0; as_finished_flag=1; as_emergency_flag=0; manual_driving_flag=0; safety_lock=1;
+ STATE Manual_Driving | Manual_Driving ts_flag=0; r2d_flag=0; steering_flag=0; brake_flag=0; ebs_system_flag=0; as_led_yellow=0; as_led_blue=0; as_off_flag=0; as_ready_flag=0; as_driving_flag=0; as_finished_flag=0; as_emergency_flag=0; manual_driving_flag=1; as_ebs_trig=0;
+ STATE R2D | R2D en: r2d_flag=1; as_ready_flag=0; as_driving_flag=1;
+ STATE go | go ts_flag=1; r2d_flag=0; steering_flag=1; brake_flag=1; ebs_system_flag=1; as_led_yellow=2; as_led_blue=0; as_off_flag=0; as_ready_flag=0; as_driving_flag=1; as_finished_flag=0; as_emergency_flag=0; manual_driving_flag=0;
+ TRANS AS_Driving -> AS_Finished | [car_spdzero==1&&task_finish==1&&safety_fault==0&&asms_button==1&&res_stop==0]{as_ebs_trig=1}
+ TRANS AS_Ready -> <junction> | after(5,sec)
+ TRANS <junction> -> AS_Driving | [res_go==1&&safety_fault==0&&asms_button==1&&res_stop==0]{r2d_warning=T;steer_return=T}
+ TRANS <junction> -> AS_Emergency | [ebs_working==1||safety_fault==1||asms_button==0||res_stop==1]
+ TRANS <junction> -> AS_Ready | [asb_check==1&&safety_fault==0&&safety_lock==0]
+ TRANS AS_Driving -> <junction> | [ami_inspection==1]
+ TRANS AS_Ready -> AS_Emergency | [ebs_working==1||safety_fault==1||asms_button==0||res_stop==1]
+ TRANS AS_Driving -> AS_Emergency | [ebs_working==1||safety_fault==1||asms_button==0||res_stop==1]
+ TRANS <junction> -> AS_Emergency | [ebs_working==1||safety_fault==1||asms_button==0||res_stop==1]
+ TRANS transition -> <junction> | [ts==1]
+ TRANS <junction> -> AS_Emergency | [ebs_working==1||safety_fault==1||asms_button==0||res_stop==1]
+ TRANS <junction> -> AS_Finished | after(27,sec)[safety_fault==0&&asms_button==1&&res_stop==0]{as_ebs_trig=1}
+ TRANS transition -> AS_Emergency | [ebs_working==1||safety_fault==1||asms_button==0||res_stop==1]
+ TRANS AS_Off -> transition | [as_task==1&&asms_button==1&&safety_fault==0&&safety_lock==0]{brake_flag=2}
+ TRANS <junction> -> AS_Off | [asms_button==0&&brake_on==0]
+ TRANS AS_Emergency -> <junction> | [ebs_warning==0]
+ TRANS AS_Finished -> AS_Emergency | [res_stop==1]
+ TRANS AS_Off -> <junction> | [ami_manualdriving==1&&safety_fault==0&&safety_lock==0]
+ TRANS AS_Finished -> AS_Off | [asms_button==0&&brake_on==0]
+ TRANS Manual_Driving -> AS_Off | [ts==0]
+ TRANS <junction> -> <junction> | [ebs_check==0]
+ TRANS <junction> -> Manual_Driving | [ts==1]
+ TRANS R2D -> go | [steer_zero==1] {steer_return=F;r2d_warning=F}
+
+CHART=VCU10/Buzzer/Chart
+ STATE Default | Default en: ebs_buzzer=F; 
+ STATE Emergency | Emergency en: ebs_buzzer=T;
+ TRANS Default -> Emergency | [as_emergency_flag==1]
+ TRANS Emergency -> Default | [after(9,sec)]
+
+CHART=VCU10/LED_Control/TSLED_Inspection
+ STATE Inspection | Inspection en: led_imderr=T; led_bmserr=T;
+ STATE Normal | Normal en: led_imderr=F; led_bmserr=F;
+ TRANS Inspection -> Normal | [after(2,sec)]
+
+CHART=VCU10/Motor_Control/Motor_Torque_Stateflow
+ STATE Default | Default en: motor_torque=0; du: motor_torque=0;
+ STATE AS_Driving | AS_Driving en: motor_torque=as_torque; du: motor_torque=as_torque;
+ STATE Manual_Driving | Manual_Driving en: motor_torque=manual_torque; du: motor_torque=manual_torque;
+ TRANS Default -> AS_Driving | [as_task==1]
+ TRANS AS_Driving -> Default | [as_task==0]
+ TRANS Default -> Manual_Driving | [manual_driving_flag==1]
+ TRANS Manual_Driving -> Default | [manual_driving_flag==0]
+
+CHART=VCU10/TS_Activation/Chart
+ STATE Ignition_Check | Ignition_Check
+ STATE Flameout_Check | Flameout_Check
+ STATE begin | begin di8_flag=F;
+ STATE DI8_Check_Flag | DI8_Check_Flag
+ STATE Check | Check
+ STATE DI8_Offcheck_Flag | DI8_Offcheck_Flag
+ STATE Checkoff | Checkoff
+ TRANS Ignition_Check -> Flameout_Check | [di8_flag==T]
+ TRANS Flameout_Check -> Ignition_Check | [di8_flag==F]
+ TRANS <junction> -> DI8_Check_Flag | [di8_check_flag==0]
+ TRANS <junction> -> Check | [di8_check_flag==1]
+ TRANS <junction> -> DI8_Offcheck_Flag | [di8_offcheck_flag==0]
+ TRANS <junction> -> Checkoff | [di8_offcheck_flag==1]
+ TRANS <junction> -> <junction> | [di8_button==0]
+ TRANS <junction> -> <junction> | {di8_check_flag=0;}
+ TRANS <junction> -> <junction> | {di8_check_flag=1;}
+ TRANS <junction> -> <junction> | [di8_button==1]
+ TRANS <junction> -> <junction> | {di8_flag=T;di8=T;}
+ TRANS <junction> -> <junction> | [di8_button==0]
+ TRANS <junction> -> <junction> | {di8_offcheck_flag=1;}
+ TRANS <junction> -> <junction> | {di8_offcheck_flag}
+ TRANS <junction> -> <junction> | [di8_button==1]
+ TRANS <junction> -> <junction> | {di8_flag=F;di8=F;}
+
+CHART=VCU10/TS_Activation/Chart1
+ STATE Ignition_Check | Ignition_Check
+ STATE Flameout_Check | Flameout_Check
+ STATE begin | begin run_flag=0;
+ STATE Run_Check_Flag | Run_Check_Flag
+ STATE Check | Check
+ STATE Run_Offcheck_Flag | Run_Offcheck_Flag
+ STATE Checkoff | Checkoff
+ TRANS Ignition_Check -> Flameout_Check | [run_flag==1]
+ TRANS Flameout_Check -> Ignition_Check | [run_flag==0]
+ TRANS <junction> -> Run_Check_Flag | [run_check_flag==0]
+ TRANS <junction> -> Check | [run_check_flag==1]
+ TRANS <junction> -> Run_Offcheck_Flag | [run_offcheck_flag==0]
+ TRANS <junction> -> Checkoff | [run_offcheck_flag==1]
+ TRANS <junction> -> <junction> | [run_button==0]
+ TRANS <junction> -> <junction> | {run_check_flag=0;}
+ TRANS <junction> -> <junction> | {run_check_flag=1;}
+ TRANS <junction> -> <junction> | [run_button==1]
+ TRANS <junction> -> <junction> | {run_flag=1;run=T;}
+ TRANS <junction> -> <junction> | [run_button==0]
+ TRANS <junction> -> <junction> | {run_offcheck_flag=1;}
+ TRANS <junction> -> <junction> | {run_offcheck_flag}
+ TRANS <junction> -> <junction> | [run_button==1]
+ TRANS <junction> -> <junction> | {run_flag=0;run=F;}
+
+CHART=VCU10/TS_Activation/Chart2
+ STATE begin | begin
+ STATE delay | delay
+ TRANS begin -> <junction> | {ts=0}
+ TRANS <junction> -> <junction> | [tsms_button==1]
+ TRANS <junction> -> <junction> | [di8==1]
+ TRANS <junction> -> <junction> | [as_flag==1]
+ TRANS <junction> -> <junction> | [as_flag==0]
+ TRANS <junction> -> delay | [run==1&&brake_on==1]{ts=1;ts_warning=T}
+ TRANS <junction> -> delay | {ts=1}
+ TRANS delay -> <junction> | after(2,sec)
+ TRANS <junction> -> <junction> | {ts_warning=F}
+ TRANS <junction> -> <junction> | [tsms_button==0||di8==0||run==0]{ts=0}
+
+CHART=VCU10/AMI_CAN/AMI_Transmitmsg/Chart
+ STATE as_off | as_off en: ami_process=0x01 
+ STATE as_emergency | as_emergency en: ami_process=0x40
+ STATE begin | begin 
+ STATE munual_driving | munual_driving en: ami_process=0x02
+ STATE as_finished | as_finished en: ami_process=0x20
+ STATE as_ready | as_ready en: ami_process=0x04
+ STATE as_driving | as_driving en: ami_process=0x10
+ STATE r2d | r2d en: ami_process=0x08
+ TRANS begin -> as_off | [as_off_flag==1]
+ TRANS begin -> as_emergency | [as_emergency_flag==1]
+ TRANS as_emergency -> begin | [as_emergency_flag~=1]
+ TRANS as_off -> begin | [as_off_flag~=1]
+ TRANS begin -> munual_driving | [munual_driving_flag==1]
+ TRANS begin -> as_finished | [as_finished_flag==1]
+ TRANS munual_driving -> begin | [munual_driving_flag~=1]
+ TRANS as_finished -> begin | [as_finished_flag~=1]
+ TRANS begin -> as_ready | [as_ready_flag==1]
+ TRANS as_ready -> begin | [as_ready_flag~=1]
+ TRANS begin -> r2d | [r2d_flag==1]
+ TRANS r2d -> begin | [r2d_flag~=1]
+ TRANS begin -> as_driving | [as_driving_flag==1]
+ TRANS as_driving -> begin | [as_driving_flag~=1]
+
+CHART=VCU10/EPS/EPS_TransmitMsg/EPS_Stateflow1
+ STATE EPS_Unable | EPS_Unable en: eps_cmdworkmode=0x00; eps_cmdmiddle=0x00; 
+ STATE EPS_Enable | EPS_Enable en: eps_cmdworkmode=0x10; eps_cmdangle=ipc_cmdangle; eps_cmdmiddle=0x00; eps_cmdvelocity=ipc_eps_velocity; du: eps_cmdworkmode=0x10; eps_cmdangle=ipc_cmdangle; eps_cmdmiddle=0x00; eps_cmdvelocity=ipc_eps_velocity;
+ STATE EPS_Return | EPS_Return eps_cmdworkmode=0x10; eps_cmdangle=uint32(0x04); eps_cmdmiddle=0x55; eps_cmdvelocity=0x14;
+ TRANS EPS_Enable -> EPS_Unable | [steering_flag==0]
+ TRANS EPS_Unable -> EPS_Enable | [steering_flag==1]
+ TRANS EPS_Enable -> <junction> | [after(10,msec)]
+ TRANS <junction> -> EPS_Return | [steer_return==1]
+ TRANS EPS_Return -> EPS_Enable | [steer_zero==1]
+
+CHART=VCU10/LED_Control/EBS_LED/Shutdown_Button
+ STATE begin | begin 
+ STATE same1 | same1 shutdown_flag=T;
+ STATE compare | compare shutdown_count = shutdown_count + 1;
+ STATE judge | judge shutdown_flag=F;
+ TRANS begin -> <junction> | after(1,sec)
+ TRANS <junction> -> same1 | [Shutdown_Start==Shutdown_End]
+ TRANS judge -> same1 | [Shutdown_Start==Shutdown_End]
+ TRANS compare -> same1 | [Shutdown_Start==Shutdown_End]{shutdown_count=0}
+ TRANS same1 -> compare | [Shutdown_Start~=Shutdown_End]
+ TRANS compare -> judge | [shutdown_count>10]
+
+CHART=VCU10/LED_Control/EBS_LED/display
+ STATE begin | begin spark=T;
+ STATE end | end spark=F;
+ TRANS begin -> end | after(2,sec)
+
+CHART=VCU10/LED_Control/Subsystem/blue
+ STATE Delay | Delay en: blue=uint16(60000);
+ STATE Node | Node en: blue=uint16(0);
+ STATE Close | Close en: blue=uint16(0);
+ STATE On | On en: blue=uint16(60000);
+ STATE Blink | Blink en: blue=uint16(30000);
+ TRANS Delay -> Node | after(2,sec)
+ TRANS Node -> Close | [as_led_blue==0]
+ TRANS Node -> Blink | [as_led_blue==2]
+ TRANS Node -> On | [as_led_blue==1]
+ TRANS Close -> On | [as_led_blue==1]
+ TRANS On -> Blink | [as_led_blue==2]
+ TRANS Blink -> On | [as_led_blue==1]
+ TRANS On -> Close | [as_led_blue==0]
+ TRANS Close -> Blink | [as_led_blue==2]
+ TRANS Blink -> Close | [as_led_blue==0]
+
+CHART=VCU10/LED_Control/Subsystem1/yellow
+ STATE delay | delay en: yellow=uint16(60000);
+ STATE node | node en: yellow=uint16(0);
+ STATE Close | Close en: yellow=uint16(0);
+ STATE On | On en: yellow=uint16(60000);
+ STATE Blink | Blink en: yellow=uint16(30000);
+ TRANS delay -> node | after(2,sec)
+ TRANS node -> Blink | [as_led_yellow==2]
+ TRANS node -> Close | [as_led_yellow==0]
+ TRANS node -> On | [as_led_yellow==1]
+ TRANS Close -> On | [as_led_yellow==1]
+ TRANS On -> Blink | [as_led_yellow==2]
+ TRANS Blink -> On | [as_led_yellow==1]
+ TRANS On -> Close | [as_led_yellow==0]
+ TRANS Close -> Blink | [as_led_yellow==2]
+ TRANS Blink -> Close | [as_led_yellow==0]
+
+CHART=VCU10/Motor_Control/ManualTorque_Calculation/Pedal_Fault_Check
+ TRANS <junction> -> <junction> | [abs(apps1-apps2)>=0.1]{fault_count = fault_count + 1}
+ TRANS <junction> -> <junction> | {fault_count=0;pedal_error=0}
+ TRANS <junction> -> <junction> | [fault_count>=3]{pedal_error=1}
+
+CHART=VCU10/ESP/ESP_ReceiveMsg/Subsystem/brkmotor_check_system
+ STATE begin | begin 
+ STATE compare | compare brkmotor_check=T;
+ STATE same | same lscnt = lscnt + 1;
+ STATE judge | judge brkmotor_check=F;
+ TRANS begin -> compare | [hasChanged(lifesig)]
+ TRANS judge -> compare | [hasChanged(lifesig)]{lscnt=0}
+ TRANS same -> compare | [hasChanged(lifesig)]{lscnt=0}
+ TRANS compare -> same | [~hasChanged(lifesig)]
+ TRANS same -> judge | [lscnt>10]
+
+CHART=VCU10/ESP/ESP_TransmitMsg/ESP_R_00/ESP_Chart1
+ STATE ESC_Unable | ESC_Unable en: mode=0; %mode=机械模式;
+ STATE ESC_Engage | ESC_Engage en: %开环模式; mode=1; tarPrsReqFL=ipc_esp_flprs; tarPrsReqFR=ipc_esp_frprs; tarPrsReqRL=ipc_esp_rlprs; tarPrsReqRR=ipc_esp_rrprs; du: mode=1; tarPrsReqFL=ipc_esp_flprs; tarPrsReqFR=ipc_esp_frprs; tarPrsReqRL=ipc_esp_rlprs; tarPrsReqRR=ipc_esp_rrprs;
+ STATE ESC_Able | ESC_Able en: %开环模式; mode=1; tarPrsReqFL=ipc_esp_flprs; tarPrsReqFR=ipc_esp_frprs; tarPrsReqRL=ipc_esp_rlprs; tarPrsReqRR=ipc_esp_rrprs; du: mode=1; tarPrsReqFL=ipc_esp_flprs; tarPrsReqFR=ipc_esp_frprs; tarPrsReqRL=ipc_esp_rlprs; tarPrsReqRR=ipc_esp_rrprs;
+ TRANS ESC_Able -> ESC_Unable | [brake_flag==0]
+ TRANS ESC_Unable -> ESC_Engage | [brake_flag==2]
+ TRANS ESC_Engage -> ESC_Able | [brake_flag==1]
+
+CHART=VCU10/Res/Res_Msg/Subsystem/heaartbeat_chart
+ STATE begin | begin 
+ STATE compare | compare res_hbcheck=1;
+ STATE same | same hbcnt = hbcnt + 1;
+ STATE judge | judge res_hbcheck=0;
+ TRANS begin -> compare | [hasChanged(res_heartbeat)]
+ TRANS judge -> compare | [hasChanged(res_heartbeat)]{hbcnt=0}
+ TRANS same -> compare | [hasChanged(res_heartbeat)]{hbcnt=0}
+ TRANS compare -> same | [~hasChanged(res_heartbeat)]
+ TRANS same -> judge | [hbcnt>30]
+
+CHART=VCU10/Res/Res_Msg/Subsystem/xor_Check
+ STATE compare | compare en: xorcheck=1;
+ STATE Init | Init en: err_cnt=0; 
+ STATE different | different en: err_cnt = err_cnt + 1;
+ STATE judge | judge en: xorcheck=0;
+ TRANS Init -> compare | [res_xorcheck==xor_consequence]
+ TRANS judge -> compare | [res_xorcheck==xor_consequence]{err_cnt=0}
+ TRANS compare -> different | [res_xorcheck~=xor_consequence]
+ TRANS different -> compare | [res_xorcheck==xor_consequence]{err_cnt=0}
+ TRANS different -> judge | [err_cnt>=10]
+
+[MATLAB_FUNCTIONS]
+
+--- VCU10/DBC_Debug_Select/DBC_Debug_Select ---
+function [hin_sel, ain_sel, wheel_f_sel, wheel_h_sel, status_base, pedal_echo, air_wheel_echo] = dbg_select(hin_hw, ain_hw, wheel_f_hw, wheel_h_hw, control, pedal_adc, air_wheel, digital, rx_count)
+%#codegen
+% Bench-only CAN override. Any stale control/data frame restores hardware input.
+persistent last_count ages initialized
+if isempty(initialized)
+    last_count = uint8(zeros(4,1));
+    ages = repmat(uint8(50),4,1);
+    initialized = true;
+end
+for i = 1:4
+    if rx_count(i) ~= last_count(i)
+        last_count(i) = rx_count(i);
+        ages(i) = uint8(0);
+    elseif ages(i) < uint8(50)
+        ages(i) = ages(i) + uint8(1);
+    end
+end
+requested = uint8(0);
+if control(1) == uint8(165) && control(2) == uint8(90) && ages(1) < uint8(50)
+    requested = bitand(control(3), uint8(15));
+end
+active = uint8(0);
+if bitand(requested,uint8(1)) ~= uint8(0)
+    active = bitor(active,uint8(1));
+    if bitand(requested,uint8(2)) ~= uint8(0) && ages(2) < uint8(50)
+        active = bitor(active,uint8(2));
+    end
+    if bitand(requested,uint8(4)) ~= uint8(0) && ages(3) < uint8(50)
+        active = bitor(active,uint8(4));
+    end
+    if bitand(requested,uint8(8)) ~= uint8(0) && ages(4) < uint8(50)
+        active = bitor(active,uint8(8));
+    end
+end
+hin_sel = uint16(hin_hw);
+ain_sel = uint16(ain_hw);
+wheel_f_sel = single(wheel_f_hw);
+wheel_h_sel = single(wheel_h_hw);
+if bitand(active,uint8(8)) ~= uint8(0)
+    hin_sel = uint16(digital(1)) + bitshift(uint16(digital(2)),8);
+end
+if bitand(active,uint8(2)) ~= uint8(0)
+    ain_sel(1) = uint16(pedal_adc(1)) + bitshift(uint16(pedal_adc(2)),8);
+    ain_sel(2) = uint16(pedal_adc(3)) + bitshift(uint16(pedal_adc(4)),8);
+    ain_sel(3) = uint16(pedal_adc(5)) + bitshift(uint16(pedal_adc(6)),8);
+end
+if bitand(active,uint8(4)) ~= uint8(0)
+    ain_sel(4) = uint16(air_wheel(1)) + bitshift(uint16(air_wheel(2)),8);
+    ain_sel(5) = uint16(air_wheel(3)) + bitshift(uint16(air_wheel(4)),8);
+    wheel_f_sel = single(uint16(air_wheel(5)) + bitshift(uint16(air_wheel(6)),8)) * single(0.1);
+    wheel_h_sel = single(uint16(air_wheel(7)) + bitshift(uint16(air_wheel(8)),8)) * single(0.1);
+end
+status_base = uint8(zeros(8,1));
+status_base(1) = active;
+status_base(2) = requested;
+status_base(3) = uint8(bitand(hin_sel,uint16(255)));
+status_base(4) = uint8(bitshift(hin_sel,-8));
+status_base(7) = ages(1);
+status_base(8) = rx_count(1);
+pedal_echo = uint8(zeros(8,1));
+pedal_echo(1) = uint8(bitand(ain_sel(1),uint16(255)));
+pedal_echo(2) = uint8(bitshift(ain_sel(1),-8));
+pedal_echo(3) = uint8(bitand(ain_sel(2),uint16(255)));
+pedal_echo(4) = uint8(bitshift(ain_sel(2),-8));
+pedal_echo(5) = uint8(bitand(ain_sel(3),uint16(255)));
+pedal_echo(6) = uint8(bitshift(ain_sel(3),-8));
+if bitand(active,uint8(2)) ~= uint8(0)
+    pedal_echo(7) = uint8(1);
+end
+pedal_echo(8) = rx_count(2);
+air_wheel_echo = uint8(zeros(8,1));
+air_wheel_echo(1) = uint8(bitand(ain_sel(4),uint16(255)));
+air_wheel_echo(2) = uint8(bitshift(ain_sel(4),-8));
+air_wheel_echo(3) = uint8(bitand(ain_sel(5),uint16(255)));
+air_wheel_echo(4) = uint8(bitshift(ain_sel(5),-8));
+wheel_raw = wheel_f_sel * single(10.0);
+if wheel_raw <= single(0.0)
+    wheel_u16 = uint16(0);
+elseif wheel_raw >= single(65535.0)
+    wheel_u16 = uint16(65535);
+else
+    wheel_u16 = uint16(floor(wheel_raw + single(0.5)));
+end
+air_wheel_echo(5) = uint8(bitand(wheel_u16,uint16(255)));
+air_wheel_echo(6) = uint8(bitshift(wheel_u16,-8));
+wheel_raw = wheel_h_sel * single(10.0);
+if wheel_raw <= single(0.0)
+    wheel_u16 = uint16(0);
+elseif wheel_raw >= single(65535.0)
+    wheel_u16 = uint16(65535);
+else
+    wheel_u16 = uint16(floor(wheel_raw + single(0.5)));
+end
+air_wheel_echo(7) = uint8(bitand(wheel_u16,uint16(255)));
+air_wheel_echo(8) = uint8(bitshift(wheel_u16,-8));
+end
+
+--- VCU10/DBC_Debug_StatusPack/DBC_Debug_StatusPack ---
+function status = dbg_status_pack(status_base, model_lox, model_hox)
+%#codegen
+status = uint8(status_base);
+status(5) = uint8(model_lox);
+status(6) = uint8(model_hox);
+end
+
+--- VCU10/EPS_SCS_Monitor/EPS_SCS_Monitor ---
+function eps_safety_fault = eps_scs_monitor(msg1, msg2)
+%#codegen
+% 0x401: Byte7 = XOR(Byte0..Byte6); 0x402: Byte1 为发送计数。
+persistent last_counter seen_count stale_count bad_count good_count fault
+if isempty(last_counter)
+    last_counter=msg2(2); seen_count=uint16(0); stale_count=uint16(0);
+    bad_count=uint16(0); good_count=uint16(0); fault=true;
+end
+counter=msg2(2);
+if counter~=last_counter
+    last_counter=counter; stale_count=uint16(0);
+    if seen_count<uint16(1000), seen_count=seen_count+uint16(1); end
+else
+    if stale_count<uint16(1000), stale_count=stale_count+uint16(1); end
+end
+checksum=uint8(0);
+for k=1:7
+    checksum=bitxor(checksum,msg1(k));
+end
+content_valid=(checksum==msg1(8)) && (msg1(3)==uint8(0)) && (msg1(7)==uint8(0));
+fresh=(seen_count>=uint16(3)) && (stale_count<uint16(30));
+valid_now=content_valid && fresh;
+if valid_now
+    bad_count=uint16(0); if good_count<uint16(1000), good_count=good_count+uint16(1); end
+    if good_count>=uint16(50), fault=false; end
+else
+    good_count=uint16(0); if bad_count<uint16(1000), bad_count=bad_count+uint16(1); end
+    if (bad_count>=uint16(3)) || (stale_count>=uint16(30)), fault=true; end
+end
+eps_safety_fault=fault;
+end
+
+
+--- VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor/FSEC_Sensor_Monitor ---
+function [brake_sensor_valid, safety_fault, brake_sensor_fault, air_sensor_fault, ebs_fault_indicator] = fsec_sensor_monitor(brake_raw_mv, air_ready_raw_mv, air_work_raw_mv, air_ready_bar, air_work_bar, esp_ok, res_ok, ebs_driver_ok)
+%#codegen
+% 制动踏板为 0-5 V；两路气压为 0-10 V。阈值需在最终标定后复核。
+persistent brake_bad brake_good air_bad air_good comm_bad comm_good ebs_bad ebs_good brake_fault air_fault comm_fault ebs_comm_fault
+if isempty(brake_bad)
+    brake_bad=uint16(0); brake_good=uint16(0); air_bad=uint16(0); air_good=uint16(0);
+    comm_bad=uint16(0); comm_good=uint16(0); ebs_bad=uint16(0); ebs_good=uint16(0);
+    brake_fault=false; air_fault=false; comm_fault=false; ebs_comm_fault=false;
+end
+brake_now = (brake_raw_mv < 100.0) || (brake_raw_mv > 4900.0);
+if brake_now
+    brake_good=uint16(0); if brake_bad<uint16(1000), brake_bad=brake_bad+uint16(1); end
+    if brake_bad>=uint16(10), brake_fault=true; end
+else
+    brake_bad=uint16(0); if brake_good<uint16(1000), brake_good=brake_good+uint16(1); end
+    if brake_good>=uint16(50), brake_fault=false; end
+end
+% 储气侧低压可直接阻止 Ready；下游低压仅在 EBS 触发后由响应监控判断。
+air_now = (air_ready_raw_mv > 9800.0) || (air_work_raw_mv > 9800.0) || ...
+          (air_ready_bar < 2.5) || (air_work_bar > air_ready_bar + 1.5);
+if air_now
+    air_good=uint16(0); if air_bad<uint16(1000), air_bad=air_bad+uint16(1); end
+    if air_bad>=uint16(50), air_fault=true; end
+else
+    air_bad=uint16(0); if air_good<uint16(1000), air_good=air_good+uint16(1); end
+    if air_good>=uint16(50), air_fault=false; end
+end
+comm_now = (~logical(esp_ok)) || (~logical(res_ok)) || (~logical(ebs_driver_ok));
+if comm_now
+    comm_good=uint16(0); if comm_bad<uint16(1000), comm_bad=comm_bad+uint16(1); end
+    if comm_bad>=uint16(30), comm_fault=true; end
+else
+    comm_bad=uint16(0); if comm_good<uint16(1000), comm_good=comm_good+uint16(1); end
+    if comm_good>=uint16(50), comm_fault=false; end
+end
+% EBS 红灯只显示 EBS/制动冗余本体故障，不显示 RES 一般安全事件。
+ebs_comm_now = (~logical(esp_ok)) || (~logical(ebs_driver_ok));
+if ebs_comm_now
+    ebs_good=uint16(0); if ebs_bad<uint16(1000), ebs_bad=ebs_bad+uint16(1); end
+    if ebs_bad>=uint16(30), ebs_comm_fault=true; end
+else
+    ebs_bad=uint16(0); if ebs_good<uint16(1000), ebs_good=ebs_good+uint16(1); end
+    if ebs_good>=uint16(50), ebs_comm_fault=false; end
+end
+brake_sensor_valid = (~brake_fault) && (~brake_now);
+brake_sensor_fault = brake_fault;
+air_sensor_fault = air_fault;
+safety_fault = brake_fault || air_fault || comm_fault;
+ebs_fault_indicator = brake_fault || air_fault || ebs_comm_fault;
+end
+
+
+--- VCU10/EBS/EBS_Response_Monitor/EBS_Response_Monitor ---
+function ebs_sensor_fault = ebs_response_monitor(trigger, asms, driver_ok, air_ready_bar, air_work_bar)
+%#codegen
+% EBS_Driver 负责电气诊断；VCU 校验触发后的气动建压响应。
+persistent last_trigger waiting wait_count relation_count clear_count fault_latched
+if isempty(last_trigger)
+    last_trigger=false; waiting=false; wait_count=uint16(0); relation_count=uint16(0);
+    clear_count=uint16(0); fault_latched=false;
+end
+rising = logical(trigger) && ~last_trigger; last_trigger=logical(trigger);
+if rising && logical(driver_ok) && (air_ready_bar >= 2.5) && (air_work_bar < 1.0)
+    waiting=true; wait_count=uint16(0);
+end
+if waiting
+    if air_work_bar >= 1.0
+        waiting=false; wait_count=uint16(0);
+    else
+        if wait_count<uint16(1000), wait_count=wait_count+uint16(1); end
+        if wait_count>=uint16(20), fault_latched=true; waiting=false; end
+    end
+end
+if air_work_bar > air_ready_bar + 1.5
+    if relation_count<uint16(1000), relation_count=relation_count+uint16(1); end
+    if relation_count>=uint16(20), fault_latched=true; end
+else
+    relation_count=uint16(0);
+end
+if (~logical(asms)) && logical(driver_ok) && (air_work_bar < 1.0) && (air_ready_bar >= 2.5)
+    if clear_count<uint16(1000), clear_count=clear_count+uint16(1); end
+    if clear_count>=uint16(100), fault_latched=false; end
+else
+    clear_count=uint16(0);
+end
+ebs_sensor_fault = fault_latched;
+end
+
+
+--- VCU10/Motor_Control/ManualTorque_Calculation/APPS_Electrical_Monitor/APPS_Electrical_Monitor ---
+function [apps_valid, apps_electrical_fault] = apps_electrical_monitor(apps1_raw_mv, apps2_raw_mv)
+%#codegen
+% 0-5 V APPS 单通道开路/短路诊断；最终阈值由实车标定确认。
+persistent bad_count good_count fault
+if isempty(bad_count)
+    bad_count=uint16(0); good_count=uint16(0); fault=false;
+end
+bad_now=(apps1_raw_mv<100.0)||(apps1_raw_mv>4900.0)||...
+        (apps2_raw_mv<100.0)||(apps2_raw_mv>4900.0);
+if bad_now
+    good_count=uint16(0); if bad_count<uint16(1000), bad_count=bad_count+uint16(1); end
+    if bad_count>=uint16(10), fault=true; end
+else
+    bad_count=uint16(0); if good_count<uint16(1000), good_count=good_count+uint16(1); end
+    if good_count>=uint16(50), fault=false; end
+end
+apps_valid=(~bad_now) && (~fault);
+apps_electrical_fault=fault;
+end
+
+
+[BLOCKS VCU10/AS_Stateflow]
+VCU10/AS_Stateflow/asms_button | Inport | Port=1
+VCU10/AS_Stateflow/ebs_check | Inport | Port=2
+VCU10/AS_Stateflow/as_task | Inport | Port=3
+VCU10/AS_Stateflow/ts | Inport | Port=4
+VCU10/AS_Stateflow/ebs_working | Inport | Port=5
+VCU10/AS_Stateflow/brake_on | Inport | Port=6
+VCU10/AS_Stateflow/asb_check | Inport | Port=7
+VCU10/AS_Stateflow/sensor_signal | Inport | Port=8
+VCU10/AS_Stateflow/task_finish | Inport | Port=9
+VCU10/AS_Stateflow/steer_zero | Inport | Port=10
+VCU10/AS_Stateflow/res_signal | Inport | Port=11
+VCU10/AS_Stateflow/ebs_warning | Inport | Port=12
+VCU10/AS_Stateflow/ami_inspection | Inport | Port=13
+VCU10/AS_Stateflow/safety_fault | Inport | Port=14
+VCU10/AS_Stateflow/function | TriggerPort
+VCU10/AS_Stateflow/Bus
+Creator | BusCreator | Inputs=11
+VCU10/AS_Stateflow/Bus
+Selector | BusSelector
+VCU10/AS_Stateflow/Bus
+Selector1 | BusSelector
+VCU10/AS_Stateflow/Car_Spdzero_Check | SubSystem
+VCU10/AS_Stateflow/Chart | SubSystem
+VCU10/AS_Stateflow/Data Store
+Read1 | DataStoreRead | DataStoreName=steering_flag
+VCU10/AS_Stateflow/Data Store
+Read10 | DataStoreRead | DataStoreName=r2d_flag
+VCU10/AS_Stateflow/Data Store
+Read11 | DataStoreRead | DataStoreName=ts_flag
+VCU10/AS_Stateflow/Data Store
+Read2 | DataStoreRead | DataStoreName=brake_flag
+VCU10/AS_Stateflow/Data Store
+Read3 | DataStoreRead | DataStoreName=manual_driving_flag
+VCU10/AS_Stateflow/Data Store
+Read4 | DataStoreRead | DataStoreName=as_emergency_flag
+VCU10/AS_Stateflow/Data Store
+Read5 | DataStoreRead | DataStoreName=ebs_system_flag
+VCU10/AS_Stateflow/Data Store
+Read6 | DataStoreRead | DataStoreName=as_off_flag
+VCU10/AS_Stateflow/Data Store
+Read7 | DataStoreRead | DataStoreName=as_ready_flag
+VCU10/AS_Stateflow/Data Store
+Read8 | DataStoreRead | DataStoreName=as_driving_flag
+VCU10/AS_Stateflow/Data Store
+Read9 | DataStoreRead | DataStoreName=as_finished_flag
+VCU10/AS_Stateflow/Data Store
+Write1 | DataStoreWrite | DataStoreName=brake_flag
+VCU10/AS_Stateflow/Data Store
+Write10 | DataStoreWrite | DataStoreName=r2d_flag
+VCU10/AS_Stateflow/Data Store
+Write11 | DataStoreWrite | DataStoreName=ts_flag
+VCU10/AS_Stateflow/Data Store
+Write2 | DataStoreWrite | DataStoreName=manual_driving_flag
+VCU10/AS_Stateflow/Data Store
+Write3 | DataStoreWrite | DataStoreName=as_emergency_flag
+VCU10/AS_Stateflow/Data Store
+Write4 | DataStoreWrite | DataStoreName=steering_flag
+VCU10/AS_Stateflow/Data Store
+Write5 | DataStoreWrite | DataStoreName=ebs_system_flag
+VCU10/AS_Stateflow/Data Store
+Write6 | DataStoreWrite | DataStoreName=as_off_flag
+VCU10/AS_Stateflow/Data Store
+Write7 | DataStoreWrite | DataStoreName=as_ready_flag
+VCU10/AS_Stateflow/Data Store
+Write8 | DataStoreWrite | DataStoreName=as_driving_flag
+VCU10/AS_Stateflow/Data Store
+Write9 | DataStoreWrite | DataStoreName=as_finished_flag
+VCU10/AS_Stateflow/Logical
+Operator | Logic | Operator=NOT | Inputs=2
+VCU10/AS_Stateflow/as_ebs_trig | Outport | Port=1
+VCU10/AS_Stateflow/r2d_warning | Outport | Port=2
+VCU10/AS_Stateflow/as_led_blue | Outport | Port=3
+VCU10/AS_Stateflow/as_led_yellow | Outport | Port=4
+VCU10/AS_Stateflow/steer_return | Outport | Port=5
+VCU10/AS_Stateflow/as_flag_state | Outport | Port=6
+VCU10/AS_Stateflow/safety_lock | Outport | Port=7
+
+[LINES VCU10/AS_Stateflow]
+VCU10/AS_Stateflow/Chart:7 -> VCU10/AS_Stateflow/safety_lock:1
+VCU10/AS_Stateflow/safety_fault:1 -> VCU10/AS_Stateflow/Chart:14
+VCU10/AS_Stateflow/Logical
+Operator:1 -> VCU10/AS_Stateflow/Chart:3
+VCU10/AS_Stateflow/asms_button:1 -> VCU10/AS_Stateflow/Chart:1
+VCU10/AS_Stateflow/asms_button:1 -> VCU10/AS_Stateflow/Logical
+Operator:1
+VCU10/AS_Stateflow/asms_button:1 -> VCU10/AS_Stateflow/Logical
+Operator:1
+VCU10/AS_Stateflow/asms_button:1 -> VCU10/AS_Stateflow/Chart:1
+VCU10/AS_Stateflow/ami_inspection:1 -> VCU10/AS_Stateflow/Chart:16
+VCU10/AS_Stateflow/Chart:17 -> VCU10/AS_Stateflow/Data Store
+Write11:1
+VCU10/AS_Stateflow/Data Store
+Read11:1 -> VCU10/AS_Stateflow/Bus
+Creator:11
+VCU10/AS_Stateflow/Data Store
+Read10:1 -> VCU10/AS_Stateflow/Bus
+Creator:10
+VCU10/AS_Stateflow/Chart:16 -> VCU10/AS_Stateflow/Data Store
+Write10:1
+VCU10/AS_Stateflow/Data Store
+Read9:1 -> VCU10/AS_Stateflow/Bus
+Creator:9
+VCU10/AS_Stateflow/Chart:15 -> VCU10/AS_Stateflow/Data Store
+Write9:1
+VCU10/AS_Stateflow/Data Store
+Read8:1 -> VCU10/AS_Stateflow/Bus
+Creator:8
+VCU10/AS_Stateflow/Chart:14 -> VCU10/AS_Stateflow/Data Store
+Write8:1
+VCU10/AS_Stateflow/Data Store
+Read7:1 -> VCU10/AS_Stateflow/Bus
+Creator:7
+VCU10/AS_Stateflow/Chart:13 -> VCU10/AS_Stateflow/Data Store
+Write7:1
+VCU10/AS_Stateflow/Data Store
+Read6:1 -> VCU10/AS_Stateflow/Bus
+Creator:6
+VCU10/AS_Stateflow/Chart:12 -> VCU10/AS_Stateflow/Data Store
+Write6:1
+VCU10/AS_Stateflow/Data Store
+Read5:1 -> VCU10/AS_Stateflow/Bus
+Creator:5
+VCU10/AS_Stateflow/Chart:11 -> VCU10/AS_Stateflow/Data Store
+Write5:1
+VCU10/AS_Stateflow/Chart:10 -> VCU10/AS_Stateflow/Data Store
+Write3:1
+VCU10/AS_Stateflow/Data Store
+Read4:1 -> VCU10/AS_Stateflow/Bus
+Creator:4
+VCU10/AS_Stateflow/Data Store
+Read3:1 -> VCU10/AS_Stateflow/Bus
+Creator:3
+VCU10/AS_Stateflow/Chart:9 -> VCU10/AS_Stateflow/Data Store
+Write2:1
+VCU10/AS_Stateflow/Data Store
+Read2:1 -> VCU10/AS_Stateflow/Bus
+Creator:2
+VCU10/AS_Stateflow/Chart:8 -> VCU10/AS_Stateflow/Data Store
+Write1:1
+VCU10/AS_Stateflow/Data Store
+Read1:1 -> VCU10/AS_Stateflow/Bus
+Creator:1
+VCU10/AS_Stateflow/Chart:6 -> VCU10/AS_Stateflow/Data Store
+Write4:1
+VCU10/AS_Stateflow/Bus
+Creator:1 -> VCU10/AS_Stateflow/as_flag_state:1
+VCU10/AS_Stateflow/Car_Spdzero_Check:1 -> VCU10/AS_Stateflow/Chart:10
+VCU10/AS_Stateflow/Bus
+Selector1:2 -> VCU10/AS_Stateflow/Car_Spdzero_Check:2
+VCU10/AS_Stateflow/Bus
+Selector1:1 -> VCU10/AS_Stateflow/Car_Spdzero_Check:1
+VCU10/AS_Stateflow/sensor_signal:1 -> VCU10/AS_Stateflow/Bus
+Selector1:1
+VCU10/AS_Stateflow/Bus
+Selector:1 -> VCU10/AS_Stateflow/Chart:12
+VCU10/AS_Stateflow/Bus
+Selector:2 -> VCU10/AS_Stateflow/Chart:15
+VCU10/AS_Stateflow/res_signal:1 -> VCU10/AS_Stateflow/Bus
+Selector:1
+VCU10/AS_Stateflow/ebs_warning:1 -> VCU10/AS_Stateflow/Chart:6
+VCU10/AS_Stateflow/Chart:5 -> VCU10/AS_Stateflow/steer_return:1
+VCU10/AS_Stateflow/Chart:4 -> VCU10/AS_Stateflow/as_led_yellow:1
+VCU10/AS_Stateflow/Chart:3 -> VCU10/AS_Stateflow/as_led_blue:1
+VCU10/AS_Stateflow/Chart:2 -> VCU10/AS_Stateflow/r2d_warning:1
+VCU10/AS_Stateflow/Chart:1 -> VCU10/AS_Stateflow/as_ebs_trig:1
+VCU10/AS_Stateflow/ts:1 -> VCU10/AS_Stateflow/Chart:5
+VCU10/AS_Stateflow/steer_zero:1 -> VCU10/AS_Stateflow/Chart:13
+VCU10/AS_Stateflow/task_finish:1 -> VCU10/AS_Stateflow/Chart:11
+VCU10/AS_Stateflow/asb_check:1 -> VCU10/AS_Stateflow/Chart:9
+VCU10/AS_Stateflow/brake_on:1 -> VCU10/AS_Stateflow/Chart:8
+VCU10/AS_Stateflow/ebs_working:1 -> VCU10/AS_Stateflow/Chart:7
+VCU10/AS_Stateflow/as_task:1 -> VCU10/AS_Stateflow/Chart:4
+VCU10/AS_Stateflow/ebs_check:1 -> VCU10/AS_Stateflow/Chart:2
+
+[BLOCKS VCU10/ASB_Selfcheck]
+VCU10/ASB_Selfcheck/ebs_drivercheck | Inport | Port=1
+VCU10/ASB_Selfcheck/sensor_signal | Inport | Port=2
+VCU10/ASB_Selfcheck/ESP_T_03signal | Inport | Port=3
+VCU10/ASB_Selfcheck/res_signal | Inport | Port=4
+VCU10/ASB_Selfcheck/brkmotor_check | Inport | Port=5
+VCU10/ASB_Selfcheck/function | TriggerPort
+VCU10/ASB_Selfcheck/Air_Fault_Class_Terminator | Terminator
+VCU10/ASB_Selfcheck/Brake_Fault_Class_Terminator | Terminator
+VCU10/ASB_Selfcheck/Brake_On_Valid_Gate | Logic | Operator=AND | Inputs=2
+VCU10/ASB_Selfcheck/Brake_Sensor_Check | SubSystem
+VCU10/ASB_Selfcheck/Bus
+Selector | BusSelector
+VCU10/ASB_Selfcheck/Bus
+Selector1 | BusSelector
+VCU10/ASB_Selfcheck/Bus
+Selector2 | BusSelector
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor | SubSystem
+VCU10/ASB_Selfcheck/Logical
+Operator | Logic | Operator=AND | Inputs=5
+VCU10/ASB_Selfcheck/No_FSEC_Safety_Fault | Logic | Operator=NOT | Inputs=1
+VCU10/ASB_Selfcheck/asb_check | Outport | Port=1
+VCU10/ASB_Selfcheck/brake_on | Outport | Port=2
+VCU10/ASB_Selfcheck/safety_fault | Outport | Port=3
+VCU10/ASB_Selfcheck/ebs_fault_indicator | Outport | Port=4
+
+[LINES VCU10/ASB_Selfcheck]
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:5 -> VCU10/ASB_Selfcheck/ebs_fault_indicator:1
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:4 -> VCU10/ASB_Selfcheck/Air_Fault_Class_Terminator:1
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:3 -> VCU10/ASB_Selfcheck/Brake_Fault_Class_Terminator:1
+VCU10/ASB_Selfcheck/No_FSEC_Safety_Fault:1 -> VCU10/ASB_Selfcheck/Logical
+Operator:5
+VCU10/ASB_Selfcheck/Brake_On_Valid_Gate:1 -> VCU10/ASB_Selfcheck/brake_on:1
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:1 -> VCU10/ASB_Selfcheck/Brake_On_Valid_Gate:2
+VCU10/ASB_Selfcheck/Brake_Sensor_Check:2 -> VCU10/ASB_Selfcheck/Brake_On_Valid_Gate:1
+VCU10/ASB_Selfcheck/Bus
+Selector:5 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:5
+VCU10/ASB_Selfcheck/Bus
+Selector:4 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:3
+VCU10/ASB_Selfcheck/Bus
+Selector:3 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:2
+VCU10/ASB_Selfcheck/Bus
+Selector:2 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:1
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:2 -> VCU10/ASB_Selfcheck/safety_fault:1
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:2 -> VCU10/ASB_Selfcheck/No_FSEC_Safety_Fault:1
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:2 -> VCU10/ASB_Selfcheck/No_FSEC_Safety_Fault:1
+VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:2 -> VCU10/ASB_Selfcheck/safety_fault:1
+VCU10/ASB_Selfcheck/Brake_Sensor_Check:1 -> VCU10/ASB_Selfcheck/Logical
+Operator:3
+VCU10/ASB_Selfcheck/Bus
+Selector1:1 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:7
+VCU10/ASB_Selfcheck/Bus
+Selector1:1 -> VCU10/ASB_Selfcheck/Logical
+Operator:2
+VCU10/ASB_Selfcheck/Bus
+Selector1:1 -> VCU10/ASB_Selfcheck/Logical
+Operator:2
+VCU10/ASB_Selfcheck/Bus
+Selector1:1 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:7
+VCU10/ASB_Selfcheck/Bus
+Selector2:4 -> VCU10/ASB_Selfcheck/Brake_Sensor_Check:5
+VCU10/ASB_Selfcheck/Bus
+Selector2:3 -> VCU10/ASB_Selfcheck/Brake_Sensor_Check:4
+VCU10/ASB_Selfcheck/Bus
+Selector2:2 -> VCU10/ASB_Selfcheck/Brake_Sensor_Check:3
+VCU10/ASB_Selfcheck/Bus
+Selector2:1 -> VCU10/ASB_Selfcheck/Brake_Sensor_Check:2
+VCU10/ASB_Selfcheck/ESP_T_03signal:1 -> VCU10/ASB_Selfcheck/Bus
+Selector2:1
+VCU10/ASB_Selfcheck/res_signal:1 -> VCU10/ASB_Selfcheck/Bus
+Selector1:1
+VCU10/ASB_Selfcheck/Logical
+Operator:1 -> VCU10/ASB_Selfcheck/asb_check:1
+VCU10/ASB_Selfcheck/brkmotor_check:1 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:6
+VCU10/ASB_Selfcheck/brkmotor_check:1 -> VCU10/ASB_Selfcheck/Logical
+Operator:4
+VCU10/ASB_Selfcheck/brkmotor_check:1 -> VCU10/ASB_Selfcheck/Logical
+Operator:4
+VCU10/ASB_Selfcheck/brkmotor_check:1 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:6
+VCU10/ASB_Selfcheck/ebs_drivercheck:1 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:8
+VCU10/ASB_Selfcheck/ebs_drivercheck:1 -> VCU10/ASB_Selfcheck/Logical
+Operator:1
+VCU10/ASB_Selfcheck/ebs_drivercheck:1 -> VCU10/ASB_Selfcheck/Logical
+Operator:1
+VCU10/ASB_Selfcheck/ebs_drivercheck:1 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:8
+VCU10/ASB_Selfcheck/Bus
+Selector:1 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:4
+VCU10/ASB_Selfcheck/Bus
+Selector:1 -> VCU10/ASB_Selfcheck/Brake_Sensor_Check:1
+VCU10/ASB_Selfcheck/Bus
+Selector:1 -> VCU10/ASB_Selfcheck/Brake_Sensor_Check:1
+VCU10/ASB_Selfcheck/Bus
+Selector:1 -> VCU10/ASB_Selfcheck/FSEC_Sensor_Monitor:4
+VCU10/ASB_Selfcheck/sensor_signal:1 -> VCU10/ASB_Selfcheck/Bus
+Selector:1
+
+[BLOCKS VCU10/EBS]
+VCU10/EBS/asb_check | Inport | Port=1
+VCU10/EBS/ipc_err | Inport | Port=2
+VCU10/EBS/as_ebs_trig | Inport | Port=3
+VCU10/EBS/Hin | Inport | Port=4
+VCU10/EBS/sensor_signal | Inport | Port=5
+VCU10/EBS/function | TriggerPort
+VCU10/EBS/Bus
+Selector | BusSelector
+VCU10/EBS/Bus
+Selector1 | BusSelector
+VCU10/EBS/Compare
+To Constant | SubSystem
+VCU10/EBS/Compare
+To Constant1 | SubSystem
+VCU10/EBS/EBS_Response_Monitor | SubSystem
+VCU10/EBS/EBS_Sensor_Fault_Delay | UnitDelay
+VCU10/EBS/EBS_Trigger_ASMS_Gate | Logic | Operator=AND | Inputs=2
+VCU10/EBS/Logical
+Operator1 | Logic | Operator=AND | Inputs=2
+VCU10/EBS/Logical
+Operator2 | Logic | Operator=AND | Inputs=2
+VCU10/EBS/Logical
+Operator3 | Logic | Operator=NOT | Inputs=2
+VCU10/EBS/ebs_trig | Outport | Port=1
+VCU10/EBS/ebs_watchdog | Outport | Port=2
+VCU10/EBS/ebs_working | Outport | Port=3
+VCU10/EBS/ebs_check | Outport | Port=4
+VCU10/EBS/ebs_sensor_fault | Outport | Port=5
+
+[LINES VCU10/EBS]
+VCU10/EBS/EBS_Trigger_ASMS_Gate:1 -> VCU10/EBS/EBS_Response_Monitor:1
+VCU10/EBS/EBS_Trigger_ASMS_Gate:1 -> VCU10/EBS/ebs_trig:1
+VCU10/EBS/EBS_Trigger_ASMS_Gate:1 -> VCU10/EBS/ebs_trig:1
+VCU10/EBS/EBS_Trigger_ASMS_Gate:1 -> VCU10/EBS/EBS_Response_Monitor:1
+VCU10/EBS/EBS_Sensor_Fault_Delay:1 -> VCU10/EBS/ebs_sensor_fault:1
+VCU10/EBS/EBS_Response_Monitor:1 -> VCU10/EBS/EBS_Sensor_Fault_Delay:1
+VCU10/EBS/Bus
+Selector1:1 -> VCU10/EBS/EBS_Response_Monitor:4
+VCU10/EBS/Logical
+Operator2:1 -> VCU10/EBS/ebs_check:1
+VCU10/EBS/Compare
+To Constant1:1 -> VCU10/EBS/Logical
+Operator2:2
+VCU10/EBS/Logical
+Operator3:1 -> VCU10/EBS/Logical
+Operator2:1
+VCU10/EBS/Bus
+Selector1:2 -> VCU10/EBS/EBS_Response_Monitor:5
+VCU10/EBS/Bus
+Selector1:2 -> VCU10/EBS/Compare
+To Constant:1
+VCU10/EBS/Bus
+Selector1:2 -> VCU10/EBS/Compare
+To Constant1:1
+VCU10/EBS/Bus
+Selector1:2 -> VCU10/EBS/Compare
+To Constant1:1
+VCU10/EBS/Bus
+Selector1:2 -> VCU10/EBS/Compare
+To Constant:1
+VCU10/EBS/Bus
+Selector1:2 -> VCU10/EBS/EBS_Response_Monitor:5
+VCU10/EBS/Bus
+Selector:2 -> VCU10/EBS/EBS_Response_Monitor:3
+VCU10/EBS/Bus
+Selector:2 -> VCU10/EBS/Logical
+Operator1:1
+VCU10/EBS/Bus
+Selector:2 -> VCU10/EBS/Logical
+Operator1:1
+VCU10/EBS/Bus
+Selector:2 -> VCU10/EBS/EBS_Response_Monitor:3
+VCU10/EBS/Logical
+Operator1:1 -> VCU10/EBS/Logical
+Operator3:1
+VCU10/EBS/Logical
+Operator1:1 -> VCU10/EBS/ebs_working:1
+VCU10/EBS/Logical
+Operator1:1 -> VCU10/EBS/ebs_working:1
+VCU10/EBS/Logical
+Operator1:1 -> VCU10/EBS/Logical
+Operator3:1
+VCU10/EBS/Compare
+To Constant:1 -> VCU10/EBS/Logical
+Operator1:2
+VCU10/EBS/sensor_signal:1 -> VCU10/EBS/Bus
+Selector1:1
+VCU10/EBS/Bus
+Selector:1 -> VCU10/EBS/EBS_Trigger_ASMS_Gate:2
+VCU10/EBS/Bus
+Selector:1 -> VCU10/EBS/EBS_Response_Monitor:2
+VCU10/EBS/Bus
+Selector:1 -> VCU10/EBS/ebs_watchdog:1
+VCU10/EBS/Bus
+Selector:1 -> VCU10/EBS/ebs_watchdog:1
+VCU10/EBS/Bus
+Selector:1 -> VCU10/EBS/EBS_Response_Monitor:2
+VCU10/EBS/Bus
+Selector:1 -> VCU10/EBS/EBS_Trigger_ASMS_Gate:2
+VCU10/EBS/Hin:1 -> VCU10/EBS/Bus
+Selector:1
+VCU10/EBS/as_ebs_trig:1 -> VCU10/EBS/EBS_Trigger_ASMS_Gate:1
+VCU10/EBS/as_ebs_trig:1 -> VCU10/EBS/EBS_Trigger_ASMS_Gate:1
+
+[BLOCKS VCU10/Motor_Control]
+VCU10/Motor_Control/sensor_signal | Inport | Port=1
+VCU10/Motor_Control/manual_driving_flag | Inport | Port=2
+VCU10/Motor_Control/as_flag | Inport | Port=3
+VCU10/Motor_Control/ipc_motor_torque | Inport | Port=4
+VCU10/Motor_Control/ts | Inport | Port=5
+VCU10/Motor_Control/function | TriggerPort
+VCU10/Motor_Control/ASTorque_Calculation | SubSystem
+VCU10/Motor_Control/AS_Driving_Read | DataStoreRead | DataStoreName=as_driving_flag
+VCU10/Motor_Control/AS_Emergency_Read | DataStoreRead | DataStoreName=as_emergency_flag
+VCU10/Motor_Control/AS_Torque_Enable | Logic | Operator=AND | Inputs=4
+VCU10/Motor_Control/Emergency_Torque_Gate | Switch | Threshold=0.5
+VCU10/Motor_Control/Emergency_Zero_Torque | Constant | Value=0
+VCU10/Motor_Control/FSEC_Safety_Lock_Read | DataStoreRead | DataStoreName=safety_lock
+VCU10/Motor_Control/From3 | From
+VCU10/Motor_Control/Goto2 | Goto
+VCU10/Motor_Control/MCU1_Rx_Command | SubSystem
+VCU10/Motor_Control/MCU1_Rx_Command3 | SubSystem
+VCU10/Motor_Control/ManualTorque_Calculation | SubSystem
+VCU10/Motor_Control/Motor_Torque_Stateflow | SubSystem
+VCU10/Motor_Control/No_FSEC_Safety_Lock | Logic | Operator=NOT | Inputs=1
+VCU10/Motor_Control/R2D_Complete | Logic | Operator=NOT | Inputs=1
+VCU10/Motor_Control/R2D_Read | DataStoreRead | DataStoreName=r2d_flag
+VCU10/Motor_Control/cana_motor_cmd | Outport | Port=1
+VCU10/Motor_Control/cana_motor_cmd3 | Outport | Port=2
+
+[LINES VCU10/Motor_Control]
+VCU10/Motor_Control/AS_Torque_Enable:1 -> VCU10/Motor_Control/Motor_Torque_Stateflow:2
+VCU10/Motor_Control/No_FSEC_Safety_Lock:1 -> VCU10/Motor_Control/AS_Torque_Enable:4
+VCU10/Motor_Control/R2D_Complete:1 -> VCU10/Motor_Control/AS_Torque_Enable:3
+VCU10/Motor_Control/AS_Driving_Read:1 -> VCU10/Motor_Control/AS_Torque_Enable:2
+VCU10/Motor_Control/as_flag:1 -> VCU10/Motor_Control/AS_Torque_Enable:1
+VCU10/Motor_Control/FSEC_Safety_Lock_Read:1 -> VCU10/Motor_Control/No_FSEC_Safety_Lock:1
+VCU10/Motor_Control/R2D_Read:1 -> VCU10/Motor_Control/R2D_Complete:1
+VCU10/Motor_Control/Emergency_Torque_Gate:1 -> VCU10/Motor_Control/Goto2:1
+VCU10/Motor_Control/Motor_Torque_Stateflow:1 -> VCU10/Motor_Control/Emergency_Torque_Gate:3
+VCU10/Motor_Control/AS_Emergency_Read:1 -> VCU10/Motor_Control/Emergency_Torque_Gate:2
+VCU10/Motor_Control/Emergency_Zero_Torque:1 -> VCU10/Motor_Control/Emergency_Torque_Gate:1
+VCU10/Motor_Control/ipc_motor_torque:1 -> VCU10/Motor_Control/ASTorque_Calculation:1
+VCU10/Motor_Control/MCU1_Rx_Command3:1 -> VCU10/Motor_Control/cana_motor_cmd3:1
+VCU10/Motor_Control/MCU1_Rx_Command:1 -> VCU10/Motor_Control/cana_motor_cmd:1
+VCU10/Motor_Control/From3:1 -> VCU10/Motor_Control/MCU1_Rx_Command:2
+VCU10/Motor_Control/ts:1 -> VCU10/Motor_Control/MCU1_Rx_Command:1
+VCU10/Motor_Control/ASTorque_Calculation:1 -> VCU10/Motor_Control/Motor_Torque_Stateflow:4
+VCU10/Motor_Control/ManualTorque_Calculation:1 -> VCU10/Motor_Control/Motor_Torque_Stateflow:3
+VCU10/Motor_Control/manual_driving_flag:1 -> VCU10/Motor_Control/Motor_Torque_Stateflow:1
+VCU10/Motor_Control/sensor_signal:1 -> VCU10/Motor_Control/ManualTorque_Calculation:1
+
+[BLOCKS VCU10/Res]
+VCU10/Res/res_msg | Inport | Port=1
+VCU10/Res/function | TriggerPort
+VCU10/Res/Bus
+Selector | BusSelector
+VCU10/Res/Res_Msg | SubSystem
+VCU10/Res/res_signal | Outport | Port=1
+VCU10/Res/res_error | Outport | Port=2
+
+[LINES VCU10/Res]
+VCU10/Res/Bus
+Selector:1 -> VCU10/Res/res_error:1
+VCU10/Res/Res_Msg:1 -> VCU10/Res/res_signal:1
+VCU10/Res/Res_Msg:1 -> VCU10/Res/Bus
+Selector:1
+VCU10/Res/Res_Msg:1 -> VCU10/Res/Bus
+Selector:1
+VCU10/Res/Res_Msg:1 -> VCU10/Res/res_signal:1
+VCU10/Res/res_msg:1 -> VCU10/Res/Res_Msg:1
+
+[BLOCKS VCU10/Output_Convert]
+VCU10/Output_Convert/led_brake | Inport | Port=1
+VCU10/Output_Convert/led_assi_y | Inport | Port=2
+VCU10/Output_Convert/led_assi_b | Inport | Port=3
+VCU10/Output_Convert/led_ebserror | Inport | Port=4
+VCU10/Output_Convert/res_error | Inport | Port=5
+VCU10/Output_Convert/ebs_trig | Inport | Port=6
+VCU10/Output_Convert/led_bmserr | Inport | Port=7
+VCU10/Output_Convert/led_imderr | Inport | Port=8
+VCU10/Output_Convert/di8 | Inport | Port=9
+VCU10/Output_Convert/run | Inport | Port=10
+VCU10/Output_Convert/buzzer_r2d | Inport | Port=11
+VCU10/Output_Convert/buzzer_ebs | Inport | Port=12
+VCU10/Output_Convert/function | TriggerPort
+VCU10/Output_Convert/Physical_HO1_8_Pack | SubSystem
+VCU10/Output_Convert/Physical_OUT1_7_Pack | SubSystem
+VCU10/Output_Convert/Unused_HO_Bit | Constant | Value=false
+VCU10/Output_Convert/Unused_OUT_Bit | Constant | Value=false
+VCU10/Output_Convert/model_lox | Outport | Port=1
+VCU10/Output_Convert/model_hox | Outport | Port=2
+
+[LINES VCU10/Output_Convert]
+VCU10/Output_Convert/Physical_HO1_8_Pack:1 -> VCU10/Output_Convert/model_hox:1
+VCU10/Output_Convert/ebs_trig:1 -> VCU10/Output_Convert/Physical_HO1_8_Pack:8
+VCU10/Output_Convert/led_bmserr:1 -> VCU10/Output_Convert/Physical_HO1_8_Pack:7
+VCU10/Output_Convert/led_imderr:1 -> VCU10/Output_Convert/Physical_HO1_8_Pack:6
+VCU10/Output_Convert/di8:1 -> VCU10/Output_Convert/Physical_HO1_8_Pack:5
+VCU10/Output_Convert/run:1 -> VCU10/Output_Convert/Physical_HO1_8_Pack:4
+VCU10/Output_Convert/buzzer_r2d:1 -> VCU10/Output_Convert/Physical_HO1_8_Pack:3
+VCU10/Output_Convert/buzzer_ebs:1 -> VCU10/Output_Convert/Physical_HO1_8_Pack:2
+VCU10/Output_Convert/Unused_HO_Bit:1 -> VCU10/Output_Convert/Physical_HO1_8_Pack:1
+VCU10/Output_Convert/Physical_OUT1_7_Pack:1 -> VCU10/Output_Convert/model_lox:1
+VCU10/Output_Convert/led_brake:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:7
+VCU10/Output_Convert/led_assi_b:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:6
+VCU10/Output_Convert/led_assi_y:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:5
+VCU10/Output_Convert/led_ebserror:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:4
+VCU10/Output_Convert/res_error:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:3
+VCU10/Output_Convert/Unused_OUT_Bit:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:2
+VCU10/Output_Convert/Unused_OUT_Bit:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:1
+VCU10/Output_Convert/Unused_OUT_Bit:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:1
+VCU10/Output_Convert/Unused_OUT_Bit:1 -> VCU10/Output_Convert/Physical_OUT1_7_Pack:2
+
+AUDIT_COMPLETE=1
+[警告: Cannot close the model 'hdlsllib' because it has been changed. Use the command 'save_system' to first save the model] 
+[警告: Cannot close the model 'hdlmdlgenlib' because it has been changed. Use the command 'save_system' to first save the model] 
