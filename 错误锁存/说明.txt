@@ -28,6 +28,9 @@ H6.2  GND        电源回路
 
 3. 锁存逻辑
 
+完整的非继电器模块表及带信号名的输入/输出边界见：
+../所有板子完整仿真/fin/非继电器模块展示.md 第2节。
+
 IMD_ERROR、BMS_ERROR 经 LM393 判定和 RC 滤波后进入各自 D 触发器；故障出现后，即使输入恢复，也应保持到对应 RESET 有效。
 
 EBS_ERROR、RES_ERROR 共用 R_E_STATE 锁存通道，R_E_RESET 只清除该组合通道。
