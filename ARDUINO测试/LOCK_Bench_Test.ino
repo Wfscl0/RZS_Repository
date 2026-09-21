@@ -5,13 +5,12 @@
 
 // Error-latch board bench harness, Arduino Nano ATmega328P (5 V / 16 MHz).
 //
-// D13 EBS_ERROR   output: HEALTHY=5 V, FAULT=0 V
-// D12 unused      high impedance; RES_ERROR requires an external 12/0 V source
+// D8  SCOUT       input with Nano pull-up
+// D7  SCIN        output held at GND
 // D11 R_E_RESET   open-drain output, active low
 // D10 BMS_RESET   open-drain output, active low
 // D9  IMD_RESET   open-drain output, active low
-// D8  SCOUT       input with Nano pull-up
-// D7  SCIN        output held at GND
+// D12 EBS_ERROR   output: HEALTHY=5 V, FAULT=0 V
 // D6  R_E_LED     high-impedance input
 // D5  BMS_LED     high-impedance input
 // D4  IMD_LED     high-impedance input
@@ -20,20 +19,19 @@
 // raw LOW reading is conclusive only when each input has an external pulldown
 // (about 10 kOhm recommended). Never enable the Nano pull-ups on D4..D6.
 //
-// The lock-board 12 V and IMD/BMS analog voltages are switched manually.
-// Nano startup is safe for an unpowered board: EBS/RES start at FAULT (0 V),
-// RESET pins are high impedance, and LED pins are high impedance.
+// The lock-board 12 V and IMD/BMS/RES voltages are switched manually.
+// Nano startup is safe for an unpowered board: EBS starts at FAULT (0 V),
+// RESET pins and LED pins are high impedance when released/read.
 
-static const uint8_t PIN_IMD_LED = 4;
-static const uint8_t PIN_BMS_LED = 5;
 static const uint8_t PIN_RE_LED = 6;
-static const uint8_t PIN_SCIN = 7;
-static const uint8_t PIN_SCOUT = 8;
-static const uint8_t PIN_IMD_RESET = 9;
-static const uint8_t PIN_BMS_RESET = 10;
+static const uint8_t PIN_BMS_LED = 5;
+static const uint8_t PIN_IMD_LED = 4;
+static const uint8_t PIN_EBS_ERROR = 12;
 static const uint8_t PIN_RE_RESET = 11;
-static const uint8_t PIN_UNUSED_D12 = 12;
-static const uint8_t PIN_EBS_ERROR = 13;
+static const uint8_t PIN_BMS_RESET = 10;
+static const uint8_t PIN_IMD_RESET = 9;
+static const uint8_t PIN_SCOUT = 8;
+static const uint8_t PIN_SCIN = 7;
 
 static char lineBuffer[80];
 static uint8_t lineLength = 0;
@@ -146,10 +144,27 @@ static void measureSignals(uint16_t durationMs) {
   Serial.println(F(" (LED OFF requires external pulldowns for certainty)"));
 }
 
+static void testContactLoop() {
+  // Run only with SCIN/SCOUT disconnected from the lock board and D7-D8
+  // connected directly. D8 must follow both levels driven by D7.
+  digitalWrite(PIN_SCIN, LOW);
+  delay(10);
+  bool lowRead = digitalRead(PIN_SCOUT) == LOW;
+  digitalWrite(PIN_SCIN, HIGH);
+  delay(10);
+  bool highRead = digitalRead(PIN_SCOUT) == HIGH;
+  digitalWrite(PIN_SCIN, LOW);
+
+  Serial.print(F("LOOPTEST D7->D8 low="));
+  Serial.print(lowRead ? F("OK") : F("FAIL"));
+  Serial.print(F(" high="));
+  Serial.print(highRead ? F("OK") : F("FAIL"));
+  Serial.print(F(" result="));
+  Serial.println(lowRead && highRead ? F("PASS") : F("FAIL"));
+}
+
 static void setSafeState() {
   setErrorInput(PIN_EBS_ERROR, false);
-  digitalWrite(PIN_UNUSED_D12, LOW);
-  pinMode(PIN_UNUSED_D12, INPUT);
   releaseReset(PIN_IMD_RESET);
   releaseReset(PIN_BMS_RESET);
   releaseReset(PIN_RE_RESET);
@@ -162,7 +177,9 @@ static void printHelp() {
   Serial.println(F("  SET EBS HEALTHY|FAULT"));
   Serial.println(F("  RESET IMD|BMS|RE|ALL [20..1000 ms; default 150]"));
   Serial.println(F("  MEASURE 100..10000"));
+  Serial.println(F("  LOOPTEST  (board OFF, SC wires removed, D7-D8 linked)"));
   Serial.println(F("  SAFE"));
+  Serial.println(F("RES requires external 12/0 V and must never connect to a Nano pin."));
   Serial.println(F("12 V and IMD/BMS voltages are manual; RESET outputs are open-drain."));
 }
 
@@ -249,7 +266,7 @@ static void handleCommand(char *line) {
     printStatus();
   } else if (!strcmp(command, "SAFE")) {
     setSafeState();
-    Serial.println(F("OK SAFE: EBS=0 V, D12 high-Z; RESET pins released."));
+    Serial.println(F("OK SAFE: EBS=0 V; RESET pins released."));
     printStatus();
   } else if (!strcmp(command, "SET")) {
     char *target = strtok(NULL, " \t");
@@ -270,6 +287,8 @@ static void handleCommand(char *line) {
     } else {
       measureSignals((uint16_t)duration);
     }
+  } else if (!strcmp(command, "LOOPTEST")) {
+    testContactLoop();
   } else {
     Serial.println(F("ERR unknown command; type HELP"));
   }
@@ -292,9 +311,6 @@ void setup() {
   // Load FAULT before enabling EBS output to avoid a startup HIGH pulse.
   digitalWrite(PIN_EBS_ERROR, LOW);
   pinMode(PIN_EBS_ERROR, OUTPUT);
-  digitalWrite(PIN_UNUSED_D12, LOW);
-  pinMode(PIN_UNUSED_D12, INPUT);
-
   releaseReset(PIN_IMD_RESET);
   releaseReset(PIN_BMS_RESET);
   releaseReset(PIN_RE_RESET);
