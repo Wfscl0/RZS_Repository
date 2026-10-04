@@ -5,13 +5,15 @@ RES 遥控急停系统的硬件工程、STM32 固件和设计资料统一放在�
 `规则/2026中国大学生方程式系列赛事规则（最终版）.pdf`
 为准，`Documentation/Legacy` 内资料仅用于历史对照。
 
+当前整车板卡网表入口：[`../网表/`](../网表/README.md)。2026-10-04 的 RES_ERROR 上电顺序、EBS 安全回路 12 V 及删除双路健康等待监测设计，见 [整车接口说明](RES_赛车接收端硬件与失效保护闭环设计.md)。
+
 ## 快速入口
 
 - STM32 工程：`Firmware/RES_Controller_F103`
 - 可烧录固件：`Firmware/RES_Controller_F103/output/RES_Controller_F103C8T6.bin`
 - 接口汇总：`Documentation/RES_Controller_接口汇总.md`
 - 嘉立创 EDA 主工程：`Hardware/JLCEDA/RES_Controler.eprj2`
-- 遥控端拓扑网表：`Hardware/Netlists/RES_Controller.NET`
+- 旧遥控端拓扑网表（历史参考）：`Hardware/Netlists/RES_Controller.NET`
 
 ## 目录结构
 

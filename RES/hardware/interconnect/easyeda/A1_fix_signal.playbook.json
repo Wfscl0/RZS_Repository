@@ -1,0 +1,9 @@
+{
+  "version":1,
+  "meta":{"name":"RES-interconnect-A1-fix-signal","project":"RES_LoRa_32","doc":"e4d3e62b62def93f"},
+  "defaults":{"timeoutSec":30,"retry":0,"continueOnError":false},
+  "steps":[
+    {"id":"delete_old_bad_wires","run":"sch prim-delete","flags":{"ids":"[\"51cad89efba2590b\",\"9649385c2b6811db\"]"}},
+    {"id":"save","run":"sch save","checkpoint":true}
+  ]
+}

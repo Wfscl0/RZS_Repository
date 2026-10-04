@@ -1,0 +1,3 @@
+E:\toolchain\bin\cmake.exe -E rm -f CMakeFiles\test_res_protocol.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\test_res_protocol.dir/objects.a @CMakeFiles\test_res_protocol.dir\objects1.rsp
+C:\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\test_res_protocol.dir/objects.a -Wl,--no-whole-archive -o test_res_protocol.exe -Wl,--out-implib,libtest_res_protocol.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_res_protocol.dir\linkLibs.rsp

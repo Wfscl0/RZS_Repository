@@ -1,0 +1,193 @@
+{
+    "version": "2.0.0",
+    "components": {
+        "": {
+            "props": {
+                "Unique ID": "",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "81c226216e0e6e20",
+                "Designator": "J1",
+                "Device": "13b69c219d7ea6cf",
+                "LCSC Part Name": "",
+                "Supplier Part": "EK508V-02P_C9900003719.1",
+                "Manufacturer": "",
+                "Manufacturer Part": "EK508V-02P",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4e24eb1321427453",
+                "3D Model": "998267d8e5654b1f85a448d62ad7b07f|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "CONN-TH_DB5.08-LI-2P-128",
+                "3D Model Transform": "419.674,393.7,0,0,0,0,0,0,-157.48",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$1I72",
+                "DeviceName": "EK508V-02P",
+                "FootprintName": "CONN-TH_EK508V-02P"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "PWR_3V3_IN",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        }
+    },
+    "designRule": {
+        "trackPhysics": {
+            "copperThickness1oz": {
+                "name": "copperThickness1oz",
+                "isDefault": true,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.127,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            },
+            "copperThickness2oz": {
+                "name": "copperThickness2oz",
+                "isDefault": false,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.203,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            }
+        },
+        "netRule": {
+            "PWR_3V3_IN": {
+                "net": "PWR_3V3_IN",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "GND": {
+                "net": "GND",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PWR_3V3_PROTECTED": {
+                "net": "PWR_3V3_PROTECTED",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "3V3_RADIO": {
+                "net": "3V3_RADIO",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "3V3_MCU": {
+                "net": "3V3_MCU",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "STM_TX_RAW": {
+                "net": "STM_TX_RAW",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "STM_RX_RAW": {
+                "net": "STM_RX_RAW",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_RXD": {
+                "net": "LORA_RXD",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_TXD": {
+                "net": "LORA_TXD",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "BRIDGE_RST_TEST": {
+                "net": "BRIDGE_RST_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "STM8_SWIM_TEST": {
+                "net": "STM8_SWIM_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "RADIO_RST_TEST": {
+                "net": "RADIO_RST_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "RADIO_MISO_TEST": {
+                "net": "RADIO_MISO_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "RADIO_MOSI_TEST": {
+                "net": "RADIO_MOSI_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "RADIO_SCLK_TEST": {
+                "net": "RADIO_SCLK_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "RADIO_NSS_TEST": {
+                "net": "RADIO_NSS_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "RADIO_M1_TEST": {
+                "net": "RADIO_M1_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "RADIO_M0_TEST": {
+                "net": "RADIO_M0_TEST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            }
+        }
+    },
+    "differentialPair": {},
+    "netClass": {},
+    "equalLengthNetGroup": {}
+}

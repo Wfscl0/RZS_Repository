@@ -1,0 +1,5 @@
+connect
+loadfile D:/git/RZS_Repository/RES/firmware/artifacts/bench_nocan_20260924/vehicle/gcc/RES_Vehicle_G0B1.hex
+r
+g
+exit

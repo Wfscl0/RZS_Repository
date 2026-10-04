@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_restore_hidden_power_joints",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "steps": [
+    {
+      "id": "fb3-d7-output-rail",
+      "action": "schematic.wire.create",
+      "payload": { "points": [260, 330, 274, 330], "net": "+5V_MCU" }
+    },
+    {
+      "id": "c5-to-5v-output-rail",
+      "action": "schematic.wire.create",
+      "payload": { "points": [265, 323, 265, 330], "net": "+5V_MCU" }
+    },
+    {
+      "id": "c8-radio-rail",
+      "action": "schematic.wire.create",
+      "payload": { "points": [291, 163, 271, 163], "net": "+3V3_RADIO" }
+    },
+    {
+      "id": "q2-r17-ground-joint",
+      "action": "schematic.wire.create",
+      "payload": { "points": [554, 621, 587, 621, 587, 643], "net": "GND" }
+    },
+    {
+      "id": "q2-r17-ground-drop",
+      "action": "schematic.wire.create",
+      "payload": { "points": [570, 621, 570, 601], "net": "GND" }
+    },
+    {
+      "id": "q2-r17-ground-flag",
+      "action": "schematic.netflag.create",
+      "payload": { "kind": "ground", "net": "GND", "x": 570, "y": 601, "rotation": 0 }
+    },
+    {
+      "id": "u2-r19-ground-joint",
+      "action": "schematic.wire.create",
+      "payload": { "points": [693, 636, 715, 636, 715, 652, 705, 652], "net": "GND" }
+    },
+    {
+      "id": "u2-r19-ground-stub",
+      "action": "schematic.wire.create",
+      "payload": { "points": [715, 636, 735, 636], "net": "GND" }
+    },
+    {
+      "id": "u2-r19-ground-flag",
+      "action": "schematic.netflag.create",
+      "payload": { "kind": "ground", "net": "GND", "x": 735, "y": 636, "rotation": 90 }
+    },
+    {
+      "id": "save-hidden-joints",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

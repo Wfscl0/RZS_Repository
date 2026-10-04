@@ -1,0 +1,76 @@
+{
+  "project": "RES_Remote_Interconnect",
+  "revision": "A2",
+  "purpose": "Carrier/interconnect between STM32G0B1CBT6 development board and E220-400MBL-01 evaluation board",
+  "electrical_contract": {
+    "control_link": "USART1 9600-8-N-1",
+    "stm32_tx": "PA9 -> E220 evaluation board RXD (pin 15)",
+    "stm32_rx": "PA10 <- E220 evaluation board TXD (pin 14)",
+    "logic_voltage": "3.3 V",
+    "radio_spi_policy": "E220 pins 9..13 are not connected to the external STM32; test pads only, avoiding contention with the onboard STM8",
+    "bridge_reset": "Optional open-drain reset of E220 onboard STM8 through 2N7002; default released"
+  },
+  "modules": [
+    {
+      "name": "POWER_ENTRY",
+      "parts": ["J1", "F1", "F2", "D1", "D2", "FB1", "FB2", "C1", "C2", "C3", "C4"],
+      "page": "RES_Remote_Interconnect",
+      "zone": "left"
+    },
+    {
+      "name": "STM32_MODULE",
+      "parts": ["J2", "J3"],
+      "page": "RES_Remote_Interconnect",
+      "zone": "center"
+    },
+    {
+      "name": "LORA_MODULE",
+      "parts": ["J4", "J5", "J6", "J7", "Q1", "R1", "R2", "R5", "R6", "R7", "R8", "R9"],
+      "page": "RES_Remote_Interconnect",
+      "zone": "right"
+    }
+  ],
+  "pages": [
+    {
+      "name": "RES_Remote_Interconnect",
+      "sheet": "A4",
+      "modules": ["POWER_ENTRY", "STM32_MODULE", "LORA_MODULE"]
+    }
+  ],
+  "stackup": {
+    "layers": 2,
+    "groundStrategy": "solid GND pours on both sides with stitching vias",
+    "signalLayers": ["Top", "Bottom"]
+  },
+  "rf": {
+    "parts": ["J4", "J5", "J6", "J7"],
+    "keepoutLayers": "all",
+    "note": "No RF trace is routed on the carrier. Keep copper and carrier material away from the E220 SMA/antenna end and do not obstruct the coax connector."
+  },
+  "board": {
+    "outline": "62 mm x 57 mm carrier inside the remote enclosure; right-front edge has the enclosure/shock-mount clearance profile",
+    "moduleArrangement": "E220 and STM32 long axes parallel and immediately adjacent; E220 antenna end faces the enclosure SMA side",
+    "mechanicalRule": "Socket headers provide electrical alignment only. Four E220 mounting holes and an independent STM32 retainer carry vibration loads."
+  },
+  "interfaces": [
+    {
+      "name": "3V3_POWER_IN",
+      "orientation": "locking wire-to-board connector at carrier edge"
+    },
+    {
+      "name": "E220_UPWARD_HEADERS",
+      "orientation": "bottom-entry female sockets on carrier; carrier above E220 board"
+    },
+    {
+      "name": "STM32_HEADERS",
+      "orientation": "bottom-entry female sockets on carrier; SWD/USB remain serviceable through cut-out or edge exposure"
+    }
+  ],
+  "costTier": "standard",
+  "assembly": {
+    "method": "hand-solder",
+    "moduleSockets": "J2-J7 are bottom-side 2.54 mm through-hole female sockets",
+    "minimumPassivePackage": "0603",
+    "mechanicalRetention": "module sockets carry electrical insertion only; enclosure carrier plate and retainers carry vibration load"
+  }
+}

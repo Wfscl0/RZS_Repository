@@ -1,0 +1,177 @@
+Start testing: Sep 22 00:36 中国标准时间
+----------------------------------------------------------
+1/11 Testing: si4463_transport
+1/11 Test: si4463_transport
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_si4463_transport.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"si4463_transport" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+Si4463 SPI/FIFO/timeout transport: PASS
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"si4463_transport" end time: Sep 22 00:36 中国标准时间
+"si4463_transport" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/11 Testing: si4463_half_duplex_timing
+2/11 Test: si4463_half_duplex_timing
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_si4463_link_timing.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"si4463_half_duplex_timing" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+Si4463 delayed half-duplex link: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"si4463_half_duplex_timing" end time: Sep 22 00:36 中国标准时间
+"si4463_half_duplex_timing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/11 Testing: bridge_stream_framing
+3/11 Test: bridge_stream_framing
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_bridge_stream.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"bridge_stream_framing" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"bridge_stream_framing" end time: Sep 22 00:36 中国标准时间
+"bridge_stream_framing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/11 Testing: radio_stop_bench
+4/11 Test: radio_stop_bench
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_radio_stop_bench.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"radio_stop_bench" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"radio_stop_bench" end time: Sep 22 00:36 中国标准时间
+"radio_stop_bench" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/11 Testing: uart_transport_recovery
+5/11 Test: uart_transport_recovery
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_uart_transport.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"uart_transport_recovery" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+UART foreground ACK, RX recovery, overflow and stale-data tests passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"uart_transport_recovery" end time: Sep 22 00:36 中国标准时间
+"uart_transport_recovery" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/11 Testing: protocol
+6/11 Test: protocol
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_res_protocol.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"protocol" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+test_res_protocol: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"protocol" end time: Sep 22 00:36 中国标准时间
+"protocol" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/11 Testing: remote_state_machine
+7/11 Test: remote_state_machine
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_res_remote.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"remote_state_machine" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+test_res_remote: PASS
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"remote_state_machine" end time: Sep 22 00:36 中国标准时间
+"remote_state_machine" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/11 Testing: four_lamp_contract
+8/11 Test: four_lamp_contract
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_res_indicators.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"four_lamp_contract" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+test_res_indicators: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"four_lamp_contract" end time: Sep 22 00:36 中国标准时间
+"four_lamp_contract" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/11 Testing: four_lamp_two_endpoint_link
+9/11 Test: four_lamp_two_endpoint_link
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_res_lamp_link.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"four_lamp_two_endpoint_link" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+test_res_lamp_link: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"four_lamp_two_endpoint_link" end time: Sep 22 00:36 中国标准时间
+"four_lamp_two_endpoint_link" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/11 Testing: ina226_diagnostics
+10/11 Test: ina226_diagnostics
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_ina226.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"ina226_diagnostics" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+test_ina226: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ina226_diagnostics" end time: Sep 22 00:36 中国标准时间
+"ina226_diagnostics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/11 Testing: vehicle_state_machine
+11/11 Test: vehicle_state_machine
+Command: "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911/test_res_vehicle.exe"
+Directory: C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260911
+"vehicle_state_machine" start time: Sep 22 00:36 中国标准时间
+Output:
+----------------------------------------------------------
+test_res_vehicle: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"vehicle_state_machine" end time: Sep 22 00:36 中国标准时间
+"vehicle_state_machine" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 22 00:36 中国标准时间

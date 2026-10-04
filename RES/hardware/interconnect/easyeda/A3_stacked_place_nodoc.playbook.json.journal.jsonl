@@ -1,0 +1,2 @@
+{"playbookSha256":"cf362a4cbc96163e80cd152e60f94dd9df317811ac34f9a7b3113953feaedd7a","name":"RES-stacked-interconnect-A3-place","project":"RES_LoRa_32","startedAt":"2026-08-12T12:48:51+08:00"}
+{"idx":1,"id":"j1","status":"fail","ms":6109,"error":"run \"sch place\" exited 1: }"}

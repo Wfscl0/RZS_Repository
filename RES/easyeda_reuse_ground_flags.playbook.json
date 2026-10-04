@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_reuse_existing_ground_flags",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "steps": [
+    {
+      "id": "q2-r17-to-existing-ground",
+      "action": "schematic.wire.create",
+      "payload": { "points": [587, 621, 587, 600], "net": "GND" }
+    },
+    {
+      "id": "u2-r19-to-existing-ground",
+      "action": "schematic.wire.create",
+      "payload": { "points": [715, 636, 706, 636, 706, 655], "net": "GND" }
+    },
+    {
+      "id": "save-ground-reuse",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

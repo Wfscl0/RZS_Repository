@@ -1,0 +1,471 @@
+{
+    "version":  1,
+    "meta":  {
+                 "name":  "RES-stacked-interconnect-A3-place",
+                 "description":  "Direct-solder stacked carrier: STM32G0B1 + E220 module above modules",
+                 "project":  "RES_LoRa_32"
+             },
+    "defaults":  {
+                     "timeoutSec":  30,
+                     "retry":  0,
+                     "continueOnError":  false
+                 },
+    "vars":  {
+                 "LIB":  "0819f05c4eef4c71ace90d822a990e87"
+             },
+    "steps":  [
+                  {
+                      "id":  "j1",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "e8a458104842480998ac0d6f045ee70a",
+                                    "x":  90,
+                                    "y":  675,
+                                    "designator":  "J1",
+                                    "rotation":  180
+                                }
+                  },
+                  {
+                      "id":  "f1",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "4ae5b662af7f4c0089d136241f4ee296",
+                                    "x":  175,
+                                    "y":  705,
+                                    "designator":  "F1"
+                                }
+                  },
+                  {
+                      "id":  "fb1",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "9a036d90211a4df79dae8b43cf4fdfda",
+                                    "x":  245,
+                                    "y":  705,
+                                    "designator":  "FB1"
+                                }
+                  },
+                  {
+                      "id":  "d1",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "93250235cc8d4546a65e7ad6d841ccc2",
+                                    "x":  300,
+                                    "y":  680,
+                                    "designator":  "D1",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "c1",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "2c8bdaeb33624757a7871109432b253d",
+                                    "x":  350,
+                                    "y":  680,
+                                    "designator":  "C1",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "f2",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "4ae5b662af7f4c0089d136241f4ee296",
+                                    "x":  175,
+                                    "y":  590,
+                                    "designator":  "F2"
+                                }
+                  },
+                  {
+                      "id":  "fb2",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "9a036d90211a4df79dae8b43cf4fdfda",
+                                    "x":  245,
+                                    "y":  590,
+                                    "designator":  "FB2"
+                                }
+                  },
+                  {
+                      "id":  "d2",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "a7cd7428f1cf491fa1024dbb27bd014c",
+                                    "x":  300,
+                                    "y":  565,
+                                    "designator":  "D2",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "c2",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "9087862aa5754cc9b0c32846063234ba",
+                                    "x":  350,
+                                    "y":  600,
+                                    "designator":  "C2",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "c3",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "2c8bdaeb33624757a7871109432b253d",
+                                    "x":  350,
+                                    "y":  550,
+                                    "designator":  "C3",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "c4",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "96b39256cc3f4d80bd3b503deb4f3328",
+                                    "x":  350,
+                                    "y":  500,
+                                    "designator":  "C4",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "stm_l",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "a8637fc769e848c39be208f75091c1c6",
+                                    "x":  455,
+                                    "y":  525,
+                                    "designator":  "J2"
+                                }
+                  },
+                  {
+                      "id":  "stm_r",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "a8637fc769e848c39be208f75091c1c6",
+                                    "x":  590,
+                                    "y":  525,
+                                    "designator":  "J3"
+                                }
+                  },
+                  {
+                      "id":  "r1",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "c1b17fa23f304726bc91c5924d9b7c0f",
+                                    "x":  700,
+                                    "y":  560,
+                                    "designator":  "R1"
+                                }
+                  },
+                  {
+                      "id":  "r2",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "c1b17fa23f304726bc91c5924d9b7c0f",
+                                    "x":  700,
+                                    "y":  625,
+                                    "designator":  "R2"
+                                }
+                  },
+                  {
+                      "id":  "r5",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "c1b17fa23f304726bc91c5924d9b7c0f",
+                                    "x":  675,
+                                    "y":  430,
+                                    "designator":  "R5"
+                                }
+                  },
+                  {
+                      "id":  "q1",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "f8007837564a4f1fa0e6b57b81dccb0d",
+                                    "x":  750,
+                                    "y":  430,
+                                    "designator":  "Q1"
+                                }
+                  },
+                  {
+                      "id":  "r6",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "40ff282b3d594c33b798d1707d8406cb",
+                                    "x":  705,
+                                    "y":  380,
+                                    "designator":  "R6",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "r7",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "b948db94476e4027ac8953235755ec96",
+                                    "x":  810,
+                                    "y":  430,
+                                    "designator":  "R7",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "e12",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "4f4168f9934b4be2b934e441928fe016",
+                                    "x":  855,
+                                    "y":  705,
+                                    "designator":  "J4",
+                                    "rotation":  180
+                                }
+                  },
+                  {
+                      "id":  "e34",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "4f4168f9934b4be2b934e441928fe016",
+                                    "x":  955,
+                                    "y":  705,
+                                    "designator":  "J5",
+                                    "rotation":  180
+                                }
+                  },
+                  {
+                      "id":  "e56",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "4f4168f9934b4be2b934e441928fe016",
+                                    "x":  1055,
+                                    "y":  705,
+                                    "designator":  "J6",
+                                    "rotation":  180
+                                }
+                  },
+                  {
+                      "id":  "e7_15",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "e0b5dd52129349b48af6010a5d4a81b6",
+                                    "x":  945,
+                                    "y":  535,
+                                    "designator":  "J7",
+                                    "rotation":  180
+                                }
+                  },
+                  {
+                      "id":  "e16_17",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "4f4168f9934b4be2b934e441928fe016",
+                                    "x":  880,
+                                    "y":  360,
+                                    "designator":  "J8",
+                                    "rotation":  180
+                                }
+                  },
+                  {
+                      "id":  "e18_19",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "4f4168f9934b4be2b934e441928fe016",
+                                    "x":  1030,
+                                    "y":  360,
+                                    "designator":  "J9",
+                                    "rotation":  180
+                                }
+                  },
+                  {
+                      "id":  "r8",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "fc38f436091b49a696be03a7955956ed",
+                                    "x":  820,
+                                    "y":  360,
+                                    "designator":  "R8"
+                                }
+                  },
+                  {
+                      "id":  "r9",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "fc38f436091b49a696be03a7955956ed",
+                                    "x":  1090,
+                                    "y":  360,
+                                    "designator":  "R9"
+                                }
+                  },
+                  {
+                      "id":  "r10",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "5303080f43d74b41ae76fc5142aa97e5",
+                                    "x":  410,
+                                    "y":  285,
+                                    "designator":  "R10"
+                                }
+                  },
+                  {
+                      "id":  "r11",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "5303080f43d74b41ae76fc5142aa97e5",
+                                    "x":  410,
+                                    "y":  245,
+                                    "designator":  "R11"
+                                }
+                  },
+                  {
+                      "id":  "r12",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "5303080f43d74b41ae76fc5142aa97e5",
+                                    "x":  680,
+                                    "y":  285,
+                                    "designator":  "R12"
+                                }
+                  },
+                  {
+                      "id":  "r13",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "5303080f43d74b41ae76fc5142aa97e5",
+                                    "x":  680,
+                                    "y":  245,
+                                    "designator":  "R13"
+                                }
+                  },
+                  {
+                      "id":  "d3",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "a7cd7428f1cf491fa1024dbb27bd014c",
+                                    "x":  510,
+                                    "y":  285,
+                                    "designator":  "D3",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "d4",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "a7cd7428f1cf491fa1024dbb27bd014c",
+                                    "x":  510,
+                                    "y":  245,
+                                    "designator":  "D4",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "d5",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "a7cd7428f1cf491fa1024dbb27bd014c",
+                                    "x":  780,
+                                    "y":  285,
+                                    "designator":  "D5",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "d6",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "a7cd7428f1cf491fa1024dbb27bd014c",
+                                    "x":  780,
+                                    "y":  245,
+                                    "designator":  "D6",
+                                    "rotation":  90
+                                }
+                  },
+                  {
+                      "id":  "j10",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "e8a458104842480998ac0d6f045ee70a",
+                                    "x":  590,
+                                    "y":  265,
+                                    "designator":  "J10"
+                                }
+                  },
+                  {
+                      "id":  "j11",
+                      "run":  "sch place",
+                      "flags":  {
+                                    "lib":  "${LIB}",
+                                    "uuid":  "e8a458104842480998ac0d6f045ee70a",
+                                    "x":  860,
+                                    "y":  265,
+                                    "designator":  "J11"
+                                }
+                  },
+                  {
+                      "id":  "note1",
+                      "run":  "sch note",
+                      "flags":  {
+                                    "text":  "STACKED CARRIER ABOVE MODULES\\nMODULE MALE PINS THROUGH PCB AND DIRECT-SOLDERED",
+                                    "x":  70,
+                                    "y":  790,
+                                    "font-size":  11,
+                                    "color":  "#B00000"
+                                }
+                  },
+                  {
+                      "id":  "note2",
+                      "run":  "sch note",
+                      "flags":  {
+                                    "text":  "J2/J3/J4...J9 are electrical pad groups only; DNP connector bodies.",
+                                    "x":  700,
+                                    "y":  790,
+                                    "font-size":  9,
+                                    "color":  "#B00000"
+                                }
+                  },
+                  {
+                      "id":  "save",
+                      "run":  "sch save",
+                      "checkpoint":  true
+                  }
+              ]
+}

@@ -1,0 +1,29 @@
+CMakeFiles/test_bridge_stream.dir/tests/test_bridge_stream.c.obj: \
+ C:\Users\ABC\Desktop\RZS_Repository\RES\firmware\tests\test_bridge_stream.c \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/assert.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/string.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/shared/include/res_protocol.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/radio_bridge_stm8/res_bridge_main.c \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/tests/stm8_host_stub/ebyte_core.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/tests/stm8_host_stub/ebyte_conf.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/tests/stm8_host_stub/ebyte_kfifo.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/tests/stm8_host_stub/ebyte_e220x.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/radio_bridge_stm8/res_bridge_config.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/radio_bridge_stm8/res_bridge_control.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/tests/stm8_host_stub/ebyte_conf.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/radio_bridge_stm8/res_bridge_callback.c \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/tests/stm8_host_stub/ebyte_callback.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/tests/stm8_host_stub/board.h

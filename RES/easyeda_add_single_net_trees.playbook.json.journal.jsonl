@@ -1,0 +1,5 @@
+{"playbookSha256":"888346f4514459cfaba30a8d0d04ba4497767710f8d3e67f7cbbe7f0db342099","name":"RES_LoRa_32_add_single_named_net_trees","project":"RES_LoRa_32","startedAt":"2026-08-17T00:48:41+08:00"}
+{"idx":1,"id":"five-volt-output-one-tree","status":"ok","ms":220}
+{"idx":2,"id":"reset-ground-one-tree","status":"ok","ms":172}
+{"idx":3,"id":"mode-ground-one-tree","status":"ok","ms":129}
+{"idx":4,"id":"save-single-net-trees","status":"ok","ms":195}

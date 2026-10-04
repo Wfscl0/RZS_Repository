@@ -1,0 +1,5 @@
+{"playbookSha256":"ca373869c1f44475034892bce5b362d13183a5b9e2a6780592c9d9812ca5e64c","name":"RES_LoRa_32_reverse_label_anchors","project":"RES_LoRa_32","startedAt":"2026-08-17T00:53:03+08:00"}
+{"idx":1,"id":"five-volt-label-anchor-clear","status":"ok","ms":99}
+{"idx":2,"id":"reset-ground-label-anchor-clear","status":"ok","ms":99}
+{"idx":3,"id":"mode-ground-label-anchor-clear","status":"ok","ms":102}
+{"idx":4,"id":"save-reversed-label-anchors","status":"ok","ms":168}

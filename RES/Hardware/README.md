@@ -9,7 +9,11 @@
 不要单独改名 `RES_Controler.eprj2` 或其备份目录，否则可能破坏 EDA
 自动备份识别关系。
 
-## Netlists
+## 网表
+
+整车板卡网表统一位于 `../../网表/`，见 [网表索引](../../网表/README.md)。以下 RES 遥控端导出仍存于旧目录，仅作历史参考，本次未迁移文件。
+
+### 旧导出
 
 - `Netlists/RES_Controller.NET`：遥控器模块级拓扑网表；
 - `Netlists/Netlist_Schematic1_2026-07-21.tel`：详细原理图网表导出。

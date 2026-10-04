@@ -1,0 +1,8 @@
+{
+  "version":1,
+  "meta":{"name":"A2-move-J5","project":"RES_LoRa_32","doc":"e4d3e62b62def93f"},
+  "steps":[
+    {"id":"move_j5","run":"sch modify","flags":{"id":"b8bcd2d3b6e11473","patch":"{\"x\":1010}"}},
+    {"id":"save","run":"sch save","checkpoint":true}
+  ]
+}

@@ -1,12 +1,14 @@
 # LTspice timing verification report
 
+> 历史仿真记录：2026-10-04 方案已删除 EBS/RES 两路都输出 1 才开始监测的上电等待设计，改为 TSMS 上电前先给 RES_ERROR 12 V；EBS 安全回路经 DCDC 降为 12 V。本报告的数值、完成状态和覆盖统计仅适用于原运行版本，未按此次变更重跑。
+
 Run date: 2026-05-18
 LTspice: 26.0.1 for Windows
 
 ## Inputs
 
-- Interface workbook: `fin/硬件电路接口.xlsx`
-- Board sources: `fin/*.png`, `fin/*.tel`
+- Interface workbook: historical `fin/硬件电路接口.xlsx` (no longer present); current interface descriptions are in `../../BSPD/`, `../../EBS/` and `../../错误锁存/`.
+- Board sources: historical board images; current netlists: `../../网表/*.tel`
 - LTspice decks: `simulations/*.cir`
 - LTspice logs/waveforms: `simulations/*.log`, `simulations/*.raw`
 - EBS watchdog input definition: `VCU_WDI` is a VCU-driven push-pull 0–5 V, 10 Hz square wave; the timing deck abstracts the UCC2946 validity result as `watchdog_ok`.

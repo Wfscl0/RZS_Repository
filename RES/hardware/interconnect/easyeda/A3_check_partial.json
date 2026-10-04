@@ -1,0 +1,918 @@
+﻿{
+  "id": "req_1426",
+  "ok": true,
+  "result": {
+    "passed": false,
+    "summary": {
+      "floatingPins": 50,
+      "componentsWithFloating": 8,
+      "geomNetMismatches": 2,
+      "netMarkerMismatches": 1,
+      "multiNetWires": 0,
+      "wireCrossings": 8,
+      "wireOverPins": 2,
+      "zeroLengthWires": 0,
+      "danglingWires": 0,
+      "duplicateNetMarkers": 1,
+      "titleblockOverlaps": 0,
+      "markerOverlaps": 9,
+      "total": 31
+    },
+    "findings": [
+      {
+        "type": "net-marker-mismatch",
+        "level": "warn",
+        "wirePrimitiveId": "ec6db3e285535567",
+        "markerPrimitiveId": "7a8d09f6ff6a5299",
+        "wireNet": "PA0_EXT",
+        "markerNet": "GND",
+        "message": "网络标识 GND 与所连导线 PA0_EXT 名称不一致",
+        "at": {
+          "x": 780,
+          "y": 290
+        }
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "J2",
+        "primitiveId": "3286055ce621e350",
+        "pins": [
+          "3",
+          "20",
+          "18",
+          "9",
+          "16",
+          "11",
+          "14",
+          "13",
+          "12",
+          "15",
+          "10",
+          "17",
+          "8",
+          "19",
+          "21"
+        ],
+        "pinDetails": [
+          {
+            "number": "3",
+            "name": "3",
+            "x": 425,
+            "y": 570
+          },
+          {
+            "number": "20",
+            "name": "20",
+            "x": 485,
+            "y": 490
+          },
+          {
+            "number": "18",
+            "name": "18",
+            "x": 485,
+            "y": 500
+          },
+          {
+            "number": "9",
+            "name": "9",
+            "x": 425,
+            "y": 540
+          },
+          {
+            "number": "16",
+            "name": "16",
+            "x": 485,
+            "y": 510
+          },
+          {
+            "number": "11",
+            "name": "11",
+            "x": 425,
+            "y": 530
+          },
+          {
+            "number": "14",
+            "name": "14",
+            "x": 485,
+            "y": 520
+          },
+          {
+            "number": "13",
+            "name": "13",
+            "x": 425,
+            "y": 520
+          },
+          {
+            "number": "12",
+            "name": "12",
+            "x": 485,
+            "y": 530
+          },
+          {
+            "number": "15",
+            "name": "15",
+            "x": 425,
+            "y": 510
+          },
+          {
+            "number": "10",
+            "name": "10",
+            "x": 485,
+            "y": 540
+          },
+          {
+            "number": "17",
+            "name": "17",
+            "x": 425,
+            "y": 500
+          },
+          {
+            "number": "8",
+            "name": "8",
+            "x": 485,
+            "y": 550
+          },
+          {
+            "number": "19",
+            "name": "19",
+            "x": 425,
+            "y": 490
+          },
+          {
+            "number": "21",
+            "name": "21",
+            "x": 425,
+            "y": 480
+          }
+        ],
+        "count": 15,
+        "message": "15 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "geom-net-mismatch",
+        "level": "warn",
+        "designator": "J3",
+        "primitiveId": "0c91e9dc6ce0fb72",
+        "pins": [
+          "20"
+        ],
+        "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+        "at": {
+          "x": 620,
+          "y": 490
+        }
+      },
+      {
+        "type": "geom-net-mismatch",
+        "level": "warn",
+        "designator": "J3",
+        "primitiveId": "0c91e9dc6ce0fb72",
+        "pins": [
+          "10"
+        ],
+        "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+        "at": {
+          "x": 620,
+          "y": 540
+        }
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "J3",
+        "primitiveId": "0c91e9dc6ce0fb72",
+        "pins": [
+          "24",
+          "3",
+          "22",
+          "5",
+          "7",
+          "18",
+          "16",
+          "11",
+          "14",
+          "13",
+          "12",
+          "15",
+          "17",
+          "8",
+          "6",
+          "21",
+          "4",
+          "23"
+        ],
+        "pinDetails": [
+          {
+            "number": "24",
+            "name": "24",
+            "x": 620,
+            "y": 470
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 560,
+            "y": 570
+          },
+          {
+            "number": "22",
+            "name": "22",
+            "x": 620,
+            "y": 480
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 560,
+            "y": 560
+          },
+          {
+            "number": "7",
+            "name": "7",
+            "x": 560,
+            "y": 550
+          },
+          {
+            "number": "18",
+            "name": "18",
+            "x": 620,
+            "y": 500
+          },
+          {
+            "number": "16",
+            "name": "16",
+            "x": 620,
+            "y": 510
+          },
+          {
+            "number": "11",
+            "name": "11",
+            "x": 560,
+            "y": 530
+          },
+          {
+            "number": "14",
+            "name": "14",
+            "x": 620,
+            "y": 520
+          },
+          {
+            "number": "13",
+            "name": "13",
+            "x": 560,
+            "y": 520
+          },
+          {
+            "number": "12",
+            "name": "12",
+            "x": 620,
+            "y": 530
+          },
+          {
+            "number": "15",
+            "name": "15",
+            "x": 560,
+            "y": 510
+          },
+          {
+            "number": "17",
+            "name": "17",
+            "x": 560,
+            "y": 500
+          },
+          {
+            "number": "8",
+            "name": "8",
+            "x": 620,
+            "y": 550
+          },
+          {
+            "number": "6",
+            "name": "6",
+            "x": 620,
+            "y": 560
+          },
+          {
+            "number": "21",
+            "name": "21",
+            "x": 560,
+            "y": 480
+          },
+          {
+            "number": "4",
+            "name": "4",
+            "x": 620,
+            "y": 570
+          },
+          {
+            "number": "23",
+            "name": "23",
+            "x": 560,
+            "y": 470
+          }
+        ],
+        "count": 18,
+        "message": "18 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "J7",
+        "primitiveId": "fc4ad7464e015953",
+        "pins": [
+          "1",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "pinDetails": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 965,
+            "y": 495
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 965,
+            "y": 515
+          },
+          {
+            "number": "4",
+            "name": "4",
+            "x": 965,
+            "y": 525
+          },
+          {
+            "number": "5",
+            "name": "5",
+            "x": 965,
+            "y": 535
+          },
+          {
+            "number": "6",
+            "name": "6",
+            "x": 965,
+            "y": 545
+          },
+          {
+            "number": "7",
+            "name": "7",
+            "x": 965,
+            "y": 555
+          }
+        ],
+        "count": 6,
+        "message": "6 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "R12",
+        "primitiveId": "2e7aad74af3f2c7b",
+        "pins": [
+          "2",
+          "1"
+        ],
+        "pinDetails": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 702,
+            "y": 280
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 662,
+            "y": 280
+          }
+        ],
+        "count": 2,
+        "message": "2 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "R13",
+        "primitiveId": "c0e8d07f82a43630",
+        "pins": [
+          "2",
+          "1"
+        ],
+        "pinDetails": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 702,
+            "y": 240
+          },
+          {
+            "number": "1",
+            "name": "1",
+            "x": 662,
+            "y": 240
+          }
+        ],
+        "count": 2,
+        "message": "2 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "D3",
+        "primitiveId": "3d3acdab1e93852e",
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pinDetails": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 494,
+            "y": 321
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 494,
+            "y": 271
+          }
+        ],
+        "count": 2,
+        "message": "2 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "D4",
+        "primitiveId": "31fe1e1efd7c33cc",
+        "pins": [
+          "1",
+          "2"
+        ],
+        "pinDetails": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 494,
+            "y": 256
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 494,
+            "y": 206
+          }
+        ],
+        "count": 2,
+        "message": "2 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "J10",
+        "primitiveId": "1ce5191424a48ee3",
+        "pins": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pinDetails": [
+          {
+            "number": "1",
+            "name": "1",
+            "x": 572,
+            "y": 269
+          },
+          {
+            "number": "2",
+            "name": "2",
+            "x": 572,
+            "y": 259
+          },
+          {
+            "number": "3",
+            "name": "3",
+            "x": 572,
+            "y": 249
+          }
+        ],
+        "count": 3,
+        "message": "3 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "wire-crossing",
+        "level": "warn",
+        "count": 1,
+        "message": "两条导线交叉(走线打结;改走通道/换 L 形拐点避开)",
+        "at": {
+          "x": 1090,
+          "y": 700
+        }
+      },
+      {
+        "type": "wire-crossing",
+        "level": "warn",
+        "count": 1,
+        "message": "两条导线交叉(走线打结;改走通道/换 L 形拐点避开)",
+        "at": {
+          "x": 635,
+          "y": 440
+        }
+      },
+      {
+        "type": "wire-crossing",
+        "level": "warn",
+        "count": 1,
+        "message": "两条导线交叉(走线打结;改走通道/换 L 形拐点避开)",
+        "at": {
+          "x": 530,
+          "y": 440
+        }
+      },
+      {
+        "type": "wire-crossing",
+        "level": "warn",
+        "count": 1,
+        "message": "两条导线交叉(走线打结;改走通道/换 L 形拐点避开)",
+        "at": {
+          "x": 650,
+          "y": 515
+        }
+      },
+      {
+        "type": "wire-crossing",
+        "level": "warn",
+        "count": 1,
+        "message": "两条导线交叉(走线打结;改走通道/换 L 形拐点避开)",
+        "at": {
+          "x": 820,
+          "y": 560
+        }
+      },
+      {
+        "type": "wire-crossing",
+        "level": "warn",
+        "count": 1,
+        "message": "两条导线交叉(走线打结;改走通道/换 L 形拐点避开)",
+        "at": {
+          "x": 635,
+          "y": 490
+        }
+      },
+      {
+        "type": "wire-crossing",
+        "level": "warn",
+        "count": 1,
+        "message": "两条导线交叉(走线打结;改走通道/换 L 形拐点避开)",
+        "at": {
+          "x": 820,
+          "y": 515
+        }
+      },
+      {
+        "type": "wire-crossing",
+        "level": "warn",
+        "count": 1,
+        "message": "两条导线交叉(走线打结;改走通道/换 L 形拐点避开)",
+        "at": {
+          "x": 380,
+          "y": 550
+        }
+      },
+      {
+        "type": "wire-over-pin",
+        "level": "warn",
+        "designator": "J3",
+        "pins": [
+          "20"
+        ],
+        "message": "导线穿过该引脚(EasyEDA 会在此处截断并连接 — 非预期短接)",
+        "at": {
+          "x": 620,
+          "y": 490
+        }
+      },
+      {
+        "type": "wire-over-pin",
+        "level": "warn",
+        "designator": "J3",
+        "pins": [
+          "10"
+        ],
+        "message": "导线穿过该引脚(EasyEDA 会在此处截断并连接 — 非预期短接)",
+        "at": {
+          "x": 620,
+          "y": 540
+        }
+      },
+      {
+        "type": "duplicate-net-marker",
+        "level": "warn",
+        "primitiveId": "8933a7c36381d119",
+        "markerNet": "GND",
+        "message": "重复 netflag(GND) @(780.00,360.00) ×2 — 建议保留 8933a7c36381d119，删除 ba35a8cd69c4cd2f (sch prim-delete)",
+        "at": {
+          "x": 780,
+          "y": 360
+        },
+        "componentType": "netflag",
+        "primitiveIds": [
+          "8933a7c36381d119",
+          "ba35a8cd69c4cd2f"
+        ],
+        "suggestKeepId": "8933a7c36381d119",
+        "suggestDeleteIds": [
+          "ba35a8cd69c4cd2f"
+        ]
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "03f354e0adbf0553",
+        "markerNet": "+3V3_RADIO",
+        "message": "+3V3_RADIO(netflag) 与 GND(netflag) 视觉重叠 1.00×1.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "03f354e0adbf0553",
+          "a9d4c3518db8cdba"
+        ],
+        "bbox": {
+          "minX": 374.5,
+          "minY": 559.5,
+          "maxX": 380.5,
+          "maxY": 570.5
+        },
+        "other": {
+          "primitiveId": "a9d4c3518db8cdba",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 379.5,
+            "minY": 569.5,
+            "maxX": 389.5,
+            "maxY": 590.5
+          }
+        },
+        "overlapX": 1,
+        "overlapY": 1
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "1e20627dfc918929",
+        "markerNet": "+3V3_RADIO",
+        "message": "+3V3_RADIO(netflag) 与 R7(part) 视觉重叠 9.00×6.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "1e20627dfc918929",
+          "7af4cff2b79f0561"
+        ],
+        "bbox": {
+          "minX": 804.5,
+          "minY": 419.5,
+          "maxX": 815.5,
+          "maxY": 425.5
+        },
+        "other": {
+          "primitiveId": "7af4cff2b79f0561",
+          "componentType": "part",
+          "designator": "R7",
+          "bbox": {
+            "minX": 805.5,
+            "minY": 419.5,
+            "maxX": 814.5,
+            "maxY": 440.5
+          }
+        },
+        "overlapX": 9,
+        "overlapY": 6
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "2065cb34c14f23f9",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 GND(netflag) 视觉重叠 4.00×21.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "2065cb34c14f23f9",
+          "2781a0f32fd21112"
+        ],
+        "bbox": {
+          "minX": 514.5,
+          "minY": 569.5,
+          "maxX": 524.5,
+          "maxY": 590.5
+        },
+        "other": {
+          "primitiveId": "2781a0f32fd21112",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 520.5,
+            "minY": 569.5,
+            "maxX": 530.5,
+            "maxY": 590.5
+          }
+        },
+        "overlapX": 4,
+        "overlapY": 21
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "2a4699d8bc45340c",
+        "markerNet": "+3V3_RADIO",
+        "message": "+3V3_RADIO(netflag) 与 +3V3_RADIO(netflag) 视觉重叠 6.00×1.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "2a4699d8bc45340c",
+          "f6a21b0aa4536991"
+        ],
+        "bbox": {
+          "minX": 999.5,
+          "minY": 694.5,
+          "maxX": 1005.5,
+          "maxY": 705.5
+        },
+        "other": {
+          "primitiveId": "f6a21b0aa4536991",
+          "componentType": "netflag",
+          "net": "+3V3_RADIO",
+          "bbox": {
+            "minX": 999.5,
+            "minY": 704.5,
+            "maxX": 1005.5,
+            "maxY": 715.5
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 1
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "2ac7e13e32435619",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 R9(part) 视觉重叠 10.00×9.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "2ac7e13e32435619",
+          "5e1c501dcf1e015e"
+        ],
+        "bbox": {
+          "minX": 1079.5,
+          "minY": 354.5,
+          "maxX": 1089.5,
+          "maxY": 375.5
+        },
+        "other": {
+          "primitiveId": "5e1c501dcf1e015e",
+          "componentType": "part",
+          "designator": "R9",
+          "bbox": {
+            "minX": 1079.5,
+            "minY": 355.5,
+            "maxX": 1100.5,
+            "maxY": 364.5
+          }
+        },
+        "overlapX": 10,
+        "overlapY": 9
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "874f11ffc2ff4aa8",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 +3V3_RADIO(netflag) 视觉重叠 1.00×1.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "874f11ffc2ff4aa8",
+          "c22d7e6cfe7dfd31"
+        ],
+        "bbox": {
+          "minX": 379.5,
+          "minY": 524.5,
+          "maxX": 389.5,
+          "maxY": 545.5
+        },
+        "other": {
+          "primitiveId": "c22d7e6cfe7dfd31",
+          "componentType": "netflag",
+          "net": "+3V3_RADIO",
+          "bbox": {
+            "minX": 374.5,
+            "minY": 514.5,
+            "maxX": 380.5,
+            "maxY": 525.5
+          }
+        },
+        "overlapX": 1,
+        "overlapY": 1
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "985a0e16717244cd",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 GND(netflag) 视觉重叠 4.00×21.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "985a0e16717244cd",
+          "a9d4c3518db8cdba"
+        ],
+        "bbox": {
+          "minX": 385.5,
+          "minY": 569.5,
+          "maxX": 395.5,
+          "maxY": 590.5
+        },
+        "other": {
+          "primitiveId": "a9d4c3518db8cdba",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 379.5,
+            "minY": 569.5,
+            "maxX": 389.5,
+            "maxY": 590.5
+          }
+        },
+        "overlapX": 4,
+        "overlapY": 21
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "a131707706c5cde2",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 J1(part) 视觉重叠 1.00×21.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "a131707706c5cde2",
+          "c406ac6fe1c84040"
+        ],
+        "bbox": {
+          "minX": 70.5,
+          "minY": 654.5,
+          "maxX": 80.5,
+          "maxY": 675.5
+        },
+        "other": {
+          "primitiveId": "c406ac6fe1c84040",
+          "componentType": "part",
+          "designator": "J1",
+          "bbox": {
+            "minX": 79.5,
+            "minY": 654.5,
+            "maxX": 100.5,
+            "maxY": 695.5
+          }
+        },
+        "overlapX": 1,
+        "overlapY": 21
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "a6854767e51717a1",
+        "markerNet": "+3V3_RADIO",
+        "message": "+3V3_RADIO(netflag) 与 +3V3_RADIO(netflag) 视觉重叠 6.00×1.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "a6854767e51717a1",
+          "eb43625c0d9699c2"
+        ],
+        "bbox": {
+          "minX": 899.5,
+          "minY": 694.5,
+          "maxX": 905.5,
+          "maxY": 705.5
+        },
+        "other": {
+          "primitiveId": "eb43625c0d9699c2",
+          "componentType": "netflag",
+          "net": "+3V3_RADIO",
+          "bbox": {
+            "minX": 899.5,
+            "minY": 704.5,
+            "maxX": 905.5,
+            "maxY": 715.5
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 1
+      }
+    ]
+  },
+  "type": "response",
+  "version": "v1"
+}

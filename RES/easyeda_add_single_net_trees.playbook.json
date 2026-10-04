@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_add_single_named_net_trees",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "steps": [
+    {
+      "id": "five-volt-output-one-tree",
+      "action": "schematic.wire.create",
+      "payload": { "points": [265, 323, 265, 330, 260, 330, 274, 330], "net": "+5V_MCU" }
+    },
+    {
+      "id": "reset-ground-one-tree",
+      "action": "schematic.wire.create",
+      "payload": { "points": [554, 621, 587, 621, 587, 643], "net": "GND" }
+    },
+    {
+      "id": "mode-ground-one-tree",
+      "action": "schematic.wire.create",
+      "payload": { "points": [693, 636, 715, 636, 715, 652, 705, 652], "net": "GND" }
+    },
+    {
+      "id": "save-single-net-trees",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

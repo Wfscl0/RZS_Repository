@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_reroute_u2_ground",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "steps": [
+    {
+      "id": "u2-r19-ground-clear-channel",
+      "action": "schematic.wire.create",
+      "payload": { "points": [715, 636, 735, 636, 735, 655, 706, 655], "net": "GND" }
+    },
+    {
+      "id": "save-u2-ground-reroute",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

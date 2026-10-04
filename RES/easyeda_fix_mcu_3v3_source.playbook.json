@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_fix_mcu_3v3_source",
+    "description": "Make the STM32 module 3V3 source explicit and add local EMI filtering/decoupling",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "vars": {
+    "LIB": "0819f05c4eef4c71ace90d822a990e87",
+    "FB_60R_0805": "9a036d90211a4df79dae8b43cf4fdfda",
+    "C10U_0805": "8b2a4820725d401b82821db83fa218c8",
+    "C100N_0805": "e0a15c1cd8cb4f37aa658da9c5c7bfb4"
+  },
+  "steps": [
+    {
+      "id": "place-fb5",
+      "action": "schematic.component.place",
+      "payload": {
+        "libraryUuid": "${LIB}",
+        "uuid": "${FB_60R_0805}",
+        "x": 500,
+        "y": 560,
+        "rotation": 0
+      },
+      "capture": { "FB5_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-fb5",
+      "action": "schematic.component.modify",
+      "payload": {
+        "primitiveId": "${FB5_ID}",
+        "patch": { "designator": "FB5", "uniqueId": "A3_38" }
+      }
+    },
+    {
+      "id": "wire-fb5-raw",
+      "action": "schematic.wire.create",
+      "payload": {
+        "points": [450, 560, 480, 560],
+        "net": "+3V3_MCU_RAW"
+      }
+    },
+    {
+      "id": "flag-fb5-raw",
+      "action": "schematic.netflag.create",
+      "payload": {
+        "kind": "power",
+        "net": "+3V3_MCU_RAW",
+        "x": 450,
+        "y": 560,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "wire-fb5-clean",
+      "action": "schematic.wire.create",
+      "payload": {
+        "points": [520, 560, 570, 560],
+        "net": "+3V3_MCU"
+      }
+    },
+    {
+      "id": "flag-fb5-clean",
+      "action": "schematic.netflag.create",
+      "payload": {
+        "kind": "power",
+        "net": "+3V3_MCU",
+        "x": 570,
+        "y": 560,
+        "rotation": 270
+      }
+    },
+    {
+      "id": "place-c11",
+      "action": "schematic.component.place",
+      "payload": {
+        "libraryUuid": "${LIB}",
+        "uuid": "${C10U_0805}",
+        "x": 500,
+        "y": 520,
+        "rotation": 0
+      },
+      "capture": { "C11_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-c11",
+      "action": "schematic.component.modify",
+      "payload": {
+        "primitiveId": "${C11_ID}",
+        "patch": { "designator": "C11", "uniqueId": "A3_39" }
+      }
+    },
+    {
+      "id": "wire-c11-power",
+      "action": "schematic.wire.create",
+      "payload": {
+        "points": [450, 520, 480, 520],
+        "net": "+3V3_MCU"
+      }
+    },
+    {
+      "id": "flag-c11-power",
+      "action": "schematic.netflag.create",
+      "payload": {
+        "kind": "power",
+        "net": "+3V3_MCU",
+        "x": 450,
+        "y": 520,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "wire-c11-gnd",
+      "action": "schematic.wire.create",
+      "payload": {
+        "points": [520, 520, 550, 520],
+        "net": "GND"
+      }
+    },
+    {
+      "id": "flag-c11-gnd",
+      "action": "schematic.netflag.create",
+      "payload": {
+        "kind": "ground",
+        "net": "GND",
+        "x": 550,
+        "y": 520,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "place-c12",
+      "action": "schematic.component.place",
+      "payload": {
+        "libraryUuid": "${LIB}",
+        "uuid": "${C100N_0805}",
+        "x": 500,
+        "y": 485,
+        "rotation": 0
+      },
+      "capture": { "C12_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-c12",
+      "action": "schematic.component.modify",
+      "payload": {
+        "primitiveId": "${C12_ID}",
+        "patch": { "designator": "C12", "uniqueId": "A3_40" }
+      }
+    },
+    {
+      "id": "wire-c12-power",
+      "action": "schematic.wire.create",
+      "payload": {
+        "points": [450, 485, 480, 485],
+        "net": "+3V3_MCU"
+      }
+    },
+    {
+      "id": "flag-c12-power",
+      "action": "schematic.netflag.create",
+      "payload": {
+        "kind": "power",
+        "net": "+3V3_MCU",
+        "x": 450,
+        "y": 485,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "wire-c12-gnd",
+      "action": "schematic.wire.create",
+      "payload": {
+        "points": [520, 485, 550, 485],
+        "net": "GND"
+      }
+    },
+    {
+      "id": "flag-c12-gnd",
+      "action": "schematic.netflag.create",
+      "payload": {
+        "kind": "ground",
+        "net": "GND",
+        "x": 550,
+        "y": 485,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "save-source-fix",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_restore_explicit_connections",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "steps": [
+    {
+      "id": "h1-5v-pin1",
+      "action": "schematic.wire.create",
+      "payload": { "points": [321, 763, 301, 763], "net": "+5V_MCU" }
+    },
+    {
+      "id": "h1-5v-pin2",
+      "action": "schematic.wire.create",
+      "payload": { "points": [381, 763, 401, 763], "net": "+5V_MCU" }
+    },
+    {
+      "id": "f1-fb3-explicit-joint",
+      "action": "schematic.wire.create",
+      "payload": { "points": [220, 330, 235, 330], "net": "+5V_FUSED" }
+    },
+    {
+      "id": "c6-ground-wire",
+      "action": "schematic.wire.create",
+      "payload": { "points": [330, 234, 350, 234], "net": "GND" }
+    },
+    {
+      "id": "c6-ground-flag",
+      "action": "schematic.netflag.create",
+      "payload": { "kind": "ground", "net": "GND", "x": 350, "y": 234, "rotation": 90 }
+    },
+    {
+      "id": "c7-ground-wire",
+      "action": "schematic.wire.create",
+      "payload": { "points": [330, 198, 350, 198], "net": "GND" }
+    },
+    {
+      "id": "c7-ground-flag",
+      "action": "schematic.netflag.create",
+      "payload": { "kind": "ground", "net": "GND", "x": 350, "y": 198, "rotation": 90 }
+    },
+    {
+      "id": "d8-ground-wire",
+      "action": "schematic.wire.create",
+      "payload": { "points": [219, 199, 239, 199], "net": "GND" }
+    },
+    {
+      "id": "d8-ground-flag",
+      "action": "schematic.netflag.create",
+      "payload": { "kind": "ground", "net": "GND", "x": 239, "y": 199, "rotation": 90 }
+    },
+    {
+      "id": "save-restored-connections",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

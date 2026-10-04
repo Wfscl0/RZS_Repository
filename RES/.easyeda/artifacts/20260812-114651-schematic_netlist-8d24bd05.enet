@@ -1,0 +1,276 @@
+{
+    "version": "2.0.0",
+    "components": {
+        "": {
+            "props": {
+                "Unique ID": "",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "931300cba12c5a1c",
+                "Designator": "H2",
+                "Device": "de1000153f156d44",
+                "LCSC Part Name": "2x12P 间距:2.54mm 方针 直插",
+                "Supplier Part": "C492429",
+                "Manufacturer": "XFCN(兴飞)",
+                "Manufacturer Part": "PZ254V-12-24P",
+                "Supplier Footprint": "插件,P=2.54mm",
+                "JLCPCB Part Class": "Extended Part",
+                "Datasheet": "https://item.szlcsc.com/datasheet/PZ254V-12-24P/502985.html",
+                "Supplier": "LCSC",
+                "Footprint": "b7aa078e853732cb",
+                "3D Model": "f954196fb9964e358e150d3367c2c883|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "HDR-TH_24P-P2.54-M-LI-2X12P",
+                "3D Model Transform": "1199.9976,196.85,0,0,0,0,0,0,-118.11",
+                "Pin Structure": "2x12P",
+                "Pitch": "2.54mm",
+                "Row Spacing": "2.54mm",
+                "Circluar Pins/Square Pins": "方针",
+                "Mounting Type": "直插",
+                "Number of Rows": "双排",
+                "Number of Pins": "24P",
+                "Current Rating": "-",
+                "Voltage Rating (Max)": "-",
+                "Length of Mating Pin": "6mm",
+                "Insulation Height": "2.5mm",
+                "Length of End Connection Pin": "3mm",
+                "Contact Material": "黄铜",
+                "Contact Plating": "-",
+                "Operating Temperature": "-40℃~+105℃",
+                "Color": "黑色",
+                "Name": "={Manufacturer Part}",
+                "Description": "插针结构:2x12P;间距:2.54mm;行距:2.54mm;圆针/方针:方针;安装方式:直插;排数:双排;总PIN位数:24P;额定电流:-;额定电压:-;配合针长度:6mm;塑高:2.5mm;端接针长度:3mm;触头材质:黄铜;触头镀层:-;工作温度:-40℃~+105℃;颜色:黑色;",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I239",
+                "DeviceName": "PZ254V-12-24P",
+                "FootprintName": "HDR-TH_24P-P2.54-V-M-R2-C12-S2.54"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "3",
+                    "number": "3",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                },
+                "4": {
+                    "name": "4",
+                    "number": "4",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "4"
+                    }
+                },
+                "5": {
+                    "name": "5",
+                    "number": "5",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "5"
+                    }
+                },
+                "6": {
+                    "name": "6",
+                    "number": "6",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "6"
+                    }
+                },
+                "7": {
+                    "name": "7",
+                    "number": "7",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "7"
+                    }
+                },
+                "8": {
+                    "name": "8",
+                    "number": "8",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "8"
+                    }
+                },
+                "9": {
+                    "name": "9",
+                    "number": "9",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "9"
+                    }
+                },
+                "10": {
+                    "name": "10",
+                    "number": "10",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "10"
+                    }
+                },
+                "11": {
+                    "name": "11",
+                    "number": "11",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "11"
+                    }
+                },
+                "12": {
+                    "name": "12",
+                    "number": "12",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "12"
+                    }
+                },
+                "13": {
+                    "name": "13",
+                    "number": "13",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "13"
+                    }
+                },
+                "14": {
+                    "name": "14",
+                    "number": "14",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "14"
+                    }
+                },
+                "15": {
+                    "name": "15",
+                    "number": "15",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "15"
+                    }
+                },
+                "16": {
+                    "name": "16",
+                    "number": "16",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "16"
+                    }
+                },
+                "17": {
+                    "name": "17",
+                    "number": "17",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "17"
+                    }
+                },
+                "18": {
+                    "name": "18",
+                    "number": "18",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "18"
+                    }
+                },
+                "19": {
+                    "name": "19",
+                    "number": "19",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "19"
+                    }
+                },
+                "20": {
+                    "name": "20",
+                    "number": "20",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "20"
+                    }
+                },
+                "21": {
+                    "name": "21",
+                    "number": "21",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "21"
+                    }
+                },
+                "22": {
+                    "name": "22",
+                    "number": "22",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "22"
+                    }
+                },
+                "23": {
+                    "name": "23",
+                    "number": "23",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "23"
+                    }
+                },
+                "24": {
+                    "name": "24",
+                    "number": "24",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "24"
+                    }
+                }
+            }
+        }
+    },
+    "designRule": {
+        "trackPhysics": {
+            "copperThickness1oz": {
+                "name": "copperThickness1oz",
+                "isDefault": true,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.127,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            },
+            "copperThickness2oz": {
+                "name": "copperThickness2oz",
+                "isDefault": false,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.203,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            }
+        },
+        "netRule": {}
+    },
+    "differentialPair": {},
+    "netClass": {},
+    "equalLengthNetGroup": {}
+}

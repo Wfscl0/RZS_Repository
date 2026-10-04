@@ -1,0 +1,13 @@
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/res_protocol.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/res_remote.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/res_vehicle.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/res_bridge_syntax.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/test_res_protocol.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/test_res_remote.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/test_res_indicators.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/test_ina226.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/test_res_vehicle.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/res_serial_vehicle_harness.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/test.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/edit_cache.dir
+C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/build-four-lamps-20260910/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,4 @@
+{"phase": "before", "tick": 159542, "last_valid": 159441, "age_ms": 101, "state": 2, "faults": "0x0", "relays": 3, "relay_pin_levels": 0, "start_pin": 0}
+{"phase": "after_sdn", "tick": 159620, "last_valid": 159441, "age_ms": 179, "state": 2, "faults": "0x0", "relays": 3, "relay_pin_levels": 0, "start_pin": 0}
+{"phase": "after_sdn", "tick": 159933, "last_valid": 159441, "age_ms": 492, "state": 4, "faults": "0x84", "relays": 0, "relay_pin_levels": 3, "start_pin": 0}
+{"phase": "released", "tick": 159933, "last_valid": 159441, "age_ms": 492, "state": 4, "faults": "0x84", "relays": 0, "relay_pin_levels": 3, "start_pin": 0}

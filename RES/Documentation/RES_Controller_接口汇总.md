@@ -1,5 +1,7 @@
 # RES 遥控端 STM32 接口汇总
 
+> 2026-10-04 整车接口：网表统一入口为 `../../网表/`；删除 EBS/RES 两路都输出 1 后才开始监测的上电等待设计，改为 TSMS 上电前先给 RES_ERROR 12 V。EBS 安全回路经 DCDC 降为 12 V。本文 F103 遥控端拓扑网表为旧导出参考。
+
 依据：
 
 - 拓扑网表：`../Hardware/Netlists/RES_Controller.NET`；

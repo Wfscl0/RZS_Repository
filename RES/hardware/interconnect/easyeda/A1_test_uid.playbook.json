@@ -1,0 +1,9 @@
+{
+  "version":1,
+  "meta":{"name":"A1-test-uid","project":"RES_LoRa_32","doc":"e4d3e62b62def93f"},
+  "defaults":{"timeoutSec":30,"retry":0,"continueOnError":false},
+  "steps":[
+    {"id":"uid_j1","run":"sch modify","flags":{"id":"04a1cb2686f2b427","patch":"{\"uniqueId\":\"A1_J1\"}"}},
+    {"id":"save","run":"sch save","checkpoint":true}
+  ]
+}

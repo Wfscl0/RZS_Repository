@@ -1,0 +1,4 @@
+{"playbookSha256":"d721c9d9e19e0e25e480b05faefb95f3a5543cab3aac64dcbf30f482c3443514","name":"RES_LoRa_32_reuse_existing_ground_flags","project":"RES_LoRa_32","startedAt":"2026-08-17T00:37:40+08:00"}
+{"idx":1,"id":"q2-r17-to-existing-ground","status":"ok","ms":154}
+{"idx":2,"id":"u2-r19-to-existing-ground","status":"ok","ms":142}
+{"idx":3,"id":"save-ground-reuse","status":"ok","ms":335}

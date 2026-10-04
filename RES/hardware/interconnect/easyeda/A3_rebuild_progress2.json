@@ -1,0 +1,94 @@
+﻿{
+  "id": "req_1472",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-08-12T05:05:17.4792633Z",
+  "ok": true,
+  "result": {
+    "components": [
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "3ad6fa1b77c80c0d"
+        },
+        "componentType": "sheet",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "3ad6fa1b77c80c0d"
+        },
+        "mirror": false,
+        "net": "",
+        "primitiveId": "10fefd7083aa0eea",
+        "rotation": 0,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "2a16082b55c6caeb"
+        },
+        "componentType": "part",
+        "designator": "J1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "2a16082b55c6caeb"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6957ef92839dbe21"
+        },
+        "manufacturer": "DEGSON(高正/高松)",
+        "manufacturerId": "DG301-5.0-03P-12-00A(H)",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Color": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Mounting Type": "",
+          "Number of PINs Per Row": "",
+          "Number of Pins": "",
+          "Number of Positions or Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pitch": "",
+          "Supplier Footprint": "",
+          "Voltage Rating (Max)": ""
+        },
+        "primitiveId": "8e1d45b9a5d05c8a",
+        "rotation": 180,
+        "subPartName": "DG301-5.0-03P-12-00A(H).1",
+        "supplier": "LCSC",
+        "supplierId": "C5128849",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b2abe6a06e046ab1"
+        },
+        "uniqueId": "",
+        "x": 90,
+        "y": 675
+      }
+    ],
+    "count": 2,
+    "wires": []
+  },
+  "context": {
+    "projectUuid": "f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf",
+    "projectName": "RES_LoRa_32",
+    "documentUuid": "2d87cc5a21c0cfc2",
+    "documentType": "schematic",
+    "tabId": "2d87cc5a21c0cfc2@f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf"
+  }
+}

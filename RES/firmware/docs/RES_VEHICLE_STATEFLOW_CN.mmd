@@ -1,0 +1,28 @@
+flowchart LR
+  B["BOOT 状态0<br/>GPIO复位安全态<br/>R1断开，R2断开"]
+  W["WAIT_LINK 状态1<br/>等待新鉴权会话<br/>R1闭合，R2断开<br/>0x510/50 ms"]
+  R["READY 状态2<br/>连续3帧有效READY<br/>R1、R2均闭合"]
+  G["GO_EVENT 状态3<br/>START_OUT 100 ms<br/>发送0x511"]
+  F["STOPPED_FAULT 状态4<br/>R1、R2断开<br/>0x510上报故障<br/>同会话READY无效"]
+
+  B -->|初始化完成| W
+  W -->|新会话、3帧READY、无本地故障| R
+  R -->|新的鉴权GO命令| G
+  G -->|100 ms结束| R
+  W -->|鉴权STOP/本地故障/已建立链路后失联500 ms| F
+  R -->|鉴权STOP/本地故障/失联500 ms| F
+  G -->|鉴权STOP/本地故障/失联500 ms| F
+  F -.->|排除本地故障、遥控器重启形成不同会话、鉴权HELLO| W
+
+  C["赛车端CAN：0x510/50 ms"] --> V["VCU安全监督：状态/flags异常或150 ms超时"]
+  V --> E["VCU数字输出 RES_Error 有效"]
+  E --> H["独立硬件锁存电路：切断并保持安全回路"]
+
+  classDef normal fill:#EAF3FF,stroke:#2869D8,color:#172033;
+  classDef ready fill:#E8F7EF,stroke:#238457,color:#172033;
+  classDef event fill:#FFF3DF,stroke:#B96B0D,color:#172033;
+  classDef fault fill:#FDEBEC,stroke:#C73E4D,color:#172033;
+  class B,W,C normal;
+  class R ready;
+  class G,V event;
+  class F,E,H fault;

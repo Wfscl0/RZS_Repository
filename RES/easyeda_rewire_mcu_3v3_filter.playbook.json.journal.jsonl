@@ -1,0 +1,14 @@
+{"playbookSha256":"3ebd83a1483b6d9b75dee19b3fd7990da8ae54eb1a82f3abe966da9e8977d381","name":"RES_LoRa_32_rewire_mcu_3v3_filter","project":"RES_LoRa_32","startedAt":"2026-08-17T17:46:19+08:00"}
+{"idx":1,"id":"wire-fb5-raw","status":"ok","ms":150}
+{"idx":2,"id":"flag-fb5-raw","status":"ok","ms":573}
+{"idx":3,"id":"wire-fb5-clean","status":"ok","ms":226}
+{"idx":4,"id":"flag-fb5-clean","status":"ok","ms":449}
+{"idx":5,"id":"wire-c11-power","status":"ok","ms":146}
+{"idx":6,"id":"flag-c11-power","status":"ok","ms":485}
+{"idx":7,"id":"wire-c11-gnd","status":"ok","ms":167}
+{"idx":8,"id":"flag-c11-gnd","status":"ok","ms":425}
+{"idx":9,"id":"wire-c12-power","status":"ok","ms":108}
+{"idx":10,"id":"flag-c12-power","status":"ok","ms":388}
+{"idx":11,"id":"wire-c12-gnd","status":"ok","ms":144}
+{"idx":12,"id":"flag-c12-gnd","status":"ok","ms":604}
+{"idx":13,"id":"save-rewire","status":"ok","ms":97}

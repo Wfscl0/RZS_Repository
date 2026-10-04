@@ -1,0 +1,14 @@
+{"playbookSha256":"ee66221875c49036adc7b00e4199383a4a172e246aa0ee8e2d7001f557089a83","name":"RES-interconnect-A1-relayout","project":"RES_LoRa_32","startedAt":"2026-08-11T01:57:30+08:00"}
+{"playbookSha256":"ee66221875c49036adc7b00e4199383a4a172e246aa0ee8e2d7001f557089a83","name":"RES-interconnect-A1-relayout","project":"RES_LoRa_32","startedAt":"2026-08-11T01:58:02+08:00"}
+{"idx":1,"id":"delete_unused_uart_pullups","status":"ok","ms":259}
+{"idx":2,"id":"move_j8","status":"ok","ms":90}
+{"idx":3,"id":"move_j9","status":"ok","ms":90}
+{"idx":4,"id":"move_r10","status":"ok","ms":96}
+{"idx":5,"id":"move_r11","status":"ok","ms":96}
+{"idx":6,"id":"move_r12","status":"ok","ms":233}
+{"idx":7,"id":"move_r13","status":"ok","ms":185}
+{"idx":8,"id":"move_d3","status":"ok","ms":112}
+{"idx":9,"id":"move_d4","status":"ok","ms":94}
+{"idx":10,"id":"move_d5","status":"ok","ms":109}
+{"idx":11,"id":"move_d6","status":"ok","ms":111}
+{"idx":12,"id":"save","status":"ok","ms":95}

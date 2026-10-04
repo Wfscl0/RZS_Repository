@@ -1,0 +1,12 @@
+{"playbookSha256":"aafd890fbf998c9102a4f6bf7aba09e2b5f7f7cf23633ae70c228f92f1f791cb","name":"RES_LoRa_32_rewire_mcu_3v3_compact","project":"RES_LoRa_32","startedAt":"2026-08-17T17:48:36+08:00"}
+{"idx":1,"id":"wire-raw","status":"ok","ms":129}
+{"idx":2,"id":"flag-raw","status":"ok","ms":412}
+{"idx":3,"id":"wire-clean-bus-1","status":"ok","ms":188}
+{"idx":4,"id":"wire-clean-bus-2","status":"ok","ms":229}
+{"idx":5,"id":"wire-clean-flag","status":"ok","ms":134}
+{"idx":6,"id":"flag-clean","status":"ok","ms":467}
+{"idx":7,"id":"wire-c11-gnd","status":"ok","ms":125}
+{"idx":8,"id":"flag-c11-gnd","status":"ok","ms":381}
+{"idx":9,"id":"wire-c12-gnd","status":"ok","ms":118}
+{"idx":10,"id":"flag-c12-gnd","status":"ok","ms":439}
+{"idx":11,"id":"save","status":"ok","ms":342}

@@ -1,0 +1,19 @@
+CMakeFiles/res_remote.dir/remote_g0b1/Core/Src/res_remote_app.c.obj: \
+ C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c \
+ C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/remote_g0b1/Core/Inc/res_remote_app.h \
+ C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/remote_g0b1/Core/Inc/res_protocol.h \
+ C:/Users/icemi/Desktop/RZS_Repository/RES/firmware/shared/include/res_protocol.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/string.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h

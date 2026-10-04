@@ -1,0 +1,73 @@
+﻿{
+  "id": "req_835",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-08-12T02:32:06.427607Z",
+  "ok": true,
+  "result": {
+    "component": {
+      "addIntoBom": true,
+      "addIntoPcb": true,
+      "component": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "b4b250e916f8cf1a"
+      },
+      "componentType": "part",
+      "designator": "D99",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "={Manufacturer Part}",
+        "uuid": "b4b250e916f8cf1a"
+      },
+      "footprint": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "01f7c402526c623a"
+      },
+      "manufacturer": "TECH PUBLIC(台舟)",
+      "manufacturerId": "PESD5V0S1BA",
+      "mirror": false,
+      "name": "={Manufacturer Part}",
+      "net": "",
+      "otherProperty": {
+        "Clamping Voltage": "",
+        "Datasheet": "",
+        "Description": "",
+        "JLCPCB Part Class": "",
+        "Junction Capacitance": "",
+        "LCSC Part Name": "",
+        "Number of Channels": "",
+        "Operating Temperature": "",
+        "Peak Pulse Current (Ipp)": "",
+        "Peak Pulse Power Dissipation (Ppp)": "",
+        "Polarity": "",
+        "Reverse Leakage Current (Ir)": "",
+        "Reverse Stand-Off Voltage (Vrwm)": "",
+        "Supplier Footprint": "",
+        "Type": "",
+        "Voltage - Breakdown": "",
+        "level of protection": ""
+      },
+      "primitiveId": "680388d6ad46bf14",
+      "rotation": 270,
+      "subPartName": "PESD5V0S1BA_C2827694.1",
+      "supplier": "LCSC",
+      "supplierId": "C2827694",
+      "symbol": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "uuid": "f6f9046bd35a0d23"
+      },
+      "uniqueId": "",
+      "x": 250,
+      "y": 595
+    },
+    "primitiveId": "680388d6ad46bf14",
+    "supplierIdBackfilled": "C2827694"
+  },
+  "context": {
+    "projectUuid": "f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf",
+    "projectName": "RES_LoRa_32",
+    "documentUuid": "e4d3e62b62def93f",
+    "documentType": "schematic",
+    "tabId": "e4d3e62b62def93f@f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf"
+  }
+}

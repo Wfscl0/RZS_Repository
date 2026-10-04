@@ -1,0 +1,13 @@
+Sub CATMain()
+  Dim shell, scriptPath, commandLine
+  scriptPath = "C:\Users\icemi\Desktop\RZS_Repository\RES\catia_macros\RES_Enclosure_Generator.vbs"
+  Set shell = CreateObject("WScript.Shell")
+  commandLine = "cscript.exe //nologo """ & scriptPath & """"
+
+  ' Run asynchronously. Waiting here would block CATIA's automation thread and
+  ' prevent the external generator from attaching to the current CATIA session.
+  shell.Run commandLine, 1, False
+  MsgBox "RES enclosure generator has started." & vbCrLf & _
+         "Keep CATIA open until four CATPart files and STL files are created.", _
+         64, "RES Enclosure"
+End Sub

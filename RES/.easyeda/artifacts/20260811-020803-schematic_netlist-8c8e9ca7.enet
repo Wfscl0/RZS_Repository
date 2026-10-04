@@ -1,0 +1,272 @@
+{
+    "version": "2.0.0",
+    "components": {
+        "": {
+            "props": {
+                "Unique ID": "",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "9b94c507e4638323",
+                "Designator": "D6",
+                "Device": "5b4f25d55a1d64f4",
+                "LCSC Part Name": "",
+                "Supplier Part": "PESD3V3S1UL,315.1",
+                "Manufacturer": "Nexperia(安世)",
+                "Manufacturer Part": "PESD3V3S1UL,315",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4d33a348c882b58f",
+                "3D Model": "96b2cca1435e47b08b55ab6e73617580|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "DFN1006_L1-W0.6-H0.4-2L-RD",
+                "3D Model Transform": "40.1574,24.4094,0,0,0,0,0,0,0",
+                "Reverse Stand-Off Voltage (Vrwm)": "",
+                "Clamping Voltage": "",
+                "Peak Pulse Power Dissipation (Ppp)": "",
+                "Voltage - Breakdown": "",
+                "Number of Channels": "",
+                "Operating Temperature": "",
+                "Type": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I38",
+                "DeviceName": "PESD3V3S1UL,315",
+                "FootprintName": "DFN1006-2L-RD"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "C",
+                    "number": "1",
+                    "net": "PA3_EXT",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        }
+    },
+    "designRule": {
+        "trackPhysics": {
+            "copperThickness1oz": {
+                "name": "copperThickness1oz",
+                "isDefault": true,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.127,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            },
+            "copperThickness2oz": {
+                "name": "copperThickness2oz",
+                "isDefault": false,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.203,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            }
+        },
+        "netRule": {
+            "PWR_3V3_IN": {
+                "net": "PWR_3V3_IN",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "GND": {
+                "net": "GND",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PWR_3V3_PROTECTED": {
+                "net": "PWR_3V3_PROTECTED",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "3V3_RADIO": {
+                "net": "3V3_RADIO",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "3V3_MCU": {
+                "net": "3V3_MCU",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "STM_TX_RAW": {
+                "net": "STM_TX_RAW",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "STM_RX_RAW": {
+                "net": "STM_RX_RAW",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_RXD": {
+                "net": "LORA_RXD",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_TXD": {
+                "net": "LORA_TXD",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "5V_IN_RAW": {
+                "net": "5V_IN_RAW",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "5V_PROTECTED": {
+                "net": "5V_PROTECTED",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "3V3_IN_RAW": {
+                "net": "3V3_IN_RAW",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "3V3_PROTECTED": {
+                "net": "3V3_PROTECTED",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "+5V_MCU": {
+                "net": "+5V_MCU",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "+3V3_RADIO": {
+                "net": "+3V3_RADIO",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "UART_MCU_TX": {
+                "net": "UART_MCU_TX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "UART_MCU_RX": {
+                "net": "UART_MCU_RX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PB5_LORA_RESET_CTL": {
+                "net": "PB5_LORA_RESET_CTL",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_RESET_N": {
+                "net": "LORA_RESET_N",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_M1": {
+                "net": "LORA_M1",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_M0": {
+                "net": "LORA_M0",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA0_AUX": {
+                "net": "PA0_AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA1_AUX": {
+                "net": "PA1_AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA2_AUX": {
+                "net": "PA2_AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA0_EXT": {
+                "net": "PA0_EXT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA1_EXT": {
+                "net": "PA1_EXT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA2_EXT": {
+                "net": "PA2_EXT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA3_EXT": {
+                "net": "PA3_EXT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "+3V3_AUX_OUT": {
+                "net": "+3V3_AUX_OUT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA3_AUX": {
+                "net": "PA3_AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            }
+        }
+    },
+    "differentialPair": {},
+    "netClass": {},
+    "equalLengthNetGroup": {}
+}

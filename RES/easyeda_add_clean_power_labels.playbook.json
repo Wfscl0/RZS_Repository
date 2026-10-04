@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_add_clean_power_labels",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "steps": [
+    {
+      "id": "h1-single-5v-label",
+      "action": "schematic.wire.create",
+      "payload": { "points": [321, 763, 321, 783, 381, 783, 381, 763], "net": "+5V_MCU" }
+    },
+    {
+      "id": "f1-fb3-single-label",
+      "action": "schematic.wire.create",
+      "payload": { "points": [220, 330, 220, 350, 240, 350], "net": "+5V_FUSED" }
+    },
+    {
+      "id": "five-volt-output-single-label",
+      "action": "schematic.wire.create",
+      "payload": { "points": [265, 330, 265, 350, 300, 350], "net": "+5V_MCU" }
+    },
+    {
+      "id": "radio-decoupling-single-label",
+      "action": "schematic.wire.create",
+      "payload": { "points": [291, 163, 251, 163], "net": "+3V3_RADIO" }
+    },
+    {
+      "id": "reset-ground-single-label",
+      "action": "schematic.wire.create",
+      "payload": { "points": [570, 621, 570, 601], "net": "GND" }
+    },
+    {
+      "id": "mode-ground-single-label",
+      "action": "schematic.wire.create",
+      "payload": { "points": [715, 636, 750, 636], "net": "GND" }
+    },
+    {
+      "id": "save-clean-power-labels",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

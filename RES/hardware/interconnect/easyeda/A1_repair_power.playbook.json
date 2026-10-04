@@ -1,0 +1,36 @@
+{
+  "version":1,
+  "meta":{"name":"RES-interconnect-A1-repair-power","project":"RES_LoRa_32","doc":"e4d3e62b62def93f"},
+  "defaults":{"timeoutSec":30,"retry":0,"continueOnError":false},
+  "steps":[
+    {"id":"remove_inward_flags","run":"sch prim-delete","flags":{"ids":"[\"712f65c5f730938b\",\"493a7466d15402ac\",\"b7986202427532b5\",\"f589859e163ffb51\",\"c1763278fdaadd86\",\"a549300c5d17f193\",\"ecca3770fdd81509\",\"4e8439356f20d838\",\"151d7406c98b6ecc\",\"c5662847f88d9286\",\"4a6267ad47bd50ca\",\"3650d2137512c425\",\"7326e7d624aa1136\",\"2fdac874ccf473cf\",\"4089b7d0bfa59da8\",\"f85124124efccc85\",\"a027822ae529b1fb\",\"45c2afaa354bab73\",\"262fed6ed9dbf807\",\"061780ed55d8b0d0\",\"2dd66c0ae58eca98\",\"0d3cc77a09755965\",\"f574ea71f7eb6f73\",\"51d46e9966283169\",\"2503b66ad4cb03f7\",\"8903c69e79bbeb54\",\"12a521fa9d72b4bb\",\"e90f3d2de9a8ecc4\",\"26a261e885d4b37f\",\"1864c550472a6be1\",\"b688df8cb08af3a7\",\"6325bab6ed5bd676\",\"1cb2119e9c4d275c\",\"89983cfd39e8e9a0\",\"a6dac03f7abd324d\",\"7d321b26eb46fc63\",\"045cc59b018ad1f6\",\"fc7ef8cbdf3ab791\",\"bae545e3de0a3feb\",\"ccfe4c30901841ab\",\"a885bc4ed65904b3\",\"0526e5144b512182\",\"ab03b3259b20eff7\",\"1a3dd22742774432\",\"fc4c3a21a5f075ec\",\"00300b79858fc2f1\",\"d9d3a58d18565127\",\"c966699dc4bae97f\",\"f8a40d13e08d8ecd\",\"75e69f3fec863dcf\"]"}},
+
+    {"id":"pwr5_j2_23","run":"sch connect","flags":{"x":560,"y":195,"kind":"power","net":"+5V_MCU","direction":"left","offset":20}},
+    {"id":"pwr5_j2_24","run":"sch connect","flags":{"x":620,"y":195,"kind":"power","net":"+5V_MCU","direction":"right","offset":20}},
+    {"id":"pwr5_c1","run":"sch connect","flags":{"x":390,"y":215,"kind":"power","net":"+5V_MCU","direction":"down","offset":20}},
+    {"id":"gnd_j1","run":"sch connect","flags":{"x":90,"y":220,"kind":"gnd","net":"GND","direction":"left","offset":20}},
+    {"id":"gnd_d1","run":"sch connect","flags":{"x":270,"y":210,"kind":"gnd","net":"GND","direction":"down","offset":20}},
+    {"id":"gnd_d2","run":"sch connect","flags":{"x":270,"y":350,"kind":"gnd","net":"GND","direction":"down","offset":20}},
+    {"id":"gnd_c1","run":"sch connect","flags":{"x":390,"y":245,"kind":"gnd","net":"GND","direction":"up","offset":20}},
+    {"id":"pwr3_c2","run":"sch connect","flags":{"x":390,"y":350,"kind":"power","net":"+3V3_RADIO","direction":"down","offset":20}},
+    {"id":"gnd_c2","run":"sch connect","flags":{"x":390,"y":390,"kind":"gnd","net":"GND","direction":"up","offset":20}},
+    {"id":"pwr3_c3","run":"sch connect","flags":{"x":450,"y":355,"kind":"power","net":"+3V3_RADIO","direction":"down","offset":20}},
+    {"id":"gnd_c3","run":"sch connect","flags":{"x":450,"y":385,"kind":"gnd","net":"GND","direction":"up","offset":20}},
+    {"id":"pwr3_c4","run":"sch connect","flags":{"x":510,"y":350,"kind":"power","net":"+3V3_RADIO","direction":"down","offset":20}},
+    {"id":"gnd_c4","run":"sch connect","flags":{"x":510,"y":390,"kind":"gnd","net":"GND","direction":"up","offset":20}},
+    {"id":"gnd_j2","run":"sch connect","flags":{"x":620,"y":305,"kind":"gnd","net":"GND","direction":"right","offset":20}},
+    {"id":"gnd_j3","run":"sch connect","flags":{"x":620,"y":575,"kind":"gnd","net":"GND","direction":"right","offset":20}},
+    {"id":"pwr3_r7","run":"sch connect","flags":{"x":860,"y":540,"kind":"power","net":"+3V3_RADIO","direction":"down","offset":20}},
+    {"id":"gnd_j6","run":"sch connect","flags":{"x":980,"y":625,"kind":"gnd","net":"GND","direction":"right","offset":20}},
+    {"id":"gnd_j7","run":"sch connect","flags":{"x":1070,"y":625,"kind":"gnd","net":"GND","direction":"right","offset":20}},
+    {"id":"gnd_d3","run":"sch connect","flags":{"x":930,"y":720,"kind":"gnd","net":"GND","direction":"down","offset":20}},
+    {"id":"gnd_d4","run":"sch connect","flags":{"x":950,"y":770,"kind":"gnd","net":"GND","direction":"down","offset":20}},
+    {"id":"gnd_d5","run":"sch connect","flags":{"x":970,"y":820,"kind":"gnd","net":"GND","direction":"down","offset":20}},
+    {"id":"gnd_d6","run":"sch connect","flags":{"x":990,"y":870,"kind":"gnd","net":"GND","direction":"down","offset":20}},
+    {"id":"aux3_j3_23","run":"sch connect","flags":{"x":560,"y":465,"kind":"power","net":"+3V3_AUX_OUT","direction":"left","offset":20}},
+    {"id":"aux3_j3_24","run":"sch connect","flags":{"x":620,"y":465,"kind":"power","net":"+3V3_AUX_OUT","direction":"right","offset":20}},
+    {"id":"aux3_j9","run":"sch connect","flags":{"x":1030,"y":900,"kind":"power","net":"+3V3_AUX_OUT","direction":"left","offset":20}},
+    {"id":"gnd_j9","run":"sch connect","flags":{"x":1030,"y":890,"kind":"gnd","net":"GND","direction":"left","offset":20}},
+    {"id":"save","run":"sch save","checkpoint":true}
+  ]
+}

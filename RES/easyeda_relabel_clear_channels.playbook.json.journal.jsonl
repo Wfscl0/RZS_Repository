@@ -1,0 +1,4 @@
+{"playbookSha256":"dda7b86f0962c12d25a0f345c20e8ecd858faca53ff3f66823a1bfaed550905c","name":"RES_LoRa_32_relabel_clear_channels","project":"RES_LoRa_32","startedAt":"2026-08-17T00:50:56+08:00"}
+{"idx":1,"id":"five-volt-label-clear-channel","status":"ok","ms":130}
+{"idx":2,"id":"mode-ground-label-clear-channel","status":"ok","ms":211}
+{"idx":3,"id":"save-clear-channel-labels","status":"ok","ms":127}

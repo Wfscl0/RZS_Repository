@@ -1,0 +1,53 @@
+flowchart LR
+  subgraph R[遥控端]
+    R0[上电，GPIO安全初始化] --> R1{STOP与INA226自检}
+    R1 -->|通过| R2[发送HELLO/READY]
+    R2 --> R3[有效链路后接受GO按钮]
+    R1 -->|失败| RS[立即STOP锁存]
+    R3 -->|急停/断线/严重低电量| RS
+  end
+
+  subgraph W[双端E220无线链路]
+    W0[CRC16 + SipHash鉴权] --> W1[会话号/序号/ACK/重放保护]
+    W1 --> W2[GO命令计数去重]
+    WS[STOP关键帧重复发送/三信道设计]
+  end
+
+  subgraph V[赛车端]
+    V0[上电：R1闭合、R2断开] --> V1[连续3帧READY]
+    V1 --> V2[R1和R2闭合/READY]
+    V2 --> V3[新GO：START_OUT 100ms]
+    VS[STOP或500ms失联] --> V4[R1和R2断开/FAULT_OUT]
+  end
+
+  subgraph C[VCU]
+    C0[接收0x510/50ms] --> C1{状态、flags、继电器和150ms超时正常？}
+    C1 -->|是| C2[结合AS Ready接受0x511]
+    C1 -->|否| CE[输出RES_ERROR]
+  end
+
+  subgraph H[独立硬件锁存板]
+    H0[正常条件允许安全回路] 
+    HE[锁存RES_ERROR/保持安全状态]
+  end
+
+  R2 --> W0 --> V1
+  R3 --> W2 --> V3 --> C2 --> H0
+  RS --> WS --> VS
+  V4 --> C0
+  CE --> HE
+  C0 --> C1
+  V2 --> C0
+
+  HE -. 排除故障、释放急停、遥控器重启、新会话、人工复位 .-> R2
+
+  classDef normal fill:#EAF3FF,stroke:#2A6FDB,color:#172033;
+  classDef radio fill:#F0ECFF,stroke:#7254C7,color:#172033;
+  classDef can fill:#FFF4DF,stroke:#C77B16,color:#172033;
+  classDef safe fill:#E8F7EF,stroke:#238457,color:#172033;
+  classDef fault fill:#FDEBEC,stroke:#C73E4D,color:#172033,stroke-width:2px;
+  class R0,R1,R2,R3,V0,V1,V2,V3,V4 normal;
+  class W0,W1,W2 radio;
+  class C0,C1,C2 can;
+  class H0 safe;
+  class RS,WS,VS,CE,HE fault;

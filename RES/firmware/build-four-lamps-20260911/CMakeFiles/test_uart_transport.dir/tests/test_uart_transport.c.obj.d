@@ -1,0 +1,24 @@
+CMakeFiles/test_uart_transport.dir/tests/test_uart_transport.c.obj: \
+ C:\Users\ABC\Desktop\RZS_Repository\RES\firmware\tests\test_uart_transport.c \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/shared/include/res_uart_transport.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/tests/uart_host_stub/stm32g0xx_hal.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/shared/include/res_protocol.h \
+ E:/toolchain/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/assert.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ E:/toolchain/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h

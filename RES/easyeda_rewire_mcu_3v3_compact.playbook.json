@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_rewire_mcu_3v3_compact",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": { "timeoutSec": 30, "retry": 0, "continueOnError": false },
+  "steps": [
+    { "id": "wire-raw", "action": "schematic.wire.create", "payload": { "points": [480,270,450,270,450,290], "net": "+3V3_MCU_RAW" } },
+    { "id": "flag-raw", "action": "schematic.netflag.create", "payload": { "kind": "power", "net": "+3V3_MCU_RAW", "x": 450, "y": 290, "rotation": 0 } },
+
+    { "id": "wire-clean-bus-1", "action": "schematic.wire.create", "payload": { "points": [520,270,560,270,560,230,580,230], "net": "+3V3_MCU" } },
+    { "id": "wire-clean-bus-2", "action": "schematic.wire.create", "payload": { "points": [560,230,560,195,580,195], "net": "+3V3_MCU" } },
+    { "id": "wire-clean-flag", "action": "schematic.wire.create", "payload": { "points": [560,270,560,290], "net": "+3V3_MCU" } },
+    { "id": "flag-clean", "action": "schematic.netflag.create", "payload": { "kind": "power", "net": "+3V3_MCU", "x": 560, "y": 290, "rotation": 0 } },
+
+    { "id": "wire-c11-gnd", "action": "schematic.wire.create", "payload": { "points": [620,230,650,230], "net": "GND" } },
+    { "id": "flag-c11-gnd", "action": "schematic.netflag.create", "payload": { "kind": "ground", "net": "GND", "x": 650, "y": 230, "rotation": 90 } },
+    { "id": "wire-c12-gnd", "action": "schematic.wire.create", "payload": { "points": [620,195,650,195], "net": "GND" } },
+    { "id": "flag-c12-gnd", "action": "schematic.netflag.create", "payload": { "kind": "ground", "net": "GND", "x": 650, "y": 195, "rotation": 90 } },
+    { "id": "save", "action": "schematic.save", "checkpoint": true }
+  ]
+}

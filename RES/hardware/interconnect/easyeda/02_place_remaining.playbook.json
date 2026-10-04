@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "meta": {"name": "RES-remote-interconnect-place-remaining", "project": "RES_LoRa_32"},
+  "defaults": {"timeoutSec": 30, "retry": 0, "continueOnError": false},
+  "vars": {"LIB": "0819f05c4eef4c71ace90d822a990e87", "DOC": "3ca24248e339e2a9"},
+  "steps": [
+    {"id":"fb2","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"b82eee353f074494a8c072e95c2bbed0","x":350,"y":380,"designator":"FB2"}},
+    {"id":"c2","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"5aab1c45642a45a1bfaf36bb92694405","x":450,"y":150,"designator":"C2","rotation":90}},
+    {"id":"c3","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"96b39256cc3f4d80bd3b503deb4f3328","x":510,"y":150,"designator":"C3","rotation":90}},
+    {"id":"c4","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"6e5726223dd84f70bc3b626fc7d1f72c","x":450,"y":430,"designator":"C4","rotation":90}},
+    {"id":"c5","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"96b39256cc3f4d80bd3b503deb4f3328","x":510,"y":430,"designator":"C5","rotation":90}},
+    {"id":"stm-a","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"d3aa17bc6de34efea75f4381fca42784","x":650,"y":230,"designator":"J2"}},
+    {"id":"stm-b","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"d3aa17bc6de34efea75f4381fca42784","x":650,"y":470,"designator":"J3"}},
+    {"id":"r1","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"c1b17fa23f304726bc91c5924d9b7c0f","x":790,"y":250,"designator":"R1"}},
+    {"id":"r2","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"c1b17fa23f304726bc91c5924d9b7c0f","x":790,"y":310,"designator":"R2"}},
+    {"id":"lora","run":"sch place","flags":{"doc":"${DOC}","lib":"${LIB}","uuid":"62f4db8c1c354b4fae9c380e4fd4e1d9","x":960,"y":290,"designator":"J4","rotation":180}},
+    {"id":"save","run":"sch save","flags":{"doc":"${DOC}"},"checkpoint":true},
+    {"id":"notify","notify":"RES连接板器件放置完成，开始接线与未用引脚处理"}
+  ]
+}

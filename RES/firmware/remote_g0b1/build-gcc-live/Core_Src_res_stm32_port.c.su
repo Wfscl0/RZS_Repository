@@ -1,0 +1,10 @@
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:97:13:ina_read_register	40	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:84:13:ina_write_register	32	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:68:13:port_refresh_watchdog	8	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:28:13:port_radio_write	8	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:22:17:port_millis	8	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:47:13:port_set_led	8	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:120:6:RES_Application_Init	48	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:147:6:RES_Application_Task	32	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:170:6:RES_Application_UART_RxComplete	16	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_stm32_port.c:180:6:RES_Application_UART_Error	8	static

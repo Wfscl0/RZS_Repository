@@ -1,0 +1,2 @@
+{"playbookSha256":"3547b2575eddd89620f3798414665d738b0eb35913f31fc7751f6f14bf1fa8b6","name":"RES-A3-values","project":"RES_LoRa_32","startedAt":"2026-08-12T12:15:41+08:00"}
+{"idx":1,"id":"c1","status":"fail","ms":169,"error":"run \"sch modify\" exited 1: }"}

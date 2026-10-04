@@ -1,0 +1,11 @@
+{"playbookSha256":"8f4e932a904ad67434ce39b417cf62eedcde32eaa443e8570491790a0611cfc8","name":"RES_LoRa_32_restore_explicit_connections","project":"RES_LoRa_32","startedAt":"2026-08-17T00:30:24+08:00"}
+{"idx":1,"id":"h1-5v-pin1","status":"ok","ms":145}
+{"idx":2,"id":"h1-5v-pin2","status":"ok","ms":94}
+{"idx":3,"id":"f1-fb3-explicit-joint","status":"ok","ms":159}
+{"idx":4,"id":"c6-ground-wire","status":"ok","ms":93}
+{"idx":5,"id":"c6-ground-flag","status":"ok","ms":771}
+{"idx":6,"id":"c7-ground-wire","status":"ok","ms":208}
+{"idx":7,"id":"c7-ground-flag","status":"ok","ms":760}
+{"idx":8,"id":"d8-ground-wire","status":"ok","ms":148}
+{"idx":9,"id":"d8-ground-flag","status":"ok","ms":659}
+{"idx":10,"id":"save-restored-connections","status":"ok","ms":270}

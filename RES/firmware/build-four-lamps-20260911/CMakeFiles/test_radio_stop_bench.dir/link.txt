@@ -1,0 +1,3 @@
+E:\toolchain\bin\cmake.exe -E rm -f CMakeFiles\test_radio_stop_bench.dir/objects.a
+E:\toolchain\mingw64\bin\ar.exe qc CMakeFiles\test_radio_stop_bench.dir/objects.a @CMakeFiles\test_radio_stop_bench.dir\objects1.rsp
+E:\toolchain\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\test_radio_stop_bench.dir/objects.a -Wl,--no-whole-archive -o test_radio_stop_bench.exe -Wl,--out-implib,libtest_radio_stop_bench.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_radio_stop_bench.dir\linkLibs.rsp

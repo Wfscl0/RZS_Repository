@@ -1,0 +1,2766 @@
+﻿{
+  "id": "req_1295",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-08-12T04:11:55.9447681Z",
+  "ok": true,
+  "result": {
+    "check": {
+      "findings": [
+        {
+          "count": 3,
+          "designator": "J1",
+          "level": "warn",
+          "message": "3 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 110,
+              "y": 665
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 110,
+              "y": 675
+            },
+            {
+              "name": "3",
+              "number": "3",
+              "x": 110,
+              "y": 685
+            }
+          ],
+          "pins": [
+            "1",
+            "2",
+            "3"
+          ],
+          "primitiveId": "c406ac6fe1c84040",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "F1",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 195,
+              "y": 705
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 155,
+              "y": 705
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "9606531dc42cd53b",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "FB1",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 265,
+              "y": 705
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 225,
+              "y": 705
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "7d165c4749ccd768",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "D1",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 300,
+              "y": 660
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 300,
+              "y": 700
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "84bc7ca345d8dc95",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "C1",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 350,
+              "y": 695
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 350,
+              "y": 665
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "0a6286bba34f9e90",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "F2",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 195,
+              "y": 590
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 155,
+              "y": 590
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "66ecea4d48f3dcbc",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "FB2",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 265,
+              "y": 590
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 225,
+              "y": 590
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "64b4e8b2cde654a0",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "D2",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 300,
+              "y": 590
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 300,
+              "y": 540
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "1f0f8cdd14abf204",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "C2",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 350,
+              "y": 620
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 350,
+              "y": 580
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "16868111870dbf0c",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "C3",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 350,
+              "y": 565
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 350,
+              "y": 535
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "6603ea9d1d0ce6bd",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "C4",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 350,
+              "y": 520
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 350,
+              "y": 480
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "c18e04051e22d09f",
+          "type": "floating-pin"
+        },
+        {
+          "count": 24,
+          "designator": "J2",
+          "level": "warn",
+          "message": "24 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 425,
+              "y": 580
+            },
+            {
+              "name": "24",
+              "number": "24",
+              "x": 485,
+              "y": 470
+            },
+            {
+              "name": "3",
+              "number": "3",
+              "x": 425,
+              "y": 570
+            },
+            {
+              "name": "22",
+              "number": "22",
+              "x": 485,
+              "y": 480
+            },
+            {
+              "name": "5",
+              "number": "5",
+              "x": 425,
+              "y": 560
+            },
+            {
+              "name": "20",
+              "number": "20",
+              "x": 485,
+              "y": 490
+            },
+            {
+              "name": "7",
+              "number": "7",
+              "x": 425,
+              "y": 550
+            },
+            {
+              "name": "18",
+              "number": "18",
+              "x": 485,
+              "y": 500
+            },
+            {
+              "name": "9",
+              "number": "9",
+              "x": 425,
+              "y": 540
+            },
+            {
+              "name": "16",
+              "number": "16",
+              "x": 485,
+              "y": 510
+            },
+            {
+              "name": "11",
+              "number": "11",
+              "x": 425,
+              "y": 530
+            },
+            {
+              "name": "14",
+              "number": "14",
+              "x": 485,
+              "y": 520
+            },
+            {
+              "name": "13",
+              "number": "13",
+              "x": 425,
+              "y": 520
+            },
+            {
+              "name": "12",
+              "number": "12",
+              "x": 485,
+              "y": 530
+            },
+            {
+              "name": "15",
+              "number": "15",
+              "x": 425,
+              "y": 510
+            },
+            {
+              "name": "10",
+              "number": "10",
+              "x": 485,
+              "y": 540
+            },
+            {
+              "name": "17",
+              "number": "17",
+              "x": 425,
+              "y": 500
+            },
+            {
+              "name": "8",
+              "number": "8",
+              "x": 485,
+              "y": 550
+            },
+            {
+              "name": "19",
+              "number": "19",
+              "x": 425,
+              "y": 490
+            },
+            {
+              "name": "6",
+              "number": "6",
+              "x": 485,
+              "y": 560
+            },
+            {
+              "name": "21",
+              "number": "21",
+              "x": 425,
+              "y": 480
+            },
+            {
+              "name": "4",
+              "number": "4",
+              "x": 485,
+              "y": 570
+            },
+            {
+              "name": "23",
+              "number": "23",
+              "x": 425,
+              "y": 470
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 485,
+              "y": 580
+            }
+          ],
+          "pins": [
+            "1",
+            "24",
+            "3",
+            "22",
+            "5",
+            "20",
+            "7",
+            "18",
+            "9",
+            "16",
+            "11",
+            "14",
+            "13",
+            "12",
+            "15",
+            "10",
+            "17",
+            "8",
+            "19",
+            "6",
+            "21",
+            "4",
+            "23",
+            "2"
+          ],
+          "primitiveId": "3286055ce621e350",
+          "type": "floating-pin"
+        },
+        {
+          "count": 24,
+          "designator": "J3",
+          "level": "warn",
+          "message": "24 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 560,
+              "y": 580
+            },
+            {
+              "name": "24",
+              "number": "24",
+              "x": 620,
+              "y": 470
+            },
+            {
+              "name": "3",
+              "number": "3",
+              "x": 560,
+              "y": 570
+            },
+            {
+              "name": "22",
+              "number": "22",
+              "x": 620,
+              "y": 480
+            },
+            {
+              "name": "5",
+              "number": "5",
+              "x": 560,
+              "y": 560
+            },
+            {
+              "name": "20",
+              "number": "20",
+              "x": 620,
+              "y": 490
+            },
+            {
+              "name": "7",
+              "number": "7",
+              "x": 560,
+              "y": 550
+            },
+            {
+              "name": "18",
+              "number": "18",
+              "x": 620,
+              "y": 500
+            },
+            {
+              "name": "9",
+              "number": "9",
+              "x": 560,
+              "y": 540
+            },
+            {
+              "name": "16",
+              "number": "16",
+              "x": 620,
+              "y": 510
+            },
+            {
+              "name": "11",
+              "number": "11",
+              "x": 560,
+              "y": 530
+            },
+            {
+              "name": "14",
+              "number": "14",
+              "x": 620,
+              "y": 520
+            },
+            {
+              "name": "13",
+              "number": "13",
+              "x": 560,
+              "y": 520
+            },
+            {
+              "name": "12",
+              "number": "12",
+              "x": 620,
+              "y": 530
+            },
+            {
+              "name": "15",
+              "number": "15",
+              "x": 560,
+              "y": 510
+            },
+            {
+              "name": "10",
+              "number": "10",
+              "x": 620,
+              "y": 540
+            },
+            {
+              "name": "17",
+              "number": "17",
+              "x": 560,
+              "y": 500
+            },
+            {
+              "name": "8",
+              "number": "8",
+              "x": 620,
+              "y": 550
+            },
+            {
+              "name": "19",
+              "number": "19",
+              "x": 560,
+              "y": 490
+            },
+            {
+              "name": "6",
+              "number": "6",
+              "x": 620,
+              "y": 560
+            },
+            {
+              "name": "21",
+              "number": "21",
+              "x": 560,
+              "y": 480
+            },
+            {
+              "name": "4",
+              "number": "4",
+              "x": 620,
+              "y": 570
+            },
+            {
+              "name": "23",
+              "number": "23",
+              "x": 560,
+              "y": 470
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 620,
+              "y": 580
+            }
+          ],
+          "pins": [
+            "1",
+            "24",
+            "3",
+            "22",
+            "5",
+            "20",
+            "7",
+            "18",
+            "9",
+            "16",
+            "11",
+            "14",
+            "13",
+            "12",
+            "15",
+            "10",
+            "17",
+            "8",
+            "19",
+            "6",
+            "21",
+            "4",
+            "23",
+            "2"
+          ],
+          "primitiveId": "0c91e9dc6ce0fb72",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R1",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 720,
+              "y": 560
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 680,
+              "y": 560
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "485e343a72857715",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R2",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 720,
+              "y": 515
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 680,
+              "y": 515
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "5720b8dded08dac2",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R5",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 695,
+              "y": 430
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 655,
+              "y": 430
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "a95be69ddd6acf02",
+          "type": "floating-pin"
+        },
+        {
+          "count": 3,
+          "designator": "Q1",
+          "level": "warn",
+          "message": "3 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "D",
+              "number": "3",
+              "x": 760,
+              "y": 450
+            },
+            {
+              "name": "G",
+              "number": "1",
+              "x": 730,
+              "y": 430
+            },
+            {
+              "name": "S",
+              "number": "2",
+              "x": 760,
+              "y": 410
+            }
+          ],
+          "pins": [
+            "3",
+            "1",
+            "2"
+          ],
+          "primitiveId": "3b66fa5188908969",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R6",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 705,
+              "y": 360
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 705,
+              "y": 400
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "5d02f3b8e0593ac8",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R7",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 810,
+              "y": 410
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 810,
+              "y": 450
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "7af4cff2b79f0561",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "J4",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 875,
+              "y": 700
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 875,
+              "y": 710
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "7dbf31c0373de207",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "J5",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 975,
+              "y": 700
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 975,
+              "y": 710
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "78a249960f250414",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "J6",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 1075,
+              "y": 700
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 1075,
+              "y": 710
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "c309c1f75c996811",
+          "type": "floating-pin"
+        },
+        {
+          "count": 9,
+          "designator": "J7",
+          "level": "warn",
+          "message": "9 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 965,
+              "y": 495
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 965,
+              "y": 505
+            },
+            {
+              "name": "3",
+              "number": "3",
+              "x": 965,
+              "y": 515
+            },
+            {
+              "name": "4",
+              "number": "4",
+              "x": 965,
+              "y": 525
+            },
+            {
+              "name": "5",
+              "number": "5",
+              "x": 965,
+              "y": 535
+            },
+            {
+              "name": "6",
+              "number": "6",
+              "x": 965,
+              "y": 545
+            },
+            {
+              "name": "7",
+              "number": "7",
+              "x": 965,
+              "y": 555
+            },
+            {
+              "name": "8",
+              "number": "8",
+              "x": 965,
+              "y": 565
+            },
+            {
+              "name": "9",
+              "number": "9",
+              "x": 965,
+              "y": 575
+            }
+          ],
+          "pins": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "primitiveId": "fc4ad7464e015953",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "J8",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 900,
+              "y": 355
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 900,
+              "y": 365
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "bbabfa17259ae2a6",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "J9",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 1050,
+              "y": 355
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 1050,
+              "y": 365
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "c945f56ba2327c3a",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R8",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 840,
+              "y": 360
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 800,
+              "y": 360
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "3f9081ed41762cc4",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R9",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 1110,
+              "y": 360
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 1070,
+              "y": 360
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "5e1c501dcf1e015e",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R10",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 430,
+              "y": 285
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 390,
+              "y": 285
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "7e9e2a81aff5f448",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R11",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 430,
+              "y": 245
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 390,
+              "y": 245
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "3674006162cb283f",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R12",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 700,
+              "y": 285
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 660,
+              "y": 285
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "2e7aad74af3f2c7b",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "R13",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "2",
+              "number": "2",
+              "x": 700,
+              "y": 245
+            },
+            {
+              "name": "1",
+              "number": "1",
+              "x": 660,
+              "y": 245
+            }
+          ],
+          "pins": [
+            "2",
+            "1"
+          ],
+          "primitiveId": "c0e8d07f82a43630",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "D3",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 510,
+              "y": 335
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 510,
+              "y": 285
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "3d3acdab1e93852e",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "D4",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 510,
+              "y": 270
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 510,
+              "y": 220
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "31fe1e1efd7c33cc",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "D5",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 780,
+              "y": 340
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 780,
+              "y": 290
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "47cbf462ca85f003",
+          "type": "floating-pin"
+        },
+        {
+          "count": 2,
+          "designator": "D6",
+          "level": "warn",
+          "message": "2 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 780,
+              "y": 270
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 780,
+              "y": 220
+            }
+          ],
+          "pins": [
+            "1",
+            "2"
+          ],
+          "primitiveId": "5f1c5fe1e42cfd1c",
+          "type": "floating-pin"
+        },
+        {
+          "count": 3,
+          "designator": "J10",
+          "level": "warn",
+          "message": "3 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 570,
+              "y": 275
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 570,
+              "y": 265
+            },
+            {
+              "name": "3",
+              "number": "3",
+              "x": 570,
+              "y": 255
+            }
+          ],
+          "pins": [
+            "1",
+            "2",
+            "3"
+          ],
+          "primitiveId": "1ce5191424a48ee3",
+          "type": "floating-pin"
+        },
+        {
+          "count": 3,
+          "designator": "J11",
+          "level": "warn",
+          "message": "3 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 840,
+              "y": 275
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 840,
+              "y": 265
+            },
+            {
+              "name": "3",
+              "number": "3",
+              "x": 840,
+              "y": 255
+            }
+          ],
+          "pins": [
+            "1",
+            "2",
+            "3"
+          ],
+          "primitiveId": "876d23fa962bcc0b",
+          "type": "floating-pin"
+        }
+      ],
+      "passed": false,
+      "summary": {
+        "componentsWithFloating": 37,
+        "danglingWires": 0,
+        "floatingPins": 129,
+        "geomNetMismatches": 0,
+        "multiNetWires": 0,
+        "netMarkerMismatches": 0,
+        "total": 37,
+        "wireCrossings": 0,
+        "wireOverPins": 0,
+        "zeroLengthWires": 0
+      }
+    },
+    "componentCount": 38,
+    "components": [
+      {
+        "componentType": "sheet",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [],
+        "primitiveId": "10fefd7083aa0eea",
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "componentType": "part",
+        "designator": "J1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6957ef92839dbe21"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          }
+        ],
+        "primitiveId": "c406ac6fe1c84040",
+        "supplierId": "C5128849",
+        "uniqueId": "",
+        "x": 90,
+        "y": 675
+      },
+      {
+        "componentType": "part",
+        "designator": "F1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b07344bf8453d372"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "9606531dc42cd53b",
+        "supplierId": "C151162",
+        "uniqueId": "",
+        "x": 175,
+        "y": 705
+      },
+      {
+        "componentType": "part",
+        "designator": "FB1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f910375f4c2e34f7"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "7d165c4749ccd768",
+        "supplierId": "C18305",
+        "uniqueId": "",
+        "x": 245,
+        "y": 705
+      },
+      {
+        "componentType": "part",
+        "designator": "D1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "84bc7ca345d8dc95",
+        "supplierId": "C2827694",
+        "uniqueId": "",
+        "x": 300,
+        "y": 680
+      },
+      {
+        "componentType": "part",
+        "designator": "C1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "def10b4b71ee8a10"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "0a6286bba34f9e90",
+        "supplierId": "C17024",
+        "uniqueId": "",
+        "x": 350,
+        "y": 680
+      },
+      {
+        "componentType": "part",
+        "designator": "F2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b07344bf8453d372"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "66ecea4d48f3dcbc",
+        "supplierId": "C151162",
+        "uniqueId": "",
+        "x": 175,
+        "y": 590
+      },
+      {
+        "componentType": "part",
+        "designator": "FB2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f910375f4c2e34f7"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "64b4e8b2cde654a0",
+        "supplierId": "C18305",
+        "uniqueId": "",
+        "x": 245,
+        "y": 590
+      },
+      {
+        "componentType": "part",
+        "designator": "D2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "1f0f8cdd14abf204",
+        "supplierId": "C5180219",
+        "uniqueId": "",
+        "x": 300,
+        "y": 565
+      },
+      {
+        "componentType": "part",
+        "designator": "C2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "508e1ef46ab4ba04"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "16868111870dbf0c",
+        "supplierId": "C2932477",
+        "uniqueId": "",
+        "x": 350,
+        "y": 600
+      },
+      {
+        "componentType": "part",
+        "designator": "C3",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "def10b4b71ee8a10"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "6603ea9d1d0ce6bd",
+        "supplierId": "C17024",
+        "uniqueId": "",
+        "x": 350,
+        "y": 550
+      },
+      {
+        "componentType": "part",
+        "designator": "C4",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "70239efbcdd626c2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "c18e04051e22d09f",
+        "supplierId": "C14663",
+        "uniqueId": "",
+        "x": 350,
+        "y": 500
+      },
+      {
+        "componentType": "part",
+        "designator": "J2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b7aa078e853732cb"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "24",
+            "net": null,
+            "number": "24"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          },
+          {
+            "name": "22",
+            "net": null,
+            "number": "22"
+          },
+          {
+            "name": "5",
+            "net": null,
+            "number": "5"
+          },
+          {
+            "name": "20",
+            "net": null,
+            "number": "20"
+          },
+          {
+            "name": "7",
+            "net": null,
+            "number": "7"
+          },
+          {
+            "name": "18",
+            "net": null,
+            "number": "18"
+          },
+          {
+            "name": "9",
+            "net": null,
+            "number": "9"
+          },
+          {
+            "name": "16",
+            "net": null,
+            "number": "16"
+          },
+          {
+            "name": "11",
+            "net": null,
+            "number": "11"
+          },
+          {
+            "name": "14",
+            "net": null,
+            "number": "14"
+          },
+          {
+            "name": "13",
+            "net": null,
+            "number": "13"
+          },
+          {
+            "name": "12",
+            "net": null,
+            "number": "12"
+          },
+          {
+            "name": "15",
+            "net": null,
+            "number": "15"
+          },
+          {
+            "name": "10",
+            "net": null,
+            "number": "10"
+          },
+          {
+            "name": "17",
+            "net": null,
+            "number": "17"
+          },
+          {
+            "name": "8",
+            "net": null,
+            "number": "8"
+          },
+          {
+            "name": "19",
+            "net": null,
+            "number": "19"
+          },
+          {
+            "name": "6",
+            "net": null,
+            "number": "6"
+          },
+          {
+            "name": "21",
+            "net": null,
+            "number": "21"
+          },
+          {
+            "name": "4",
+            "net": null,
+            "number": "4"
+          },
+          {
+            "name": "23",
+            "net": null,
+            "number": "23"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "3286055ce621e350",
+        "supplierId": "C18198007",
+        "uniqueId": "",
+        "x": 455,
+        "y": 525
+      },
+      {
+        "componentType": "part",
+        "designator": "J3",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b7aa078e853732cb"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "24",
+            "net": null,
+            "number": "24"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          },
+          {
+            "name": "22",
+            "net": null,
+            "number": "22"
+          },
+          {
+            "name": "5",
+            "net": null,
+            "number": "5"
+          },
+          {
+            "name": "20",
+            "net": null,
+            "number": "20"
+          },
+          {
+            "name": "7",
+            "net": null,
+            "number": "7"
+          },
+          {
+            "name": "18",
+            "net": null,
+            "number": "18"
+          },
+          {
+            "name": "9",
+            "net": null,
+            "number": "9"
+          },
+          {
+            "name": "16",
+            "net": null,
+            "number": "16"
+          },
+          {
+            "name": "11",
+            "net": null,
+            "number": "11"
+          },
+          {
+            "name": "14",
+            "net": null,
+            "number": "14"
+          },
+          {
+            "name": "13",
+            "net": null,
+            "number": "13"
+          },
+          {
+            "name": "12",
+            "net": null,
+            "number": "12"
+          },
+          {
+            "name": "15",
+            "net": null,
+            "number": "15"
+          },
+          {
+            "name": "10",
+            "net": null,
+            "number": "10"
+          },
+          {
+            "name": "17",
+            "net": null,
+            "number": "17"
+          },
+          {
+            "name": "8",
+            "net": null,
+            "number": "8"
+          },
+          {
+            "name": "19",
+            "net": null,
+            "number": "19"
+          },
+          {
+            "name": "6",
+            "net": null,
+            "number": "6"
+          },
+          {
+            "name": "21",
+            "net": null,
+            "number": "21"
+          },
+          {
+            "name": "4",
+            "net": null,
+            "number": "4"
+          },
+          {
+            "name": "23",
+            "net": null,
+            "number": "23"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "0c91e9dc6ce0fb72",
+        "supplierId": "C18198007",
+        "uniqueId": "",
+        "x": 590,
+        "y": 525
+      },
+      {
+        "componentType": "part",
+        "designator": "R1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "485e343a72857715",
+        "supplierId": "C23140",
+        "uniqueId": "",
+        "x": 700,
+        "y": 560
+      },
+      {
+        "componentType": "part",
+        "designator": "R2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "5720b8dded08dac2",
+        "supplierId": "C23140",
+        "uniqueId": "",
+        "x": 700,
+        "y": 515
+      },
+      {
+        "componentType": "part",
+        "designator": "R5",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "a95be69ddd6acf02",
+        "supplierId": "C23140",
+        "uniqueId": "",
+        "x": 675,
+        "y": 430
+      },
+      {
+        "componentType": "part",
+        "designator": "Q1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b050bdd5035bc240"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "D",
+            "net": null,
+            "number": "3"
+          },
+          {
+            "name": "G",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "S",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "3b66fa5188908969",
+        "supplierId": "C8545",
+        "uniqueId": "",
+        "x": 750,
+        "y": 430
+      },
+      {
+        "componentType": "part",
+        "designator": "R6",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "5d02f3b8e0593ac8",
+        "supplierId": "C25803",
+        "uniqueId": "",
+        "x": 705,
+        "y": 380
+      },
+      {
+        "componentType": "part",
+        "designator": "R7",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "7af4cff2b79f0561",
+        "supplierId": "C25804",
+        "uniqueId": "",
+        "x": 810,
+        "y": 430
+      },
+      {
+        "componentType": "part",
+        "designator": "J4",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "7dbf31c0373de207",
+        "supplierId": "C18197909",
+        "uniqueId": "",
+        "x": 855,
+        "y": 705
+      },
+      {
+        "componentType": "part",
+        "designator": "J5",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "78a249960f250414",
+        "supplierId": "C18197909",
+        "uniqueId": "",
+        "x": 955,
+        "y": 705
+      },
+      {
+        "componentType": "part",
+        "designator": "J6",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "c309c1f75c996811",
+        "supplierId": "C18197909",
+        "uniqueId": "",
+        "x": 1055,
+        "y": 705
+      },
+      {
+        "componentType": "part",
+        "designator": "J7",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9189412978ed15d7"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          },
+          {
+            "name": "4",
+            "net": null,
+            "number": "4"
+          },
+          {
+            "name": "5",
+            "net": null,
+            "number": "5"
+          },
+          {
+            "name": "6",
+            "net": null,
+            "number": "6"
+          },
+          {
+            "name": "7",
+            "net": null,
+            "number": "7"
+          },
+          {
+            "name": "8",
+            "net": null,
+            "number": "8"
+          },
+          {
+            "name": "9",
+            "net": null,
+            "number": "9"
+          }
+        ],
+        "primitiveId": "fc4ad7464e015953",
+        "supplierId": "C18197916",
+        "uniqueId": "",
+        "x": 945,
+        "y": 535
+      },
+      {
+        "componentType": "part",
+        "designator": "J8",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "bbabfa17259ae2a6",
+        "supplierId": "C18197909",
+        "uniqueId": "",
+        "x": 880,
+        "y": 360
+      },
+      {
+        "componentType": "part",
+        "designator": "J9",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "c945f56ba2327c3a",
+        "supplierId": "C18197909",
+        "uniqueId": "",
+        "x": 1030,
+        "y": 360
+      },
+      {
+        "componentType": "part",
+        "designator": "R8",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "3f9081ed41762cc4",
+        "supplierId": "C21189",
+        "uniqueId": "",
+        "x": 820,
+        "y": 360
+      },
+      {
+        "componentType": "part",
+        "designator": "R9",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "5e1c501dcf1e015e",
+        "supplierId": "C21189",
+        "uniqueId": "",
+        "x": 1090,
+        "y": 360
+      },
+      {
+        "componentType": "part",
+        "designator": "R10",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "7e9e2a81aff5f448",
+        "supplierId": "C22775",
+        "uniqueId": "",
+        "x": 410,
+        "y": 285
+      },
+      {
+        "componentType": "part",
+        "designator": "R11",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "3674006162cb283f",
+        "supplierId": "C22775",
+        "uniqueId": "",
+        "x": 410,
+        "y": 245
+      },
+      {
+        "componentType": "part",
+        "designator": "R12",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "2e7aad74af3f2c7b",
+        "supplierId": "C22775",
+        "uniqueId": "",
+        "x": 680,
+        "y": 285
+      },
+      {
+        "componentType": "part",
+        "designator": "R13",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "primitiveId": "c0e8d07f82a43630",
+        "supplierId": "C22775",
+        "uniqueId": "",
+        "x": 680,
+        "y": 245
+      },
+      {
+        "componentType": "part",
+        "designator": "D3",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "3d3acdab1e93852e",
+        "supplierId": "C5180219",
+        "uniqueId": "",
+        "x": 510,
+        "y": 310
+      },
+      {
+        "componentType": "part",
+        "designator": "D4",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "31fe1e1efd7c33cc",
+        "supplierId": "C5180219",
+        "uniqueId": "",
+        "x": 510,
+        "y": 245
+      },
+      {
+        "componentType": "part",
+        "designator": "D5",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "47cbf462ca85f003",
+        "supplierId": "C5180219",
+        "uniqueId": "",
+        "x": 780,
+        "y": 315
+      },
+      {
+        "componentType": "part",
+        "designator": "D6",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "primitiveId": "5f1c5fe1e42cfd1c",
+        "supplierId": "C5180219",
+        "uniqueId": "",
+        "x": 780,
+        "y": 245
+      },
+      {
+        "componentType": "part",
+        "designator": "J10",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6957ef92839dbe21"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          }
+        ],
+        "primitiveId": "1ce5191424a48ee3",
+        "supplierId": "C5128849",
+        "uniqueId": "",
+        "x": 590,
+        "y": 265
+      },
+      {
+        "componentType": "part",
+        "designator": "J11",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6957ef92839dbe21"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          }
+        ],
+        "primitiveId": "876d23fa962bcc0b",
+        "supplierId": "C5128849",
+        "uniqueId": "",
+        "x": 860,
+        "y": 265
+      }
+    ],
+    "floatingPinCount": 129,
+    "floatingPins": [
+      "J1.1",
+      "J1.2",
+      "J1.3",
+      "F1.2",
+      "F1.1",
+      "FB1.2",
+      "FB1.1",
+      "D1.2",
+      "D1.1",
+      "C1.1",
+      "C1.2",
+      "F2.2",
+      "F2.1",
+      "FB2.2",
+      "FB2.1",
+      "D2.1",
+      "D2.2",
+      "C2.1",
+      "C2.2",
+      "C3.1",
+      "C3.2",
+      "C4.1",
+      "C4.2",
+      "J2.1",
+      "J2.24",
+      "J2.3",
+      "J2.22",
+      "J2.5",
+      "J2.20",
+      "J2.7",
+      "J2.18",
+      "J2.9",
+      "J2.16",
+      "J2.11",
+      "J2.14",
+      "J2.13",
+      "J2.12",
+      "J2.15",
+      "J2.10",
+      "J2.17",
+      "J2.8",
+      "J2.19",
+      "J2.6",
+      "J2.21",
+      "J2.4",
+      "J2.23",
+      "J2.2",
+      "J3.1",
+      "J3.24",
+      "J3.3",
+      "J3.22",
+      "J3.5",
+      "J3.20",
+      "J3.7",
+      "J3.18",
+      "J3.9",
+      "J3.16",
+      "J3.11",
+      "J3.14",
+      "J3.13",
+      "J3.12",
+      "J3.15",
+      "J3.10",
+      "J3.17",
+      "J3.8",
+      "J3.19",
+      "J3.6",
+      "J3.21",
+      "J3.4",
+      "J3.23",
+      "J3.2",
+      "R1.2",
+      "R1.1",
+      "R2.2",
+      "R2.1",
+      "R5.2",
+      "R5.1",
+      "Q1.3",
+      "Q1.1",
+      "Q1.2",
+      "R6.2",
+      "R6.1",
+      "R7.2",
+      "R7.1",
+      "J4.1",
+      "J4.2",
+      "J5.1",
+      "J5.2",
+      "J6.1",
+      "J6.2",
+      "J7.1",
+      "J7.2",
+      "J7.3",
+      "J7.4",
+      "J7.5",
+      "J7.6",
+      "J7.7",
+      "J7.8",
+      "J7.9",
+      "J8.1",
+      "J8.2",
+      "J9.1",
+      "J9.2",
+      "R8.2",
+      "R8.1",
+      "R9.2",
+      "R9.1",
+      "R10.2",
+      "R10.1",
+      "R11.2",
+      "R11.1",
+      "R12.2",
+      "R12.1",
+      "R13.2",
+      "R13.1",
+      "D3.1",
+      "D3.2",
+      "D4.1",
+      "D4.2",
+      "D5.1",
+      "D5.2",
+      "D6.1",
+      "D6.2",
+      "J10.1",
+      "J10.2",
+      "J10.3",
+      "J11.1",
+      "J11.2",
+      "J11.3"
+    ],
+    "netCount": 0,
+    "nets": []
+  },
+  "context": {
+    "projectUuid": "f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf",
+    "projectName": "RES_LoRa_32",
+    "documentUuid": "2d87cc5a21c0cfc2",
+    "documentType": "schematic",
+    "tabId": "2d87cc5a21c0cfc2@f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf"
+  }
+}

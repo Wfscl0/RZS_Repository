@@ -1,0 +1,7 @@
+r
+h
+loadfile "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/artifacts/si4463_diagnostic_20260919/remote/gcc/RES_Remote_G0B1.hex"
+verifybin "C:/Users/ABC/Desktop/RZS_Repository/RES/firmware/artifacts/si4463_diagnostic_20260919/remote/gcc/RES_Remote_G0B1.bin", 0x08000000
+r
+g
+exit

@@ -1,0 +1,22 @@
+{"playbookSha256":"202068881630e0235c54c5e5500cc6742c7453fa1ee7e47cbf5cb2e506961763","name":"RES_LoRa_32_fix_mcu_3v3_source","project":"RES_LoRa_32","startedAt":"2026-08-17T17:41:01+08:00"}
+{"idx":1,"id":"place-fb5","status":"fail","ms":28003,"error":"schematic.component.place: connector did not respond — context deadline exceeded"}
+{"playbookSha256":"acb340b22eca92e9ffe1aff82f29c8b4cb0ce9b4072fd31e5e4adeed905a958f","name":"RES_LoRa_32_fix_mcu_3v3_source","project":"RES_LoRa_32","startedAt":"2026-08-17T17:42:43+08:00"}
+{"idx":1,"id":"place-fb5","status":"ok","ms":493,"captured":{"FB5_ID":"1619d95df1a779ab"}}
+{"idx":2,"id":"name-fb5","status":"ok","ms":194}
+{"idx":3,"id":"wire-fb5-raw","status":"ok","ms":114}
+{"idx":4,"id":"flag-fb5-raw","status":"ok","ms":325}
+{"idx":5,"id":"wire-fb5-clean","status":"ok","ms":138}
+{"idx":6,"id":"flag-fb5-clean","status":"ok","ms":360}
+{"idx":7,"id":"place-c11","status":"ok","ms":365,"captured":{"C11_ID":"f519503b2411bfac"}}
+{"idx":8,"id":"name-c11","status":"ok","ms":132}
+{"idx":9,"id":"wire-c11-power","status":"ok","ms":170}
+{"idx":10,"id":"flag-c11-power","status":"ok","ms":365}
+{"idx":11,"id":"wire-c11-gnd","status":"ok","ms":124}
+{"idx":12,"id":"flag-c11-gnd","status":"ok","ms":367}
+{"idx":13,"id":"place-c12","status":"ok","ms":479,"captured":{"C12_ID":"69444fb760ce78f0"}}
+{"idx":14,"id":"name-c12","status":"ok","ms":90}
+{"idx":15,"id":"wire-c12-power","status":"ok","ms":112}
+{"idx":16,"id":"flag-c12-power","status":"ok","ms":332}
+{"idx":17,"id":"wire-c12-gnd","status":"ok","ms":123}
+{"idx":18,"id":"flag-c12-gnd","status":"ok","ms":389}
+{"idx":19,"id":"save-source-fix","status":"ok","ms":93}

@@ -1,0 +1,3 @@
+E:\toolchain\bin\cmake.exe -E rm -f CMakeFiles\test_ina226.dir/objects.a
+E:\toolchain\bin\ar.exe qc CMakeFiles\test_ina226.dir/objects.a @CMakeFiles\test_ina226.dir\objects1.rsp
+E:\toolchain\bin\gcc.exe -D_WIN32_WINNT=0x0600 -g -Wl,--whole-archive CMakeFiles\test_ina226.dir/objects.a -Wl,--no-whole-archive -o test_ina226.exe -Wl,--out-implib,libtest_ina226.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_ina226.dir\linkLibs.rsp

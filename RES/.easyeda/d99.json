@@ -1,0 +1,12 @@
+﻿{
+  "id": "req_808",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-08-12T02:30:00.2283542Z",
+  "ok": false,
+  "error": {
+    "code": "DISPATCH_FAILED",
+    "message": "connector did not respond",
+    "detail": "context deadline exceeded"
+  }
+}

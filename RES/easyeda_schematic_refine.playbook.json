@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_schematic_refine",
+    "description": "Refine the existing schematic while preserving its style and selected vendor families",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "vars": {
+    "LIB": "0819f05c4eef4c71ace90d822a990e87",
+    "R4K7": "7fae6f329dbf460d8a7a9e2690be4e85",
+    "R10K": "51b49001268f48658ab00f912d076964",
+    "R47K": "3c4032498ff441a893d3150856667164",
+    "C100N": "e0a15c1cd8cb4f37aa658da9c5c7bfb4"
+  },
+  "steps": [
+    {
+      "id": "restore-h2-uid",
+      "action": "schematic.component.modify",
+      "payload": {
+        "primitiveId": "19eed70f411bde4c",
+        "patch": { "uniqueId": "gge2" }
+      }
+    },
+    {
+      "id": "mcu-3v3-pins",
+      "action": "schematic.wire.create",
+      "payload": { "points": [321, 563, 351, 563, 381, 563], "net": "+3V3_MCU" }
+    },
+    {
+      "id": "mcu-3v3-flag-wire",
+      "action": "schematic.wire.create",
+      "payload": { "points": [351, 563, 351, 583], "net": "+3V3_MCU" }
+    },
+    {
+      "id": "mcu-3v3-flag",
+      "action": "schematic.netflag.create",
+      "payload": { "kind": "power", "net": "+3V3_MCU", "x": 351, "y": 583, "rotation": 0 }
+    },
+    {
+      "id": "place-r21",
+      "action": "schematic.component.place",
+      "payload": { "libraryUuid": "${LIB}", "uuid": "${R4K7}", "x": 700, "y": 430, "rotation": 0 },
+      "capture": { "R21_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-r21",
+      "action": "schematic.component.modify",
+      "payload": { "primitiveId": "${R21_ID}", "patch": { "designator": "R21", "uniqueId": "A3_30" } }
+    },
+    {
+      "id": "wire-r21-left",
+      "action": "schematic.wire.create",
+      "payload": { "points": [650, 430, 680, 430], "net": "+3V3_MCU" }
+    },
+    {
+      "id": "wire-r21-right",
+      "action": "schematic.wire.create",
+      "payload": { "points": [720, 430, 760, 430], "net": "I2C_SCL" }
+    },
+    {
+      "id": "place-r22",
+      "action": "schematic.component.place",
+      "payload": { "libraryUuid": "${LIB}", "uuid": "${R4K7}", "x": 700, "y": 390, "rotation": 0 },
+      "capture": { "R22_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-r22",
+      "action": "schematic.component.modify",
+      "payload": { "primitiveId": "${R22_ID}", "patch": { "designator": "R22", "uniqueId": "A3_31" } }
+    },
+    {
+      "id": "wire-r22-left",
+      "action": "schematic.wire.create",
+      "payload": { "points": [650, 390, 680, 390], "net": "+3V3_MCU" }
+    },
+    {
+      "id": "wire-r22-right",
+      "action": "schematic.wire.create",
+      "payload": { "points": [720, 390, 760, 390], "net": "I2C_SDA" }
+    },
+    {
+      "id": "place-r23",
+      "action": "schematic.component.place",
+      "payload": { "libraryUuid": "${LIB}", "uuid": "${R10K}", "x": 700, "y": 350, "rotation": 0 },
+      "capture": { "R23_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-r23",
+      "action": "schematic.component.modify",
+      "payload": { "primitiveId": "${R23_ID}", "patch": { "designator": "R23", "uniqueId": "A3_32" } }
+    },
+    {
+      "id": "wire-r23-left",
+      "action": "schematic.wire.create",
+      "payload": { "points": [650, 350, 680, 350], "net": "+3V3_MCU" }
+    },
+    {
+      "id": "wire-r23-right",
+      "action": "schematic.wire.create",
+      "payload": { "points": [720, 350, 760, 350], "net": "INA_ALERT" }
+    },
+    {
+      "id": "place-r24",
+      "action": "schematic.component.place",
+      "payload": { "libraryUuid": "${LIB}", "uuid": "${R4K7}", "x": 700, "y": 290, "rotation": 0 },
+      "capture": { "R24_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-r24",
+      "action": "schematic.component.modify",
+      "payload": { "primitiveId": "${R24_ID}", "patch": { "designator": "R24", "uniqueId": "A3_33" } }
+    },
+    {
+      "id": "place-c9",
+      "action": "schematic.component.place",
+      "payload": { "libraryUuid": "${LIB}", "uuid": "${C100N}", "x": 800, "y": 290, "rotation": 0 },
+      "capture": { "C9_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-c9",
+      "action": "schematic.component.modify",
+      "payload": { "primitiveId": "${C9_ID}", "patch": { "designator": "C9", "uniqueId": "A3_34" } }
+    },
+    {
+      "id": "wire-r24-left",
+      "action": "schematic.wire.create",
+      "payload": { "points": [650, 290, 680, 290], "net": "+3V3_MCU" }
+    },
+    {
+      "id": "wire-go-rc",
+      "action": "schematic.wire.create",
+      "payload": { "points": [720, 290, 780, 290], "net": "GO_FB" }
+    },
+    {
+      "id": "wire-c9-gnd",
+      "action": "schematic.wire.create",
+      "payload": { "points": [820, 290, 850, 290], "net": "GND" }
+    },
+    {
+      "id": "flag-c9-gnd",
+      "action": "schematic.netflag.create",
+      "payload": { "kind": "ground", "net": "GND", "x": 850, "y": 290, "rotation": 90 }
+    },
+    {
+      "id": "place-r25",
+      "action": "schematic.component.place",
+      "payload": { "libraryUuid": "${LIB}", "uuid": "${R4K7}", "x": 700, "y": 240, "rotation": 0 },
+      "capture": { "R25_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-r25",
+      "action": "schematic.component.modify",
+      "payload": { "primitiveId": "${R25_ID}", "patch": { "designator": "R25", "uniqueId": "A3_35" } }
+    },
+    {
+      "id": "place-c10",
+      "action": "schematic.component.place",
+      "payload": { "libraryUuid": "${LIB}", "uuid": "${C100N}", "x": 800, "y": 240, "rotation": 0 },
+      "capture": { "C10_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-c10",
+      "action": "schematic.component.modify",
+      "payload": { "primitiveId": "${C10_ID}", "patch": { "designator": "C10", "uniqueId": "A3_36" } }
+    },
+    {
+      "id": "wire-r25-left",
+      "action": "schematic.wire.create",
+      "payload": { "points": [650, 240, 680, 240], "net": "+3V3_MCU" }
+    },
+    {
+      "id": "wire-estop-rc",
+      "action": "schematic.wire.create",
+      "payload": { "points": [720, 240, 780, 240], "net": "ESTOP_FB" }
+    },
+    {
+      "id": "wire-c10-gnd",
+      "action": "schematic.wire.create",
+      "payload": { "points": [820, 240, 850, 240], "net": "GND" }
+    },
+    {
+      "id": "flag-c10-gnd",
+      "action": "schematic.netflag.create",
+      "payload": { "kind": "ground", "net": "GND", "x": 850, "y": 240, "rotation": 90 }
+    },
+    {
+      "id": "place-r26",
+      "action": "schematic.component.place",
+      "payload": { "libraryUuid": "${LIB}", "uuid": "${R47K}", "x": 700, "y": 190, "rotation": 0 },
+      "capture": { "R26_ID": "$.primitiveId" }
+    },
+    {
+      "id": "name-r26",
+      "action": "schematic.component.modify",
+      "payload": { "primitiveId": "${R26_ID}", "patch": { "designator": "R26", "uniqueId": "A3_37" } }
+    },
+    {
+      "id": "wire-r26-left",
+      "action": "schematic.wire.create",
+      "payload": { "points": [650, 190, 680, 190], "net": "+3V3_MCU" }
+    },
+    {
+      "id": "wire-r26-right",
+      "action": "schematic.wire.create",
+      "payload": { "points": [720, 190, 770, 190], "net": "MCU_RX_PA10" }
+    },
+    {
+      "id": "save-refine",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

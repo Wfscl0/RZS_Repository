@@ -1,0 +1,12 @@
+--- ebyte/E220xMx/ebyte_e220x.h
++++ ebyte/E220xMx/ebyte_e220x.h
+@@
+-#define RF_LORA_AIR_BPS                             2
++/* RES: SF8/BW500/CR4/6; default SF11 cannot meet the heartbeat timing. */
++#define RF_LORA_AIR_BPS                             4
+--- ebyte/ebyte_conf.h
++++ ebyte/ebyte_conf.h
+@@
+-#define EBYTE_RF_TRANSMIT_CHECK_MODE  1
++/* RES hopping changes frequency only after the blocking TX completion. */
++#define EBYTE_RF_TRANSMIT_CHECK_MODE  1

@@ -1,0 +1,5 @@
+connect
+loadfile D:/git/RZS_Repository/RES/firmware/artifacts/spi_diagnostic_20260924/remote/gcc/RES_Remote_G0B1.hex
+r
+g
+exit

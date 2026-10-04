@@ -1,0 +1,4 @@
+{"playbookSha256":"ec9e262e4d8d3956ef1c898c64ed06dbf6c28e140fdfb7df5d63402d35ac84af","name":"RES-interconnect-A1-fix-signal","project":"RES_LoRa_32","startedAt":"2026-08-11T02:07:02+08:00"}
+{"playbookSha256":"ec9e262e4d8d3956ef1c898c64ed06dbf6c28e140fdfb7df5d63402d35ac84af","name":"RES-interconnect-A1-fix-signal","project":"RES_LoRa_32","startedAt":"2026-08-11T02:07:30+08:00"}
+{"idx":1,"id":"delete_old_bad_wires","status":"ok","ms":291}
+{"idx":2,"id":"save","status":"ok","ms":70}

@@ -1,0 +1,12 @@
+﻿{
+  "id": "req_688",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-08-12T02:16:56.9998215Z",
+  "ok": false,
+  "error": {
+    "code": "EDA_CALL_FAILED",
+    "message": "Failed to list schematic components.",
+    "detail": "获取所有器件失败"
+  }
+}

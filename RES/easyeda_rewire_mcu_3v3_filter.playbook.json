@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_rewire_mcu_3v3_filter",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": { "timeoutSec": 30, "retry": 0, "continueOnError": false },
+  "steps": [
+    { "id": "wire-fb5-raw", "action": "schematic.wire.create", "payload": { "points": [450,270,480,270], "net": "+3V3_MCU_RAW" } },
+    { "id": "flag-fb5-raw", "action": "schematic.netflag.create", "payload": { "kind": "power", "net": "+3V3_MCU_RAW", "x": 450, "y": 270, "rotation": 90 } },
+    { "id": "wire-fb5-clean", "action": "schematic.wire.create", "payload": { "points": [520,270,570,270], "net": "+3V3_MCU" } },
+    { "id": "flag-fb5-clean", "action": "schematic.netflag.create", "payload": { "kind": "power", "net": "+3V3_MCU", "x": 570, "y": 270, "rotation": 270 } },
+
+    { "id": "wire-c11-power", "action": "schematic.wire.create", "payload": { "points": [450,230,480,230], "net": "+3V3_MCU" } },
+    { "id": "flag-c11-power", "action": "schematic.netflag.create", "payload": { "kind": "power", "net": "+3V3_MCU", "x": 450, "y": 230, "rotation": 90 } },
+    { "id": "wire-c11-gnd", "action": "schematic.wire.create", "payload": { "points": [520,230,550,230], "net": "GND" } },
+    { "id": "flag-c11-gnd", "action": "schematic.netflag.create", "payload": { "kind": "ground", "net": "GND", "x": 550, "y": 230, "rotation": 90 } },
+
+    { "id": "wire-c12-power", "action": "schematic.wire.create", "payload": { "points": [450,195,480,195], "net": "+3V3_MCU" } },
+    { "id": "flag-c12-power", "action": "schematic.netflag.create", "payload": { "kind": "power", "net": "+3V3_MCU", "x": 450, "y": 195, "rotation": 90 } },
+    { "id": "wire-c12-gnd", "action": "schematic.wire.create", "payload": { "points": [520,195,550,195], "net": "GND" } },
+    { "id": "flag-c12-gnd", "action": "schematic.netflag.create", "payload": { "kind": "ground", "net": "GND", "x": 550, "y": 195, "rotation": 90 } },
+    { "id": "save-rewire", "action": "schematic.save", "checkpoint": true }
+  ]
+}

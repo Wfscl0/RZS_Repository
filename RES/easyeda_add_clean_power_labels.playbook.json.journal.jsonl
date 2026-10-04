@@ -1,0 +1,8 @@
+{"playbookSha256":"a04635b8b98ddaeefb8249823067cf0aa9805b69834b0b8a7b0159fab9a61b40","name":"RES_LoRa_32_add_clean_power_labels","project":"RES_LoRa_32","startedAt":"2026-08-17T00:45:16+08:00"}
+{"idx":1,"id":"h1-single-5v-label","status":"ok","ms":204}
+{"idx":2,"id":"f1-fb3-single-label","status":"ok","ms":101}
+{"idx":3,"id":"five-volt-output-single-label","status":"ok","ms":104}
+{"idx":4,"id":"radio-decoupling-single-label","status":"ok","ms":109}
+{"idx":5,"id":"reset-ground-single-label","status":"ok","ms":118}
+{"idx":6,"id":"mode-ground-single-label","status":"ok","ms":134}
+{"idx":7,"id":"save-clean-power-labels","status":"ok","ms":200}

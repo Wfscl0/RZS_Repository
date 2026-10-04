@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES_LoRa_32_relabel_clear_channels",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "steps": [
+    {
+      "id": "five-volt-label-clear-channel",
+      "action": "schematic.wire.create",
+      "payload": { "points": [265, 323, 265, 330, 260, 330, 274, 330, 300, 330, 300, 350], "net": "+5V_MCU" }
+    },
+    {
+      "id": "mode-ground-label-clear-channel",
+      "action": "schematic.wire.create",
+      "payload": { "points": [693, 636, 715, 636, 715, 652, 705, 652, 715, 652, 750, 652], "net": "GND" }
+    },
+    {
+      "id": "save-clear-channel-labels",
+      "action": "schematic.save",
+      "checkpoint": true
+    }
+  ]
+}

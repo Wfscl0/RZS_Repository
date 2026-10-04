@@ -1,0 +1,2776 @@
+{
+    "version": "2.0.0",
+    "components": {
+        "A2_J1": {
+            "props": {
+                "Unique ID": "A2_J1",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "b2abe6a06e046ab1",
+                "Designator": "J1",
+                "Device": "2a16082b55c6caeb",
+                "LCSC Part Name": "",
+                "Supplier Part": "DG301-5.0-03P-12-00A(H).1",
+                "Manufacturer": "DEGSON(高正/高松)",
+                "Manufacturer Part": "DG301-5.0-03P-12-00A(H)",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "6957ef92839dbe21",
+                "3D Model": "e3fa3dd0d172408fba81f4cd28552bbf|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "CONN-TH_DEGSON_DG301-5.0-03P",
+                "3D Model Transform": "614.17204,299.212,0,0,0,0,-11.811,27.559,-165.354",
+                "Number of Positions or Pins": "",
+                "Pitch": "",
+                "Color": "",
+                "Mounting Type": "",
+                "Number of Pins": "",
+                "Number of Rows": "",
+                "Number of PINs Per Row": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I104",
+                "DeviceName": "DG301-5.0-03P-12-00A(H)",
+                "FootprintName": "CONN-TH_DEGSON_DG301-5.0-03P"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N164",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "3",
+                    "number": "3",
+                    "net": "$2N90",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                }
+            }
+        },
+        "A2_F1": {
+            "props": {
+                "Unique ID": "A2_F1",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "7f844c5162c2f148",
+                "Designator": "F1",
+                "Device": "e14c74a2b976981e",
+                "LCSC Part Name": "",
+                "Supplier Part": "1206L050/15YR.1",
+                "Manufacturer": "Littelfuse(美国力特)",
+                "Manufacturer Part": "1206L050/15YR",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "b07344bf8453d372",
+                "3D Model": "f1628daad26847a79b887277a2bc8541|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "F1206_L3.2-W1.7-H0.6",
+                "3D Model Transform": "125.984,66.929,0,0,0,0,0,0,0",
+                "Voltage - Max": "",
+                "Current - Max": "",
+                "Hold Current": "",
+                "Trip Current": "",
+                "Power Dissipation": "",
+                "Resistance - Initial (Ri) (Min)": "",
+                "Resistance - Post Trip (R1) (Max)": "",
+                "Time to Trip(Max)": "",
+                "Operating Temperature": "",
+                "Length": "",
+                "Width": "",
+                "Height": "",
+                "Pitch": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I105",
+                "DeviceName": "1206L050/15YR",
+                "FootprintName": "F1206"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N90",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N92",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_F2": {
+            "props": {
+                "Unique ID": "A2_F2",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "7f844c5162c2f148",
+                "Designator": "F2",
+                "Device": "e14c74a2b976981e",
+                "LCSC Part Name": "",
+                "Supplier Part": "1206L050/15YR.1",
+                "Manufacturer": "Littelfuse(美国力特)",
+                "Manufacturer Part": "1206L050/15YR",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "b07344bf8453d372",
+                "3D Model": "f1628daad26847a79b887277a2bc8541|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "F1206_L3.2-W1.7-H0.6",
+                "3D Model Transform": "125.984,66.929,0,0,0,0,0,0,0",
+                "Voltage - Max": "",
+                "Current - Max": "",
+                "Hold Current": "",
+                "Trip Current": "",
+                "Power Dissipation": "",
+                "Resistance - Initial (Ri) (Min)": "",
+                "Resistance - Post Trip (R1) (Max)": "",
+                "Time to Trip(Max)": "",
+                "Operating Temperature": "",
+                "Length": "",
+                "Width": "",
+                "Height": "",
+                "Pitch": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I106",
+                "DeviceName": "1206L050/15YR",
+                "FootprintName": "F1206"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N164",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N93",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_FB1": {
+            "props": {
+                "Unique ID": "A2_FB1",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "515c1609cf226ae1",
+                "Designator": "FB1",
+                "Device": "59425911e161dddb",
+                "LCSC Part Name": "",
+                "Supplier Part": "BLM21PG600SN1D.1",
+                "Manufacturer": "muRata(村田)",
+                "Manufacturer Part": "BLM21PG600SN1D",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "f910375f4c2e34f7",
+                "3D Model": "37a81e68749a4138bd2dfa6897b24b85|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0805_L2.0-W1.3-H0.6",
+                "3D Model Transform": "78.74,51.181,0,0,0,0,0,0.001,0",
+                "Impedance @ Frequency": "",
+                "Tolerance": "",
+                "DC Resistance(DCR)": "",
+                "Current Rating": "",
+                "Number of Circuits": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I107",
+                "DeviceName": "BLM21PG600SN1D",
+                "FootprintName": "L0805"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N92",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "+5V_MCU",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_FB2": {
+            "props": {
+                "Unique ID": "A2_FB2",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "515c1609cf226ae1",
+                "Designator": "FB2",
+                "Device": "59425911e161dddb",
+                "LCSC Part Name": "",
+                "Supplier Part": "BLM21PG600SN1D.1",
+                "Manufacturer": "muRata(村田)",
+                "Manufacturer Part": "BLM21PG600SN1D",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "f910375f4c2e34f7",
+                "3D Model": "37a81e68749a4138bd2dfa6897b24b85|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0805_L2.0-W1.3-H0.6",
+                "3D Model Transform": "78.74,51.181,0,0,0,0,0,0.001,0",
+                "Impedance @ Frequency": "",
+                "Tolerance": "",
+                "DC Resistance(DCR)": "",
+                "Current Rating": "",
+                "Number of Circuits": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I108",
+                "DeviceName": "BLM21PG600SN1D",
+                "FootprintName": "L0805"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N93",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_D1": {
+            "props": {
+                "Unique ID": "A2_D1",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "145b30c71ff62253",
+                "Designator": "D1",
+                "Device": "4b1ad6500c0664d5",
+                "LCSC Part Name": "",
+                "Supplier Part": "PESD5V0S1UL,315.1",
+                "Manufacturer": "Nexperia(安世)",
+                "Manufacturer Part": "PESD5V0S1UL,315",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "80915c9249eb09a4",
+                "3D Model": "fc0f82e4eb814085bfcc880fa2e0de07|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "SOD-882_L1.0-W0.6-H0.5-LS0.65",
+                "3D Model Transform": "39.37,23.622,0,180,0,0,-0.006,0,0",
+                "Polarity": "",
+                "Reverse Stand-Off Voltage (Vrwm)": "",
+                "Clamping Voltage": "",
+                "Peak Pulse Current (Ipp)": "",
+                "Peak Pulse Power Dissipation (Ppp)": "",
+                "Voltage - Breakdown": "",
+                "Reverse Leakage Current (Ir)": "",
+                "Number of Channels": "",
+                "level of protection": "",
+                "Type": "",
+                "Junction Capacitance": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I109",
+                "DeviceName": "PESD5V0S1UL,315",
+                "FootprintName": "SOD-882_L1.0-W0.6-RD"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "C",
+                    "number": "1",
+                    "net": "+5V_MCU",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_D2": {
+            "props": {
+                "Unique ID": "A2_D2",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "9b94c507e4638323",
+                "Designator": "D2",
+                "Device": "5b4f25d55a1d64f4",
+                "LCSC Part Name": "",
+                "Supplier Part": "PESD3V3S1UL,315.1",
+                "Manufacturer": "Nexperia(安世)",
+                "Manufacturer Part": "PESD3V3S1UL,315",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4d33a348c882b58f",
+                "3D Model": "96b2cca1435e47b08b55ab6e73617580|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "DFN1006_L1-W0.6-H0.4-2L-RD",
+                "3D Model Transform": "40.1574,24.4094,0,0,0,0,0,0,0",
+                "Reverse Stand-Off Voltage (Vrwm)": "",
+                "Clamping Voltage": "",
+                "Peak Pulse Power Dissipation (Ppp)": "",
+                "Voltage - Breakdown": "",
+                "Number of Channels": "",
+                "Operating Temperature": "",
+                "Type": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I110",
+                "DeviceName": "PESD3V3S1UL,315",
+                "FootprintName": "DFN1006-2L-RD"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "C",
+                    "number": "1",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_C1": {
+            "props": {
+                "Unique ID": "A2_C1",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "300d8904332d08b1",
+                "Designator": "C1",
+                "Device": "c98bd73f6e0aa167",
+                "LCSC Part Name": "",
+                "Supplier Part": "CL21A106KPFNNNE.1",
+                "Manufacturer": "SAMSUNG(三星)",
+                "Manufacturer Part": "CL21A106KPFNNNE",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "def10b4b71ee8a10",
+                "3D Model": "1ba041120af144c991958decab20d241|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "C0805_L2.0-W1.3-H1.3",
+                "3D Model Transform": "78.74,51.181,0,0,0,0,0,0.0005,0",
+                "Value": "",
+                "Tolerance": "",
+                "Voltage Rating": "",
+                "Temperature Coefficient": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I111",
+                "DeviceName": "CL21A106KPFNNNE",
+                "FootprintName": "C0805"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "+5V_MCU",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_C2": {
+            "props": {
+                "Unique ID": "A2_C2",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "81fae7b620e1fb4e",
+                "Designator": "C2",
+                "Device": "dc3d5e9020bd95c7",
+                "LCSC Part Name": "",
+                "Supplier Part": "CL32A476KOJNNNE.1",
+                "Manufacturer": "SAMSUNG(三星)",
+                "Manufacturer Part": "CL32A476KOJNNNE",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "508e1ef46ab4ba04",
+                "3D Model": "833068e7fe044595a6eec77c56179455|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "C1210_L3.2-W2.5-H2.5",
+                "3D Model Transform": "125.984,98.425,0,0,0,0,0,0,0",
+                "Value": "",
+                "Tolerance": "",
+                "Voltage Rating": "",
+                "Temperature Coefficient": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I112",
+                "DeviceName": "CL32A476KOJNNNE",
+                "FootprintName": "C1210"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_C3": {
+            "props": {
+                "Unique ID": "A2_C3",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "300d8904332d08b1",
+                "Designator": "C3",
+                "Device": "c98bd73f6e0aa167",
+                "LCSC Part Name": "",
+                "Supplier Part": "CL21A106KPFNNNE.1",
+                "Manufacturer": "SAMSUNG(三星)",
+                "Manufacturer Part": "CL21A106KPFNNNE",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "def10b4b71ee8a10",
+                "3D Model": "1ba041120af144c991958decab20d241|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "C0805_L2.0-W1.3-H1.3",
+                "3D Model Transform": "78.74,51.181,0,0,0,0,0,0.0005,0",
+                "Value": "",
+                "Tolerance": "",
+                "Voltage Rating": "",
+                "Temperature Coefficient": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I113",
+                "DeviceName": "CL21A106KPFNNNE",
+                "FootprintName": "C0805"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_C4": {
+            "props": {
+                "Unique ID": "A2_C4",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "={Value}",
+                "Designator": "C4",
+                "Symbol": "a5a944d38dfd2802",
+                "Device": "0a339f676d71d6dd",
+                "LCSC Part Name": "",
+                "Supplier Part": "CC0603KRX7R9BB104.1",
+                "Manufacturer": "YAGEO(国巨)",
+                "Manufacturer Part": "CC0603KRX7R9BB104",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "70239efbcdd626c2",
+                "3D Model": "ac125912035d415993ca9572d50418b1|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "C0603_L1.6-W0.8-H0.8",
+                "3D Model Transform": "62.992,31.496,0,0,0,0,0,0,0",
+                "Value": "",
+                "Tolerance": "",
+                "Voltage Rating": "",
+                "Temperature Coefficient": "",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I114",
+                "DeviceName": "CC0603KRX7R9BB104",
+                "FootprintName": "C0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_J2": {
+            "props": {
+                "Unique ID": "A2_J2",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "7ee50f5c3ff2a77a",
+                "Designator": "J2",
+                "Device": "1565b4500028d535",
+                "LCSC Part Name": "",
+                "Supplier Part": "PM254-2-12-Z-8.5.1",
+                "Manufacturer": "HCTL(华灿天禄)",
+                "Manufacturer Part": "PM254-2-12-Z-8.5",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4281df18b11fa7b3",
+                "3D Model": "8679914d7755405889364377e1fa0432|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "HDR-TH_24P-P2.54-V-F-R2-C12-S2.54-2",
+                "3D Model Transform": "1215.74568,196.85,0,0,0,0,0,0,-125.984",
+                "Holes Structure": "",
+                "Pitch": "",
+                "Row Spacing": "",
+                "Circular Hole / Square Hole": "",
+                "Mounting Type": "",
+                "Number of Rows": "",
+                "Number of Positions": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Holes Direction": "",
+                "Insulation Height": "",
+                "Contact Material": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I115",
+                "DeviceName": "PM254-2-12-Z-8.5",
+                "FootprintName": "HDR-TH_24P-P2.54-V-F-R2-C12-S2.54-2"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "3",
+                    "number": "3",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                },
+                "4": {
+                    "name": "4",
+                    "number": "4",
+                    "net": "$2N116",
+                    "props": {
+                        "Pin Number": "4"
+                    }
+                },
+                "5": {
+                    "name": "5",
+                    "number": "5",
+                    "net": "$2N177",
+                    "props": {
+                        "Pin Number": "5"
+                    }
+                },
+                "6": {
+                    "name": "6",
+                    "number": "6",
+                    "net": "$2N118",
+                    "props": {
+                        "Pin Number": "6"
+                    }
+                },
+                "7": {
+                    "name": "7",
+                    "number": "7",
+                    "net": "$2N178",
+                    "props": {
+                        "Pin Number": "7"
+                    }
+                },
+                "8": {
+                    "name": "8",
+                    "number": "8",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "8"
+                    }
+                },
+                "9": {
+                    "name": "9",
+                    "number": "9",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "9"
+                    }
+                },
+                "10": {
+                    "name": "10",
+                    "number": "10",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "10"
+                    }
+                },
+                "11": {
+                    "name": "11",
+                    "number": "11",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "11"
+                    }
+                },
+                "12": {
+                    "name": "12",
+                    "number": "12",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "12"
+                    }
+                },
+                "13": {
+                    "name": "13",
+                    "number": "13",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "13"
+                    }
+                },
+                "14": {
+                    "name": "14",
+                    "number": "14",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "14"
+                    }
+                },
+                "15": {
+                    "name": "15",
+                    "number": "15",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "15"
+                    }
+                },
+                "16": {
+                    "name": "16",
+                    "number": "16",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "16"
+                    }
+                },
+                "17": {
+                    "name": "17",
+                    "number": "17",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "17"
+                    }
+                },
+                "18": {
+                    "name": "18",
+                    "number": "18",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "18"
+                    }
+                },
+                "19": {
+                    "name": "19",
+                    "number": "19",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "19"
+                    }
+                },
+                "20": {
+                    "name": "20",
+                    "number": "20",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "20"
+                    }
+                },
+                "21": {
+                    "name": "21",
+                    "number": "21",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "21"
+                    }
+                },
+                "22": {
+                    "name": "22",
+                    "number": "22",
+                    "net": "$2N119",
+                    "props": {
+                        "Pin Number": "22"
+                    }
+                },
+                "23": {
+                    "name": "23",
+                    "number": "23",
+                    "net": "+5V_MCU",
+                    "props": {
+                        "Pin Number": "23"
+                    }
+                },
+                "24": {
+                    "name": "24",
+                    "number": "24",
+                    "net": "+5V_MCU",
+                    "props": {
+                        "Pin Number": "24"
+                    }
+                }
+            }
+        },
+        "A2_J3": {
+            "props": {
+                "Unique ID": "A2_J3",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "7ee50f5c3ff2a77a",
+                "Designator": "J3",
+                "Device": "1565b4500028d535",
+                "LCSC Part Name": "",
+                "Supplier Part": "PM254-2-12-Z-8.5.1",
+                "Manufacturer": "HCTL(华灿天禄)",
+                "Manufacturer Part": "PM254-2-12-Z-8.5",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4281df18b11fa7b3",
+                "3D Model": "8679914d7755405889364377e1fa0432|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "HDR-TH_24P-P2.54-V-F-R2-C12-S2.54-2",
+                "3D Model Transform": "1215.74568,196.85,0,0,0,0,0,0,-125.984",
+                "Holes Structure": "",
+                "Pitch": "",
+                "Row Spacing": "",
+                "Circular Hole / Square Hole": "",
+                "Mounting Type": "",
+                "Number of Rows": "",
+                "Number of Positions": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Holes Direction": "",
+                "Insulation Height": "",
+                "Contact Material": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I116",
+                "DeviceName": "PM254-2-12-Z-8.5",
+                "FootprintName": "HDR-TH_24P-P2.54-V-F-R2-C12-S2.54-2"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "3",
+                    "number": "3",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                },
+                "4": {
+                    "name": "4",
+                    "number": "4",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "4"
+                    }
+                },
+                "5": {
+                    "name": "5",
+                    "number": "5",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "5"
+                    }
+                },
+                "6": {
+                    "name": "6",
+                    "number": "6",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "6"
+                    }
+                },
+                "7": {
+                    "name": "7",
+                    "number": "7",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "7"
+                    }
+                },
+                "8": {
+                    "name": "8",
+                    "number": "8",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "8"
+                    }
+                },
+                "9": {
+                    "name": "9",
+                    "number": "9",
+                    "net": "$2N179",
+                    "props": {
+                        "Pin Number": "9"
+                    }
+                },
+                "10": {
+                    "name": "10",
+                    "number": "10",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "10"
+                    }
+                },
+                "11": {
+                    "name": "11",
+                    "number": "11",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "11"
+                    }
+                },
+                "12": {
+                    "name": "12",
+                    "number": "12",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "12"
+                    }
+                },
+                "13": {
+                    "name": "13",
+                    "number": "13",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "13"
+                    }
+                },
+                "14": {
+                    "name": "14",
+                    "number": "14",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "14"
+                    }
+                },
+                "15": {
+                    "name": "15",
+                    "number": "15",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "15"
+                    }
+                },
+                "16": {
+                    "name": "16",
+                    "number": "16",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "16"
+                    }
+                },
+                "17": {
+                    "name": "17",
+                    "number": "17",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "17"
+                    }
+                },
+                "18": {
+                    "name": "18",
+                    "number": "18",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "18"
+                    }
+                },
+                "19": {
+                    "name": "19",
+                    "number": "19",
+                    "net": "$2N180",
+                    "props": {
+                        "Pin Number": "19"
+                    }
+                },
+                "20": {
+                    "name": "20",
+                    "number": "20",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "20"
+                    }
+                },
+                "21": {
+                    "name": "21",
+                    "number": "21",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "21"
+                    }
+                },
+                "22": {
+                    "name": "22",
+                    "number": "22",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "22"
+                    }
+                },
+                "23": {
+                    "name": "23",
+                    "number": "23",
+                    "net": "+3V3_AUX_OUT",
+                    "props": {
+                        "Pin Number": "23"
+                    }
+                },
+                "24": {
+                    "name": "24",
+                    "number": "24",
+                    "net": "+3V3_AUX_OUT",
+                    "props": {
+                        "Pin Number": "24"
+                    }
+                }
+            }
+        },
+        "A2_R1": {
+            "props": {
+                "Unique ID": "A2_R1",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "148c581a50a86be4",
+                "Designator": "R1",
+                "Device": "f03c1c5c10c0c3c4",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF330JT5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF330JT5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Voltage-Supply(Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I117",
+                "DeviceName": "0603WAF330JT5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N122",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N123",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_R2": {
+            "props": {
+                "Unique ID": "A2_R2",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "148c581a50a86be4",
+                "Designator": "R2",
+                "Device": "f03c1c5c10c0c3c4",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF330JT5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF330JT5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Voltage-Supply(Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I118",
+                "DeviceName": "0603WAF330JT5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N124",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N125",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_R5": {
+            "props": {
+                "Unique ID": "A2_R5",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "148c581a50a86be4",
+                "Designator": "R5",
+                "Device": "f03c1c5c10c0c3c4",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF330JT5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF330JT5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Voltage-Supply(Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I119",
+                "DeviceName": "0603WAF330JT5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N126",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N127",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_Q1": {
+            "props": {
+                "Unique ID": "A2_Q1",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "3b109041aede2e97",
+                "Designator": "Q1",
+                "Device": "790de5909fff8fe9",
+                "LCSC Part Name": "",
+                "Supplier Part": "2N7002.1",
+                "Manufacturer": "CJ(江苏长电/长晶)",
+                "Manufacturer Part": "2N7002",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "b050bdd5035bc240",
+                "3D Model": "c62791f0466c4ae2a892c056b845b0ca|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95",
+                "3D Model Transform": "98.425,114.173,0,180,0,0,0.0005,-0.0005,0",
+                "Number": "",
+                "Drain to Source Voltage": "",
+                "Current - Continuous Drain(Id)": "",
+                "RDS(on)": "",
+                "Pd - Power Dissipation": "",
+                "Gate Threshold Voltage (Vgs(th))": "",
+                "Input Capacitance(Ciss)": "",
+                "Reverse Transfer Capacitance (Crss@Vds)": "",
+                "Operating Temperature": "",
+                "Type": "",
+                "Output Capacitance(Coss)": "",
+                "Vgs": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I120",
+                "DeviceName": "2N7002_C8545",
+                "FootprintName": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "G",
+                    "number": "1",
+                    "net": "$2N127",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "S",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "D",
+                    "number": "3",
+                    "net": "$2N131",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                }
+            }
+        },
+        "A2_R6": {
+            "props": {
+                "Unique ID": "A2_R6",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "8b99ce61f78f1bec",
+                "Designator": "R6",
+                "Device": "1e53c013e6de118d",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF1003T5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF1003T5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Voltage-Supply(Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I121",
+                "DeviceName": "0603WAF1003T5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N128",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_R7": {
+            "props": {
+                "Unique ID": "A2_R7",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "e96aff00e82a1a54",
+                "Designator": "R7",
+                "Device": "2363ad9c24af80ca",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF1002T5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF1002T5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Voltage-Supply(Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I122",
+                "DeviceName": "0603WAF1002T5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N131",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_J4": {
+            "props": {
+                "Unique ID": "A2_J4",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "fe94879b18aa0b0e",
+                "Designator": "J4",
+                "Device": "daed7dc72cd30cdf",
+                "LCSC Part Name": "",
+                "Supplier Part": "PM254-1-07-Z-8.5.1",
+                "Manufacturer": "HCTL(华灿天禄)",
+                "Manufacturer Part": "PM254-1-07-Z-8.5",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "ad183dd15fb8cce2",
+                "3D Model": "4c31987253bc43b9b52c17be2a6d3f91|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "HDR-TH_7P-P2.54-F-LI-1X7P",
+                "3D Model Transform": "715.7466,94.488,0,0,0,0,0,0,-118.11",
+                "Holes Structure": "",
+                "Pitch": "",
+                "Row Spacing": "",
+                "Circular Hole / Square Hole": "",
+                "Mounting Type": "",
+                "Number of Rows": "",
+                "Number of Positions": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Holes Direction": "",
+                "Insulation Height": "",
+                "Contact Material": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I123",
+                "DeviceName": "PM254-1-07-Z-8.5",
+                "FootprintName": "HDR-TH_7P-P2.54-V-F"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "3",
+                    "number": "3",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                },
+                "4": {
+                    "name": "4",
+                    "number": "4",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "4"
+                    }
+                },
+                "5": {
+                    "name": "5",
+                    "number": "5",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "5"
+                    }
+                },
+                "6": {
+                    "name": "6",
+                    "number": "6",
+                    "net": "$2N136",
+                    "props": {
+                        "Pin Number": "6"
+                    }
+                },
+                "7": {
+                    "name": "7",
+                    "number": "7",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "7"
+                    }
+                }
+            }
+        },
+        "A2_J5": {
+            "props": {
+                "Unique ID": "A2_J5",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "4a91faca2afd49dc",
+                "Designator": "J5",
+                "Device": "4591cd174d2cf7b9",
+                "LCSC Part Name": "",
+                "Supplier Part": "PM254-1-08-Z-8.5.1",
+                "Manufacturer": "HCTL(华灿天禄)",
+                "Manufacturer Part": "PM254-1-08-Z-8.5",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "defe4fcfad18b8b3",
+                "3D Model": "6ab1dac21d924c3d8eea0dfa46d42ff5|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "HDR-TH_8P-P2.54-V-F",
+                "3D Model Transform": "819.723,98.425,0,0,0,0,0,0,-118.11",
+                "Holes Structure": "",
+                "Pitch": "",
+                "Row Spacing": "",
+                "Circular Hole / Square Hole": "",
+                "Mounting Type": "",
+                "Number of Rows": "",
+                "Number of Positions": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Holes Direction": "",
+                "Insulation Height": "",
+                "Contact Material": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I124",
+                "DeviceName": "PM254-1-08-Z-8.5",
+                "FootprintName": "HDR-TH_8P-P2.54-V-F"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "+3V3_RADIO",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "3",
+                    "number": "3",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                },
+                "4": {
+                    "name": "4",
+                    "number": "4",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "4"
+                    }
+                },
+                "5": {
+                    "name": "5",
+                    "number": "5",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "5"
+                    }
+                },
+                "6": {
+                    "name": "6",
+                    "number": "6",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "6"
+                    }
+                },
+                "7": {
+                    "name": "7",
+                    "number": "7",
+                    "net": "$2N138",
+                    "props": {
+                        "Pin Number": "7"
+                    }
+                },
+                "8": {
+                    "name": "8",
+                    "number": "8",
+                    "net": "$2N139",
+                    "props": {
+                        "Pin Number": "8"
+                    }
+                }
+            }
+        },
+        "A2_J6": {
+            "props": {
+                "Unique ID": "A2_J6",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "8ddede4a920f3258",
+                "Designator": "J6",
+                "Device": "91b0c47c22ea0c0e",
+                "LCSC Part Name": "",
+                "Supplier Part": "PM254-1-02-Z-8.5.1",
+                "Manufacturer": "HCTL(华灿天禄)",
+                "Manufacturer Part": "PM254-1-02-Z-8.5",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "1443a370cddd4417",
+                "3D Model": "a9450ef445564560a104363b9aacde4e|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "HDR-TH_2P-P2.54-F-LI-1X2P",
+                "3D Model Transform": "215.7476,98.425,0,0,0,0,0,0,-129.921",
+                "Holes Structure": "",
+                "Pitch": "",
+                "Row Spacing": "",
+                "Circular Hole / Square Hole": "",
+                "Mounting Type": "",
+                "Number of Rows": "",
+                "Number of Positions": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Holes Direction": "",
+                "Insulation Height": "",
+                "Contact Material": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I125",
+                "DeviceName": "PM254-1-02-Z-8.5",
+                "FootprintName": "HDR-TH_2P-P2.54-V-F"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N140",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_J7": {
+            "props": {
+                "Unique ID": "A2_J7",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "8ddede4a920f3258",
+                "Designator": "J7",
+                "Device": "91b0c47c22ea0c0e",
+                "LCSC Part Name": "",
+                "Supplier Part": "PM254-1-02-Z-8.5.1",
+                "Manufacturer": "HCTL(华灿天禄)",
+                "Manufacturer Part": "PM254-1-02-Z-8.5",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "1443a370cddd4417",
+                "3D Model": "a9450ef445564560a104363b9aacde4e|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "HDR-TH_2P-P2.54-F-LI-1X2P",
+                "3D Model Transform": "215.7476,98.425,0,0,0,0,0,0,-129.921",
+                "Holes Structure": "",
+                "Pitch": "",
+                "Row Spacing": "",
+                "Circular Hole / Square Hole": "",
+                "Mounting Type": "",
+                "Number of Rows": "",
+                "Number of Positions": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Holes Direction": "",
+                "Insulation Height": "",
+                "Contact Material": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I126",
+                "DeviceName": "PM254-1-02-Z-8.5",
+                "FootprintName": "HDR-TH_2P-P2.54-V-F"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N143",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_R8": {
+            "props": {
+                "Unique ID": "A2_R8",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "9488e347743692d2",
+                "Designator": "R8",
+                "Device": "978ee2074aa35de0",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF0000T5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF0000T5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Voltage-Supply(Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I127",
+                "DeviceName": "0603WAF0000T5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N140",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_R9": {
+            "props": {
+                "Unique ID": "A2_R9",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "9488e347743692d2",
+                "Designator": "R9",
+                "Device": "978ee2074aa35de0",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF0000T5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF0000T5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Voltage-Supply(Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I128",
+                "DeviceName": "0603WAF0000T5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N143",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_J8": {
+            "props": {
+                "Unique ID": "A2_J8",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "b2abe6a06e046ab1",
+                "Designator": "J8",
+                "Device": "2a16082b55c6caeb",
+                "LCSC Part Name": "",
+                "Supplier Part": "DG301-5.0-03P-12-00A(H).1",
+                "Manufacturer": "DEGSON(高正/高松)",
+                "Manufacturer Part": "DG301-5.0-03P-12-00A(H)",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "6957ef92839dbe21",
+                "3D Model": "e3fa3dd0d172408fba81f4cd28552bbf|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "CONN-TH_DEGSON_DG301-5.0-03P",
+                "3D Model Transform": "614.17204,299.212,0,0,0,0,-11.811,27.559,-165.354",
+                "Number of Positions or Pins": "",
+                "Pitch": "",
+                "Color": "",
+                "Mounting Type": "",
+                "Number of Pins": "",
+                "Number of Rows": "",
+                "Number of PINs Per Row": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I129",
+                "DeviceName": "DG301-5.0-03P-12-00A(H)",
+                "FootprintName": "CONN-TH_DEGSON_DG301-5.0-03P"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N165",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N166",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "3",
+                    "number": "3",
+                    "net": "$2N167",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                }
+            }
+        },
+        "A2_J9": {
+            "props": {
+                "Unique ID": "A2_J9",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "b2abe6a06e046ab1",
+                "Designator": "J9",
+                "Device": "2a16082b55c6caeb",
+                "LCSC Part Name": "",
+                "Supplier Part": "DG301-5.0-03P-12-00A(H).1",
+                "Manufacturer": "DEGSON(高正/高松)",
+                "Manufacturer Part": "DG301-5.0-03P-12-00A(H)",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "6957ef92839dbe21",
+                "3D Model": "e3fa3dd0d172408fba81f4cd28552bbf|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "CONN-TH_DEGSON_DG301-5.0-03P",
+                "3D Model Transform": "614.17204,299.212,0,0,0,0,-11.811,27.559,-165.354",
+                "Number of Positions or Pins": "",
+                "Pitch": "",
+                "Color": "",
+                "Mounting Type": "",
+                "Number of Pins": "",
+                "Number of Rows": "",
+                "Number of PINs Per Row": "",
+                "Current Rating": "",
+                "Voltage Rating (Max)": "",
+                "Operating Temperature": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I130",
+                "DeviceName": "DG301-5.0-03P-12-00A(H)",
+                "FootprintName": "CONN-TH_DEGSON_DG301-5.0-03P"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N168",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "+3V3_AUX_OUT",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "3",
+                    "number": "3",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                }
+            }
+        },
+        "A2_R10": {
+            "props": {
+                "Unique ID": "A2_R10",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "a566cdc2f293130e",
+                "Designator": "R10",
+                "Device": "fa97593f8da96003",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF1000T5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF1000T5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Overload Voltage (Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature Range": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I131",
+                "DeviceName": "0603WAF1000T5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N146",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N169",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_R11": {
+            "props": {
+                "Unique ID": "A2_R11",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "a566cdc2f293130e",
+                "Designator": "R11",
+                "Device": "fa97593f8da96003",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF1000T5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF1000T5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Overload Voltage (Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature Range": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I132",
+                "DeviceName": "0603WAF1000T5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N147",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N170",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_R12": {
+            "props": {
+                "Unique ID": "A2_R12",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "a566cdc2f293130e",
+                "Designator": "R12",
+                "Device": "fa97593f8da96003",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF1000T5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF1000T5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Overload Voltage (Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature Range": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I133",
+                "DeviceName": "0603WAF1000T5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N148",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N171",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_R13": {
+            "props": {
+                "Unique ID": "A2_R13",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "a566cdc2f293130e",
+                "Designator": "R13",
+                "Device": "fa97593f8da96003",
+                "LCSC Part Name": "",
+                "Supplier Part": "0603WAF1000T5E.1",
+                "Manufacturer": "UNI-ROYAL(厚声)",
+                "Manufacturer Part": "0603WAF1000T5E",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "c18514361f9bd5b2",
+                "3D Model": "fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "R0603",
+                "3D Model Transform": "31.8897,63.7794,0,90,0,0,0,0,0",
+                "Type": "",
+                "Value": "",
+                "Tolerance": "",
+                "Power(Watts)": "",
+                "Overload Voltage (Max)": "",
+                "Temperature Coefficient": "",
+                "Operating Temperature Range": "",
+                "Name": "={Value}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I134",
+                "DeviceName": "0603WAF1000T5E",
+                "FootprintName": "R0603"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "$2N149",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "$2N172",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_D3": {
+            "props": {
+                "Unique ID": "A2_D3",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "9b94c507e4638323",
+                "Designator": "D3",
+                "Device": "5b4f25d55a1d64f4",
+                "LCSC Part Name": "",
+                "Supplier Part": "PESD3V3S1UL,315.1",
+                "Manufacturer": "Nexperia(安世)",
+                "Manufacturer Part": "PESD3V3S1UL,315",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4d33a348c882b58f",
+                "3D Model": "96b2cca1435e47b08b55ab6e73617580|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "DFN1006_L1-W0.6-H0.4-2L-RD",
+                "3D Model Transform": "40.1574,24.4094,0,0,0,0,0,0,0",
+                "Reverse Stand-Off Voltage (Vrwm)": "",
+                "Clamping Voltage": "",
+                "Peak Pulse Power Dissipation (Ppp)": "",
+                "Voltage - Breakdown": "",
+                "Number of Channels": "",
+                "Operating Temperature": "",
+                "Type": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I135",
+                "DeviceName": "PESD3V3S1UL,315",
+                "FootprintName": "DFN1006-2L-RD"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "C",
+                    "number": "1",
+                    "net": "$2N169",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_D4": {
+            "props": {
+                "Unique ID": "A2_D4",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "9b94c507e4638323",
+                "Designator": "D4",
+                "Device": "5b4f25d55a1d64f4",
+                "LCSC Part Name": "",
+                "Supplier Part": "PESD3V3S1UL,315.1",
+                "Manufacturer": "Nexperia(安世)",
+                "Manufacturer Part": "PESD3V3S1UL,315",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4d33a348c882b58f",
+                "3D Model": "96b2cca1435e47b08b55ab6e73617580|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "DFN1006_L1-W0.6-H0.4-2L-RD",
+                "3D Model Transform": "40.1574,24.4094,0,0,0,0,0,0,0",
+                "Reverse Stand-Off Voltage (Vrwm)": "",
+                "Clamping Voltage": "",
+                "Peak Pulse Power Dissipation (Ppp)": "",
+                "Voltage - Breakdown": "",
+                "Number of Channels": "",
+                "Operating Temperature": "",
+                "Type": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I136",
+                "DeviceName": "PESD3V3S1UL,315",
+                "FootprintName": "DFN1006-2L-RD"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "C",
+                    "number": "1",
+                    "net": "$2N170",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_D5": {
+            "props": {
+                "Unique ID": "A2_D5",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "9b94c507e4638323",
+                "Designator": "D5",
+                "Device": "5b4f25d55a1d64f4",
+                "LCSC Part Name": "",
+                "Supplier Part": "PESD3V3S1UL,315.1",
+                "Manufacturer": "Nexperia(安世)",
+                "Manufacturer Part": "PESD3V3S1UL,315",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4d33a348c882b58f",
+                "3D Model": "96b2cca1435e47b08b55ab6e73617580|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "DFN1006_L1-W0.6-H0.4-2L-RD",
+                "3D Model Transform": "40.1574,24.4094,0,0,0,0,0,0,0",
+                "Reverse Stand-Off Voltage (Vrwm)": "",
+                "Clamping Voltage": "",
+                "Peak Pulse Power Dissipation (Ppp)": "",
+                "Voltage - Breakdown": "",
+                "Number of Channels": "",
+                "Operating Temperature": "",
+                "Type": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I137",
+                "DeviceName": "PESD3V3S1UL,315",
+                "FootprintName": "DFN1006-2L-RD"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "C",
+                    "number": "1",
+                    "net": "$2N171",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "A2_D6": {
+            "props": {
+                "Unique ID": "A2_D6",
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Symbol": "9b94c507e4638323",
+                "Designator": "D6",
+                "Device": "5b4f25d55a1d64f4",
+                "LCSC Part Name": "",
+                "Supplier Part": "PESD3V3S1UL,315.1",
+                "Manufacturer": "Nexperia(安世)",
+                "Manufacturer Part": "PESD3V3S1UL,315",
+                "Supplier Footprint": "",
+                "JLCPCB Part Class": "",
+                "Datasheet": "",
+                "Supplier": "LCSC",
+                "Footprint": "4d33a348c882b58f",
+                "3D Model": "96b2cca1435e47b08b55ab6e73617580|0819f05c4eef4c71ace90d822a990e87",
+                "3D Model Title": "DFN1006_L1-W0.6-H0.4-2L-RD",
+                "3D Model Transform": "40.1574,24.4094,0,0,0,0,0,0,0",
+                "Reverse Stand-Off Voltage (Vrwm)": "",
+                "Clamping Voltage": "",
+                "Peak Pulse Power Dissipation (Ppp)": "",
+                "Voltage - Breakdown": "",
+                "Number of Channels": "",
+                "Operating Temperature": "",
+                "Type": "",
+                "Name": "={Manufacturer Part}",
+                "Description": "",
+                "Reuse Block": "",
+                "Group ID": "",
+                "Channel ID": "$2I138",
+                "DeviceName": "PESD3V3S1UL,315",
+                "FootprintName": "DFN1006-2L-RD"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "C",
+                    "number": "1",
+                    "net": "$2N172",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        }
+    },
+    "designRule": {
+        "trackPhysics": {
+            "copperThickness1oz": {
+                "name": "copperThickness1oz",
+                "isDefault": true,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.127,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            },
+            "copperThickness2oz": {
+                "name": "copperThickness2oz",
+                "isDefault": false,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.203,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            }
+        },
+        "netRule": {
+            "$2N90": {
+                "net": "$2N90",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N92": {
+                "net": "$2N92",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N93": {
+                "net": "$2N93",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "GND": {
+                "net": "GND",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "+5V_MCU": {
+                "net": "+5V_MCU",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "+3V3_RADIO": {
+                "net": "+3V3_RADIO",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "+3V3_AUX_OUT": {
+                "net": "+3V3_AUX_OUT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N116": {
+                "net": "$2N116",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N118": {
+                "net": "$2N118",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N119": {
+                "net": "$2N119",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N122": {
+                "net": "$2N122",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N123": {
+                "net": "$2N123",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N124": {
+                "net": "$2N124",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N125": {
+                "net": "$2N125",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N126": {
+                "net": "$2N126",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N127": {
+                "net": "$2N127",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N128": {
+                "net": "$2N128",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N131": {
+                "net": "$2N131",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N136": {
+                "net": "$2N136",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N138": {
+                "net": "$2N138",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N139": {
+                "net": "$2N139",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N140": {
+                "net": "$2N140",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N143": {
+                "net": "$2N143",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N146": {
+                "net": "$2N146",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N147": {
+                "net": "$2N147",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N148": {
+                "net": "$2N148",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N149": {
+                "net": "$2N149",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N164": {
+                "net": "$2N164",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N165": {
+                "net": "$2N165",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N166": {
+                "net": "$2N166",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N167": {
+                "net": "$2N167",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N168": {
+                "net": "$2N168",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N169": {
+                "net": "$2N169",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N170": {
+                "net": "$2N170",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N171": {
+                "net": "$2N171",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N172": {
+                "net": "$2N172",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N177": {
+                "net": "$2N177",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N178": {
+                "net": "$2N178",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N179": {
+                "net": "$2N179",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "$2N180": {
+                "net": "$2N180",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA0_AUX": {
+                "net": "PA0_AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA1_AUX": {
+                "net": "PA1_AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA2_AUX": {
+                "net": "PA2_AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA3_AUX": {
+                "net": "PA3_AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "UART_MCU_TX": {
+                "net": "UART_MCU_TX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "UART_MCU_RX": {
+                "net": "UART_MCU_RX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_RXD": {
+                "net": "LORA_RXD",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_TXD": {
+                "net": "LORA_TXD",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PB5_LORA_RESET_CTL": {
+                "net": "PB5_LORA_RESET_CTL",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LORA_RESET_N": {
+                "net": "LORA_RESET_N",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA2_EXT": {
+                "net": "PA2_EXT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA1_EXT": {
+                "net": "PA1_EXT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA0_EXT": {
+                "net": "PA0_EXT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PA3_EXT": {
+                "net": "PA3_EXT",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            }
+        }
+    },
+    "differentialPair": {},
+    "netClass": {},
+    "equalLengthNetGroup": {}
+}

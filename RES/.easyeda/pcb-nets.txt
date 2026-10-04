@@ -1,0 +1,319 @@
+﻿{
+  "id": "req_687",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-08-12T02:16:35.9427197Z",
+  "ok": true,
+  "result": {
+    "count": 30,
+    "nets": [
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "+5V_MCU"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "GND"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "+3V3_RADIO"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N169"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N170"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N171"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N172"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N164"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N93"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N90"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N92"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "LORA_RESET_N"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "LORA_RXD"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "LORA_TXD"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N140"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N143"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PA0_EXT"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PA1_EXT"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PA2_EXT"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PA3_EXT"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "+3V3_AUX_OUT"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "UART_MCU_TX"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PA3_AUX"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PA2_AUX"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PA1_AUX"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PA0_AUX"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "UART_MCU_RX"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "PB5_LORA_RESET_CTL"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N127"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "$2N128"
+      }
+    ]
+  },
+  "context": {
+    "projectUuid": "f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf",
+    "projectName": "RES_LoRa_32",
+    "documentUuid": "d6b55400a06898ae",
+    "documentType": "pcb",
+    "tabId": "d6b55400a06898ae@f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf"
+  }
+}

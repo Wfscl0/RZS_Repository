@@ -1,0 +1,11 @@
+{"playbookSha256":"9d88bb9c08fa04c6cc08959648861da03a3f8a338a5fff9a30f319ec718b0aa0","name":"RES-remote-interconnect-place-remaining","project":"RES_LoRa_32","startedAt":"2026-07-31T12:04:35+08:00"}
+{"idx":1,"id":"fb2","status":"ok","ms":858}
+{"idx":2,"id":"c2","status":"ok","ms":1785}
+{"idx":3,"id":"c3","status":"ok","ms":2014}
+{"idx":4,"id":"c4","status":"ok","ms":1077}
+{"idx":5,"id":"c5","status":"ok","ms":1401}
+{"idx":6,"id":"stm-a","status":"ok","ms":3658}
+{"idx":7,"id":"stm-b","status":"ok","ms":989}
+{"idx":8,"id":"r1","status":"ok","ms":2588}
+{"idx":9,"id":"r2","status":"ok","ms":925}
+{"idx":10,"id":"lora","status":"fail","ms":6168,"error":"run \"sch place\" exited 1: }"}

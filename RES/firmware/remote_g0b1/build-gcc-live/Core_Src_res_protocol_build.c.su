@@ -1,0 +1,14 @@
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:13:17:get_u64_le	24	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:31:6:res_put_u16_le	0	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:37:6:res_put_u32_le	0	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:45:10:res_get_u16_le	0	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:50:10:res_get_u32_le	0	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:58:9:res_hop_next_channel	8	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:76:10:res_crc16_ccitt	12	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:99:10:res_siphash24	168	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:150:8:res_frame_encode	32	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:193:21:res_frame_decode	48	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:253:6:res_stream_parser_init	0	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:261:6:res_stream_parser_push	16	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:312:6:res_replay_window_accept	12	static
+c:\users\icemi\desktop\rzs_repository\res\firmware\shared\src\res_protocol.c:353:6:res_replay_window_reset	0	static

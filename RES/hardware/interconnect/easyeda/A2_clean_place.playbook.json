@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "RES-interconnect-A2-clean-place",
+    "description": "Clean functional-zone placement for STM32G0B1 and E220 carrier",
+    "project": "RES_LoRa_32",
+    "doc": "e4d3e62b62def93f"
+  },
+  "defaults": {
+    "timeoutSec": 30,
+    "retry": 0,
+    "continueOnError": false
+  },
+  "vars": {
+    "LIB": "0819f05c4eef4c71ace90d822a990e87"
+  },
+  "steps": [
+    {"id":"j1","run":"sch place","flags":{"lib":"${LIB}","uuid":"e8a458104842480998ac0d6f045ee70a","x":90,"y":175,"designator":"J1","rotation":180}},
+    {"id":"f1","run":"sch place","flags":{"lib":"${LIB}","uuid":"4ae5b662af7f4c0089d136241f4ee296","x":175,"y":115,"designator":"F1"}},
+    {"id":"f2","run":"sch place","flags":{"lib":"${LIB}","uuid":"4ae5b662af7f4c0089d136241f4ee296","x":175,"y":245,"designator":"F2"}},
+    {"id":"fb1","run":"sch place","flags":{"lib":"${LIB}","uuid":"9a036d90211a4df79dae8b43cf4fdfda","x":245,"y":115,"designator":"FB1"}},
+    {"id":"fb2","run":"sch place","flags":{"lib":"${LIB}","uuid":"9a036d90211a4df79dae8b43cf4fdfda","x":245,"y":245,"designator":"FB2"}},
+    {"id":"d1","run":"sch place","flags":{"lib":"${LIB}","uuid":"8fad8483c2e74dd0b2b8b389bb6cefaa","x":290,"y":175,"designator":"D1","rotation":90}},
+    {"id":"d2","run":"sch place","flags":{"lib":"${LIB}","uuid":"b3ab501f28444d029f7c5b03babf680c","x":290,"y":285,"designator":"D2","rotation":90}},
+    {"id":"c1","run":"sch place","flags":{"lib":"${LIB}","uuid":"2c8bdaeb33624757a7871109432b253d","x":330,"y":175,"designator":"C1","rotation":90}},
+    {"id":"c2","run":"sch place","flags":{"lib":"${LIB}","uuid":"9087862aa5754cc9b0c32846063234ba","x":330,"y":245,"designator":"C2","rotation":90}},
+    {"id":"c3","run":"sch place","flags":{"lib":"${LIB}","uuid":"2c8bdaeb33624757a7871109432b253d","x":330,"y":285,"designator":"C3","rotation":90}},
+    {"id":"c4","run":"sch place","flags":{"lib":"${LIB}","uuid":"96b39256cc3f4d80bd3b503deb4f3328","x":330,"y":325,"designator":"C4","rotation":90}},
+
+    {"id":"stm_left","run":"sch place","flags":{"lib":"${LIB}","uuid":"4e60c0c7d1944f6fbd4de32778a8678f","x":465,"y":175,"designator":"J2"}},
+    {"id":"stm_right","run":"sch place","flags":{"lib":"${LIB}","uuid":"4e60c0c7d1944f6fbd4de32778a8678f","x":605,"y":175,"designator":"J3"}},
+
+    {"id":"uart_tx_r","run":"sch place","flags":{"lib":"${LIB}","uuid":"c1b17fa23f304726bc91c5924d9b7c0f","x":780,"y":220,"designator":"R1"}},
+    {"id":"uart_rx_r","run":"sch place","flags":{"lib":"${LIB}","uuid":"c1b17fa23f304726bc91c5924d9b7c0f","x":780,"y":260,"designator":"R2"}},
+
+    {"id":"reset_gate_r","run":"sch place","flags":{"lib":"${LIB}","uuid":"c1b17fa23f304726bc91c5924d9b7c0f","x":120,"y":455,"designator":"R5"}},
+    {"id":"reset_q","run":"sch place","flags":{"lib":"${LIB}","uuid":"f8007837564a4f1fa0e6b57b81dccb0d","x":210,"y":455,"designator":"Q1"}},
+    {"id":"reset_gate_pd","run":"sch place","flags":{"lib":"${LIB}","uuid":"40ff282b3d594c33b798d1707d8406cb","x":150,"y":525,"designator":"R6","rotation":90}},
+    {"id":"reset_pullup","run":"sch place","flags":{"lib":"${LIB}","uuid":"b948db94476e4027ac8953235755ec96","x":280,"y":455,"designator":"R7","rotation":90}},
+
+    {"id":"lora_1_7","run":"sch place","flags":{"lib":"${LIB}","uuid":"a33204ad440d49f59d8fb3b297af6389","x":910,"y":120,"designator":"J4","rotation":180}},
+    {"id":"lora_8_15","run":"sch place","flags":{"lib":"${LIB}","uuid":"9a9b689bfdfd4b78944bb8578caee0df","x":1060,"y":175,"designator":"J5","rotation":180}},
+    {"id":"lora_16_17","run":"sch place","flags":{"lib":"${LIB}","uuid":"145c77725d9c43b9b52a5ca001742fba","x":900,"y":305,"designator":"J6","rotation":180}},
+    {"id":"lora_18_19","run":"sch place","flags":{"lib":"${LIB}","uuid":"145c77725d9c43b9b52a5ca001742fba","x":1020,"y":305,"designator":"J7","rotation":180}},
+    {"id":"m1_strap","run":"sch place","flags":{"lib":"${LIB}","uuid":"fc38f436091b49a696be03a7955956ed","x":840,"y":305,"designator":"R8"}},
+    {"id":"m0_strap","run":"sch place","flags":{"lib":"${LIB}","uuid":"fc38f436091b49a696be03a7955956ed","x":1080,"y":305,"designator":"R9"}},
+
+    {"id":"ext_j8","run":"sch place","flags":{"lib":"${LIB}","uuid":"e8a458104842480998ac0d6f045ee70a","x":760,"y":500,"designator":"J8"}},
+    {"id":"ext_j9","run":"sch place","flags":{"lib":"${LIB}","uuid":"e8a458104842480998ac0d6f045ee70a","x":760,"y":650,"designator":"J9"}},
+    {"id":"pa0_r","run":"sch place","flags":{"lib":"${LIB}","uuid":"5303080f43d74b41ae76fc5142aa97e5","x":500,"y":450,"designator":"R10"}},
+    {"id":"pa1_r","run":"sch place","flags":{"lib":"${LIB}","uuid":"5303080f43d74b41ae76fc5142aa97e5","x":500,"y":500,"designator":"R11"}},
+    {"id":"pa2_r","run":"sch place","flags":{"lib":"${LIB}","uuid":"5303080f43d74b41ae76fc5142aa97e5","x":500,"y":550,"designator":"R12"}},
+    {"id":"pa3_r","run":"sch place","flags":{"lib":"${LIB}","uuid":"5303080f43d74b41ae76fc5142aa97e5","x":500,"y":600,"designator":"R13"}},
+    {"id":"pa0_esd","run":"sch place","flags":{"lib":"${LIB}","uuid":"b3ab501f28444d029f7c5b03babf680c","x":620,"y":450,"designator":"D3","rotation":90}},
+    {"id":"pa1_esd","run":"sch place","flags":{"lib":"${LIB}","uuid":"b3ab501f28444d029f7c5b03babf680c","x":620,"y":500,"designator":"D4","rotation":90}},
+    {"id":"pa2_esd","run":"sch place","flags":{"lib":"${LIB}","uuid":"b3ab501f28444d029f7c5b03babf680c","x":620,"y":550,"designator":"D5","rotation":90}},
+    {"id":"pa3_esd","run":"sch place","flags":{"lib":"${LIB}","uuid":"b3ab501f28444d029f7c5b03babf680c","x":620,"y":600,"designator":"D6","rotation":90}},
+
+    {"id":"save","run":"sch save","checkpoint":true}
+  ]
+}

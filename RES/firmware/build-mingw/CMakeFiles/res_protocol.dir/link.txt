@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libres_protocol.a CMakeFiles/res_protocol.dir/shared/src/res_protocol.c.obj CMakeFiles/res_protocol.dir/shared/src/res_can_contract.c.obj
+C:\mingw64\bin\ranlib.exe libres_protocol.a

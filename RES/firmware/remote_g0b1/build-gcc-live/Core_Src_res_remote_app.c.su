@@ -1,0 +1,9 @@
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:104:13:transmit_on_channel.isra	160	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:191:13:send_command	48	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:268:6:res_remote_app_init	24	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:287:6:res_remote_app_set_raw_inputs	0	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:295:6:res_remote_app_set_power	12	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:315:6:res_remote_app_set_fault	8	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:367:6:res_remote_app_link_ok	0	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:326:6:res_remote_app_receive_byte	80	static
+C:\Users\icemi\Desktop\RZS_Repository\RES\firmware\remote_g0b1\Core\Src\res_remote_app.c:373:6:res_remote_app_tick	72	static

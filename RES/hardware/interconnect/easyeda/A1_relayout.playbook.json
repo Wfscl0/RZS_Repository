@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "meta": {"name":"RES-interconnect-A1-relayout","project":"RES_LoRa_32","doc":"e4d3e62b62def93f"},
+  "defaults": {"timeoutSec":30,"retry":0,"continueOnError":false},
+  "steps": [
+    {"id":"delete_unused_uart_pullups","run":"sch delete","flags":{"ids":"[\"d2058f814a443847\",\"e9184f7734371c1f\"]"}},
+    {"id":"move_j8","run":"sch modify","flags":{"id":"0eb821a65143cb5e","patch":"{\"x\":1050,\"y\":760}"}},
+    {"id":"move_j9","run":"sch modify","flags":{"id":"e49461fede826734","patch":"{\"x\":1050,\"y\":900}"}},
+    {"id":"move_r10","run":"sch modify","flags":{"id":"ea48760d5d37e871","patch":"{\"x\":850,\"y\":740}"}},
+    {"id":"move_r11","run":"sch modify","flags":{"id":"24a9b945e17f34f9","patch":"{\"x\":850,\"y\":790}"}},
+    {"id":"move_r12","run":"sch modify","flags":{"id":"6f3e677f3625d9da","patch":"{\"x\":850,\"y\":840}"}},
+    {"id":"move_r13","run":"sch modify","flags":{"id":"42b8c28cec9a4928","patch":"{\"x\":850,\"y\":890}"}},
+    {"id":"move_d3","run":"sch modify","flags":{"id":"6b7cb2cace1ee73d","patch":"{\"x\":930,\"y\":740}"}},
+    {"id":"move_d4","run":"sch modify","flags":{"id":"756e70a5dba2eeb4","patch":"{\"x\":950,\"y\":790}"}},
+    {"id":"move_d5","run":"sch modify","flags":{"id":"717e7d785d45df33","patch":"{\"x\":970,\"y\":840}"}},
+    {"id":"move_d6","run":"sch modify","flags":{"id":"d5f697ad6deec031","patch":"{\"x\":990,\"y\":890}"}},
+    {"id":"save","run":"sch save","checkpoint":true}
+  ]
+}

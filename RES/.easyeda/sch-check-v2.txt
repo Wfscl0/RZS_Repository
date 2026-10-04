@@ -1,0 +1,84 @@
+﻿sch check: 43 finding(s) — 36 floating pin(s)/4 comp, 4 geom-net mismatch(es), 0 net-marker mismatch(es), 0 multi-net wire(s), 22 wire-crossing(s), 3 wire-over-pin(s), 0 zero-length wire(s), 0 dangling wire(s), 0 duplicate-net-marker(s), 0 titleblock-overlap(s), 10 marker-overlap(s)
+  WARN   floating-pin       J2  15 个引脚悬空(无导线连接,未打 NC 标识)  [3,20,18,9,16,11,14,13,12,15,10,17,8,19,21]
+          pin 3 (3)  @(435.00,650.00)
+          pin 20 (20)  @(495.00,570.00)
+          pin 18 (18)  @(495.00,580.00)
+          pin 9 (9)  @(435.00,620.00)
+          pin 16 (16)  @(495.00,590.00)
+          pin 11 (11)  @(435.00,610.00)
+          pin 14 (14)  @(495.00,600.00)
+          pin 13 (13)  @(435.00,600.00)
+          pin 12 (12)  @(495.00,610.00)
+          pin 15 (15)  @(435.00,590.00)
+          pin 10 (10)  @(495.00,620.00)
+          pin 17 (17)  @(435.00,580.00)
+          pin 8 (8)  @(495.00,630.00)
+          pin 19 (19)  @(435.00,570.00)
+          pin 21 (21)  @(435.00,560.00)
+  WARN   geom-net-mismatch  J3  导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)  [22]  @(635.00,560.00)
+  WARN   geom-net-mismatch  J3  导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)  [20]  @(635.00,570.00)
+  WARN   geom-net-mismatch  J3  导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)  [21]  @(575.00,560.00)
+  WARN   floating-pin       J3  15 个引脚悬空(无导线连接,未打 NC 标识)  [3,5,7,18,16,11,14,13,12,15,10,17,8,6,4]
+          pin 3 (3)  @(575.00,650.00)
+          pin 5 (5)  @(575.00,640.00)
+          pin 7 (7)  @(575.00,630.00)
+          pin 18 (18)  @(635.00,580.00)
+          pin 16 (16)  @(635.00,590.00)
+          pin 11 (11)  @(575.00,610.00)
+          pin 14 (14)  @(635.00,600.00)
+          pin 13 (13)  @(575.00,600.00)
+          pin 12 (12)  @(635.00,610.00)
+          pin 15 (15)  @(575.00,590.00)
+          pin 10 (10)  @(635.00,620.00)
+          pin 17 (17)  @(575.00,580.00)
+          pin 8 (8)  @(635.00,630.00)
+          pin 6 (6)  @(635.00,640.00)
+          pin 4 (4)  @(635.00,650.00)
+  WARN   geom-net-mismatch  R7  导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)  [2]  @(300.00,235.00)
+  WARN   floating-pin       J4  1 个引脚悬空(无导线连接,未打 NC 标识)  [7]
+          pin 7 (7)  @(930.00,570.00)
+  WARN   floating-pin       J5  5 个引脚悬空(无导线连接,未打 NC 标识)  [2,3,4,5,6]
+          pin 2 (2)  @(1030.00,570.00)
+          pin 3 (3)  @(1030.00,580.00)
+          pin 4 (4)  @(1030.00,590.00)
+          pin 5 (5)  @(1030.00,600.00)
+          pin 6 (6)  @(1030.00,610.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(420.00,550.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(540.00,640.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(540.00,440.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(540.00,560.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(540.00,620.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(540.00,460.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(440.00,270.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(440.00,320.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(440.00,370.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(410.00,465.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(410.00,460.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(550.00,560.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(550.00,620.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(550.00,460.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(430.00,370.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(420.00,465.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(420.00,460.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(520.00,560.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(320.00,255.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(650.00,270.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(660.00,280.00)
+  WARN   wire-crossing      两条导线交叉(走线打结;改走通道/换 L 形拐点避开)  @(660.00,270.00)
+  WARN   wire-over-pin      J3  导线穿过该引脚(EasyEDA 会在此处截断并连接 — 非预期短接)  [22]  @(635.00,560.00)
+  WARN   wire-over-pin      J3  导线穿过该引脚(EasyEDA 会在此处截断并连接 — 非预期短接)  [20]  @(635.00,570.00)
+  WARN   wire-over-pin      J3  导线穿过该引脚(EasyEDA 会在此处截断并连接 — 非预期短接)  [21]  @(575.00,560.00)
+  WARN   marker-overlap     105c9f01f4ad4b19  +3V3_RADIO(netflag) 与 GND(netflag) 视觉重叠 1.00×6.00 — 换方向/offset 或 stagger  marker=+3V3_RADIO wire=
+  WARN   marker-overlap     Q1  Q1(part) 与 GND(netflag) 视觉重叠 21.00×1.00 — 换方向/offset 或 stagger
+  WARN   marker-overlap     15e878b8b123b4ec  GND(netflag) 与 J6(part) 视觉重叠 1.00×10.00 — 换方向/offset 或 stagger  marker=GND wire=
+  WARN   marker-overlap     1e106b75313f7d29  +3V3_RADIO(netflag) 与 GND(netflag) 视觉重叠 1.00×11.00 — 换方向/offset 或 stagger  marker=+3V3_RADIO wire=
+  WARN   marker-overlap     1ff5daebc9560373  GND(netflag) 与 C4(part) 视觉重叠 8.00×1.00 — 换方向/offset 或 stagger  marker=GND wire=
+  WARN   marker-overlap     C3  C3(part) 与 GND(netflag) 视觉重叠 8.00×1.00 — 换方向/offset 或 stagger
+  WARN   marker-overlap     6842298c5e8c2853  GND(netflag) 与 C2(part) 视觉重叠 8.00×1.00 — 换方向/offset 或 stagger  marker=GND wire=
+  WARN   marker-overlap     7cb14bc9e09dd6b2  GND(netflag) 与 J1(part) 视觉重叠 1.00×21.00 — 换方向/offset 或 stagger  marker=GND wire=
+  WARN   marker-overlap     9f82885e88b4f388  GND(netflag) 与 +3V3_RADIO(netflag) 视觉重叠 1.00×11.00 — 换方向/offset 或 stagger  marker=GND wire=
+  WARN   marker-overlap     J7  J7(part) 与 GND(netflag) 视觉重叠 1.00×10.00 — 换方向/offset 或 stagger
+→ floating pins: wire them, or (where supported) mark intentional ones NC
+→ geom-net mismatch: wire touches pin but netlist has no net — recompile netlist, or fix the stub so it truly connects
+→ routing: reroute crossings in clear channels (L-bends); never run a wire through a pin
+→ marker overlap: net markers cover a part/each other — stagger the labels or re-run autoconnect with more offset

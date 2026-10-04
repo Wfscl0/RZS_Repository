@@ -1,0 +1,2865 @@
+﻿{
+  "id": "req_424",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-07-31T04:32:38.85729Z",
+  "ok": true,
+  "result": {
+    "check": {
+      "findings": [
+        {
+          "at": {
+            "x": 110,
+            "y": 230
+          },
+          "designator": "J1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "2c537f5f5c82c2f3",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 110,
+            "y": 220
+          },
+          "designator": "J1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "2c537f5f5c82c2f3",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 190,
+            "y": 230
+          },
+          "designator": "F1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "95daae2b131cd3f5",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 250,
+            "y": 230
+          },
+          "designator": "F1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "95daae2b131cd3f5",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 220,
+            "y": 350
+          },
+          "designator": "D1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "83f1f662b86d951d",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 220,
+            "y": 310
+          },
+          "designator": "D1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "83f1f662b86d951d",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 290,
+            "y": 350
+          },
+          "designator": "C1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "527db16a1337992d",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 290,
+            "y": 310
+          },
+          "designator": "C1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "527db16a1337992d",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 330,
+            "y": 190
+          },
+          "designator": "FB1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "6c8e369809cf080c",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 370,
+            "y": 190
+          },
+          "designator": "FB1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "6c8e369809cf080c",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 330,
+            "y": 380
+          },
+          "designator": "FB2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "9972afd2c69c6aef",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 370,
+            "y": 380
+          },
+          "designator": "FB2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "9972afd2c69c6aef",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 450,
+            "y": 170
+          },
+          "designator": "C2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "696ed19c0340cfb9",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 450,
+            "y": 130
+          },
+          "designator": "C2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "696ed19c0340cfb9",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 510,
+            "y": 170
+          },
+          "designator": "C3",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "efb9a3e415e856f5",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 510,
+            "y": 130
+          },
+          "designator": "C3",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "efb9a3e415e856f5",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 450,
+            "y": 450
+          },
+          "designator": "C4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "ca10866169e4b5c9",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 450,
+            "y": 410
+          },
+          "designator": "C4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "ca10866169e4b5c9",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 510,
+            "y": 450
+          },
+          "designator": "C5",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "9deaaa2b9d459848",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 510,
+            "y": 410
+          },
+          "designator": "C5",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "9deaaa2b9d459848",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 680,
+            "y": 175
+          },
+          "designator": "J2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "24"
+          ],
+          "primitiveId": "414c769ad8db8499",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 680,
+            "y": 275
+          },
+          "designator": "J2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "4"
+          ],
+          "primitiveId": "414c769ad8db8499",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 620,
+            "y": 175
+          },
+          "designator": "J2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "23"
+          ],
+          "primitiveId": "414c769ad8db8499",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "count": 21,
+          "designator": "J2",
+          "level": "warn",
+          "message": "21 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 620,
+              "y": 285
+            },
+            {
+              "name": "3",
+              "number": "3",
+              "x": 620,
+              "y": 275
+            },
+            {
+              "name": "22",
+              "number": "22",
+              "x": 680,
+              "y": 185
+            },
+            {
+              "name": "5",
+              "number": "5",
+              "x": 620,
+              "y": 265
+            },
+            {
+              "name": "20",
+              "number": "20",
+              "x": 680,
+              "y": 195
+            },
+            {
+              "name": "7",
+              "number": "7",
+              "x": 620,
+              "y": 255
+            },
+            {
+              "name": "18",
+              "number": "18",
+              "x": 680,
+              "y": 205
+            },
+            {
+              "name": "9",
+              "number": "9",
+              "x": 620,
+              "y": 245
+            },
+            {
+              "name": "16",
+              "number": "16",
+              "x": 680,
+              "y": 215
+            },
+            {
+              "name": "11",
+              "number": "11",
+              "x": 620,
+              "y": 235
+            },
+            {
+              "name": "14",
+              "number": "14",
+              "x": 680,
+              "y": 225
+            },
+            {
+              "name": "13",
+              "number": "13",
+              "x": 620,
+              "y": 225
+            },
+            {
+              "name": "12",
+              "number": "12",
+              "x": 680,
+              "y": 235
+            },
+            {
+              "name": "15",
+              "number": "15",
+              "x": 620,
+              "y": 215
+            },
+            {
+              "name": "10",
+              "number": "10",
+              "x": 680,
+              "y": 245
+            },
+            {
+              "name": "17",
+              "number": "17",
+              "x": 620,
+              "y": 205
+            },
+            {
+              "name": "8",
+              "number": "8",
+              "x": 680,
+              "y": 255
+            },
+            {
+              "name": "19",
+              "number": "19",
+              "x": 620,
+              "y": 195
+            },
+            {
+              "name": "6",
+              "number": "6",
+              "x": 680,
+              "y": 265
+            },
+            {
+              "name": "21",
+              "number": "21",
+              "x": 620,
+              "y": 185
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 680,
+              "y": 285
+            }
+          ],
+          "pins": [
+            "1",
+            "3",
+            "22",
+            "5",
+            "20",
+            "7",
+            "18",
+            "9",
+            "16",
+            "11",
+            "14",
+            "13",
+            "12",
+            "15",
+            "10",
+            "17",
+            "8",
+            "19",
+            "6",
+            "21",
+            "2"
+          ],
+          "primitiveId": "414c769ad8db8499",
+          "type": "floating-pin"
+        },
+        {
+          "at": {
+            "x": 620,
+            "y": 525
+          },
+          "designator": "J3",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "c477392920616914",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 680,
+            "y": 415
+          },
+          "designator": "J3",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "24"
+          ],
+          "primitiveId": "c477392920616914",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 620,
+            "y": 505
+          },
+          "designator": "J3",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "5"
+          ],
+          "primitiveId": "c477392920616914",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 620,
+            "y": 415
+          },
+          "designator": "J3",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "23"
+          ],
+          "primitiveId": "c477392920616914",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 680,
+            "y": 525
+          },
+          "designator": "J3",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "c477392920616914",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "count": 19,
+          "designator": "J3",
+          "level": "warn",
+          "message": "19 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "3",
+              "number": "3",
+              "x": 620,
+              "y": 515
+            },
+            {
+              "name": "22",
+              "number": "22",
+              "x": 680,
+              "y": 425
+            },
+            {
+              "name": "20",
+              "number": "20",
+              "x": 680,
+              "y": 435
+            },
+            {
+              "name": "7",
+              "number": "7",
+              "x": 620,
+              "y": 495
+            },
+            {
+              "name": "18",
+              "number": "18",
+              "x": 680,
+              "y": 445
+            },
+            {
+              "name": "9",
+              "number": "9",
+              "x": 620,
+              "y": 485
+            },
+            {
+              "name": "16",
+              "number": "16",
+              "x": 680,
+              "y": 455
+            },
+            {
+              "name": "11",
+              "number": "11",
+              "x": 620,
+              "y": 475
+            },
+            {
+              "name": "14",
+              "number": "14",
+              "x": 680,
+              "y": 465
+            },
+            {
+              "name": "13",
+              "number": "13",
+              "x": 620,
+              "y": 465
+            },
+            {
+              "name": "12",
+              "number": "12",
+              "x": 680,
+              "y": 475
+            },
+            {
+              "name": "15",
+              "number": "15",
+              "x": 620,
+              "y": 455
+            },
+            {
+              "name": "10",
+              "number": "10",
+              "x": 680,
+              "y": 485
+            },
+            {
+              "name": "17",
+              "number": "17",
+              "x": 620,
+              "y": 445
+            },
+            {
+              "name": "8",
+              "number": "8",
+              "x": 680,
+              "y": 495
+            },
+            {
+              "name": "19",
+              "number": "19",
+              "x": 620,
+              "y": 435
+            },
+            {
+              "name": "6",
+              "number": "6",
+              "x": 680,
+              "y": 505
+            },
+            {
+              "name": "21",
+              "number": "21",
+              "x": 620,
+              "y": 425
+            },
+            {
+              "name": "4",
+              "number": "4",
+              "x": 680,
+              "y": 515
+            }
+          ],
+          "pins": [
+            "3",
+            "22",
+            "20",
+            "7",
+            "18",
+            "9",
+            "16",
+            "11",
+            "14",
+            "13",
+            "12",
+            "15",
+            "10",
+            "17",
+            "8",
+            "19",
+            "6",
+            "21",
+            "4"
+          ],
+          "primitiveId": "c477392920616914",
+          "type": "floating-pin"
+        },
+        {
+          "at": {
+            "x": 810,
+            "y": 250
+          },
+          "designator": "R1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "015a993a4e8063d1",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 770,
+            "y": 250
+          },
+          "designator": "R1",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "015a993a4e8063d1",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 810,
+            "y": 310
+          },
+          "designator": "R2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "2b371e4bad4a5c8d",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 770,
+            "y": 310
+          },
+          "designator": "R2",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "2b371e4bad4a5c8d",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 200
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "1"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 210
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "2"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 220
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "3"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 230
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "4"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 240
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "5"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 250
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "6"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 260
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "7"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 270
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "8"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 280
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "9"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 290
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "10"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 300
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "11"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 310
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "12"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 320
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "13"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 330
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "14"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 340
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "15"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 350
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "16"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 360
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "17"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 370
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "18"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "at": {
+            "x": 980,
+            "y": 380
+          },
+          "designator": "J4",
+          "level": "warn",
+          "message": "导线触碰该引脚但网表未将其归入任何 net(疑似漏连:未编译网表或仅几何贴合未真正连通)",
+          "pins": [
+            "19"
+          ],
+          "primitiveId": "df1b72df8fbf8afb",
+          "type": "geom-net-mismatch"
+        },
+        {
+          "count": 10,
+          "designator": "J5",
+          "level": "warn",
+          "message": "10 个引脚悬空(无导线连接,未打 NC 标识)",
+          "pinDetails": [
+            {
+              "name": "1",
+              "number": "1",
+              "x": 980,
+              "y": 585
+            },
+            {
+              "name": "2",
+              "number": "2",
+              "x": 980,
+              "y": 575
+            },
+            {
+              "name": "3",
+              "number": "3",
+              "x": 980,
+              "y": 565
+            },
+            {
+              "name": "4",
+              "number": "4",
+              "x": 980,
+              "y": 555
+            },
+            {
+              "name": "5",
+              "number": "5",
+              "x": 980,
+              "y": 545
+            },
+            {
+              "name": "6",
+              "number": "6",
+              "x": 980,
+              "y": 535
+            },
+            {
+              "name": "7",
+              "number": "7",
+              "x": 980,
+              "y": 525
+            },
+            {
+              "name": "8",
+              "number": "8",
+              "x": 980,
+              "y": 515
+            },
+            {
+              "name": "9",
+              "number": "9",
+              "x": 980,
+              "y": 505
+            },
+            {
+              "name": "10",
+              "number": "10",
+              "x": 980,
+              "y": 495
+            }
+          ],
+          "pins": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "primitiveId": "27174916fee1e19e",
+          "type": "floating-pin"
+        }
+      ],
+      "passed": false,
+      "summary": {
+        "componentsWithFloating": 3,
+        "danglingWires": 0,
+        "floatingPins": 50,
+        "geomNetMismatches": 51,
+        "multiNetWires": 0,
+        "netMarkerMismatches": 0,
+        "total": 54,
+        "wireCrossings": 0,
+        "wireOverPins": 0,
+        "zeroLengthWires": 0
+      }
+    },
+    "componentCount": 68,
+    "components": [
+      {
+        "componentType": "sheet",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "componentType": "part",
+        "designator": "J1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "dc4ccceda081899a"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "B2B-XH-A-GU.1",
+        "uniqueId": "",
+        "x": 120,
+        "y": 230
+      },
+      {
+        "componentType": "part",
+        "designator": "F1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b07344bf8453d372"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "1206FT 0.75A.1",
+        "uniqueId": "",
+        "x": 220,
+        "y": 230
+      },
+      {
+        "componentType": "part",
+        "designator": "D1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f21354420b534d19"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "TVS-3.3V.1",
+        "uniqueId": "",
+        "x": 220,
+        "y": 330
+      },
+      {
+        "componentType": "part",
+        "designator": "C1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "def10b4b71ee8a10"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "GRM21BR61H106KE43L.1",
+        "uniqueId": "",
+        "x": 290,
+        "y": 330
+      },
+      {
+        "componentType": "part",
+        "designator": "FB1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f910375f4c2e34f7"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "BLM21PG601SN1D.1",
+        "uniqueId": "",
+        "x": 350,
+        "y": 190
+      },
+      {
+        "componentType": "part",
+        "designator": "FB2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f910375f4c2e34f7"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "BLM21PG601SN1D.1",
+        "uniqueId": "",
+        "x": 350,
+        "y": 380
+      },
+      {
+        "componentType": "part",
+        "designator": "C2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "508e1ef46ab4ba04"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "C1210C476K8RAC7800.1",
+        "uniqueId": "",
+        "x": 450,
+        "y": 150
+      },
+      {
+        "componentType": "part",
+        "designator": "C3",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "70239efbcdd626c2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "CC0603KRX7R9BB104.1",
+        "uniqueId": "",
+        "x": 510,
+        "y": 150
+      },
+      {
+        "componentType": "part",
+        "designator": "C4",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "def10b4b71ee8a10"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "GRM21BR61H106KE43L.1",
+        "uniqueId": "",
+        "x": 450,
+        "y": 430
+      },
+      {
+        "componentType": "part",
+        "designator": "C5",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "70239efbcdd626c2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "CC0603KRX7R9BB104.1",
+        "uniqueId": "",
+        "x": 510,
+        "y": 430
+      },
+      {
+        "componentType": "part",
+        "designator": "J2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "be13b4368b911a56"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "24",
+            "net": null,
+            "number": "24"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          },
+          {
+            "name": "22",
+            "net": null,
+            "number": "22"
+          },
+          {
+            "name": "5",
+            "net": null,
+            "number": "5"
+          },
+          {
+            "name": "20",
+            "net": null,
+            "number": "20"
+          },
+          {
+            "name": "7",
+            "net": null,
+            "number": "7"
+          },
+          {
+            "name": "18",
+            "net": null,
+            "number": "18"
+          },
+          {
+            "name": "9",
+            "net": null,
+            "number": "9"
+          },
+          {
+            "name": "16",
+            "net": null,
+            "number": "16"
+          },
+          {
+            "name": "11",
+            "net": null,
+            "number": "11"
+          },
+          {
+            "name": "14",
+            "net": null,
+            "number": "14"
+          },
+          {
+            "name": "13",
+            "net": null,
+            "number": "13"
+          },
+          {
+            "name": "12",
+            "net": null,
+            "number": "12"
+          },
+          {
+            "name": "15",
+            "net": null,
+            "number": "15"
+          },
+          {
+            "name": "10",
+            "net": null,
+            "number": "10"
+          },
+          {
+            "name": "17",
+            "net": null,
+            "number": "17"
+          },
+          {
+            "name": "8",
+            "net": null,
+            "number": "8"
+          },
+          {
+            "name": "19",
+            "net": null,
+            "number": "19"
+          },
+          {
+            "name": "6",
+            "net": null,
+            "number": "6"
+          },
+          {
+            "name": "21",
+            "net": null,
+            "number": "21"
+          },
+          {
+            "name": "4",
+            "net": null,
+            "number": "4"
+          },
+          {
+            "name": "23",
+            "net": null,
+            "number": "23"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "KH-2.54PH180-2X12P-L8.9.1",
+        "uniqueId": "",
+        "x": 650,
+        "y": 230
+      },
+      {
+        "componentType": "part",
+        "designator": "J3",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "be13b4368b911a56"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "24",
+            "net": null,
+            "number": "24"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          },
+          {
+            "name": "22",
+            "net": null,
+            "number": "22"
+          },
+          {
+            "name": "5",
+            "net": null,
+            "number": "5"
+          },
+          {
+            "name": "20",
+            "net": null,
+            "number": "20"
+          },
+          {
+            "name": "7",
+            "net": null,
+            "number": "7"
+          },
+          {
+            "name": "18",
+            "net": null,
+            "number": "18"
+          },
+          {
+            "name": "9",
+            "net": null,
+            "number": "9"
+          },
+          {
+            "name": "16",
+            "net": null,
+            "number": "16"
+          },
+          {
+            "name": "11",
+            "net": null,
+            "number": "11"
+          },
+          {
+            "name": "14",
+            "net": null,
+            "number": "14"
+          },
+          {
+            "name": "13",
+            "net": null,
+            "number": "13"
+          },
+          {
+            "name": "12",
+            "net": null,
+            "number": "12"
+          },
+          {
+            "name": "15",
+            "net": null,
+            "number": "15"
+          },
+          {
+            "name": "10",
+            "net": null,
+            "number": "10"
+          },
+          {
+            "name": "17",
+            "net": null,
+            "number": "17"
+          },
+          {
+            "name": "8",
+            "net": null,
+            "number": "8"
+          },
+          {
+            "name": "19",
+            "net": null,
+            "number": "19"
+          },
+          {
+            "name": "6",
+            "net": null,
+            "number": "6"
+          },
+          {
+            "name": "21",
+            "net": null,
+            "number": "21"
+          },
+          {
+            "name": "4",
+            "net": null,
+            "number": "4"
+          },
+          {
+            "name": "23",
+            "net": null,
+            "number": "23"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          }
+        ],
+        "supplierId": "KH-2.54PH180-2X12P-L8.9.1",
+        "uniqueId": "",
+        "x": 650,
+        "y": 470
+      },
+      {
+        "componentType": "part",
+        "designator": "R1",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "0603WAF330JT5E.1",
+        "uniqueId": "",
+        "x": 790,
+        "y": 250
+      },
+      {
+        "componentType": "part",
+        "designator": "R2",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "name": "={Value}",
+        "pins": [
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "0603WAF330JT5E.1",
+        "uniqueId": "",
+        "x": 790,
+        "y": 310
+      },
+      {
+        "componentType": "part",
+        "designator": "J4",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "7ecd72a5edb195ff"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          },
+          {
+            "name": "4",
+            "net": null,
+            "number": "4"
+          },
+          {
+            "name": "5",
+            "net": null,
+            "number": "5"
+          },
+          {
+            "name": "6",
+            "net": null,
+            "number": "6"
+          },
+          {
+            "name": "7",
+            "net": null,
+            "number": "7"
+          },
+          {
+            "name": "8",
+            "net": null,
+            "number": "8"
+          },
+          {
+            "name": "9",
+            "net": null,
+            "number": "9"
+          },
+          {
+            "name": "10",
+            "net": null,
+            "number": "10"
+          },
+          {
+            "name": "11",
+            "net": null,
+            "number": "11"
+          },
+          {
+            "name": "12",
+            "net": null,
+            "number": "12"
+          },
+          {
+            "name": "13",
+            "net": null,
+            "number": "13"
+          },
+          {
+            "name": "14",
+            "net": null,
+            "number": "14"
+          },
+          {
+            "name": "15",
+            "net": null,
+            "number": "15"
+          },
+          {
+            "name": "16",
+            "net": null,
+            "number": "16"
+          },
+          {
+            "name": "17",
+            "net": null,
+            "number": "17"
+          },
+          {
+            "name": "18",
+            "net": null,
+            "number": "18"
+          },
+          {
+            "name": "19",
+            "net": null,
+            "number": "19"
+          }
+        ],
+        "supplierId": "KH-2.54PH180-1X19P-L11.5.1",
+        "uniqueId": "",
+        "x": 960,
+        "y": 290
+      },
+      {
+        "componentType": "part",
+        "designator": "J5",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "dee857278043a28e"
+        },
+        "name": "={Manufacturer Part}",
+        "pins": [
+          {
+            "name": "1",
+            "net": null,
+            "number": "1"
+          },
+          {
+            "name": "2",
+            "net": null,
+            "number": "2"
+          },
+          {
+            "name": "3",
+            "net": null,
+            "number": "3"
+          },
+          {
+            "name": "4",
+            "net": null,
+            "number": "4"
+          },
+          {
+            "name": "5",
+            "net": null,
+            "number": "5"
+          },
+          {
+            "name": "6",
+            "net": null,
+            "number": "6"
+          },
+          {
+            "name": "7",
+            "net": null,
+            "number": "7"
+          },
+          {
+            "name": "8",
+            "net": null,
+            "number": "8"
+          },
+          {
+            "name": "9",
+            "net": null,
+            "number": "9"
+          },
+          {
+            "name": "10",
+            "net": null,
+            "number": "10"
+          }
+        ],
+        "supplierId": "KH-2.54FH-1X10P-H8.5.1",
+        "uniqueId": "",
+        "x": 1000,
+        "y": 540
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 90,
+        "y": 230
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 90,
+        "y": 220
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 170,
+        "y": 230
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 270,
+        "y": 230
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 220,
+        "y": 370
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 220,
+        "y": 290
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 290,
+        "y": 370
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 290,
+        "y": 290
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 310,
+        "y": 190
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 390,
+        "y": 190
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 310,
+        "y": 380
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 390,
+        "y": 380
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 450,
+        "y": 190
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 450,
+        "y": 110
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 510,
+        "y": 190
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 510,
+        "y": 110
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 450,
+        "y": 470
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 450,
+        "y": 390
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 510,
+        "y": 470
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 510,
+        "y": 390
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 710,
+        "y": 275
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 600,
+        "y": 175
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 700,
+        "y": 175
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 600,
+        "y": 525
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 700,
+        "y": 525
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 590,
+        "y": 505
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 600,
+        "y": 415
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 700,
+        "y": 415
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 750,
+        "y": 250
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 830,
+        "y": 250
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 750,
+        "y": 310
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 830,
+        "y": 310
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1000,
+        "y": 200
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1010,
+        "y": 210
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1020,
+        "y": 220
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1030,
+        "y": 230
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1000,
+        "y": 240
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1040,
+        "y": 250
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1050,
+        "y": 260
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1000,
+        "y": 270
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1010,
+        "y": 280
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1020,
+        "y": 290
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1030,
+        "y": 300
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1040,
+        "y": 310
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1050,
+        "y": 320
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1000,
+        "y": 330
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1010,
+        "y": 340
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1020,
+        "y": 350
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1030,
+        "y": 360
+      },
+      {
+        "componentType": "netport",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "BI",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1040,
+        "y": 370
+      },
+      {
+        "componentType": "netflag",
+        "designator": "",
+        "footprint": "",
+        "name": "",
+        "pins": [
+          {
+            "name": "Pin1",
+            "net": null,
+            "number": "1"
+          }
+        ],
+        "supplierId": "",
+        "uniqueId": "",
+        "x": 1050,
+        "y": 380
+      }
+    ],
+    "floatingPinCount": 101,
+    "floatingPins": [
+      "J1.1",
+      "J1.2",
+      "F1.1",
+      "F1.2",
+      "D1.1",
+      "D1.2",
+      "C1.1",
+      "C1.2",
+      "FB1.1",
+      "FB1.2",
+      "FB2.1",
+      "FB2.2",
+      "C2.1",
+      "C2.2",
+      "C3.1",
+      "C3.2",
+      "C4.1",
+      "C4.2",
+      "C5.1",
+      "C5.2",
+      "J2.1",
+      "J2.24",
+      "J2.3",
+      "J2.22",
+      "J2.5",
+      "J2.20",
+      "J2.7",
+      "J2.18",
+      "J2.9",
+      "J2.16",
+      "J2.11",
+      "J2.14",
+      "J2.13",
+      "J2.12",
+      "J2.15",
+      "J2.10",
+      "J2.17",
+      "J2.8",
+      "J2.19",
+      "J2.6",
+      "J2.21",
+      "J2.4",
+      "J2.23",
+      "J2.2",
+      "J3.1",
+      "J3.24",
+      "J3.3",
+      "J3.22",
+      "J3.5",
+      "J3.20",
+      "J3.7",
+      "J3.18",
+      "J3.9",
+      "J3.16",
+      "J3.11",
+      "J3.14",
+      "J3.13",
+      "J3.12",
+      "J3.15",
+      "J3.10",
+      "J3.17",
+      "J3.8",
+      "J3.19",
+      "J3.6",
+      "J3.21",
+      "J3.4",
+      "J3.23",
+      "J3.2",
+      "R1.2",
+      "R1.1",
+      "R2.2",
+      "R2.1",
+      "J4.1",
+      "J4.2",
+      "J4.3",
+      "J4.4",
+      "J4.5",
+      "J4.6",
+      "J4.7",
+      "J4.8",
+      "J4.9",
+      "J4.10",
+      "J4.11",
+      "J4.12",
+      "J4.13",
+      "J4.14",
+      "J4.15",
+      "J4.16",
+      "J4.17",
+      "J4.18",
+      "J4.19",
+      "J5.1",
+      "J5.2",
+      "J5.3",
+      "J5.4",
+      "J5.5",
+      "J5.6",
+      "J5.7",
+      "J5.8",
+      "J5.9",
+      "J5.10"
+    ],
+    "netCount": 0,
+    "nets": []
+  },
+  "context": {
+    "projectUuid": "f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf",
+    "projectName": "RES_LoRa_32",
+    "documentUuid": "3ca24248e339e2a9",
+    "documentType": "schematic",
+    "tabId": "3ca24248e339e2a9@f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf"
+  }
+}

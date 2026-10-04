@@ -1,0 +1,3324 @@
+﻿{
+  "id": "req_1432",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-08-12T04:39:44.5864657Z",
+  "ok": true,
+  "result": {
+    "components": [
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1170,
+          "maxY": 0,
+          "minX": 0,
+          "minY": 825
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "3ad6fa1b77c80c0d"
+        },
+        "componentType": "sheet",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "3ad6fa1b77c80c0d"
+        },
+        "mirror": false,
+        "net": "",
+        "primitiveId": "10fefd7083aa0eea",
+        "rotation": 0,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 100.5,
+          "maxY": 654.5,
+          "minX": 79.5,
+          "minY": 695.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "2a16082b55c6caeb"
+        },
+        "componentType": "part",
+        "designator": "J1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "2a16082b55c6caeb"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6957ef92839dbe21"
+        },
+        "manufacturer": "DEGSON(高正/高松)",
+        "manufacturerId": "DG301-5.0-03P-12-00A(H)",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Color": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Mounting Type": "",
+          "Number of PINs Per Row": "",
+          "Number of Pins": "",
+          "Number of Positions or Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pitch": "",
+          "Supplier Footprint": "",
+          "Voltage Rating (Max)": ""
+        },
+        "primitiveId": "c406ac6fe1c84040",
+        "rotation": 180,
+        "subPartName": "DG301-5.0-03P-12-00A(H).1",
+        "supplier": "LCSC",
+        "supplierId": "DG301-5.0-03P-12-00A(H).1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b2abe6a06e046ab1"
+        },
+        "uniqueId": "A3_J1",
+        "x": 90,
+        "y": 675
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 188.5,
+          "maxY": 701.5,
+          "minX": 161.5,
+          "minY": 708.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e14c74a2b976981e"
+        },
+        "componentType": "part",
+        "designator": "F1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "e14c74a2b976981e"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b07344bf8453d372"
+        },
+        "manufacturer": "Littelfuse(美国力特)",
+        "manufacturerId": "1206L050/15YR",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Current - Max": "",
+          "Datasheet": "",
+          "Description": "",
+          "Height": "",
+          "Hold Current": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length": "",
+          "Operating Temperature": "",
+          "Pitch": "",
+          "Power Dissipation": "",
+          "Resistance - Initial (Ri) (Min)": "",
+          "Resistance - Post Trip (R1) (Max)": "",
+          "Supplier Footprint": "",
+          "Time to Trip(Max)": "",
+          "Trip Current": "",
+          "Value": "PTC 0.5A HOLD / 1A TRIP",
+          "Voltage - Max": "",
+          "Width": ""
+        },
+        "primitiveId": "9606531dc42cd53b",
+        "rotation": 0,
+        "subPartName": "1206L050/15YR.1",
+        "supplier": "LCSC",
+        "supplierId": "1206L050/15YR.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "7f844c5162c2f148"
+        },
+        "uniqueId": "A3_F1",
+        "x": 175,
+        "y": 705
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 262.16408,
+          "maxY": 704.55468,
+          "minX": 227.61789,
+          "minY": 709.8329
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "59425911e161dddb"
+        },
+        "componentType": "part",
+        "designator": "FB1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "59425911e161dddb"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f910375f4c2e34f7"
+        },
+        "manufacturer": "muRata(村田)",
+        "manufacturerId": "BLM21PG600SN1D",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Current Rating": "",
+          "DC Resistance(DCR)": "",
+          "Datasheet": "",
+          "Description": "",
+          "Impedance @ Frequency": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Number of Circuits": "",
+          "Operating Temperature": "",
+          "Supplier Footprint": "",
+          "Tolerance": "",
+          "Value": "60R@100MHz / DCR 20mR"
+        },
+        "primitiveId": "7d165c4749ccd768",
+        "rotation": 0,
+        "subPartName": "BLM21PG600SN1D.1",
+        "supplier": "LCSC",
+        "supplierId": "BLM21PG600SN1D.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "515c1609cf226ae1"
+        },
+        "uniqueId": "A3_FB1",
+        "x": 245,
+        "y": 705
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 306.5,
+          "maxY": 669.5,
+          "minX": 293.5,
+          "minY": 690.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b4b250e916f8cf1a"
+        },
+        "componentType": "part",
+        "designator": "D1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "b4b250e916f8cf1a"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "manufacturer": "TECH PUBLIC(台舟)",
+        "manufacturerId": "PESD5V0S1BA",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Clamping Voltage": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "Junction Capacitance": "",
+          "LCSC Part Name": "",
+          "Number of Channels": "",
+          "Operating Temperature": "",
+          "Peak Pulse Current (Ipp)": "",
+          "Peak Pulse Power Dissipation (Ppp)": "",
+          "Polarity": "",
+          "Reverse Leakage Current (Ir)": "",
+          "Reverse Stand-Off Voltage (Vrwm)": "",
+          "Supplier Footprint": "",
+          "Type": "",
+          "Value": "PESD5V0S1BA 5V TVS",
+          "Voltage - Breakdown": "",
+          "level of protection": ""
+        },
+        "primitiveId": "84bc7ca345d8dc95",
+        "rotation": 270,
+        "subPartName": "PESD5V0S1BA_C2827694.1",
+        "supplier": "LCSC",
+        "supplierId": "PESD5V0S1BA_C2827694.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f6f9046bd35a0d23"
+        },
+        "uniqueId": "A3_D1",
+        "x": 300,
+        "y": 680
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 358.5,
+          "maxY": 674.5,
+          "minX": 341.5,
+          "minY": 685.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c98bd73f6e0aa167"
+        },
+        "componentType": "part",
+        "designator": "C1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "c98bd73f6e0aa167"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "def10b4b71ee8a10"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL21A106KPFNNNE",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Value": "10uF 10V X5R",
+          "Voltage Rating": ""
+        },
+        "primitiveId": "0a6286bba34f9e90",
+        "rotation": 270,
+        "subPartName": "CL21A106KPFNNNE.1",
+        "supplier": "LCSC",
+        "supplierId": "CL21A106KPFNNNE.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "300d8904332d08b1"
+        },
+        "uniqueId": "A3_C1",
+        "x": 350,
+        "y": 680
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 188.5,
+          "maxY": 586.5,
+          "minX": 161.5,
+          "minY": 593.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e14c74a2b976981e"
+        },
+        "componentType": "part",
+        "designator": "F2",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "e14c74a2b976981e"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b07344bf8453d372"
+        },
+        "manufacturer": "Littelfuse(美国力特)",
+        "manufacturerId": "1206L050/15YR",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Current - Max": "",
+          "Datasheet": "",
+          "Description": "",
+          "Height": "",
+          "Hold Current": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length": "",
+          "Operating Temperature": "",
+          "Pitch": "",
+          "Power Dissipation": "",
+          "Resistance - Initial (Ri) (Min)": "",
+          "Resistance - Post Trip (R1) (Max)": "",
+          "Supplier Footprint": "",
+          "Time to Trip(Max)": "",
+          "Trip Current": "",
+          "Value": "PTC 0.5A HOLD / 1A TRIP",
+          "Voltage - Max": "",
+          "Width": ""
+        },
+        "primitiveId": "66ecea4d48f3dcbc",
+        "rotation": 0,
+        "subPartName": "1206L050/15YR.1",
+        "supplier": "LCSC",
+        "supplierId": "1206L050/15YR.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "7f844c5162c2f148"
+        },
+        "uniqueId": "A3_F2",
+        "x": 175,
+        "y": 590
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 262.16408,
+          "maxY": 589.55468,
+          "minX": 227.61789,
+          "minY": 594.8329
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "59425911e161dddb"
+        },
+        "componentType": "part",
+        "designator": "FB2",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "59425911e161dddb"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f910375f4c2e34f7"
+        },
+        "manufacturer": "muRata(村田)",
+        "manufacturerId": "BLM21PG600SN1D",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Current Rating": "",
+          "DC Resistance(DCR)": "",
+          "Datasheet": "",
+          "Description": "",
+          "Impedance @ Frequency": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Number of Circuits": "",
+          "Operating Temperature": "",
+          "Supplier Footprint": "",
+          "Tolerance": "",
+          "Value": "60R@100MHz / DCR 20mR"
+        },
+        "primitiveId": "64b4e8b2cde654a0",
+        "rotation": 0,
+        "subPartName": "BLM21PG600SN1D.1",
+        "supplier": "LCSC",
+        "supplierId": "BLM21PG600SN1D.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "515c1609cf226ae1"
+        },
+        "uniqueId": "A3_FB2",
+        "x": 245,
+        "y": 590
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 308.5,
+          "maxY": 549.5,
+          "minX": 291.5,
+          "minY": 580.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "06f625762e2007b6"
+        },
+        "componentType": "part",
+        "designator": "D2",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "06f625762e2007b6"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "manufacturer": "ElecSuper(静芯)",
+        "manufacturerId": "PESD3V3S1BA-ES",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Clamping Voltage": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "Junction Capacitance": "",
+          "LCSC Part Name": "",
+          "Number of Channels": "",
+          "Operating Temperature": "",
+          "Peak Pulse Current (Ipp)": "",
+          "Peak Pulse Power Dissipation (Ppp)": "",
+          "Polarity": "",
+          "Reverse Leakage Current (Ir)": "",
+          "Reverse Stand-Off Voltage (Vrwm)": "",
+          "Supplier Footprint": "",
+          "Type": "",
+          "Value": "PESD3V3S1BA-ES",
+          "Voltage - Breakdown": "",
+          "level of protection": ""
+        },
+        "primitiveId": "1f0f8cdd14abf204",
+        "rotation": 270,
+        "subPartName": "PESD3V3S1BA-ES.1",
+        "supplier": "LCSC",
+        "supplierId": "PESD3V3S1BA-ES.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6db798d70020b85d"
+        },
+        "uniqueId": "A3_D2",
+        "x": 300,
+        "y": 565
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 358.5,
+          "maxY": 589.5,
+          "minX": 341.5,
+          "minY": 610.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "dc3d5e9020bd95c7"
+        },
+        "componentType": "part",
+        "designator": "C2",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "dc3d5e9020bd95c7"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "508e1ef46ab4ba04"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL32A476KOJNNNE",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Value": "47uF 16V X5R",
+          "Voltage Rating": ""
+        },
+        "primitiveId": "16868111870dbf0c",
+        "rotation": 270,
+        "subPartName": "CL32A476KOJNNNE.1",
+        "supplier": "LCSC",
+        "supplierId": "CL32A476KOJNNNE.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "81fae7b620e1fb4e"
+        },
+        "uniqueId": "A3_C2",
+        "x": 350,
+        "y": 600
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 358.5,
+          "maxY": 544.5,
+          "minX": 341.5,
+          "minY": 555.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c98bd73f6e0aa167"
+        },
+        "componentType": "part",
+        "designator": "C3",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "c98bd73f6e0aa167"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "def10b4b71ee8a10"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL21A106KPFNNNE",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Value": "10uF 10V X5R",
+          "Voltage Rating": ""
+        },
+        "primitiveId": "6603ea9d1d0ce6bd",
+        "rotation": 270,
+        "subPartName": "CL21A106KPFNNNE.1",
+        "supplier": "LCSC",
+        "supplierId": "CL21A106KPFNNNE.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "300d8904332d08b1"
+        },
+        "uniqueId": "A3_C3",
+        "x": 350,
+        "y": 550
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 358.5,
+          "maxY": 489.5,
+          "minX": 341.5,
+          "minY": 510.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "0a339f676d71d6dd"
+        },
+        "componentType": "part",
+        "designator": "C4",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "0a339f676d71d6dd"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "70239efbcdd626c2"
+        },
+        "manufacturer": "YAGEO(国巨)",
+        "manufacturerId": "CC0603KRX7R9BB104",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Value": "100nF 50V X7R",
+          "Voltage Rating": ""
+        },
+        "primitiveId": "c18e04051e22d09f",
+        "rotation": 270,
+        "subPartName": "CC0603KRX7R9BB104.1",
+        "supplier": "LCSC",
+        "supplierId": "CC0603KRX7R9BB104.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a5a944d38dfd2802"
+        },
+        "uniqueId": "A3_C4",
+        "x": 350,
+        "y": 500
+      },
+      {
+        "addIntoBom": false,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 475.5,
+          "maxY": 459.5,
+          "minX": 434.5,
+          "minY": 590.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "daaa4c31995b17d3"
+        },
+        "componentType": "part",
+        "designator": "J2",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "daaa4c31995b17d3"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b7aa078e853732cb"
+        },
+        "manufacturer": "HCTL(华灿天禄)",
+        "manufacturerId": "PZ254-2-12-Z-2.5-G1",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Assembly": "NO CONNECTOR BODY; MODULE PINS THROUGH PCB AND DIRECT-SOLDERED",
+          "Circluar Pins/Square Pins": "",
+          "Color": "",
+          "Contact Material": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "Insulation Height": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length of End Connection Pin": "",
+          "Length of Mating Pin": "",
+          "Mounting Type": "",
+          "Number of Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pin Structure": "",
+          "Pitch": "",
+          "Row Spacing": "",
+          "Supplier Footprint": "",
+          "Value": "STM32 LEFT PAD ARRAY - DIRECT SOLDER"
+        },
+        "primitiveId": "3286055ce621e350",
+        "rotation": 0,
+        "subPartName": "PZ254-2-12-Z-2.5-G1.1",
+        "supplier": "LCSC",
+        "supplierId": "PZ254-2-12-Z-2.5-G1.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4e92867cd8a28b51"
+        },
+        "uniqueId": "A3_J2",
+        "x": 455,
+        "y": 525
+      },
+      {
+        "addIntoBom": false,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 610.5,
+          "maxY": 459.5,
+          "minX": 569.5,
+          "minY": 590.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "daaa4c31995b17d3"
+        },
+        "componentType": "part",
+        "designator": "J3",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "daaa4c31995b17d3"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b7aa078e853732cb"
+        },
+        "manufacturer": "HCTL(华灿天禄)",
+        "manufacturerId": "PZ254-2-12-Z-2.5-G1",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Assembly": "NO CONNECTOR BODY; MODULE PINS THROUGH PCB AND DIRECT-SOLDERED",
+          "Circluar Pins/Square Pins": "",
+          "Color": "",
+          "Contact Material": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "Insulation Height": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length of End Connection Pin": "",
+          "Length of Mating Pin": "",
+          "Mounting Type": "",
+          "Number of Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pin Structure": "",
+          "Pitch": "",
+          "Row Spacing": "",
+          "Supplier Footprint": "",
+          "Value": "STM32 RIGHT PAD ARRAY - DIRECT SOLDER"
+        },
+        "primitiveId": "0c91e9dc6ce0fb72",
+        "rotation": 0,
+        "subPartName": "PZ254-2-12-Z-2.5-G1.1",
+        "supplier": "LCSC",
+        "supplierId": "PZ254-2-12-Z-2.5-G1.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4e92867cd8a28b51"
+        },
+        "uniqueId": "A3_J3",
+        "x": 590,
+        "y": 525
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 710.5,
+          "maxY": 555.5,
+          "minX": 689.5,
+          "minY": 564.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f03c1c5c10c0c3c4"
+        },
+        "componentType": "part",
+        "designator": "R1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "f03c1c5c10c0c3c4"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF330JT5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "33R",
+          "Voltage-Supply(Max)": ""
+        },
+        "primitiveId": "485e343a72857715",
+        "rotation": 0,
+        "subPartName": "0603WAF330JT5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF330JT5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "148c581a50a86be4"
+        },
+        "uniqueId": "A3_R1",
+        "x": 700,
+        "y": 560
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 710.5,
+          "maxY": 510.5,
+          "minX": 689.5,
+          "minY": 519.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f03c1c5c10c0c3c4"
+        },
+        "componentType": "part",
+        "designator": "R2",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "f03c1c5c10c0c3c4"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF330JT5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "33R",
+          "Voltage-Supply(Max)": ""
+        },
+        "primitiveId": "5720b8dded08dac2",
+        "rotation": 0,
+        "subPartName": "0603WAF330JT5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF330JT5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "148c581a50a86be4"
+        },
+        "uniqueId": "A3_R2",
+        "x": 700,
+        "y": 515
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 685.5,
+          "maxY": 425.5,
+          "minX": 664.5,
+          "minY": 434.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "f03c1c5c10c0c3c4"
+        },
+        "componentType": "part",
+        "designator": "R5",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "f03c1c5c10c0c3c4"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF330JT5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "33R",
+          "Voltage-Supply(Max)": ""
+        },
+        "primitiveId": "a95be69ddd6acf02",
+        "rotation": 0,
+        "subPartName": "0603WAF330JT5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF330JT5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "148c581a50a86be4"
+        },
+        "uniqueId": "A3_R5",
+        "x": 675,
+        "y": 430
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 774.5,
+          "maxY": 419.5,
+          "minX": 739.5,
+          "minY": 440.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "790de5909fff8fe9"
+        },
+        "componentType": "part",
+        "designator": "Q1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "790de5909fff8fe9"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b050bdd5035bc240"
+        },
+        "manufacturer": "CJ(江苏长电/长晶)",
+        "manufacturerId": "2N7002",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Current - Continuous Drain(Id)": "",
+          "Datasheet": "",
+          "Description": "",
+          "Drain to Source Voltage": "",
+          "Gate Threshold Voltage (Vgs(th))": "",
+          "Input Capacitance(Ciss)": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Number": "",
+          "Operating Temperature": "",
+          "Output Capacitance(Coss)": "",
+          "Pd - Power Dissipation": "",
+          "RDS(on)": "",
+          "Reverse Transfer Capacitance (Crss@Vds)": "",
+          "Supplier Footprint": "",
+          "Type": "",
+          "Value": "2N7002",
+          "Vgs": ""
+        },
+        "primitiveId": "3b66fa5188908969",
+        "rotation": 0,
+        "subPartName": "2N7002.1",
+        "supplier": "LCSC",
+        "supplierId": "2N7002.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "3b109041aede2e97"
+        },
+        "uniqueId": "A3_Q1",
+        "x": 750,
+        "y": 430
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 709.5,
+          "maxY": 369.5,
+          "minX": 700.5,
+          "minY": 390.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "1e53c013e6de118d"
+        },
+        "componentType": "part",
+        "designator": "R6",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "1e53c013e6de118d"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF1003T5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "100k",
+          "Voltage-Supply(Max)": ""
+        },
+        "primitiveId": "5d02f3b8e0593ac8",
+        "rotation": 270,
+        "subPartName": "0603WAF1003T5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF1003T5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8b99ce61f78f1bec"
+        },
+        "uniqueId": "A3_R6",
+        "x": 705,
+        "y": 380
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 814.5,
+          "maxY": 419.5,
+          "minX": 805.5,
+          "minY": 440.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "2363ad9c24af80ca"
+        },
+        "componentType": "part",
+        "designator": "R7",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "2363ad9c24af80ca"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF1002T5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "10k",
+          "Voltage-Supply(Max)": ""
+        },
+        "primitiveId": "7af4cff2b79f0561",
+        "rotation": 270,
+        "subPartName": "0603WAF1002T5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF1002T5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e96aff00e82a1a54"
+        },
+        "uniqueId": "A3_R7",
+        "x": 810,
+        "y": 430
+      },
+      {
+        "addIntoBom": false,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 865.5,
+          "maxY": 689.5,
+          "minX": 844.5,
+          "minY": 720.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "componentType": "part",
+        "designator": "J4",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "manufacturer": "HCTL(华灿天禄)",
+        "manufacturerId": "PZ254-1-02-Z-2.5-G1",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Assembly": "NO CONNECTOR BODY; MODULE PINS THROUGH PCB AND DIRECT-SOLDERED",
+          "Circluar Pins/Square Pins": "",
+          "Color": "",
+          "Contact Material": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "Insulation Height": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length of End Connection Pin": "",
+          "Length of Mating Pin": "",
+          "Mounting Type": "",
+          "Number of Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pin Structure": "",
+          "Pitch": "",
+          "Row Spacing": "",
+          "Supplier Footprint": "",
+          "Value": "E220 P1-P2 PAD GROUP"
+        },
+        "primitiveId": "7dbf31c0373de207",
+        "rotation": 180,
+        "subPartName": "PZ254-1-02-Z-2.5-G1.1",
+        "supplier": "LCSC",
+        "supplierId": "PZ254-1-02-Z-2.5-G1.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "18b9cc48764104cc"
+        },
+        "uniqueId": "A3_J4",
+        "x": 855,
+        "y": 705
+      },
+      {
+        "addIntoBom": false,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 965.5,
+          "maxY": 689.5,
+          "minX": 944.5,
+          "minY": 720.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "componentType": "part",
+        "designator": "J5",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "manufacturer": "HCTL(华灿天禄)",
+        "manufacturerId": "PZ254-1-02-Z-2.5-G1",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Assembly": "NO CONNECTOR BODY; MODULE PINS THROUGH PCB AND DIRECT-SOLDERED",
+          "Circluar Pins/Square Pins": "",
+          "Color": "",
+          "Contact Material": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "Insulation Height": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length of End Connection Pin": "",
+          "Length of Mating Pin": "",
+          "Mounting Type": "",
+          "Number of Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pin Structure": "",
+          "Pitch": "",
+          "Row Spacing": "",
+          "Supplier Footprint": "",
+          "Value": "E220 P3-P4 PAD GROUP"
+        },
+        "primitiveId": "78a249960f250414",
+        "rotation": 180,
+        "subPartName": "PZ254-1-02-Z-2.5-G1.1",
+        "supplier": "LCSC",
+        "supplierId": "PZ254-1-02-Z-2.5-G1.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "18b9cc48764104cc"
+        },
+        "uniqueId": "A3_J5",
+        "x": 955,
+        "y": 705
+      },
+      {
+        "addIntoBom": false,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1065.5,
+          "maxY": 689.5,
+          "minX": 1044.5,
+          "minY": 720.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "componentType": "part",
+        "designator": "J6",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "manufacturer": "HCTL(华灿天禄)",
+        "manufacturerId": "PZ254-1-02-Z-2.5-G1",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Assembly": "NO CONNECTOR BODY; MODULE PINS THROUGH PCB AND DIRECT-SOLDERED",
+          "Circluar Pins/Square Pins": "",
+          "Color": "",
+          "Contact Material": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "Insulation Height": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length of End Connection Pin": "",
+          "Length of Mating Pin": "",
+          "Mounting Type": "",
+          "Number of Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pin Structure": "",
+          "Pitch": "",
+          "Row Spacing": "",
+          "Supplier Footprint": "",
+          "Value": "E220 P5-P6 PAD GROUP"
+        },
+        "primitiveId": "c309c1f75c996811",
+        "rotation": 180,
+        "subPartName": "PZ254-1-02-Z-2.5-G1.1",
+        "supplier": "LCSC",
+        "supplierId": "PZ254-1-02-Z-2.5-G1.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "18b9cc48764104cc"
+        },
+        "uniqueId": "A3_J6",
+        "x": 1055,
+        "y": 705
+      },
+      {
+        "addIntoBom": false,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 955.5,
+          "maxY": 484.5,
+          "minX": 934.5,
+          "minY": 585.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "08c856b501ab93ac"
+        },
+        "componentType": "part",
+        "designator": "J7",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "08c856b501ab93ac"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9189412978ed15d7"
+        },
+        "manufacturer": "HCTL(华灿天禄)",
+        "manufacturerId": "PZ254-1-09-Z-2.5-G1",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Assembly": "NO CONNECTOR BODY; MODULE PINS THROUGH PCB AND DIRECT-SOLDERED",
+          "Circluar Pins/Square Pins": "",
+          "Color": "",
+          "Contact Material": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "Insulation Height": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length of End Connection Pin": "",
+          "Length of Mating Pin": "",
+          "Mounting Type": "",
+          "Number of Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pin Structure": "",
+          "Pitch": "",
+          "Row Spacing": "",
+          "Supplier Footprint": "",
+          "Value": "E220 P7-P15 PAD GROUP"
+        },
+        "primitiveId": "fc4ad7464e015953",
+        "rotation": 180,
+        "subPartName": "PZ254-1-09-Z-2.5-G1.1",
+        "supplier": "LCSC",
+        "supplierId": "PZ254-1-09-Z-2.5-G1.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d3973a6db005afbf"
+        },
+        "uniqueId": "A3_J7",
+        "x": 945,
+        "y": 535
+      },
+      {
+        "addIntoBom": false,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 890.5,
+          "maxY": 344.5,
+          "minX": 869.5,
+          "minY": 375.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "componentType": "part",
+        "designator": "J8",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "manufacturer": "HCTL(华灿天禄)",
+        "manufacturerId": "PZ254-1-02-Z-2.5-G1",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Assembly": "NO CONNECTOR BODY; MODULE PINS THROUGH PCB AND DIRECT-SOLDERED",
+          "Circluar Pins/Square Pins": "",
+          "Color": "",
+          "Contact Material": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "Insulation Height": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length of End Connection Pin": "",
+          "Length of Mating Pin": "",
+          "Mounting Type": "",
+          "Number of Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pin Structure": "",
+          "Pitch": "",
+          "Row Spacing": "",
+          "Supplier Footprint": "",
+          "Value": "E220 P16-P17 PAD GROUP"
+        },
+        "primitiveId": "bbabfa17259ae2a6",
+        "rotation": 180,
+        "subPartName": "PZ254-1-02-Z-2.5-G1.1",
+        "supplier": "LCSC",
+        "supplierId": "PZ254-1-02-Z-2.5-G1.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "18b9cc48764104cc"
+        },
+        "uniqueId": "A3_J8",
+        "x": 880,
+        "y": 360
+      },
+      {
+        "addIntoBom": false,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1040.5,
+          "maxY": 344.5,
+          "minX": 1019.5,
+          "minY": 375.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "componentType": "part",
+        "designator": "J9",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "6a980c0cec7e75ce"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "8915d49a4e07e2d8"
+        },
+        "manufacturer": "HCTL(华灿天禄)",
+        "manufacturerId": "PZ254-1-02-Z-2.5-G1",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Assembly": "NO CONNECTOR BODY; MODULE PINS THROUGH PCB AND DIRECT-SOLDERED",
+          "Circluar Pins/Square Pins": "",
+          "Color": "",
+          "Contact Material": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "Insulation Height": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Length of End Connection Pin": "",
+          "Length of Mating Pin": "",
+          "Mounting Type": "",
+          "Number of Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pin Structure": "",
+          "Pitch": "",
+          "Row Spacing": "",
+          "Supplier Footprint": "",
+          "Value": "E220 P18-P19 PAD GROUP"
+        },
+        "primitiveId": "c945f56ba2327c3a",
+        "rotation": 180,
+        "subPartName": "PZ254-1-02-Z-2.5-G1.1",
+        "supplier": "LCSC",
+        "supplierId": "PZ254-1-02-Z-2.5-G1.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "18b9cc48764104cc"
+        },
+        "uniqueId": "A3_J9",
+        "x": 1030,
+        "y": 360
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 830.5,
+          "maxY": 355.5,
+          "minX": 809.5,
+          "minY": 364.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "978ee2074aa35de0"
+        },
+        "componentType": "part",
+        "designator": "R8",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "978ee2074aa35de0"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF0000T5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "0R",
+          "Voltage-Supply(Max)": ""
+        },
+        "primitiveId": "3f9081ed41762cc4",
+        "rotation": 0,
+        "subPartName": "0603WAF0000T5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF0000T5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9488e347743692d2"
+        },
+        "uniqueId": "A3_R8",
+        "x": 820,
+        "y": 360
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1100.5,
+          "maxY": 355.5,
+          "minX": 1079.5,
+          "minY": 364.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "978ee2074aa35de0"
+        },
+        "componentType": "part",
+        "designator": "R9",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "978ee2074aa35de0"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF0000T5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "0R",
+          "Voltage-Supply(Max)": ""
+        },
+        "primitiveId": "5e1c501dcf1e015e",
+        "rotation": 0,
+        "subPartName": "0603WAF0000T5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF0000T5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9488e347743692d2"
+        },
+        "uniqueId": "A3_R9",
+        "x": 1090,
+        "y": 360
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 420.5,
+          "maxY": 280.5,
+          "minX": 399.5,
+          "minY": 289.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "fa97593f8da96003"
+        },
+        "componentType": "part",
+        "designator": "R10",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "fa97593f8da96003"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF1000T5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature Range": "",
+          "Overload Voltage (Max)": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "100R"
+        },
+        "primitiveId": "7e9e2a81aff5f448",
+        "rotation": 0,
+        "subPartName": "0603WAF1000T5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF1000T5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a566cdc2f293130e"
+        },
+        "uniqueId": "A3_R10",
+        "x": 410,
+        "y": 285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 420.5,
+          "maxY": 240.5,
+          "minX": 399.5,
+          "minY": 249.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "fa97593f8da96003"
+        },
+        "componentType": "part",
+        "designator": "R11",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "fa97593f8da96003"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF1000T5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature Range": "",
+          "Overload Voltage (Max)": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "100R"
+        },
+        "primitiveId": "3674006162cb283f",
+        "rotation": 0,
+        "subPartName": "0603WAF1000T5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF1000T5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a566cdc2f293130e"
+        },
+        "uniqueId": "A3_R11",
+        "x": 410,
+        "y": 245
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 692.5,
+          "maxY": 275.5,
+          "minX": 671.5,
+          "minY": 284.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "fa97593f8da96003"
+        },
+        "componentType": "part",
+        "designator": "R12",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "fa97593f8da96003"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF1000T5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature Range": "",
+          "Overload Voltage (Max)": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "100R"
+        },
+        "primitiveId": "2e7aad74af3f2c7b",
+        "rotation": 0,
+        "subPartName": "0603WAF1000T5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF1000T5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a566cdc2f293130e"
+        },
+        "uniqueId": "A3_R12",
+        "x": 682,
+        "y": 280
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 692.5,
+          "maxY": 235.5,
+          "minX": 671.5,
+          "minY": 244.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "fa97593f8da96003"
+        },
+        "componentType": "part",
+        "designator": "R13",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "fa97593f8da96003"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "c18514361f9bd5b2"
+        },
+        "manufacturer": "UNI-ROYAL(厚声)",
+        "manufacturerId": "0603WAF1000T5E",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Operating Temperature Range": "",
+          "Overload Voltage (Max)": "",
+          "Power(Watts)": "",
+          "Supplier Footprint": "",
+          "Temperature Coefficient": "",
+          "Tolerance": "",
+          "Type": "",
+          "Value": "100R"
+        },
+        "primitiveId": "c0e8d07f82a43630",
+        "rotation": 0,
+        "subPartName": "0603WAF1000T5E.1",
+        "supplier": "LCSC",
+        "supplierId": "0603WAF1000T5E.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "a566cdc2f293130e"
+        },
+        "uniqueId": "A3_R13",
+        "x": 682,
+        "y": 240
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 502.5,
+          "maxY": 280.5,
+          "minX": 485.5,
+          "minY": 311.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "06f625762e2007b6"
+        },
+        "componentType": "part",
+        "designator": "D3",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "06f625762e2007b6"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "manufacturer": "ElecSuper(静芯)",
+        "manufacturerId": "PESD3V3S1BA-ES",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Clamping Voltage": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "Junction Capacitance": "",
+          "LCSC Part Name": "",
+          "Number of Channels": "",
+          "Operating Temperature": "",
+          "Peak Pulse Current (Ipp)": "",
+          "Peak Pulse Power Dissipation (Ppp)": "",
+          "Polarity": "",
+          "Reverse Leakage Current (Ir)": "",
+          "Reverse Stand-Off Voltage (Vrwm)": "",
+          "Supplier Footprint": "",
+          "Type": "",
+          "Value": "PESD3V3S1BA-ES",
+          "Voltage - Breakdown": "",
+          "level of protection": ""
+        },
+        "primitiveId": "3d3acdab1e93852e",
+        "rotation": 270,
+        "subPartName": "PESD3V3S1BA-ES.1",
+        "supplier": "LCSC",
+        "supplierId": "PESD3V3S1BA-ES.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6db798d70020b85d"
+        },
+        "uniqueId": "A3_D3",
+        "x": 494,
+        "y": 296
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 502.5,
+          "maxY": 215.5,
+          "minX": 485.5,
+          "minY": 246.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "06f625762e2007b6"
+        },
+        "componentType": "part",
+        "designator": "D4",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "06f625762e2007b6"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "manufacturer": "ElecSuper(静芯)",
+        "manufacturerId": "PESD3V3S1BA-ES",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Clamping Voltage": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "Junction Capacitance": "",
+          "LCSC Part Name": "",
+          "Number of Channels": "",
+          "Operating Temperature": "",
+          "Peak Pulse Current (Ipp)": "",
+          "Peak Pulse Power Dissipation (Ppp)": "",
+          "Polarity": "",
+          "Reverse Leakage Current (Ir)": "",
+          "Reverse Stand-Off Voltage (Vrwm)": "",
+          "Supplier Footprint": "",
+          "Type": "",
+          "Value": "PESD3V3S1BA-ES",
+          "Voltage - Breakdown": "",
+          "level of protection": ""
+        },
+        "primitiveId": "31fe1e1efd7c33cc",
+        "rotation": 270,
+        "subPartName": "PESD3V3S1BA-ES.1",
+        "supplier": "LCSC",
+        "supplierId": "PESD3V3S1BA-ES.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6db798d70020b85d"
+        },
+        "uniqueId": "A3_D4",
+        "x": 494,
+        "y": 231
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 788.5,
+          "maxY": 299.5,
+          "minX": 771.5,
+          "minY": 330.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "06f625762e2007b6"
+        },
+        "componentType": "part",
+        "designator": "D5",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "06f625762e2007b6"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "manufacturer": "ElecSuper(静芯)",
+        "manufacturerId": "PESD3V3S1BA-ES",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Clamping Voltage": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "Junction Capacitance": "",
+          "LCSC Part Name": "",
+          "Number of Channels": "",
+          "Operating Temperature": "",
+          "Peak Pulse Current (Ipp)": "",
+          "Peak Pulse Power Dissipation (Ppp)": "",
+          "Polarity": "",
+          "Reverse Leakage Current (Ir)": "",
+          "Reverse Stand-Off Voltage (Vrwm)": "",
+          "Supplier Footprint": "",
+          "Type": "",
+          "Value": "PESD3V3S1BA-ES",
+          "Voltage - Breakdown": "",
+          "level of protection": ""
+        },
+        "primitiveId": "47cbf462ca85f003",
+        "rotation": 270,
+        "subPartName": "PESD3V3S1BA-ES.1",
+        "supplier": "LCSC",
+        "supplierId": "PESD3V3S1BA-ES.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6db798d70020b85d"
+        },
+        "uniqueId": "A3_D5",
+        "x": 780,
+        "y": 315
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 788.5,
+          "maxY": 229.5,
+          "minX": 771.5,
+          "minY": 260.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "06f625762e2007b6"
+        },
+        "componentType": "part",
+        "designator": "D6",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "06f625762e2007b6"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01f7c402526c623a"
+        },
+        "manufacturer": "ElecSuper(静芯)",
+        "manufacturerId": "PESD3V3S1BA-ES",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Clamping Voltage": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "Junction Capacitance": "",
+          "LCSC Part Name": "",
+          "Number of Channels": "",
+          "Operating Temperature": "",
+          "Peak Pulse Current (Ipp)": "",
+          "Peak Pulse Power Dissipation (Ppp)": "",
+          "Polarity": "",
+          "Reverse Leakage Current (Ir)": "",
+          "Reverse Stand-Off Voltage (Vrwm)": "",
+          "Supplier Footprint": "",
+          "Type": "",
+          "Value": "PESD3V3S1BA-ES",
+          "Voltage - Breakdown": "",
+          "level of protection": ""
+        },
+        "primitiveId": "5f1c5fe1e42cfd1c",
+        "rotation": 270,
+        "subPartName": "PESD3V3S1BA-ES.1",
+        "supplier": "LCSC",
+        "supplierId": "PESD3V3S1BA-ES.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6db798d70020b85d"
+        },
+        "uniqueId": "A3_D6",
+        "x": 780,
+        "y": 245
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 602.5,
+          "maxY": 238.5,
+          "minX": 581.5,
+          "minY": 279.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "2a16082b55c6caeb"
+        },
+        "componentType": "part",
+        "designator": "J10",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "2a16082b55c6caeb"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6957ef92839dbe21"
+        },
+        "manufacturer": "DEGSON(高正/高松)",
+        "manufacturerId": "DG301-5.0-03P-12-00A(H)",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Color": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Mounting Type": "",
+          "Number of PINs Per Row": "",
+          "Number of Pins": "",
+          "Number of Positions or Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pitch": "",
+          "Supplier Footprint": "",
+          "Voltage Rating (Max)": ""
+        },
+        "primitiveId": "1ce5191424a48ee3",
+        "rotation": 0,
+        "subPartName": "DG301-5.0-03P-12-00A(H).1",
+        "supplier": "LCSC",
+        "supplierId": "DG301-5.0-03P-12-00A(H).1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b2abe6a06e046ab1"
+        },
+        "uniqueId": "A3_J10",
+        "x": 592,
+        "y": 259
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 870.5,
+          "maxY": 244.5,
+          "minX": 849.5,
+          "minY": 285.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "2a16082b55c6caeb"
+        },
+        "componentType": "part",
+        "designator": "J11",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "2a16082b55c6caeb"
+        },
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "6957ef92839dbe21"
+        },
+        "manufacturer": "DEGSON(高正/高松)",
+        "manufacturerId": "DG301-5.0-03P-12-00A(H)",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Color": "",
+          "Current Rating": "",
+          "Datasheet": "",
+          "Description": "",
+          "JLCPCB Part Class": "",
+          "LCSC Part Name": "",
+          "Mounting Type": "",
+          "Number of PINs Per Row": "",
+          "Number of Pins": "",
+          "Number of Positions or Pins": "",
+          "Number of Rows": "",
+          "Operating Temperature": "",
+          "Pitch": "",
+          "Supplier Footprint": "",
+          "Voltage Rating (Max)": ""
+        },
+        "primitiveId": "876d23fa962bcc0b",
+        "rotation": 0,
+        "subPartName": "DG301-5.0-03P-12-00A(H).1",
+        "supplier": "LCSC",
+        "supplierId": "DG301-5.0-03P-12-00A(H).1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "b2abe6a06e046ab1"
+        },
+        "uniqueId": "A3_J11",
+        "x": 860,
+        "y": 265
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 80.5,
+          "maxY": 654.5,
+          "minX": 70.5,
+          "minY": 675.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "a131707706c5cde2",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 90,
+        "y": 665
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 295.5,
+          "maxY": 699.5,
+          "minX": 289.5,
+          "minY": 710.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+5V_MCU",
+        "primitiveId": "31b3224faba25318",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 285,
+        "y": 705
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 330.5,
+          "maxY": 694.5,
+          "minX": 324.5,
+          "minY": 705.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+5V_MCU",
+        "primitiveId": "2d74c4642b84c33e",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 320,
+        "y": 700
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 270.5,
+          "maxY": 649.5,
+          "minX": 260.5,
+          "minY": 670.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "91969962a1ce2dc3",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 280,
+        "y": 660
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 380.5,
+          "maxY": 689.5,
+          "minX": 374.5,
+          "minY": 700.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+5V_MCU",
+        "primitiveId": "c748d970bbfd21a8",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 370,
+        "y": 695
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 389.5,
+          "maxY": 654.5,
+          "minX": 379.5,
+          "minY": 675.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "9cc817ef899ac170",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 370,
+        "y": 665
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 400.5,
+          "maxY": 464.5,
+          "minX": 394.5,
+          "minY": 475.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+5V_MCU",
+        "primitiveId": "eb1f57ff8798028d",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 405,
+        "y": 470
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 515.5,
+          "maxY": 464.5,
+          "minX": 509.5,
+          "minY": 475.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+5V_MCU",
+        "primitiveId": "688b8bfd5547383a",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 505,
+        "y": 470
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 395.5,
+          "maxY": 569.5,
+          "minX": 385.5,
+          "minY": 590.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "985a0e16717244cd",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 405,
+        "y": 580
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 524.5,
+          "maxY": 569.5,
+          "minX": 514.5,
+          "minY": 590.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "2065cb34c14f23f9",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 505,
+        "y": 580
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 530.5,
+          "maxY": 569.5,
+          "minX": 520.5,
+          "minY": 590.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "2781a0f32fd21112",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 540,
+        "y": 580
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 659.5,
+          "maxY": 569.5,
+          "minX": 649.5,
+          "minY": 590.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "95327e0db8ed9595",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 640,
+        "y": 580
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 295.5,
+          "maxY": 584.5,
+          "minX": 289.5,
+          "minY": 595.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "2800f2bfce383c69",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 285,
+        "y": 590
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 330.5,
+          "maxY": 584.5,
+          "minX": 324.5,
+          "minY": 595.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "a7ae5f51d81255d1",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 320,
+        "y": 590
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 270.5,
+          "maxY": 529.5,
+          "minX": 260.5,
+          "minY": 550.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "b7ddb397d4543f4c",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 280,
+        "y": 540
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 380.5,
+          "maxY": 614.5,
+          "minX": 374.5,
+          "minY": 625.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "3cdd6bfb1af63362",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 370,
+        "y": 620
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 389.5,
+          "maxY": 569.5,
+          "minX": 379.5,
+          "minY": 590.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "a9d4c3518db8cdba",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 370,
+        "y": 580
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 380.5,
+          "maxY": 559.5,
+          "minX": 374.5,
+          "minY": 570.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "03f354e0adbf0553",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 370,
+        "y": 565
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 389.5,
+          "maxY": 524.5,
+          "minX": 379.5,
+          "minY": 545.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "874f11ffc2ff4aa8",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 370,
+        "y": 535
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 380.5,
+          "maxY": 514.5,
+          "minX": 374.5,
+          "minY": 525.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "c22d7e6cfe7dfd31",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 370,
+        "y": 520
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 389.5,
+          "maxY": 469.5,
+          "minX": 379.5,
+          "minY": 490.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "df55cf0d2b995480",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 370,
+        "y": 480
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 905.5,
+          "maxY": 694.5,
+          "minX": 899.5,
+          "minY": 705.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "a6854767e51717a1",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 895,
+        "y": 700
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 905.5,
+          "maxY": 704.5,
+          "minX": 899.5,
+          "minY": 715.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "eb43625c0d9699c2",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 895,
+        "y": 710
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1005.5,
+          "maxY": 694.5,
+          "minX": 999.5,
+          "minY": 705.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "2a4699d8bc45340c",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 995,
+        "y": 700
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1005.5,
+          "maxY": 704.5,
+          "minX": 999.5,
+          "minY": 715.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "f6a21b0aa4536991",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 995,
+        "y": 710
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1114.5,
+          "maxY": 689.5,
+          "minX": 1104.5,
+          "minY": 710.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "74d2afc846bffd86",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 1095,
+        "y": 700
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 995.5,
+          "maxY": 499.5,
+          "minX": 989.5,
+          "minY": 510.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "bc185f817b165bd2",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 985,
+        "y": 505
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 939.5,
+          "maxY": 354.5,
+          "minX": 929.5,
+          "minY": 375.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "f5e39f9b5ae7b340",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 920,
+        "y": 365
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1089.5,
+          "maxY": 354.5,
+          "minX": 1079.5,
+          "minY": 375.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "2ac7e13e32435619",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 1070,
+        "y": 365
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 715.5,
+          "maxY": 349.5,
+          "minX": 694.5,
+          "minY": 359.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "84b3db97460f8825",
+        "rotation": 180,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 705,
+        "y": 340
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 770.5,
+          "maxY": 399.5,
+          "minX": 749.5,
+          "minY": 409.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "341788d8d9912847",
+        "rotation": 180,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 760,
+        "y": 390
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 815.5,
+          "maxY": 419.5,
+          "minX": 804.5,
+          "minY": 425.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "143d6e8f524384f2"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "143d6e8f524384f2"
+        },
+        "mirror": false,
+        "net": "+3V3_RADIO",
+        "primitiveId": "1e20627dfc918929",
+        "rotation": 180,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 810,
+        "y": 430
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 770.5,
+          "maxY": 349.5,
+          "minX": 760.5,
+          "minY": 370.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "ba35a8cd69c4cd2f",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 780,
+        "y": 360
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1149.5,
+          "maxY": 349.5,
+          "minX": 1139.5,
+          "minY": 370.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "ec347c0ddd9388b7",
+        "rotation": 90,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 1130,
+        "y": 360
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 520.5,
+          "maxY": 335.5,
+          "minX": 499.5,
+          "minY": 345.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "db463109f788776b",
+        "rotation": 0,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 510,
+        "y": 355
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 520.5,
+          "maxY": 270.5,
+          "minX": 499.5,
+          "minY": 280.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "54f1e8fef3b2971c",
+        "rotation": 0,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 510,
+        "y": 290
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 790.5,
+          "maxY": 340.5,
+          "minX": 769.5,
+          "minY": 350.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "8933a7c36381d119",
+        "rotation": 0,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 780,
+        "y": 360
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 790.5,
+          "maxY": 270.5,
+          "minX": 769.5,
+          "minY": 280.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "7a8d09f6ff6a5299",
+        "rotation": 0,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 780,
+        "y": 290
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 540.5,
+          "maxY": 244.5,
+          "minX": 530.5,
+          "minY": 265.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "8e776a15bff6207f",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 550,
+        "y": 255
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 810.5,
+          "maxY": 244.5,
+          "minX": 800.5,
+          "minY": 265.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "47f0839517100ca6"
+        },
+        "componentType": "netflag",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "47f0839517100ca6"
+        },
+        "mirror": false,
+        "net": "GND",
+        "primitiveId": "664214e60045e2b3",
+        "rotation": 270,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 820,
+        "y": 255
+      }
+    ],
+    "count": 78,
+    "wires": []
+  },
+  "context": {
+    "projectUuid": "f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf",
+    "projectName": "RES_LoRa_32",
+    "documentUuid": "2d87cc5a21c0cfc2",
+    "documentType": "schematic",
+    "tabId": "2d87cc5a21c0cfc2@f6f509e6fb8fb0802931128ca13a5903bcfa0792e7ce1fe2c17426e7ba9592bf"
+  }
+}

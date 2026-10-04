@@ -1,0 +1,3 @@
+E:\toolchain\bin\cmake.exe -E rm -f CMakeFiles\test_bridge_stream.dir/objects.a
+E:\toolchain\mingw64\bin\ar.exe qc CMakeFiles\test_bridge_stream.dir/objects.a @CMakeFiles\test_bridge_stream.dir\objects1.rsp
+E:\toolchain\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\test_bridge_stream.dir/objects.a -Wl,--no-whole-archive -o test_bridge_stream.exe -Wl,--out-implib,libtest_bridge_stream.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_bridge_stream.dir\linkLibs.rsp

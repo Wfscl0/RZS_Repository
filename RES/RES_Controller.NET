@@ -1,0 +1,73 @@
+PARTS LIST
+
+LoRa                              *
+MCU                               *
+ADC                               *
+电源控制模块                            *
+Relay_Group                       *
+Relay_ButtonCheck                 *
+电池                                *
+Light-Emitting Diode                D?
+Light-Emitting Diode                D?
+Light-Emitting Diode                D?
+Light-Emitting Diode                D?
+Push Button Normally Opened                S?
+Push Button Normally Closed                S?
+EOS
+NET LIST
+
+NODENAME +3.3             $
+    *       3.3V  *       3.3V  *        VCC  *        VCC  *        VIO
+NODENAME +5               $
+    *         5V  *        NO1  *        NO2  *        NO3  *        NO4  *        VCC
+NODENAME +12              $
+    *        12V
+NODENAME GND              $
+    *        GND  *        GND  *        GND  *        GND  *        GND  *        GND  *        GND  *        NO1  *        NO2  D?         2  D?         2  D?         2  D?         2  S?         2  S?         2
+NODENAME Net*_12V         $
+    *        12V  *        VIN  *        VIN
+NODENAME Net*_ALER        $
+    *       ALER  *       ALER
+NODENAME Net*_COM1        $
+    *       COM1  D?         1
+NODENAME Net*_COM1        $
+    *       COM1  *    EXTI_GO
+NODENAME Net*_COM2        $
+    *       COM2  D?         1
+NODENAME Net*_COM2        $
+    *       COM2  *  EXTI_SHUT
+NODENAME Net*_COM3        $
+    *       COM3  D?         1
+NODENAME Net*_COM4        $
+    *       COM4  D?         1
+NODENAME Net*_LED_SoC_G   $
+    *  LED_SoC_G  *        RL3
+NODENAME Net*_LED_SoC_R   $
+    *  LED_SoC_R  *        RL4
+NODENAME Net*_LED_State_B $
+    *LED_State_B  *        RL1
+NODENAME Net*_LED_State_Y $
+    *LED_State_Y  *        RL2
+NODENAME Net*_NSS         $
+    *        NSS  *        PB4
+NODENAME Net*_PB5         $
+    *        PB5  *   SPI_SCLK
+NODENAME Net*_PB6         $
+    *        PB6  *   SPI_MOSI
+NODENAME Net*_PB7         $
+    *        PB7  *   SPI_MISO
+NODENAME Net*_PC0         $
+    *        PC0  *        RST
+NODENAME Net*_RL1         $
+    *        RL1  S?         1
+NODENAME Net*_RL2         $
+    *        RL2  S?         1
+NODENAME Net*_RXD         $
+    *        RXD  *   USART_TX
+NODENAME Net*_SCL         $
+    *        SCL  *        SCL
+NODENAME Net*_SDA         $
+    *        SDA  *        SDA
+NODENAME Net*_TXD         $
+    *        TXD  *   USART_RX
+EOS
