@@ -1,0 +1,35 @@
+[
+  {
+    "file": "低压盒/硬件电路接口.xlsx",
+    "note": "按最新EBS/RES方案、现relay/bspd网表修正；保留待测状态"
+  },
+  {
+    "file": "基板/基板全部接口特性与定义_2026-07-31_v7.xlsx",
+    "note": "新方案电压、RES来源、BSPD开路、H9方向及TSAL冲突校订"
+  },
+  {
+    "file": "继电器检测/继电器检测说明.docx",
+    "updated_texts": 2,
+    "note": "原文备份已保存；图片对象保留"
+  },
+  {
+    "file": "EBS/EBS功能说明（2026）.docx",
+    "updated_texts": 7,
+    "note": "原文备份已保存；图片对象保留"
+  },
+  {
+    "file": "与其他组/硬件电路和整车控制有交集的地方.docx",
+    "updated_texts": 5,
+    "note": "原文备份已保存；图片对象保留"
+  },
+  {
+    "file": "VCU/方程式/方程式/FSAC测试台架说明.docx",
+    "updated_texts": 3,
+    "note": "原文备份已保存；图片对象保留"
+  },
+  {
+    "file": "设计报告/设计报告.docx",
+    "updated_texts": 0,
+    "note": "原文备份已保存；图片对象保留"
+  }
+]

@@ -1,0 +1,46 @@
+SOURCE 错误锁存/说明.txt
+IMD/BMS/EBS/RES 错误锁存板设计说明
+
+版本：2026-10-04
+连接依据：../网表/lock.tel。
+
+1. 功能
+
+IMD、BMS 分别锁存故障，EBS_ERROR 与 RES_ERROR 共用 R_E_STATE 故障锁存通道。三路状态均健康时允许板上常开继电器闭合 SCIN–SCOUT；故障或掉电时释放。
+
+RELAY_ENABLE = IMD_STATE AND BMS_STATE AND R_E_STATE
+
+12 V 输入经保护和 LM340MP-5.0 生成内部 5 V，TPS3808 提供上电复位。
+
+2. 外部接口
+
+H1.1  IMD_ERROR  输入：正常约 12 V、故障约 9 V，经比较器判定
+H1.2  BMS_ERROR  输入：正常约 12 V、故障约 10 V，经比较器判定
+H2.1  EBS_ERROR  输入：正常约 5 V、故障 0 V
+H2.2  RES_ERROR  输入：正常约 12 V、故障 0 V，经 20 kΩ/12 kΩ 分压进入逻辑
+H3.1  IMD_RESET  输入：低有效，板内 5 V 上拉
+H3.2  BMS_RESET  输入：低有效，板内 5 V 上拉
+H3.3  R_E_RESET  输入：低有效，板内 5 V 上拉；清除 EBS/RES 故障锁存
+H4.1  SCIN       安全回路无源触点输入
+H4.2  SCOUT      安全回路无源触点输出
+H5.1  IMD_LED    5 V 高边状态输出
+H5.2  BMS_LED    5 V 高边状态输出
+H5.3  R_E_LED    5 V 高边状态输出
+H6.1  12V       电源输入
+H6.2  GND       电源回路
+
+RESET 使用开漏等方式拉低，不能直接送入 12 V 推挽高电平。LED 输出关闭时可能悬空，测量需接实际负载或明确的下拉。
+
+3. RES/EBS 启动与故障监测
+
+删除的是“EBS_ERROR 与 RES_ERROR 都输出 1 后才开始监测”的上电等待/使能设计；不再设置两路健康确认、启动屏蔽或额外的监测使能锁存。
+
+改为在 TSMS 上电之前，先给 RES_ERROR 12 V 健康电平。故障时 RES_ERROR 为 0 V。EBS_ERROR 仍为 5/0 V 逻辑输入，不能与 EBS 的 12 V 安全回路电压混淆。
+
+网表中的实际故障锁存保留：U11 的 D 接 +5 V，U9 的故障输出送 CLK；复位、故障和 POR 参与清除逻辑。输入恢复健康后，故障锁存需按 R_E_RESET 复位。该故障保持与已经删除的“两路都为 1 才开始监测”是不同功能。
+
+EBS 安全回路经 DCDC 降为 12 V 后送入 EBS 板 SDC_IN，驱动 12 V 的 RLY2；EBS_PWR/EBS_WORK 的 24 V 主电源支路保持原定义。
+
+4. 核对与验证
+
+核对 RES_ERROR 的 12/0 V 电平及其先于 TSMS 上电的顺序、EBS 的 12 V 安全回路输入，并验证 IMD/BMS/EBS/RES 故障保持、对应复位及掉电释放。本次仅修改说明，未修改网表、原理图或固件，也未进行新方案实测。旧台架记录见 ../ARDUINO测试/测试汇总.md，不作为本次上电顺序变更的验证结果。

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "S01",
+    "path": "基板/基板全部接口特性与定义_2026-07-31_v7.xlsx",
+    "sha256": "3792c31f8b886629de3ed659d82828ce638850a58078e0abfcfd441a198ca2ab"
+  },
+  {
+    "id": "S02",
+    "path": "低压盒/硬件电路接口.xlsx",
+    "sha256": "5b344e3da14488f251f70572ce13687a3c439850082bd5c8d7cde75078331881"
+  },
+  {
+    "id": "S03",
+    "path": "继电器检测/继电器检测说明.docx",
+    "sha256": "ba351c0f57a22dc9ef4c74f322a93f5b87923689862efa29a7bdebd6845000c4"
+  },
+  {
+    "id": "S04",
+    "path": "EBS/EBS功能说明（2026）.docx",
+    "sha256": "ae550cf4cf69a4c6960966ee9b911fd921eecd144c73fc1e929a2007669f5294"
+  },
+  {
+    "id": "S05",
+    "path": "与其他组/硬件电路和整车控制有交集的地方.docx",
+    "sha256": "cfd9d04996317e8656294bb24924cbd6f360045565f907562c5ebefb27d4197b"
+  },
+  {
+    "id": "S06",
+    "path": "与其他组/无人系统驾驶表.docx",
+    "sha256": "2b6c6e29f1b4893b2a9a7a9553f04aa9c5e0ec39ca44602690c21a79ec58e85b"
+  },
+  {
+    "id": "S07",
+    "path": "设计报告/设计报告.docx",
+    "sha256": "21e9c15b92403742b05e3314e0abdbcfd05db3c6cf327662620271b4f775d8e0"
+  },
+  {
+    "id": "S08",
+    "path": "所有板子完整仿真/simulations/simulation_report.md",
+    "sha256": "cbe34112a47ab252abc72271e9c1f5277672c0d747a25f7c62d75627943acdac"
+  },
+  {
+    "id": "S09",
+    "path": "所有板子完整仿真/仿真/STATUS.md",
+    "sha256": "13dca413341ec65d1b60be786a7a69add08a2e7e2c4a1f8196e66dee137d7319"
+  },
+  {
+    "id": "S10",
+    "path": "ARDUINO测试/测试汇总.md",
+    "sha256": "51579ca1b3110252ef52746a789f9fd259c87a728f5b5795afc370eb8f0fd061"
+  },
+  {
+    "id": "S11",
+    "path": "BSPD/BSPD定义.md",
+    "sha256": "25ddc5c3ddbd7ce1e55a03075a0d600b916db513d206e82aa26c8bf121b05383"
+  },
+  {
+    "id": "S12",
+    "path": "TSAL/定义.md",
+    "sha256": "688677fce92b60ad8f9b0c81ea3aaae2bee5788cd1669b9054cd3f86b6f57486"
+  },
+  {
+    "id": "S13",
+    "path": "错误锁存/说明.txt",
+    "sha256": "cd3727e342896ef367aa099135a4f23f969858229d58d534351a15ac4260d8e5"
+  },
+  {
+    "id": "S14",
+    "path": "EBS/EBS说明.md",
+    "sha256": "8a55826355df27b6eed65cb9594f66e39dcbdda411ea2b6633d977bec156d135"
+  },
+  {
+    "id": "S15",
+    "path": "RES/firmware/docs/RES_SYSTEM_DESCRIPTION_CN.md",
+    "sha256": "289cdf9e4e27d26528888acbdddd6cbb1743da1a986c2b8730842884d2fa45bf"
+  },
+  {
+    "id": "S16",
+    "path": "RES/firmware/docs/SI4463_LIVE_DEBUG_20260924.md",
+    "sha256": "e170a9591f1875cb48d5938a90cf632720169b9370deaf94cbbf40f6b972d2d2"
+  },
+  {
+    "id": "S17",
+    "path": "RES/firmware/docs/BENCH_NO_CAN_20260924.md",
+    "sha256": "238122ba78619b032ab8820e789b774d3e12e1338168e12cf37148b6438fdd98"
+  },
+  {
+    "id": "S18",
+    "path": "RES/firmware/dbc/RES_CAN_Validation.dbc",
+    "sha256": "7b64bc90eee901900fe2e9f6340b3c1833ab13a06a7ada576e410457e9a5df1a"
+  },
+  {
+    "id": "S19",
+    "path": "全车原理图/RZS_TestBench/电池箱内部原理图.pdf",
+    "sha256": "873fc58472144ca2859c77a953151f8c20f8e3b691b193ba4a57d2d283221e70"
+  },
+  {
+    "id": "S20",
+    "path": "全车原理图/RZS_TestBench/充电安全回路.pdf",
+    "sha256": "57718c6491eb06e6244fac44ee28f84f0e1e23ebd0f618fbc62e789c309df5bc"
+  },
+  {
+    "id": "S21",
+    "path": "与其他组/整车线路9.26.pdf",
+    "sha256": "b85c2ad674bd99b95d09286df447511afcceedc850540c7f3f9dc350cde4850f"
+  },
+  {
+    "id": "S22",
+    "path": "2025电检结果/2025赛季电检结果.pdf",
+    "sha256": "2f5fe3814116d51c892de7e25b0fbc52f94c04e0fa940c5dfc0f10a61b24f13b"
+  }
+]

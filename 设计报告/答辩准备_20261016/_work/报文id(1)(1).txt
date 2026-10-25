@@ -1,0 +1,17 @@
+SOURCE VCU/方程式/方程式/报文id(1)(1).xlsx
+SHEET Sheet1
+R1 | 报文名称 | ID | 网关 | 波特率 | 发送周期
+R2 | ESP_T_03输入 | 0X13 | CAN1 | 500kbps | 20
+R3 | ESP_R_00输出 | 0X20 | CAN1 | 500kbps | 20
+R4 | res_msg输入 | 0X1E4 | CAN1 | 500kbps | 50
+R5 | canb_ipctsmsg1输入 | 0X11 | CAN1 | 500kbps | 20
+R6 | canb_ipctsmsg2输入 | 0X12 | CAN1 | 500kbps | 20
+R7 | canb_ipcrxmsg输出 | 0x10 | CAN1 | 500kbps | 50
+R8 | AMI_Tx输入 | 0X42 | CAN1 | 500kbps | 20
+R9 | AMI_RX输出 | 0x41 | CAN1 | 500kbps | 20
+R10 | canb_epsmsg输出 | 0X469 | CAN1 | 500kbps | 20
+R11 | canb_epssendmsg1输入 | 0X401 | CAN1 | 500kbps | 20
+R12 | cana_motor_cmd输出 | 0xCFF08EF | CAN0 | 500kbps | 10
+R13 | cana_motor_cmd3输出 | 0xCFF09EF | CAN0 | 500kbps | 100
+SHEET Sheet2
+SHEET Sheet3

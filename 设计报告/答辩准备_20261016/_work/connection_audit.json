@@ -1,0 +1,840 @@
+{
+  "scope": "逐针存在性与关键连接检查，不代表电路全功能验收",
+  "external": 72,
+  "headers": 47,
+  "records": [
+    {
+      "pin": "CN7.1",
+      "table_signal": "LED_IMD_ERROR",
+      "netlist_net": "LED_IMD_ERROR",
+      "listed": true,
+      "source_row": 5
+    },
+    {
+      "pin": "CN7.2",
+      "table_signal": "LED_BMS_ERROR",
+      "netlist_net": "LED_BMS_ERROR",
+      "listed": true,
+      "source_row": 6
+    },
+    {
+      "pin": "CN7.3",
+      "table_signal": "RUN",
+      "netlist_net": "RUN",
+      "listed": true,
+      "source_row": 7
+    },
+    {
+      "pin": "CN7.4",
+      "table_signal": "DI8",
+      "netlist_net": "DI8",
+      "listed": true,
+      "source_row": 8
+    },
+    {
+      "pin": "CN7.5",
+      "table_signal": "LED_EBS_ERROR",
+      "netlist_net": "LED_EBS_ERROR",
+      "listed": true,
+      "source_row": 9
+    },
+    {
+      "pin": "CN7.6",
+      "table_signal": "R2D_BUZZER",
+      "netlist_net": "R2D_BUZZER",
+      "listed": true,
+      "source_row": 10
+    },
+    {
+      "pin": "CN7.7",
+      "table_signal": "LED_BRAKE",
+      "netlist_net": "LED_BRAKE",
+      "listed": true,
+      "source_row": 11
+    },
+    {
+      "pin": "CN7.8",
+      "table_signal": "ASSI_Y",
+      "netlist_net": "ASSI_Y",
+      "listed": true,
+      "source_row": 12
+    },
+    {
+      "pin": "CN7.9",
+      "table_signal": "ASSI_B",
+      "netlist_net": "ASSI_B",
+      "listed": true,
+      "source_row": 13
+    },
+    {
+      "pin": "CN7.10",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 14
+    },
+    {
+      "pin": "CN7.11",
+      "table_signal": "ROTATE_OUT",
+      "netlist_net": "ROTATE_OUT",
+      "listed": true,
+      "source_row": 15
+    },
+    {
+      "pin": "CN7.12",
+      "table_signal": "EMERGENCY_BUZZER",
+      "netlist_net": "EMERGENCY_BUZZER",
+      "listed": true,
+      "source_row": 16
+    },
+    {
+      "pin": "CN7.13",
+      "table_signal": "ROTATE_IN",
+      "netlist_net": "ROTATE_IN",
+      "listed": true,
+      "source_row": 17
+    },
+    {
+      "pin": "CN7.14",
+      "table_signal": "ROTATE_VCU",
+      "netlist_net": "ROTATE_VCU",
+      "listed": true,
+      "source_row": 18
+    },
+    {
+      "pin": "CN7.15",
+      "table_signal": "R2D_BUZZER_VCU",
+      "netlist_net": "R2D_BUZZER_VCU",
+      "listed": true,
+      "source_row": 19
+    },
+    {
+      "pin": "CN7.16",
+      "table_signal": "LED_EBS_ERROR_VCU",
+      "netlist_net": "LED_EBS_ERROR_VCU",
+      "listed": true,
+      "source_row": 20
+    },
+    {
+      "pin": "CN7.17",
+      "table_signal": "DI8_VCU",
+      "netlist_net": "DI8_VCU",
+      "listed": true,
+      "source_row": 21
+    },
+    {
+      "pin": "CN7.18",
+      "table_signal": "RUN_VCU",
+      "netlist_net": "RUN_VCU",
+      "listed": true,
+      "source_row": 22
+    },
+    {
+      "pin": "CN7.19",
+      "table_signal": "LED_BMS_ERROR_VCU",
+      "netlist_net": "LED_BMS_ERROR_VCU",
+      "listed": true,
+      "source_row": 23
+    },
+    {
+      "pin": "CN7.20",
+      "table_signal": "LED_IMD_ERROR_VCU",
+      "netlist_net": "LED_IMD_ERROR_VCU",
+      "listed": true,
+      "source_row": 24
+    },
+    {
+      "pin": "CN8.1",
+      "table_signal": "IMD_RESET",
+      "netlist_net": "IMD_RESET",
+      "listed": true,
+      "source_row": 25
+    },
+    {
+      "pin": "CN8.2",
+      "table_signal": "BMS_RESET",
+      "netlist_net": "BMS_RESET",
+      "listed": true,
+      "source_row": 26
+    },
+    {
+      "pin": "CN8.3",
+      "table_signal": "R_E_RESET",
+      "netlist_net": "R_E_RESET",
+      "listed": true,
+      "source_row": 27
+    },
+    {
+      "pin": "CN8.4",
+      "table_signal": "IMD_ERROR",
+      "netlist_net": "IMD_ERROR",
+      "listed": true,
+      "source_row": 28
+    },
+    {
+      "pin": "CN8.5",
+      "table_signal": "BMS_ERROR",
+      "netlist_net": "BMS_ERROR",
+      "listed": true,
+      "source_row": 29
+    },
+    {
+      "pin": "CN8.6",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 30
+    },
+    {
+      "pin": "CN8.7",
+      "table_signal": "EMERGENCY_BUZZER_VCU",
+      "netlist_net": "EMERGENCY_BUZZER_VCU",
+      "listed": true,
+      "source_row": 31
+    },
+    {
+      "pin": "CN8.8",
+      "table_signal": "LED_BRAKE_VCU",
+      "netlist_net": "LED_BRAKE_VCU",
+      "listed": true,
+      "source_row": 32
+    },
+    {
+      "pin": "CN8.9",
+      "table_signal": "ASSI_Y_VCU",
+      "netlist_net": "ASSI_Y_VCU",
+      "listed": true,
+      "source_row": 33
+    },
+    {
+      "pin": "CN8.10",
+      "table_signal": "ASSI_B_VCU",
+      "netlist_net": "ASSI_B_VCU",
+      "listed": true,
+      "source_row": 34
+    },
+    {
+      "pin": "CN8.11",
+      "table_signal": "SHUTDOWN_END",
+      "netlist_net": "SHUTDOWN_END",
+      "listed": true,
+      "source_row": 35
+    },
+    {
+      "pin": "CN8.12",
+      "table_signal": "SHUTDOWN_START",
+      "netlist_net": "SHUTDOWN_START",
+      "listed": true,
+      "source_row": 36
+    },
+    {
+      "pin": "CN8.13",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 37
+    },
+    {
+      "pin": "CN8.14",
+      "table_signal": "ASMS",
+      "netlist_net": "ASMS",
+      "listed": true,
+      "source_row": 38
+    },
+    {
+      "pin": "CN8.15",
+      "table_signal": "12V",
+      "netlist_net": "12V",
+      "listed": true,
+      "source_row": 39
+    },
+    {
+      "pin": "CN8.16",
+      "table_signal": "ASMS_VCU",
+      "netlist_net": "ASMS_VCU",
+      "listed": true,
+      "source_row": 40
+    },
+    {
+      "pin": "CN8.17",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 41
+    },
+    {
+      "pin": "CN8.18",
+      "table_signal": "ISDC_ASRL",
+      "netlist_net": "ISDC_ASRL",
+      "listed": true,
+      "source_row": 42
+    },
+    {
+      "pin": "CN8.19",
+      "table_signal": "OSDC_ASRL",
+      "netlist_net": "OSDC_ASRL",
+      "listed": true,
+      "source_row": 43
+    },
+    {
+      "pin": "CN8.20",
+      "table_signal": "AS_PWR",
+      "netlist_net": "AS_PWR",
+      "listed": true,
+      "source_row": 44
+    },
+    {
+      "pin": "CN9.1",
+      "table_signal": "MAINN_ACTUAL",
+      "netlist_net": "$1N564",
+      "listed": true,
+      "source_row": 45
+    },
+    {
+      "pin": "CN9.2",
+      "table_signal": "MAINN#",
+      "netlist_net": "$1N575",
+      "listed": true,
+      "source_row": 46
+    },
+    {
+      "pin": "CN9.3",
+      "table_signal": "PRE#",
+      "netlist_net": "$1N566",
+      "listed": true,
+      "source_row": 47
+    },
+    {
+      "pin": "CN9.4",
+      "table_signal": "OIL4",
+      "netlist_net": "OIL4",
+      "listed": true,
+      "source_row": 48
+    },
+    {
+      "pin": "CN9.5",
+      "table_signal": "PRE_ACTUAL",
+      "netlist_net": "$1N568",
+      "listed": true,
+      "source_row": 49
+    },
+    {
+      "pin": "CN9.6",
+      "table_signal": "OIL3",
+      "netlist_net": "OIL3",
+      "listed": true,
+      "source_row": 50
+    },
+    {
+      "pin": "CN9.7",
+      "table_signal": "MAINP#",
+      "netlist_net": "$1N570",
+      "listed": true,
+      "source_row": 51
+    },
+    {
+      "pin": "CN9.8",
+      "table_signal": "OIL2",
+      "netlist_net": "OIL2",
+      "listed": true,
+      "source_row": 52
+    },
+    {
+      "pin": "CN9.9",
+      "table_signal": "MAINP_ACTUAL",
+      "netlist_net": "$1N572",
+      "listed": true,
+      "source_row": 53
+    },
+    {
+      "pin": "CN9.10",
+      "table_signal": "OIL1",
+      "netlist_net": "OIL1",
+      "listed": true,
+      "source_row": 54
+    },
+    {
+      "pin": "CN10.1",
+      "table_signal": "NC",
+      "netlist_net": "NC",
+      "listed": false,
+      "source_row": 55
+    },
+    {
+      "pin": "CN10.2",
+      "table_signal": "CURRENT",
+      "netlist_net": "CURRENT",
+      "listed": true,
+      "source_row": 56
+    },
+    {
+      "pin": "CN10.3",
+      "table_signal": "V_BATTERY",
+      "netlist_net": "V_BATTERY",
+      "listed": true,
+      "source_row": 57
+    },
+    {
+      "pin": "CN10.4",
+      "table_signal": "NC",
+      "netlist_net": "NC",
+      "listed": false,
+      "source_row": 58
+    },
+    {
+      "pin": "CN10.5",
+      "table_signal": "GREEN_OUT_K",
+      "netlist_net": "GREEN_OUT_K",
+      "listed": true,
+      "source_row": 59
+    },
+    {
+      "pin": "CN10.6",
+      "table_signal": "NC",
+      "netlist_net": "NC",
+      "listed": false,
+      "source_row": 60
+    },
+    {
+      "pin": "CN10.7",
+      "table_signal": "RED_OUT_K",
+      "netlist_net": "RED_OUT_K",
+      "listed": true,
+      "source_row": 61
+    },
+    {
+      "pin": "CN10.8",
+      "table_signal": "NC",
+      "netlist_net": "NC",
+      "listed": false,
+      "source_row": 62
+    },
+    {
+      "pin": "CN10.9",
+      "table_signal": "V_CONTROLLER",
+      "netlist_net": "V_CONTROLLER",
+      "listed": true,
+      "source_row": 63
+    },
+    {
+      "pin": "CN10.10",
+      "table_signal": "+24VIN",
+      "netlist_net": "+24VIN",
+      "listed": true,
+      "source_row": 64
+    },
+    {
+      "pin": "CN11.1",
+      "table_signal": "VCU_WDI",
+      "netlist_net": "VCU_WDI",
+      "listed": true,
+      "source_row": 65
+    },
+    {
+      "pin": "CN11.2",
+      "table_signal": "RES_ERROR",
+      "netlist_net": "RES_ERROR",
+      "listed": true,
+      "source_row": 66
+    },
+    {
+      "pin": "CN11.3",
+      "table_signal": "EBS_TRIG_IN（网表$1N393）",
+      "netlist_net": "$1N393",
+      "listed": true,
+      "source_row": 67
+    },
+    {
+      "pin": "CN11.4",
+      "table_signal": "EBS_CHECK",
+      "netlist_net": "EBS_CHECK",
+      "listed": true,
+      "source_row": 68
+    },
+    {
+      "pin": "CN11.5",
+      "table_signal": "EBS_WORK",
+      "netlist_net": "EBS_WORK",
+      "listed": true,
+      "source_row": 69
+    },
+    {
+      "pin": "CN11.6",
+      "table_signal": "SCOUT",
+      "netlist_net": "SCOUT",
+      "listed": true,
+      "source_row": 70
+    },
+    {
+      "pin": "CN11.7",
+      "table_signal": "VCU_FB",
+      "netlist_net": "VCU_FB",
+      "listed": true,
+      "source_row": 71
+    },
+    {
+      "pin": "CN11.8",
+      "table_signal": "NC",
+      "netlist_net": "NC",
+      "listed": false,
+      "source_row": 72
+    },
+    {
+      "pin": "CN11.9",
+      "table_signal": "EBS_PWR",
+      "netlist_net": "EBS_PWR",
+      "listed": true,
+      "source_row": 73
+    },
+    {
+      "pin": "CN11.10",
+      "table_signal": "SDC_IN_EBS",
+      "netlist_net": "SDC_IN_EBS",
+      "listed": true,
+      "source_row": 74
+    },
+    {
+      "pin": "CN12.1",
+      "table_signal": "SHUTDOWNS_IN",
+      "netlist_net": "SHUTDOWNS_IN",
+      "listed": true,
+      "source_row": 75
+    },
+    {
+      "pin": "CN12.2",
+      "table_signal": "SHUTDOWNE_IN",
+      "netlist_net": "SHUTDOWNE_IN",
+      "listed": true,
+      "source_row": 76
+    },
+    {
+      "pin": "H1.1",
+      "table_signal": "EBS_PWR",
+      "netlist_net": "EBS_PWR",
+      "listed": true,
+      "source_row": 5
+    },
+    {
+      "pin": "H1.2",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 6
+    },
+    {
+      "pin": "H2.1",
+      "table_signal": "+24VIN",
+      "netlist_net": "+24VIN",
+      "listed": true,
+      "source_row": 7
+    },
+    {
+      "pin": "H2.2",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 8
+    },
+    {
+      "pin": "H3.1",
+      "table_signal": "SDC_IN_EBS",
+      "netlist_net": "SDC_IN_EBS",
+      "listed": true,
+      "source_row": 9
+    },
+    {
+      "pin": "H3.2",
+      "table_signal": "EBS_WORK",
+      "netlist_net": "EBS_WORK",
+      "listed": true,
+      "source_row": 10
+    },
+    {
+      "pin": "H3.3",
+      "table_signal": "EBS_ERROR",
+      "netlist_net": "EBS_ERROR",
+      "listed": true,
+      "source_row": 11
+    },
+    {
+      "pin": "H3.4",
+      "table_signal": "VCU_FB",
+      "netlist_net": "VCU_FB",
+      "listed": true,
+      "source_row": 12
+    },
+    {
+      "pin": "H4.1",
+      "table_signal": "VCU_WDI",
+      "netlist_net": "VCU_WDI",
+      "listed": true,
+      "source_row": 13
+    },
+    {
+      "pin": "H4.2",
+      "table_signal": "EBS_TRIG",
+      "netlist_net": "EBS_TRIG",
+      "listed": true,
+      "source_row": 14
+    },
+    {
+      "pin": "H4.3",
+      "table_signal": "EBS_CHECK",
+      "netlist_net": "EBS_CHECK",
+      "listed": true,
+      "source_row": 15
+    },
+    {
+      "pin": "H5.1",
+      "table_signal": "OIL4",
+      "netlist_net": "OIL4",
+      "listed": true,
+      "source_row": 16
+    },
+    {
+      "pin": "H5.2",
+      "table_signal": "OIL3",
+      "netlist_net": "OIL3",
+      "listed": true,
+      "source_row": 17
+    },
+    {
+      "pin": "H5.3",
+      "table_signal": "OIL2",
+      "netlist_net": "OIL2",
+      "listed": true,
+      "source_row": 18
+    },
+    {
+      "pin": "H5.4",
+      "table_signal": "OIL1",
+      "netlist_net": "OIL1",
+      "listed": true,
+      "source_row": 19
+    },
+    {
+      "pin": "H6.1",
+      "table_signal": "+24VIN",
+      "netlist_net": "+24VIN",
+      "listed": true,
+      "source_row": 20
+    },
+    {
+      "pin": "H6.2",
+      "table_signal": "SDC",
+      "netlist_net": "SDC",
+      "listed": true,
+      "source_row": 21
+    },
+    {
+      "pin": "H7.1",
+      "table_signal": "CURRENT",
+      "netlist_net": "CURRENT",
+      "listed": true,
+      "source_row": 22
+    },
+    {
+      "pin": "H7.2",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 23
+    },
+    {
+      "pin": "H8.1",
+      "table_signal": "12V",
+      "netlist_net": "12V",
+      "listed": true,
+      "source_row": 24
+    },
+    {
+      "pin": "H8.2",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 25
+    },
+    {
+      "pin": "H9.1",
+      "table_signal": "EBS_ERROR",
+      "netlist_net": "EBS_ERROR",
+      "listed": true,
+      "source_row": 26
+    },
+    {
+      "pin": "H9.2",
+      "table_signal": "RES_ERROR",
+      "netlist_net": "RES_ERROR",
+      "listed": true,
+      "source_row": 27
+    },
+    {
+      "pin": "H10.1",
+      "table_signal": "NC",
+      "netlist_net": "NC",
+      "listed": false,
+      "source_row": 28
+    },
+    {
+      "pin": "H10.2",
+      "table_signal": "V_CONTROLLER",
+      "netlist_net": "V_CONTROLLER",
+      "listed": true,
+      "source_row": 29
+    },
+    {
+      "pin": "H11.1",
+      "table_signal": "IMD_RESET",
+      "netlist_net": "IMD_RESET",
+      "listed": true,
+      "source_row": 30
+    },
+    {
+      "pin": "H11.2",
+      "table_signal": "BMS_RESET",
+      "netlist_net": "BMS_RESET",
+      "listed": true,
+      "source_row": 31
+    },
+    {
+      "pin": "H11.3",
+      "table_signal": "R_E_RESET",
+      "netlist_net": "R_E_RESET",
+      "listed": true,
+      "source_row": 32
+    },
+    {
+      "pin": "H12.1",
+      "table_signal": "IMD_ERROR",
+      "netlist_net": "IMD_ERROR",
+      "listed": true,
+      "source_row": 33
+    },
+    {
+      "pin": "H12.2",
+      "table_signal": "BMS_ERROR",
+      "netlist_net": "BMS_ERROR",
+      "listed": true,
+      "source_row": 34
+    },
+    {
+      "pin": "H13.1",
+      "table_signal": "GND",
+      "netlist_net": "GND",
+      "listed": true,
+      "source_row": 35
+    },
+    {
+      "pin": "H13.2",
+      "table_signal": "12V",
+      "netlist_net": "12V",
+      "listed": true,
+      "source_row": 36
+    },
+    {
+      "pin": "H14.1",
+      "table_signal": "GREEN_OUT_K",
+      "netlist_net": "GREEN_OUT_K",
+      "listed": true,
+      "source_row": 37
+    },
+    {
+      "pin": "H14.2",
+      "table_signal": "RED_OUT_K",
+      "netlist_net": "RED_OUT_K",
+      "listed": true,
+      "source_row": 38
+    },
+    {
+      "pin": "H15.1",
+      "table_signal": "NC",
+      "netlist_net": "NC",
+      "listed": false,
+      "source_row": 39
+    },
+    {
+      "pin": "H15.2",
+      "table_signal": "V_BATTERY",
+      "netlist_net": "V_BATTERY",
+      "listed": true,
+      "source_row": 40
+    },
+    {
+      "pin": "H16.1",
+      "table_signal": "MAINP#",
+      "netlist_net": "MAINP#",
+      "listed": true,
+      "source_row": 41
+    },
+    {
+      "pin": "H16.2",
+      "table_signal": "MAINP_ACTUAL",
+      "netlist_net": "MAINP_ACTUAL",
+      "listed": true,
+      "source_row": 42
+    },
+    {
+      "pin": "H17.1",
+      "table_signal": "IMD_LED",
+      "netlist_net": "IMD_LED",
+      "listed": true,
+      "source_row": 43
+    },
+    {
+      "pin": "H17.2",
+      "table_signal": "BMS_LED",
+      "netlist_net": "BMS_LED",
+      "listed": true,
+      "source_row": 44
+    },
+    {
+      "pin": "H17.3",
+      "table_signal": "R_E_LED",
+      "netlist_net": "R_E_LED",
+      "listed": true,
+      "source_row": 45
+    },
+    {
+      "pin": "H18.1",
+      "table_signal": "PRE#",
+      "netlist_net": "PRE#",
+      "listed": true,
+      "source_row": 46
+    },
+    {
+      "pin": "H18.2",
+      "table_signal": "PRE_ACTUAL",
+      "netlist_net": "PRE_ACTUAL",
+      "listed": true,
+      "source_row": 47
+    },
+    {
+      "pin": "H19.1",
+      "table_signal": "SDC",
+      "netlist_net": "SDC",
+      "listed": true,
+      "source_row": 48
+    },
+    {
+      "pin": "H19.2",
+      "table_signal": "SCOUT",
+      "netlist_net": "SCOUT",
+      "listed": true,
+      "source_row": 49
+    },
+    {
+      "pin": "H20.1",
+      "table_signal": "MAINN_ACTUAL",
+      "netlist_net": "MAINN_ACTUAL",
+      "listed": true,
+      "source_row": 50
+    },
+    {
+      "pin": "H20.2",
+      "table_signal": "MAINN#",
+      "netlist_net": "MAINN#",
+      "listed": true,
+      "source_row": 51
+    }
+  ]
+}

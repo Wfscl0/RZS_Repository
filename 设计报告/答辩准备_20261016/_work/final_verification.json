@@ -1,0 +1,31 @@
+{
+  "sources": 22,
+  "main_pages": 26,
+  "external_pins": 72,
+  "board_pins": 47,
+  "source_hashes_match": true,
+  "VCU_program_excluded": true,
+  "original_images": [
+    {
+      "file": "EBS\\EBS功能说明（2026）.docx",
+      "images_preserved": 2
+    },
+    {
+      "file": "与其他组\\硬件电路和整车控制有交集的地方.docx",
+      "images_preserved": 0
+    },
+    {
+      "file": "继电器检测\\继电器检测说明.docx",
+      "images_preserved": 0
+    },
+    {
+      "file": "设计报告\\设计报告.docx",
+      "images_preserved": 3
+    },
+    {
+      "file": "VCU\\方程式\\方程式\\FSAC测试台架说明.docx",
+      "images_preserved": 16
+    }
+  ],
+  "new_scheme_electrical_tests": "not performed"
+}

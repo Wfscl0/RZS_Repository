@@ -1,0 +1,93 @@
+{
+  "body_and_tables_preserved": true,
+  "moved_interface_sections": 6,
+  "remaining_japanese_kana": 0,
+  "chinese_font": "宋体",
+  "chinese_language": "zh-CN",
+  "renumbered_headings": [
+    {
+      "before": "9 BSPD 制动与驱动冲突检测",
+      "after": "3 BSPD 制动与驱动冲突检测"
+    },
+    {
+      "before": "10 错误锁存与受控复位",
+      "after": "4 错误锁存与受控复位"
+    },
+    {
+      "before": "11 EBS 失电制动与外部控制器运行监督",
+      "after": "5 EBS 失电制动与外部控制器运行监督"
+    },
+    {
+      "before": "12 继电器机械状态检测",
+      "after": "6 继电器机械状态检测"
+    },
+    {
+      "before": "13 TSAL 高压状态显示与灯板",
+      "after": "7 TSAL 高压状态显示与灯板"
+    },
+    {
+      "before": "14 RES 双端硬件与外部接口",
+      "after": "8 RES 双端硬件与外部接口"
+    },
+    {
+      "before": "15 RES 安全状态机与通信保护",
+      "after": "9 RES 安全状态机与通信保护"
+    },
+    {
+      "before": "16 整车安全性提升的论证",
+      "after": "10 整车安全性提升的论证"
+    },
+    {
+      "before": "17 可维护性提升与排障方法",
+      "after": "11 可维护性提升与排障方法"
+    },
+    {
+      "before": "18 失效分析与验证矩阵",
+      "after": "12 失效分析与验证矩阵"
+    },
+    {
+      "before": "19 已有证据与可陈述的结论",
+      "after": "13 已有证据与可陈述的结论"
+    },
+    {
+      "before": "21 八分钟答辩的讲述顺序",
+      "after": "14 八分钟答辩的讲述顺序"
+    },
+    {
+      "before": "22 高频问答与回答要点",
+      "after": "15 高频问答与回答要点"
+    },
+    {
+      "before": "23 资料范围与版本追溯",
+      "after": "16 资料范围与版本追溯"
+    },
+    {
+      "before": "24 资料清单",
+      "after": "17 资料清单"
+    },
+    {
+      "before": "3 基板外部接口 CN7",
+      "after": "18 基板外部接口 CN7"
+    },
+    {
+      "before": "4 基板外部接口 CN8",
+      "after": "19 基板外部接口 CN8"
+    },
+    {
+      "before": "5 基板外部接口 CN9和CN10",
+      "after": "20 基板外部接口 CN9和CN10"
+    },
+    {
+      "before": "6 基板外部接口 CN11和CN12",
+      "after": "21 基板外部接口 CN11和CN12"
+    },
+    {
+      "before": "7 基板板卡排针 H1至H10",
+      "after": "22 基板板卡排针 H1至H10"
+    },
+    {
+      "before": "8 基板板卡排针 H11至H20",
+      "after": "23 基板板卡排针 H11至H20"
+    }
+  ]
+}

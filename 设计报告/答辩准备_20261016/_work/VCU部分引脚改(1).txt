@@ -1,0 +1,64 @@
+SOURCE VCU/方程式/方程式/VCU部分引脚改(1).xlsx
+SHEET Sheet1
+R1 | 子系统名 | 模块名 | 功能概述 | 输入 | 输入信号类型 | 输出 | 输出信号类型 |  |  | 
+R2 | 1传感器信号采集 | Sensor_Signal | 处理车身域传感器信号 | apps1，加速踏板传感器1 | 0~5V模拟量 | 无输出信号仅VCU内部逻辑 |  |  |  | 
+R3 |  |  |  | apps2，加速踏板传感器2 | 0~5V模拟量 |  |  |  |  | 
+R4 |  |  |  | brkps，制动踏板信号 | 0~5V模拟量 |  |  |  |  | 
+R5 |  |  |  | wlspd_fsensor，前轮轮速 | 霍尔输入 |  |  |  |  | 
+R6 |  |  |  | wlspd_rsensor，后轮轮速 | 霍尔输入 |  |  |  |  | 
+R7 |  |  |  | airprs_sensor2，气压采集 | 0~5V模拟量 |  |  |  |  | 
+R8 |  |  |  | airprs_sensor1，气压采集 | 0~5V模拟量 |  |  |  |  | 
+R9 | 2ASB | ASB_Selfcheck | EBS相关量可靠性检测 | ebs_drivercheck，EBS是否正常上电，高有效 | 数字量（0V/5V） | 无输出信号仅VCU内部逻辑 |  |  |  | 
+R10 |  | EBS | 触发EBS | 无输入信号，仅VCU内部逻辑 |  | ebs_trig，进行ebs激活，高有效 | 数字量（0V/5V） |  |  | 
+R11 |  |  |  |  |  | ebs_watchdog，EBS看门狗，看门狗信号 | 数字量（0V/5V） |  |  | 
+R12 |  | ESP | 制动电机使能与控制
+反馈值接收
+工控机传出转角接收 | ESP_T_01，报文信号，目前没有用上 | 8×8报文信号 | ESP_R_00，报文信号，
+发送四路油压 | 8×8报文信号 |  |  | 
+R13 |  |  |  | ESP_T_03，报文信号，
+解算油压信号以及提供制动电机检测信号 | 8×8报文信号 |  |  |  |  | 
+R14 |  |  |  | ESP_T_06，报文信号，目前没有用上 | 8×8报文信号 |  |  |  |  | 
+R15 |  |  |  | ESP_T_07，报文信号，目前没有用上 | 8×8报文信号 |  |  |  |  | 
+R16 | 3转向电机 | EPS | 转向电机使能与控制
+反馈值接收
+工控机传出转角接收 | canb_epssendmsg1，报文信号，反馈EPS信号 | 8×8报文信号 | canb_epsmsg，报文信号，
+发送EPS反馈信号 | 8×8报文信号 |  |  | 
+R17 |  |  |  | canb_epssendmsg2，报文信号，目前没有用上 | 8×8报文信号 |  |  |  |  | 
+R18 | 4灯控系统 | LED_Control | 控制灯系统 | Shutdown_Start，与Shutdown_End
+检测急停按钮是否按下，若急停按钮按下则两端电平不一致 | 数字量（0V/5V） | led_brake，制动灯，高有效 | 数字量（0V/5V） |  |  | 
+R19 |  |  |  | Shutdown_End，与Shutdown_Start
+检测急停按钮是否按下，若急停按钮按下则两端电平不一致 | 数字量（0V/5V） | led_assi_blue，assi蓝灯，
+0关闭 1常亮 2闪烁 | uint(8) |  |  | 
+R20 |  |  |  |  |  | led_assi_yellow,assi黄灯，
+0关闭 1常亮 2闪烁 | uint(8) |  |  | 
+R21 |  |  |  |  |  | led_ebs_error，ebs失效报警灯
+高有效 | 数字量（0V/5V） |  |  | 
+R22 |  |  |  |  |  | led_bms_error，BMS报警灯
+高有效 | 数字量（0V/5V） |  |  | 
+R23 |  |  |  |  |  | led_imd_error，IMD报警灯
+高有效 | 数字量（0V/5V） |  |  | 
+R24 | 5驱动系统 | TS_Activation | 用于驱动激活 | di8_out，驾驶舱外部激活按钮，高有效 | 数字量（0V/5V） | di8，di8是否正确按下
+高有效 | 数字量（0V/5V） |  |  | 
+R25 |  |  |  | di8_in，驾驶舱内部激活按钮，高有效 | 数字量（0V/5V） | run，run是否正确按下
+高有效 | 数字量（0V/5V） |  |  | 
+R26 |  |  |  | run_button，RUN按钮，高有效 | 数字量（0V/5V） |  |  |  |  | 
+R27 |  |  |  | tsms_button，tsms按钮，高有效 | 数字量（0V/5V） |  |  |  |  | 
+R28 |  | Motor_Control | 控制驱动电机 | 有待后续确定 |  | cana_motor_cmd，报文信号 | 8×8报文信号 |  |  | 
+R29 |  |  |  |  |  | cana_motor_cmd3，报文信号 | 8×8报文信号 |  |  | 
+R30 | 6报警声 | Buzzer | 控制报警器 | 无输入信号，仅VCU内部逻辑 |  | r2d_buzzer，r2d报警，
+高有效 | 数字量（0V/5V） |  |  | 
+R31 |  |  |  |  |  | ts_buzzer，驱动流程完成报警
+高有效 | 数字量（0V/5V） |  |  | 
+R32 |  |  |  |  |  | ebs_buzzer，ebs报警
+高有效 | 数字量（0V/5V） |  |  | 
+R33 | 7状态机 | AS_Stateflow | 控制车辆状态进程 | asms_button，asms按钮，高有效 | 数字量（0V/5V） | 无输出信号仅VCU内部逻辑 |  |  |  | 
+R34 |  |  |  | ami_manualdriving，人工驾驶模式
+ | 报文 |  |  |  |  | 
+R35 | 8RES通信 | Res | RES启动与急停接收 | res_msg，报文信号 | 8×8报文信号 |  |  |  |  | 
+R36 | 9工控机通信 | IPC | 工控机通信系统 | canb_ipctsmsg1，报文信号 | 8×8报文信号 | canb_ipcrxmsg，报文信号 | 8×8报文信号 |  |  | 
+R37 |  |  |  | canb_ipctsmsg2，报文信号 | 8×8报文信号 |  |  |  |  | 
+R38 | 10AMI | AS_AMI | 无人任务选择 | 无输入输出信号，仅VCU内部逻辑 |  |  |  |  |  | 
+R39 |  | AMI_CAN | 无人任务通信 | AMI_Tx，报文信号 | 8×8报文信号 | AMI_RX，报文信号 | 8×8报文信号 |  |  | 
+R40 |  |  |  |  |  | resl_err  | 数字量（0V/5V） |  |  | 
+SHEET Sheet2
+SHEET Sheet3

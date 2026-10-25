@@ -1,0 +1,244 @@
+SOURCE 全车原理图/RZS_TestBench/充电安全回路.pdf
+PAGE 1 1
+1
+2
+2
+3
+3
+4
+4
+D D
+C C
+B B
+A A
+Title
+Number RevisionSize
+A4
+Date: 6/30/2026 Sheet   of
+File: C:\Users\..\充电安全回路.SchDoc Drawn By:
+充电机壳体
+充电机
+IRTO6142SNHEC031938
+Ampheno
+Amphenol PL282X-301-35
+电池箱主接插件
+电池箱
+预充继电器?
+主正继电器?
+主负继电器?
+Bat+Bat-
+*?
+模组*4
+16A 三脚扁插(GB 2099)
+充电机自带过流保护
+3*2.5mm²
+GND
+TSMP
+HV+
+HV-
+12V
+GND
+IMD_Err
+*?
+IMD
+100K
+100K
+主负反馈
+K6-
+主正反馈
+K2-
+K1-
+预充反馈
+CAN_H
+CAN_L
+12V
+GND
+I_in
+BDU_CANH
+BDU_CANLBMS_Err
+*?
+BMS主控
+急停开关
+3K
+RXG24 75w 3000Ω-JBussmann PV-5A 1000VDC
+1000V/5A
+Bussmann FWH-60B
+500V/60A
+120K 10W
+充电机放电回路
+GND
+AC 90~265V
+HV+
+HV-
+V_IN
+12V
+GND CAN_H
+CAN_L
+EP-2308 3.3kW
+35mm²
+35mm²
+35mm²
+35mm²
+35mm²
+35mm²
+35mm²
+35mm²
+35mm²
+0.75mm²
+0.75mm²
+3mm²
+3mm²
+0.75mm²
+0.75mm²
+0.75mm²
+贴片保险丝
+连接线 0.75mm²
+0.75mm²0.75mm²
+充电机输出12V
+K_IMD（充电机内部）
+K_BMS（充电机内部）
+充电机内部锁存逻辑
+充电机内部锁存逻辑GND
+GND
+reset
+GND
+0.75mm²
+0.75mm²
+0.75mm²
+0.75mm²
+0.75mm²
+0.75mm²
+ETA(埃塔)
+ETA3304-1
+1000V/32A 充电机高压插头互锁
+电池箱高压插头互锁
+3mm²
+3mm²
+PI01 PI02 
+CO 
+PI0?012V 
+PI0?0CAN0H 
+PI0?0CAN0L 
+PI0?0GND 
+PI0?0HV0 
+PI0?0V0IN 
+CO0? 
+PI0?0 
+PI0?012V 
+PI0?0BDU0CANH 
+PI0?0BDU0CANL 
+PI0?0BMS0Err 
+PI0?0CAN0H 
+PI0?0CAN0L 
+PI0?0GND 
+PI0?0I0in 
+PI0?0K10 
+PI0?0K20 
+PI0?0K60 
+PI0?012V 
+PI0?0GND 
+PI0?0HV0 
+PI0?0IMD0Err 
+PI0?0Bat0 
+PIBussmann FWH060B01 PIBussmann FWH060B02 
+COBussmann FWH060B 
+PIBussmann PV05A 1000VDC01 PIBussmann PV05A 1000VDC02 
+COBussmann PV05A 1000VDC 
+PIK0BMS£¨³äµç»úÄÚ²¿£©01 
+PIK0BMS£¨³äµç»úÄÚ²¿£©02 
+PIK0BMS£¨³äµç»úÄÚ²¿£©03 
+PIK0BMS£¨³äµç»úÄÚ²¿£©04 
+COK0BMS£¨³äµç»úÄÚ²¿£© 
+PIK0IMD£¨³äµç»úÄÚ²¿£©01 
+PIK0IMD£¨³äµç»úÄÚ²¿£©02 
+PIK0IMD£¨³äµç»úÄÚ²¿£©03 
+PIK0IMD£¨³äµç»úÄÚ²¿£©04 
+COK0IMD£¨³äµç»úÄÚ²¿£© 
+PIR?01 PIR?02 COR? 
+PIR?01 PIR?02 
+PIreset01 PIreset02 
+COreset 
+PIRXG24 75w 3000¦¸0J01 PIRXG24 75w 3000¦¸0J02 
+CORXG24 75w 3000¦¸0J 
+PIÖ÷Õý¼ÌµçÆ÷?01 PIÖ÷Õý¼ÌµçÆ÷?02 
+PIÖ÷Õý¼ÌµçÆ÷?03 PIÖ÷Õý¼ÌµçÆ÷?04 
+PIÖ÷Õý¼ÌµçÆ÷?05 PIÖ÷Õý¼ÌµçÆ÷?06 
+COÖ÷Õý¼ÌµçÆ÷? 
+PIÖ÷¸º¼ÌµçÆ÷?01 PIÖ÷¸º¼ÌµçÆ÷?02 
+PIÖ÷¸º¼ÌµçÆ÷?03 PIÖ÷¸º¼ÌµçÆ÷?04 
+PIÖ÷¸º¼ÌµçÆ÷?05 PIÖ÷¸º¼ÌµçÆ÷?06 
+COÖ÷¸º¼ÌµçÆ÷? 
+PI³äµç»ú×Ô´ø¹ýÁ÷±£»¤01 
+PI³äµç»ú×Ô´ø¹ýÁ÷±£»¤02 
+CO³äµç»ú×Ô´ø¹ýÁ÷±£»¤ PI¼±Í£¿ª¹Ø01 
+PI¼±Í£¿ª¹Ø02 
+CO¼±Í£¿ª¹Ø 
+PIÌùÆ¬±£ÏÕË¿01 
+PIÌùÆ¬±£ÏÕË¿02 
+COÌùÆ¬±£ÏÕË¿ 
+PIÔ¤³ä¼ÌµçÆ÷?01 PIÔ¤³ä¼ÌµçÆ÷?02 
+PIÔ¤³ä¼ÌµçÆ÷?03 PIÔ¤³ä¼ÌµçÆ÷?04 
+PIÔ¤³ä¼ÌµçÆ÷?05 PIÔ¤³ä¼ÌµçÆ÷?06 
+COÔ¤³ä¼ÌµçÆ÷? 
+PI0?0GND 
+PIK0BMS£¨³äµç»úÄÚ²¿£©03 
+PIK0IMD£¨³äµç»úÄÚ²¿£©03 
+PIreset02 
+PI0?0 
+PIÔ¤³ä¼ÌµçÆ÷?04 
+PIÖ÷¸º¼ÌµçÆ÷?04 
+PIÖ÷Õý¼ÌµçÆ÷?04 
+PI0?012V 
+PIK0IMD£¨³äµç»úÄÚ²¿£©01 
+PI0?0Bat0 
+PIBussmann FWH060B02 
+PI0?0Bat0 
+PIÖ÷¸º¼ÌµçÆ÷?02 
+PI0?0BDU0CANH 
+PI0?0CAN0H 
+PI0?0BDU0CANL 
+PI0?0CAN0L 
+PI0?0BMS0Err 
+PIK0BMS£¨³äµç»úÄÚ²¿£©04 
+PI0?0CAN0H 
+PI0?0CAN0L 
+PI0?0GND 
+PI01 
+PI0?0HV0 
+PIBussmann PV05A 1000VDC01 PIR?02 
+PIÖ÷Õý¼ÌµçÆ÷?01 
+PIÌùÆ¬±£ÏÕË¿02 
+PIÌùÆ¬±£ÏÕË¿01 
+PI02 
+PI0?0HV0 
+PIR?01 
+PIÖ÷¸º¼ÌµçÆ÷?01 
+PI0?0I0in 
+PI0?0IMD0Err 
+PIK0IMD£¨³äµç»úÄÚ²¿£©04 
+PI0?0K10 
+PIÔ¤³ä¼ÌµçÆ÷?06 
+PI0?0K20 
+PIÖ÷Õý¼ÌµçÆ÷?06 
+PI0?0K60 
+PIÖ÷¸º¼ÌµçÆ÷?06 
+PI0?0V0IN 
+PI³äµç»ú×Ô´ø¹ýÁ÷±£»¤02 
+PIBussmann FWH060B01 
+PIÖ÷Õý¼ÌµçÆ÷?02 
+PIÔ¤³ä¼ÌµçÆ÷?02 PIBussmann PV05A 1000VDC02 PIRXG24 75w 3000¦¸0J01 
+PIK0BMS£¨³äµç»úÄÚ²¿£©01 
+PIK0IMD£¨³äµç»úÄÚ²¿£©02 
+PIK0BMS£¨³äµç»úÄÚ²¿£©02 
+PI¼±Í£¿ª¹Ø02 
+PIR?01 
+PIR?02 
+PIreset01 
+PIRXG24 75w 3000¦¸0J02 PIÔ¤³ä¼ÌµçÆ÷?01 
+PIÖ÷Õý¼ÌµçÆ÷?03 
+PIÖ÷Õý¼ÌµçÆ÷?05 
+PIÖ÷¸º¼ÌµçÆ÷?03 
+PIÖ÷¸º¼ÌµçÆ÷?05 PI¼±Í£¿ª¹Ø01 
+PIÔ¤³ä¼ÌµçÆ÷?03 
+PIÔ¤³ä¼ÌµçÆ÷?05 
+PI³äµç»ú×Ô´ø¹ýÁ÷±£»¤01 
